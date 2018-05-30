@@ -1,0 +1,110 @@
+@include block(modularGrid) {
+    font-size: 0;
+    position: relative;
+    //Module or unit of the grid.
+    @include element(module) {
+        font-size: 1rem;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+        cursor: default;
+        @include modifier(legible) {
+            font-size: 1.1rem;
+        }
+    }
+    //Centers the grid to the width of the current breakpoint
+    @include modifier(boxed) {
+        @each $bkName,
+        $bkSize in $breakpoints {
+            @include addMedia($bkName, $bkSize) {
+                @if ($bkName=="sm" or $bkName=="xs") {
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+                @else {
+                    max-width: 1200px;
+                    //max-width: 100%;
+                    margin: 0 auto;
+                }
+                @if ($bkName=="md") {
+                    max-width: 1200px;
+                }
+                @if ($bkName=="xxl") {
+                    max-width: 1200px;
+                }
+            }
+        }
+    }
+}
+
+//Usado en la documentación para visualizar el grid en los ejemplos
+@include extendBlock(modularGrid, reveal) {
+    margin-bottom: $um;
+    outline: 1px dashed #d0d0d0;
+    @include element(module) {
+        padding: $um;
+        outline: 1px dashed #d0d0d0;
+        background: #f0f0f0;
+    }
+}
+
+@include extendBlock(modularGrid, equalHeights) {
+    display: flex;
+    justify-content: space-between;
+    @include element(module) {
+        &:last-child{
+        margin-right: auto;
+    }
+        
+    }
+}
+
+@include extendBlock(modularGrid, flexCenter) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: inherit;
+}
+
+@include extendBlock(modularGrid, twocolumns) {
+    //display:flex;
+    //justify-content: space-between;
+    @include element(module) {
+        width: 50%;
+        &:nth-child(odd) {
+            padding-right: $um / 2;
+        }
+        &:nth-child(even) {
+            padding-left: $um / 2;
+        }
+    }
+}
+
+
+@include extendBlock(modularGrid, threecolumns) {
+    display:flex;
+    justify-content: space-between;
+    @include element(module) {
+        width: calc((100% / 3) - 1rem);
+        /*&:nth-child(odd) {
+            padding-right: $um / 2;
+        }
+        &:nth-child(even) {
+            padding-left: $um / 2;
+        }*/
+    }
+}
+
+@include extendElement(modularGrid, module, equalHeights) {
+    @extend %box;
+    display: block;
+    //padding: $um;
+    //height: 100%;
+    &:nth-child(odd) {
+        margin-right: 1.5rem;
+    }
+    &:nth-child(even) {
+        // outline: 1px solid red;
+    }
+}

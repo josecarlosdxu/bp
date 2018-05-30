@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<div class="modularGrid-module">
+    $0
+</div>
+]]></content>
+    <tabTrigger>mod</tabTrigger>
+</snippet>

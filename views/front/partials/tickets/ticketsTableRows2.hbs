@@ -1,0 +1,72 @@
+{{#each test}}
+<tr class="table-tr" data-js-accordion="link">
+   <td class="table-item table-item--tdAlign table-item--date table-item--rowtitle"><svg role="img" class="icon  icon--inline icon--xs u-mgr--half" data-js-accordion="chevron"><use xlink:href="../../img/icons/svg-defs.svg#icon-chevronDown"/></svg>{{date}}</td>
+   <td class="table-item table-item--tdAlign ">{{ref}}</td>
+   <td class="table-item table-item--tdAlign">{{department}}</td>
+   <td class="table-item table-item--tdAlign">{{subject}}</td>
+   <td class="table-item table-item--tdAlign">
+   <span {{#if this.class}}class="span-{{class}}"{{/if}}>{{state}}</span>
+   {{#if this.notify}}<span class="notify notify--animated"></span>{{/if}}
+   </td>
+   <td class="table-item">
+      <button class="button button--icon" title="{{buttonMsg}}">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-{{btnSvg}}"></use></svg>
+    </button>
+    <button class="button button--icon" title="cerrar" data-js-ticket-action="close">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-times"></use></svg>
+    </button>
+</td>
+</tr>
+ <tr class="table-tr table-tr--content">
+    <td colspan="100">
+
+      <section class="table-accordionContent table-accordionContent--pd" data-js-accordion="panel" >
+
+        <div class="modularGrid">
+
+          <div class="modularGrid-module u-md-70">
+
+                  <h3 class="form-fieldset-title">Conversación</h3>
+                  <div class="modularGrid-module u-pdr">
+
+                      {{>conversationTicket}}
+
+                      <div class="modularGrid u-pdt--half">
+
+                      {{>ticketsFileUpload}}
+
+                      </div>
+
+                  </div>
+
+          </div>
+
+          <div class="modularGrid-module u-md-30">
+            
+             {{>ticketsFileAttach}}
+
+          </div>
+
+          <div class="modularGrid-module">
+              <div class="contentTickets-footer u-pdt--half  u-mgt--half">
+                  <button class="button button--primary button--big" name="submit">Enviar</button>
+                  <button class="button" name="submit">Cancelar</button>
+              </div>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
+  </td>
+</tr>
+{{/each}}
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+//namespace
+$nm:                "";
+
+//Debug classes are created if true
+$debug: 			false;
+
+//Magic numbers
+//Module used in margin and paddings accros the framework to keep the ratio
+$unit-base:         12px;
+$unit-mod:       	1.5rem;
+
+//Short alias for unit-mod
+$um:                $unit-mod;
+
+//Vertical rythm
+$base-font-size:    $unit-base  !default;
+//$base-line-height:  $um   !default;
+$base-line-height:  1.2;
+
+
+//Breakpoints
+$breakpoints:(
+                    xxs:     0px,
+                    xs:    320px,
+    				sm:    480px,
+    				md:    768px,
+                    ls:    940px,
+                    lg:    1024px,
+    				xl:    1200px,
+                    xxl:   1400px
+
+);
+
+
+
+
+
+
+$bk-productCard: (
+                    xs:    $um * 8,
+                    sm:    $um * 8,
+                    md:    $um * 10,
+                    lg:    $um * 10,
+                    xl:    $um * 12,
+                    xxl:   $um * 12
+            );

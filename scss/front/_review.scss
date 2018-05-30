@@ -1,0 +1,99 @@
+@include block(review) {
+	border-bottom: 1px solid $color-shadow;
+
+	@include element(dates) {
+		width: 70%;		
+		padding: $um / 2  0 $um / 2  $um / 1.5;
+
+		@extend .modularGrid-module;		
+		@extend %u-xs-50;
+		@extend %u-sm-35;
+		@extend %u-md-25;
+		@extend %u-lg-20;
+		@include element(user) {
+			padding-bottom: $um / 6;			
+
+			@extend %type-text01;
+		}
+	}
+
+	@include element(ratingTitle) {
+		display: inline-block;
+
+		width: 50%; 
+	}
+
+
+	@include element(comments) {
+		width: 100%;	
+		padding: $um / 2   $um   $um / 2  $um / 1.5;
+
+		@extend .review-dates;
+		@extend %u-xs-50;
+		@extend %u-sm-65;
+		@extend %u-md-75;
+		@extend %u-lg-80;
+	}	
+
+
+	@include element(footer) {
+		padding: $um / 2  0; 
+
+		background: $color-review-footer-background;
+
+		@extend .modularGrid-module;
+	}
+
+	@include element(question) {
+		padding-right: 0.75rem;	
+		padding-left: 0;	
+
+		text-align: right;
+
+		line-height: 1.3rem;	
+
+		@extend .review-dates;
+		@include addBreakpoint(xl) {
+			padding: 0 $um  0  $um * 5;
+		}
+	}
+
+	@include element(button) {
+		display: block;
+
+		width: 90%;
+		margin: 0 auto;
+
+		@include addBreakpoint(xs) {
+			display: inline-block;
+
+			width: auto;
+			margin: 0;
+			margin-left: $um / 3;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

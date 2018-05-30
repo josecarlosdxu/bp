@@ -1,0 +1,902 @@
+%successAfter {
+    vertical-align: top;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 1rem;
+    height: 0.65rem;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    content: "";
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+    margin: 0 auto;
+}
+
+@include block(button) {
+    line-height: normal;
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding: $um / 3 $um / 1.5;
+    cursor: pointer;
+    transition: all 0.1s;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid $color-button-border;
+    border-radius: 4px;
+    background-color: $color-button-background;
+    transition: all 0.1s;
+    top: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        border-color: $color-button-hover-border;
+        background-color: $color-button-hover-background;
+        box-shadow: 0 2px $color-button-hover-boxShadow;
+        outline: none;
+    }
+    &:active {
+        outline: none;
+        top: 0;
+        box-shadow: inset 0 1px 1px $color-shadow;
+        background-color: $color-button-active-background;
+        border-color: $color-button-active-border;
+    }
+    &[disabled] {
+        @extend %disabled;
+        &:hover {
+            top: 0;
+            transform: none;
+            -webkit-transform: none;
+            box-shadow: none;
+        }
+    }
+    @include modifier(full) {
+        width: 100%;
+    }
+    @include modifier(big) {
+        padding: $um / 3 $um * 2;
+    }
+    @include modifier(bigger) {
+        font-size: 1.2rem;
+        padding: 1rem 1.75rem
+    }
+    @include modifier(narrow) {
+        padding: $um / 3 $um / 2;
+    }
+    @include modifier(inverse) {
+        color: #fff;
+    }
+    @include modifier(huge) {
+        font-size: $um;
+        width: 100%;
+        padding: $um / 2 0;
+    }
+    @include modifier(giga) {
+        width: 100%;
+        font-size: $um;
+        padding: $um 0;
+        text-shadow: 1px 1px 1px opacify($color-light, 0.5);
+    }
+    @include modifier(formInline) {
+        margin-top: 1.65rem;
+    }
+    @include modifier(up) {
+        background: transparentize($color-buttonUp-background, 0.3);
+        display: inline-block;
+        color: #000;
+        font-size: 1.25rem;
+        height: auto;
+        line-height: 1;
+        padding: 1.25rem;
+        position: fixed;
+        right: 3%;
+        top: 88%;
+        border-radius: $um / 4;
+        border: 1px solid $color-shadow;
+        box-shadow: none;
+        transition: all 0.1s ease-out;
+        z-index: 10;
+        &:hover,
+        &:active {
+            transform: none;
+            -webkit-transform: none;
+            box-shadow: none;
+            outline: none;
+            top: 88%;
+            border: 1px solid $color-shadow;
+            background: $color-buttonUp-hover-background;
+            padding-top: 1.1rem;
+            padding-bottom: 1.4rem;
+        }
+    }
+    @include modifier(error) {
+        color: $color-buttonError-text;
+        color: #fff;
+        border-color: $color-buttonError-border;
+        background-color: $color-buttonError-background;
+        cursor: default;
+        pointer-events: none;
+        &:after {
+            content: "\f00d";
+            color: #fff;
+            @extend %type-icons01;
+            font-weight: normal;
+            font-size: 1.25rem;
+            margin-left: $um / 2;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+        &:hover,
+        &:active {
+            -webkit-transform: none;
+            transform: none;
+            color: $color-buttonError-text;
+            color: #fff;
+            border-color: $color-buttonError-border;
+            background-color: $color-buttonError-background;
+            box-shadow: none;
+            border-width: 1px;
+        }
+    }
+    @include modifier(info) {
+        color: $color-brandYellow-default;
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        border-radius: 4px;
+        transition: color 0.1s, box-shadow 0.2s;
+        box-shadow: 0 0 1px 1px transparent inset;
+        &:hover,
+        &:active {
+            background: #FFE600;
+            box-shadow: 0 0 0 1px transparentize(white, 0.5) inset;
+            color: white;
+            transform: none;
+        }
+    }
+    @include modifier(infoalt) {
+        color: currentColor;
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        border-radius: 4px;
+        transition: box-shadow 0.2s;
+        box-shadow: 0 0 1px 1px transparent inset;
+        &:hover,
+        &:active {
+            background: transparent;
+            box-shadow: 0 0 0 1px transparentize(black, 0.7) inset;
+            transform: none;
+        }
+    }
+    @include modifier(selected) {
+        color: darken($color-accentBlue-dark, 10%);
+        border-color: lighten($color-accentBlue-dark, 10%);
+        background-color: lighten($color-accentBlue-default, 10%);
+        &:hover {
+            -webkit-transform: none;
+            transform: none;
+            color: lighten($color-accentBlue-dark, 10%);
+            border-color: $color-accentBlue-default;
+            background-color: lighten($color-accentBlue-default, 30%);
+            box-shadow: 0 2px $color-accentBlue-default;
+            border-width: 1px;
+        }
+        &:active {
+            -webkit-transform: none;
+            transform: none;
+            color: darken($color-accentBlue-dark, 10%);
+            border-color: $color-accentBlue-dark;
+            background-color: $color-accentBlue-default;
+            box-shadow: inset 0 1px 1px $color-accentBlue-dark;
+            border-width: 1px;
+        }
+    }
+    @include modifier(selectedGreen) {
+        color: darken($color-buttonSuccess-border, 10%);
+        border-color: lighten($color-buttonSuccess-border, 10%);
+        background-color: lighten($color-buttonSuccess-background, 10%);
+        &:hover {
+            -webkit-transform: none;
+            transform: none;
+            color: lighten($color-buttonSuccess-border, 10%);
+            border-color: $color-buttonSuccess-border;
+            background-color: lighten($color-buttonSuccess-background, 30%);
+            box-shadow: 0 2px $color-buttonSuccess-border;
+            border-width: 1px;
+        }
+        &:active {
+            -webkit-transform: none;
+            transform: none;
+            color: darken($color-buttonSuccess-border, 10%);
+            border-color: $color-buttonSuccess-border;
+            background-color: $color-buttonSuccess-background;
+            box-shadow: inset 0 1px 1px $color-buttonSuccess-border;
+            border-width: 1px;
+        }
+    }
+    @include modifier(dark) {
+        background: #353b40;
+        color: #FFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: $um / 2;
+        &:hover,
+        &:active {
+            background: #353b40;
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    @include modifier(warning) {
+        color: transparent;
+        border-color: #E89B28;
+        background-color: $color-buttonWarning-background;
+        cursor: default;
+        pointer-events: none;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 2;
+            width: 2px;
+            height: 2px;
+            left: 50%;
+            top: 50%;
+            opacity: 0.3;
+            margin-top: 6px;
+            -webkit-animation: warningminiballs 1.2s infinite;
+            animation: warningminiballs 1.2s infinite;
+            border-radius: 5px;
+            outline: medium none;
+            background: transparent;
+            box-shadow: -8px -7px 0 5px #fff, 8px -7px 0 5px #fff;
+        }
+        .icon {
+            color: $color-buttonWarning-background;
+        }
+        &:hover,
+        &:active {
+            -webkit-transform: none;
+            transform: none;
+            color: transparent;
+            border-color: #E89B28;
+            background-color: $color-buttonWarning-background;
+            box-shadow: none;
+            border-width: 1px;
+        }
+    }
+    @include modifier(primary) {
+        color: $color-buttonPrimary-text;
+        border-color: $color-buttonPrimary-border;
+        background-color: $color-buttonPrimary-background;
+        box-shadow: none;
+        &:hover {
+            border-color: $color-buttonPrimary-hover-border;
+            background-color: $color-buttonPrimary-hover-background;
+            box-shadow: 0 2px $color-buttonPrimary-hover-boxShadow;
+        }
+        &:active {
+            outline: none;
+            background-color: $color-buttonPrimary-active-border;
+            box-shadow: inset 0 1px 1px $color-buttonPrimary-active-boxShadow;
+        }
+    }
+    @include modifier(success) {
+        @extend %successBtnBg;
+        cursor: default;
+        pointer-events: none;
+        &:after {
+            @extend %successAfter;
+        }
+        .icon {
+            display: none;
+        }
+        &:hover,
+        &:active {
+            -webkit-transform: none;
+            transform: none;
+            color: transparent;
+            border-color: $color-buttonSuccess-border;
+            background-color: $color-buttonSuccess-background;
+            box-shadow: none;
+            border-width: 1px;
+        }
+    }
+    @include modifier(successBtn) {
+        @extend %successBtnBg;
+        &:after {
+            @extend %successAfter;
+        }
+        &:hover,
+        &:active {
+            color: transparent;
+            border-color: $color-buttonSuccess-border;
+            background-color: $color-buttonSuccess-background;
+            box-shadow: 0 2px $color-buttonSuccess-border;
+        }
+    }
+    @include modifier(successText) {
+        @extend %successBtnBg_text;
+        span {
+            display: none;
+        }
+        span.track {
+            display: block;
+            float: right;
+        }
+        &:after {
+            @extend %successAfter;
+            float: left;
+            top: 2px;
+            margin-right: 10px;
+        }
+        &:hover,
+        &:active {
+            border-color: $color-buttonSuccess-border;
+            background-color: $color-buttonSuccess-background;
+            box-shadow: 0 2px $color-buttonSuccess-border;
+        }
+    }
+    @include modifier(successText_error) {
+        @extend %successBtnBg_text_error;
+        span {
+            display: none;
+        }
+        span.track {
+            display: block;
+            float: right;
+        }
+        &:after {
+            content: "\f00d";
+            color: #fff;
+            @extend %type-icons01;
+            font-weight: normal;
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            float: left;
+            top: 2px;
+            margin-right: 10px;
+        }
+        &:hover,
+        &:active {
+            border-color: $color-buttonError-border;
+            background-color: $color-buttonError-background;
+            box-shadow: 0 2px $color-buttonError-border;
+        }
+    }
+    @include modifier(trackText) {
+        @extend %trackBtnBg_text;
+        span {
+            display: none;
+        }
+        span.track {
+            display: block;
+            float: right;
+        }
+        &:after {
+            content: "\f00d";
+            color: #fff;
+            @extend %type-icons01;
+            font-weight: normal;
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            float: left;
+            top: -1px;
+            margin-right: 10px;
+            margin-left: -1px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        &:hover,
+        &:active {
+            border-color: $color-buttonTrack-border;
+            background-color: $color-buttonTrack-background;
+            box-shadow: 0 2px $color-buttonTrack-border;
+        }
+    }
+    @include modifier(waiting) {
+        color: transparent;
+        border-color: $color-buttonWaiting-border;
+        background-color: $color-buttonWaiting-background;
+        cursor: default;
+        font-size: 0;
+        &:after {
+            vertical-align: top;
+            color: #fff;
+            @extend %type-icons01;
+            font-weight: normal;
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            content: "\f017";
+        }
+        .icon {
+            color: $color-buttonWaiting-background;
+            display: none;
+        }
+        &:hover,
+        &:active {
+            -webkit-transform: none;
+            transform: none;
+            color: transparent;
+            border-color: $color-buttonWaiting-border;
+            background-color: $color-buttonWaiting-background;
+            box-shadow: none;
+            border-width: 1px;
+        }
+    }
+    @include modifier(icon) {
+        // border: none;
+        border: 1px solid $color-button-border;
+        padding: 0.1rem 0.25rem 0.25rem;
+        padding: .25rem; // background: none;
+        background: $color-button-background;
+        box-shadow: none;
+        cursor: pointer;
+        opacity: 0.8;
+        -webkit-transform: none;
+        transform: none;
+        transition: all 0.1s;
+        outline: none;
+        vertical-align: top; // &:hover, , &:active {
+        //     background: none;
+        //     outline: none;
+        //     box-shadow: none;
+        //     opacity: 1;
+        //     -webkit-transform: none;
+        //     transform: none;
+        // }
+    }
+    @include modifier(postfix) {
+        border-radius: 0 $um / 6 $um / 6 0;
+        display: inline-block;
+        height: 30px;
+        margin-top: -30px;
+        padding: 0;
+        position: relative;
+        left: 1px;
+        min-width: 40px;
+        float: right;
+        &:hover,
+        &:active {
+            transform: none;
+            -webkit-transform: none;
+            box-shadow: none;
+            border-bottom-width: 1px;
+        }
+    }
+    @include modifier(prefix) {
+        border-radius: $um / 6 0 0 $um / 6;
+        display: inline-block;
+        margin-right: 0;
+        height: 30px;
+        padding: 0;
+        position: relative;
+        width: 40px;
+        z-index: 1;
+        border: none;
+        opacity: 1;
+        background-color: transparent;
+        cursor: pointer;
+        border:1px solid rgba(0,0,0,0.2);
+        border-right: none;
+        &:hover,
+        &:active {
+            transform: none;
+            -webkit-transform: none;
+            box-shadow: none;
+            border-bottom-width: 1px;
+        }
+        + .form-input--prefix {
+            padding: 0 0.75rem;
+            width: calc(100% - 4rem);
+            margin: 0 0 0 -3px;
+            border-radius: 0 2px 2px 0;
+            border-left: none;
+     
+        }
+
+
+
+    }
+    @include modifier(iconAlt) {
+        border: none;
+        background: transparent;
+        &:hover {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    @include modifier(active) {
+        color: $color-buttonError-text;
+        color: #fff;
+        border-color: $color-accentBlue-dark;
+        background-color: $color-accentBlue-default;
+        &:hover {
+            border-color: $color-accentBlue-dark;
+            background-color: $color-accentBlue-default;
+            box-shadow: 0 2px $color-accentBlue-dark;
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        &:active {
+            -webkit-transform: none;
+            transform: none;
+            color: #fff;
+            border-color: $color-accentBlue-dark;
+            background-color: $color-accentBlue-default;
+            box-shadow: none;
+            border-width: 1px;
+        }
+    }
+    @include modifier(decorative) {
+        border-radius: $um / 6 0 0 $um / 6;
+        display: inline-block;
+        margin-right: -40px;
+        height: 30px;
+        padding: 0;
+        position: relative;
+        width: 40px;
+        background: none;
+        border: none;
+    }
+    @include modifier(action) {
+        padding: $um / 6;
+        border-radius: 1rem;
+    }
+    @include modifier(condensed) {
+        padding: $um / 6 $um / 2;
+        vertical-align: baseline;
+    }
+    @include modifier(download) {
+        padding: $um / 6 $um / 2;
+        padding-bottom: $um / 4;
+        svg.icon {
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+@include extendBlock(button, tags) {
+    border-radius: 2px;
+    margin: 0.2rem 0 0;
+    padding: 0.3rem $um / 2;
+    &:hover,
+    &:active {
+        box-shadow: none;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@include extendBlock(button, ghost) {
+    background: transparent;
+    border: 1px solid transparentize(black, 0.5);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+    color: transparentize(black, 0.3);
+    &:hover,
+    &:active {
+        border-color: transparent;
+        background: transparentize(black, 0.3);
+        box-shadow: none;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        color: white;
+    }
+}
+
+@include extendBlock(button, borderless) {
+    border: none;
+    background: none;
+    box-shadow: none;
+    transition: all 1s;
+    padding: 0 0.5rem;
+    line-height: 14px;
+    vertical-align: baseline;
+    opacity: 0.8;
+    &:hover,
+    &:active {
+        border: none;
+        background: none;
+        box-shadow: none;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none; //text-decoration: underline;
+    }
+    @include element(icon) {
+        margin-right: $um / 4;
+    }
+}
+
+@-webkit-keyframes warningminiballs {
+    0%,
+    100% {
+        box-shadow: -8px -7px 0 5px #fff, 8px -7px 0 5px#fff
+    }
+    50% {
+        box-shadow: 8px -7px 0 5px #fff, -8px -7px 0 5px #fff
+    }
+}
+
+@keyframes warningminiballs {
+    0%,
+    100% {
+        box-shadow: -8px -7px 0 5px #fff, 8px -7px 0 5px #fff
+    }
+    50% {
+        box-shadow: 8px -7px 0 5px #fff, -8px -7px 0 5px #fff
+    }
+}
+
+%successBtnBg {
+    color: transparent;
+    border-color: $color-buttonSuccess-border;
+    background-color: $color-buttonSuccess-background;
+    font-size: 0;
+    line-height: 2;
+    height: 2.5rem;
+}
+
+%parametersBtn {
+    font-size: 12px;
+    height: 2.5rem;
+    color: #ffffff;
+}
+
+%successBtnBg_text {
+    @extend %parametersBtn;
+    border-color: $color-buttonSuccess-border;
+    background-color: $color-buttonSuccess-background;
+}
+
+%successBtnBg_text_error {
+    @extend %parametersBtn;
+    border-color: $color-buttonError-border;
+    background-color: $color-buttonError-background;
+}
+
+%trackBtnBg_text {
+    @extend %parametersBtn;
+    border-color: $color-buttonTrack-border;
+    background-color: $color-buttonTrack-background;
+    ;
+}
+
+$videoBtnColor: #fdc401;
+
+.button.videoPulse {
+    width: $um * 3.5;
+    padding: 0;
+    font-size: 0;
+    height: $um * 3.5;
+    background-color: $videoBtnColor;
+    border-radius: 20rem; //display: block;
+    box-shadow: none;
+    border: none;
+    position: relative;
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 1.2rem solid $videoBtnColor;
+        border-right-width: 0;
+        border-left: 1.75rem solid #333;
+        margin-right: -0.5rem;
+        display: inline-block;
+    }
+}
+
+@include extendBlock(button, control) {
+    background: white; //display: none;
+    //position: absolute;
+    //top: 10.75rem;
+    //left: -$um;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+
+
+
+
+    height: $um * 2;
+    width: $um * 2;
+    border: none;
+    box-shadow: 0 0 0 1px $color-shadow, 1px 1px 1px $color-shadow;
+    border-radius: 3px;
+    padding-inline-end: 2px;
+    line-height: 1;
+    color: transparentize(black, 0.4);
+    transition: color 0.15s, background 0.15s, box-shadow 0.15s;
+    margin-left: 3px;
+    z-index: 1;
+
+
+    &:hover,
+    &:active {
+        outline: none;
+        color: currentColor;
+        box-shadow: 0 0 0 1px $color-shadow, 1px 1px 1px $color-shadow;
+    }
+    &:active {
+        background: $color-darkGrey-dark;
+        box-shadow: 0 0 0 1px Scolor-light inset;
+        color: white;
+    }
+}
+
+@include extendBlock(button, slider) {
+    position: absolute;
+    left: -0.75rem;
+    top: calc(50% - 1.5rem) !important;
+    transition: opacity 0.15s;
+    opacity: 1;
+    &:nth-child(odd) {
+        left: auto;
+        right: -0.75rem;
+    }
+
+    /*&:active {
+       top: calc(50% - 1rem);
+    }*/
+}
+
+@include extendBlock(button, blackf) {
+
+    @extend .button--narrow;
+    background-color: black;
+    color: white;
+    border-color: black; //transition:  background-color0.2s,  border-color 0.2s;
+    &:hover,
+    &:active {
+        box-shadow: none;
+        background-color: $color-darkGrey-dark;
+        border-color: $color-darkGrey-dark; // color:white;
+    }
+}
+
+@include extendBlock(button, hot) {
+
+    @extend .button--narrow;
+    background-color: #e00000;
+    color: white;
+    border-color: #e00000;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.5rem 0.4rem;
+    transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+
+    &:hover {
+        box-shadow: none;
+        background-color: darken(#e00000, 10%);
+        border-color: darken(#e00000, 10%);
+    }
+    &:active {
+        box-shadow: none;
+        background-color: $color-darkGrey-dark;
+        border-color: $color-darkGrey-dark;
+    }
+}
+
+
+@include extendBlock(button, toggle) {
+
+    @extend .button--narrow;
+    padding: 0.2rem;
+
+    transition: background-color0.2s, border-color 0.2s;
+    &:hover,
+    &:active {
+        box-shadow: none;
+        background-color: $color-lightGrey-dark;
+        border-color: $color-lightGrey-darker;
+        color: white;
+    }
+}
+
+@include extendBlock(button, csv) {
+
+    @extend .button--narrow;
+    padding: 0.5rem;
+
+    strong {
+        background-color: $color-darkGrey-light;
+        color: $color-lightGrey-default;
+        display: inline-block;
+        line-height: 1.4;
+        vertical-align: middle;
+        border-radius: 0.2rem;
+        padding: 0 0.32rem 0 0.3rem;
+    }
+
+
+    transition : background-color0.2s,
+    border-color 0.2s;
+    &:hover,
+    &:active {
+        box-shadow: none;
+        background-color: $color-lightGrey-dark;
+        border-color: $color-lightGrey-darker;
+
+        strong {
+            color: $color-lightGrey-dark;
+        }
+    }
+}
+
+.button--slider[disabled] {
+    pointer-events: none !important;
+    opacity: 0 !important; // top: calc(50% - 1.5rem);
+}
+
+
+
+@include extendBlock(button, link) {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        color:black;
+    }
+}
+
+
+.pack.button--pack {
+    border:none;
+    font-size: 0.9rem;
+    padding: 2rem 0.5rem 0.3rem;
+    margin:0.25rem;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center 0.45rem;
+    color:rgba(255,255,255,0.6);
+    border-radius:2px;
+    border:1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+    strong{
+        color:white;
+    }
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUzIiBkPSJNNTMuOCA0LjJjLTEuNS0uOC01LjEtLjctNi41IDBsLTM2LjYgMTljLTEuNi45LTIuNyA0LjctMi43IDUuOHYzOS45YzAgMS42IDEuMiA1IDIuNyA1LjlsMzYuNiAyMC45YzEuNC44IDMuOS44IDUuNCAwbDM2LjYtMjAuOWMxLjItLjcgMi43LTQuMyAyLjctNS45di0zOS45YzAtMi0xLjMtNS4xLTIuNy01LjlsLTM1LjUtMTguOXptLTM3LjcgNjUuOWMtLjktLjUtMS43LTEuOC0xLjctMi45di0zMi43YzAtMS4xLjgtMS41IDEuNy0xbDI4LjcgMTYuNGMuOS41IDEuNyAxLjggMS43IDIuOXYzMi43YzAgMS4xLS44IDEuNS0xLjcgMWwtMjguNy0xNi40em0zNy42LTI3LjFjLTIuMyAxLjMtNC4xIDEuMy02LjUgMGwtMjcuNi0xNS4zYy0uOS0uNS0uOS0xLjQgMC0xLjlsMjguOC0xNC4zYy45LS41IDIuNS0uNSAzLjQgMGwyOC43IDE0LjNjLjkuNS45IDEuNCAwIDEuOWwtMjYuOCAxNS4zem0xLjUgNDMuNWMtLjkuNS0xLjcuMS0xLjctMXYtMzIuNmMwLTEuMS44LTIuNCAxLjctMi45bDI4LjctMTYuM2MuOS0uNSAxLjctLjEgMS43IDF2MzIuN2MwIDEuMS0uOCAyLjQtMS43IDIuOWwtMjguNyAxNi4yeiIvPjwvc3ZnPg==);
+    &:hover, &:focus, &:active {
+        box-shadow: none;
+        outline: none;
+        background-position: center 0.45rem;
+    }
+}
+
+.pack.button--pack.pack--b2b:hover{
+
+    background-color:#FF6944; 
+
+}
+
+.pack.button--pack.pack--dropship:hover{
+
+    background-color:#FF9D2B; 
+
+}
+
+.pack.button--pack.pack--enterprise:hover{
+
+    background-color:#80AE2C; 
+
+}
+

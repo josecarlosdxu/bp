@@ -1,0 +1,53 @@
+<table class="table">
+    <thead class="table-thead">
+        <tr class="table-tr">
+            <th class="table-th table-item">Nombre del producto</th>
+            <th class="table-th table-item">Código</th>
+            <th class="table-th table-item table-item--number">Uds.</th>
+            <th class="table-th table-item table-item--number">Precio</th>
+            <th class="table-th table-item table-item--number">Dto.</th>
+            <th class="table-th table-item table-item--number">Precio dto.</th>
+            <th class="table-th table-item table-item--number">Importe</th>
+        </tr>
+    </thead>
+    <tbody class="table-tbody table-tbody--stripped">
+        {{>tableRowRelated}}
+        {{>tableRowRelated}}
+        {{>tableRowRelated}}
+    </tbody>
+    <tfoot class="table-tfoot table-tfoot--totals">
+
+        <tr class="table-tr">
+            <td class="table-item table-item--number" colspan="6"><strong>Importe</strong></td>
+            <td class="table-item table-item--number">1964.7 €</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-item table-item--number" colspan="6"><strong>Gastos de pago</strong></td>
+            <td class="table-item table-item--number">3 €</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-item table-item--number" colspan="6">Costes de envío</td>
+            <td class="table-item table-item--number">5.75 €</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-item table-item--number" colspan="6">Descuento automático</td>
+            <td class="table-item table-item--number">-98.24 €</td>
+        </tr>        
+        <tr class="table-tr">
+            <td class="table-item table-item--numberBlue" colspan="6">Base imponible 21%</td>
+            <td class="table-item table-item--numberBlue">1891.86 €</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-item table-item--number" colspan="6">IVA 21%</td>
+            <td class="table-item table-item--number">397.29 €</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-item table-item--numberTotal" colspan="6">TOTAL</td>
+            <td class="table-item table-item--numberTotal">2289.15 €</td>
+        </tr>
+
+
+
+    </tfoot>
+
+</table>

@@ -1,0 +1,21 @@
+<aside class="mobileTabs u-bg--white" data-js-accordion_selected_class="mobileTabs-itemHeader--selected"  data-js-accordion="accordion">
+    {{#each list}}
+    <article class="mobileTabs-item u-brb">
+        {{!-- <header class="mobileTabs-itemHeader{{#if_eq @index 0}} mobileTabs-itemHeader--selected{{/if_eq}} u-pdv u-mgb--half" data-js-accordion="link"> --}}
+            <header class="mobileTabs-itemHeader u-pdv u-mgb--half" data-js-accordion="link">
+            <div class="modularGrid-module mobileTabs-itemHeader--arrow">  
+                <h4 class="title1 u-upp  u-op-50 u-tal">{{name}}</h4>
+            </div>  
+        </header>
+        <section class="mobileTabs-itemContent u-pdb--half">
+           
+            <div class="modularGrid u-pdv">
+                <img src="../../img/banners/{{img}}.jpg" class="img--responsive" >
+              
+            </div>
+        </section>
+    </article>
+    {{/each}}
+</aside>
+
+

@@ -1,0 +1,20 @@
+@include block(orderOkMsg) {
+    //height: 320px;
+    padding: 2rem;
+
+    background: url("../img/tracking-pedido.svg") 95% no-repeat;
+    background-size: 25%;
+
+    @include element(title) {
+        @extend %type-titlecms;
+    }
+
+    @include element(text) {
+        max-width: 40rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        text-transform: none;
+        color: #666;
+    }
+}

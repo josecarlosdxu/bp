@@ -1,0 +1,37 @@
+@include block(popularSearch) {
+    font-size: 0;
+    @include element(item) {
+        @extend %type-mobilefooterlink;
+        /*&:after {
+            content:",";
+        }
+        &:last-child:after {
+            content:"";
+        }*/
+        &:hover {
+            color: $color-tags-link-hover-text;
+        }
+    }
+}
+
+@include extendBlock(popularSearch, mobile) {
+    align-items: flex-start;
+    -js-display: flex; display:flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    .footer-sectionTitle {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    @include element(item) {
+        align-items: center;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        -js-display: flex; display:flex;
+        justify-content: center;
+        line-height: 1;
+        margin-right: 0.5rem;
+        padding: $um / 2 $um;
+        width: auto;
+    }
+}

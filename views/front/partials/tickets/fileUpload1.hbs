@@ -1,0 +1,26 @@
+
+    <label class="form-label">{{#if order}}<b class="shoppingCartStep-number"> {{order}}</b>{{/if}}{{label}}{{#if optional}} <span data-js-tooltip="{{optional}}" class="form-info"><i class="icon fa fa-info-circle"></i></span>{{/if}}</label>
+    <div class="modularGrid">
+        <div class="modularGrid-module">
+            <input type="file" class="form-input form-input--file">
+            <input type="text" placeholder="Seleccione archivo" data-form-input="fileText" class="form-input form-input--postfix form-input--collapse">
+            <button class="button button--postfix"> <svg class="icon icon--inline icon--xs" role="img"> <use xlink:href="../../img/icons/svg-defs.svg#icon-search"/></svg></button>
+        </div>
+    </div>
+
+    <div class="modularGrid u-pdt">
+
+     {{#times 3}}
+
+        <button class="uploadFile">Archivo subido nº{{this}} <svg class="uploadFile-icon" role="img"> <use xlink:href="../../img/icons/svg-defs.svg#icon-trash"/></svg></button>
+
+
+     {{/times}}
+
+
+
+
+
+
+    </div>
+

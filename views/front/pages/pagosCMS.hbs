@@ -1,0 +1,24 @@
+---
+layout: front/layouts/landing.hbs
+title: Formas de pago
+---
+<section class="content content--full u-brb">
+	{{>paymentHero}}
+</section>
+
+<section class="content">
+	<div class="modularGrid modularGrid--boxed u-pdt2 u-tac u-pdb u-xxs-hide u-lg-show">
+		<h2 class="supertitle1 u-mgt">Escoja la opción de pago que mejor se adapte a sus necesidades</h2>
+		<h3 class="superSubtitle1 u-pd">BigBuy ofrece diferentes métodos de pago, totalmente seguros. <br>Le explicamos en qué consiste cada uno.</h3>    
+	</div>
+	{{>paymentFeatures paymentList}}
+</section>
+
+<section class="content content--light u-brdt">
+	<div class="modularGrid modularGrid--boxed u-pdv2">
+		<div class="modularGrid-module">
+			<h3 class="supertitle supertitle--lighten u-pdb--half">Dudas frecuentes</h3>
+		{{>paymentFaqs}}
+		</div>
+	</div>
+</section>

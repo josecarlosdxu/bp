@@ -1,0 +1,22 @@
+@include block(content) {
+    display: block;
+    @include modifier(light) {
+        background: white;
+    }
+    @include modifier(inverse) {
+        background: #353b40;
+        color: #fff;
+        font-weight: 400;
+        .button--ghost {
+            border: 1px solid transparentize($ghostAltColor, 0.3);
+            box-shadow: 0 0 0 1px transparentize($ghostAltColor, 0.9) inset;
+            color: transparentize($ghostAltColor, 0.1);
+            &:hover,
+            &:focus,
+            &:active {
+                background: transparentize($ghostAltColor, 0.2);
+                color: invert($ghostAltColor);
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@include block(scrollStocksArea) {
+      max-height: 15rem;
+      overflow-x: hidden;
+      overflow-y: scroll;
+     border-top: 1px solid  #ddd;
+     border-bottom: 1px solid #ddd;
+     margin-top: -1px;
+     outline: none;
+
+
+
+
+@include element(header) {
+
+       outline: none;
+
+        @include addBreakpoint(md) {
+              width: 98%;
+        }
+
+
+
+
+
+}
+}
+
+

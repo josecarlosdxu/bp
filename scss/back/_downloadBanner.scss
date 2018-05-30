@@ -1,0 +1,331 @@
+@include block(downloadBanner) {
+    /* margin: 0;
+    padding: $um / 2 $um / 2 $um / 3;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background: none;
+    overflow: visible;
+    //margin-right: $um / 2;
+    //margin-bottom: $um / 2;
+    position: relative;
+    &:hover, &:focus {
+        outline: none;
+    }*/
+    @include element(thumb) {
+        display: block; //height: 80px;
+        position: relative; //border:1px solid rgba(0, 0, 0, 0.15);
+        transition: border-color 0.2s;
+        box-shadow: 0 0 0 2px transparent;
+        transition: box-shadow 0.15s;
+    }
+    @include element(img) {
+        display: none;
+        height: auto;
+        max-height: 25rem;
+        max-width: 51rem;
+        width: auto;
+        @include modifier(active) {
+            display: block;
+        }
+    }
+    @include element(imgContainer) {
+        position: relative;
+    }
+    @include element(checkbox) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%; //height: 100%;
+        //cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+        &:checked {
+            +.downloadBanner-checked {
+                opacity: 1;
+            }
+            ~.downloadBanner-thumb {
+                box-shadow: 0 0 0 2px $color-accentBlue-default;
+            }
+        }
+    }
+    @include element(list) {
+        //width: 100%;       
+        position: relative; //overflow: hidden; 
+
+        display: flex;
+        padding: 1rem;
+        left: 0;
+        top: 0;
+        transition: left 0.2s ease-in; //margin-top: 1rem; 
+    }
+    @include element(item) {
+        margin-right: 1rem;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+       
+        /*display: flex;
+        align-items: center;
+        flex-wrap: wrap;*/
+        display: block;
+
+
+        background-color: $color-lightGrey-default; //min-width: 6rem;
+        //min-height: 6rem;
+        label {
+            position: relative;
+            cursor: pointer;
+            .downloadBanner-checked {
+                top: $um;
+            }
+        }
+        &:before {
+            /*position: absolute;
+            left:calc(50% - 0.75rem);
+            top:calc(50% - 0.75rem);*/
+            display: block;
+            content: "";
+            width: $um;
+            height: $um;
+            border: 3px solid white;
+            z-index: 0;
+            border-radius: 3rem;
+            border-top-color: transparent;
+            animation: rotateLoading 1s linear infinite;
+            transform-origin: center center;
+            margin: 2rem;
+        }
+    }
+    @include element(container) {
+        position: relative;
+        display: block; // background-color: #f2f2f2;
+        width: calc(100% - 1.5rem); //overflow: hidden;  
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    @include element(content) {
+        position: relative;
+        display: block;
+        background-color: #f2f2f2;
+        width: 100%;
+        overflow: hidden;
+    }
+    @include element(checked) {
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+}
+
+[data-js-downloadbanner="checkbox"] {
+    &:checked {
+        +.langlist-minicheck {
+            opacity: 1;
+            +.langlist-label {
+                background-color: transparentize($color-accentBlue-default, 0.9);
+                color: $color-accentBlue-dark;
+            }
+        }
+    }
+}
+
+
+@include extendElement(downloadBanner, item, loaded) {
+    background-color: $color-lightGrey-light;
+    &:before {
+        display: none;
+    }
+}
+
+@include extendBlock(downloadBanner, old) {
+    margin: 0;
+    padding: $um / 2 $um / 2 $um / 3;
+    display: inline-block;
+    /*background: none;*/
+    overflow: visible;
+    margin-right: $um / 2;
+    margin-bottom: $um / 2;
+    position: relative;
+    background-color: white;
+    //border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px  rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+    @include element(thumb) {
+        display: block;
+        height: 80px;
+        position: relative;
+    }
+    @include element(img) {
+        display: none;
+        height: auto;
+        max-height: 25rem;
+        max-width: 51rem;
+        width: auto;
+        @include modifier(active) {
+            display: block;
+        }
+    }
+    @include element( imgContainer) {
+        position: relative;
+    }
+    /*@include element(checkbox) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        //height: 100%;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+    }
+*/
+
+     @include element(checkbox) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%; //height: 100%;
+        //cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+        &:checked {
+            +.downloadBanner-checked {
+                opacity: 1;
+            }
+            ~.downloadBanner-thumb {
+                box-shadow: none;
+            }
+             ~.downloadBanner-border {
+                opacity: 1;
+            }
+        }
+    }
+
+
+    @include element(text) {
+        margin:0.25rem 0 0;
+        display: inline-block;
+        
+    }
+    @include element(border) {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        top: 0;
+        left:0;
+        box-shadow:  0 0 1px 1px  $color-accentBlue-default;
+        transition:opacity 0.2s;
+        //pointer-events:none;
+        opacity: 0;
+       
+
+        
+    }
+}
+
+
+@include extendBlock(downloadBanner, min) {
+  
+
+
+    width: 11.5rem;
+    background-color: white;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin:0 0.7rem 0.9rem 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px  rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        outline: none;
+        @include element(border) {
+            opacity: 1;
+         }
+
+    }
+
+
+
+    @include element(thumb) {
+        display: block;
+        width: auto;       
+        height: 4.5rem;
+        margin: 0.5rem;
+        
+    }
+
+    @include element(text) {
+        width: 6rem;
+        display: block;
+        line-height: 1.15;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        opacity: 0.8;
+        
+    }
+    @include element(border) {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        top: 0;
+        left:0;
+        box-shadow:  0 0 1px 1px  $color-accentBlue-default;
+        transition:opacity 0.2s;      
+        opacity: 0;
+       
+
+       
+
+
+    }
+    @include element(checked) {
+        top:0.1rem;
+        left:0.1rem;
+        
+    }
+
+     @include element(checkbox) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%; //height: 100%;
+        //cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+        &:checked {
+            +.downloadBanner-checked {
+                opacity: 1;
+            }
+             ~.downloadBanner-thumb {
+                box-shadow: none;
+            }
+           
+             ~.downloadBanner-border {
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+
+
+}

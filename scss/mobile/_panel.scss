@@ -1,0 +1,16 @@
+@include block(panel) {
+    @include element(item) {
+        flex-wrap: wrap;
+    }
+    @include element(header) {
+        text-overflow: unset;
+        white-space: initial;
+        text-transform: uppercase;
+        padding: 1rem 0.9rem 1.2rem;
+    }
+    @include element(itemTitle) {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}

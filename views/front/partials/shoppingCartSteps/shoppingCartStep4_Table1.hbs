@@ -1,0 +1,52 @@
+<table class="table  table--border table--condensed " data-js-accordion_selected_class="table-tr--selected" data-js-accordion="accordion" >
+    <thead class="table-thead">
+        <tr class="table-tr">
+            <th class="table-item u-xs-25">Tipo de envío</th>
+            <th class="table-item u-xs-30">Plazo de preparación</th>
+            <th class="table-item ">Productos</th>
+            <th class="table-item table-item--number u-xs-20">Porte</th>
+            <th class="table-item u-xs-5"></th>
+        </tr>
+    </thead>
+    <tbody class="table-tbody ">
+        <tr class="table-tr">
+            <td class="table-item u-xs-25">
+                <input type="radio" name="order_type" class="form-radio" id="delay1">
+                <label for="delay1" class="form-inline"><strong>Envío único</strong></label>{{>tooltipInfo tooltip='tooltip_unico'}}
+            </td>
+
+            <td class="table-item u-xs-30">
+                <div class="stockAvailability">
+                    <ul class="stockAvailability-list">
+                        <li class="stockAvailability-item">2/5 días</li>
+                    </ul>
+                </div>
+            </td>
+            <td class="table-item">15</td>
+            <td class="table-item table-item--number u-xs-20">30€</td>
+            <td class="table-item u-xs-5 "><button title="Ver" class="button button--icon" data-js-btn="viewDetail1">
+                <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-preview"></use></svg>
+            </button></td>
+        </tr>
+         <tr class="table-tr">
+            <td class="table-item u-xs-25">
+                <input type="radio" name="order_type" class="form-radio" id="delay2">
+                <label for="delay2" class="form-inline"><strong>Envío múltiple</strong></label>{{>tooltipInfo tooltip='tooltip_unico'}}
+            </td>
+
+            <td class="table-item u-xs-30">
+                <div class="stockAvailability">
+                    <ul class="stockAvailability-list">
+                        <li class="stockAvailability-item">24/48h</li>
+                        <li class="stockAvailability-item">2/5 días</li>
+                    </ul>
+                </div>
+            </td>
+            <td class="table-item"><p>5</p><p>10</p></td>
+            <td class="table-item table-item--number u-xs-20">30€</td>
+            <td class="table-item u-xs-5 "><button title="Ver" class="button button--icon" data-js-btn="viewDetail">
+                <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-preview"></use></svg>
+            </button></td>
+        </tr>
+    </tbody>
+</table>

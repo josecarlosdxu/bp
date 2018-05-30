@@ -1,0 +1,89 @@
+<aside class="u-elem-center " data-js-content-stock="">
+    <div data-js-buy="" class="modularGrid u-pd">
+
+        <div data-js-buy-unitcontrol="unitcontrol" class="modularGrid-module u-xs-30 u-xs-30 u-pdt--half">
+            <label class="unitControl-label form-label">Unidades</label>
+            <div class="unitControl unitControl--inline">
+                <input type="text" data-js-quantity_to_cart="" min="1" value="1" max="67" class="form-input form-input--postfix unitControl-input">
+                <span class="form-postfix unitControl-groupBtns">
+                    <button class="button button--icon unitControl-button unitControl-button--plus"></button>
+                    <button class="button button--icon unitControl-button unitControl-button--minus"></button>
+                </span>
+            </div>
+        </div>
+
+        {{!-- CASO 1 - Usuario logueado - 2 fechas de envío --}}
+
+
+        {{#if nologin}}
+        <div class="modularGrid-module u-xs-70 u-pdt--half">
+          <div class="stockAvailability stockAvailability--vertical">
+            <p class="stockAvailability-title stockAvailability-title--success">
+                Disponible
+            </p>
+            </div></div>
+
+        {{else}}
+
+        <div class="modularGrid-module u-xs-70 u-pdt--half">
+          <div class="stockAvailability stockAvailability--vertical">
+
+            <p class="stockAvailability-title stockAvailability-title--success">
+                Stock disponible
+            </p>
+
+            <ul class="stockAvailability-list">
+                <li class="stockAvailability-item">12 uds. envío 24/48h</li>
+                <li class="stockAvailability-item">52 uds. envío 10 días</li>
+                <li class="stockAvailability-item">121 uds. envío 20 días</li>
+            </ul>
+
+          </div>
+        
+          <div class="stockAvailability stockAvailability--vertical">
+            <p class="stockAvailability-title stockAvailability-title--neutral">
+                Próximas entradas
+            </p>
+            <ul class="stockAvailability-list">
+                <li class="stockAvailability-item">12 uds. en Mayo</li>                           
+            </ul>
+          </div>
+        </div>
+        {{/if}}
+        
+
+        <div class="modularGrid-module u-pdt">
+            <div class="modularGrid ">
+                <div class="modularGrid-module {{#if nologin}}u-lg-85{{else}}u-lg-70 u-pdr--third{{/if}}">
+                    <button class="button button--primary button--full">
+                        <svg role="img" class="icon icon--inline icon--xs">
+                            <use xlink:href="../../img/icons/svg-defs.svg#icon-cart"></use>
+                        </svg>
+                        Añadir al carrito
+                    </button>
+                </div>
+
+                 {{#unless nologin}}
+
+                <div class="modularGrid-module u-lg-15 u-md-20 u-md-mgt">
+                    <button title="Añadir bloqueo" data-js-add_lock="" class="button button--narrow button--selected" >
+                        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-lock"></use></svg>
+                    </button>
+                </div>
+                {{/unless}}
+                <div class="modularGrid-module u-lg-15 u-md-20 u-md-mgt{{#if nologin}} u-tar{{/if}}">
+                    <button title="Próximas entradas" data-js-add_lock="" class="button button--narrow button--selectedGreen" data-js-ticket-action="followMe">
+                         <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-stockFollow"></use></svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</aside>

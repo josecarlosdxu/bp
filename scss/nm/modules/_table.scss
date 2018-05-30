@@ -1,0 +1,956 @@
+%tableItem {
+    padding: $um / 2;
+    vertical-align: middle;
+}
+
+%tableItem--condensed {
+    padding: $um / 4;
+    vertical-align: middle;
+}
+
+@include block(table) {
+    width: 100%;
+    @include element(accordionIcon) {
+        display: inline-block;
+        margin: 0 1rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        border: none;
+        opacity: 0.6;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        position: relative;
+        top: -3px;
+        transform: rotate(45deg);
+    }
+    @include element(message) {
+        line-height: 1;
+    }
+    @include modifier(fixedwidth) {
+        table-layout: fixed;
+    }
+    @include element(item) {
+        text-align: left;
+        @extend %tableItem;
+        @include modifier(datarange) {
+            width: 223px;
+        }
+        @include modifier(number) {
+            text-align: right;
+            white-space: nowrap;
+        }
+        @include modifier(borderless) {
+            border: none;
+        }
+        @include modifier(numberNegative) {
+            color: red;
+            font-weight: 600;
+            text-align: right;
+            white-space: nowrap;
+        }
+        @include modifier(numberBlue) {
+            color: #0090FF;
+            font-weight: 600;
+            text-align: right;
+            white-space: nowrap;
+        }
+        @include modifier(strong) {
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        @include modifier(numberTotal) {
+            color: #0090FF;
+            font-weight: 600;
+            text-align: right;
+            white-space: nowrap;
+            font-size: 1.25rem;
+        }
+        @include modifier(image) {
+            padding: $um / 2;
+            width: 3%;
+        }
+        @include modifier(disabled) {
+            opacity: 0.5;
+        }
+        @include modifier(thumb) {
+            padding: $um / 3;
+            width: 5%;
+        }
+        @include modifier(stockActions) {
+            width: 16%;
+        }
+        @include modifier(boolean) {
+            text-align: center;
+        }
+        @include modifier(text) {
+            text-align: left;
+        }
+        @include modifier(handler) {
+            width: 6%;
+        }
+        @include modifier(centered) {
+            text-align: center;
+        }
+        @include modifier(filtered) {
+            color: #008dff;
+            font-weight: 700;
+        }
+        &[scope="row"] {
+            border-right: 1px solid $color-shadow;
+        }
+        @include modifier(top) {
+            vertical-align: top;
+        }
+    }
+    @include element(tbody) {
+        border-bottom: 1px solid $color-shadow;
+    }
+    @include element(td) {
+        @extend %tableItem;
+    }
+    @include element(tr) {
+        @include modifier(highlight) {
+            background: #f5f5f5;
+        }
+    }
+    @include element(actionGroup) {
+        background: #09f;
+        display: none;
+    }
+    @include element(action) {
+        background: none;
+        color: #FFF;
+        border: none;
+        padding: $um/2 $um;
+        border-radius: 0;
+        transition: background 0.1s;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: text-bottom;
+        &:hover,
+        &:focus {
+            outline: none;
+            background: $color-light;
+        }
+    }
+    @include element(tableIcon) {
+        margin-right: 0.5rem;
+    }
+    @include element(tfoot) {
+        font-weight: 700;
+        border-top:2px solid transparent
+    }
+    @include element(caption) {
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: $um /2;
+        @include modifier(big) {
+            font-size: $um * 0.78;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+    @include element(thead) {
+        border-bottom: 1px solid #e5e5e5;
+        @include modifier(borderless) {
+            border-bottom: none;
+        }
+        @include modifier(dark) {
+            background-color: $color-lightGrey-light;
+        }
+    }
+    @include element(th) {
+        white-space: nowrap; //border-right: 1px solid;
+        @include modifier(adjust) {
+            white-space: inherit;
+            text-align: left;
+            line-height: 1.2;
+            padding-left: $um / 2; //box-shadow: 0 0 0 1px inset;
+        }
+        @include modifier(datarange) {
+            width: 224px;
+        }
+    }
+}
+
+@include extendElement(table, tbody, stripped) {
+    @include element(tr) {
+        border-bottom: 1px solid #e5e5e5;
+        &:nth-child(even) {
+            background: $color-tableStripped-tr-even;
+        }
+    }
+    @include element(item) {
+        border-left: 1px solid rgba(0, 0, 0, 0.03);
+        line-height: 1.1;
+        @include modifier(borderless) {
+            border: none;
+        }
+    }
+}
+
+@include extendBlock (table, dark) {
+    @include element(thead) {
+        border-top: 1px solid #e5e5e5;
+        background: $color-tableStripped-tr-even;
+    }
+    @include element(tbody) {
+        background: $color-tableStripped-tr-even;
+    } //  @include element(item) {
+    //     border-left: 0;
+    // }
+}
+
+@include extendBlock(table, condensed) {
+    @include element(item) {
+        padding: $um / 6;
+        padding-left: $um / 3;
+        @include modifier(image) {
+            padding: $um / 3;
+        }
+    }
+}
+
+@include extendBlock(table, slim) {
+    @include element(item) {
+        padding: $um / 4;
+    }
+    @include element(tr) {
+        border-bottom: 1px solid #e5e5e5;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+@include extendBlock(table, border) {
+    box-shadow: 1px 0 rgba(0, 0, 0, 0.1), -1px 0 rgba(0, 0, 0, 0.1);
+    @include element(tr) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    @include element(thead) {
+        border-color: rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+@include extendBlock(table, interactive) {
+    @include element(th) {
+        cursor: pointer;
+        &:hover {
+            color: #999;
+        }
+    }
+    @include element(tr) {
+        &:hover {
+            cursor: pointer;
+            color: $color-tableInteractive-tr-text-hover;
+        }
+    }
+}
+
+@include extendElement(table, item, image) {
+    img {
+        max-width: 2rem;
+    }
+}
+
+@include extendElement(table, item, borderBlue) {
+
+    border-left: 1px solid $color-accentBlue-default;
+    border-right: 1px solid $color-accentBlue-default !important;
+}
+
+@include extendElement(table, item, markedBlue) {
+    &:before{
+        content:"";
+        display: inline-block;
+        border:4px solid transparent;
+        border-right-width: 0;
+        border-left:7px solid$color-accentBlue-default;
+        margin-right: 1rem;
+    }
+}
+
+
+@include extendElement(table, tr, borderBlue) {
+    border-left: 1px solid$color-accentBlue-default;
+     border-right: 1px solid$color-accentBlue-default;
+    td:last-child{
+          border-right: 1px solid$color-accentBlue-default !important;
+    }
+}
+@include extendElement(table, tr, borderBlueInit) {
+    border-left: 1px solid$color-accentBlue-default;
+     border-right: 1px solid$color-accentBlue-default;
+     border-top: 1px solid$color-accentBlue-default;
+     td:last-child{
+          border-right: 1px solid$color-accentBlue-default !important;
+    }
+}
+
+
+
+@include extendElement(table, tbody, borderless) {
+    border-bottom: none;
+}
+
+@include extendElement(table, tbody, borderless_stripped) {
+    border-bottom: none;
+    @include element(tr) {
+        &:nth-child(even) {
+            background: $color-tableStripped-tr-even;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+    @include element(item) {
+        //border-left: 1px solid rgba(0, 0, 0, 0.03);
+        line-height: 1;
+    }
+}
+
+@include extendElement(table, caption, header) {
+    border-bottom: 1px solid #ccc;
+    padding: $um / 2 $um / 1.5;
+    margin-bottom: 0;
+    @include element(title) {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+
+@include extendElement(table, tr, sort) {
+    @include element(item) {
+        border-left: 1px solid rgba(0, 0, 0, 0.03);
+        @include modifier(borderless) {
+            border: none;
+        }
+    }
+    @include element(th) {
+        border-left: none;
+    }
+    &:hover,
+    &:focus {
+        @include element(th) {
+            color: #000;
+        }
+    }
+}
+
+@include extendElement(table, tfoot, totals) {
+    background: #F7F7F8;
+    font-weight: 400;
+    @include element(item) {
+        padding: $um / 6 $um / 2;
+        &:last-child {
+            font-weight: 600;
+        }
+    }
+}
+
+@include extendElement(table, tr, filters) {
+    border-bottom: none;
+    @include element(th) {
+        padding-top: 0;
+    }
+    @include element(item) {
+        border-left: 1px solid rgba(0, 0, 0, 0.03);
+    }
+}
+
+@include extendElement(table, tr, error) {
+    color: #f9625d;
+    @include element(item) {
+        background-color: transparentize(red, 0.95);
+        &:first-child {
+            border-left: 1px solid #f9625d;
+            box-shadow: 4px 0 #f9625d inset;
+        }
+    }
+}
+
+@include extendElement(table, tr, warning) {
+    color: #ff9800;
+    @include element(item) {
+        background: rgba(255, 195, 107, 0.1);
+        &:first-child {
+            border-left: 1px solid #ff9800;
+            box-shadow: 4px 0 #ff9800 inset;
+        }
+    }
+}
+
+@include extendElement(table, tr, selected) {
+    border-left: 1px solid #09f;
+    @include element(item) {
+        background: rgba(102, 188, 255, 0.1);
+        &:first-child {
+            border-left: 1px solid #09f;
+            box-shadow: 5px 0 #09f inset;
+        }
+    }
+    @include element(accordionIcon) {
+        opacity: 1;
+        transform: rotate(-135deg);
+
+        border-color: $color-accentBlue-default;
+    }
+}
+
+@include extendBlock(table, indented) {
+    @include element(caption) {
+        box-shadow: 8px 0 #ddd inset;
+        border-bottom-color: #ddd;
+    }
+    @include element(item) {
+        &:first-child {
+            box-shadow: 8px 0 #ddd inset;
+        }
+    }
+}
+
+@include extendBlock(table, ultracondensed) {
+    @include element(captionIcon) {
+        display: inline-block;
+        margin-right: 0.5rem;
+        vertical-align: top;
+    }
+    @include element(caption) {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        vertical-align: top;
+        color: #222;
+    }
+    @include element(tbody) {
+        border-bottom: none;
+        color: #888;
+    }
+    @include element(item) {
+        padding: 0.17rem 0;
+        font-size: 0.9rem;
+        padding: 0; //line-height: 1.5;
+        font-weight: 400;
+    }
+    th.table-item:first-child {
+        padding-bottom: 3px;
+    }
+    @include element(thead) {
+        color: #222;
+    }
+}
+
+@include extendBlock(table, comparative) {
+    border-collapse: collapse;
+    background: #fff;
+    margin-bottom: -1px;
+    @include element(accordionContent) {
+        text-align: left;
+        overflow: hidden;
+        display: none;
+        padding: 1.5rem 1.5rem 2rem;
+        border-top: none;
+        @include modifier(pd) {
+            padding: 1rem 1.5rem 1.5rem;
+        }
+    }
+    @include element(item) {
+        text-align: center;
+        @include modifier(tdAlign) {
+            text-align: left;
+        }
+        @include modifier(thAlign) {
+            text-align: left;
+            font-weight: initial;
+            color: #666666;
+            &:first-child {
+                padding-left: 1.8rem;
+            }
+            &:last-child {
+                text-align: center;
+            }
+        }
+        &[scope="row"] {
+            border-right: none;
+            width: 3%;
+            cursor: pointer;
+        }
+        @include modifier(rowtitle) {
+            text-align: left;
+            cursor: pointer;
+            background: $color-tableStripped-tr-even;
+            >.icon {
+                transition: none;
+            }
+        }
+        @include modifier(subrowtitle) {
+            text-align: left;
+            cursor: pointer;
+            width: 49%;
+        }
+        @include modifier(theadTitle) {
+            text-align: left;
+            vertical-align: bottom;
+        }
+        @include modifier(theadInfo) {
+            text-align: left;
+            vertical-align: bottom;
+            padding-left: $um;
+            font-weight: 500;
+            background: #eee;
+        }
+    }
+}
+
+@include extendElement(table, tbody, accordion) {
+    border-left: 1px solid #e5e5e5;
+    [data-js-accordion~="link"]:hover {
+        background: rgba(0, 0, 0, 0.02);
+    }
+    @include element(tr) {
+        border-top: 1px solid #e5e5e5;
+        transition: background 0.2s; //&:nth-child(4n-1) {
+        //}
+        @include modifier(content) {
+            border-top: none;
+        }
+        @include modifier(selected) {
+            color: #09f;
+            border-color: #09f;
+            box-shadow: 0 1px transparentize(#09f, 0.5);
+            &:hover {
+                background: transparent;
+            }
+            &:first-child {
+                [data-js-accordion="chevron"]{
+                    transform: rotate(180deg);
+
+                }
+
+
+            }
+            +tr .table-accordionContent {
+                display: block;
+                padding: 1.5rem 1.5rem 2rem;
+            }
+            .icon--xs {
+               // transform: rotate(180deg);
+            }
+        }
+    }
+    @include element(item) {
+        border-right: 1px solid #e5e5e5;
+        min-width: 11rem;
+        &:first-child {
+            border-left: 1px solid #e5e5e5;
+            box-shadow: 0 1px #e5e5e5 inset;
+        }
+        svg+* {
+            float: right;
+            width: calc(100% - 2.5rem);
+        }
+        @include modifier(rowtitle) {
+            cursor: pointer;
+            background: $color-tableStripped-tr-even;
+        }
+    }
+}
+
+@include extendElement(table, tbody, accordionButton) {
+    border-left: 1px solid #e5e5e5;
+    @include element(tr) {
+        border-top: 1px solid #e5e5e5;
+        &:nth-child(4n-1) {
+            background: $color-tableStripped-tr-even;
+        }
+        @include modifier(content) {
+            border-top: none;
+        }
+        @include modifier(selected) {
+            // color:  #09f;
+            // border-color:  #09f;
+        }
+    }
+    @include element(item) {
+        border-right: 1px solid #e5e5e5;
+        &:first-child {
+            border-left: 1px solid #e5e5e5;
+            background: #DDDDDD;
+            box-shadow: none;
+        }
+    }
+}
+
+@include extendElement(table, tr, content) {
+    @include element(item) {
+        padding: 0;
+    }
+}
+
+@include extendElement(table, tr, selectRow) {
+    @include element(item) {
+        position: relative;
+        &:first-child:before {
+            display: inline-block;
+            border: 5px solid transparent;
+            border-left: 5px solid #ffe600;
+            width: 0;
+            height: 0;
+            content: "";
+        }
+    }
+}
+
+@include extendElement(table, tr, rowplans) {
+    @include element(item) {
+        text-align: center;
+        cursor: default;
+        padding: $um / 2;
+        background: white;
+        &:first-child {
+            text-align: left;
+        }
+        @include modifier(top) {
+            vertical-align: top;
+        }
+        @include modifier(left) {
+            text-align: left;
+        }
+    }
+}
+
+.table-tr--selected .table-item--rowtitle {
+    background: rgba(102, 188, 255, 0.1); //// bad practice TODO fix
+    >.icon {
+        transform: rotate(-180deg);
+    }
+}
+
+@include extendBlock(table, ticketslist) {
+    @include element(item) {
+        padding: $um / 6 $um / 2;
+        @include modifier(date) {
+            padding-left: $um;
+        }
+    }
+    @include element(tr) {
+        @include modifier(filters) {
+            .table-item {
+                //background: red;
+            }
+        }
+    }
+}
+
+@include extendBlock(table, accordionSmall) {
+    border: 1px solid $color-lightGrey-default;
+    .table-item[colspan="100"] {
+        padding: 0;
+    }
+    @include element(tbody) {
+        border-bottom: none;
+    }
+    @include element(label) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        background: transparentize($color-shadow, 0.06);
+        &:before {
+            font-weight: 700;
+            content: "\203a";
+            display: inline-block;
+            font-size: 1.9rem;
+            padding: 0;
+            height: 1rem;
+            width: $um;
+            line-height: 0.3;
+            transform: none;
+            text-align: center;
+            transform: none;
+            transform-origin: 50% 50% 0;
+            transition: transform 0.2s;
+            background: transparent;
+            opacity: 0.5;
+        }
+        @include modifier(active) {
+            &:before {
+                transform: rotate(90deg);
+            }
+        }
+    }
+    @include element(tr) {
+        @include modifier(selectable) {
+            //background: $color-tableStripped-tr-even;
+            border-top: 1px solid $color-lightGrey-default;
+        }
+    }
+    @include element(accordionSection) {
+        display: block;
+        transition: transform 0.2s, height 0.2s, opacity 0.1s 0s;
+        transform-origin: 50% 0;
+        transform: scaleY(0);
+        opacity: 0;
+        height: 0;
+        @include modifier(active) {
+            display: block;
+            transform: scaleY(1);
+            height: 100%;
+            opacity: 1;
+            transition: transform 0.2s, height 0.2s, opacity 0.5s 0.1s;
+        }
+    }
+}
+
+@include extendElement(table, tr, selectable) {
+    @include element(item) {
+        position: relative;
+        &:nth-of-type(1) {
+            padding-left: $um * 1.5;
+        }
+    }
+}
+
+@include extendBlock(table, accordionSmallContent) {
+    border-top: 1px solid $color-lightGrey-default;
+    @include element(tr) {
+        border-bottom: 1px solid transparentize($color-shadow, 0.05);
+        &:last-child {
+            border-bottom: none;
+        }
+        &:nth-child(even) {
+            background: $color-lightGrey-lighter;
+        }
+    }
+    @include element(item) {
+        @include modifier(number) {
+            padding-right: 1rem;
+        }
+        @include modifier(img) {
+            width: $um * 3;
+            padding: $um / 3;
+        }
+    }
+}
+
+@include extendElement(table, tr, message) {
+    display: none;
+    border-bottom: 1px solid $color-shadow;
+    @include element(item) {
+        background: white;
+    }
+}
+
+.table-tr[data-js-tablemsg] {
+    cursor: help;
+}
+
+.table--accordionSmall th:nth-last-of-type(1),
+.table-tr--selectable .table-item {
+    border-right: 1px solid $color-lightGrey-default;
+}
+
+.table--accordionSmallContent th:nth-last-of-type(1) {
+    border-right: none;
+}
+
+@-moz-document url-prefix() {
+    .table-tr--selectable .table-item:nth-of-type(1)::before {
+        line-height: 0.3;
+    }
+    .table--accordionSmall th:nth-last-of-type(1) {
+        border-right: none;
+    }
+    .table--accordionSmallContent .table-tr {
+        border-bottom: 1px solid $color-shadow;
+    }
+}
+
+@include extendBlock(table, tablePanels) {
+    background: white;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0 1px transparentize(black, 0.8);
+    @include element(tbody) {
+        border-bottom: none;
+    }
+    @include element(item) {
+        border-left: 1px solid $color-shadow;
+        padding: $um;
+        vertical-align: top;
+        @include modifier(rowtitle) {
+            background: $color-lightGrey-light;
+            vertical-align: middle;
+            border-left: none;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        &:first-child {
+            border-left: none;
+        }
+    }
+    @include element(tr) {
+        border-top: 1px solid $color-shadow;
+    }
+    @include element(thead) {
+        border-bottom: none;
+        >.table-tr {
+            border-top: none;
+        }
+    }
+    @include element(th) {
+        background: $color-shadow;
+        vertical-align: middle;
+        font-size: 1.2rem;
+        &:first-child {
+            border-left: none;
+        }
+    }
+}
+
+th.table-item[data-js-activepack] {
+    border: 1px solid $color-accentBlue-default;
+    border-bottom: inherit;
+}
+
+tr td.table-item[data-js-activepack] {
+    border-left: 1px solid $color-accentBlue-default;
+    border-right: 1px solid $color-accentBlue-default;
+}
+
+tfoot.table-tfoot tr td.table-item[data-js-activepack] {
+    border: 1px solid $color-accentBlue-default;
+}
+
+
+@-moz-document url-prefix() {
+    .table--ultracondensed .table-item {
+        //padding: 0.13rem 0;
+    }
+}
+
+
+.table-item[class*="-3rd"] {
+    width: 33.3333%;
+}
+
+
+.table--tablePanels.error {
+    color: $color-form-labelError;
+    box-shadow: 0 0 0 1px $color-form-labelError;
+    background-color: #feeeee;
+    .table-th {
+        background-color: transparentize($color-red-light, 0.5);
+    }
+    .table-item,
+    .u-brt {
+        border-color: $color-red-light;
+    }
+    .form-checkbox:not(:checked) {
+        box-shadow: 0 0 0 1px $color-form-labelError;
+        background-color: rgba(255, 255, 255, 0.75);
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+}
+
+
+
+@include extendBlock(table, fixedHeader) {
+
+    @include element(th) {
+        position: relative;
+        background-color: white;
+        padding: 0.25rem 1rem;
+        div {
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 0.25rem 1rem;
+        }
+    }
+}
+
+
+@include extendBlock(table, stickyhead) {
+    position: sticky;
+    top: 0;
+    table-layout: fixed;
+    z-index: 20;
+
+    colgroup col{
+        background-color: white;
+    }
+}
+
+//----Tabla monedero
+
+.underline{
+    text-decoration: underline;
+    color: #0090FD;
+}
+
+@include extendBlock(table, normalize) {
+    background: white;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0 1px transparentize(black, 0.8);
+    @include element(tbody) {
+        border-bottom: none;
+    }
+    @include element(item) {
+        border-left: 1px solid $color-shadow;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        vertical-align: middle;
+        font-size: 1.1rem;
+        @include modifier(rowtitle) {
+            background: $color-lightGrey-light;
+            vertical-align: middle;
+            border-left: none;
+            text-align: right;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding-right: 10px;
+
+        }
+        &:first-child {
+            border-left: none;
+        }
+    }
+    @include element(tr) {
+        border-top: 1px solid $color-shadow;
+    }
+    @include element(thead) {
+        border-bottom: none;
+        >.table-tr {
+            border-top: none;
+        }
+    }
+    @include element(th) {
+        background: $color-shadow;
+        vertical-align: middle;
+        font-size: 1.2rem;
+        &:first-child {
+            border-left: none;
+        }
+    }
+    a{
+        color: #7CB9FF;
+        text-decoration: underline;
+    }
+}
+

@@ -1,0 +1,25 @@
+{
+    "top": {
+        "title": "Viajes, Automóviles, Camping",
+        "cardListModifiers": ["primary", "showed"],
+        "cardElemModifiers":["big", "primary"],
+        "list": [{
+            "primaryTitle": "COCINA",
+            "number": "388",
+            "image": "http://londonred.dropshippershop.com/407-large_default/abrelatas-electrico-automatico.jpg"
+        },
+        {
+            "primaryTitle": "PELUQUERÍA Y ESTÉTICA",
+            "number": "159",
+            "image": "http://londonred.dropshippershop.com/407-large_default/abrelatas-electrico-automatico.jpg"
+
+        },
+        {
+            "primaryTitle": "HOGAR",
+            "number": "98",
+            "image": "http://londonred.dropshippershop.com/407-large_default/abrelatas-electrico-automatico.jpg"
+
+        }]
+
+    }
+}

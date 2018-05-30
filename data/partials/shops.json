@@ -1,0 +1,125 @@
+{
+    "default":
+    {
+        "icon": "fill",
+        "type": "info",
+        "title": "Introduzca los datos de su tienda",
+        "subtitle": "Debe rellenar el formulario con los datos solicitados.",
+        "date": "05/12/2017 17:45:24"
+    },
+    "check":
+    {
+        "icon": "chrono",
+        "type": "info",
+        "title": "Comprobando requisitos",
+        "subtitle": "Le confirmamos que hemos recibido su formulario y procedemos a comprobar los datos enviados.",
+        "date": "05/12/2017 17:45:24",
+        "open": "Ver estados",
+        "close": "Ver menos",
+        "hiddentexts": [
+            {
+                "title": "Estado 1",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            },
+            {
+                "title": "Estado 2",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            }
+
+        ]
+    },
+    "fail":
+    {
+        "icon": "times",
+        "type": "error",
+        "title": "Requisitos erróneos",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "date": "05/12/2017 17:45:24",
+        "open": "Ver estados",
+        "close": "Ver menos",
+        "hiddentexts": [
+            {
+                "title": "Comprobando requisitos",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            },
+            {
+                "title": "Introduzca los datos de su tienda",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            }
+        ]
+    },
+    "install":
+    {
+        "icon": "cog",
+        "type": "info",
+        "title": "Preparando instalación",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "date": "05/12/2017 17:45:24",
+        "open": "Ver estados",
+        "close": "Ver menos",
+        "hiddentexts": [
+
+            {
+                "title": "Estado 1",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            },
+            {
+                "title": "Estado 2",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            }
+        ]
+    },
+    "process":
+    {
+        "icon": "cogs",
+        "type": "info",
+        "title": "Instalación en proceso",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "date": "05/12/2017 17:45:24",
+        "open": "Ver estados",
+        "close": "Ver menos",
+        "hiddentexts": [
+            {
+                "title": "Estado 1",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            },
+            {
+                "title": "Estado 2",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            }
+        ]
+    },
+    "success":
+    {
+        "icon": "check",
+        "type": "success",
+        "title": "Tienda finalizada",
+        "subtitle": "Ya hemos activado su acceso a la tienda. Por favor, revise su correo electrónico.",
+        "date": "05/12/2017 17:45:24",
+        "open": "Ver estados",
+        "close": "Ver menos",
+        "hiddentexts": [
+
+            {
+                "title": "Estado 1",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            },
+            {
+                "title": "Estado 2",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "date": "05/12/2017 17:45:24"
+            }
+
+        ]
+    }
+
+}

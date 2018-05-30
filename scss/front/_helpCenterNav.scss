@@ -1,0 +1,164 @@
+%helpCenterNavitem {
+   // transition: all 0.1s;
+    position: relative;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.1s;
+    &:focus {
+        outline: none;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+%helpCenterNavitemButton {
+
+    //height: $um * 2;
+    border: none;
+    //padding-left: $um * 1.5;
+    color: currentColor;
+    background: transparent;
+    cursor: inherit;
+    position: relative;
+    text-align: left;
+    vertical-align:top;
+    font-weight: 700;
+    min-width: 100%;
+    &:focus {
+        outline: none;
+    }
+}
+
+@include block(helpCenterNav) {
+    outline: none;
+   // border-right: 1px solid $color-shadow;
+    @include element(itemButton) {
+        @extend %helpCenterNavitemButton;
+        font-family: $type-headingscms;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: color 0.1s;
+        @include modifier(selected) {
+            cursor: default;
+            //background: #ddd;
+            //background: $color-brandYellow-default;
+            //background: $color-lightGrey-default;
+            color: #000;
+            //color: $color-darkGrey-dark;
+            //color: white
+        }
+    }
+    @include element(icon) {
+        left: 0.75rem;
+        margin-top: 2px;
+        position: absolute;
+        display: none;
+    }
+    @include element(item) {
+        @extend %helpCenterNavitem;
+        //background: #f5f5f5;
+        //background: $color-darkGrey-light;
+        //background:$color-lightGrey-lighter;
+       // color: #333;
+        //color:$color-lightGrey-darker;
+        font-size: 14px;
+        font-weight: 400;
+        //border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        //border-bottom: 1px solid $color-darkGrey-light;
+        //transition: background-color 0.2s;
+         transition: color 0.2s;
+        &:hover {
+            //background: $color-lightGrey-light;
+        }
+        padding-bottom: 0.5rem;
+    }
+    @include element(subItemLabel) {
+        @extend %helpCenterNavitemButton;
+         display:flex;
+        align-items: center;
+        line-height: 1.2;
+        font-weight: 400;
+        padding-left: $um / 1.5;
+        color:$color-darkGrey-light;
+        height: 100%;
+       // box-shadow: inset 5px 0 #ddd;
+        //color: $color-darkGrey-default;
+        //box-shadow: inset 5px 0 $color-brandYellow-default;
+        //box-shadow: inset 5px 0 $color-lightGrey-default;
+        //box-shadow: inset 5px 0 $color-accentBlue-dark;
+        transition: color 0.1s;
+        &:hover {
+           color: black;
+           //font-weight: 700;
+            //color: $color-darkGrey-dark;
+            /*box-shadow: inset 5px 0 #999;
+            box-shadow: inset 5px 0 $color-brandYellow-dark;
+            background: $color-lightGrey-light;
+            background: $color-brandYellow-lighter;
+
+
+            background: #EFF8FF;*/
+            //color: $color-accentBlue-default;
+
+           // box-shadow: inset 5px 0 $color-accentBlue-default;
+
+
+
+        }
+    }
+    @include element(radio) {
+        display: none;
+        &:checked + .helpCenterNav-subItemLabel {
+            background: #EFF8FF;
+            color: $color-accentBlue-default;
+            //font-weight: 700;
+            cursor: default;
+            box-shadow: inset 3px 0 $color-accentBlue-default;
+        }
+    }
+    @include element(subItem) {
+        @extend %helpCenterNavitem;
+        font-size: 1rem;
+
+        //color: #999;
+        //background: #fff;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        height: $um * 1.5;
+        &:first-child {
+            //border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        /*
+
+                &:hover {
+                        color:#000;
+                        &:before {
+                                background: #999;
+                        }
+                }*/
+        /*@include modifier(selected) {
+                        background: #EFF8FF;
+                        color:#09f;
+                        cursor: default;
+                        opacity: 1;
+                        &:before,   &:focus {
+                                background: #09f;
+                        }
+                        &:hover {
+                                color:#09f;
+                                &:before {
+                                        background: #09f;
+
+                                }
+                        }
+                }*/
+    }
+}
+
+.helpCenterNav-itemButton.helpCenterNav-itemButton--selected > .icon.helpCenterNav-icon.icon--inline.icon--xs.flipX{
+    transform: rotate(90deg);
+    margin-top: 4px;
+
+}

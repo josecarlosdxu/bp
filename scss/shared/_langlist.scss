@@ -1,0 +1,404 @@
+@include block(langlist) {
+    text-align: left;
+    padding: $um / 4;
+    font-size: 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    @include element(icon) {
+        margin-left: 2px;
+        margin-right: 0.2rem;
+        margin-top: 0;
+        vertical-align: top;
+        position: relative;
+        z-index: 1;
+    }
+    @include modifier(borderless) {
+        padding: 0;
+    }
+    @include element(item) {
+        display: inline-block;
+        padding: $um / 4;
+        padding-left: 0;
+        color: rgba(0, 0, 0, 0.6);
+        min-width: 111px;
+        font-size: 0;
+        @include modifier(condensed) {
+            padding: 0;
+            margin-bottom: -0.5rem;
+            vertical-align: bottom;
+        }
+    }
+    @include element(minicheck) {
+        display: block;
+        height: 20px;
+        width: 20px;
+        right: 0.3rem;
+        top: 0.3rem;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+    @include element(label) {
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: bottom;
+        color: $color-lightGrey-darker;
+        width: 100%;
+        padding: $um / 3;
+        background-color: transparent;
+        transition: background-color 0.2s;
+        line-height: 1.3;
+        &:hover,
+        &:focus {
+            background-color: transparentize($color-accentBlue-default, 0.9);
+            color: $color-accentBlue-dark;
+        }
+    }
+    @include element(button) {
+        border: 1px solid $color-shadow;
+        display: table-cell;
+        padding: 0;
+        position: relative;
+    }
+    @include element(link) {
+        color: transparentize(white, 0.5);
+        margin-left: 2px;
+        font-size: 1rem;
+        transition: color 0.1s, background 0.1s, box-shadow 0.1s;
+        z-index: 0;
+        &:hover,
+        &:focus {
+            //text-decoration: underline;
+            color: #FFF;
+            background: #2A2F33;
+            box-shadow: -2rem 0 0 0.5rem #2A2F33, 2rem 0 0 0.5rem #2A2F33, 0 0 0 0.5rem #2A2F33;
+        }
+    }
+    @include element(text) {
+        font-size: 1rem;
+        margin-left: 2px;
+    }
+    @include element(content) {
+        // @extend %box;
+        padding: $um/2;
+    }
+    @include element(container) {
+        //@extend %box;
+        padding: 0.5rem 1rem 1rem; //border: 1px solid rgba(0, 0, 0, 0.15);
+        //background: white;
+        //width: 11rem;
+    }
+    @include element(selectedItem) {
+        font-size: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        box-shadow: none;
+        display: inline-block;
+        line-height: 1.3;
+        padding: 0;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        background: white;
+        z-index: 1;
+        width: 100%;
+        position: relative;
+    }
+    @include element(selected) {
+        //vertical-align: middle;
+        background-image: url(../img/icons/caretDown.svg);
+        background-position: calc(100% - 0.5rem) center;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 0.5rem 0.75rem 0.5rem;
+        position: static;
+        display: inline-block;
+        line-height: 1.5;
+    }
+    @include element(labelclose) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: calc(100% - 1.5rem);
+        height: calc(100% + 1.5rem);
+        cursor: default;
+    }
+}
+
+@include extendBlock(langlist, footer) {
+    padding-left: 0;
+    @include element(item) {
+        @extend %u-xs-20;
+    }
+    @include element(link) {
+        color: transparentize(white, 0.4);
+        transition: color 0.1s;
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+}
+
+@include extendBlock(langlist, back) {
+    position: absolute;
+    z-index: 20;
+    top: 97%;
+    right: 0;
+    display: none;
+    min-width: 30rem;
+    background: $color-toolbar-langlist-background;
+    background: red;
+    box-shadow: -1px 0 rgba(255, 255, 255, 0.15) inset, 1px 0 rgba(255, 255, 255, 0.15) inset;
+    &:before {
+        content: "";
+        background: rgba(255, 255, 255, 0.15);
+        display: block;
+        height: 1px;
+        left: 2px;
+        position: absolute;
+        top: 0;
+        width: calc(100% - 6.6rem);
+    }
+}
+
+@include extendBlock(langlist, toolbar) {
+    position: absolute;
+    z-index: 20;
+    top: 96%;
+    right: 1.75rem;
+    display: none;
+    width: 50%;
+    background: $color-toolbar-langlist-background;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 2px 4px -2px #000;
+    @include addBreakpoint(xl) {
+        right: 0;
+        width: 38.75%;
+    }
+    @include element(item) {
+        padding: $um / 4;
+        display: inline-flex;
+        overflow: hidden;
+        width: calc(100% / 3);
+        margin: 0.15rem 0;
+    }
+}
+
+@include extendBlock(langlist, selected) {
+    opacity: 0;
+    display: block;
+    -webkit-animation: show 0.3s forwards;
+    animation: show 0.3s forwards;
+}
+
+@include extendBlock(langlist, col3) {
+    width: 60rem;
+    @include element(item) {
+        width: 33.333%;
+    }
+}
+
+@include extendBlock(langlist, select) {
+    margin: 0;
+    margin-top: -0.25rem;
+    padding: 0;
+    width: 12rem;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 1000000000000000000000;
+    @include element(item) {
+        padding: 0; //margin-bottom: -0.5rem;
+        vertical-align: bottom; //border: 1px solid tan;
+        width: 100%;
+    }
+    @include element(link) {
+        color: inherit; //background: $color-shadow;
+        padding: 0.5rem;
+        display: block;
+        &:hover {
+            box-shadow: none;
+            background: $color-accentBlue-default;
+            color: white;
+        }
+    }
+    @include element(container) {
+        width: 100%;
+        position: absolute;
+        top: 2.5rem;
+        display: none;
+        background: white;
+        box-shadow: 0 0 0 1px $color-shadow inset;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    @include element(iconcaret) {
+        width: 16px;
+        height: 16px;
+        float: right;
+        margin-top: 0.2rem;
+    }
+    @include element(opencheckbox) {
+        pointer-events: none;
+        display: none;
+        &:checked {
+            ~.langlist-container,
+            ~.langlist-labelclose {
+                display: block;
+            }
+            ~.langlist-selectedItem>.langlist-selected {
+                background-image: url(../img/icons/caretUp.svg);
+            }
+        }
+    }
+}
+
+.langlist.langlist--toolbar.langlist--back.langlist--selected {
+    display: flex;
+}
+
+.langlist-item>.form-checkbox.form-checkbox--inline {
+    display: inline-block;
+}
+
+
+
+.no-flexbox {
+    .langlist--selected.langlist--back.langlist--toolbar.langlist {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+@include extendBlock(langlist, multiselect) {
+    padding: 0;
+    margin-bottom: $um / 2;
+    position: relative;
+    @include element(selected) {
+        @extend .form-select;        
+        transition: border-radius 0.2s, color 0.2s;
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        color:rgba(0,0,0,0.5);
+        font-style: italic; 
+    }
+
+    .inputToggle {
+        height: 0;
+        width: 0;
+        min-width: 0;
+        min-height: 0;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        opacity: 0;
+        display: block;
+    }
+
+    &:focus {
+        @include element(selected) {
+            outline: none;
+            border-color: #9cf;
+            box-shadow: 0 0 3px #9cf;
+            margin-bottom: 0;
+        }
+    }
+
+    .inputToggle:active+label,
+    .inputToggle:focus+label {
+        outline: none;
+        border-color: #9cf;
+        box-shadow: 0 0 3px #9cf;
+    }
+    @include element(container) {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: absolute;
+        padding: $um / 2 $um $um / 1.5 ;
+        left: 0;
+        top: 2.5rem;
+        border-top: none;
+        display: none;
+        background-color: white;
+        z-index: 100;
+
+        label {
+            font-size: 1rem;        
+            display: flex;           
+            flex-basis:9rem;
+            flex-grow:0.5;
+            align-items: center;
+            height: 2.25rem;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.7);
+            position: relative;
+            input {
+                top: 0;
+                position: static;
+            }
+            svg {
+                margin-right: 0.25rem;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                background-color: white;
+                height: 100%;
+                width: calc(100% - 1.5rem);
+                top: 0;
+                left: 1.5rem;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.2s;
+            }
+        }
+    }
+    @include element(closed) {
+        position: fixed;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 50;
+        display: none;
+    }
+   
+
+    .inputToggle:checked+label {
+        border-radius: 2px 2px 0 0;
+    }
+    .inputToggle:checked+label+.langlist-container {
+        display: flex;
+        width: 100%;
+        z-index: 100;
+    }
+    .inputToggle:checked+label+.langlist-container+.langlist-closed {
+        display: block;
+    }
+}
+
+.langlist--multiselect .langlist-container label.disabled {
+    cursor: not-allowed;
+
+    &:after {
+
+        opacity: 0.5;
+        pointer-events: auto;
+        transition: opacity 0.2s;
+    }
+}
+
+.langlist--multiselect .langlist-selected.enabled{
+    font-style: normal;    
+    color:rgba(0,0,0,1);    
+}

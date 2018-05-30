@@ -1,0 +1,270 @@
+@charset "UTF-8";
+//Scaffolding layer
+@import "nm/vendor/normalize"; //normalize.css v2.1.3
+@import "nm/vendor/animate"; //animate.css animations
+@import "nm/variables"; //framework internal variables, !this is not a configuration file
+@import "nm/base"; //custom reset
+@import "nm/utils/bem"; //BEM mixins to create & extend classes in a strict way.
+@import "nm/utils/breakpoints"; //BEM mixins to create & extend classes in a strict way.
+//Theme vars
+@import "shared/colorOriginal";
+
+@import "shared/themeBase";
+@import "shared/notify";
+@import "shared/viewMore";
+@import "front/type";
+@import "nm/vendor/nouislider";
+@import "shared/color";
+@import "shared/toggleView";
+
+//Abstractions layer
+@import "nm/modules/modularGrid"; //Inline-block grid system
+@import "nm/modules/nav"; //Navigation & menus
+@import "nm/modules/form"; //Forms
+@import "nm/modules/list";
+@import "nm/modules/table"; //Tables
+@import "nm/modules/button"; //Buttons
+@import "nm/modules/unitControl"; //Buttons to handle input type number
+@import "nm/modules/tooltip"; //Help bubbles inline
+@import "nm/modules/responsiveImg"; //Responsive Images placeholder
+@import "nm/modules/msgBox";
+@import "nm/modules/nmSteps";
+@import "nm/modules/checkedArea";
+@import "nm/modules/centerLine";
+@import "nm/modules/card"; //Buttons
+@import "nm/modules/paginator";
+@import "nm/modules/fileInput";
+@import "nm/modules/panel";
+@import "nm/modules/baloon";
+@import "nm/modules/shop";
+@import "shared/icon";
+@import "shared/langlist";
+@import "shared/currencylist";
+@import "shared/cmsContent";
+@import "shared/expressCart";
+@import "shared/popup";
+@import "shared/pack";
+@import "shared/steps";
+@import "shared/actionGroup";
+@import "shared/loading";
+@import "shared/message";
+@import "shared/grouped";
+@import "shared/cmsFlexbox";
+@import "shared/dots";
+@import "shared/forbidden";
+@import "shared/legalText";
+@import "nm/vendor/driver";
+@import "nm/modules/venideroSteps";
+
+//Components layer
+@import "front/bottomMessage";
+@import "front/productCard";
+@import "front/productList";
+@import "front/imgBox";
+@import "front/imgBoxBtn";
+@import "front/scrollArea";
+@import "front/minisocial";
+@import "front/productSheet";
+@import "front/banner"; /// replace in new version
+@import "front/homeBannerList";
+@import "front/homeBanner";
+@import "front/homeBigBanner";
+@import "front/P_homeBigBanner";
+@import "front/rating";
+@import "front/review";
+@import "front/asideCart";
+@import "front/shoppingCart";
+@import "front/shoppingCartStep";
+@import "front/helpCenter";
+@import "front/homeActions";
+@import "front/viewedProducts";
+@import "front/productDescription";
+@import "front/productRelated";
+@import "front/categoryList";
+@import "front/tabs";
+@import "front/pricePanel";
+@import "front/mediaObject";
+@import "front/bubble";
+@import "front/productReview";
+@import "front/productListFilters";
+@import "front/header";
+@import "front/toolbar";
+@import "front/uiPanel";
+@import "front/searchBox";
+@import "front/searchForm";
+@import "front/searchResults";
+@import "front/mainNav";
+@import "front/mobileNav";
+@import "front/bigMenu";
+@import "front/productSlider";
+@import "front/featuredSlider";
+@import "front/keywords";
+@import "front/breadcrumb";
+@import "front/homeslider";
+@import "front/tags";
+@import "front/popularSearch";
+@import "front/BigBuyCountries";
+@import "front/newsletterForm";
+@import "front/recentSearch";
+@import "front/supertitle";
+@import "front/content";
+@import "front/footer";
+@import "front/mobileMenu";
+@import "front/errorPage";
+@import "front/cuentaOk";
+@import "front/ventaCMS";
+@import "front/import";
+@import "front/progressBar";
+@import "front/orderOkMsg"; //Order Ok message box in shoppincart
+@import "front/cmsContact"; //Order Ok message box in shoppincart
+@import "front/helpCenterNav";
+@import "front/helpSection";
+@import "front/planCard";
+@import "front/cmsItem";
+@import "front/downloadsCSV";
+@import "front/brandList";
+@import "front/news";
+@import "front/newsItem";
+@import "front/productSheetVideo";
+@import "front/contentTickets";
+@import "front/footerAwards";
+@import "front/filter";
+@import "front/homefeatured";
+@import "front/selectedFilterList";
+@import "front/socialLink";
+@import "front/stickyvnav";
+@import "front/preheader";
+@import "front/oldnav";
+//Utils
+@import "nm/utils/baseline"; //Vertical rythm visual helper
+@import "nm/utils/proportions"; //Common proportions used and their responsive classes
+@import "nm/utils/positions"; //Common position and alignment properties
+@import "nm/utils/visualize";
+@import "shared/daterangepicker";
+@import "shared/cmsContentSection";
+@import "shared/pagination";
+@import "front/awards";
+@import "front/paypalbanner";
+@import "front/uploadFile";
+@import "front/menuList";
+@import "front/cardList";
+@import "front/cardElem";
+@import "front/directory";
+@import "front/categoryTabs";
+@import "front/landingBanner";
+@import "front/featuredList";
+@import "front/hero";
+@import "front/productSheetBadge";
+@import "nm/modules/charts";
+@import "nm/utils/sizer";
+@import "shared/edit";
+
+@import "shared/bblegal";
+
+//Documentation sytles
+//Debug
+@import "nm/utils/resetResponsive";
+@import "nm/utils/debug";
+@import "shared/dataTables";
+@import "shared/stockAvailability";
+@import "front/checkbox"; //---------------------checkboxes BETA -- NO EXPORT
+#sector_10 {
+    &:checked ~ [data-js-gadget-otros="sector"] {
+        display: block !important;
+    }
+}
+
+[data-js-otros="venta"] {
+    &:checked ~ [data-js-gadget-otros="venta"] {
+        display: block !important;
+    }
+}
+
+@-moz-document url-prefix() {
+    .brandList--hometabs {
+        @include addBreakpoint(xl) {
+            min-height: 29.75rem;
+        }
+    }
+}
+
+.searchBox .productCard-link {
+    display: inline-block;
+}
+
+::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+html,
+body, .content, .mainNav {
+    min-width: 1024px;
+}
+
+body.blur,
+body.focus {
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+body.blur {
+    &:after {
+        opacity: 0;
+        -webkit-animation: show 0.6s ease-in-out 0.1s both;
+        animation: show 0.6s ease-in-out 0.1s both;
+    }
+}
+
+body.focus {
+    &:after {
+        opacity: 1;
+        pointer-events: none;
+        -webkit-animation: bgHide 0.3s ease-in-out both;
+        animation: bgHide 0.3s ease-in-out both;
+    }
+}
+
+.mfp-bg {
+    background: black;
+    opacity: 0.25;
+}
+
+.mfp-bottom-bar {
+    margin-top: -3.5rem !important;
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 -0.75rem 0 #ffffff;
+}
+
+.mfp-title {
+    line-height: 1.2 !important;
+    padding-left: 1.5rem;
+}
+.no-flexbox {
+    body.blur,
+    body.focus {
+        &:after {
+            display: none;
+        }
+    }
+    .u-bb-bg--half.u-flex--center.u-flex--between.u-handCursor {
+        display: block;
+        font-size: 0;
+        .title,
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .title {
+            width: 75%;
+        }
+    }
+}

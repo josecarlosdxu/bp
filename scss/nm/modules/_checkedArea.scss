@@ -1,0 +1,55 @@
+@include block(checkedArea) {
+    padding: $um / 2;
+    border-radius: 0;
+    transition: all 1s;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+@include extendBlock(checkedArea, success) {
+    -webkit-animation: checkedSuccess 0.4s  both;
+    animation: checkedSuccess 0.4s  both;
+}
+@include extendBlock(checkedArea, error) {
+    -webkit-animation: checkedError 0.4s  both;
+    animation: checkedError 0.4s  both;
+}
+@-webkit-keyframes checkedSuccess {
+    0% {
+        color: inherit;
+        background: inherit;
+    }
+    100% {
+        color: $color-msgBoxSucess-text;
+        background: $color-msgBoxSucess-background;
+    }
+}
+@keyframes checkedSuccess {
+    0% {
+        color: inherit;
+        background: inherit;
+    }
+    100% {
+        color: $color-msgBoxSucess-text;
+        background: $color-msgBoxSucess-background;
+    }
+}
+@-webkit-keyframes checkedError {
+    0% {
+        color: inherit;
+        background: inherit;
+    }
+    100% {
+        color: $color-msgBoxError-text;
+        background: $color-msgBoxError-background;
+    }
+}
+@keyframes checkedError {
+    0% {
+        color: inherit;
+        background: inherit;
+    }
+    100% {
+        color: $color-msgBoxError-text;
+        background: $color-msgBoxError-background;
+    }
+}

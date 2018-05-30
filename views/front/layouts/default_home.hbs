@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head }}
+<body>
+    <div class="header">
+        <div class="modularGrid modularGrid--boxed">
+            {{> header }}
+        </div>
+    </div>
+    <nav class="mainNav mainNav--long">
+        <div class="modularGrid modularGrid--boxed">
+            <div class="modularGrid-module">
+                {{> mainNav}}
+            </div>
+        </div>
+    </nav>
+    <section class="content u-pdt--0">
+        <div class="modularGrid">
+            {{> productSliderBanner}}
+        </div>
+        <div class="modularGrid modularGrid--boxed">
+            {{!-- {{> breadcrumb}} --}}
+            {{>body}}
+        </div>
+        <div class="modularGrid modularGrid--boxed">
+            {{> keywords}}
+            {{>news}}
+            <button class="button button--up" data-js-scrolltop="button" title="Volver al inicio"><i class="icon fa fa-arrow-up"></i></button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        {{> footer}}
+    </footer>
+    {{> bottomMessage}}
+    {{> delayedScripts}}
+</body>
+</html>

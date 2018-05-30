@@ -1,0 +1,117 @@
+
+{{#each list}}
+
+<div class="tabs-contentPanel{{#if selected}} tabs-contentPanel--selected{{/if}}" data-js-tab="panel" data-js-tab_idpanel="{{@index}}" id="tabpanel{{@index}}">
+  <article class="cmsContentSection cmsContentSection--decrease">
+    <section class="texts">
+      <h2 class="subtitle4">{{title}}</h2>
+      <p class="text u-pdv--half u-pdr">{{{text}}}</p>
+    </section>
+
+  <div class="modularGrid-module  u-flex-grow1">
+
+    <table class="table" style="height:100%;">
+    <thead class="table-thead  table-thead--borderless">
+      <tr class="table-tr">
+       {{#each items}}  
+         <th class="table-item{{#if border}} {{border}}{{/if}}{{#if bordertop}} {{bordertop}}{{/if}}">
+          {{#unless noitem }}
+            <div class="pricePanel-header pricePanel-header--{{type}} u-content-center u-mgv--half}">
+            {{#if nopack}}
+              {{>svgIcon type='user' size='sm' class='u-op-50'}} 
+              <span class="pack pack--{{type}} pack--bigger"><span class="u-op-50">Sin pack</span>
+              {{else}}
+              {{>svgIcon type='pack' size='sm'}} 
+              <span class="pack pack--{{type}} pack--bigger"><span class="u-op-50">Pack</span> {{type}}</span>
+              {{/if}}
+            </div> 
+            {{/unless}}
+         </th>
+
+        
+       {{/each}}
+      </tr> 
+    </thead>
+
+    <tfoot >
+    <tr class="table-tr">
+    {{#each items}}
+     
+     <td class="table-item{{#if border}} {{border}}{{/if}} u-xs-3rd u-tac u-pdb2{{#if borderbottom}} {{borderbottom}}{{/if}}">
+        {{#unless noitem }}
+        {{{quote}}}
+        <p class="subtitle3 u-pdt--half u-pdb">{{mounthPrice}}</p>
+        {{{activate}}}
+
+        {{/unless}}
+
+     </td>
+
+    {{/each}}
+    </tr> 
+      
+
+    </tfoot>
+    
+    <tbody class="tbody">
+    <tr class="table-tr">
+    {{#each items}}    
+     <td class="table-item{{#if border}} {{border}}{{/if}}{{#if explain_class}} {{explain_class}}{{/if}} u-xs-3rd">
+      {{#unless noitem }}
+     {{{explain}}}
+      {{/unless}}
+
+     </td>
+    {{/each}}
+     </tr> 
+
+     <tr class="table-tr">
+    {{#each items}}
+     <td class="table-item{{#if border}} {{border}}{{/if}} u-xs-3rd u-pdh2">
+     {{#unless noitem }}
+     <p class="subtitle1 u-pdt">{{include}}</p>
+      {{/unless}}
+
+     </td>
+    {{/each}}
+     </tr> 
+
+
+      <tr class="table-tr">
+    {{#each items}}
+     <td class="table-item table-item--top{{#if border}} {{border}}{{/if}} u-xs-3rd u-pdh2 ">
+      {{#unless noitem }}
+          <ul class="list">
+            {{#each list }}
+             <li class="list-item">{{text}}</li>
+             {{/each}}
+           </ul> 
+           {{/unless}}
+     </td>
+    {{/each}}
+     </tr> 
+
+
+    </tbody>
+
+
+
+
+    </table>
+
+    
+  </div>
+
+</article>
+
+</div> 
+
+{{/each}}
+
+
+
+
+
+
+
+

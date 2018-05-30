@@ -1,0 +1,49 @@
+    @include block(homeBigBanner) {
+    display: flex;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    @include element(img) {
+        height: 100%;
+        position: reletive;
+        z-index: 0;
+    }
+    @include element(container) {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100%;
+        justify-content: center;
+        left: $um;
+        width: calc(100% - 3rem);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        @include addBreakpoint(xl) {
+            width: 100vw;
+            left: 0;
+            width: 1200px;
+            left: calc(50% - 600px);
+        }
+    }
+}
+
+.no-flexbox, [data-useragent*='MSIE 10.0'] {
+    .homeBigBanner-container {
+        display: block;
+        .homefeatured {
+            position: relative;
+            top: 8rem;
+            text-align: left;
+            display: block;
+            .homefeatured-item {
+                display: inline-block;
+                border: none;
+                box-shadow: none;
+                &:last-child {
+                    float: right;
+                }
+            }
+        }
+    }
+}

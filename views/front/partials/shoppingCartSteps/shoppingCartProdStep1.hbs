@@ -1,0 +1,40 @@
+<div class="shoppingCartStep{{#if active}} shoppingCartStep--active{{/if}}{{#if editable}} shoppingCartStep--editable{{/if}}" data-shoppingcart-step="1" data-js-step1>
+    <div class="shoppingCartStep-header">
+      <b class="shoppingCartStep-number">1</b>
+      <div class="shoppingCartStep-headertexts">
+          <h4 class="shoppingCartStep-title">Información de facturación</h4>        
+      </div>
+      {{>shoppingCartEditBtn}}
+  </div>
+  <div class="shoppingCartStep-content">
+    <fieldset class="form-fieldset--borderless" data-js-address-information="contenedor"> 
+
+        <legend class="form-legend u-pdb"> Datos seleccionados</legend>       
+
+        <dl class="modularGrid u-pdb">
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="vat_number"><strong>NIF/CIF</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="vat_number">AZ20123456C</dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="company"><strong>Razón social</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="company">Napoleón Tob Tinieblas Povedilla</dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="name"><strong>Nombre</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="name">Napoleón Tob</dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="address1"><strong>Dirección</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="address1">calle calle</dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="postcode"><strong>Código postal</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="postcode">AZ9999</dd>   
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="country"><strong>País</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="country">Azerbaiyán</dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="state"><strong>Provincia</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="state"></dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="city"><strong>Localidad</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="city">villabajo</dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="phone"><strong>Teléfono</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="phone">+994123456789</dd>
+            <dt class="modularGrid-module u-pdb--third u-xs-30" data-js-address-information-cab="re"><strong>Recargo de equivalencia</strong></dt>
+            <dd class="modularGrid-module u-pdb--third u-xs-70" data-js-address-information="re">No</dd>
+        </dl>                
+    </fieldset>
+    <button class="button button--primary button--big" data-js-continuar-address="">Continuar</button>   
+</div>
+</div>
+

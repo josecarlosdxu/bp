@@ -1,0 +1,75 @@
+@include block(minisocial) {
+    position: relative;
+
+    vertical-align: top;
+
+    @include element(comments) {
+        display: inline-block;
+
+        margin-top: $um / 2;
+
+        transition: all 0.1s;
+        text-decoration: none;
+
+        opacity: 0.6;
+        color: $color-minisocial-comments-text;
+
+        @include addBreakpoint(sm) {
+            margin-top: 0;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    @include element(icon) {
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+        line-height: 1rem;
+        color: #CCC;
+    }
+
+    @include element(button) {
+        display: inline-block;
+
+        width: 16px;
+        height: 16px;
+
+        vertical-align: top;
+
+        background: url($sprite-bg) no-repeat;
+
+        font-size: 0;
+        margin-bottom: 0.5rem;
+        margin-right: 1px;
+
+        @include modifier(fb) {
+            background-position: -167px 0;
+        }
+
+        @include modifier(tw) {
+            background-position: -187px 0;
+        }
+
+        @include modifier(ml) {
+            background-position: -207px 0;
+        }
+
+        @include modifier(pn) {
+            background-position: -187px -20px;
+        }
+
+        @include modifier(gp) {
+            background-position: -207px -20px;
+        }
+    }
+
+    @include element(bubble) {
+        margin-bottom: $um / 2;
+
+        @include addBreakpoint(sm) {
+            margin-bottom: 0;
+        }
+    }
+}

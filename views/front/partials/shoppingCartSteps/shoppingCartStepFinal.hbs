@@ -1,0 +1,95 @@
+    <section class="shoppingCartStep{{#if active}} shoppingCartStep--active{{/if}}">  
+
+    	<div class="shoppingCartStep-header{{#unless active}} shoppingCartStep-header--final{{/unless}}">
+    		<b class="shoppingCartStep-number">4</b>
+    		<div class="shoppingCartStep-headertexts">
+    			<h4 class="shoppingCartStep-title">Confirmar pedido</h4>          
+    		</div>    		
+    	</div>
+    	<div class="modularGrid u-pdb2 u-pdt--half">
+
+
+    		<div class="modularGrid-module  u-pdh2 u-pdt">
+
+
+
+    			<div class="pricePanel-header pricePanel-header--dropship u-mgb--half">
+    				{{>svgIcon size='sm' type='pack'}}
+    				<span class="pack pack--dropship pack--big "><span class="u-op-50">Pack</span> Dropship</span>
+    			</div>
+
+    		</div>
+    		<div class="modularGrid-module  u-pdh2 ">
+    			<p class="u-flex--between">Cuota de alta <strong>99 €</strong></p>
+    			<p class="u-flex--between">Cuota Semestral<strong>245 €</strong></p> 
+    		</div>
+
+    		<div class="modularGrid-module  u-pdl u-pdt u-pdr2">
+    			<div class="u-flex--between u-flex--center u-pdl--half">
+    				<div class="u-flex--center"><img src="../../img/3.svg" class="icon icon--inline icon--lg ">	<strong>Tienda dropshipping</strong>
+    				</div>
+    				<strong>770 €</strong>
+    			</div>
+    			<p class="u-op-60 u-pdl"><strong>Catálogo</strong>: Completo</p>
+    			<p class="u-op-60 u-pdl"><strong>Tema</strong>: Valencia</p>
+    		</div>
+    		<div class="modularGrid-module  u-pdl u-pdt u-pdr2">
+    			<div class="u-flex--between u-flex--center u-pdl--half">
+    				<div class="u-flex--center"><img src="../../img/3.svg" class="icon icon--inline icon--lg ">	<strong>2ª Tienda dropshipping</strong>
+    				</div>
+    				<strong>335 €</strong>
+    			</div>
+    			<p class="u-op-60 u-pdl"><strong>Catálogo</strong>: Completo</p>
+    			<p class="u-op-60 u-pdl"><strong>Tema</strong>: Ibiza</p>
+    		</div>
+
+
+    		<div class="modularGrid-module u-pdh2  u-pdt u-mgt--half">
+
+    			<p class="u-flex--between u-brt u-pdt"><strong class="u-pdt--four">Subtotal</strong><strong class="u-pdt--four">1.600 €</strong></p>
+    			<p class="u-flex--between u-pdt"><span>Costes de forma de pago</span><span>0.00 €</span></p>
+    			<p class="u-flex--between  u-pdt"><span>Base imponible</span><span>1.600 €</span></p>
+
+    		</div>
+
+
+
+    		<div class="modularGrid-module u-pdh2 u-pdt2"> 
+    			<h3 class="subtitle5 u-flex--between"><span>Total</span><span>1.600,00 €</span></h3>
+    		</div>
+    		{{#if active}} 
+    		<div class="modularGrid-module u-pdh2 u-pdt2"> 
+
+    		<div class="msgBox msgBox--info u-mgb">
+
+
+
+    				<p><strong>El proceso de pago se hará en dos pasos:</strong></p>
+    				<p>- En primer lugar, se le redirigirá a PayPal para realizar el acuerdo de cobro de su Pack Mayorista.</p>
+    				<p>- A continuación, y también a través de PayPal, tendrá que realizar el pago de su tienda dropshipping mediante tarjeta bancaria.</p>
+
+
+
+
+    			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    			<button class="button button--primary button--full">Finalizar</button>
+    		</div>
+    		{{/if}}
+
+    	</div>
+
+    </section>

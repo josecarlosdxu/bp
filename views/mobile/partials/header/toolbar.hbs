@@ -1,0 +1,74 @@
+<!-- Mobile Toolbar -->
+<div class="modularGrid modularGrid--boxed">
+    <div class="modularGrid-module">
+        <aside class="mobileToolbar">
+
+            <nav class="mobileToolbar-navgroup">
+                <a href="home2.html" class="button button--logo ">
+                    <figure class="mobileHeader-logoFigure"> 
+
+                        {{#if shop}}
+                         <img src="../../img/logo-bigbuy-shop.svg" class="img--responsive" alt="proveedor dropshipping"> 
+                         {{!-- <img src="../../img/logo-bigbuy-shop-navidad.svg" class="img--responsive" alt="proveedor dropshipping">  --}}
+                        {{else}}
+                        <img src="../../img/logo-bigbuy.svg" class="img--responsive" alt="proveedor dropshipping"> 
+                         {{!-- <img src="../../img/logo-bigbuy-navidad.svg" class="img--responsive" alt="proveedor dropshipping">  --}}
+
+                        {{/if}}
+
+
+
+                    </figure>
+                </a>
+            </nav>
+
+            {{#if tablet}}
+            
+            <div class="mobileToolbar-searchCont" data-js-search="searchBar" data-js-selClass="mobileToolbar-searchCont--active">
+                <div class="modularGrid modularGrid--boxed u-tar">
+                    <div class="modularGrid-module">
+                        <form action="home.html" class="form" data-js-search="searchForm">
+                           <input type="text" class="form-input mobileToolbar-searchfield u-tar" placeholder="Buscar productos"  name="searchfield" data-js-search="searchField">
+                            <input class="button button--searchSelected  mobileToolbar-button mobileToolbar-button--search"  data-js-search="searchBtn" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+            <nav class="mobileToolbar-navgroup u-flr" data-js-navgroup="default">
+                <button class="button button--menu mobileToolbar-button " data-js-btnNav="show" data-js-btn="menuBtn"></button>
+               <!-- <button class="button button--menu mobileToolbar-button"></button>-->
+            </nav>
+            <nav class="mobileToolbar-navgroup u-flr" data-js-navgroup="default">
+
+                {{#if newuser}}
+
+                <button class="buttonLogin" data-js-btn="loginBtn" > </button>
+                <a href="#" class="buttonUser buttonUser--newuser" data-js-btn="loginBtn"> </a>
+                {{else}}
+
+                <a href="#" class="buttonUser buttonUser--premium" data-js-btnnav="user"> </a>
+                <b class="mobileToolbar-notify">10</b>
+                {{/if}}
+
+
+               <!--   -->
+
+
+                <a href="cart.html" class="button  button--cart  mobileToolbar-button" data-js-btn="cartBtn" data-js-selClass="button--cartSelected"> {{!-- <b class="mobileToolbar-notify">10</b> --}} </a>
+                {{#unless  tablet}}
+                <button class="button button--search  mobileToolbar-button" data-js-search="launchBtn" data-js-btn="searchBtn"></button>
+                {{/unless }}
+                <button class="button button--lang mobileToolbar-button" data-js-btnnav="lang">
+                    <img src="../../img/icons/es.svg" class="icon icon--inline icon--md flag" />
+                </button>
+            </nav>
+
+        </aside>
+    </div>
+</div>
+
+
+
+
+

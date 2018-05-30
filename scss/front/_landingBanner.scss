@@ -1,0 +1,106 @@
+@include block(landingBanner) {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px $color-shadow;
+    @include element(boxed) {
+        display: flex;
+        margin: 0 auto;
+        height: 20.5rem;
+        max-width: 1200px;
+        position: relative;
+        z-index: 1;
+        align-items: flex-end;
+        align-items: center;
+        padding-left: 2rem;
+        height: 18rem;
+        /* @include addBreakpoint(lg) {
+            height: 24rem;
+        }
+        @include addBreakpoint(xl) {
+            padding-left: 0;
+            height: 26rem;
+        }*/
+    }
+    @include element(item) {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        //width: calc(100% / 3);
+        @include modifier(centered) {
+            justify-content: center;
+            align-content: center;
+        }
+    }
+    /*@include element(message) {
+        font-size: 2rem;
+        padding-left: 2rem;
+        align-content: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        height: 100%;
+    }*/
+    @include element(bg) {
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        top: 0;
+    }
+    @include element(bgsource) {
+        width: 100%;
+    }
+    @include element(bgimg) {
+        width: 100%;
+    }
+    @include element(texts) {
+        @extend %sliderText !optional;
+        width: 100%;
+        font-size: 3rem;
+        @include addBreakpoint(sm) {
+            font-size: 4rem;
+        }
+    }
+    @include element(subtitles) {
+        @extend %sliderSubtitle !optional;
+        text-shadow: none;
+        color: transparentize(white, 0.4);
+        width: 100%;
+    }
+    @include element(svgSinc) {
+        fill: transparentize(white, 0.4);
+        transition: none;
+        width: 15rem;
+        height: 100%;
+        margin-left: 0;
+        margin-right: $um;
+        @include addBreakpoint(lg) {
+            margin-left: -10rem;
+        }
+    }
+}
+
+@include extendElement(landingBanner, boxed, big) {
+    //height: 27rem;
+    @include addBreakpoint(lg) {
+        height: 24rem;
+    }
+    @include addBreakpoint(xl) {
+        padding-left: 0;
+        height: 26rem;
+    }
+}
+
+
+/*@include extendElement(landingBanner, svg, sync) {
+    color: transparentize(white, 0.4);
+    transition: none;
+    height: 100%;
+    margin-left: 2rem;
+    width: 15rem;
+    @include addBreakpoint(lg) {
+        margin-left: -10rem;
+    }
+}*/

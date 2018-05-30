@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@include block(rating) {
+    display: inline-block;
+    height: 18px;
+    cursor: default;
+    font-size: 1.5rem;
+    line-height: 1;
+    @include element(title) {
+        position: relative;
+        vertical-align: top;
+        font-size: 0.9rem;
+    }
+    @include element(add) {
+        font-size: 0.9rem;
+    }
+    @include element(icon) {
+        position: relative;
+        display: block;
+        float: left;
+        width: 18px;
+        height: 18px;
+        padding: 0;
+        color: $color-rating-icon-text;
+        // todo poner el color al crear el svg
+        color: #ddd;
+        font-style: normal;
+        @extend .icon;
+        @include modifier(selected) {
+            color: $color-rating-iconSelected-text;
+            // todo poner el color al crear el svg
+            color: #ffdf88;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            content: "\f005";
+        }
+    }
+}
+

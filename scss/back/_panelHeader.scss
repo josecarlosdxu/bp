@@ -1,0 +1,126 @@
+%fixedHeader {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    @include addBreakpoint(lg) {
+        z-index: 1;
+        left: 16rem;
+        position: fixed;
+        position: device-fixed;
+    }
+}
+
+@include block(panelHeader) {
+    position: relative;
+    @include modifier(dataContent) {
+        box-shadow: 0 4px #fff;
+        z-index: 1;
+    }
+    @include element(fixedTableHeader) {
+        @extend %fixedHeader;
+        background: #fff;
+        box-shadow: 1px 0 #ccc;
+        top: -76px;
+        display: table;
+        @include addBreakpoint(lg) {
+            top: 143px;
+            max-width: 980px;
+           
+        }
+        @include addBreakpoint(xl) {
+            max-width: 1020px;
+        }
+        @include addBreakpoint(xxl) {
+            max-width: 1200px;
+        }
+        @include modifier(fullWidth) {
+            width: calc(100% - 17.4rem) !important;
+             box-shadow: none;
+            max-width: calc(100% - 16rem);
+            z-index: 2;
+            @include addBreakpoint(lg) {
+                top: 143px;
+                width: 100%;
+                max-width: calc(100% - 16rem);
+                @-moz-document url-prefix() {
+                    top: 144px;
+                }
+            }
+            @include addBreakpoint(xl) {
+                width: 100%;
+                max-width: calc(100% - 16rem);
+            }
+            @include addBreakpoint(xxl) {
+                width: 100%;
+                max-width: calc(100% - 16rem);
+            }
+        }
+    }
+    @include element(fixedPanelTitleBar) {
+        @extend %fixedHeader;
+        background: #E8E8DA;
+        max-width: 1201px;
+        @include addBreakpoint(lg) {
+            top: 143px;
+           
+            border-top: 4px solid #fff;
+        }
+    }
+}
+
+@include extendElement(panelHeader, fixedTableHeader, bigHeader) {
+    @include addBreakpoint(xl) {
+        top: -50px;
+    }
+    @include addBreakpoint(lg) {
+        top: 169px;
+    }
+}
+
+@include extendElement(panelHeader, fixedTableHeader, singleRow) {
+    top: -37px;
+    @include addBreakpoint(lg) {
+        top: 143px;
+      
+    }
+}
+
+@include extendElement(panelHeader, fixedTableHeader, downloadsHeader) {
+    top: 3px;
+    position: relative;
+    margin-top: -37px;
+    @include addBreakpoint(sm) {}
+    @include addBreakpoint(md) {
+        width: 568px;
+    }
+    @include addBreakpoint(lg) {
+        position: fixed;
+        margin: 0;
+        width: 495px;
+        margin-left: 1px;
+        max-width: 1200px;
+        top: 143px;
+        @-moz-document url-prefix() {
+            top: 144px;
+        }
+    }
+    @include addBreakpoint(xl) {
+        //background-color: red;
+        width: calc(50% - 8.75rem);
+    }
+
+    +.table{
+        margin-top: 3rem;
+    }
+}
+/*@include extendElement(panelHeader, fixedTableHeader, singleRowNoHeader) {
+    top: -37px;
+    background: red;
+    outline: 1px solid red;
+    @include addBreakpoint(lg) {
+        top: 143px;
+        @-moz-document url-prefix() {
+            top: 144px;
+        }
+    }
+}*/

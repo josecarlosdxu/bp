@@ -1,0 +1,185 @@
+@include block(productList) {
+    position: relative;
+    font-size: 0;
+    @include element(item) {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        // padding: $um / 4;
+        padding: 0;
+        // text-align: center;
+        @include modifier(video) {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: 0;
+                left: 0;
+                border: 16px;
+                border-color: transparent;
+                border-left-color: rgba(238, 238, 238, 0.7);
+                border-top-color: rgba(238, 238, 238, 0.7);
+                border-style: solid;
+                z-index: 2;
+            }
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                display: block;
+                top: 7px;
+                left: 7px;
+                border-width: 3px;
+                border-color: transparent;
+                border-style: solid;
+                border-left: 5px solid black;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+@include extendBlock(productList, fullpage) {
+    margin-top: 1rem;
+    min-height: 17rem;
+    @include element(item) {
+        margin-bottom: 2px;
+        margin-right: 2px;
+        width: calc(100% / 5 - 2px);
+        @include addBreakpoint(lg) {
+            width: calc(100% / 6 - 2px);
+            width: 148px;
+            margin-right: 2px;
+            margin-bottom: 2px;
+        }
+    }
+}
+
+@include extendBlock(productList, related) {
+    @include element(item) {
+        margin-bottom: 2px;
+        margin-right: 2px;
+        width: calc(100% / 5 - 2px);
+        @include addBreakpoint(lg) {
+            width: calc(100% / 6 - 2px);
+            width: 148px;
+            margin-right: 2px;
+            margin-bottom: 2px;
+        }
+    }
+}
+
+@include extendBlock(productList, featured) {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s ease-in-out;
+    transform: translate3d(0px, 0px, 0px);
+    @include element(item) {
+        width: calc((100vw - 5.2rem) / 6);
+        white-space: normal;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        .productCard-imgCont {
+            height: calc((100vw - 5.2rem) / 6);
+        }
+        @include addBreakpoint(xl) {
+            width: 148px;
+            .productCard-imgCont {
+                height: 148px;
+            }
+        }
+    }
+}
+
+@include extendBlock(productList, viewedProducts) {
+    @include element(item) {
+        padding: 0;
+        border-bottom: 1px solid $color-shadow;
+        @extend %u-xs-3rd;
+        @extend %u-lg-100;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+@include extendBlock(productList, menu) {
+    @include element(item) {
+        //@extend %u-xs-3rd;
+        @extend %u-xs-25;
+        padding: 0;
+    }
+}
+
+@include extendBlock(productList, slides) {
+    // padding: 2.5rem 0;
+    padding: 0;
+    // text-align: center;
+    @include element(item) {
+        // @extend %u-xs-15;
+        width: 14.28611%;
+        // padding: 0rem 0.5rem 1.5rem 0.0rem;
+        padding: 0;
+    }
+}
+
+@include extendBlock(productList, starProducts) {
+    @include element(item) {
+        margin-bottom: $um / 2;
+        padding: 0;
+        /* @extend %u-md-50;*/
+        border: 1px solid $color-shadow;
+        // min-height: 82px;
+    }
+}
+
+@include extendBlock(productList, slidesHalf) {
+    @include element(item) {
+        margin: $um * 2 2% $um / 2;
+        @extend %u-xs-25;
+        &:nth-child(3n+1) {
+            margin-left: 8.5%;
+        }
+    }
+}
+
+@include extendBlock(productList, searchBoxList) {
+    @include element(item) {
+        @extend %u-xs-6th;
+        padding: 0;
+        border-bottom: 1px solid $color-shadow;
+        vertical-align: top;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+@include extendBlock(productList, searchResults) {
+    // display: flex;
+    // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: 26rem;
+    overflow: hidden;
+    margin-bottom: $um;
+    @include addBreakpoint(lg) {
+        height: auto;
+        padding-bottom: $um / 2;
+    }
+    @include element(item) {
+        // width: calc(100% / 3 - 0.5rem);
+        //outline: 1px solid;
+        flex-basis: 230px;
+        margin: 0 $um 0.8rem 0;
+        @include addBreakpoint(lg) {
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+        }
+    }
+}

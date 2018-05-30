@@ -1,0 +1,45 @@
+<div class="panel panel--active"  data-js-panel-state="active">
+  <div class="panel-title">
+    <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-lock"></use></svg>
+    <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Bloqueo de Stocks</a></div>
+  </div>
+  <div class="panelHeader">
+    <nav class="panel-tabs">
+      <button data-paneltabbtn="pendientes" class="panel-tabs-item">Pendientes <span class="notify"></span></button>
+      <button data-paneltabbtn="proceso" class="panel-tabs-item panel-tabs-item--active">En proceso</button>
+      <button data-paneltabbtn="finalizados" class="panel-tabs-item">Finalizados</button>
+      {{!-- <button data-paneltabbtn="cancelados" class="panel-tabs-item">Cancelados</button> --}}
+      <button data-paneltabbtn="caducados" class="panel-tabs-item">Caducados
+        <svg role="img" class="icon icon--inline icon--error icon--xs u-vb"><use xlink:href="../../img/icons/svg-defs.svg#icon-alert"></use></svg>
+      </button>
+      <button data-paneltabbtn="rechazados" class="panel-tabs-item">Rechazados <span class="notify"></span></button>
+      {{!-- <button data-paneltabbtn="historico" class="panel-tabs-item">Histórico</button> --}}
+    </nav>
+  </div>
+
+
+  <div class="panel-content fixedTableContent fixedTableContent--singleRow">
+
+    <div id="pendientes"  class="fixedTableContent-tableContent" style="display:none;">
+      {{> tablePendingStocks}}
+    </div>
+    <div id="proceso" class="fixedTableContent-tableContent" >
+      {{> tableProcessStocks}}
+    </div>
+
+    <div id="finalizados"class="fixedTableContent-tableContent" style="display:none;">
+      {{> tableLapsedStocks}}
+    </div>
+
+    <div id="rechazados" class="fixedTableContent-tableContent" style="display:none;">
+      {{> tableRejectStocks}}
+    </div>
+
+    <div id="caducados" class="fixedTableContent-tableContent" style="display:none;">
+      {{> tableLongStocks}}
+    </div>
+  </div>
+</div>
+</div>
+
+</div>

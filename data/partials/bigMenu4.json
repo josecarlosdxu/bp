@@ -1,0 +1,58 @@
+{
+  "bigmenu":{
+    "header":[
+      {
+        "title":"Fiestas y celebraciones",
+        "sectionID":"110",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Camping y montaña",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Cinturones vibratorios y electroestimuladores",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Playa y piscina",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Maletas y equipaje de mano",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Accesorios para automóviles",
+        "sectionID":"",
+        "modifier":""
+      }
+    ],
+    "categories":[
+      {
+        "sectionID":"110",
+        "subcategories":[
+          {
+            "name":"Artículos eróticos"
+          },
+          {
+            "name":"Artículos románticos"
+          },
+          {
+            "name":"Artículos de broma"
+          },
+          {
+            "name":"Juegos de mesa y otros"
+          },
+          {
+            "name":"Disfraces y artículos para celebraciones"
+          }
+        ]
+      }
+    ]
+  }
+}

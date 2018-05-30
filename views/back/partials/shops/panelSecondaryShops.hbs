@@ -1,0 +1,26 @@
+<div class="panel panel--secondary panel--inactive  panel--reveal" data-js-panel-name="panel02" data-js-panel-state="inactive">
+{{!-- <div class="panel panel--secondary  panel--reveal panel--active panel--secondary--reveal" data-js-panel-name="panel02" data-js-panel-state="inactive">  --}}
+
+
+    <div class="panel-title">
+        {{>svgIcon type='orders'}}   
+    <div class="panel-titleName">
+        <a href="" class="panel-breadcrumbLink">
+            Estado tienda <strong>/ 1887</strong>
+        </a>
+    </div>
+     </div>
+<div class="panel-content  panel-content--fullW panel-content--fullH u-pdh--half">
+
+   {{>shopMsgBox}} 
+
+<h3 class="title2 u-pd--half u-mgt--half ">Introduzca los datos de su Tienda Dropshipping 360º</h3>  
+<form class="form u-xl-80 u-pdb2" autocomplete="off">
+   {{>shopForm1}}
+   {{>shopForm2}}
+   <button class="button button--primary button--big u-mg--half">Enviar datos</button>
+   <button class="button button--link button--big u-mgt--half" data-js-panel="toggletab">{{>svgIcon type="chevronMobileLeft"}} Descartar</button>
+</form>
+</div>
+ {{>backButton datapanel='toggletab'}}
+</div>

@@ -1,0 +1,108 @@
+ <div class="shoppingCartStep{{#if active}} shoppingCartStep--active{{/if}}{{#if editable}} shoppingCartStep--editable{{/if}}" data-shoppingcart-step="5" data-js-step5>
+  <div class="shoppingCartStep-header">
+    <b class="shoppingCartStep-number">5</b>
+    <div class="shoppingCartStep-headertexts">
+      <h4 class="shoppingCartStep-title">Confirmar pedido</h4> 
+         
+    </div>
+    {{>shoppingCartEditBtn}}
+  </div>
+
+
+
+
+
+ <section class="scrollArea box">
+                    <header class="scrollArea-header">
+                        <table class="table">
+                            <thead class="table-thead">
+                                <tr class="table-tr">
+                                    <th class="table-item table-item--image"></th>
+                                    <th class="table-item u-xs-30">Nombre</th>
+                                    <th class="table-item u-xs-10 table-item--number">Uds.</th>
+                                    <th class="table-item u-xs-15 table-item--number">Precio Ud.</th>
+                                    <th class="table-item u-xs-20 table-item--number">Precio Ud. dto.</th>
+                                    <th class="table-item u-xs-15 table-item--number">Subtotal</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </header>
+
+                    <div class="scrollArea-content shoppingCart-itemList">
+                        <table class="table table--stripped  table--condensed">
+                            <tbody class="table-tbody table-tbody--stripped">
+
+                                {{#times 5}}
+                                <tr class="table-tr">
+                                    <td class="table-item table-item--image u-xs-5"><img class="img--responsive" src="https://www.bigbuy.net/145779-home/gafas-de-sol-enrollables-sunfold-es3.jpg" alt=""></td>
+                                    <td class="table-item u-xs-30">Calefactor Halógeno SYCL 20</td>
+                                    <td class="table-item u-xs-10 table-item--number">5</td>
+                                    <td class="table-item u-xs-15 table-item--number">2,25 €</td>
+                                    <td class="table-item u-xs-20 table-item--number shoppingCart-discount">1,85 €</td>
+                                    <td class="table-item u-xs-15 table-item--number shoppingCart-subtotal">12,55 €</td>
+                                </tr>
+                                {{/times}}
+                               
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <footer class="scrollArea-footer">
+                        <div class="modularGrid">
+                            <div class="modularGrid-module u-md-45 u-pdl u-mgt">
+                               {{!--  <table class="table table--condensed">
+                                    <tfoot>
+                                        <tr>
+                                            <td class="table-item shoppingCart-discount">Descuento Automático</td>
+                                            <td class="table-item table-item--number shoppingCart-discount">(2 %) 5 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item">Transporte</td>
+                                            <td class="table-item table-item--number"> 12 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item">Gastos forma de pago</td>
+                                            <td class="table-item table-item--number">12 €</td>
+                                        </tr>
+                                    </tfoot>
+                                </table> --}}
+                            </div>
+                            <div class="modularGrid-module u-md-50 u-pdl u-mgt u-pdb">
+                                <table class="table table--condensed">
+                                    <tfoot>
+                                        <tr>
+                                            <td class="table-item shoppingCart-subtotal">Subtotal</td>
+                                            <td class="table-item table-item--number shoppingCart-subtotal">500 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item">Costes de forma de pago </td>
+                                            <td class="table-item table-item--number">  1,83 €</td>
+                                        </tr>
+                                  
+                                        <tr class="color-blue">
+                                            <td class="table-item">Base imponible 21%</td>
+                                            <td class="table-item table-item--number">12 €</td>
+                          
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="shoppingCart-total">Total del pedido 562 €</div>
+                </section>
+                <section class="u-pdh"  data-js-step_terms="" >
+        <div class="u-flex--center u-flex--between u-pdv" data-js-review_ok="">
+            
+                <label class="form-label form-label--checkgroup" for="terms">
+                    <input class="form-checkbox" id="terms" data-js-terms="" checked="" type="checkbox">He leído y acepto las <a href="#" class="link" data-js-show-condiciones="">condiciones de venta</a>
+                </label>
+           
+                <button class="button button--primary button--big" data-js-button-next-end="">Finalizar</button>        
+            
+        </div>
+
+
+
+   </section>
+
+</div>

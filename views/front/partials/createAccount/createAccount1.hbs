@@ -1,0 +1,214 @@
+<div id="stepspanel1" class="tabs-contentPanel u-brdt--none   tabs-contentPanel--selected">
+    <form class="form">
+        <div class="modularGrid">
+            <div class="modularGrid-module u-lg-50 ">
+             {{>userData}}
+             {{>taxInformation}}
+
+            
+
+
+
+                <fieldset class="form-fieldset form-fieldset--sequential">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-50 ">
+                            <label class="form-label" for="">Código postal</label>
+                            <input type="text" class="form-input">
+                        </div>
+                    </div>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-50 ">
+                            <label class="form-label" for="prov">Provincia</label>
+                            <select id="prov" name="" class="form-select">
+                                <option value="">Álava</option>
+                                <option value="">Almería</option>
+                            </select>
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label class="form-label" for="">Población</label>
+                            <input type="text" class="form-input ">
+                        </div>
+                        <div class="modularGrid-module">
+                            <label class="form-label" for="">Dirección</label>
+                            <input type="text" class="form-input ">
+                        </div>
+                        <div class="modularGrid-module u-md-50">
+                            <label class="form-label" for="">Teléfono de empresa</label>
+                            <span class="form-prefix">+34</span>
+                            <input type="text" class="form-input form-input--prefix">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label class="form-label" for="website">Página web<em class="form-label--optional">/ Opcional</em></label>
+                            <span class="form-prefix">http://</span>
+                            <input type="text" class="form-input form-input--prefix" id="website">
+                        </div>
+                    </div>
+                </fieldset>
+{{!--
+                  <fieldset class="form-fieldset form-fieldset--sequential">
+                    <h3 class="form-fieldset-title">Persona de contacto</h3>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-50 ">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-input ">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label class="form-label">Apellidos</label>
+                            <input type="text" class="form-input ">
+                        </div>
+                        <div class="modularGrid-module u-md-50">
+                            <label class="form-label" for="">Teléfono 1</label>
+                            <span class="form-prefix">+34</span>
+                            <input type="text" class="form-input form-input--prefix">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label class="form-label" for="">Teléfono 2</label>
+                            <span class="form-prefix">+34</span>
+                            <input type="text" class="form-input form-input--prefix">
+                        </div>
+                    </div>
+                </fieldset> --}}
+
+                <fieldset data-js-contact_person="" style="display:none" data-js-content="privado" class="form-fieldset--sequential">
+                    <h3 class="form-fieldset-title">Persona de contacto</h3>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-50">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" data-js-validate="{&quot;empty&quot;:&quot;required&quot;, &quot;name&quot;: &quot;warning&quot;}" maxlength="12" name="name" data-js-name_contact="" class="form-input" disabled="">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label for="surnames" class="form-label">Apellidos</label>
+                            <input type="text" data-js-validate="{&quot;empty&quot;:&quot;required&quot;, &quot;name&quot;: &quot;warning&quot;}" maxlength="20" name="surnames" data-js-name_contact="" class="form-input" disabled="">
+                        </div>
+                    </div>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-50">
+                            <label for="phone_mobile" class="form-label">Teléfono o móvil</label>
+                            <input type="text" tabindex="95" data-js-validate="{&quot;empty&quot;:&quot;required&quot;,&quot;phone_prefix&quot;:&quot;prefix&quot;}" maxlength="4" data-js-phone-prefix="" name="phone_mobile_prefix" class="form-input form-input-prefix u-md-20" disabled="">
+                            <input type="text" data-js-resctricted="phone" data-js-validate="{&quot;empty&quot;:&quot;required&quot;, &quot;phone&quot;: &quot;warning&quot;}" maxlength="12" name="phone_mobile" data-js-phone_mobile="" class="form-input u-md-75" disabled="">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label for="phone_mobile2" class="form-label">
+                                Otro teléfono o móvil                                <em class="form-label--optional">Opcional</em>
+                            </label>
+                            <input type="text" tabindex="110" maxlength="4" data-js-phone-prefix="" name="phone_mobile2_prefix" class="form-input form-input-prefix u-md-20" disabled="">
+                            <input type="text" data-js-go-comments="" data-js-resctricted="phone" data-js-validate="{&quot;phone&quot;: &quot;warning&quot;}" maxlength="12" name="phone_mobile2" data-js-phone_mobile2="" class="form-input u-md-75" disabled="">
+                        </div>
+                    </div>
+                </fieldset>
+
+
+            </div>
+            <div class="modularGrid-module u-lg-50 u-brdl">
+            {{>similarItems}}
+            {{>salesChannels}}
+            {{>productsGame}}
+            {{>bigbuyServices}}
+
+
+            <fieldset class="form-fieldset form-fieldset--sequential form-fieldset--compressed">
+                <h3 class="form-fieldset-title">¿Dispone de tienda online?</h3>
+                <div data-js-fieldset-gadgets="pack" class="modularGrid u-pdb--half">
+                 <div class="modularGrid-module u-md-20">
+                        <input type="radio" value="5_33" data-js-gadget="pack" name="pack" id="pack33" class="form-radio">
+                        <label title="En construcción" for="pack33" class="form-label form-label--inline">En construcción</label>
+                    </div>
+                    <div class="modularGrid-module u-md-10">
+                        <input type="radio" value="5_34" data-js-gadget="pack" name="pack" id="pack34" class="form-radio">
+                        <label title="No" for="pack34" class="form-label form-label--inline">No</label>
+                    </div>
+                    <div class="modularGrid-module u-md-10">
+                        <input type="radio" data-js-otros="pack" value="5_32" data-js-gadget="pack" name="pack" id="pack32" class="form-radio">
+                        <label title="Sí" for="pack32" class="form-label form-label--inline">Sí</label>
+                    </div>
+                     <div class="modularGrid-module u-xs-60">
+                    <input type="text" placeholder="http://www.mydomain.com"  style="display:none;" data-js-gadget-otros="pack" class="form-input">
+                 </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset--sequential form-fieldset--compressed">
+                <h3 class="form-fieldset-title">Descripción adicional                        <em class="form-label--optional">Mínimo 40 caracteres</em>
+                </h3>
+                <p>
+                    Indíquenos el máximo de información posible sobre usted, su empresa o su proyecto. En función de lo que nos cuente, podremos activarle unas condiciones u otras:
+                </p>
+                <textarea data-js-validate="{&quot;anithing&quot;:&quot;required&quot;}" data-js-comments="" data-js-minlength="40" maxlength="750" data-js-count="1" class="form-textarea u-mgt--half" id="" name="comments"></textarea>
+            </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <fieldset class="form-fieldset form-fieldset--sequential">
+                    <div class="form-captcha">
+                        <div class="modularGrid">
+                           <div class="modularGrid-module u-md-40">
+                            <img alt="" class="form-captcha-image " id="img_captcha" src="http://192.168.1.211/bigbuy_e/tools/captcha/captcha.php?ancho=175&amp;alto=65&amp;nocache=">
+                            <a class="form-captcha-reload" onclick="$(this).parent().find('img:first').prop('src','http://192.168.1.211/bigbuy_e/tools/captcha/captcha.php?ancho=175&amp;alto=65&amp;nocache='+Math.random());" href="javascript:void(0);">
+                                <i class="icon form-info-icon fa-refresh"> </i> Recargar imagen</a>
+                            </div>
+                            <div class="modularGrid-module u-sm-60 u-pdl--half">
+                                <label class="form-label">¿Qué pone en la imagen?</label>
+                                <input type="text" tabindex="6" data-js-validate="{'empty':'required'}" data-js-captcha="" class="form-input" name="captcha" data-js-forget_passwd_content="captcha">
+                                <em data-js-tooltip="tooltip_captcha" class="form-info"> <b class="icon fa-info-circle"></b> ¿Para qué sirve este código?</em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-30 u-pdt--half">
+
+                            {{!-- <button class="button button--primary button--full" data-js-steps="button1">Continuar</button> --}}
+                            <button class="button button--primary button--full" data-jsbblegal="opendialog">Enviar</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </form>
+</div>
+
+<aside class="bblegal-dialog" id="bblegal-dialog" data-jsbblegal="dialog" >
+        <a class="bblegal-hidebg" href="#" data-jsbblegal="close"></a>
+        <section class="bblegal-content">
+            <h4 class="bblegal-title">Términos y condiciones</h4>
+            <a class="bblegal-hide" href="#" title="Cerrar" data-jsbblegal="close">✕</a>
+            <div class="bblegal-text" data-jsbblegal="text">
+
+{{#times 10}}
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolores dicta odio maiores alias adipisci nam nulla dolor animi facilis eius voluptate eaque ea, reiciendis magnam autem rem tempore iusto.</p>
+                <p>Quaerat, sunt molestiae illo nam accusantium tempora eveniet. Inventore praesentium dolores architecto consectetur ab possimus ipsum, quaerat amet illo, voluptatum dicta, tenetur aperiam. Dignissimos, perferendis ullam labore laboriosam totam alias.</p>
+                <p>Laboriosam eum dignissimos repellat eveniet nemo, ab porro doloribus dolorem temporibus illum harum, quam, fugiat dolores quasi sint aliquid eius veritatis excepturi rerum tenetur animi eaque dolorum! Ab, aspernatur, quibusdam.</p>
+                <p>Iste veniam consequuntur deserunt eligendi maxime nobis, aspernatur doloremque tenetur culpa quasi ut, ad necessitatibus. Sed aliquid cum, est, velit commodi at obcaecati expedita, cumque eum, vitae reiciendis ipsam explicabo!</p>
+                <p>Adipisci, blanditiis atque dolore repellat! Saepe alias, illum eos recusandae quibusdam, earum! Tempora vero molestias porro voluptate iure at quis, accusamus ab maiores impedit repellat nihil ipsa culpa tempore quam!</p>
+                <p>Distinctio eveniet asperiores repellat quibusdam adipisci officiis dolor voluptas quod totam esse aliquam voluptatum ea itaque culpa, laborum modi enim architecto soluta dicta voluptatibus dolorum accusantium, atque velit at amet.</p>
+                <p>Praesentium, odio! Sequi accusantium vitae quae ipsum eum obcaecati fugit neque hic quod maxime laboriosam, placeat dolore impedit deserunt ex pariatur at velit expedita. Ad debitis tempore aperiam cum nesciunt!</p>
+                <p>Minima, debitis mollitia facilis. Omnis blanditiis tenetur explicabo quam? Quasi sint sequi dolorem minus consequatur! Non, facere, aliquam. Provident dolorum quia ea ad distinctio voluptates iusto, quo magni, placeat hic.</p>
+                <p>Earum sint, consequuntur repudiandae beatae repellat sapiente quos possimus reprehenderit necessitatibus error in ratione dicta, aperiam, placeat cumque inventore, quidem minus recusandae illo quasi porro. Nemo iusto eligendi, fugit ea.</p>
+                <p>Illo doloribus, eos reprehenderit corrupti ad earum provident optio esse cumque nostrum. Eius natus totam velit placeat porro blanditiis quis odio distinctio repellat, ullam ad culpa ipsa vero veniam fugit.</p>
+
+
+{{/times}}
+   </div>
+            <aside class="bblegal-controls">
+                <label class="bblegal-label" data-jsbblegal="label" >
+                    <input type="checkbox" data-jsbblegal="accept">He leído y acepto las condiciones</label>
+                    <a class="bblegal-button" href="#" data-jsbblegal="button" >Aceptar</a>
+                    <a class="button u-mgl" href="#" data-jsbblegal="close">Cerrar</a>
+            </aside>
+        </section>
+    </aside>

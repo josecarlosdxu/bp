@@ -1,0 +1,135 @@
+{
+    "fullpage": {
+        "jsAnchor": "helpCenterNav",
+        "test": [{
+                "title": "Servicios BigBuy",
+                "itemName": "serviciosBigbuy",
+                "subsections": [{
+                    "title": "BB - Venta al Mayor",
+                    "itemId": "bbVentaAlMayor"
+                }, {
+                    "title": "Packs Mayoristas",
+                    "itemId": "packsMayoristas-info"
+                }, {
+                    "title": "Dropshipping",
+                    "itemId": "dropshipping"
+                }, {
+                    "title": "Tienda dropshipping",
+                    "itemId": "tiendaDropshipping"
+                }, {
+                    "title": "Archivos CSV / XML",
+                    "itemId": "packsMayoristas-sincro"
+                }]
+            }, {
+                "title": "Intro BigBuy / Primeros pasos",
+                "itemName": "introBigbuy",
+                "subsections": [{
+                    "title": "Sincronización catálogo",
+                    "itemId": "testErrorDebug2"
+                }, {
+                    "title": "Entrega y envío",
+                    "itemId": "envioMetodos"
+                }, {
+                    "title": "Tramitación pedidos",
+                    "itemId": "tramitacionPedidos"
+                }, {
+                    "title": "Seguimiento pedidos",
+                    "itemId": "envioSeguimiento"
+                }, {
+                    "title": "Gestión de incidencias",
+                    "itemId": "postventaIncidencias"
+                }, {
+                    "title": "Panel de control",
+                    "itemId": "panelControl"
+                }, {
+                    "title": "Bloqueo de stock",
+                    "itemId": "bloqueoStocks"
+                }]
+            }, {
+                "title": "Prestashop",
+                "itemName": "prestashop",
+                "subsections": [{
+                    "title": "Tienda dropshipping",
+                    "itemId": "tiendaDropshipping2"
+                }, {
+                    "title": "Configuración inicial",
+                    "itemId": "configuracionInicial"
+                }, {
+                    "title": "Dominio",
+                    "itemId": "dominio"
+                }, {
+                    "title": "Hosting",
+                    "itemId": "hosting"
+                }, {
+                    "title": "Demo",
+                    "itemId": "demo"
+                }, {
+                    "title": "Sincronización pedidos",
+                    "itemId": "sincronizacionPedidos"
+                }, {
+                    "title": "Módulo transporte",
+                    "itemId": "moduloTransporte"
+                }, {
+                    "title": "Módulo de precios",
+                    "itemId": "moduloPrecios"
+                }, {
+                    "title": "Soporte Técnico",
+                    "itemId": "soporte"
+                }]
+            }, {
+                "title": "API BigBuy",
+                "itemName": "api",
+                "subsections": [{
+                    "title": "Información API",
+                    "itemId": "informacionApi"
+                }, {
+                    "title": "Documentación técnica",
+                    "itemId": "documentacionTecnica"
+                }]
+            },  {
+                "title": "Mi cuenta",
+                "itemName": "cuenta",
+                "subsections": [{
+                    "title": "Requisitos",
+                    "itemId": "requisitos"
+                }, {
+                    "title": "Datos de mi cuenta",
+                    "itemId": "datosCuenta"
+                }, {
+
+                    "title": "Impuestos",
+                    "itemId": "impuestos"
+                }, {
+
+                    "title": "Facturación",
+                    "itemId": "facturacion"
+                }, {
+
+                    "title": "Formas de pago",
+                    "itemId": "formasPago"
+                }, {
+
+                    "title": "Mi pack mayorista",
+                    "itemId": "miPackMayorista"
+                }]
+            }, {
+                "title": "Condiciones BigBuy",
+                "itemName": "condiciones",
+                "subsections": [{
+                    "title": "Condiciones posventa",
+                    "itemId": "condicionesPosventa"
+                }, {
+                    "title": "Condiciones generales de venta",
+                    "itemId": "condicionesGeneralesDeVenta"
+                }, {
+
+                    "title": "Información legal",
+                    "itemId": "InformacionLegal"
+                }]
+            }
+
+
+
+        ]
+    }
+}

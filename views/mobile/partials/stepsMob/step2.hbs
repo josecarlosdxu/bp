@@ -1,0 +1,210 @@
+<div data-js-step2="" data-shoppingcart-step="2" class="shoppingCartStep shoppingCartStep--active">
+        <div class="shoppingCartStep-title">
+                <b class="shoppingCartStep-number">2</b>
+                Información del envío
+                <a data-js-edit_button="2" class="form-action shoppingCartStep-buttonEdit" href=""><i class="icon fa fa-pencil"></i>Editar</a>
+        </div>
+        <div class="shoppingCartStep-info">
+                <div class="modularGrid">
+                        <div data-js-shipping_address_text="" class="modularGrid-module u-mgt--half">
+                        </div>
+                </div>
+        </div>
+        <div  class="shoppingCartStep-content">
+                <form data-js-shoppingcart-form="shipping" action="" method="post">
+                        <div class="modularGrid u-mgt--half">
+                                <fieldset class="form-fieldset form-fieldset--borderless">
+                                        <div class="modularGrid u-mgb">
+                                                <div class="modularGrid-module">
+                                                        <div class="form-radiogroup">
+                                                                <input type="radio" checked="checked" value="1" data-js-shipping_eq_invoice="1" id="shipping_eq_invoice1" name="shipping_eq_invoice" class="form-radio ">
+                                                                <label class="form-label form-label--inline" for="shipping_eq_invoice1">Envío a la misma dirección de facturación</label>
+                                                                <input type="radio" value="0" data-js-shipping_eq_invoice="0" id="shipping_eq_invoice0" name="shipping_eq_invoice" class="form-radio u-mgt">
+                                                                <label class="form-label form-label--inline u-pdt" for="shipping_eq_invoice0">Envío a otra dirección</label>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div data-js-sh-eq-inv-next="" class="modularGrid-module u-xs-60 u-sm-35 u-md-25 u-lg-20 u-xl-15 u-pdb">
+                                                <button data-js-continuar-address="" class="button button--full button--primary">Continuar</button>
+                                        </div>
+                                </fieldset>
+
+                                <fieldset {{!-- style="display:none" --}} data-js-shipping-content="" data-js-content-address="" class="form-fieldset form-fieldset--borderless">
+                                        <div class="modularGrid">
+                                                <div class="modularGrid-module u-lg-70 u-xl-80">
+                                                        <select data-js-checkout_address="shipping" class="form-select" type="text">
+                                                                <option value="11245">otra mas nueva direc, Lleida, nueva direc 25005 Lleida LLEIDA España</option>
+                                                                <option value="11243">unas cuantas y van , C/ nhlmlhmllbmb, y van  46005 Valenia VALENCIA / VALÉNCIA España</option>
+                                                                <option value="11242">lopez pedro, dkdfgkdfgkdjf, pedro 56789 Berlin Alemania</option>
+                                                                <option value="11241">ouiortuyoiruyiort rjortyoirtoi, gdfggfdgfdgdf gdf, rjortyoirtoi 12005 Castellon de laplana CASTELLÓN / CASTELLÓ España</option>
+                                                                <option value="11240">Direccion nueva otra direcci, C/ nhlmlhmllbmb, otra direcci 26005 La rioja LA RIOJA España</option>
+                                                                <option value="11237">Perez Pruebas, Pruebas Perez, Pruebas 46005 Valencia VALENCIA / VALÉNCIA España</option>
+                                                                <option value="11235">Pruebas Empresa, 26 rue de la liberation Boisséjour, Empresa 46005 Toulousse Francia</option>
+                                                                <option value="11199">Servicios Empresariales, Person Contact, C/ Nueva Calle 23, Contact 25005 Lleida LLEIDA Alemania</option>
+                                                                <option value="11135">Mi empresa nueva, Viyuela Pepe, C/ Del norte 34, Pepe 35001 Valencia PALMAS, LAS España</option>
+                                                                <option value="11133">Perez Pruebas, rue de Burden 37, Pruebas 56889 París Francia</option>
+                                                                <option value="11064">Empresa depruebas, Perez Pruebas, C/ De pruebas 3456, Pruebas 46005 Valencia VALENCIA / VALÉNCIA España</option>
+                                                                <option selected="selected" value="10967">Perez Pruebas, C/ De pruebas 3456, Pruebas 46008 Valencia VALENCIA / VALÉNCIA España</option>
+                                                        </select>
+                                                </div>
+
+
+<div data-js-alternative_text=" Elegir dirección existente" data-js-new_address="true"  class="u-mgt--half u-xs-60 u-sm-35 u-md-25 u-lg-20 u-xl-15">
+        <button data-js-prev="" class="button form-action  button--full form-action--inline">Nueva dirección</button>
+</div>
+</div>
+
+
+</fieldset>
+<fieldset {{!-- style="display: none; "--}} data-js-address-information="contenedor" class="form-fieldset form-fieldset--borderless u-mgb">
+        <p class="form-description"> Datos seleccionados</p>
+
+        <dl class="modularGrid list list-definition list-definition--inline list-definition--collapsed  u-mgb">
+
+                <dt data-js-address-information-cab="company" class="modularGrid-module list list-dt u-xs-30">Razón social</dt>
+                <dd data-js-address-information="company" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+                <dt data-js-address-information-cab="name" class="modularGrid-module list list-dt u-xs-30">Nombre</dt>
+                <dd data-js-address-information="name" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+                <dt data-js-address-information-cab="address1" class="modularGrid-module list list-dt u-xs-30">Dirección</dt>
+                <dd data-js-address-information="address1" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+                <dt data-js-address-information-cab="postcode" class="modularGrid-module list list-dt u-xs-30">Código postal</dt>
+                <dd data-js-address-information="postcode" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+                <dt data-js-address-information-cab="country" class="modularGrid-module list list-dt u-xs-30">País</dt>
+                <dd data-js-address-information="country" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+                <dt data-js-address-information-cab="state" class="modularGrid-module list list-dt u-xs-30">Provincia</dt>
+                <dd data-js-address-information="state" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+                <dt data-js-address-information-cab="city" class="modularGrid-module list list-dt u-xs-30">Localidad</dt>
+                <dd data-js-address-information="city" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+                <dt data-js-address-information-cab="phone" class="modularGrid-module list list-dt u-xs-30">Teléfono</dt>
+                <dd data-js-address-information="phone" class="modularGrid-module list list-dd u-xs-70"></dd>
+
+        </dl>
+
+        <div class="modularGrid">
+                <div class="modularGrid-module u-xs-60 u-sm-35 u-md-25 u-lg-15 u-xl-15 u-xxl-15">
+                        <button data-js-continuar-address="" class="button  button--primary button--full">Continuar</button>
+                        <!--<span class="form-action form-action--inline u-mgl" data-js-editar-address="invoice"><i class="icon fa fa-pencil"></i> Editar información</span>-->
+                </div>
+
+                <!--<span class="form-action form-action--inline u-mgl" data-js-editar-address="shipping"><i class="icon fa fa-pencil"></i> Editar Información</span>-->
+        </fieldset>
+
+        <fieldset {{!-- style="display:none" --}} data-js-form-content="shipping" class="form-fieldset form-fieldset--borderless">
+                <div class="modularGrid  paddingHack">
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="company">
+                                        Empresa                            <em data-js-state-op="" class="form-label--optional">Opcional</em>
+                                </label>
+                                <input type="text"  value="" maxlength="36" name="company" data-js-company="" class="form-input" disabled="">
+                        </div>
+
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="name">Nombre</label>
+                                <input type="text"  value="" maxlength="12" name="name" data-js-name="" class="form-input" disabled="">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="surnames">Apellidos</label>
+                                <input type="text"  value="" maxlength="24" name="surnames" data-js-surnames="" class="form-input" disabled="">
+                        </div>
+
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="country">País</label>
+
+                                {{>selectPrefix}}
+
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="postcode">Código postal</label>
+                                <input type="text" data-js-validate="{&quot;empty&quot;:&quot;required&quot;,&quot;postcode&quot;:&quot;warning&quot;}" value="" maxlength="10" name="postcode" data-js-postcode="" class="form-input" disabled="">
+                        </div>
+
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="state">
+                                        Estado / Provincia                            <em data-js-state-op="" class="form-label--optional">Opcional</em>
+                                </label>
+
+                                {{>selectPostCode}}
+
+                                <input type="text" maxlength="36" name="state" data-js-state="text" class="form-input" disabled="" style="display: none;">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="city">Localidad</label>
+                                <input type="text" value="" maxlength="36" name="city" data-js-city="" class="form-input" disabled="">
+                        </div>
+
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+                                <label class="form-label" for="address1">Dirección</label>
+                                <input type="text" data-js-validate="{&quot;empty&quot;:&quot;required&quot;,&quot;address&quot;:&quot;warning&quot;}" maxlength="40" name="address1" data-js-address1="" class="form-input" disabled="">
+                        </div>
+                </div>
+                <div class="modularGrid">
+
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+
+                                <div class="modularGrid">
+
+                                        <div class="modularGrid-module">
+                                                <label for="phone" class="form-label">Teléfono o Móvil</label>
+                                        </div>
+                                        <div class="modularGrid-module u-xs-20  u-lg-15 u-xl-10 u-pdr--half">
+                                                <input type="text" tabindex="140" data-js-validate="{&quot;empty&quot;:&quot;required&quot;,&quot;phone_prefix&quot;:&quot;prefix&quot;}" maxlength="4" data-js-phone-prefix="" name="phone-prefix" class="form-input form-input-prefix" disabled=""/>
+                                        </div>
+                                        <div class="modularGrid-module u-xs-80 u-lg-85 u-xl-90">
+                                                <input type="text" data-js-resctricted="phone" data-js-validate="{&quot;empty&quot;:&quot;required&quot;, &quot;phone&quot;: &quot;warning&quot;}" maxlength="12" name="phone" data-js-phone="" class="form-input" disabled=""/>
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+                        <div class="modularGrid-module u-md-50 u-lg-3rd u-sm-pdr">
+
+                                <div class="modularGrid">
+                                        <div class="modularGrid-module">
+                                                <label for="phone_mobile" class="form-label">
+                                                        Otro Teléfono o Móvil
+                                                        <em data-js-state-op="" class="form-label--optional">Opcional</em>
+                                                </label>
+                                        </div>
+
+                                        <div class="modularGrid-module u-xs-20  u-lg-15 u-xl-10 u-pdr--half">
+                                                <input type="text" tabindex="155" data-js-validate="{&quot;empty&quot;:&quot;required&quot;,&quot;phone_prefix&quot;:&quot;prefix&quot;}" maxlength="4" data-js-phone-prefix="" name="phone-prefix" class="form-input form-input-prefix" disabled=""/>
+                                        </div>
+
+                                        <div class="modularGrid-module u-xs-80  u-lg-85 u-xl-90">
+                                                <input type="text" data-js-resctricted="phone" data-js-validate="{&quot;phone&quot;: &quot;warning&quot;}" maxlength="18" name="phone_mobile" data-js-phone_mobile="" class="form-input" disabled=""/>
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+                <div class="modularGrid">
+                        <div class="modularGrid-module {{!-- u-xs-50 --}}">
+                                <label class="form-label" for="surnames">Email destinatario</label>
+                                <input type="text" data-js-validate="{&quot;empty&quot;:&quot;required&quot;,&quot;email&quot;:&quot;warning&quot;}" value="" maxlength="70" name="email" data-js-email="" class="form-input" disabled="">
+                        </div>
+                </div>
+        </fieldset>
+</div>
+<div {{!-- style="display: none" --}} data-js-send="shipping" class="modularGrid u-mgb u-pdt--half">
+        <div class="modularGrid-module u-xs-60 u-sm-35 u-md-25 u-lg-20 u-xl-15">
+                <button data-js-validate-form="shipping" class="button  button--primary button--full">Continuar</button>
+        </div>
+        <div class="modularGrid-module u-xs-40 u-sm-25 u-md-20 u-lg-10 u-xl-10  u-pdl">
+                <button data-js-validate-form="shipping" class="button button--full button-backButton"> Atrás</button>
+        </div>
+</div>
+
+</form>
+</div>
+
+<!--<div class="shoppingCartStep-action u-mgt u-mgb">
+<button class="button button--primary button--big" data-js-button-next data-js-validate-form>Continuar</button>
+</div>-->                </div>

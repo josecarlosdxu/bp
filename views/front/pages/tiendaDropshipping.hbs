@@ -1,0 +1,109 @@
+---
+title: Tienda dropshipping
+layout: front/layouts/landing.hbs
+---
+
+{{>dropShopHero dropShopHero}}
+
+
+{{>totalSyncro totalSyncro}}
+{{>bannerCatalog}}
+
+
+<section class="content u-pdv2">
+ <h2 class="supertitle1 u-mgv2 u-elem-center u-tac">Elija el diseño de su tienda</h2>
+ <div class="modularGrid modularGrid--boxed u-elem-center u-pd u-mgt u-mgl--half  u-mgr--half">
+   {{> planCardItem name='valencia'}}
+   {{> planCardItem name='ibiza'}}
+   {{> planCardItem name='menorca'}}
+   {{> planCardItem name='tenerife'}}
+   {{> planCardItem name='formentera' soon='próximamente'}}
+   {{> planCardItem name='mikonos' soon='próximamente'}}
+ </div>
+</section>
+
+{{>heroGift}}
+
+<section class="content content--light u-pdt2 u-brb" data-js-sticky="container">
+  <h2 class="supertitle1 u-mgv2 u-elem-center u-tac">¿Qué incluimos en el Paquete Tienda Dropshipping?</h2>
+  <div class="modularGrid modularGrid--boxed  modularGrid--equalHeights u-pdt2 ">
+
+    <div class="modularGrid-module u-xs-30 u-bg--white ">
+
+      {{>stickyvNav dropshippingShopsMenu}}
+    </div>
+    <div class="modularGrid-module u-xs-70 u-pdl2 u-bg--white"  data-js-sticky="content">
+      {{>dropShopExplains dropshippingShopsExplains}}
+    </div>
+  </div>
+</section>
+
+
+
+{{>digitalBusiness}}
+
+<section class="content content--light u-pdv2">
+  <h2 class="supertitle1 u-mgt2 u-elem-center u-tac">¿Cómo funciona el dropshipping?</h2>
+  <div class="modularGrid modularGrid--boxed u-pdv2 u-tac">
+    {{>apiDropshippingInfo}}
+  </div>
+</section>
+<section class="content u-pdv2">
+  <div class="modularGrid modularGrid--boxed u-pdv2 u-tac u-pdb-0">
+    {{>svgIcon type='quote' size='xl' class='u-elem-center color-blue'}}
+    <h2 class="supertitle1 u-mgt2 u-mgb">¿A quién le interesan nuestras tienda dropshipping 360º?</h2>
+    <h3 class="superSubtitle1 u-mgv u-xs-80 u-elem-center u-pdb"><em>“Está destinado a emprendedores y profesionales del sector ecommerce y marketing digital.<br>Son clientes que valoran el poder acceder, en apenas unos días, a una solución integral llave en mano con multitud de herramientas y una amplia funcionalidad.”</em></h3>
+
+
+{{!-- <h4 class="superSubtitle2 "></h4> --}}
+    <h5 class="subtitle1 u-op-60 u-mgb2">S.Esteve - CEO BigBuy</h5>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+{{!-- <div class="modularGrid u-pdb">
+  <section class="box u-pdt--half">
+    <div class="modularGrid-module u-tac u-pdt">
+      {{>dropshopSection1}}
+      {{>dropshopSectionFeatures}}
+      <section class="ventaCMS-section ventaCMS-section--inverse  ventaCMS-section--condensed u-mgb">
+        <h2 class="ventaCMS-subtitle ventaCMS-subtitle--section">¡Su negocio llave en mano!
+          {{>svgIcon size='lg'type='keys'}}
+        </h2>
+      </section>
+    </div>
+    <div class="modularGrid-module u-mgt">
+      <section class="u-pdb ">
+        <h2 class="ventaCMS-subtitle ventaCMS-subtitle--section u-pd--half">Le ofrecemos una Tienda Online de Regalos Originales</h2>
+        <div class="modularGrid u-elem-center u-pd u-mgt u-mgl--half  u-mgr--half">
+         {{> planCardItem name='lisboa'}}
+         {{> planCardItem name='vancouver'}}
+         {{> planCardItem name='melbourne'}}
+         {{> planCardItem name='zurich'}}
+         {{> planCardItem name='oslo'}}
+         {{> planCardItem name='berlin'}}
+
+
+       </div>
+     </section>
+   </div>
+   {{>promoDiscountWallet}}
+   {{>dropshopSectionFeatures2 dropShop.features2}}
+   <section class="ventaCMS-section ventaCMS-section--colorized u-mgt  u-brdt  u-brb">
+    <h2 class="ventaCMS-sectionTitle">¿Cómo funciona la tienda Dropshipping?</h2>
+    <div class="modularGrid-module u-xs-90 u-elem-center u-pd u-mgb">
+      <img class=" img--responsive" alt="" src="../../img/dropshipping_big.png">
+    </div>
+  </section>
+  {{>info}}
+  {{>faqsTiendaDropshipping}}
+</section>
+</div>
+ --}}

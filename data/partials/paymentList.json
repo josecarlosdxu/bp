@@ -1,0 +1,42 @@
+{
+      
+    "list": [
+    {
+        "title": "PayPal™",
+        "img": "paypal_card_alt",
+        "text": "Es la plataforma de pago más segura de internet. Permite vincular los pagos a su tarjeta de crédito o débito o incluso a su cuenta bancaria. Tiene un coste del 1 % (+ 0,30 € por transacción).<a href='#' class='link color-blue u-mgl--half'  >+info</a>"
+    },
+    {
+        "title": "Tarjeta Bancaria",
+        "img": "credit_card",
+        "text": "Admitimos la mayoría de tarjetas de crédito o débito a través de PayPal en modo invitado (no es necesario crear una cuenta en Paypal ni registrarse). Tiene un coste del 1% (+0,30 € por transacción)."
+    },
+    {
+        "title": "Transferencia bancaria",
+        "img": "bank_transfer",
+        "text": "Esta forma de pago demora la entrega hasta que se confirme el cobro en nuestro banco. Dispone de 24 h para confirmarla adjuntando en su panel de control el justificante de la transferencia. Luego recibirá un email que le indicará los pasos para finalizar el pedido."
+
+
+    },
+    {
+        "title": "Transferencia bancaria: Sofort / Klarna",
+        "img": "klarna",
+        "text": "Con este método de pago, podrá pagar mediante transferencia sin necesidad de adjuntar el justificante de pago. Asimismo, si su banco está adaptado a este sistema, es posible reducir el tiempo de validación de la transferencia. En caso de que no esté adaptado, el pedido se validará una vez llegue la transferencia. El uso de este método tiene un coste fijo de 1,95€ por pedido, y sólo podrá utilizarse en envío único."
+    },
+    {
+        "title": "Monedero y saldo",
+        "img": "monedero",
+        "text": "Se puede recargar mediante transferencia bancaria y utilizar el saldo para realizar nuevos pedidos. Dispone de un historial de movimientos en su panel de control y la posibilidad de transferir saldo (mín. 300 €) a su cuenta bancaria o de PayPal. Muy cómodo y sin ningún gasto adicional."
+    },
+    {
+        "title": "Reembolso dropshipping",
+        "img": "reembolso_dropshipping",
+        "text": "En los envíos dropshipping el transportista cobrará el importe total de su pedido de venta. En aprox. 10 días este rembolso se reintegrará en su monedero. Servicio disponible para la España peninsular, las Baleares y Portugal. Tiene un coste del 2 % (mín. 0,90 €)."
+    },
+    {
+        "title": "Contrareembolso",
+        "img": "contrarrembolso",
+        "text": "Se abona el importe total del pedido a la mensajería. Esta forma de pago está disponible exclusivamente en la España peninsular, las Baleares y Portugal. Tiene un coste del 1 % (mín. 0,85 €)."
+    }]
+
+}

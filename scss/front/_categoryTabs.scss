@@ -1,0 +1,74 @@
+@include block(categoryTabs) {
+    border-bottom: 1px solid $color-shadow;
+    margin-bottom: 2.6rem;
+    margin-top: -0.25rem;
+    display: flex;
+    @include element(item) {
+        font-size: 1.7rem;
+        font-weight: 300;
+        background: transparent;
+        padding: 1.95rem 2.45rem;
+        border: none;
+        color: transparentize(black, 0.5);
+        transition: color 0.2s ease-in, box-shadow 0.2s ease-in;
+        position: relative;
+        border-radius: 0;
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-more;
+            box-shadow: 0 -3px transparentize($color-more, 0.5) inset;
+            outline: none;
+        }
+        /*@include modifier(selected) {
+            opacity: 1;
+            pointer-events: none;
+            box-shadow: 0 -3px $color-more inset;
+            color: $color-more;
+            &:after {
+                content: "";
+                border: 8px solid transparent;
+                border-top: none;
+                border-bottom-color: $color-more;
+                position: absolute;
+                bottom: 0;
+                left: calc(50% - 4px);
+            }
+        }*/
+    }
+    ~ .tabs-contentPanel > .homefeatured--brandsMenu {
+        margin: -2.6rem auto 1rem;
+    }
+}
+
+.categoryTabs-item[data-state="selected"] {
+    opacity: 1;
+    pointer-events: none;
+    box-shadow: 0 -3px $color-more inset;
+    color: $color-more;
+    &:after {
+        content: "";
+        border: 8px solid transparent;
+        border-top: none;
+        border-bottom-color: $color-more;
+        position: absolute;
+        bottom: 1px;
+        left: calc(50% - 4px);
+    }
+}
+
+
+.no-flexbox {
+    .categoryTabs {
+        display: block;
+    }
+    .categoryTabs-item {
+        display: inline-block;
+    }
+
+    
+}
+
+
+

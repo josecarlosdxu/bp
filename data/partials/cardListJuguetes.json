@@ -1,0 +1,263 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_3"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Juguetes y bebés",
+    "description": "Bienvenido, en informática y electrónica encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "190",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Juguetes y juegos",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/juguetes/2572_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bebés y niños",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/juguetes/2593_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Material escolar",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/juguetes/2611_big.jpg"
+      }
+
+    ]
+  },
+  "juegos": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+    "title": "Juguetes y juegos",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Juguetes para bebés",
+        "number": "5",
+        "image": "../../img/categories/juguetes/2574_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Juegos de mesa para niños",
+        "number": "20",
+        "image": "../../img/categories/juguetes/2576_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Juegos educativos y de habilidad",
+        "number": "30",
+        "image": "../../img/categories/juguetes/2578_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Puzzles y construcciones",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2579_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Muñecos y peluches",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2581_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Jugar a ser mayor",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2583_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Jugar al aire libre",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2585_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Vehiculos, circuitos y radio control",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2587_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Patinetes y triciclos",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2589_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Otros juguetes",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2660_small.jpg"
+      }
+    ]
+  },
+  "bebes": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+    "title": "Bebés y niños",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Lactancia",
+        "number": "5",
+        "image": "../../img/categories/juguetes/2594_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Menaje infantil",
+        "number": "20",
+        "image": "../../img/categories/juguetes/2596_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Hora del baño",
+        "number": "30",
+        "image": "../../img/categories/juguetes/2597_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Hora de dormir",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2599_small.jpg"
+      },{
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Relax y diversión",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2601_small.jpg"
+      },{
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Salud y seguridad",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2603_small.jpg"
+      },{
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Paseo y viaje",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2605_small.jpg"
+      },{
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Gorras y paraguas",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2607_small.jpg"
+      },{
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Decoración infantil",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2610_small.jpg"
+      }
+
+    ]
+  },
+  "material": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+    "title": "Material escolar",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Mochilas preescolares",
+        "number": "5",
+        "image": "../../img/categories/juguetes/2612_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Mochilas escolares",
+        "number": "20",
+        "image": "../../img/categories/juguetes/2613_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Estuches y plumieres",
+        "number": "30",
+        "image": "../../img/categories/juguetes/2615_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Otro material escolar",
+        "number": "50",
+        "image": "../../img/categories/juguetes/2616_small.jpg"
+      }
+
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+ {
+     "noDiscount": {
+         "icon": "pack",
+         "caption": "PVD ESPECIAL",
+         "description": "En función del importe total del carrito se le aplicará respecto al PVD este descuento automático",
+          "thead": [
+             { "name": "Importe", "class": "u-xs-25","mobileclass": "u-xs-20" },
+
+             { "name": "Dto.(%)", "mobileclass": "u-xs-30"},
+
+             { "name": "PWD <small>neto</small>", "class": "u-pdr" ,  "mobileclass": "u-pdr u-xs-30"}
+
+         ],
+         "tbody": [{
+                 "td1": "100 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "300 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "600 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "1.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "2.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "4.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "6.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }
+
+         ]
+
+     },
+     "logged": {
+         "icon": "pack",
+         "caption": "DESCUENTO % AUTOMÁTICO",
+         "description": "En función del importe total del carrito se le aplicará respecto al PVD este descuento automático",
+         "thead": [
+             { "name": "Importe", "class": "u-xs-25" },
+
+             { "name": "Dto.(%)" },
+
+             { "name": "PWD <small>neto</small>", "class": "u-pdr" }
+
+         ],
+         "tbody": [{
+                 "td1": "100 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "300 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "600 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "1.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "2.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "4.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }, {
+                 "td1": "6.000 €",
+                 "td2": "-0.0 %",
+                 "td3": "7,07 €"
+             }
+
+         ]
+
+     }
+ }

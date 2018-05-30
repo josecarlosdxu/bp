@@ -1,0 +1,158 @@
+@include block(notify) {
+    border-radius: 40px;
+    color: #fff;
+    font-size: 0;
+    padding: 0;
+    height: 7px;
+    width: 7px;
+    position: relative;
+    background: #f9625d;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 0;
+    top: 0.4rem;
+    margin-left: 0.25rem;
+    //-webkit-animation: notifyPulseTab infinite 0.9s;
+    //animation:  notifyPulseTab infinite 0.9s;
+    @include modifier(animated) {
+        -webkit-animation: notifyPulseTab infinite 0.7s;
+        animation: notifyPulseTab infinite 0.7s;
+        top: 0.25rem;
+        margin-right: 0.25rem;
+    }
+    @include modifier(success) {
+        background: $color-green-light;
+    }
+    @include modifier(caution) {
+        background: $color-orange-dark;
+    }
+    @include modifier(new) {
+        // background: red;
+        margin-left: .5rem;
+        font-size: 9px;
+        font-weight: 100;
+        color: white;
+        padding: 2px 3px;
+        -webkit-animation: blink infinite 1s;
+        animation: blink infinite 1s;
+        border-radius: 3px;
+    }
+    @include element(link) {
+        color: red;
+        -webkit-animation: notifyLink infinite 0.9s;
+        animation: notifyLink infinite 0.9s;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@-webkit-keyframes notifyPulseTab {
+    0%,
+    100% {
+        background: $color-orange-dark;
+    }
+    57% {
+        background: $color-orange-light;
+    }
+}
+
+@keyframes notifyPulseTab {
+    0%,
+    100% {
+        background: $color-orange-dark;
+    }
+    57% {
+        background: $color-orange-light;
+    }
+}
+
+@-webkit-keyframes notifyLink {
+    0%,
+    100% {
+        color: red;
+    }
+    57% {
+        color: tomato;
+    }
+}
+
+@keyframes notifyLink {
+    0%,
+    100% {
+        color: red;
+    }
+    57% {
+        color: tomato;
+    }
+}
+
+@-webkit-keyframes blink {
+    0%,
+    100% {
+        // opacity:1;
+        background: #0090ff;
+    }
+    100% {
+        // opacity:.3;
+        background: rgba(#0090ff, .5);
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        // opacity:1;
+        background: #0090ff;
+    }
+    50% {
+        // opacity:.3;
+        background: rgba(#0090ff, .5);
+    }
+}
+
+@-webkit-keyframes pulseBlink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .7;
+    }
+}
+
+@keyframes pulseBlink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .7;
+    }
+}
+
+@-webkit-keyframes mobileNews {
+    0%,
+    100% {
+        color: $color-accentBlue-default;
+    }
+    50% {
+        color: lighten($color-accentBlue-default,10);
+    }
+}
+
+@keyframes mobileNews {
+    0%,
+    100% {
+        color: $color-accentBlue-default;
+    }
+    50% {
+        color: lighten($color-accentBlue-default,10);
+    }
+}

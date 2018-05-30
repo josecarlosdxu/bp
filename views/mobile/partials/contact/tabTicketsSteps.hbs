@@ -1,0 +1,187 @@
+  <div class="modularGrid-module u-pdt">
+        <nav data-js-accordion_selected_class="message-itemHeader--selected" data-js-accordiontype="message-itemContent--selected"
+        data-js-accordion="accordion" data-js-grouped="articles"  class="message grouped">
+
+            <article class="message-item">
+                <header data-js-accordion="link" class="message-itemHeader">
+                    <div class="modularGrid-module message-itemHeader--arrow">
+                        <h4 class="message-itemTitle message-itemTitle--full"><b class="shoppingCartStep-number">1</b>Fotografías del pedido
+                        </h4>
+                    </div>
+                </header>
+                <section data-js-accordion="panel" class="message-itemContent nopadding">
+                     {{> tabTicketsStep1}}
+                </section>
+            </article>
+             <article class="message-item">
+                <header data-js-accordion="link" class="message-itemHeader">
+                    <div class="modularGrid-module message-itemHeader--arrow">
+                        <h4 class="message-itemTitle message-itemTitle--full"><b class="shoppingCartStep-number">2</b>Productos del pedido
+                        </h4>
+                    </div>
+                </header>
+                <section data-js-accordion="panel" class="message-itemContent nopadding">
+                     {{> tabTicketsStep2}}
+                </section>
+            </article>
+            <article class="message-item">
+                <header data-js-accordion="link" class="message-itemHeader">
+                    <div class="modularGrid-module message-itemHeader--arrow">
+                        <h4 class="message-itemTitle message-itemTitle--full"><b class="shoppingCartStep-number">3</b>Comentarios
+                        </h4>
+                    </div>
+                </header>
+                <section data-js-accordion="panel" class="message-itemContent nopadding">
+                     {{> tabTicketsStep3}}
+                </section>
+            </article>
+
+        </nav>
+    </div>
+ <!--<div class="modularGrid-module">
+        <h3 class="mobileText-sectionTitle">Adjunte los archivos necesarios</h3>
+    </div>
+
+    <div class="modularGrid-module">
+        <label class="form-label u-mgb--half">Fotografía del embalaje</label>
+    </div>
+    <div class="modularGrid u-brb u-pdb--half  u-mgb--half">
+        <div class="modularGrid-module u-xs-50">
+
+             <button class="uploadFile u-mgb--half">
+                Archivo 1
+                <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+            </button>
+             <button class="uploadFile u-mgb--half">
+                Archivo 1
+                <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+            </button>
+
+        </div>
+         <div class="modularGrid-module u-xs-50 u-txr">
+            <button class="button">
+                <svg class="icon icon--inline icon--sm" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+                </svg>
+                Adjuntar
+            </button>
+        </div>
+    </div>
+
+    <div class="modularGrid-module">
+        <label class="form-label u-mgb--half">Fotografía del la caja abierta</label>
+    </div>
+    <div class="modularGrid u-brb u-pdb--half u-mgb--half">
+        <div class="modularGrid-module u-xs-50">
+
+             <button class="uploadFile u-mgb--half">
+                Archivo 1
+                <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+            </button>
+
+
+        </div>
+         <div class="modularGrid-module u-xs-50 u-txr">
+            <button class="button">
+                <svg class="icon icon--inline icon--sm" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+                </svg>
+                Adjuntar
+            </button>
+        </div>
+
+        <div class="modularGrid-module u-tac">
+          <div class="form-label--optional u-mgt">Tamaño de archivos adjuntos <span>5.00 Mb</span> de 10.00 Mb</div>
+          <div class="progressBar progressBar--tiny u-xs-70"><span class="progressBar-meter" style="width:33%;"></span></div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="modularGrid-module">
+        <label class="form-label u-mgb--half">Fotografía de la etiqueta adherida de la mensajería</label>
+    </div>
+    <div class="modularGrid u-brb u-pdb--half u-mgb--half">
+        <div class="modularGrid-module u-xs-50">
+
+        </div>
+         <div class="modularGrid-module u-xs-50 u-txr">
+            <button class="button">
+                <svg class="icon icon--inline icon--sm" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+                </svg>
+                Adjuntar
+            </button>
+        </div>
+    </div>
+
+    <div class="modularGrid-module">
+        <label class="form-label u-mgb--half">Fotografías de la rotura/s propiamente</label>
+    </div>
+    <div class="modularGrid u-brb u-pdb--half u-mgb--half">
+        <div class="modularGrid-module u-xs-50">
+
+        </div>
+         <div class="modularGrid-module u-xs-50 u-txr">
+            <button class="button">
+                <svg class="icon icon--inline icon--sm" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+                </svg>
+                Adjuntar
+            </button>
+        </div>
+    </div>
+
+    <div class="modularGrid-module">
+        <label class="form-label u-mgb--half">Esccaneo o fotografía del albarán de mercancía recibido</label>
+    </div>
+    <div class="modularGrid u-brb u-pdb--half u-mgb--half">
+        <div class="modularGrid-module u-xs-50">
+
+        </div>
+         <div class="modularGrid-module u-xs-50 u-txr">
+            <button class="button">
+                <svg class="icon icon--inline icon--sm" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+                </svg>
+                Adjuntar
+            </button>
+        </div>
+    </div>
+
+
+    <div class="modularGrid-module">
+        <h3 class="mobileText-sectionTitle ">Escriba sus comentarios</h3>
+        <textarea class="form-textarea"></textarea>
+    </div>
+
+
+    <div class="modularGrid-module u-xs-50">
+        <button class="uploadFile u-mgt--half">
+            Archivo 1
+            <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+        </button>
+         <button class="uploadFile u-mgt--half">
+            Archivo 1
+            <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+        </button>
+         <button class="uploadFile u-mgt--half">
+            Archivo 1
+            <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+        </button>
+    </div>
+    <div class="modularGrid-module u-xs-50 u-txr">
+        <button class="button u-mgt--half">
+            <svg class="icon icon--inline icon--sm" role="img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+            </svg>
+            Adjuntar
+        </button>
+    </div>
+
+
+     <div class="modularGrid-module u-brdt u-mgt--half">
+     <button class="button button--primary u-mgt--half" name="submit">Enviar</button>
+    </div>-->

@@ -1,0 +1,32 @@
+---
+title: Hogar Jardín
+breadcrumbs: Hogar Jardín
+layout: mobile/layouts/clean.hbs
+---
+<header class="category-header">
+    <div class="category-headerContent">
+        <img src="../../img/categories/hogar/2399_header.jpg" alt="" class="category-headerBg">
+        <a href="#" class="category-title subtitle2">
+            1491 productos
+            <span class="cardElem-more">Ver todos</span>
+        </a>
+    </div>       
+</header>
+
+<div class="modularGrid modularGrid--boxed">
+    <div class="modularGrid-module mobileContent mobileContent--spaced">
+        <h3 class="subtitle2 u-op-50 u-pdb--half">Comprar por categoría</h3>
+        {{>sliderCategories menuListMobile.hogar}}
+        {{> cardList cardListHogar.deco mobile='true'}}
+        {{> cardList cardListHogar.toilet mobile='true'}}
+        {{> cardList cardListHogar.garden mobile='true'}}
+        {{> cardList cardListHogar.pets mobile='true'}}
+        {{> cardList cardListHogar.heating mobile='true'}}
+        {{> cardList cardListHogar.cleaning mobile='true'}}
+        <div class="modularGrid u-pd--half u-op-50">
+            <div class="modularGrid-module">
+                {{>menuListDescription menuList7.list}}
+            </div>
+        </div>
+    </div>
+</div>

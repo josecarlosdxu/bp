@@ -1,0 +1,21 @@
+---
+layout: mobile/layouts/clean.hbs
+title: All-In-One Supplier
+breadcrumbs: All-In-One Supplier
+---
+<section class="content content--full">
+{{>allinonehero}}
+</section>
+
+{{>allInOneItem apiAllInOne.catalogo}}
+{{>allInOneItemAlt apiAllInOne.logistica}}
+{{>allInOneItem apiAllInOne.ecommerce}}
+{{>allInOneItemAlt apiAllInOne.sincronizacion}}
+{{>allInOneItem apiAllInOne.recursos}}
+{{>allInOneItemAlt apiAllInOne.administracion}}
+{{>allInOneItem apiAllInOne.envios}}
+{{>allInOneItemAlt apiAllInOne.postventa last='true'}}
+
+
+{{>apiDropshippingMessage}}
+

@@ -1,0 +1,73 @@
+%responsiveTableItem {
+    padding: 0 1em;
+   // text-align: center;
+    vertical-align: top;
+    //@extend %inlineBlock;
+    padding: 0.5rem 1rem;
+    //text-align: center;
+    line-height: 1.4;
+    vertical-align: middle;
+    white-space: normal;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+@include block(responsiveTable) {
+    color: #000;
+    @include element(container) {
+        @extend %inlineBlock100;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-collapse: collapse;
+        width: auto;
+        display: block;
+        //background: #dedede;
+        //background: linear-gradient(to right, #cdcdcd 1px, #dedede 1px) repeat scroll 0 0 / 5px 5px;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid #dedede;
+        border-bottom: none;
+    }
+    @include element(table) {
+        border-collapse: collapse;
+        border-bottom: none;
+        width: 100%;
+        min-width: 100%;
+        @include modifier(auto) {
+            min-width: 0;
+
+        }
+    }
+    @include element(tr) {
+        //padding-left:148px;
+        //display:block;
+        margin-top: -1px;
+        font-size: 0;
+        //width: 100%;
+    }
+    @include element(td) {
+        //box-shadow:1px 1px 0 #bbb;
+        border: 1px solid #dedede;
+        @extend %responsiveTableItem;
+        @include modifier(widthTd) {
+             word-break: inherit;
+             white-space: normal;
+        }
+
+    }
+    @include element(th) {
+        //box-shadow:0 1px 0 #bbb;
+        @extend %responsiveTableItem;
+        text-align: left;
+        background: #eee;
+
+        p{
+            margin-bottom: 0.25rem;
+            display: inline-block;
+        }
+         @include modifier(widthTh) {
+           min-width:200px;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@include block(cmsContent) {
+    outline: none;
+    padding: $um;
+    position: relative;
+
+    @include element(message) {
+        display: block;
+        height: 1rem;
+        left: -50%;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        width: 100%;
+    }
+    @include element(content) {
+        position: relative;
+        left:1%;
+
+        *{
+            color: #000 !important;
+        }
+    }
+}

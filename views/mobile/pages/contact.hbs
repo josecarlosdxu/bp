@@ -1,0 +1,118 @@
+---
+title: Contacte con nosotros
+breadcrumbs: Contacte con nosotros
+layout: mobile/layouts/clean.hbs
+---
+
+<section class="content content--light">
+    <div class="modularGrid modularGrid--boxed u-pdt">
+
+
+        <div class="modularGrid-module u-pdb u-pdh">
+            <section class="modularGrid u-sm-60  u-md-50 u-lg-30 ">
+                <div class="modularGrid-module u-xxs-50 u-xs-35 u-pdr">
+                    <img src="../../img/contact.svg">
+                </div>
+                <div class="modularGrid-module u-xxs-100 u-xs-65">
+                    <h4 class="subtitle3">Atención al cliente</h4>
+                    <img src="../../img/comercial_phone2.svg" class="u-block u-mgv">
+                    <img src="../../img/comercial_mail2.svg" class="u-block">
+                </div>
+            </section>
+        </div>    
+
+        {{>helpCenterItem mobile='true'}}
+
+      
+
+
+
+        <section class="panel u-bx--0 u-pdh">
+            <header class="panel-header">Área de Contacto</header>
+            <nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs">
+                <article class="mobileTabs-item">
+                    <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+                      
+                            {{>svgIcon type='support_person' class='mobileTabs-itemHeader--svg'}}
+                            <h4 class="subtitle1">Atención al cliente</h4>
+                      
+                    </header>
+                    <section data-js-accordion="panel" class="mobileTabs-itemContent">          
+                        {{>tabTickets1}}            
+                    </section>
+                </article>
+                <article class="mobileTabs-item">
+                    <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">                        
+                         
+                            {{>svgIcon type='support' class='mobileTabs-itemHeader--svg'}}
+                            <h4 class="subtitle1">Logística y Postventa</h4>
+                       
+                    </header>
+                    <section data-js-accordion="panel" class="mobileTabs-itemContent">                
+                        {{>tabTickets2}}                
+                    </section>
+                </article>
+                <article class="mobileTabs-item">
+                    <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+                        
+                           
+                            {{>svgIcon type='soporte' class='mobileTabs-itemHeader--svg'}}
+                            <h4 class="subtitle1">Soporte técnico</h4>
+                        
+                    </header>
+                    <section data-js-accordion="panel" class="mobileTabs-itemContent"> 
+                        <h3 class="mobileText-sectionTitle">Soporte técnico</h3>
+
+                    </section>
+                </article>
+                <article class="mobileTabs-item u-brb">
+                    <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+                        
+                           
+                             {{>svgIcon type='administracion' class='mobileTabs-itemHeader--svg'}}
+                            <h4 class="subtitle1">Administración</h4>
+                        
+                    </header>
+                    <section data-js-accordion="panel" class="mobileTabs-itemContent"> 
+                        <h3 class="mobileText-sectionTitle">Administración</h3>             
+                    </section>
+                </article>
+            </nav>
+        </section>
+
+        <section class="panel u-bx--0 u-pdh u-mgt2">
+            <header class="panel-header  u-flex--between u-flex--center">Listado de consultas
+
+            <button class="mobileTabs-titleTabs--search" data-js-ticket-action="searchTickets">
+
+                {{>svgIcon type='search'}}
+                
+            </button>
+
+            </header>            
+        </section>
+
+    </div>
+</section>
+
+
+
+
+
+<section class="content content--light ">
+    <div class="modularGrid modularGrid--boxed u-pd">
+    {{>ticketsTable}}
+
+    
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+

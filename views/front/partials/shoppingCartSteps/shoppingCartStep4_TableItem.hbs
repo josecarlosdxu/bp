@@ -1,0 +1,35 @@
+
+        <tr data-js-accordion="link" data-js-delay="104.21" class="table-tr">
+            <td class="table-item  table-item--rowtitle">{{> accordionChevron }} {{ preparation_time }}</td>
+            <td class="table-item ">1 producto</td>
+            <td class="table-item ">104,21 €</td>
+            <td class="table-item ">0,00 €</td>
+        </tr>
+        <tr class="table-tr table-tr--content">
+            <td colspan="100" class="table-item">
+                <section class="table-accordionContent" data-js-accordion="panel" style="display: none;">
+                    <table class="table">
+                        <thead>
+                            <tr class="table-tr">
+                                <th class="shoppingCart-name u-xs-45 u-brdr">Nombre</th>
+                                <th class="table-item--number u-brdr u-pdr--half">Uds.</th>
+                                <th class="table-item--number u-brdr u-pdr--half">Precio</th>
+                                <th class="table-item--number u-brdr u-pdr--half">Dto.</th>
+                                <th class="table-item--number u-brdr u-pdr--half">Precio dto.</th>
+                                <th class="table-item--number u-pdr--half">Importe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-tr" data-js-item="cart_1536_0">
+                                <td class="shoppingCart-name u-xs-45 u-brdr">Set de Coctelería Deluxe Summum Sommelier (8 piezas)</td>
+                                <td class="table-item--number u-brdr u-pdr--half">{{ uds }}</td>
+                                <td class="table-item--number u-brdr u-pdr--half">26,45 €</td>
+                                <td class="table-item--number u-brdr u-pdr--half">1.5</td>
+                                <td class="table-item--number u-brdr u-pdr--half">26,05 €</td>
+                                <td class="table-item--number shoppingCart-subtotal u-pdr--half">{{price}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </td>
+        </tr>

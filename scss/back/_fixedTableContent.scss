@@ -1,0 +1,124 @@
+@include block(fixedTableContent) {
+    padding-bottom: 75px;
+    @include element(tableContent) {
+        padding-top: 75px;
+        @include addBreakpoint(lg) {
+            width: 980px;
+        }
+        @include addBreakpoint(xl) {
+            width: 1020px;
+        }
+        @include addBreakpoint(xxl) {
+            width: 1200px;
+        }
+        @include modifier(downloads) {
+            padding-top: 37px;
+        }
+        @include modifier(follow) {
+            padding-top: 102px;
+
+            .panelHeader-fixedTableHeader{
+                top: 142px;
+            }
+        }
+        @include modifier(fullWidth) {
+            width: 100%;
+            max-width: 100%;
+            @include addBreakpoint(lg) {
+                width: 100%;
+                max-width: 100%;
+            }
+            @include addBreakpoint(xl) {
+                width: 100%;
+                max-width: 100%;
+            }
+            @include addBreakpoint(xxl) {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@include extendBlock(fixedTableContent, bigHeader) {
+    margin-top: -68px;
+    padding-top: 144px;
+}
+
+@include extendBlock(fixedTableContent, singleRow) {
+    padding-top: 0;
+    @include element(tableContent) {
+        padding-top: 37px;
+    }
+}
+
+@include extendBlock(fixedTableContent, singleRowNoHeader) {
+    padding-top: 0;
+    @include element(tableContent) {
+        padding-top: 37px;
+    }
+    .panelHeader-fixedTableHeader {
+        top: 0;
+        @include addBreakpoint(lg) {
+            top: 100px;
+            @-moz-document url-prefix() {
+                top: 101px;
+            }
+        }
+    }
+}
+
+@include extendBlock(fixedTableContent, wallet) {
+    margin-top: 0;
+    padding: 0;
+    @include addBreakpoint(xl) {
+        max-height: calc(100vh - 17.85rem);
+        padding-top: 6.2rem;
+    }
+    @include element(tableContent) {
+        padding: 0;
+        background: white;
+    }
+}
+
+@-moz-document url-prefix() {
+
+    .fixedTableContent-tableContent--follow {
+        padding-top: 0;
+        .panelHeader-fixedTableHeader {  
+           position: sticky;
+           display:table-header-group;
+           top:0;
+           box-shadow:0 1px #e5e5e5;
+
+       }
+   }
+
+}
+
+/*.fixedTableContent-tableContent--follow {
+    .panelHeader-fixedTableHeader {
+        
+         position:-webkit-sticky;
+         position: sticky;
+        display:table-header-group;
+        top:0;
+        box-shadow:0 1px #e5e5e5;
+        background-color: tan;        
+    }
+}*/
+
+
+
+
+
+/*@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+  .fixedTableContent-tableContent--follow { padding-top: 109px;
+        .panelHeader-fixedTableHeader {
+            top: 143px;           
+            position: fixed;
+        }
+    }
+}*/

@@ -1,0 +1,12 @@
+<div class="form-captcha ">
+    <div class="modularGrid">
+        <div class="modularGrid-module u-sm-40 u-xs-60 u-sm-pdr u-pdb--half"> <img alt="" class="form-captcha-image " id="img_captcha" src="http://www.bigbuy.eu/tools/captcha/captcha.php?ancho=175&alto=65&nocache=">
+            <a class="form-link" href="#"  onclick="$(this).parent().find('img:first').prop('src','http://www.bigbuy.eu/tools/captcha/captcha.php?ancho=175&alto=65&nocache='+Math.random());" href="javascript:void(0);"> <img class="icon icon--xs u-vb" src="../../img/icons/refresh.svg"> Recargar imagen</a>
+        </div>
+        <div class="modularGrid-module u-sm-60 u-pdl--half">
+            <label  class="form-label">¿Qué pone en la imagen?</label>
+            <input type="text" maxlength="10" class="form-input" name="captcha">
+            <div class="form-info"><img class="icon icon--inline" src="../../img/icons/info.svg"> ¿Para qué sirve este código?</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,403 @@
+@include block(pricePanel) {
+    //border-left: 1px solid #ddd;
+    padding: $um / 2 $um $um / 2;
+    vertical-align: top;
+    box-shadow: 0 0 0 1px $color-lightGrey-default inset;
+    border-color: grey;
+    &:last-child {
+        // border-left: none;
+    }
+    &:first-child {
+        //border-left: 1px solid #ddd;
+        //border-left:none;
+    }
+    @include modifier(promo) {
+        &:first-child {
+            border: none;
+        }
+    }
+    @include element(itemList) {
+        display: block;
+        margin: 0 auto;
+        min-height: 15rem;
+        padding-bottom: 0;
+        @include modifier(promo) {
+            min-height: 10rem;
+        }
+    }
+    @include element(header) {
+        margin-bottom: $um;
+
+        .icon{
+            transition:none;
+        }
+        /*display: flex;
+        align-items:  center;*/
+
+
+
+
+        //background-color: $color-lightGrey-default;
+        @include modifier(basic) {
+            color: $color-basic-pack;
+        }
+        @include modifier(pro) {
+            color: $color-pro-pack;
+        }
+        @include modifier(business) {
+            color: $color-business-pack;
+        }
+        @include modifier(premium) {
+            color: $color-premium-pack;
+        }
+        @include modifier(welcome) {
+            color: $color-welcome-pack;
+        }
+        @include modifier(dropship) {
+            color: $color-dropship-pack;
+        }
+        @include modifier(b2b) {
+            color: $color-b2b-pack;
+        }
+        @include modifier(enterprise) {
+            color: $color-enterprise-pack;
+        }
+        @include modifier(medium) {
+            margin-bottom: $um / 2;
+        }
+    }
+    @include element(headerTitle) {
+        font-family: $type-headingscms;
+        font-size: $um;
+        line-height: 1.5;
+    }
+    @include element(activationForm) {
+        margin: -1.5rem;
+        min-height: 13rem;
+    }
+    @include element(headerText) {
+        color: #666;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: $um;
+        min-height: 3rem;
+    }
+    @include element(item) {
+        //display:inline-block;
+        position: relative;
+        padding-bottom: $um / 3;
+    }
+    @include element(info) {
+        font-size: 0.95rem;
+        line-height: 1.1;
+        color: #888;
+        display: block;
+        font-weight: 300;
+    }
+    @include element(subtitle) {
+        padding-top: 1rem;
+        font-size: $um / 1.2;
+        font-weight: 700;
+        + .pricePanel-itemList {
+            padding-top: 0;
+        }
+    }
+    @include element(container) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        @include addBreakpoint(md) {
+            //background: red;
+        }
+        @include addBreakpoint(lg) {
+            // background: tan;
+            width: 54rem;
+            margin: 0 auto;
+        }
+        @include addBreakpoint(xl) {
+            width: 100%;
+            margin: 0;
+            justify-content: space-between;
+        }
+    }
+    @include element(name) {
+        font-family: $type-headingscms;
+        padding: 0.25rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        margin-block-start: -7px;
+        text-transform: uppercase;
+        padding-left: 0.75rem;
+    }
+    @include element(radiogroup) {
+        color:black;
+        // border: none;
+        //display: table-row;
+        //flex-wrap: wrap;
+        //padding: 1rem;
+        width: 100%;
+        //outline: 1px solid red;
+        //vertical-align: middle;
+        //text-align: left;
+        //align-content: center;
+        //justify-content: space-between;
+        .form-label {
+            /*display: table-cell;*/
+            line-height: 1.1;
+            margin: 0;
+            height: auto;
+            padding: 0;
+            //vertical-align: middle;
+        }
+        .form-radio {
+            /* display: table-cell;
+           height: inherit;
+           top: calc(50% - 1rem);
+           vertical-align: middle;
+           width: 1rem;*/
+           //top:1.5px;
+            margin: 0;
+        }
+    }
+    @include element(subheader) {
+        color:black;
+        background-color: $color-lightGrey-light;
+        text-align: center;
+        width: calc(100% - 2px);
+        padding: 1rem;
+        margin-left: 1px;
+    }
+    @include element(content) {
+        height: 9rem;
+        margin: 1rem 0 $um;
+        //display: table;
+        /*align-content: center;
+        justify-content:center;
+        flex-wrap:wrap;*/
+        width: 100%;
+    }
+}
+
+@include extendBlock(pricePanel, big) {
+    flex-basis: 23.2rem;
+    margin-bottom: 4rem;
+    background: white;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap:wrap;
+    //flex-direction: column;
+    font-size: 1rem;
+    //justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-radius: 2px 2px 3px 3px;
+    height: 22.5rem;
+    height: auto;
+    transition: opacity 0.2s ease-in 0.2s;
+    @include element(header) {
+        align-items: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        padding: 1rem;
+        //height: 6.25rem;
+        box-shadow: 0 0 0 1px $color-shadow inset;
+        border-radius: 3px 3px 0 0;
+        transition: background-color 0.2s;
+        + label {
+            flex-grow: 1;
+            margin: 0;
+            padding-top: 1rem;
+            + label {
+                display: flex;
+                flex-grow: 2;
+                padding-top: 2.5rem;
+            }
+        }
+    }
+    @include element(sectionbtn) {
+        align-items: center;
+        border-top: 1px solid;
+        border-color: $color-shadow;
+        display: flex;
+        height: 5rem;
+        justify-content: center;
+        width: 100%;
+    }
+    @include addBreakpoint(xl) {
+        //width: calc(25% - 1.8rem);
+        margin: 0;
+    }
+}
+
+@include extendBlock(pricePanel, b2b) {
+    /*$boxBasicColor: transparentize($color-basic-pack, 0.5);
+    $borderBasicColor: transparentize($boxBasicColor, 0.3);
+    box-shadow: 0 0 0 1px $boxBasicColor inset;
+    border-color: $borderBasicColor;*/
+    /*&:first-child {
+        border-left: none;
+    }*/
+    @include element(header) {
+
+        background-color: $color-b2b-pack;
+        //box-shadow: 0 0 0 1px darken($color-b2b-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, dropship) {
+    /*$boxBasicColor: transparentize($color-basic-pack, 0.5);
+    $borderBasicColor: transparentize($boxBasicColor, 0.3);
+    box-shadow: 0 0 0 1px $boxBasicColor inset;
+    border-color: $borderBasicColor;*/
+    /*&:first-child {
+        border-left: none;
+    }*/
+    @include element(header) {
+        background-color: $color-dropship-pack;
+        //box-shadow: 0 0 0 1px darken($color-b2b-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, enterprise) {
+    /*$boxBasicColor: transparentize($color-basic-pack, 0.5);
+    $borderBasicColor: transparentize($boxBasicColor, 0.3);
+    box-shadow: 0 0 0 1px $boxBasicColor inset;
+    border-color: $borderBasicColor;*/
+    /*&:first-child {
+        border-left: none;
+    }*/
+    @include element(header) {
+        background-color: $color-enterprise-pack;
+        //box-shadow: 0 0 0 1px darken($color-b2b-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, basic) {
+    /*$boxBasicColor: transparentize($color-basic-pack, 0.5);
+    $borderBasicColor: transparentize($boxBasicColor, 0.3);
+    box-shadow: 0 0 0 1px $boxBasicColor inset;
+    border-color: $borderBasicColor;*/
+    &:first-child {
+        border-left: none;
+    }
+    @include element(header) {
+        background-color: $color-basic-pack;
+        box-shadow: 0 0 0 1px darken($color-basic-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, pro) {
+    $boxProColor: transparentize( $color-pro-pack, 0.6);
+    $borderProColor: transparentize($boxProColor, 0.2);
+    border-color: $borderProColor;
+    box-shadow: 0 0 0 1px $boxProColor inset;
+    @include element(header) {
+        background-color: $color-pro-pack;
+        box-shadow: 0 0 0 1px darken($color-pro-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, business) {
+    $boxBusinessColor: transparentize( $color-business-pack, 0.6);
+    $borderBusinessColor: transparentize($boxBusinessColor, 0.2);
+    border-color: $borderBusinessColor;
+    box-shadow: 0 0 0 1px $boxBusinessColor inset;
+    @include element(header) {
+        background-color: $color-business-pack;
+        box-shadow: 0 0 0 1px darken($color-business-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, premium) {
+    $boxPremiumColor: transparentize( $color-premium-pack, 0.5);
+    $borderPremiumColor: transparentize($boxPremiumColor, 0.3);
+    border-color: $borderPremiumColor;
+    box-shadow: 0 0 0 1px $boxPremiumColor inset;
+    &:last-child {
+        border-left: none;
+    }
+    @include element(header) {
+        background-color: $color-premium-pack;
+        box-shadow: 0 0 0 1px darken($color-premium-pack, 10%) inset;
+    }
+}
+
+@include extendElement(pricePanel, itemList, topPanel) {
+    // list-style: circle !important;
+    text-align: left;
+    min-height: 12rem;
+    //padding: $um /1.5 0 0 !important;
+    margin: 0 auto!important;
+    max-width: 12rem;
+    @include element(item) {
+        //max-width: 20rem;
+        line-height: 1.2;
+        padding-bottom: $um / 2;
+        //background-color: tan;
+    }
+}
+
+@include extendBlock(pricePanel, huge) {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    &:first-child {
+        border: none;
+    }
+    @include element(header) {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        color: white;
+        margin: 0;
+        transition: background-color 0.2s;
+    }
+    @include element(name) {
+        padding-top: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+
+@include extendBlock(pricePanel, midsize) {
+   /* height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    &:first-child {
+        border: none;
+    }
+    @include element(header) {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        color: white;
+        margin: 0;
+        transition: background-color 0.2s;
+    }
+    @include element(name) {
+        padding-top: 1.5rem;
+        font-size: 2rem;
+    }*/
+}
+
+@include extendElement(pricePanel, container, midsize) {
+    margin: 0 auto;
+    .pricePanel--big {
+        flex-basis: calc(100% / 3 - 0.75rem);
+    }
+}

@@ -1,0 +1,34 @@
+@include block(buttonUser) {
+    @extend %button;
+    @extend %toolbarMobileBtn;
+    height: 4rem;
+    width: 4rem;
+    background: url("../img/mobileIcons/user.svg") no-repeat center transparent;
+    border-radius: 40px;
+    padding: 0 2rem;
+    margin-right: $um / 2;
+    position: relative;
+    top:-2px;
+    @include modifier(pro) {
+        @extend %borderPack;
+        background-color: $color-pro-pack;
+    }
+    @include modifier(business) {
+        @extend %borderPack;
+        background-color: $color-business-pack;
+    }
+    @include modifier(premium) {
+        @extend %borderPack;
+        background-color: $color-premium-pack;
+    }
+    @include modifier(basic) {
+        @extend %borderPack;
+         background-color: $color-basic-pack;
+    }
+    @include modifier(newuser) {
+        background-image: url("../img/mobileIcons/newuser.svg");
+    }
+}
+%borderPack {
+    box-shadow: 0 0 0 2px white inset;
+}

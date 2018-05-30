@@ -1,0 +1,187 @@
+%sizes {
+    max-width: 100%;
+    @include addBreakpoint(sm) {
+        width: 357px;
+    }
+    @include addBreakpoint(xl) {
+        width: 300px;
+    }
+    @include addBreakpoint(xxl) {
+        width: 300px;
+    }
+}
+
+
+
+/*@include element(thumblist) {
+         height: calc(100% - 319px);
+         background-color: red;
+         @include addBreakpoint(lg) {
+            background-color: tan;
+            height: calc(100% - 240px);
+             
+         }
+        */
+    //}
+
+
+
+
+
+@include block(imgBox) {
+    //background-color: red;
+    min-height: 35rem;
+    @include element(thumblistcont) {
+        overflow-x: auto;  
+        height: auto;
+        
+    }
+
+    @include element(thumblist) {
+        //@extend %inlineBlock100;
+        white-space: nowrap;
+        max-width: 100%;
+        //overflow: hidden;
+        //overflow-x: auto;        
+        width: 100%;
+        height: auto;       
+        padding: 1rem 0;
+       
+        @include addBreakpoint(md) {
+
+             height: calc(100% - 319px);
+            
+           
+            
+        }
+
+
+
+
+        @include addBreakpoint(lg) {
+           
+            height: calc(100% - 240px);
+             
+         }
+    }
+
+
+    /*@extend %inlineBlock100;
+    border-top: 1px solid #e5e5e5;
+
+    @include addBreakpoint(xs) {
+        display: block;
+        margin: 0 auto;
+    }
+    @include addBreakpoint(sm) {
+        border-top: none;
+    }
+    @include element(thumblist) {
+        @extend %inlineBlock100;
+        white-space: nowrap;
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+        @extend %sizes;
+        padding: 1rem 0;
+        display: block;
+        margin: 0 auto;
+        z-index: 10;
+        font-size: 0;
+        background: #fff;
+    }
+    @include element(thumb) {
+        @extend %inlineBlock;
+        width: 75px;
+        height: 75px;
+        padding: 3px;
+        background: #fff;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 1px opacify($color-shadow, 0.1) inset;
+    }
+    @include element(img) {
+        @extend %img--responsive;
+        padding: 0 $um;
+    }
+    @include element(thumbImg) {
+        @extend %img--responsive;
+    }*/
+
+    
+}
+
+
+
+@include extendBlock(imgBox, productSheet) {
+    //@extend %sizes;
+    /*height: auto;
+    //overflow: visible;
+    padding: $um 2px 0;
+    z-index: 1;
+    position: relative;   
+    margin: 0 auto;
+    vertical-align: top;    
+   // overflow: hidden;  */
+   width: 100%;
+   //background-image: linear-gradient(to right, white 27rem, #f7f7f8 27rem);
+   align-self: stretch;
+   position: relative;
+  
+
+   @include addBreakpoint(md) {
+      width: 26.5rem;
+      //width: auto;
+      background: white;
+      padding: 0;
+       
+   }
+
+
+  
+  
+   @include addBreakpoint(lg) {
+      width: 20rem;
+      //width: auto;
+      background: white;
+      @include element(figure) {
+        width: 100%;
+          
+      }
+       
+   }
+
+   @include element(thumb) {
+    width: 74px;
+    height: 74px;
+    max-width: 74px;
+      
+   }
+
+    /*@include addBreakpoint(xs) {
+        min-width: 100%;
+    }
+    @include addBreakpoint(sm) {
+        min-width: 0;
+        .pricePanel--huge {
+            width: 100%;
+            margin: 0;
+            height: 100%;
+            /*margin-top: -1.5rem;
+            margin-left: calc(-50vw + 370px / 2);
+            margin-top: -1.5rem;*/
+   /*     }
+    }
+    @include addBreakpoint(md) {}
+    @include addBreakpoint(lg) {
+        box-shadow: none;
+        display: table-cell;
+        min-width: 0;
+        .pricePanel--huge {
+            width: 100%;
+            min-height: 35.5rem;
+            margin: 0;
+        }
+    }*/
+//}
+//}
+}

@@ -1,0 +1,62 @@
+
+<div class="bannerBlue u-pdh2 u-pdv">
+	  <div class="modularGrid u-bg--white u-xxs-100 u-pdh u-pdt">
+		<div class="u-flex--center" >
+			{{>svgIcon type=icon size='lg' class='u-pd3' data='style="color:#6a7786"'}}
+			<h4 class="title1 u-pdl--3rd u-upp">{{{title}}}</h4>
+		</div>
+		</div>
+
+
+		<div class="modularGrid u-bg--white u-xxs-100 u-pdh u-pdb modularGrid--flexCenter">
+		<div class="modularGrid-module u-md-60 u-pdh">  
+			<p class="subtitle6 u-pdv">{{headertext}}</p>
+			{{#each list}}
+				{{!-- <ul class="list list--bullet">
+					<li class="list-item panel-itemTitle"> --}}
+						<p class="title2 u-pdt">· {{{titlelist}}}</p>
+						<p class="subtitle6 u-pdt--half u-pdr u-pdl--half">{{subtitlelist}}</p>
+					{{!-- </li>
+				</ul> --}}
+
+
+
+				<ul class="list list--checklist list--midsize u-pd">
+
+					{{#each items}}	
+						<li class="list-item">
+							{{>svgIcon type='done' class='icon--success list-icon'}}
+							<span class="u-op-60">{{{text}}}</span>
+						</li>
+					{{/each}}
+
+				</ul>
+
+			{{/each}}
+		</div>
+
+		<div class="modularGrid-module u-md-40 u-pd">
+			<img src="../../img/{{image}}" alt="" class="img--responsive">
+
+		</div>
+	</div>
+
+
+
+	{{#if footertext}}
+		<div class="modularGrid u-bg--white u-xxs-100 u-pd2 u-pdt">
+
+		<div class="modularGrid-module">
+		<em class="u-op-50 line-height12">{{{footertext}}}</em>
+		    
+		</div>
+		</div>
+
+
+		{{/if}}
+	
+
+
+
+
+</div>

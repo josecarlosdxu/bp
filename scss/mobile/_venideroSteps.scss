@@ -1,0 +1,106 @@
+
+@include block(venid) {
+    padding: $um / 2 $um;
+    border-radius: 1px;
+    background: #CCC;
+    //transition: all 1s;
+    line-height: 1.1;
+    font-size: 0.95rem;
+
+    @include element(content) {
+        margin-top: $um / 2;
+    }
+    br{
+        display: block !important;
+    }
+    p{
+        margin-bottom: $um / 3; 
+    }
+
+    @include modifier(small) {
+        padding:0.3rem;
+        font-size:0.8rem;
+    }
+    @include modifier(auto) {
+        display: inline-block;
+        width: auto;
+        
+    }
+}
+
+@include extendBlock(venidBox, error) {
+    @extend %animated;
+    @extend %shake;
+    color: #da3b3b;
+    background: #f8d8d8;
+    //background: #f8d8d8 url(../img/icons/round-error.svg) no-repeat 0.5rem center;
+    background-size: 14px;
+    font-weight: 400;
+    border-left: 7px solid #da3b3b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 1.5em;
+    @include element(link) {
+        @extend %msgBox-link;
+        //color: #fff;
+    }
+}
+
+@include extendBlock(venidBox, success) {
+    @extend %animated;
+    @extend %shake;
+    color: #275900;
+    background: #9dd570;
+    background-size: 14px;
+    font-weight: 400;
+    border-left: 7px solid $color-green-dark;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 1.5em;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+    
+}
+
+@include extendBlock(venid, error) {
+    @extend %animated;
+    @extend %shake;
+    color: #da3b3b;
+    background-size: 14px;
+    font-weight: 400;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+
+@include extendBlock(venid, success) {
+    @extend %animated;
+    @extend %shake;
+    color: #039503;
+    background-size: 14px;
+    font-weight: 400;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+
+.df{
+    display: flex;
+    .iconvenid{
+        margin-right: 5px;
+        margin-top: -2px;
+    }
+    em{
+        font-style: italic;
+    }
+    a{
+        text-decoration: underline;
+        color: #da3b3b !important;
+    }
+}
+.condensed{
+    font-family: 'Roboto Condensed', sans-serif;
+}

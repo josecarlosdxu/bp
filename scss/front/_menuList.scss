@@ -1,0 +1,171 @@
+$colorHoverMenulist: transparentize($color-shadow, 0.06);
+@include block(menuList) {
+    @include element(list) {
+        @extend %closeTransition;
+        display: block;
+        padding-left: $um / 2;
+        width: 100%;
+        @include modifier(opened) {
+            @extend %openTransition;
+        }
+        @include modifier(family) {
+            padding-left: $um;
+        }
+    }
+    @include element(item) {
+        display: block;
+         display:flex;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 0.25rem 0;
+        padding: 0;
+        @include modifier(secundary) {
+            .menuList-link:not(.menuList-link--secundary) {
+                padding: 0.25rem 0.75rem 0.3rem 0.5rem;
+            }
+        }
+        &:hover {
+            > .menuList-link:first-of-type {
+                background: $colorHoverMenulist;
+                box-shadow: none;
+            }
+            > .menuList-button.menuList-button--opened + .menuList-link {
+                background: transparent;
+                &:hover {
+                    box-shadow: -$um 0 $colorHoverMenulist;
+                    background: $colorHoverMenulist;
+                }
+            }
+            > .menuList-button.menuList-button--opened:hover + .menuList-link {
+                box-shadow: -$um 0 $colorHoverMenulist;
+                background: $colorHoverMenulist;
+            }
+            > .menuList-button:not(.menuList-button--opened) + .menuList-link {
+                box-shadow: -$um 0 $colorHoverMenulist;
+                background: $colorHoverMenulist;
+            }
+        }
+    }
+    @include element(number) {
+        display: inline-block;
+        opacity: 0.5;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    @include element(button) {
+        background: transparent;
+        border: none;
+        display: inline-block;
+        font-size: 0;
+        height: $um;
+        line-height: 0;
+        padding: 0;
+        width: 1rem;
+        transition: transform 0.1s;
+        color: rgba(0, 0, 0, 0.6);
+        @include modifier(opened) {
+            transform: rotate(90deg);
+            color: black;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            color: #0090ff;
+        }
+        > .icon {
+            transition: none;
+        }
+    }
+    @include element(link) {
+        color: currentColor;
+        position: relative;
+        left: 0;
+        font-weight: 400;
+        line-height: 1.2;
+        font-size: 1rem;
+        display: block;
+        padding: 0.5rem 0.25rem;
+        width: 100%;
+        @include modifier(error) {
+            color: tomato !important;
+        }
+        @include modifier(disabled) {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        @include modifier(primary) {
+            font-weight: 500;
+            font-size: 1.15rem;
+
+        }
+        @include modifier(final) {
+            .icon {
+                opacity: 0.7;
+                height: 1rem;
+                width: 1rem;
+                position: relative;
+                left: 3px;
+            }
+        }
+        @include modifier(selectable) {
+            display: inline-block;
+            width: calc(100% - 1.5rem);
+        }
+        @include modifier(last) {
+            padding-left: 1.25rem;
+            padding-right: 0;
+        }
+        @include modifier(secundary) {
+            font-size: 1.05rem;
+            font-weight: 500;
+            display: inline-block;
+            line-height: 1.2;
+            width: calc(100% - 1.5rem);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+
+        }
+        @include modifier(selected) {
+           //box-shadow: -$um 0 $colorHoverMenulist;
+           background: $colorHoverMenulist;
+            //pointer-events: none;
+        }
+        @include modifier(tag) {
+            @extend .menuList-link--primary;
+            padding-left: 1.25rem;
+
+
+        }
+        @include modifier(selectedAlt) {
+            box-shadow: 3px 0 #09f inset;
+            color: #09f;
+            background: transparentize(#09f, 0.9);
+            pointer-events: none;
+        }
+    }
+}
+
+@include extendElement(menuList, list, secundary) {
+    padding-left: $um;
+    @include element(item) {
+        padding: 0.1rem 0;
+    }
+    @include element(link) {
+        width: 100%;
+        &:hover {
+            //opacity: 1;
+            // box-shadow: 2px 0 $color-darkGrey-light inset;
+            //box-shadow: -$um 0 $colorHoverMenulist;
+            background: $colorHoverMenulist;
+        }
+    }
+}
+.menuList-button + .menuList-link--selected {
+    //padding-left: 0.5rem;
+    //box-shadow: 2px 0 $color-darkGrey-light inset;
+    box-shadow: -$um 0 $colorHoverMenulist;
+    background: $colorHoverMenulist;
+    //pointer-events: none;
+}

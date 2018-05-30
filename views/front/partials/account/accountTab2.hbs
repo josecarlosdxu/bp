@@ -1,0 +1,84 @@
+
+<div class="u-pdh" data-section="section2"{{#unless back}} style="display:none;"{{/unless}}> 
+
+	<div class="modularGrid">
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half">
+			{{#if back}} 
+			<label for="" class="form-label"><strong>Razón social</strong></label>
+			{{/if}}
+			<input class="form-input {{#unless mobile}}u-xs-90  u-sm-85 u-md-90{{/unless}}" type="text" placeholder="Razón social" name="company" required data-jscompany>
+			{{#unless mobile}}<em class="form-info u-vt  u-mgt--3rd u-mgl--3 u-xxs-hide u-xs-inlineBlock" data-js-tooltip="tooltip2">{{>svgIcon type='info'}}</em>{{/unless}}
+		</div> 
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+			{{#if back}} 
+			<label for="" class="form-label"><strong>País</strong></label>
+			{{/if}}
+			{{>countriesSelect}}
+		</div>                    
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+			{{#if back}} 
+			<label for="" class="form-label"><strong>CIF / NIF / VAT</strong></label>
+			{{/if}}
+			{{>vatField placeholder='CIF / NIF / VAT' tooltip='tooltip_autonomo'}}			
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+		    {{#if back}} 
+			<label for="" class="form-label"><strong>Teléfono de la empresa</strong></label>
+			{{/if}}                          
+			<input class="form-prefix u-pen" name="phone_prefix" data-js-phone-prefix readonly="true" tabindex="-1"> 	                            
+			<input class="form-input form-input--prefix" type="text" name="phone" placeholder="Teléfono de la empresa" required pattern="[ |+]*[0-9| |-]+"  data-jsphone>
+		</div>
+		<div class="modularGrid-module u-pdt--half">
+			 {{#if back}} 
+			<label for="" class="form-label"><strong>Dirección</strong></label>
+			{{/if}}    
+			{{>adressField}}
+		</div>                    
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+		  {{#if back}} 
+			<label for="" class="form-label"><strong>Localidad</strong></label>
+			{{/if}}                             
+			{{>cityField}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+		   {{#if back}} 
+			<label for="" class="form-label"><strong>Estado / Provincia</strong></label>
+			{{/if}}                             
+			{{>stateField}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half">
+		 {{#if back}} 
+			<label for="" class="form-label"><strong>Código Postal</strong></label>
+			{{/if}}                            
+			{{>zipField}} 
+		</div>		
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half"> 
+			 {{#if back}} 
+			<label for="" class="form-label"><strong>Página web corporativa (Opcional)</strong></label>
+			{{/if}}   
+			<input class="form-input" type="text" placeholder="Página web corporativa (Opcional)">
+		</div>
+		<div class="modularGrid u-hide" data-jsequivalence>
+			<div class="modularGrid-module u-pdt--half">
+				<h3 class="form-fieldset-title">Recargo de equivalencia <em class="form-info u-mgl--3 u-vm" data-js-tooltip="tooltip2">{{>svgIcon type='info'}} ¿Qué es el R.E. ?</em></h3>
+			</div>  
+			<div class="modularGrid-module u-pdt--half">
+				<input value="re_ok" id="re_ok" name="re" class="form-radio" type="radio">
+				<label class="form-label form-label--inline" for="re_ok">Sí, estoy sujeto al R.E.</label>
+			</div>  
+			<div class="modularGrid-module u-pdt--half">
+				<input value="re_ko" id="re_ko" name="re" class="form-radio" type="radio">
+				<label class="form-label form-label--inline" for="re_ko">No estoy sujeto al R.E.</label> 
+			</div> 
+		</div> 
+		<div class="modularGrid-module u-pdv">
+		    {{#if back}} 
+		    <button class="button button--big button--primary">Guardar datos</button> 
+		    {{else}}		   
+			<button class="button button--big button--primary" data-js-step="fw">Continuar</button> 
+			{{/if}}
+		</div>
+	</div> 
+</div>
+
+

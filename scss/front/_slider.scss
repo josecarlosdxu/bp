@@ -1,0 +1,219 @@
+@include block(slider) {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    left: 0;
+    line-height: 0.9;
+    @include element(product) {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: $um / 2;
+        vertical-align: top;
+        border: 1px solid $color-shadow;
+        @extend %u-xs-100;
+        /* @extend %u-sm-50;
+        @extend %u-md-25;*/
+        /*@extend %u-lg-100;*/
+        @include addBreakpoint(xs) {
+            border: none;
+            box-shadow: 0 1px 0 $color-shadow;
+        }
+        @include modifier(borderless) {
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            @include addBreakpoint(xs) {
+                padding: 0;
+            }
+        }
+    }
+    @include element(img) {
+        @extend %img--responsive;
+    }
+    @include element(message) {
+        padding: 0;
+        padding-right: 6rem;
+    }
+    @include element(supratittle) {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: #ffea33;
+        text-transform: uppercase;
+        @include modifier(inverse) {
+            color: white;
+        }
+    }
+    @include element(tittle) {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 54px;
+        color: #ffea33;
+        text-transform: uppercase;
+    }
+    @include element(subtittle) {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #fff;
+        text-transform: uppercase;
+        @include modifier(inverse) {
+            color: #ffea33;
+        }
+    }
+    @include addBreakpoint(xxl) {
+        @include element(supratittle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #ffea33;
+            text-transform: uppercase;
+            @include modifier(inverse) {
+                color: white;
+            }
+        }
+        @include element(tittle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 64px;
+            color: #ffea33;
+            text-transform: uppercase;
+        }
+        @include element(subtittle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    @include element(awards) {
+         display:flex;
+        margin-top: 0.5rem;
+        justify-content:  space-between;
+        max-width: 100%;
+
+        .slider-subtittle {
+            color: #ffea33;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 1.82rem;
+            width: 12em;
+            line-height: 1.1;
+             display:flex;
+            align-items: center;
+
+            &:before, &:after {
+                content:"";
+                background: url('../img/crowd_left.svg') no-repeat center 0.5rem;
+                display: block;
+                width: 5rem;
+                height: 8rem;
+                background-size: 4rem;
+
+            }
+           &:after {
+
+                background-image: url('../img/crowd_right.svg');
+
+            }
+
+
+        }
+    }
+}
+
+@include extendBlock(slider, inverse) {
+    @include element(supratittle) {
+        span {
+            display: block;
+            color: #fff;
+            font-size: $um * 1.5;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+    }
+    @include element(subtittle) {
+        color: #ffea33;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        sub {
+            text-transform: none;
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1.1;
+            margin-top: 0.5rem;
+        }
+        br {
+            margin-top: 0.5rem;
+            display: block;
+        }
+    }
+    .icon.icon--signs {
+        display: inline-block;
+        background: url(../img/signs.svg) no-repeat;
+        height: $um;
+        width: 2rem;
+        @include addBreakpoint(xxl) {
+            width: 2.5rem;
+            height: 2rem;
+        }
+    }
+}
+
+
+
+.featuredSlider-item[id="94"], .featuredSlider-item[id="96"]{
+
+    .slider-message{
+        padding-right: 3rem;
+
+    }
+
+    p.slider-tittle{
+         display:flex;
+        margin-top: 0.5rem;
+        justify-content:  space-between;
+        max-width: 100%;
+        font-size: 0;
+         span {
+            color: #ffea33;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 1.6rem;
+            width: calc(50% - 1rem);
+            line-height: 1.1;
+             display:flex;
+            align-items: center;
+
+            &:before, &:after {
+                content:"";
+                background: url('../img/crowd_left.svg') no-repeat center 0.5rem;
+                display: block;
+                width: 4.5rem;
+                height: 7rem;
+                background-size: 3rem;
+
+            }
+           &:after {
+
+                background-image: url('../img/crowd_right.svg');
+
+            }
+
+
+        }
+
+    }
+     p.slider-subtittle{
+
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+
+     }
+
+}

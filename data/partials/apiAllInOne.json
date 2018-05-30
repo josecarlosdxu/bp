@@ -1,0 +1,98 @@
+{
+    "banner": {},
+    "catalogo": {
+        "title": "Catálogo ",
+        "image": "pluscatalogo",
+        "icon": "catalog",
+        "items": [{
+            "text": "Negociación y gestión con proveedores"
+        }, {
+            "text": "Acceso a primeras marcas"
+        }, {
+            "text": "Precios competitivos, gracias al volumen de compra"
+        }, {
+            "text": "Multitud de novedades diarias"
+        }, {
+            "text": "Contenidos con optimización SEO"
+        }, {
+            "text": "Traducciones en 24 idiomas europeos"
+        }]
+    },
+    "logistica": {
+        "title": "Logística",
+        "image": "pluslogistica",
+        "icon": "stock-propio2",
+        "items": [
+            { "text": "Servicio Dropshipping" },
+            { "text": "Miles de productos siempre en stock" },
+            { "text": "Pedidos multi-producto y multi-catálogo en un solo envío" },
+            { "text": "Almacenes logísticos totalmente integrados, envíos desde 24h" }
+        ]
+    },
+
+    "ecommerce": {
+        "title": "Ecommerce B2B",
+        "image": "plusb2b",
+        "icon": "b2b",
+        "items": [{ "text": "Plataforma B2B para compra al por mayor y descuentos por volumen" },
+            { "text": "Precio PVD (Precio Venta Distribuidor) en unidades sueltas" },
+            { "text": "Navegación por top ventas, novedades, marcas, categorías, tags, etc." }
+        ]
+    },
+    "sincronizacion": {
+        "title": "Sincronización",
+        "image": "plussincro",
+        "icon": "sync",
+        "items": [{ "text": "Stock en tiempo real, novedades, pedidos, envíos y trackings" },
+            { "text": "Herramienta de creación de tarifas, márgenes, categorías, catálogo, etc." },
+            { "text": "Ecommerce Integration Management (Prestashop, Woocomerce, Shopify, etc.)" },
+            { "text": "Emarketplaces Integration Management (Ebay, Amazon, etc.)" },
+            { "text": "API para catálogo, pedidos, transportistas y trackings" },
+            { "text": "Archivos CSV-XML por FTP" },
+            { "text": "Tienda dropshipping sincronizada (temáticas o catálogo completo)" }
+        ]
+    },
+
+    "recursos": {
+        "title": "Recursos",
+        "image": "plusrecursos",
+        "icon": "cog",
+        "items": [
+            { "text": "Descarga de banners" },
+            { "text": "Herramienta generadora de newsletters" },
+            { "text": "Blog sobre ecommerce y digital marketing" },
+            { "text": "Academy, tutoriales de nuestros servicios" },
+            { "text": "Asesoramiento técnico y comercial por profesionales" }
+        ]
+    },
+    "administracion": {
+        "title": "Administración",
+        "image": "plusadministracion",
+        "icon": "description",
+        "items": [
+            { "text": "Descarga de facturas online" },
+            { "text": "Monedero virtual para agilizar las compras" },
+            { "text": "Automatización de la complejidad fiscal europea" }
+        ]
+    },
+    "envios": {
+        "title": "Envíos",
+        "image": "plusenvios",
+        "icon": "delivery2",
+        "items": [{ "text": "Integración a principales couriers (UPS, DHL, TNT, GLS, DPD, etc.)" },
+            { "text": "Envíos a todo el mundo" },
+            { "text": "Tarifas de envío muy competitivas" },
+            { "text": "Embalaje y protección especial para envíos ecommerce" },
+            { "text": "Seguimiento de envio, ID Trackings" }
+
+        ]
+    },
+    "postventa": {
+        "title": "Postventa",
+        "image": "pluspostventa",
+        "icon": "postventa",
+        "items": [{ "text": "Servicio recepción envíos rechazados" },
+            { "text": "Gestión de postventa y garantía" }
+        ]
+    }
+}

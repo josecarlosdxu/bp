@@ -1,0 +1,14 @@
+@include block(sectionHelp) {
+  color: #464a4f;
+  h3 {
+    vertical-align: sub;
+  }
+
+  ul,ol {
+    padding-left: 1.3rem;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+
+}

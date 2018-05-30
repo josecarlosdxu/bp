@@ -1,0 +1,1547 @@
+{
+    "relatedMobile": {
+        "productListModifier": ["mobile"],
+        "productCardModifier": ["shoppable", "hot"],
+        "jsAnchor": "",
+        "test": [{
+            "title": "Abrelatas eléctrico automático ",
+            "pvp01": "10,47",
+            "pvp02": "50",
+            "pvp03": "3,00",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "hot deal"
+
+        }, {
+            "title": "Fregona Giratoria Best Zeller Sin Pedal, Doble Centrifugado y Dosificador Jabón ",
+            "pvp01": "238,02",
+            "pvp02": "44",
+            "pvp03": "249,60",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true"
+        }, {
+            "title": "Pelador manual Ez Peel ",
+            "pvp01": "2,85",
+            "pvp02": "50",
+            "pvp03": "1,65",
+            "image": "../../img/product_big.jpg",
+            "options": "true"
+        }, {
+            "title": "Picador y Pela Ajos Garlic",
+            "pvp01": "8,50",
+            "pvp02": "50",
+            "pvp03": "4,74",
+            "image": "../../img/product_big.jpg"
+
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Horno de Convección 11.5L",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "55,59",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Fuentes de Chocolate ",
+            "pvp01": "84,90",
+            "pvp02": "50",
+            "pvp03": "51,53",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Robot de Cocina Vi Pro",
+            "pvp01": "145,10",
+            "pvp02": "50",
+            "pvp03": "52,67",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "WOK con Fondue Eléctrico Gourmet ",
+            "pvp01": "33,05",
+            "pvp02": "50",
+            "pvp03": "12,88",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Robot de Cocina Programable Ariete Mod.121 ",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "35,19",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+    "home": {
+        "productListModifier": ["mobileSlides"],
+        "productCardModifier": ["shoppable, blackFriday"],
+        "jsAnchor": "productList",
+        "test": [{
+            "title": "Abrelatas eléctrico automático ",
+            "pvp01": "10,47",
+            "pvp02": "50",
+            "pvp03": "3,00",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "black Friday"
+        }, {
+            "title": "Fregona Giratoria Best Zeller Sin Pedal, Doble Centrifugado y Dosificador Jabón ",
+            "pvp01": "238,02",
+            "pvp02": "44",
+            "pvp03": "249,60",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true"
+        }, {
+            "title": "Pelador manual Ez Peel ",
+            "pvp01": "2,85",
+            "pvp02": "50",
+            "pvp03": "1,65",
+            "image": "../../img/product_big.jpg",
+            "options": "true"
+        }, {
+            "title": "Picador y Pela Ajos Garlic",
+            "pvp01": "8,50",
+            "pvp02": "50",
+            "pvp03": "4,74",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+
+
+    "home2": {
+        "productListModifier": ["mobileSlides"],
+        "productCardModifier": ["shoppable"],
+        "jsAnchor": "productList",
+        "test": [{
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Robot de Cocina Programable Ariete Mod.121 ",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "35,19",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+    "searchResults": {
+        "productListModifier": ["searchResults"],
+        "productCardModifier": ["shoppable", "landscape"],
+        "jsAnchor": "productList",
+        "test": [{
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Robot de Cocina Programable Ariete Mod.121 ",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "35,19",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+
+
+
+
+    "fullpage": {
+        "productListModifier": "fullpage",
+        "productCardModifier": ["shoppable", "blackFriday"],
+        "jsAnchor": "productList",
+        "test": [{
+            "title": "Abrelatas eléctrico automático ",
+            "pvp01": "10,47",
+            "pvp02": "50",
+            "pvp03": "3,00",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "black friday"
+        }, {
+            "title": "Fregona Giratoria Best Zeller Sin Pedal, Doble Centrifugado y Dosificador Jabón ",
+            "pvp01": "238,02",
+            "pvp02": "44",
+            "pvp03": "249,60",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true"
+        }, {
+            "title": "Pelador manual Ez Peel ",
+            "pvp01": "2,85",
+            "pvp02": "50",
+            "pvp03": "1,65",
+            "image": "../../img/product_big.jpg",
+            "options": "true"
+        }, {
+            "title": "Picador y Pela Ajos Garlic",
+            "pvp01": "8,50",
+            "pvp02": "50",
+            "pvp03": "4,74",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Horno de Convección 11.5L",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "55,59",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Fuentes de Chocolate ",
+            "pvp01": "84,90",
+            "pvp02": "50",
+            "pvp03": "51,53",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Robot de Cocina Vi Pro",
+            "pvp01": "145,10",
+            "pvp02": "50",
+            "pvp03": "52,67",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "WOK con Fondue Eléctrico Gourmet ",
+            "pvp01": "33,05",
+            "pvp02": "50",
+            "pvp03": "12,88",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Robot de Cocina Programable Ariete Mod.121 ",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "35,19",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+
+
+    "related": {
+        "productListModifier": "related",
+        "productCardModifier": ["shoppable"],
+        "jsAnchor": "featuredList",
+        "test": [{
+            "title": "Marinator Robot de Cocina",
+            "pvp01": "57,50",
+            "pvp02": "50",
+            "pvp03": "34,68",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "black friday"
+        }, {
+            "title": "Barbacoa Eléctrica de Sobremesa ",
+            "pvp01": "49,00",
+            "pvp02": "50",
+            "pvp03": "18,67",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "black friday"
+        }, {
+            "title": "Horno halógeno de convección 12L ",
+            "pvp01": "89,00",
+            "pvp02": "50",
+            "pvp03": "29,79",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Cortador de Verduras Twista Chopper",
+            "pvp01": "15,00",
+            "pvp02": "50",
+            "pvp03": "9,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Robot de Cocina Programable Ariete Mod.121 ",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "35,19",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Picadora Manual SX5100 ",
+            "pvp01": "18,00",
+            "pvp02": "50",
+            "pvp03": "7,99",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Corta Verduras Magic Slicer",
+            "pvp01": "21,90",
+            "pvp02": "50",
+            "pvp03": "13,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Precisión CD",
+            "pvp01": "33,00",
+            "pvp02": "50",
+            "pvp03": "14,64",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Myco",
+            "pvp01": "2,00",
+            "pvp02": "50",
+            "pvp03": "10,10",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital iPhone",
+            "pvp01": "16,50",
+            "pvp02": "50",
+            "pvp03": "7,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Bronceador Solac Bronze Air Perfection",
+            "pvp01": "69,00",
+            "pvp02": "50",
+            "pvp03": "47,19",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Tendedero Secador Eléctrico",
+            "pvp01": "74,00",
+            "pvp02": "50",
+            "pvp03": "62,69",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "50",
+            "pvp03": "6,43",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+    "featuredList": {
+        "productListModifier": "featured",
+        "productCardModifier": ["shoppable"],
+        "jsAnchor": "featuredList",
+        "test": [{
+            "title": "Marinator Robot de Cocina",
+            "pvp01": "57,50",
+            "pvp02": "50",
+            "pvp03": "34,68",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg",
+            "play": "true"
+        }, {
+            "title": "Barbacoa Eléctrica de Sobremesa ",
+            "pvp01": "49,00",
+            "pvp02": "50",
+            "pvp03": "18,67",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Horno halógeno de convección 12L ",
+            "pvp01": "89,00",
+            "pvp02": "50",
+            "pvp03": "29,79",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Cortador de Verduras Twista Chopper",
+            "pvp01": "15,00",
+            "pvp02": "50",
+            "pvp03": "9,00",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Robot de Cocina Programable Ariete Mod.121 ",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "35,19",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Picadora Manual SX5100 ",
+            "pvp01": "18,00",
+            "pvp02": "50",
+            "pvp03": "7,99",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Corta Verduras Magic Slicer",
+            "pvp01": "21,90",
+            "pvp02": "50",
+            "pvp03": "13,23",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Balanza Digital Precisión CD",
+            "pvp01": "33,00",
+            "pvp02": "50",
+            "pvp03": "14,64",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Balanza Digital Myco",
+            "pvp01": "2,00",
+            "pvp02": "50",
+            "pvp03": "10,10",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Balanza Digital Cajetilla Tabaco",
+            "pvp01": "39,00",
+            "pvp02": "50",
+            "pvp03": "22,29",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Balanza Digital iPhone",
+            "pvp01": "16,50",
+            "pvp02": "50",
+            "pvp03": "7,00",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Bronceador Solac Bronze Air Perfection",
+            "pvp01": "69,00",
+            "pvp02": "50",
+            "pvp03": "47,19",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Tendedero Secador Eléctrico",
+            "pvp01": "74,00",
+            "pvp02": "50",
+            "pvp03": "62,69",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "50",
+            "pvp03": "6,43",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Balanza Digital Portátil para pesar Equipajes de Viaje   ",
+            "pvp01": "16,64",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Calefactor con función ventilación SYCL 5",
+            "pvp01": "24,00",
+            "pvp02": "50",
+            "pvp03": "9,30",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Calefactor de Cuarzo SYCL 10",
+            "pvp01": "17,00",
+            "pvp02": "50",
+            "pvp03": "6,16",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product.jpg",
+            "image2": "../../img/product2.jpg",
+            "image3": "../../img/product3.jpg"
+        }]
+    },
+
+    "asideCart": {
+        "productListModifier": "asideCart",
+        "productCardModifier": ["mini", "borderless"],
+        "test": [{
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Bronceador Solac Bronze Air Perfection",
+            "pvp01": "69,00",
+            "pvp02": "50",
+            "pvp03": "47,19",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Tendedero Secador Eléctrico",
+            "pvp01": "74,00",
+            "pvp02": "50",
+            "pvp03": "62,69",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "50",
+            "pvp03": "6,43",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+
+    "viewedProducts": {
+        "productListModifier": "viewedProducts",
+        "productCardModifier": ["mini", "borderless"],
+        "test": [{
+            "title": "Cortador de Verduras Twista Chopper",
+            "pvp01": "74,00",
+            "pvp02": "50",
+            "pvp03": "62,69",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "50",
+            "pvp03": "6,43",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+
+    "starProducts": {
+        "productListModifier": "starProducts",
+        "productCardModifier": ["shoppable", "landscape", "borderless"],
+        "test": [{
+            "title": "Cortador de Verduras Twista Chopper",
+            "pvp01": "74,00",
+            "pvp02": "50",
+            "pvp03": "62,69",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Horno Eléctrico My Rotisserie, Horno Grill Portátil ",
+            "pvp01": "159,99",
+            "pvp02": "50",
+            "pvp03": "93,40",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+    "searchBoxList": {
+        "productListModifier": "searchBoxList",
+        "productCardModifier": ["compact"],
+        "test": [{
+            "title": "Cortador de Verduras Twista Chopper",
+            "pvp01": "74,00",
+            "pvp02": "50",
+            "pvp03": "62,69",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true",
+            "ribbon": "outlet"
+        }, {
+            "title": "Lote Jamón + Embutidos + Jamonero Gourmet + Cuchillo y Afilador",
+            "pvp01": "18,20",
+            "pvp02": "50",
+            "pvp03": "6,43",
+            "image": "../../img/product_big.jpg",
+            "options": "true"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg",
+            "nostock": "true"
+
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Lote Jamón + Embutidos + Jamonero Gourmet + Cuchillo y Afilador",
+            "pvp01": "18,20",
+            "pvp02": "50",
+            "pvp03": "6,43",
+            "image": "../../img/product_big.jpg",
+            "options": "true"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+
+    "menu": {
+        "productListModifier": "menu",
+        "productCardModifier": ["compact"],
+        "test": [{
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3,00",
+            "pvp02": "50",
+            "pvp03": "11,09",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "50",
+            "pvp03": "33,23",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "50",
+            "pvp03": "6,43",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "50",
+            "pvp03": "3,75",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Picadora Amazing Chopper ",
+            "pvp01": "1,00",
+            "pvp02": "50",
+            "pvp03": "4,94",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+    "slides": {
+        "productListModifier": "slides",
+        "productCardModifier": ["shoppable"],
+        "test": [{
+            "title": "Secador de Uñas de Viaje",
+            "pvp01": "1,00",
+            "pvp02": "50",
+            "pvp03": "4,00",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Picadora Rápida",
+            "pvp01": "14,90",
+            "pvp02": "50",
+            "pvp03": "7,00",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Pelador Rayador de Verduras",
+            "pvp01": "7,90",
+            "pvp02": "50",
+            "pvp03": "5,00",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Picadora de Verduras Electric Mandoline Slicer con descripción super larga",
+            "pvp01": "56,90",
+            "pvp02": "50",
+            "pvp03": "36,00",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Abrelatas eléctrico automático ",
+            "pvp01": "10,47",
+            "pvp02": "50",
+            "pvp03": "3,00",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Exprimidor Just Juicer Star ",
+            "pvp01": "12,00",
+            "pvp02": "50",
+            "pvp03": "5,00",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Exprimidor 6 en 1 Multiusos ",
+            "pvp01": "1,00",
+            "pvp02": "50",
+            "pvp03": "4,16",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Exprimidor Acero Profesional",
+            "pvp01": "39,90",
+            "pvp02": "50",
+            "pvp03": "29,38",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Picadora Amazing Chopper ",
+            "pvp01": "1,00",
+            "pvp02": "50",
+            "pvp03": "4,94",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Pelador manual Ez Peel ",
+            "pvp01": "2,85",
+            "pvp02": "50",
+            "pvp03": "1,65",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Guantes Pelapatatas Tater ",
+            "pvp01": "12,90",
+            "pvp02": "50",
+            "pvp03": "10,71",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }]
+    },
+    "slides2": {
+        "productListModifier": "slides",
+        "productCardModifier": ["shoppable"],
+        "test": [{
+            "title": "Picador y Pela Ajos Garlic",
+            "pvp01": "8,50",
+            "pvp02": "50",
+            "pvp03": "4,74",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "stock",
+            "play": "true"
+        }, {
+            "title": "Batidora de Cocina Amazing Bullet",
+            "pvp01": "59,90",
+            "pvp02": "50",
+            "pvp03": "36,28",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "stock",
+            "play": "true"
+        }, {
+            "title": "Rompe Huevos Separador de Claras y Yemas",
+            "pvp01": "15,00",
+            "pvp02": "50",
+            "pvp03": "10,43",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Pasta Express Maker",
+            "pvp01": "18,00",
+            "pvp02": "50",
+            "pvp03": "13,24",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Horno Eléctrico My Rotisserie, Horno Grill Portátil ",
+            "pvp01": "159,99",
+            "pvp02": "50",
+            "pvp03": "93,40",
+            "image": "../../img/product_big.jpg",
+            "play": "true"
+        }, {
+            "title": "Robot de Cocina Supreme Chef",
+            "pvp01": "159,90",
+            "pvp02": "50",
+            "pvp03": "104,19",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Horno de Convección 11.5L",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "55,59",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Fuentes de Chocolate ",
+            "pvp01": "84,90",
+            "pvp02": "50",
+            "pvp03": "51,53",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Fuente de Cocktail Iluminada",
+            "pvp01": "69,90",
+            "pvp02": "50",
+            "pvp03": "41,18",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Triturador Dual Blender",
+            "pvp01": "50,10",
+            "pvp02": "50",
+            "pvp03": "29,81",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Yogurtera",
+            "pvp01": "25,90",
+            "pvp02": "50",
+            "pvp03": "15,94",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+    "slides3": {
+        "productListModifier": "slides",
+        "productCardModifier": ["shoppable"],
+        "productCardModifier": ["stockreturn"],
+        "test": [{
+            "title": "Pasta Express Maker",
+            "pvp01": "18,00",
+            "pvp02": "50",
+            "pvp03": "13,24",
+            "image": "../../img/product_big.jpg",
+
+            "play": "true"
+        }, {
+            "title": "Horno Eléctrico My Rotisserie, Horno Grill Portátil ",
+            "pvp01": "159,99",
+            "pvp02": "50",
+            "pvp03": "93,40",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "stock",
+            "play": "true"
+        }, {
+            "title": "Robot de Cocina Supreme Chef",
+            "pvp01": "159,90",
+            "pvp02": "50",
+            "pvp03": "104,19",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "stock",
+            "play": "true"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "stock",
+            "play": "true"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "stock",
+            "play": "true"
+        }, {
+            "title": "Robot de Cocina Vi Pro",
+            "pvp01": "145,10",
+            "pvp02": "50",
+            "pvp03": "52,67",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Horno de Convección 11.5L",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "55,59",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Pasta Express Maker",
+            "pvp01": "18,00",
+            "pvp02": "50",
+            "pvp03": "13,24",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Horno Eléctrico My Rotisserie, Horno Grill Portátil ",
+            "pvp01": "159,99",
+            "pvp02": "50",
+            "pvp03": "93,40",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Robot de Cocina Supreme Chef",
+            "pvp01": "159,90",
+            "pvp02": "50",
+            "pvp03": "104,19",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Cortador de Verdura Snap Slicer",
+            "pvp01": "16,36",
+            "pvp02": "50",
+            "pvp03": "6,02",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Robot de Cocina Vi Pro",
+            "pvp01": "145,10",
+            "pvp02": "50",
+            "pvp03": "52,67",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Horno de Convección 11.5L",
+            "pvp01": "99,00",
+            "pvp02": "50",
+            "pvp03": "55,59",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }]
+    },
+    "slides4": {
+        "productListModifier": "slides",
+        "productCardModifier": [],
+        "test": [{
+            "title": "Secador de Uñas de Viaje",
+            "pvp01": "1,00",
+            "pvp02": "50",
+            "pvp03": "4,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Pelador manual Ez Peel ",
+            "pvp01": "2,85",
+            "pvp02": "50",
+            "pvp03": "1,65",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Picadora Rápida",
+            "pvp01": "14,90",
+            "pvp02": "50",
+            "pvp03": "7,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Pelador Rayador de Verduras",
+            "pvp01": "7,90",
+            "pvp02": "50",
+            "pvp03": "5,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Picadora de Verduras Electric Mandoline Slicer con descripción super larga",
+            "pvp01": "56,90",
+            "pvp02": "50",
+            "pvp03": "36,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+
+    "slides5": {
+        "productListModifier": "slidesHalf",
+        "productCardModifier": [],
+        "test": [{
+            "title": "Secador de Uñas de Viaje",
+            "pvp01": "1,00",
+            "pvp02": "50",
+            "pvp03": "4,00",
+            "image": "../../img/product_big.jpg",
+            "ribbon": "outlet",
+            "play": "true"
+        }, {
+            "title": "Pelador manual Ez Peel ",
+            "pvp01": "2,85",
+            "pvp02": "50",
+            "pvp03": "1,65",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Picadora Rápida",
+            "pvp01": "14,90",
+            "pvp02": "50",
+            "pvp03": "7,00",
+            "image": "../../img/product_big.jpg"
+        }]
+    },
+    "slides6": {
+        "productListModifier": "slidesHalf",
+        "productCardModifier": ["borderless"],
+        "test": [{
+            "title": "Pelador Rayador de Verduras",
+            "pvp01": "7,90",
+            "pvp02": "50",
+            "pvp03": "5,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Picadora de Verduras Electric Mandoline Slicer con descripción super larga",
+            "pvp01": "56,90",
+            "pvp02": "50",
+            "pvp03": "36,00",
+            "image": "../../img/product_big.jpg"
+        }, {
+            "title": "Exprimidor de Naranjas Palanca de Acero",
+            "pvp01": "35,00",
+            "pvp02": "50",
+            "pvp03": "22,00",
+            "image": "../../img/product_big.jpg"
+        }]
+    }
+
+
+}

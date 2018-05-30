@@ -1,0 +1,14 @@
+@include block(mobileAwards) {
+    display: none;
+    @include element(link) {
+        color: magenta;
+        font-weight: bold;
+    }
+    @include element(gif) {
+        margin: 1rem auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+}

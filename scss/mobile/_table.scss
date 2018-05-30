@@ -1,0 +1,148 @@
+@include block(table) {
+    @include element(thead) {
+        background-clip: padding-box;
+        border-bottom: 1px solid $color-shadow;
+    }
+    @include element(tfoot) {
+        background: $color-darkGrey-default;
+        color: #fff;
+    }
+    @include element(item) {
+        padding: 1rem 0.5rem;
+        font-size: 1.25rem;
+        @include addBreakpoint(sm) {
+            padding: 1rem 0.5rem;
+            font-size: 1.25rem;
+        }
+        @include addBreakpoint(md) {
+            font-size: 1.3rem;
+        }
+        @include modifier(portraitHide) {
+            display: none;
+            @include addBreakpoint(sm) {
+                display: table-cell;
+            }
+        }
+        @include modifier(icon) {
+            padding: 0;
+            vertical-align: middle;
+            width: 3rem;
+            @include addBreakpoint(sm) {
+                width: 4.5rem;
+            }
+            @include addBreakpoint(md) {
+                width: 6rem;
+            }
+        }
+    }
+}
+
+@include extendElement(table, tbody, stripped) {
+    border-right: 1px solid #d6d6d6;
+    background: #fff;
+    @include element(item) {
+        border-left: 1px solid #dedede;
+    }
+    @include element(tr) {
+        border-bottom: 1px solid #d6d6d6;
+    }
+}
+
+@include extendElement(table, tbody, accordion) {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    @include element(item) {
+        //box-shadow: 
+        
+    }
+}
+
+@include extendBlock(table, comparative) {
+    background-clip: padding-box;
+    @include element(item) {
+        @include modifier(rowtitle) {
+            padding-left: 3.5rem;
+            padding-left: $um;
+            height: 4rem;
+        }
+    }
+    @include element(accordionContent) {
+        padding: 0;
+        box-shadow: 5px 0 #09f inset;
+        //border-top: 1px solid transparentize(#09f, 0.5);
+        @include addBreakpoint(lg) {
+            padding: $um;
+        }
+    }
+    @include element(accordionIcon) {
+        margin-left: 0;
+    }
+}
+
+@include extendBlock(table, midsize) {
+    @include element(item) {
+        font-size: 1rem;
+        font-weight: 400;
+        @include modifier(rowtitle) {
+            height: auto;
+            padding-left: 0;
+        }
+    }
+    @include element(accordionIcon) {
+        margin: 0 $um / 2;
+    }
+}
+
+
+
+
+
+@include extendBlock(table, responsive) {
+    /*display: block;
+    width: 100%;
+    @include element(item) {
+        display: table-cell;
+        width: 100%;
+
+    }
+
+
+    @include element(tr) {
+        white-space: nowrap;
+        overflow-x: auto;
+        position: relative;
+       // white-space: nowrap;
+        width: auto;
+        display: table;
+
+
+        .table-item:first-child{
+            background: tomato;
+            //display: block;
+            position: absolute;
+            float: left;
+        }
+
+    }
+
+
+    /*&:after {
+        clear: both;
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+
+    }
+
+    @include element(thead) {
+        &:after {
+            clear: both;
+            content: " ";
+            display: block;
+            font-size: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    }*/
+}

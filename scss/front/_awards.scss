@@ -1,0 +1,49 @@
+@include block(awards) {
+    width: 100%;
+    /* background: red url("../../img/premiosbg.png");*/
+    margin-bottom: $um;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+     display:flex;
+    flex-wrap: wrap;
+    img {
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+    }
+    @include element(imgbtm) {
+        /*position: absolute;
+        left:0;
+        bottom: 0;*/
+    }
+    @include element(link) {
+        display: block;
+        //background: rgba(255, 0, 0, 0.5);
+        position: absolute;
+        width: 20rem;
+        height: 1rem;
+        font-size: 0;
+    }
+}
+
+@include extendElement(awards, link, eawards) {
+    height: 26px;
+    left: 762px;
+    top: 679px;
+    width: 167px;
+}
+
+@include extendElement(awards, link, international) {
+    height: 26px;
+    left: 632px;
+    top: 844px;
+    width: 255px;
+}
+
+@include extendElement(awards, link, innovation) {
+    height: 26px;
+    left: 632px;
+    top: 871px;
+    width: 255px;
+}

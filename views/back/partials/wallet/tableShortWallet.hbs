@@ -1,0 +1,52 @@
+<table class="table table--interactive">
+    <thead class="thead">
+        <tr class="table-filters">
+            <th class="table-th table-item table-item--handler">
+                <i class="icon icon-placeholder fa-fw"></i>
+            </th>
+            <th class="table-th table-item table-item--number u-xs-5">
+                <input class="form-input form-input--collapse" type="text" placeholder="Nº pedido">
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <input class="form-input form-input--collapse" placeholder="Fecha">
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <input class="form-input form-input--collapse" placeholder="Hora">
+            </th>
+            <th class="table-th table-item table-item--number u-xs-5">
+                <input class="form-input form-input--collapse" type="number" placeholder="Importe">
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <select name="" id="" class="form-select form-select--collapse">
+                    <option value="">Concepto</option>
+                </select>
+            </th>
+            <th class="table-th table-item table-item--number u-xs-10">
+                <input class="form-input form-input--collapse" type="number" placeholder="Saldo anterior">
+            </th>
+            <th class="table-th table-item table-item--number u-xs-10">
+                <input class="form-input form-input--collapse" type="number" placeholder="Saldo posterior">
+            </th>
+        </tr>
+
+        <tr>
+            <th class="table-th table-item table-item--handler"></th>
+            <th class="table-th table-item">Nº pedido <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item">Fecha <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item">Hora <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item">Concepto <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item table-item--number">Importe<i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item table-item--number ">Saldo anterior <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item table-item--number">Saldo posterior <i class="icon icon-sort fa fa-caret-down"></i></th>
+        </tr>
+
+    </thead>
+
+    <tbody class="table-tbody table-tbody--stripped">
+        {{>tableRowWallet01}}
+        {{>tableRowWallet01}}
+        {{>tableRowWallet01}}
+        {{>tableRowWallet02}}
+        {{>tableRowWallet01}}
+    </tbody>
+</table>

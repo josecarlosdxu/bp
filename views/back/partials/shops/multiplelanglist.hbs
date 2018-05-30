@@ -1,0 +1,18 @@
+  <nav data-js-lang="list" class="langlist langlist--multiselect" data-jslang="multiple">
+  
+
+  <input type="checkbox" class="inputToggle" id="langlist_multiselect"> 
+  <label class="langlist-selected" for="langlist_multiselect" data-jslang="text" >Español, Italiano, Francés, Inglés</label>
+
+   <section class="langlist-container">
+
+   {{#each langs.list}}
+
+   <label><input type="checkbox" {{#if checked}}checked="{{checked}}" {{/if}}data-jslang="item" class="form-checkbox" name="langs" value="{{val}}">{{>svgIcon type=icontype}}{{name}}</label>
+
+   {{/each}}
+   
+</section>
+<label class="langlist-closed" for="langlist_multiselect"></label>
+
+</nav>

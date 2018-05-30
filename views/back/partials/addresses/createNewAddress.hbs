@@ -1,0 +1,109 @@
+<form class="form" >
+            <fieldset class="form-fieldset form-fieldset--sequential">
+                <h3 class="form-fieldset-title">Información fiscal</h3>
+                <div class="modularGrid">
+                    <div class="modularGrid-module u-md-25">
+                        <input type="radio" class="form-radio form-input--inline" name="client_type" id="particular" value="particular">
+                        <label for="particular" class="form-label form-label--inline">Soy Particular</label>
+                    </div>
+                    <div class="modularGrid-module u-md-25">
+                        <input type="radio" class="form-radio form-input--inline" name="client_type" id="autonomo" value="autonomo">
+                        <label for="autonomo" class="form-label form-label--inline">Soy Autónomo</label>
+                    </div>
+                    <div class="modularGrid-module u-md-25">
+                        <input type="radio" class="form-radio form-input--inline" name="client_type" id="empresa" value="empresa">
+                        <label for="empresa" class="form-label form-label--inline">Soy Empresa</label>
+                    </div>
+                </div>
+                </fieldset>
+            <fieldset class="form-fieldset form-fieldset--sequential">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-50 ">
+                            <label for="razon_social" class="form-label">Razón Social <i class="icon fa-info-circle"></i></label>
+                            <input type="text" id="razon_social" class="form-input">
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label for="nombre_comercial" class="form-label">Nombre comercial<em class="form-label--optional">/ Opcional</em></label>
+                            <input type="text" id="nombre_comercial" class="form-input">
+                        </div>
+                    </div>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-md-50 ">
+                            <label for="country" class="form-label">País</label>
+                            <select class="form-select" name="" id="country">
+                                <option value="">España</option>
+                                <option value="">Francia</option>
+                            </select>
+                        </div>
+                        <div class="modularGrid-module u-md-50 u-pdl">
+                            <label for="" class="form-label">Nº identificación fiscal</label>
+                            <span class="form-prefix">GB</span>
+                            <input type="text" class="form-input  form-input--prefix" placeholder="DNI / CIF / VAT Number">
+                        </div>
+                    </div>
+
+            </fieldset>
+            <fieldset class="form-fieldset form-fieldset--sequential">
+                <div class="modularGrid">
+                    <div class="modularGrid-module u-md-30 ">
+                        <label for="" class="form-label">Código postal</label>
+                        <input type="text" class="form-input">
+                    </div>
+                </div>
+                <div class="modularGrid">
+                    <div class="modularGrid-module u-md-50 ">
+                        <label for="prov" class="form-label">Provincia</label>
+                        <select class="form-select" name="" id="prov">
+                            <option value="">Álava</option>
+                            <option value="">Almería</option>
+                        </select>
+                    </div>
+                    <div class="modularGrid-module u-md-50 u-pdl">
+                        <label for="" class="form-label">Población</label>
+                        <input type="text" class="form-input ">
+                    </div>
+                    <div class="modularGrid-module">
+                        <label for="" class="form-label">Dirección</label>
+                        <input type="text" class="form-input ">
+                    </div>
+                    <div class="modularGrid-module u-md-50">
+                        <label for="" class="form-label">Teléfono de empresa</label>
+                        <span class="form-prefix">+34</span>
+                        <input type="text" class="form-input form-input--prefix">
+                    </div>
+                    <div class="modularGrid-module u-md-50 u-pdl">
+                        <label for="website" class="form-label">Página web<em class="form-label--optional">/ Opcional</em></label>
+                        <span class="form-prefix">http://</span>
+                        <input type="text" id="website" class="form-input form-input--prefix">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset form-fieldset--sequential">
+                <h3 class="form-fieldset-title">Persona de contacto</h3>
+                <div class="modularGrid">
+                    <div class="modularGrid-module u-md-50 ">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-input ">
+                    </div>
+                    <div class="modularGrid-module u-md-50 u-pdl">
+                        <label class="form-label">Apellidos</label>
+                        <input type="text" class="form-input ">
+                    </div>
+                    <div class="modularGrid-module u-md-50">
+                        <label for="" class="form-label">Teléfono 1</label>
+                        <span class="form-prefix">+34</span>
+                        <input type="text" class="form-input form-input--prefix">
+                    </div>
+                    <div class="modularGrid-module u-md-50 u-pdl">
+                        <label for="" class="form-label">Teléfono 2</label>
+                        <span class="form-prefix">+34</span>
+                        <input type="text" class="form-input form-input--prefix">
+                    </div>
+                </div>
+                <div class="modularGrid">
+                    <div class="modularGrid-module u-md-20 u-pdt--half">
+                        <input type="submit" value="Aceptar" data-js-show="toggletabBillingAdress" class="button button--primary button--full">
+                    </div>
+                </div>
+            </fieldset>
+</form>

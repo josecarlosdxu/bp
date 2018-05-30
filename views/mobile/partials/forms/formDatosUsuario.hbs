@@ -1,0 +1,210 @@
+<section class="mobileCMS-section">
+
+
+    <form class="form">
+        {{>userInfo}}
+        {{>taxInfo}}
+
+
+         <fieldset class="form-fieldset--borderless u-pd u-brb">
+            <h3 class="form-fieldset-title u-pdb--half">¿Es usted comprador habitual de artículos similares a los de Bigbuy?</h3>
+            <div class="modularGrid">
+
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="radio" class="form-radio" name="seller" id="seller1" value="1_1">
+                    <label title="Sí, ya he comprado a otros proveedores" for="seller1" class="form-label u-inline  form-label--inline">
+                        Sí, ya he comprado a otros proveedores
+                    </label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="radio" class="form-radio" name="seller" id="seller2" value="1_2">
+                    <label title="No, es la primera vez" for="seller2" class="form-label u-inline  form-label--inline">
+                        No, es la primera vez
+                    </label>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset--borderless u-pd u-brb">
+            <h3 class="form-fieldset-title u-pdb--half">¿Cuál es su canal/es de venta?</h3>
+            <div class="modularGrid ">
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_3" name="sector" id="sector_3" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Venta al mayor / Distribución" for="sector_3" class="form-label u-inline  form-label--inline">Venta al mayor / Distribución</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_4" name="sector" id="sector_4" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Tienda física / Comercio" for="sector_4" class="form-label u-inline  form-label--inline">Tienda física / Comercio</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_5" name="sector" id="sector_5" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="E-MarketPlace  (Ebay, Amazon, etc.)" for="sector_5" class="form-label u-inline  form-label--inline">E-MarketPlace  (Ebay, Amazon, etc.)</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_6" name="sector" id="sector_6" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Tienda Online / e-Commerce " for="sector_6" class="form-label u-inline  form-label--inline">Tienda Online / e-Commerce </label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_7" name="sector" id="sector_7" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Venta Flash / Web compra colectiva" for="sector_7" class="form-label u-inline  form-label--inline">Venta Flash / Web compra colectiva</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_8" name="sector" id="sector_8" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Regalo Promocional" for="sector_8" class="form-label u-inline  form-label--inline">Regalo Promocional</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_9" name="sector" id="sector_9" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Venta directa" for="sector_9" class="form-label u-inline  form-label--inline">Venta directa</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_11" name="sector" id="sector_11" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Ninguno" for="sector_11" class="form-label u-inline  form-label--inline">Ninguno</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="2_10" name="sector" id="sector_10" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Otros   (Indicar cuáles)" for="sector_10" class="form-label u-inline  form-label--inline">Otros   (Indicar cuáles)</label>
+                    <div style="display: none" class="modularGrid-module u-md-80">
+                        <input type="text" class="form-input u-mgt--half ">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset--borderless u-pd u-brb">
+            <h3 class="form-fieldset-title u-pdb--half">¿Le interesa en especial alguna/s de esta gama de productos?</h3>
+            <div class="modularGrid">
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_12" name="venta" id="venta12" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Regalos Originales / Gadgets / Teletienda" for="venta12" class="form-label u-inline  form-label--inline">Regalos Originales / Gadgets / Teletienda</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_13" name="venta" id="venta13" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Artículos de broma / Festivos" for="venta13" class="form-label u-inline  form-label--inline">Artículos de broma / Festivos</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_14" name="venta" id="venta14" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Ferretería / Bricolaje" for="venta14" class="form-label u-inline  form-label--inline">Ferretería / Bricolaje</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_15" name="venta" id="venta15" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Belleza / Estética" for="venta15" class="form-label u-inline  form-label--inline">Belleza / Estética</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_16" name="venta" id="venta16" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Salud / Bienestar" for="venta16" class="form-label u-inline  form-label--inline">Salud / Bienestar</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_17" name="venta" id="venta17" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Gym / Fitness" for="venta17" class="form-label u-inline  form-label--inline">Gym / Fitness</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_18" name="venta" id="venta18" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Alimentación / Bebidas / Gourmet" for="venta18" class="form-label u-inline  form-label--inline">Alimentación / Bebidas / Gourmet</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_19" name="venta" id="venta19" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Multiprecio / Bazar / Quioscos" for="venta19" class="form-label u-inline  form-label--inline">Multiprecio / Bazar / Quioscos</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_20" name="venta" id="venta20" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Moda / Complementos" for="venta20" class="form-label u-inline  form-label--inline">Moda / Complementos</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_21" name="venta" id="venta21" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Electrónica / Pequeños Electrodomésticos " for="venta21" class="form-label u-inline  form-label--inline">Electrónica / Pequeños Electrodomésticos </label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_22" name="venta" id="venta22" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Perfumería / Cosmética / Higiene personal" for="venta22" class="form-label u-inline  form-label--inline">Perfumería / Cosmética / Higiene personal</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_24" name="venta" id="venta24" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="No quiero más información" for="venta24" class="form-label u-inline  form-label--inline">No quiero más información</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="3_23" name="venta" id="venta23" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Otros   (indique cuáles)" for="venta23" class="form-label u-inline  form-label--inline">Otros   (indique cuáles)</label>
+                    <div style="display: none" class="modularGrid-module u-md-80">
+                        <input type="text" class="form-input u-mgt--half ">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form-fieldset--borderless u-pd u-brb">
+            <h3 class="form-fieldset-title u-pdb--half">¿En qué servicios de BigBuy está interesado?</h3>
+            <div class="modularGrid">
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="4_25" name="servicios" id="servicios25" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="B2B  (Comprar al por mayor)" for="servicios25" class="form-label u-inline  form-label--inline">B2B  (Comprar al por mayor)</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="4_26" name="servicios" id="servicios26" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="B2B&ndash;2C  (Servicio Dropshipping)" for="servicios26" class="form-label u-inline  form-label--inline">B2B&ndash;2C  (Servicio Dropshipping)</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="4_27" name="servicios" id="servicios27" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="B2B-CSV  (Archivos CSV)" for="servicios27" class="form-label u-inline  form-label--inline">B2B-CSV  (Archivos CSV)</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="4_28" name="servicios" id="servicios28" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="B2B-eShop (Tienda Online Sincronizada)" for="servicios28" class="form-label u-inline  form-label--inline">B2B-eShop (Tienda Online Sincronizada)</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="4_29" name="servicios" id="servicios29" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="B2B&ndash;7Days  (Bloqueo de Stocks)" for="servicios29" class="form-label u-inline  form-label--inline">B2B&ndash;7Days  (Bloqueo de Stocks)</label>
+                </div>
+                <div class="modularGrid-module u-md-50 u-mgb--half">
+                    <input type="checkbox" value="4_30" name="servicios" id="servicios30" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="B2B-Import  (Import-Export)" for="servicios30" class="form-label u-inline  form-label--inline">B2B-Import  (Import-Export)</label>
+                </div>
+                <div class="modularGrid-module u-mgb--half">
+                    <input type="checkbox" value="4_31" name="servicios" id="servicios31" class="form-checkbox u-mgb--half u-fll ">
+                    <label title="Ninguno, me interesa hacer una compra puntual" for="servicios31" class="form-label u-inline  form-label--inline">Ninguno, me interesa hacer una compra puntual</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset--borderless u-pd u-brb">
+            <h3 class="form-fieldset-title u-pdb--half">¿Dispone de Tienda Online?</h3>
+            <div class="modularGrid">
+            <div class="modularGrid-module u-md-20 u-mgb--half">
+                    <input type="radio" value="5_33" name="pack" id="pack33" class="form-radio">
+                    <label title="En construcción" for="pack33" class="form-label u-inline  form-label--inline">En construcción</label>
+                </div>
+                <div class="modularGrid-module u-md-20 u-mgb--half">
+                    <input type="radio" value="5_34" name="pack" id="pack34" class="form-radio">
+                    <label title="No" for="pack34" class="form-label u-inline  form-label--inline">No</label>
+                </div>
+                <div class="modularGrid-module u-md-60 u-mgb--half">
+                    <input type="radio" value="5_32" name="pack" id="pack32" class="form-radio">
+                    <label title="Si" for="pack32" class="form-label u-inline  form-label--inline">Si</label>
+                    <input type="text" placeholder="http://www.mydomain.com" style="display: none" class="form-input u-xs-85">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset--borderless u-pd u-brb">
+            <h3 class="form-fieldset-title u-pdb--half">
+                Descripción adicional
+                <em class="u-pdl--half form-label--optional">Mínimo 40 caracteres</em>
+            </h3>
+            <p>
+                Indíquenos el máximo de información posible sobre usted, su empresa o su proyecto. En función de lo que nos cuente, podremos activarle unas condiciones u otras:
+            </p>
+            <textarea maxlength="750" class="form-textarea u-mgt--half" id="" name="comments"></textarea>
+        </fieldset>
+
+         <fieldset class="form-fieldset--borderless u-pd u-brb">
+
+                {{>captcha}}
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-sm-30 u-pdt--half">
+                            <input type="submit" value="Enviar" class="button button--primary button--full">
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </section>

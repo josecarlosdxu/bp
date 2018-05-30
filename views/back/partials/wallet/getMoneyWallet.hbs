@@ -1,0 +1,48 @@
+<section class="panel-section panel-section--borderless">
+    <div class="modularGrid">
+        <div class="modularGrid-module u-xs-45  u-pdr--half ">
+            <form class="form">
+                <fieldset class="form-fieldset form-fieldset--sequential">
+
+                    <h3 class="form-fieldset-title u-pdb--half">Retirar fondos de su monedero</h3>
+                    <div class="modularGrid">
+                        <div data-js-formrefund-amountpanel="amountpanel" class="modularGrid-module u-xs-40">
+                            <label class="form-label">Importe:<em class="form-label--optional">Ejemplo: 7000 €</em></label>
+                            <input type="text" data-js-formrefund-amount="amount" class="form-input form-input--postfix form-input--number">
+                            <div class="form-postfix">
+                                <svg role="img" class="icon  icon--xxs u-vm">
+                                    <use xlink:href="../../img/icons/svg-defs.svg#icon-euro"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module  u-xs-50">
+                            <label class="form-label">Modalidad:<em class="form-label--optional">¿Cómo desea recibir el dinero?</em></label>
+                            <select data-js-formrefund-selectoption="selectoption" class="form-select" id="" name="">
+                                <option value="0">Transferencia bancaria</option>
+                                <option value="1">PayPal</option>
+                            </select>
+                        </div>
+
+                        <div data-js-formrefund-paneloption="0" class="modularGrid-module ">
+                            <label class="form-label">Cuenta bancaria:<em class="form-label--optional">Indique IBAN / cuenta bancaria para el rembolso.</em></label>
+                            <input type="text" data-js-formrefund-iban="iban" class="form-input ">
+                        </div>
+                        <div style="display:none;" data-js-formrefund-paneloption="1" class="modularGrid-module ">
+                            <label class="form-label">E-mail de PayPal:<em class="form-label--optional">Indique la cuenta de PayPal para el rembolso.</em></label>
+                            <input type="text" data-js-formrefund-emailpaypal="emailpaypal" class="form-input ">
+                        </div>
+
+                        <div class="modularGrid-module  u-md-40 u-mgt--3rd">
+                            <button data-js-formrefund-send="send" class="button  button--primary  u-mgt--half">Retirar fondos</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+

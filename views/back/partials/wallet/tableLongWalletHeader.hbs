@@ -1,0 +1,73 @@
+<table class="table panelHeader panelWalletHeader">
+
+    <colgroup>
+        <col style="width:10%;">
+        <col style="width:21%;">
+        <col style="width:10%;">
+        <col style="width:15%;">
+        <col style="width:10%;">
+        <col style="width:12%;">
+        <col style="width:12%;">
+    </colgroup>
+
+     <thead class="table-thead">
+       <tr class="table--tr table-tr--sort">
+            <th class="table-th table-item">Nº pedido
+            {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item" width="21%">Fecha
+            {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item">Hora
+            {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item">Concepto
+            {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item table-item--number">Importe
+            {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item table-item--number">Saldo anterior
+            {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item table-item--number">Saldo posterior
+            {{>orderingIcon}}
+            </th>
+        </tr>
+         <tr class="table-tr  table-tr--filters">
+            <th class="table-th table-item table-item--number" >
+                <input class="form-input form-input--collapse" type="text">
+            </th>
+            <th class="table-th table-item ">
+                <button class="button button--decorative  u-locked-evts" data-js-datepicker="icon">{{>svgIcon type='calendar'}}</button>
+                <input class="form-input form-input--collapse form-input--prefix"  placeholder="01/09/2014 - 15/09/2014">
+            </th>
+            {{!-- <th class="table-th table-item">
+                <button class="button button--prefix button--icon u-locked-evts">
+                    <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-calendar"></use></svg>
+                </button>
+                <input class="form-input form-input--collapse form-input--prefix" placeholder="01/09/2014 - 15/09/2014">
+
+            </th> --}}
+            <th class="table-th table-item">
+                <input class="form-input form-input--collapse" >
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <select name="" id="" class="form-select form-select--collapse">
+                    <option value=""> --- </option>
+                    <option value="">Concepto</option>
+                    <option value="">Retirada</option>
+                </select>
+            </th>
+            <th class="table-th table-item table-item--number">
+                <input class="form-input form-input--collapse u-tar" type="text" >
+            </th>
+            <th class="table-th table-item table-item--number">
+                <input class="form-input form-input--collapse u-tar" type="text">
+            </th>
+            <th class="table-th table-item table-item--number">
+                <input class="form-input form-input--collapse u-tar" type="text">
+            </th>
+        </tr>
+    </thead>
+</table>

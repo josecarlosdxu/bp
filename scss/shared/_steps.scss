@@ -1,0 +1,100 @@
+@include block(steps) {
+    @extend %nmSteps;
+    counter-reset:  li-counter;
+    outline: none;
+    @include element(item) {
+        @extend %nmSteps-item;
+    }
+    @include element(number) {
+        @extend %nmSteps-number;
+    }
+}
+
+
+$stepBg: rgba(0,0,0,0.07);
+$stepColor: rgba(0,0,0,0.3);
+
+$stepSelectedBg: $color-accentBlue-default;
+
+$stepSelectedColor: white;
+
+@include extendBlock(steps, arrow) {
+    display: flex;
+    padding: 0;
+    justify-content:  space-between;      
+    
+    @include element(item) {
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+        line-height: 1;      
+        background-color:$stepBg;
+        color:$stepColor;       
+        padding: 0;
+        flex-grow:1;
+        border-radius: 0;        
+        font-size: 1.25rem;       
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        height: 3rem;
+        width: calc(100% - 3rem);
+        margin-right: 2rem;
+        position: relative;
+        
+        &:before,
+        &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            top: 0;
+            border:1.5rem solid transparent;
+            border-right: none;            
+        }
+        &:before {          
+            left:-1.5rem;
+            border-top-color:$stepBg; 
+            border-bottom-color:$stepBg; 
+        }
+        &:after {          
+            right: -3rem;
+            border:1.5rem solid transparent;
+            border-left-color: $stepBg;  
+        }
+        &:first-child {                       
+            &:before {
+                display: none;
+            }
+        }
+
+         &:last-child { 
+            margin-right: 0;                      
+            &:after {
+                display: none;
+            }
+
+        }
+        @include modifier(selected) {
+            background-color: $stepSelectedBg;
+            color:$stepSelectedColor;
+            &:after {
+                border-left-color:$stepSelectedBg;
+            }
+             &:before {
+                border-top-color:$stepSelectedBg;
+                border-bottom-color:$stepSelectedBg; 
+            }
+            
+
+        }
+    }
+    @include element(number) {
+       
+        &:after {
+            display: inline-block;
+            margin-right: 0.1em;
+            content: ".";
+        }
+    }
+}

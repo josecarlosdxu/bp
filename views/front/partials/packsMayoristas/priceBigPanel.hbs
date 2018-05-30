@@ -1,0 +1,39 @@
+<section class="pricePanel pricePanel--big{{#if type}} pricePanel--{{type}}{{/if}}{{#if opacity}} u-op-0{{/if}}"{{#if js_anchor}} {{js_anchor}}="{{js_val}}"{{/if}}{{#if js_name}} data-jsname="{{js_name}}"{{/if}}>
+    <div class="pricePanel-header">
+        {{>svgIcon size='lg' type='pack' class='u-op-50'}}
+        <h4 class="pricePanel-name" data-jsanchor="name"><small class="u-op-50">PACK</small><br>{{name}}</h4>
+    </div>
+    <div class="pricePanel-subheader" data-jsanchor="loginquote">{{{subheader}}}
+    {{#if loginQuote}}
+    <span data-jslogin="{{loginQuote}}">{{loginQuote}}</span>
+    {{/if}}
+    </div>
+    <table class="pricePanel-content" data-jsanchor="content">
+        {{#each list}}
+        <tr class="pricePanel-radiogroup{{#if disabled}} u-op-40 u-pen{{/if}}{{#if selected}} color-blue{{/if}}">
+            <td class="table-item table-item--thumb u-pdl--half">    
+            <input class="form-radio u-vm" id="{{idradio}}-{{../idpanel}}{{#if ../alt}}alt{{/if}}" name="quote" type="radio" value="{{idval}}" {{#if priceval}}data-jspriceval="{{priceval}}"{{/if}} data-jspack="{{../type}}" data-jsquote="{{#if_eq idradio 'noquote'}}sin cuota{{else}}cuota {{idradio}}{{/if_eq}}" data-jscart="packplan"{{#if forshop}} data-jsshop="true"{{/if}}{{#if disabled}} disabled{{/if}}{{#if ../loginQuote}} data-jslog="{{../../loginQuote}}"{{/if}}>
+            </td>
+            <td>
+                <label class="form-label form-label--inline{{#if labelClass}} {{labelClass}}{{/if}}" for="{{idradio}}-{{../idpanel}}{{#if ../alt}}alt{{/if}}"><strong>{{labeltext}}</strong>
+                    {{#if labeloption}}<em class="form-label--optional">{{labeloption}}</em>{{/if}}
+                </label>
+            </td>
+            {{#if price}}
+            <td class="table-item{{#if priceClass}} table-item--{{priceClass}}{{else}} table-item--number{{/if}}"><strong>{{price}}</strong></td>
+            {{/if}}
+        </tr>
+        {{/each}}
+    </table>
+    {{#unless  expresscart}}
+    <div class="pricePanel-sectionbtn">
+        {{#if active}}
+        <p class="subtitle3 color-blue">Pack activo </p>
+        {{else}}
+        <button class="button button--primary button--big">Activar</button>
+        {{/if}}
+    </div>
+    {{/unless}}
+</section>
+
+

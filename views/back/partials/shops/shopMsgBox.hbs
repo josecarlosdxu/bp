@@ -1,0 +1,29 @@
+
+{{#if type.open}}
+  <input type="checkbox" class="msgBoxHero-input" id="msgboxhero_input_{{type.type}}">
+  <section class="msgBoxHero msgBoxHero--{{type.type}} u-mgh--half">
+{{else}}
+<section class="msgBoxHero msgBoxHero--{{type.type}} u-mgh--half u-pdb">
+{{/if}}
+	{{>svgIcon type=type.icon size='md' class='msgBoxHero-icon'}}	
+		<aside class="msgBoxHero-content">	
+			<div class="msgBoxHero-header">
+				<h3 class="msgBoxHero-title">{{type.title}}</h3>
+				<h4 class="msgBoxHero-subtitle">{{type.subtitle}}</h4>
+				<p class="msgBoxHero-date">{{type.date}}</p>
+			</div>
+			{{#if type.open}}
+			<div class="msgBoxHero-details">
+				{{#each type.hiddentexts}}
+				<section class="msgBoxHero-detailsItem">
+					<h3 class="msgBoxHero-title">{{this.title}}</h3>
+					<h4 class="msgBoxHero-subtitle">{{this.subtitle}}</h4>
+					<p class="msgBoxHero-date">{{this.date}}</p>
+				</section>
+				{{/each}}
+			</div>
+			<label class="msgBoxHero-label" data-open="{{type.open}}" data-close="{{type.close}}" for="msgboxhero_input_{{type.type}}"></label>
+			{{/if}}
+		</aside>
+	</section>
+

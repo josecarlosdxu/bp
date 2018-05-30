@@ -1,0 +1,45 @@
+@include block(fileInput) {
+    font-size: 1rem;
+    position: relative;
+    //overflow: hidden;
+    //margin-left: 0.5rem;
+    @include element(container) {
+        // @extend .modularGrid-module;
+        display: inline-flex;
+        justify-content: flex-end;
+    }
+    @include element(button) {
+        @extend .button--condensed;
+        transition: background-color 0.2s;
+        vertical-align: middle;
+        padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+        //box-shadow: none !important;
+        > .icon {
+            margin-right: 0.2rem;
+        }
+    }
+    @include element(input) {
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            + .fileInput-button {
+                border-color: $color-button-hover-border;
+                background-color: $color-button-hover-background;
+                box-shadow: 0 2px $color-button-hover-boxShadow;
+                outline: none;
+            }
+        }
+    }
+}
+
+@include extendBlock(fileInput, disabled) {
+    cursor: not-allowed !important;
+    @include element(input) {
+        //cursor: not-allowed !important;
+        pointer-events: none;
+    }
+    @include element(button) {
+        @extend .button[disabled];
+        pointer-events: none;
+    }
+}

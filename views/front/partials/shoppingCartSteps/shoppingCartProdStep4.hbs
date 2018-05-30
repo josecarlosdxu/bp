@@ -1,0 +1,19 @@
+<div class="shoppingCartStep{{#if active}} shoppingCartStep--active{{/if}}{{#if editable}} shoppingCartStep--editable{{/if}}" data-shoppingcart-step="4" data-js-step4>
+    <div class="shoppingCartStep-header">
+      <b class="shoppingCartStep-number">4</b>
+      <div class="shoppingCartStep-headertexts">
+          <h4 class="shoppingCartStep-title">Información de pago</h4>        
+      </div>
+      {{>shoppingCartEditBtn}}
+  </div>
+  <div class="shoppingCartStep-content">
+    <fieldset class="form-fieldset--borderless u-pdb--half" >         
+        <label class="form-label form-label--checkgroup u-pdl0 u-pdb--half">
+        <input class="form-radio" name="payment_card" type="radio" value="0"> <strong>PayPal</strong> <em class="form-info form-info--normal u-pdl--3rd" data-js-tooltip="tooltip_paypal">{{>svgIcon type='info'}}¿Qué es PayPal?</em></label>
+        <label class="form-label form-label--checkgroup u-pdl0 u-pdb--half"><input class="form-radio" name="payment_card" value="1" type="radio"><strong>Tarjeta bancaria (by PayPal)</strong></label>
+        <label class="form-label form-label--checkgroup u-pdl0 u-pdb--half"><input class="form-radio" name="payment_card" value="2" type="radio"><strong>Transferencia bancaria (Tradicional)</strong></label>        
+    </fieldset>
+    <button class="button button--primary button--big" data-js-continuar-address="">Continuar</button>   
+</div>
+</div>
+

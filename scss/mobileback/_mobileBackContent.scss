@@ -1,0 +1,15 @@
+@include block(mobileBackContent) {
+    padding-bottom: $um;
+    max-width: 1200px;
+    padding-right: 1px;
+    font-size: 0;
+    position: relative;
+    padding-top: 4rem;
+    margin: 0 auto;
+    @include modifier(fullHeight) {
+        min-height: calc(100vh - 6rem);
+        padding-top: 4rem;
+        margin-top: -1.5rem;
+        @extend %box;
+    }
+}

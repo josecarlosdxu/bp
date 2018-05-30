@@ -1,0 +1,35 @@
+@include block(homeBigBanner) {
+    -js-display: flex; display:flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    height: 9rem;
+    @include addBreakpoint(lg) {
+        height: 30rem;
+    }
+    @include element(img) {
+        height: 100%;
+        position: reletive;
+        z-index: 0;
+        display: none;
+        @include addBreakpoint(lg) {
+            display: block;
+        }
+    }
+    @include element(container) {
+        -js-display: flex; display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        @include addBreakpoint(lg) {
+            width: 600px;
+            position: absolute;
+            left: calc(50% - 300px);
+            height: 100%;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@include block(mobileLanglist) {
+     @extend  %inlineBlock100;
+      font-size: 0;
+
+    @include element(item) {
+        @extend  %inlineBlock100;
+
+        @extend  %u-sm-50;
+        @extend  %u-md-3rd;
+
+
+
+
+
+    }
+    @include element(label) {
+
+        @extend  %inlineBlock;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        font-weight: 300;
+           -webkit-tap-highlight-color: transparent;
+
+           &:active{
+           background:  transparent;
+       }
+
+
+
+
+    }
+     @include element(icon) {
+        display: block;
+        height: 29px;
+        left: -4px;
+        position: absolute;
+        top: -3px;
+        width: 42px;
+    }
+
+    @include element(figure) {
+        border: 1px solid opacify($color-shadow, 0.1);
+
+        @extend  %inlineBlock;
+        width: 36px;
+        height: 25px;
+
+        position: relative;
+
+        margin-right: 0.25rem;
+        margin-bottom: 1rem;
+
+    }
+    @include element(checkbox) {
+        width: 20px;
+        position: relative;
+        top: 5px;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,43 @@
+<fieldset class="form-fieldset form-fieldset--sequentialAlt">
+
+  <div class="modularGrid ">
+    {{>fieldsetLegend title='Complete los siguientes datos' }}
+  </div>
+
+  <div class="modularGrid modularGrid--twocolumns ">
+
+    <div class="modularGrid-module">
+      {{>select1 label='Asunto' id='order_subject'}}
+    </div>
+
+    <div class="modularGrid-module">
+      <label class="form-label" for="order_number">Nº pedido</label>
+      <input class="form-input" id="order_number" type="text" placeholder="Introduzca el nº de pedido">
+    </div>
+
+    <div class="modularGrid-module">
+      {{>select1 label='Motivo' id='order_reason'}}
+    </div>
+
+    <div class="modularGrid-module">
+      <label class="form-label" for="order_code">Indique el Código BB</label>
+      <input class="form-input" id="order_code" type="text" placeholder="Introduzca el Codigo BB o los nombres de los productos">
+      <div class="form-inputMsg form-inputMsg--options form-inputMsg--loading">
+        {{#times1 5}}
+        <a href="#">opcion{{this}}</a>
+        {{/times1}}
+      </div>
+
+    </div>
+
+  </div>
+
+</fieldset>
+
+<div class="modularGrid u-pd u-brdt ">
+     {{>ticketsTabSteps}}    
+  </div>
+
+
+
+

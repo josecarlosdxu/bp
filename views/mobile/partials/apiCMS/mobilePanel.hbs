@@ -1,0 +1,27 @@
+
+{{#each list}}
+{{#if header}}
+<div class="subtitle u-pdb">
+{{#each header}}
+<p>{{{item}}}</p>
+{{/each}}
+</div>
+{{/if}}
+<section class="panel">
+    <header class="panel-header">{{title}}</header>
+    {{#each items}}
+    <article class="panel-item">
+        <div class="modularGrid modularGrid--flexCenter">
+            <svg role="img" class="icon icon--inline  icon--lg  u-op-40"><use xlink:href="../../img/icons/svg-defs.svg#icon-{{icon}}"></use></svg>
+
+            {{#if title}}
+            <h6 class="panel-itemTitle">{{{title}}}</h6>
+            {{/if}}
+        </div>
+        {{#each texts}}
+        <p class="u-pdl--half  u-pdr">{{{text}}}</p>
+        {{/each}}
+    </article>
+    {{/each}}
+</section>
+{{/each}}

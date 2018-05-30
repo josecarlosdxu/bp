@@ -1,0 +1,22 @@
+---
+title: Contacto
+---
+<div class="modularGrid-module">
+  <h2 class="title">Área de Contacto</h2>
+</div>
+<div class="modularGrid modularGrid--equalHeights u-pdb">
+  <div class="modularGrid-module  modularGrid-module--equalHeights u-xs-65">
+    <form class="form">
+      <div class="modularGrid ">
+        <div class="modularGrid-module u-pd">
+          <h3 class="subtitle3">Seleccione departamento</h3>
+        </div>
+        {{>ticketsTabs deactivated='true'}}
+        <div class="tabs-contentPanel" data-js-tab="panel" data-js-tab_idpanel="0" id="tabpane0" style="display:block;">
+          {{>ticketsTabContent0}}
+        </div>
+      </div>
+    </form>
+  </div>
+{{>helpcenter nologin='nologin'}}
+</div>

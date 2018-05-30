@@ -1,0 +1,394 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_3"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Cocina gourmet",
+    "description": "Bienvendio, en moda y complementos encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Pequeño electrodoméstico",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/cocina/2405_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Menaje",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/cocina/2449_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Repostería",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/cocina/2470_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Gourmet",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/cocina/2480_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Enología",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/cocina/2487_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Licores y accesorios",
+        "more": "Ver todo",
+        "number": "164",
+        "image": "../../img/categories/cocina/2489_big.jpg"
+      }
+    ]
+  },
+  "elec": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Pequeño electrodoméstico",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Batidoras",
+        "number": "5",
+        "image": "../../img/categories/cocina/2406_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Amasadoras",
+        "number": "20",
+        "image": "../../img/categories/cocina/2407_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list",
+          [
+            "list"
+          ]
+        ],
+        "title": "Licuadoras",
+        "number": "30",
+        "image": "../../img/categories/cocina/2409_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Picadoras",
+        "number": "50",
+        "image": "../../img/categories/cocina/2412_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Exprimidores",
+        "number": "50",
+        "image": "../../img/categories/cocina/2410_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Freidoras",
+        "number": "50",
+        "image": "../../img/categories/cocina/2415_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Tostadoras",
+        "number": "50",
+        "image": "../../img/categories/cocina/2416_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cafeteras y molinillos",
+        "number": "50",
+        "image": "../../img/categories/cocina/2417_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Microondas y hornos",
+        "number": "50",
+        "image": "../../img/categories/cocina/2425_small.jpg"
+      },
+
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Robots de cocina",
+        "number": "50",
+        "image": "../../img/categories/cocina/2428_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Hervidores",
+        "number": "50",
+        "image": "../../img/categories/cocina/2430_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Sandwicheras",
+        "number": "50",
+        "image": "../../img/categories/cocina/2432_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cocinas y placas de cocción",
+        "number": "50",
+        "image": "../../img/categories/cocina/2433_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Planchas y grills",
+        "number": "50",
+        "image": "../../img/categories/cocina/2434_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Sartenes eléctricas",
+        "number": "50",
+        "image": "../../img/categories/cocina/2657_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Fuentes y fondues",
+        "number": "50",
+        "image": "../../img/categories/cocina/2436_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Arroceras",
+        "number": "50",
+        "image": "../../img/categories/cocina/2437_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Balanzas",
+        "number": "50",
+        "image": "../../img/categories/cocina/2439_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Neveras y congeladores",
+        "number": "50",
+        "image": "../../img/categories/cocina/2658_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Otros electrodomésticos de cocina",
+        "number": "50",
+        "image": "../../img/categories/cocina/2442_small.jpg"
+      }
+    ]
+  },
+  "menaje": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Menaje",
+    "number": "136",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cuchillos y cuberterías",
+        "number": "50",
+        "image": "../../img/categories/cocina/2455_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Envases y recipientes",
+        "number": "26",
+        "image": "../../img/categories/cocina/2456_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Sartenes",
+        "number": "60",
+        "image": "../../img/categories/cocina/2458_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Baterías de cocina",
+        "number": "60",
+        "image": "../../img/categories/cocina/2460_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Vasos, copas y jarras",
+        "number": "60",
+        "image": "../../img/categories/cocina/2462_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Tazas y termos",
+        "number": "60",
+        "image": "../../img/categories/cocina/2464_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Accesorios y utensilios de cocina",
+        "number": "60",
+        "image": "../../img/categories/cocina/2467_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Textil de cocina",
+        "number": "60",
+        "image": "../../img/categories/cocina/2469_small.jpg"
+      }
+    ]
+  },
+  "reposteria": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Repostería",
+    "number": "59",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Decoración, accesorios y moldes",
+        "number": "11",
+        "image": "../../img/categories/cocina/2474_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Fondues y fuentes",
+        "number": "4",
+        "image": "../../img/categories/cocina/2475_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Heladeras y yogurteras",
+        "number": "28",
+        "image": "../../img/categories/cocina/2477_small.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Creperas, groferas y otros",
+        "number": "28",
+        "image": "../../img/categories/cocina/2479_small.jpg"
+      }
+    ]
+  },
+  "gourmet": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Gourmet",
+    "number": "59",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Naranjas y mandarinas",
+        "number": "11",
+        "image": "../../img/categories/cocina/2482_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Jamones y jamoneros",
+        "number": "4",
+        "image": "../../img/categories/cocina/2485_small.jpg"
+      }
+    ]
+  }
+}

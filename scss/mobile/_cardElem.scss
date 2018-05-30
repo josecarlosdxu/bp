@@ -1,0 +1,524 @@
+%cardElemFont {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: transparentize(black, 0.3);
+}
+
+%moreBefore {
+    box-shadow: -5px 0 0px, -11px 0 0px, -17px 0 0px, -5px -6px 0px, -11px -6px 0px, -17px -6px 0;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+}
+
+%moreBeforeLittle {
+    box-shadow: -5px 0 0px, -9px 0 0px, -13px 0 0px, -5px -4px 0px, -9px -4px 0px, -13px -4px 0;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 3px;
+}
+
+@include block(cardElem) {
+    @include element(title) {
+        color: inherit;
+    }
+    @include element(more) {
+        @extend %cardElemFont;
+        font-size: 1.1rem;
+        color: $color-more;
+        margin-left: $um;
+        &:before {
+            @extend %moreBefore;
+        }
+    }
+    @include element(mobilebtn) {
+        display: flex;
+        border: none;
+        background: transparent;
+        font-size: 0;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 6rem;
+        width: 5rem;
+        order: 2;
+        color: black;
+        box-shadow: -1px 0 $color-shadow;
+        outline: none;
+        &:after {
+            @extend %borderChevronDown;
+            border-width: 0 3px 3px 0;
+            height: 1.2rem;
+            margin: 0 auto;
+            opacity: 0.5;
+            width: 1.2rem;
+            transform: rotate(45deg) translate(-2px, -2px);
+            //transition: transform 0.1s ease-out;
+            /*content: "\276F";
+            font-family: "Roboto";
+            font-size: $um;
+            font-weight: 500;
+            transform: rotate(90deg);*/
+        }
+        @include addBreakpoint(sm) {
+            display: none;
+        }
+    }
+}
+
+@include extendBlock(cardElem, primary) {
+    @extend %cardElemFont;
+    @include element(figure) {
+        display: flex;
+        height: 6rem;
+        @include addBreakpoint(lg) {
+            height: 10rem;
+        }
+    }
+    @include element(figcaption) {
+        width: 50%;
+        padding: 0.75rem 1rem;
+        position: absolute;
+        z-index: 1;
+    }
+    @include element(title) {
+        font-size: 1.3rem;
+    }
+    @include element(subtitle) {
+        display: none;
+    }
+    @include element(imgCont) {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    @include element(img) {
+        // min-width: 100%;
+        height: 100%;
+        //width: auto;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@include extendBlock(cardElem, category) {
+    @extend %cardElemFont;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    align-content: flex-start;
+    box-shadow: 0 0 0 1px $color-shadow;
+    // align-items: center;
+    @include addBreakpoint(sm) {
+        background: transparent;
+        //align-items: flex-start;
+        box-shadow: none;
+        
+    }
+    @include element(imglink) {
+        display: block;
+        height: 6rem;
+        @include addBreakpoint(sm) {
+            display: inline;
+            //height: 6rem;
+        }
+    }
+    @include element(img) {
+        display: block;
+        height: 100%;
+    }
+    @include element(imgCont) {
+        //display: block;
+    }
+    @include element(title) {
+        font-size: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 11rem);
+        position: relative;
+        align-content: center;
+        height: 6rem;
+        padding: 0 0 0.25rem 1.5rem;
+        line-height: 1.1;
+        @include addBreakpoint(sm) {
+            font-size: 1.3rem;
+            padding: 0;
+            height: 2.5rem;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: flex-start;
+            width: 100%;
+        }
+    }
+    @include element(figure) {
+        @include addBreakpoint(sm) {
+            display: flex;
+            background: white;
+            height: calc(100% - 3.25rem);
+            height: 140px;
+            width: 100%;
+            padding: 0;
+            box-shadow: 0 0 0 1px $color-shadow;
+        }
+    }
+    @include element(link) {
+        font-size: 1.1rem;
+        text-transform: none;
+        display: none;
+        font-family: "Roboto";
+        font-weight: 400;
+        color: currentColor;
+        padding: 0.25rem 0;
+        @include addBreakpoint(sm) {
+            padding: 0;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    @include element(figcaption) {
+        @include addBreakpoint(sm) {
+            padding: 1rem 1.25rem;
+            width: calc(100% - 11.7rem);
+        }
+    }
+    @include element(more) {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 0.1rem 0 0 1.2rem;
+        display: block;
+        &:before {
+            box-shadow: -5px 0 0px, -9px 0 0px, -13px 0 0px, -5px -4px 0px, -9px -4px 0px, -13px -4px 0;
+            height: 3px;
+            width: 3px;
+        }
+        @include addBreakpoint(sm) {
+            font-size: 1.2rem;
+            margin: 0 0 0 2.25rem;
+            width: auto;
+            &:before {
+                box-shadow: -5px 0 0px, -11px 0 0px, -17px 0 0px, -5px -6px 0px, -11px -6px 0px, -17px -6px 0;
+                height: 5px;
+                width: 5px;
+            }
+        }
+    }
+    @include element(families) {
+        order: 3;
+        box-shadow: 0 1px rgba(0, 0, 0, 0.15);
+        font-size: 1.2rem;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        height: auto;
+        max-height: 0;
+        //transition:max-height 0.3s  ease-in;
+    }
+}
+
+
+/*color: inherit;
+  display: inline;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  opacity: 0.55;
+  overflow: hidden;
+  padding-bottom: 0.1rem;
+  text-overflow: ellipsis;
+  transition: opacity 0.1s ease 0s, box-shadow 0.1s ease 0s;
+  white-space: nowrap;*/
+
+@include extendBlock(cardElem, selected) {
+    //transition: box-shadow 0.15s;
+    box-shadow: 3px 0 $color-more inset;
+    >.cardElem-mobilebtn {
+        &:after {
+            //content: "\2013";
+            //transform: rotate(-90deg) translateY(-1px);
+            transform: rotate(-135deg);
+        }
+    }
+    @include element(families) {
+        max-height: 100%;
+        //transition:max-height 0.3s  ease-in;
+        //display: block;
+        //height: auto;
+        //transition: height 0.5s;
+        // -webkit-animation: grow 0.3s 0.1s ease-in both;
+        //animation: grow 0.3s 0.1s ease-in both;
+        // background: $color-lightGrey-light;
+        @include addBreakpoint(sm) {
+            display: none;
+        }
+    }
+    @include addBreakpoint(sm) {
+        box-shadow: none;
+    }
+    /*@include element(figure) {
+        display: block;
+        padding: 0 0 0.75rem 1rem;
+        @include addBreakpoint(lg) {
+            padding: 0 0 0.75rem;
+        }
+        //margin-top: -1rem;
+    }
+    @include element(link) {
+        font-size: 1.1rem;
+        text-transform: none;
+        display: block;
+        font-family: "Roboto";
+        font-weight: 400;
+        color: currentColor;
+        padding: 0.25rem 0;
+    }*/
+}
+
+
+/*[name="mobileCategories"]:checked {
+    +.cardElem--category {
+        transition: box-shadow 0.15s;
+        box-shadow: 3px 0 $color-more inset;
+        @include addBreakpoint(sm) {
+            box-shadow: none
+        }
+        >.cardElem-mobilebtn {
+            &:after {
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}*/
+
+@include extendBlock(cardElem, list) {
+    transition: box-shadow 0.3s ease-out, opacity 0.2s ease-out;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    @include addBreakpoint(sm) {
+        background: white;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+    // }
+    @include element(title) {
+        font-weight: 400;
+        line-height: 1;
+        display: inline;
+    }
+    @include element(text) {
+        font-size: 1.1rem;
+    }
+    @include element(figure) {
+        display: flex;
+        width: 100%;
+        height: 7.5rem;
+        padding: 0;
+        @include addBreakpoint(sm) {
+            height: 7.4rem;
+        }
+    }
+    @include element(figcaption) {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        color: $color-lightGrey-darker;
+        padding: 0 $um / 3 0 $um;
+        @include addBreakpoint(sm) {
+            padding: 0;
+            padding-left: 1rem;
+            color: $color-darkGrey-light;
+        }
+        //color: $color-lightGrey-darker;
+    }
+    @include element(imgCont) {
+        width: 40%;
+        padding: 1rem 1rem 0;
+        
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    @include element(img) {
+        //max-height: 100%;
+        height: 100%;
+        //width: 100%;
+        display: block;
+        width: auto;
+        
+        
+        
+    }
+}
+
+@include extendBlock(cardElem, categoryItem) {
+    display: inline-block;
+    background: transparent;
+    box-shadow: none;
+    transition: none;
+    opacity: 1;
+    @include element(imgCont) {
+        display: none;
+        @include addBreakpoint(lg) {
+            display: flex;
+            padding: 0;
+            align-items: flex-end;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    @include element(figcaption) {
+        color: black;
+        padding: 0;
+        width: auto;
+        display: inline;
+        @include addBreakpoint(lg) {
+            padding-left: 1.5rem;
+            width: inherit;
+            display: inherit;
+        }
+    }
+    @include element(figure) {
+        display: inline;
+        height: auto;
+        width: auto;
+        @include addBreakpoint(lg) {
+            width: inherit;
+            display: flex;
+            height: 7.4rem;
+        }
+    }
+    @include element(title) {
+        font-size: 0;
+        display: inline;
+        &:before {
+            content: attr(title);
+            font-size: 1.2rem;
+            text-decoration: underline;
+            white-space: nowrap;
+        }
+        @include addBreakpoint(lg) {
+            font-family: "Roboto Condensed", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: transparentize(black, 0.3);
+            display: inherit;
+            &:before {
+                content: "";
+            }
+        }
+    }
+    @include element(text) {
+        text-align: left;
+        display: inline;
+        @include addBreakpoint(lg) {
+            display: inherit;
+        }
+    }
+    @include element(img) {
+        width: 90px;
+        height: 90px;
+    }
+    @include addBreakpoint(lg) {
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        background: white;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@include extendBlock(cardElem, tagItem) {
+    background: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    display: block;
+    @include element(title) {
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+    }
+    @include element(figcaption) {
+        width: calc(100% - 116px);
+    }
+    @include element(imgCont) {
+        padding: 0;
+        width: auto;
+    }
+}
+
+@include extendBlock(cardElem, cartItem) {
+    background: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.1rem;
+    padding: 1rem;
+    position: relative;
+    min-height: 20.78rem;
+    align-content: space-between;
+    @include element(figure) {
+        display: flex;
+        align-items: center;
+    }
+    @include element(figcaption) {
+        padding: 0 1rem;
+        width: calc( 100% - 80px);
+    }
+    @include element(close) {
+        opacity: 0.5;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: $um * 2;
+        height: $um * 2;
+        border: none;
+        transition: opacity 0.15s;
+        background: transparent;
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 1;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    @include element(img) {
+        height: 74px;
+        width: 74px;
+    }
+    @include addBreakpoint(xs) {
+        font-size: 1.2rem;
+    }
+}
+
+@-webkit-keyframes grow {
+    from {
+        max-height: 0%;
+        // opacity: 0.5;
+    }
+    to {
+        max-height: 100%;
+        //opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        max-height: 0%;
+        //opacity: 0.5;
+    }
+    to {
+        max-height: 100%;
+        //opacity: 1;
+    }
+}

@@ -1,0 +1,41 @@
+@include block(breadcrumb) {
+    max-height: 2 * $um;
+    padding: $um / 2;
+    margin-top: - $um;
+    @include addBreakpoint(xl) {
+        padding: $um / 2 0;
+    }
+    @include element(link) {
+        @extend %type-breadcrumblink;
+        text-decoration: none;        
+        color: inherit;
+        font-weight: inherit;
+    }
+    @include element(cont) {
+        display: inline-block;
+        font-size: 1rem;
+        color: #999;
+        transition: color 0.15s;
+        font-weight: 400;
+        &:before {
+            margin: 0 0.5rem;
+            content: "/";
+            font-weight: normal;
+        }
+        &:first-child:before {
+            margin: 0;
+            content: " ";
+        }
+        @include modifier(active) {
+            color: #666;
+        }
+        &:hover {
+            color: #333;
+        }
+        &:last-child{
+            font-weight: 700;
+            color:#333;
+           
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@include block(keywords) {
+    @extend .modularGrid-module;
+    @extend %u-xl-60;
+    padding: 0 $um $um;
+    color: opacify($color-shadow, 0.3);
+    font-size: $um / 1.2;
+    font-weight: 400;
+    //line-height: $um * 1.2;
+    @include addBreakpoint(xs) {
+        padding: $um $um * 2 $um * 2;
+    }
+    @include element(strong) {
+        color: opacify($color-shadow, 0.5);
+    }
+    @include element(category) {
+        color: opacify($color-shadow, 0.3);
+        font-size: $um / 1.5;
+        padding: $um;
+    }
+    @include element(topcategory) {
+        color: opacify($color-shadow, 0.3);
+        font-size: $um / 1.5;
+        padding-bottom: $um;
+        line-height: 1.2;
+    }
+}
+
+@include extendBlock(keywords, full) {
+    @extend %u-xl-100;
+    padding: 0 $um;
+    @include addBreakpoint(xl) {
+        padding: 0;
+    }
+}

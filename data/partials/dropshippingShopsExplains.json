@@ -1,0 +1,171 @@
+{
+   "list": [
+      {
+         "name": "Tienda Dropshipping sincronizada",
+         "items": [
+            {
+               "title": "Prestashop 1.7",
+               "text": "Instalamos y configuramos un ecommerce Prestashop versión 1.7 en su hosting."
+            },
+            {
+               "title": "Sincronización integral",
+               "text": "Catálogo (altas, bajas), stocks, pedidos, transportistas, precios de envío y trackings."
+            },
+            {
+               "title": "Tiendas tematizadas por catálogos",
+               "text": "Según nuestra experiencia, las tiendas tematizadas son más eficientes, ya que convierten y posicionan mejor. Usted puede comprar una o varias tiendas dropshipping 360º y elegir si quiere que sean multi-catálogo o tematizadas a un catálogo."
+            },
+            {
+               "title": "Diseño plantillas",
+               "text": "Multitud de diseños a elegir, con diferentes skins y posibilidad de cambiar tonalidades de colores por el cliente."
+            },
+            {
+               "title": "Diseño responsive",
+               "text": "Todas nuestras tiendas se adaptan perfectamente al tamaño de cualquier dispositivo."
+            },
+            {
+               "title": "Web multilingüe",
+               "text": "Sincronización disponible a 24 idiomas europeos, con traducciones realizadas por profesionales nativos de cada idioma."
+            },
+            {
+               "title": "Dominio y hosting de su propiedad",
+               "text": "Para que sea 100 % de su propiedad y esté a su nombre, le indicamos dónde y cómo registrar el dominio y el hosting."
+            },
+            {
+               "title": "SSL en toda su tienda Prestashop",
+               "text": "Instalamos el certificado SSL en todo el dominio de su tienda Prestashop."
+            },
+            {
+               "title": "Múltiples formas de pago",
+               "text": "PayPal, tarjeta y transferencia."
+            },
+            {
+               "title": "Impuestos y tasas del país",
+               "text": "Configuramos la tienda con las tasas de su país de facturación."
+            },
+            {
+               "title": "Multi-moneda",
+               "text": "Posibilidad de instalar un módulo multi-moneda, con el euro por defecto."
+            },
+            {
+               "title": "Redes sociales",
+               "text": "Integración en la ficha de producto de las principales redes sociales (Facebook, Twitter, etc.)"
+            },
+            {
+               "title": "Códigos de cupón",
+               "text": "Su tienda le permitirá la creación y uso de códigos de cupón personalizados para campañas promocionales."
+            },
+            {
+               "title": "Creación de logo",
+               "text": "Diseño personalizado del logotipo de su tienda dropshipping 360º."
+            },
+            {
+               "title": "Navegación por marcas y tags",
+               "text": "Estructura de navegación por marcas y tags mejorada y optimizada para SEO."
+            },
+            {
+               "title": "Banner por categorías",
+               "text": "Imágenes específicas para cada categoría, para hacer más atractiva la navegación."
+            }
+         ]
+      },
+      {
+         "name": "Multi-channel Integration platform",
+         "items": [
+            {
+               "title": "Reglas de precio y márgenes de beneficio",
+               "text": "Podrá personalizar por canal su estrategia de márgenes y beneficios, así como actualizar los precios automáticamente."
+            },
+            {
+               "title": "Reglas de redondeo",
+               "text": "Esta funcionalidad le permitirá redondear los precios de venta."
+            },
+            {
+               "title": "Selección de categorías",
+               "text": "Podrá escoger, de manera muy sencilla, qué categorías de producto vender en su tienda."
+            },
+            {
+               "title": "Publicación en shopping engines",
+               "text": "Herramienta de automatización a Google Shopping, con despublicación automática de productos sin stock. Próximamente: Ciao, Kelkoo, Facebook, etc."
+            },
+            {
+               "title": "Gestión de pedidos",
+               "text": "Esta herramienta centraliza sus pedidos de diferentes canales y le permite hacer un seguimiento del estado de los mismos."
+            },
+            {
+               "title": "Integración de transportistas y precios de envío",
+               "text": "Su tienda estará integrada con los principales transportistas (UPS, TNT/Fedex, DHL, etc.) y hará un cálculo automático del coste de envío."
+            },
+            {
+               "title": "Integración de seguimiento de envío en su Prestashop",
+               "text": "Los clientes que hayan hecho un pedido en su tienda, podrán realizar un seguimiento del envío desde el panel de control de la misma."
+            }
+         ]
+      },
+      {
+         "name": "Integración con emarketplaces",
+         "items": [
+            {
+               "title": "Integración con eBay y Amazon",
+               "text": "Sincronización total de catálogo, stocks, pedidos, transportistas, precios de envío y trackings."
+            },
+            {
+               "title": "Próximamente",
+               "text": "Cdiscount, Rakuten, Fnac, etc."
+            }
+         ]
+      },
+      {
+         "name": "Blog",
+         "items": [
+            {
+               "title": "Blog corporativo",
+               "text": "Su tienda incluirá un blog en tecnología Wordpress, que le ayudará a posicionar su web a nivel SEO y a conseguir relevancia."
+            }
+         ]
+      },
+      {
+         "name": "Creación de diseño de newsletters y banners",
+         "items": [
+            {
+               "title": "Herramienta para la generación de newsletters",
+               "text": "Su tienda incluirá una herramienta con la que crear de manera muy sencilla newsletters promocionales con links a las fichas de producto de su Prestashop."
+            },
+            {
+               "title": "Descarga de banners y personalización ",
+               "text": "Ofrecemos banners con diferentes diseños para utilizar en sus newsletters y en el diseño de su ecommerce. Contará con una herramienta con la que personalizarlos de manera muy sencilla."
+            },
+            {
+               "title": "Integración con Mailchimp",
+               "text": "Nuestra herramienta está integrada con Mailchimp, para que pueda hacer los envíos desde esta plataforma."
+            }
+         ]
+      },
+      {
+         "name": "Tienda Facebook",
+         "items": [
+            {
+               "title": "Módulo Tienda Facebook",
+               "text": "Con su tienda dropshipping 360º se entrega un módulo para la creación de una tienda en Facebook."
+            }
+         ]
+      },
+      {
+         "name": "Recursos de apoyo",
+         "items": [
+            {
+               "title": "Academy y Blog",
+               "text": "Acceso a una wiki formativa sobre aspectos técnicos de las tiendas dropshipping (Academy), así como a decenas de artículos sobre marketing y ecommerce (Blog)."
+            },
+            {
+               "title": "Seguimiento comercial",
+               "text": "Le acompañará un Customer Success Manager, con el que podrá contactar vía chat o ticket para solucionar cualquier duda acerca de su tienda."
+            },
+            {
+               "title": "Descarga de fotografías y banners",
+               "text": "Podrá acceder a cientos de banners y fotografías para implementarlas en su tienda dropshipping, newsletters y comunicaciones en redes sociales."
+            }
+         ]
+      }
+   ]
+}

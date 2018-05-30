@@ -1,0 +1,32 @@
+.noUi-horizontal .noUi-handle {
+    width: 30px;
+    height: 30px;
+    left: -9px;
+    top: -14px;
+    background: transparent;
+    position: relative;
+    border-radius: 0;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+       // background-size: 12px 12px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.noUi-horizontal .noUi-handle.noUi-handle-lower, .noUi-horizontal .noUi-handle.noUi-handle-upper  {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.noUi-base{
+    z-index: 0;
+}
+
+.noUi-handle.noUi-handle-upper {
+  left: -1.25rem;
+}

@@ -1,0 +1,20 @@
+@include block(shoppingCart) {
+     @include element(link) {
+      color: #333;
+}
+
+
+@include element(name) {
+
+      padding: 0.5rem 0.5rem 0.5rem 1rem !important;
+      width: 40%;
+}
+
+
+@include element(options) {
+    color: #adb1b7;
+    margin-left: 0.25rem;
+}
+}
+
+

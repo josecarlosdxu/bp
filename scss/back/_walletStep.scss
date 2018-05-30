@@ -1,0 +1,80 @@
+@include block(walletStep) {
+    $walletStepBg: rgba(102, 188, 255, 0.1);
+    $walletStepBorderColor: rgba(102, 188, 255, 0.1);
+    @include element(title) {
+        @extend %type-step;
+        padding: 0 0 1.25rem;
+        font-weight: 400;
+        color: #666;
+    }
+    @include element(number) {
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        width: $um / 1.2;
+        height: $um / 1.2;
+        margin-right: $um / 3;
+        text-align: center;
+        vertical-align: top;
+        color: #fff;
+        border-radius: $um;
+        background: #888;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    @include element(explain) {
+        display: block;
+
+        padding: 0 1.5rem 0 1.75rem;
+        margin:0;
+        opacity: 0;
+        height: 0;
+
+        position: relative;
+        background: $walletStepBg;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: $walletStepBorderColor;
+        pointer-events: none;
+        transition: all 0.1s;
+
+        &:before, &:after {
+            content: "";
+            display: block;
+            height: calc(100% + 2px);
+            width: $um;
+            position: absolute;
+            top: -1px;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            border-color: $walletStepBorderColor;
+            background: $walletStepBg;
+        }
+        &:before {
+            left: -$um;
+        }
+        &:after {
+            right: -$um;
+        }
+        p{
+           pointer-events: initial;
+        }
+    }
+    @include element(radio) {
+        margin-top: 2px;
+        width: 1.2rem;
+        height: 1.2rem;
+        &:focus{
+            box-shadow: none;
+        }
+        &:checked ~ .walletStep-explain {
+            margin-top: -2.5rem;
+            padding: 2.25rem 1.5rem 0.75rem 1.75rem;
+            height: auto;
+            opacity: 1;
+            transition: all 0.2s ease-outr;
+
+        }
+    }
+}

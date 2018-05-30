@@ -1,0 +1,29 @@
+---
+title: Directorio de marcas disponibles en Bigbuy
+layout: front/layouts/landing.hbs
+---
+<section class="content content--alt content--flex">
+    <div class="modularGrid modularGrid--boxed u-tac u-pdt">
+        <h2 class="supertitle">Marcas disponibles en Bigbuy</h2>
+        <nav class="tabs tabs--full u-mgt">
+            <label for="directoryTabs1-1" class="tabs-item" title="Por categorías" data-js-uitab="button" data-state="selected">Por categorías</label>
+            <label for="directoryTabs1-2" class="tabs-item" title="Por orden alfabético" data-js-uitab="button">Por orden alfabético</label>
+        </nav>
+        <input type="radio" name="directoryTabs1" id="directoryTabs1-1" data-js-uitab="radio"  class="inputToggle" checked>
+        <div class="tabs-contentPanel"  data-js-uitab="panel">
+            {{> homeBrands}}
+        </div>
+        <input type="radio" name="directoryTabs1" id="directoryTabs1-2" data-js-uitab="radio"  class="inputToggle">
+        <div class="tabs-contentPanel"  data-js-uitab="panel">
+
+        {{>alphabetPage}}
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+

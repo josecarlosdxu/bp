@@ -1,0 +1,39 @@
+
+<section class="downloadBanner-container u-mgt" data-jsslider="cont">
+
+  <div class="downloadBanner-content " >
+
+      
+    <div class="downloadBanner-list" data-jsslider="list">
+      {{#times 2}}
+      <div class="downloadBanner-item">
+      <label >
+        <input class="downloadBanner-checkbox"  type="checkbox" name="banner_{{this}}0">
+        <img src="../../img/blue_select_check.svg" class="downloadBanner-checked">
+        <img data-src="../../img/downloads/news1.jpg" class="downloadBanner-thumb u-mgb--half"/>  
+      </label>
+      <label>
+        <input class="downloadBanner-checkbox"  type="checkbox" name="banner_{{this}}1">
+        <img src="../../img/blue_select_check.svg" class="downloadBanner-checked">
+        <img data-src="../../img/downloads/news2.jpg" class="downloadBanner-thumb"/>  
+      </label>
+      </div>
+      <div class="downloadBanner-item">
+      <label >
+        <input class="downloadBanner-checkbox"  type="checkbox" name="banner_{{this}}2">
+        <img src="../../img/blue_select_check.svg" class="downloadBanner-checked">
+        <img data-src="../../img/downloads/news3.jpg" class="downloadBanner-thumb u-mgb--half"/>  
+      </label>
+      <label>
+        <input class="downloadBanner-checkbox"  type="checkbox" name="banner_{{this}}3">
+        <img src="../../img/blue_select_check.svg" class="downloadBanner-checked">
+        <img data-src="../../img/downloads/news4.jpg" class="downloadBanner-thumb"/>  
+      </label>
+      </div>
+      {{/times}}
+     
+    </div> 
+  </div>
+  <button class="button button--control  button--slider" data-jsslider="btn_bw" disabled> {{>svgIcon type='chevronBtnLeftAlt' }}</button>
+  <button class="button button--control button--slider" data-jsslider="btn_fw" disabled> {{>svgIcon type='chevronBtnRightAlt' }}</button>
+</section> 

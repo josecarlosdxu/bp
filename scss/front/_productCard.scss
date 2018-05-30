@@ -1,0 +1,922 @@
+@include block(productCard) {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    vertical-align: top;
+    outline: none;
+    background-color: $color-productCard-background;
+    box-shadow: -1px -1px 0 0 rgba(0, 0, 0, 0.06);
+    box-shadow: none;
+    padding-bottom: 1.5rem;
+    @include modifier(flip) {
+        transition: all 0.3s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+    }
+    @include modifier(focus) {
+        background: #eee;
+    }
+    @include element(play) {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+        &:before {
+            width: 30px;
+            height: 30px;
+            background-image: linear-gradient(-45deg, transparent 48%, transparentize(black, 0.9) 48%, transparentize(white, 0.3) 51%);
+        }
+        &:after {
+            border: 3px solid transparent;
+            border-left: 5px solid transparentize(black, 0.3);
+            border-right: none;
+            top: 8px;
+            left: 7px;
+        }
+    }
+    @include element(ribbon) {
+        display: flex;
+        align-items: center;
+        justify-content:  center;         
+        background: #f90;        
+        color: #fff;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
+        font-size: 0.8rem;
+        left: -35px;
+        letter-spacing: 0.1em;
+        padding: 0.2rem 3rem 0.3rem;
+        position: absolute;
+        text-transform: uppercase;
+        top: 12px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+    }
+    @extend %box-shadow;
+    @include element(content) {
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+    }
+    @include element(img) {
+        @extend %img--responsive;
+        padding-bottom: 0.75rem;
+        position: relative;
+    }
+    @include element(properties) {
+        text-align: left;
+    }
+    @include element(title) {
+        overflow: hidden;
+        height: 2.8rem;
+        padding: 0 $um / 2;
+        line-height: 1rem;
+        position: relative;
+    }
+    @include element(prices) {
+        position: relative;
+        @include modifier(alt) {
+            display: none;
+        }
+    }
+    @include element(link) {
+        @extend %type-menu-light;
+        color: #666;
+        font-weight: 500;
+        line-height: 1.4;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @include element(pvp) {
+        @extend %type-menu-light;
+        font-size: 1rem;
+        @include element(name) {
+            float: left;
+        }
+        @include element(amount) {
+            float: right;
+            text-align: right;
+            @include modifier(before) {
+                text-decoration: line-through;
+            }
+        }
+        @include modifier(before) {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 $um/2 0;
+            color: #999;
+            float: left;
+            font-size: 0.9rem;
+            @extend %u-xs-70;
+        }
+        @include modifier(discount) {
+            display: inline-block;
+            padding: $um/2 0;
+            text-align: center;
+            color: $color-shoppingCart-discount-text;
+            border-left: 1px solid $color-shadow;
+            font-size: 1.2rem;
+            font-weight: 400;
+            @extend %u-xs-30;
+        }
+        @include modifier(now) {
+            display: inline-block;
+            padding: $um/4 $um/2 0;
+            float: left;
+            line-height: 1rem;
+            color: #666;
+            @extend %u-xs-70;
+        }
+        @include modifier(relevant) {
+            color: #333;
+            font-weight: 400;
+        }
+    }
+    @include element(buy) {
+        position: absolute;
+        bottom: -4rem;
+        width: 100%;
+        height: 4rem;
+        padding: $um / 2;
+        transition: all 0.15s;
+        color: #fff;
+        outline: none;
+        background: $color-productCard-buy;
+        font-size: 1rem;
+    }
+    @include element(caption) {
+        display: block;
+        width: 100%;
+        transition: bottom 0.2s ease-out;
+        @include modifier(nostock) {
+            left: 0;
+            color: #fff;
+            background: $color-productCard-caption-nostock-background;
+            font-size: $um / 1.5;
+            line-height: $um / 1.5;
+        }
+    }
+    @include element(action) {
+        margin-top: -2px;
+        color: #666;
+        display: inline-block;
+        margin-left: 0.25rem;
+        margin-top: -2px;
+        vertical-align: top;
+        @include element(icon) {
+            position: relative;
+            top: 1px;
+            font-size: 1rem;
+        }
+        &:hover {
+            color: #333;
+        }
+    }
+    @include element(ctaButton) {
+        position: relative;
+        display: inline-block;
+        padding: 0.2rem 0 0.1rem;
+        width: 45%;
+        right: 0.15rem;
+        top: 0;
+        margin-left: 0.5rem;
+        transition: all 0.2s;
+        color: $color-productCard-action-ctaButton;
+        font-size: $um;
+    }
+
+    @include element(sizes) {
+        display: none;
+    }
+    @include modifier(fixed) {}
+    .stockAvailability {
+        display: none;
+    }
+}
+
+@include extendBlock(productCard, compact) {
+    padding: $um / 2;
+    box-shadow: none;
+    outline: 1px solid #e5e5e5;
+    @include element(img) {
+        padding: 0;
+    }
+    @include element(buy) {
+        margin: 0 (-$um / 2);
+    }
+    @include element(title) {
+        height: 2.3rem;
+        margin-bottom: 0.65rem;
+        padding: 0;
+        line-height: 0.8rem;
+    }
+    @include element(properties) {
+        padding: $um / 2 0 0;
+    }
+    @include element(prices) {
+        border-top: 0;
+    }
+    @include element(pvp) {
+        @include modifier(before) {
+            display: none;
+        }
+        @include modifier(discount) {
+            display: none;
+        }
+        @include element(type) {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+        @include modifier(now) {
+            float: left;
+            margin-top: 0;
+            padding: 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            @extend %u-xs-100;
+        }
+        @include modifier(relevant) {
+            font-size: 1.1rem;
+        }
+    }
+    @include element(link) {
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.1rem;
+        color: #666;
+    }
+}
+
+@include extendBlock(productCard, borderless) {
+    box-shadow: none;
+}
+
+@include extendBlock(productCard, outlet) {
+    @include element(ribbon) {
+        display: block;
+        background: #f90;
+        color: #fff;
+    }
+}
+@include extendBlock(productCard, openbox) {
+    @include element(ribbon) {
+        left:-40px;
+        display: block;
+        background: #f90;
+        color: #fff;
+    }
+}    
+@include extendBlock(productCard, new) {
+    @include element(ribbon) {
+        display: block;
+        background: #F75856;
+        color: #fff;
+    }
+}
+
+@include extendBlock(productCard, besteller) {
+    @include element(ribbon) {
+        display: block;
+        background: #67B02C;
+        color: #fff;
+    }
+}
+
+@include extendBlock(productCard, stockreturn) {
+    @include element(ribbon) {
+        display: block;
+        background: #06c;
+        color: #fff;
+    }
+}
+
+@include extendBlock(productCard, blackFriday) {
+    @include element(ribbon) {
+        display: flex;
+        align-items: center;
+        background: black;
+        color: #fff;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+        left: -21px;
+        line-height: 1.1;
+        padding: 0 $um;
+        text-align: center;
+        width: 7rem;
+        height: 1.75rem;
+        font-size: 0.6rem;
+        top: 13px;
+    } 
+}
+
+@include extendBlock(productCard, hot) {
+    @include element(ribbon) {
+        display: flex;
+        align-items: center;
+        justify-content:  center; 
+        background-color: #e00000;
+        color: #fff;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+        left: -26px;
+        line-height: 1.1;
+        padding: 0 $um;       
+        width: 8rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+        top: 11px;
+    }
+
+    .productCard-prices--alt .productCard-discount{
+        background-color: #e00000;
+        color:white;
+    }
+
+}
+
+@include extendBlock(productCard, shoppable) {
+    transition: box-shadow 0.2s ease-out, background-color 0.2s ease-in;
+    box-shadow: none;
+    padding: 0;
+    @include element(title) {
+        overflow: hidden;
+        height: 3rem;
+        padding: 0.5rem $um / 2 0;
+        line-height: 1.2;
+    }
+    @include element(imgCont) {
+        position: relative;
+        width: 100%;
+        height: 148px;
+        height: 148px;
+        overflow: hidden;
+    }
+    @include element(img) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @include element(link) {
+        line-height: 1.2;
+    }
+    @include element(buy) {
+        transition: none;
+        background-color: transparent;
+        bottom: 0;
+        display: none;
+        padding: $um / 2 $um / 4;
+    }
+    @include element(prices) {
+        padding: 0.5rem 0;
+    }
+    &:hover,
+    &:focus {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        background-color: $color-lightGrey-light;
+        .productCard-buy {
+            display: block;
+            -webkit-animation: show 0.3s ease-in-out both;
+            animation: show 0.3s ease-in-out both;
+        }
+        .productCard-prices {
+            -webkit-animation: hide 0.2s ease-in both;
+            animation: hide 0.2s ease-in both;
+        }
+    }
+}
+
+@include extendBlock(productCard, fixed) {
+    @extend .productCard--shoppable;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    background-color: $color-lightGrey-light;
+    z-index: 1;
+    @include element(buy) {
+        display: block;
+        opacity: 1;
+        transition: none;
+        background-color: transparent;
+        bottom: 0;
+        padding: $um / 2 $um / 4;
+    }
+    @include element(prices) {
+        opacity: 0;
+    }
+}
+
+@include extendBlock(productCard, noStock) {
+    @include element(buy) {
+        background: $color-productCardNoStock-buy-background;
+        height: 3rem;
+        padding: 0.7rem 0.75rem 0;
+    }
+    @include element(caption) {
+        padding: 0;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        display: block;
+        height: 4px;
+        background: $color-productCardNoStock-buy-background;
+        bottom: 0;
+        left: 0;
+    }
+    &:hover,
+    &:focus {
+        .productCard-buy {
+            -webkit-animation: show 0.3s ease-in-out both;
+            animation: show 0.3s ease-in-out both;
+        }
+    }
+}
+
+@include extendBlock(productCard, mini) {
+    padding-bottom: 0;
+    transition: background 0.2s ease-in;
+    @include element(content) {
+        align-items: center;
+        display: flex;
+    }
+    &:hover,
+    &:focus {
+        background: $color-lightGrey-light;
+        cursor: pointer;
+    }
+    @include element(img) {
+        width: 74px;
+        margin: 0;
+        padding: 0.75rem 0.25rem 0.75rem 0.75rem;
+        border: none;
+    }
+    @include element(prices) {
+        border-top: 0;
+    }
+    @include element(link) {
+        color: currentcolor;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    @include element(title) {
+        margin: 0;
+        display: block;
+        padding: 0 $um / 2;
+        height: auto;
+        line-height: 1.2;
+    }
+    @include element(buy) {
+        display: none;
+    }
+    @include element(pvp) {
+        @include modifier(before) {
+            display: none;
+        }
+        @include modifier(discount) {
+            display: none;
+        }
+        @include modifier(now) {
+            display: none;
+            float: left;
+            margin-top: 00;
+            padding: 0 0.75rem;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+        @include modifier(relevant) {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+    &:after {
+        display: none;
+    }
+}
+
+@include extendBlock(productCard, landscape) {
+    display: flex; //width: 100%;
+    margin-top: $um;
+
+    //box-shadow: 0 0 1px 1px $color-shadow;
+
+    @include element(title) {
+        padding: 0;
+        //flex-grow: 1;
+        height: 100%;
+        width: 28rem;
+       
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    @include element(sizes) {
+        display: flex;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    @include element(sizesItem) {
+        display: flex;
+
+        align-items: center;
+        margin-right: 1.5rem;
+        .icon {
+            height: 1.75rem;
+            width: 1.75rem;
+            opacity: 0.2;
+            margin-right: 0.25rem;
+        }
+    }
+
+    @include element(imgCont) {
+        width: 9rem;
+        height: 8.5rem;
+        font-size: 0;
+        position: relative;
+        background-color: transparentize(black, 0.97);
+        background-image: url(../../img/logo-bigbuy-grey.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4rem;
+    }
+
+    @include element(properties) {
+        width: calc(100% - 6rem);
+        display: flex;
+    }
+
+    @include element(buy) {
+        right: 0;
+        width: 15rem;
+        display: block;
+        flex-grow: 0;
+        padding: 0;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+
+    @include element(img) {
+        //position: static;
+    }
+    @include element(content) {
+        display: flex;
+        width: 100%;
+    }
+
+
+
+
+    @include element(ctaButton) {
+        width: auto;
+        padding: 0.15rem $um;
+        position: static;
+    }
+    @include element(action) {
+        align-items: center;
+        display: inline-flex;
+        height: 2rem;
+        margin: 0;
+        padding-top: 0 !important;
+        padding-left: 1rem;
+        min-width: 7rem;
+
+        &:after {
+            content: "\276f";
+            align-items: center;
+            display: inline-flex;
+            font-weight: 500;
+            height: 1rem;
+            justify-content: center;
+            line-height: 1;
+            width: 1rem;
+        }
+    }
+    @include element(pvp) {
+
+        @include modifier(now) {
+            padding: 0 $um / 2;
+
+            display: block;
+            padding: 0;
+            float: none;
+            margin: 0;
+        }
+        @include modifier(before) {
+
+            display: block;
+            float: none;
+            padding: 0;
+            margin: 0;
+        }
+        @include modifier(discount) {}
+    }
+
+    @include element(prices) {
+        display: flex;
+        min-width: 15rem;
+        width: 15rem;
+        position: relative;
+
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+
+
+
+    &:hover,
+    &:focus {
+        background-color: white;
+        @include element(buy) {
+            opacity: 1; //-webkit-animation: none;
+            //animation: none;
+        }
+        @include element(prices) {
+            -webkit-animation: none;
+            animation: none;
+        } //background-color: transparent;
+        // box-shadow: none;
+    }
+    @include element(caption) {
+        background-color: $color-lightGrey-light;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: $um;
+        width: 100%;
+        //border-left: 1px solid $color-shadow;
+    }
+    .form-postfix {
+        margin-bottom: 0;
+    }
+    .productCard-action-icon {
+        display: none;
+    }
+    .stockAvailability {     
+    min-width: 15rem;
+    display: flex;
+    padding: 0 1rem;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+       
+    }
+}
+
+
+@include extendElement(productCard, prices, alt) {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    font-size: 0.9rem;
+    font-weight: 500;    
+    flex-wrap: wrap;
+    color:$color-darkGrey-default;    
+
+    @include element(discount) {
+
+        background-color: $color-brandYellow-default;
+        display: block;
+        position: absolute;
+        text-align: center;
+        padding: 0 3rem;
+        font-weight: bold;
+        line-height: 1.5;
+        vertical-align: middle;
+        transform: rotate(-45deg);
+        right: -3rem;
+        bottom: 0.5rem;
+    }
+    @include element(priceitem) {
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 3.5rem);
+        padding-left: 2rem;
+        span{
+            display: inline-block;
+            text-align: right;
+            width: 50%;
+        }
+        
+        
+        
+    }
+}
+
+@include extendElement(productCard, imgCont, threeImgs) {
+    @include element(img2) {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+    @include element(img3) {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+    &:hover {       
+        .productCard-img2,
+        .productCard-img3 {
+            -webkit-animation-play-state: running;
+            animation-play-state: running;
+        }
+        @include element(img3) {
+            -webkit-animation: show3 3s ease-in-out infinite;
+            animation: show3 3s ease-in-out infinite;
+        }
+        @include element(img2) {
+            -webkit-animation: show2 3s ease-in-out infinite;
+            animation: show2 3s ease-in-out infinite;
+        }
+    }
+}
+
+.productCard--landscape .productCard-title .productCard-link {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: normal;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.75rem 0rem 0rem 0.75rem;
+}
+
+
+.productCard--landscape {
+
+    .productCard-pvp {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.1rem 1rem 0.1rem 3rem;
+    }
+    .productCard-pvp-name,
+    .productCard-pvp-amount {
+        float: none;
+    }
+
+    .productCard-pvp--discount {
+        position: absolute;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem 0;
+    }
+    .productCard-prices--alt {
+        display: none;
+    }
+}
+
+
+
+.productCard--landscape.productCard--noStock {
+    .productCard-caption {
+        background-color: $color-productCard-caption-nostock-background;
+    }
+
+
+    &:after {
+        height: 2px;
+    }
+}
+
+
+.productCard--landscape.productCard--blackFriday, .productCard--landscape.productCard--hot  {
+
+    .productCard-prices {
+        display: none;
+    }
+
+    .productCard-prices--alt {
+        display: flex;
+    }
+
+
+
+} 
+
+
+
+
+// @include element(prices) {
+//        position: relative;
+//        @include modifier(alt) {
+//            outline: 1px solid;
+//        }
+//    }
+@keyframes show3 {
+    0%,
+    20%,
+    96%,
+    100% {
+        opacity: 1;
+    }
+    30%,
+    86% {
+        opacity: 0;
+    }
+}
+
+@keyframes show2 {
+    0%,
+    53% {
+        opacity: 1;
+    }
+    63%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+.no-flexbox {
+    .productCard--mini .productCard-content {
+        display: table;
+        >.productCard-properties,
+        >.productCard-link {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    .productCard--shoppable .productCard-buy,
+    .productCard--fixed .productCard-buy {
+        background-color: $color-lightGrey-light;
+    }
+}
+
+
+input[aria-label="list_view"]:checked~.modularGrid {
+
+    [aria-label="list_button"] {
+        background-color: black;
+        color: white;
+    }
+    .productCard {
+        @extend .productCard--landscape;
+    }
+}
+
+// <input type="radio" id="row_view" name="productlist_view" aria-label="row_view">
+//     <input type="radio" id="list_view" name="productlist_view" aria-label="list_view">
+input[aria-label="row_view"]:checked~.modularGrid {
+
+    [aria-label="row_button"] {
+        background-color: $color-darkGrey-default;
+        border-color: $color-darkGrey-default;
+        color: white;
+    }
+    .productList {
+        @extend .productList--fullpage;
+    }
+}
+
+
+
+
+
+
+input[aria-label="list_view"]:checked~.modularGrid {
+
+    [aria-label="list_button"] {
+        background-color: $color-darkGrey-default;
+        border-color: $color-darkGrey-default;
+        color: white;
+    }
+    .productCard {
+        @extend .productCard--landscape;
+    }
+}
+
+.productCard-prices--alt .productCard-discount {
+    
+}
+
+
+
+
+
+
+/*input[aria-label="list_view"]:checked  ~ .modularGrid  .productCard{
+     @extend .productCard--landscape;     
+}*/
+
+// <label class="button button--narrow" for="row_view" aria-label="row_button">{{>svgIcon type='dashboard_alt'}}</label>
+// <label class="button button--narrow" for="list_view" aria-label="list_button">{{>svgIcon type='hamburguer'}}</label>

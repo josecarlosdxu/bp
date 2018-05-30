@@ -1,0 +1,33 @@
+{
+    "list": [{
+        "title": "TIENDA DROPSHIPPING 360º",
+        "items": [{
+            "text": "Prestashop 1.7, Blog, Tienda Facebook, generador newsletters, etc."
+        }, {
+            "text": "Emarketplaces (Amazon, Ebay, Cdiscount, etc.)"
+        }, {
+            "text": "Su negocio digital, solución integral llave en mano"
+        }, {
+            "text": "Entregamos en apenas 2-5 días"
+        }],
+        "img": "tienda360"
+    }, {
+        "title": "MULTI-CHANNEL INTEGRATION PLATFORM",
+        "items": [{
+            "text": "Única plataforma que centraliza, gestiona y sincroniza"
+        }, {
+            "text": "Softwares ecommerce (Prestashop, Woocommerce, Shopify, etc.)"
+        }, {
+            "text": "Shopping engines (Google Shopping, Ciao, Kelkoo, Facebook, Ads, etc.)"
+        }],
+        "img": "multichannel"
+    }, {
+        "title": "SINCRONICE CON BIGBUY",
+        "items": [{
+            "text": "Opciones adaptadas por el cliente (API, FTP, CSV/XML)"
+        }, {
+            "text": "Opciones desarrolladas por BigBuy"
+        }],
+        "img": "autorenew"
+    }]
+}

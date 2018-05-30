@@ -1,0 +1,25 @@
+<section class="content content--alt content--flex">
+  <div class="modularGrid--boxed">
+    {{> homeTabsCategories}}
+    <input type="radio" name="hometabs1" id="hometabs1-1" class="inputToggle" data-js-uitab="radio" checked>
+    <div class="tabs-contentPanel" data-js-uitab="panel">
+      {{#if mobile}}
+      {{> cardList cardListHomeMobile.cards mobilebtns='true' }}
+      {{else}}
+      {{> cardList cardListHome.cards }}
+      {{/if}}
+    </div>
+    <input type="radio" name="hometabs1" id="hometabs1-2" data-js-uitab="radio"  class="inputToggle">
+    <div class="tabs-contentPanel" data-state="" data-js-uitab="panel" data-js-showevt="{'type':'tagsSlider', 'start':'1'}" data-js-hideevt="{'type':'tagsSlider', 'start':'0'}">
+      <aside class="categoryList  u-elem-center u-pdt--half" data-js-tag-slider="slider">
+        {{> cardList homeTags.tags }}
+      </aside>
+      <nav class="dots u-mgb" data-js-tag-slider="buttonlist"></nav>
+    </div>
+    <input type="radio" name="hometabs1" id="hometabs1-3" data-js-uitab="radio"  class="inputToggle">
+    <div class="tabs-contentPanel"  data-js-uitab="panel">
+      {{> homeBrands home='true'}}
+    </div>
+  </div>
+</section>
+

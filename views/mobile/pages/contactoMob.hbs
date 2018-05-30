@@ -1,0 +1,73 @@
+---
+title: Contacte con nosotros
+breadcrumbs: Contacte con nosotros
+layout: mobile/layouts/clean.hbs
+---
+
+
+<div class="modularGrid modularGrid--boxed">
+    <div class="modularGrid-module u-pd">
+        <nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs">
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header data-js-accordion="link" class="mobileTabs-itemHeader">
+                    <h4 class="mobileTabs-itemTitle">Comercial y atención distribuidores</h4>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding ">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                            {{>contactoComercial}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header data-js-accordion="link" class="mobileTabs-itemHeader">
+                    <h4 class="mobileTabs-itemTitle">Atención al cliente y post-venta</h4>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent  nopadding">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                            {{>contactoPostVenta}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header data-js-accordion="link" class="mobileTabs-itemHeader">
+                    <h4 class="mobileTabs-itemTitle">Logística y pedidos</h4>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                            {{>contactoLogistica}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header data-js-accordion="link" class="mobileTabs-itemHeader">
+                    <h4 class="mobileTabs-itemTitle">Soporte técnico</h4>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                            {{>contactoTecnico}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header data-js-accordion="link" class="mobileTabs-itemHeader">
+                    <h4 class="mobileTabs-itemTitle">Administración</h4>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                        {{>contactoAdministracion}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </nav>
+    </div>
+</div>

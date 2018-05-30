@@ -1,0 +1,71 @@
+---
+layout: front/layouts/landing.hbs
+title: Packs Mayoristas
+---
+<section class="content content--light u-brt">
+    <div class="modularGrid modularGrid--boxed u-pdv2">
+        <h1 class="supertitle1 u-tac u-elem-center u-pd u-mgb">Active el pack mayorista que mejor se ajuste a su negocio</h1>
+        <div class="pricePanel-container u-xs-75 pricePanel-container--midsize u-pd">
+            {{>priceBigPanel  pricePanels.panel1}}
+            {{>priceBigPanel  pricePanels.panel22 active='true'}}
+            {{>priceBigPanel  pricePanels.panel3}}
+        </div>
+    </div>
+</section>
+
+<section class="content content--full">
+    <div class="modularGrid modularGrid--boxed u-pdv2">
+        <h2 class="supertitle1 u-mgv2 u-elem-center u-tac">Seleccione la pestaña con la solución que más le interese</h2>
+        <p class="superSubtitle  u-xl-80 u-elem-center u-content-center">Tenemos un pack mayorista para cada tipo de cliente</p>
+    </div>
+    <div class="modularGrid modularGrid--boxed u-pdb2">
+        {{>packsTabs}}
+        <a href="#" class="superSubtitle link u-elem-center u-tac u-mgt2 u-pdt"><small>Ver comparativa de packs</small></a>
+    </div>
+</section>
+
+<section class="content content--light u-brt u-pdb">
+    <div class="modularGrid modularGrid--boxed u-pdb2">
+        {{>packsFeatured packsFeatured.featured}}
+    </div>
+</section>
+
+<section class="content u-brt u-pdb2">
+{{!-- <div class="modularGrid modularGrid--boxed u-pdt u-pdb2"> --}}
+ <h2 class="supertitle1 u-tac u-elem-center u-pd u-mgb">Comparativa de packs</h2>
+ {{>contentSection3 }}
+</section>
+
+<section class="content content--light u-brt">
+    <div class="modularGrid modularGrid--boxed u-pdv2">
+        <h2 class="supertitle1 u-tac u-elem-center u-pd u-mgb">Active el pack mayorista que mejor se ajuste a su negocio</h2>
+        <div class="pricePanel-container u-xs-75 pricePanel-container--midsize u-pd">
+            {{>priceBigPanel  pricePanels.panel1 alt='true'}}
+            {{>priceBigPanel  pricePanels.panel22 active='true' alt='true'}}
+            {{>priceBigPanel  pricePanels.panel3 alt='true'}}
+        </div>
+    </div>
+</section>
+
+<section class="content u-pdv2 u-brt">
+    <div class="modularGrid modularGrid--boxed u-flex--between u-pd">
+        <div class="modularGrid-module u-xs-40  ">
+            <h2 class="supertitle1 u-mgb--half"><strong>Sincroniza con BigBuy</strong></h2>
+            <button class="button button--primary button--big u-block">+ info</button>
+            <img src="../../img/sincroniza-bigbuy.svg" class="img--responsive">
+        </div>
+        <div class="modularGrid-module u-xs-40 ">
+            <h2 class="supertitle1 u-mgb--half"><small>Tienda dropshipping sincronizada</small><br><strong>Solución llave en mano</strong></h2>
+            <button class="button button--primary button--big u-block">+ info</button>
+            <img src="../../img/solucion-enmano.svg" class="img--responsive u-pdr2">
+        </div>
+    </div>
+</section>
+
+<section class="content content--light u-brt">
+    <div class="modularGrid modularGrid--boxed ">
+        {{>info}}
+        {{>faqs}}
+    </div>
+</section>
+

@@ -1,0 +1,337 @@
+@include block(panel) {
+    position: relative;
+    padding-top: 0;
+    background: $color-panel-background;
+    @include modifier(reveal) {
+        width: 100%;
+        background: #fff;
+    }
+    @include modifier(inactive) {
+        overflow: hidden;
+        z-index: 0;
+        display: inline-block;
+    }
+    @include element(link) {
+        color: #999;
+        transition: all 0.15s;
+        font-weight: 400;
+        &:hover {
+            color: #444;
+            text-decoration: underline;
+        }
+    }
+    @include element(breadcrumbLink) {
+        color: #333;
+        opacity: 0.8;
+        //transition: all 0.1s;
+        font-weight: 400;
+        &:hover {
+            text-decoration: underline;
+            opacity: 1;
+        }
+        &:before {
+            content: "/ ";
+        }
+        &:last-child {
+            text-decoration: none;
+            opacity: 1;
+            font-weight: 500;
+            cursor: default;
+        }
+        &:first-child:before {
+            content: "";
+        }
+    }
+    @include element(iframe) {
+        border: none;
+        height: 100%;
+        position: relative;
+    }
+    @include element(toggletab) {
+        background: #09f;
+        border: none;
+        border-radius: 6px 0 0 6px;
+        box-shadow: 0 0 0 2px #fff599 inset, -4px 0 2px 1px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        height: 46px;
+        left: -41px;
+        padding-left: 10px;
+        position: absolute;
+        text-align: left;
+        top: 0;
+        transition: background-color 0.1s ease-out, left 0.1s ease-out;
+        width: 45px;
+        font-size: 0;
+        //*z-index: 0;
+        &:hover {
+            background-color: #fff599;
+            background-position: 11px -20px;
+            color: rgba(0, 0, 0, 0.7);
+            left: -45px;
+            width: 47px;
+        }
+        &:focus {
+            outline: none;
+            //box-shadow: none;
+        }
+    }
+    @include modifier(secondary) {
+        display: none;
+        // width: 90%;
+        //-webkit-transition: -webkit-transform 0.6s ease-out;
+        // transition:         transform 0.7s ease-in-out;
+        /*-webkit-transform: translateX(5%);
+                transform: translateX(5%);*/
+        //box-shadow: inset 1px 0 0 $color-shadow;
+        background: #fff;
+        z-index: -1;
+        @include modifier(reveal) {
+            width: 100%;
+            z-index: 1;
+            display: inline-block;
+            //margin-left: 5%;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            //-webkit-transform: translateX(-100%);
+            //transform: translateX(-100%);
+            @include addBreakpoint(xs) {
+                //width: 97%;
+                //margin-left: 3%;
+                // -webkit-transform: translateX(-100%);
+                //transform: translateX(-100%);
+            }
+        }
+    }
+    @include element(title) {
+        //min-height: $um * 3;
+        padding: 0 $um/2;
+        border-bottom: 1px solid $color-shadow;
+        //line-height: 3.8rem;
+        //vertical-align: text-bottom;
+        display: flex;
+        align-items: center;
+        height: 3.8rem;       
+         .icon {
+            margin-right: $um / 3;
+            transition: none;
+        }
+    }
+    @include element(titleName) {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 400;
+        //line-height: 2.5rem;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    @include element(content) {
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        height:calc(100vh - 12.25rem);
+        @include modifier(contrast) {
+            background: #E4E5E7;
+            box-shadow: 1px 0 rgba(0, 0, 0, 0.1) inset;
+        }
+        @include modifier(iframecontent) {
+            border: none;
+            overflow-y: hidden;
+            position: relative;
+            top: -1px;
+        }
+        @include modifier(fullWidth) {
+            overflow-y: scroll;
+        }
+         @include modifier(fullW) {
+            overflow-y: scroll;
+        }
+        @include modifier(fullH) {
+            height:calc(100vh - 8.5rem);
+
+            
+        }
+
+    }
+    @include element(log) {
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        height: 110px;
+    }
+    @include element(notifyTab) {
+        margin-left: 0.5rem;
+        margin-bottom: -0.5rem;
+    }
+    @include element(tabs) {
+        padding: $um / 4 $um / 4 0;
+        border-bottom: 1px solid $color-shadow;
+        background: #f0f0f0;
+        font-size: 0;
+        @include element(content) {
+            background: #fff;
+            margin-top: 0;
+            padding-top: 1px;
+        }
+        @include element(item) {
+            position: relative;
+            top: 2px;
+            font-size: 1rem;
+            display: inline-block;
+            padding: $um / 2 $um;
+            opacity: 0.6;
+            color: #444;
+            color: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 2px;
+            background-color: #fff;
+            transition: opacity 0.1s, box-shadow 0.2s;
+            box-shadow: inset 0 4px transparent;
+            &:hover {
+                background-color: #fff;
+                opacity: 0.9;
+            }
+            &:focus {
+                outline: none;
+            }
+            @include modifier(active) {
+                top: 2px;
+                cursor: default;
+                box-shadow: inset 0 4px #09f;
+                opacity: 1;
+                color: #09f;
+                // border-top: 2px solid $color-shadow;
+                background-color: #fff;
+                border-bottom: 2px solid #fff;
+                &:hover,
+                &:focus {
+                    background-color: #fff;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @include element(footer) {
+        padding: $um / 2;
+        margin-top: -1px;
+        border-top: 1px solid $color-shadow;
+        background: $color-panel-footer-background;
+        @include element(pagination) {
+            text-align: center;
+            @include element(item) {
+                display: inline-block;
+                @include modifier(currentPage) {
+                    margin: 0 $um;
+                }
+            }
+        }
+    }
+    @include element(actions) {
+        margin-left: $um;
+        display: inline-block;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        @include modifier(filters) {
+            text-align: right;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            border-left: 0;
+        }
+        @include element(group) {
+            display: inline-block;
+            &:first-child {
+                border-left: none;
+            }
+        }
+        @include element(item) {
+            display: inline-block;
+            padding: 0 $um/2;
+            cursor: pointer;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+    @include element(section) {
+        max-width: 1200px;
+        background: #fff;
+        box-shadow: 0 0 0 1px $color-shadow;
+        @include modifier(fullWidth) {
+            width: 100%;
+            max-width: 100%;
+        }
+        @include modifier(borderless) {
+            border: none;
+            background: inherit;
+            box-shadow: none;
+        }
+        @include modifier(fullsize) {
+            max-width: 100%;
+        }
+        @include modifier(island) {
+            margin: $um;
+        }
+        @include element(title) {
+            overflow: hidden;
+            padding: $um / 2;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            box-shadow: 0 -1px $color-shadow inset;
+            font-size: 1.2rem;
+            font-weight: 400;
+            background: rgba(0, 0, 0, 0.05);
+            color: #393a3c;
+            vertical-align: text-bottom;
+        }
+        @include element(subtitle) {
+            font-size: $um / 1.2;
+            margin-bottom: $um / 2;
+        }
+        @include element(dataHandlers) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        @include element(sort) {
+            display: inline-block;
+            min-width: 18rem;
+            padding: 1rem;
+        }
+        @include element(filter) {
+            display: inline-block;
+            padding: $um/2 $um;
+            @include modifier(active) {
+                background: #f0f0f0;
+                padding: $um/2 $um;
+                box-shadow: 1px 0 opacify($color-shadow, 0.05) inset;
+            }
+        }
+        @include element(filters) {
+            text-align: right;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #f0f0f0;
+        }
+    }
+}
+
+//TODO posibilidad de extender elementos de un bloque y mantener la anidación
+
+/*@include extendElement(panel,actions, inline) {
+    border-left: none;
+    background:  #0090FF;
+    display: none;
+    margin-left: 0;
+
+
+    @include element(actions-item) {
+        min-height: $um * 2;
+        padding: $um / 4 0;
+    }
+}*/
+
+@include extendBlock(panel, active) {
+    //border-left: 9px solid $color-panelActive-border;
+    @include element(title) {
+        background: $color-panelActive-title-background;
+    }
+}

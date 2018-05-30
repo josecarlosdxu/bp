@@ -1,0 +1,39 @@
+{
+  "bigmenu":{
+    "header":[
+      {
+        "title":"Pequeño electrodoméstico",
+        "sectionID":"110",
+        "modifier":" bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Batidoras",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Amasadoras",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Licuadoras",
+        "sectionID":"",
+        "modifier":""
+      }
+    ],
+    "categories":[
+      {
+        "sectionID":"110",
+        "subcategories":[
+          {
+            "name":"Naranjas y mandarinas"
+          },
+          {
+            "name":"Jamones y jamoneros"
+          }
+        ]
+      }
+    ]
+  }
+}

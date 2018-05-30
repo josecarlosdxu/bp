@@ -1,0 +1,268 @@
+ %dimensions {
+     @extend %bg-sprite;
+     height: 20px;
+     width: 20px;
+ }
+ 
+ @include block(icon) {
+     display: inline-block;
+     cursor: inherit;
+     fill: currentcolor;
+     transition: inherit;
+     @extend %type-icons01;
+     @include modifier(letterpress) {
+         color: rgba(255, 255, 255, 0.5);
+         text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
+     }
+     @include modifier(pro) {
+         fill: $color-pro-pack;
+     }
+     @include modifier(business) {
+         fill: $color-business-pack;
+     }
+     @include modifier(premium) {
+         fill: $color-premium-pack;
+     }
+     @include modifier(welcome) {
+         fill: $color-welcome-pack;
+     }
+     @include modifier(basic) {
+         fill: $color-basic-pack;
+     }
+      @include modifier(b2b) {
+         fill: $color-b2b-pack;
+     }
+      @include modifier(dropship) {
+         fill: $color-dropship-pack;
+     }
+      @include modifier(enterprise) {
+         fill: $color-enterprise-pack;
+     }
+     @include modifier(inline) {
+         vertical-align: inherit;
+     }
+     @include modifier(primary) {
+         fill: $color-accentBlue-default;
+     }
+     @include modifier(braintree) {
+         height: 12px;
+         width: 150px;
+         // fill: $color-accentBlue-dark;
+     }
+     @include modifier(braintreelogo) {
+         height: 3rem;
+         width: auto;
+         display: block;
+         margin-bottom: $um / 1.5;
+         // fill: $color-accentBlue-dark;
+     }
+     @include modifier(attach) {
+         transform: rotate(90deg);
+         width: 16px;
+         height: 16px;
+         color: $color-darkGrey-light;
+         vertical-align: middle;
+     }
+     @include modifier(roundedGrey) {
+         background: $color-shadow;
+         border-radius: 100%;
+         padding: $um / 3;
+     }
+     @include modifier(roundedWhite) {
+         background: white;
+         border-radius: 100%;
+         padding: $um / 3;
+     }
+     @include modifier(strongBorder) {
+         box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+     }
+     @include modifier(xxs) {
+         width: 12px;
+         height: 12px;
+     }
+     @include modifier(xs) {
+         width: 16px;
+         height: 16px;
+     }
+     @include modifier(sm) {
+         width: 24px;
+         height: 24px;
+     }
+     @include modifier(md) {
+         width: 32px;
+         height: 32px;
+     }
+     @include modifier(lg) {
+         width: 48px;
+         height: 48px;
+     }
+     @include modifier(60) {
+         width: 60px;
+         height: 60px;
+     }
+     @include modifier(80) {
+         width: 80px;
+         height: 80px;
+     }
+     @include modifier(9) {
+         width: 9rem;
+         height: 9rem;
+     }
+     @include modifier(xl) {
+         width: 100px;
+         height: 100px;
+     }
+     @include modifier(xxl) {
+         width: 150px;
+         height: 150px;
+     }
+     @include modifier(lg) {
+         font-size: 1.15rem;
+     }
+     @include modifier(error) {
+         color: $color-iconError;
+     }
+     @include modifier(waiting) {
+         color: rgba(0, 0, 0, 0.23);
+         //color: $color-logo-thumbnail;
+     }
+     @include modifier(success) {
+         color: $color-iconSuccess;
+     }
+     @include element(sort) {
+         margin-left: $um / 4;
+         color: #999;
+     }
+     @include element(placeholder) {
+         // Just empty icon for table align purposes
+     }
+     @include element(stockCheck) {
+         color: #67b02c;
+     }
+     @include element(stock) {
+         width: $um / 2;
+         height: $um / 2;
+         margin-right: 0.2rem;
+         border-radius: 100%;
+         @include modifier(success) {
+             background-color: $color-icon-stockSuccess;
+             // float: left;
+             // margin-bottom: 1rem;
+             // margin-right: 0.3rem;
+             // position: relative;
+             // top: 2px;
+         }
+         @include modifier(error) {
+             background-color: $color-icon-stockError;
+         }
+     }
+     @include element(weight) {
+         @extend %dimensions;
+         background-position: -244px 2px;
+     }
+     @include element(box) {
+         @extend %dimensions;
+         background-position: -243px -88px;
+     }
+     @include element(pallet) {
+         @extend %dimensions;
+         background-position: -244px -110px;
+     }
+     @include element(dimensions) {
+         @extend %dimensions;
+         background-position: -244px -25px;
+     }
+     @include element(ft20) {
+         @extend %dimensions;
+         background-position: -243px -67px;
+     }
+     @include element(ft40) {
+         @extend %dimensions;
+         background-position: -228px -44px;
+         width: 36px;
+         margin-left: -1.3rem;
+     }
+     /*
+     * Phoca Flags 1.0.0 by Jan Pavelka
+     * Copyright 2013 Jan Pavelka ( http://www.phoca.cz )
+     * License GNU General Public License version 3
+     */
+     @include element(flag) {
+         display: inline-block;
+         width: 14px;
+         height: 10px;
+         vertical-align: middle;
+         background-size: 100% 100%;
+         background-position: 0 0;
+         background-repeat: no-repeat;
+         box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 1px rgba(0, 0, 0, 0.2);
+         margin-top: -1px;
+     }
+     @include element(social) {
+         width: 32px;
+         height: 32px;
+         margin-right: $um / 6;
+         padding: 0;
+         cursor: pointer;
+         border: none;
+         border-radius: 4px;
+         background-color: transparent;
+         background-image: url($sprite-bg);
+         background-repeat: no-repeat;
+         box-shadow: none;
+         @extend %font-0;
+         @include modifier(twitter) {
+             background-position: -80px 0;
+         }
+         @include modifier(facebook) {
+             background-position: -40px 0;
+         }
+         @include modifier(gplus) {
+             background-position: -120px 0;
+         }
+         @include modifier(linkedin) {
+             background-position: -40px -185px;
+         }
+         @include modifier(pinterest) {
+             background-position: 0 -185px;
+         }
+     }
+     @include element(card) {
+         width: 42px;
+         height: 29px;
+         margin-right: $um / 6;
+         margin-bottom: $um / 3;
+         vertical-align: top;
+         background-size: 42px 29px;
+         //border: 1px solid rgba(0, 0, 0, 0.2);
+         //box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+         border-radius: 3px;
+         //background-color: transparent ;
+         //background-image: url($sprite-bg);
+         background-repeat: no-repeat;
+         @extend %font-0;
+         @include modifier(mini) {
+             width: 28px;
+             height: 20px;
+             background-size: 28px 20px;
+         }
+         @include modifier(mid) {
+             width: 40px;
+             height: 26px;
+             background-size: 40px 26px;
+         }
+         &:hover {
+             opacity: 1;
+         }
+     }
+ }
+
+
+ @include extendBlock(icon, info)  {
+    vertical-align: top;
+    opacity: 0.5;
+    margin-top: -0.25rem;
+    margin-left: 0.25rem;
+    //transition:opacity 0.2s;
+
+}

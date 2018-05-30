@@ -1,0 +1,16 @@
+<div class="toolbar">
+    {{!-- <!--{{>allCategoriesButton sticky='true'}}--> --}}
+    <nav class="toolbar-languages" data-js-toolbar-languages="toolbar-languages">
+        <button class="toolbar-item" data-js-toolbar-languages="toolbar-languages-btn">
+            <div class="toolbar-itemTitle">
+                {{>svgIcon type='no' class='u-vb' size='xs'}}
+                <span class="toolbar-languages-selectorText">NO</span>
+                {{>svgIcon type='caretDown' class='u-vb'}}
+            </div>
+        </button>
+        {{> toolbarLanglist }}
+    </nav>
+    {{>toolbarContent}}   
+    {{>searchToolbar}}
+    {{>headerNewTags}}
+</div>

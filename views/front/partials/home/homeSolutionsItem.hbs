@@ -1,0 +1,49 @@
+<div class="modularGrid-module u-pdb2  u-mgb2 u-bg--white  u-brd ">
+
+
+ 
+{{#each list}}
+  <div class="modularGrid">
+   <div class="banner bannerWhite banner--horizontal u-pdt--0"> 
+      <h3 class="banner-caption u-op-60 u-tal u-pdt2{{#ifEven @index}}{{else}} u-brdt{{/ifEven}}{{#if ../mobile}} u-brdt--none{{/if}}">Soluciones </h3>
+      <h2 class="banner-header u-mgb"><small>{{header.title}}</small></h2>
+    </div>
+  </div>
+
+ <div class="modularGrid  u-bg--white u-brdb{{#if ../mobile}} u-pdh{{else}} u-pdh2{{/if}}">
+    {{#each items}}
+      <div class="modularGrid-module u-md-50  u-tal u-pdb2">
+          <div class="u-flex--center">
+          {{>svgIcon type=img size='lg'  class='u-pd3 color-blue'}}
+             <h4 class="title1 u-pdl--3rd u-upp">{{{title}}}</h4>
+          </div>           
+       <ul class="list list--checklist list--midsize u-pdt--half u-pdl2">
+
+      {{#each list}}
+            <li class="list-item">
+              {{>svgIcon type='done' class='list-icon u-op-50'}}
+              <span class="u-op-60">{{{text}}}</span>
+
+            </li>
+        {{/each}}
+      </ul>
+       
+     
+
+
+
+    </div>
+
+    {{/each}} 
+
+   </div>
+
+
+
+
+
+{{/each}}
+
+</div>
+
+

@@ -1,0 +1,13 @@
+@include block(content) {
+    position: relative;
+
+    margin-left: 4rem;
+
+    //transition: all 0.3s;
+
+    @include addBreakpoint(lg) {
+        margin-left: 16rem;
+    }
+}
+
+

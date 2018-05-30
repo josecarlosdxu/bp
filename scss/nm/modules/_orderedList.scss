@@ -1,0 +1,12 @@
+@include block(orderedList) {
+    display: inline-block;
+    width: 100%;
+    @include element(item) {
+        outline: none;
+    }
+    @include modifier(numered) {
+    	list-style: decimal inside;
+
+    }
+}
+

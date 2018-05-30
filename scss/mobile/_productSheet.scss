@@ -1,0 +1,271 @@
+@include block(productSheet) {
+    max-width: 1200px;
+    margin: 0 auto; //display: table;
+    width: 100%;
+    align-items: flex-start; //table-layout: fixed;  
+    @include element(contents) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    @include element(headerTitle) {
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    @include element(title) {
+        padding: 0;
+        width: 100%;
+    }
+
+    @include element(details) {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: none;
+        padding: $um 1rem;
+        box-shadow: none;
+        align-self: stretch;
+        max-width: 100%;
+        
+        
+
+
+        @include addBreakpoint(md) {
+            width: calc(100% - 26.75rem);
+            padding: 0;
+            border-top: none;
+        }
+
+
+        @include addBreakpoint(lg) {
+            width: calc(100% - 45rem);
+            //border-right: 1px solid rgba(0, 0, 0, 0.1);
+            overflow: visible;
+        }
+        @include addBreakpoint(xl) {
+             width: calc(100% - 50rem);
+            
+        }
+    }
+
+    @include element(features) {
+        width: 100%;
+    }
+
+    @include element(header) {
+        width: 100%;
+    }
+
+    @include element(options) {
+        width: 100%;
+        border: none;
+        max-width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: -1px 0 #e8e8e8;
+        padding: 1.5rem;
+        align-self: stretch; 
+        align-items: center;
+        
+        
+
+        @include addBreakpoint(lg) {
+            width: 25rem;
+            border: none;
+        }
+        @include addBreakpoint(xl) {
+            width: 30rem;
+            
+        }
+    }
+
+    @include element(minisocial) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    @include element(rating) {
+
+        padding: 0 1rem;
+    }
+
+    @include element(dimensions) {
+        border-bottom: none;
+
+        .paddingHack {
+            width: 100%;
+        }
+        +.modularGrid-module.u-xs-50 {
+            width: 100%;
+            padding-bottom: $um;
+        }
+    }
+    @include element(attributes) {
+        padding: 0;
+        font-size: 1rem;
+        width: 100%;
+
+
+        @include addBreakpoint(xl) {
+            padding: 0 $um ;
+        }
+    }
+    @include element(attributesCont) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+
+    @include element(discountBadge) {
+        padding: 0;
+        margin: 0.75rem 0 0;
+
+
+        @include addBreakpoint(xl) {
+            padding: 0 $um;
+        }
+    }
+
+    .productSheetBadge {
+        max-width: calc(100% - 0.5rem);
+
+        @include addBreakpoint(xs) {
+            max-width: 100%;
+        }
+    }
+
+
+}
+
+@include extendElement(productSheet,
+discountTable,
+special) {
+    border: none;
+    right: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    .table {
+        border: none;
+        border-bottom: 10px solid white; // box-shadow: none;
+        //background: tan;
+    }
+    .table-caption {
+        margin: 0;
+        padding: 0.5rem 1.5rem 0.3rem;
+    }
+}
+
+@include extendElement(productSheet,
+attributesCont,
+single) {
+    @extend .productSheet-attributesCont;
+    display: flex;
+    align-items: center;
+}
+
+@include extendBlock(productSheet,
+simple) {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding-top: 4.6rem;
+    flex-direction: column;
+
+
+    @include element(headerTitle) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+    }
+    @include element(options) {
+        display: block;
+        width: auto;
+    }
+    .imgBox--productSheet {
+        display: block;
+        margin: 0;
+        padding: 0;
+        min-width: 28rem;
+        width: auto;
+    }
+
+    @include addBreakpoint(md) {
+        flex-direction: row;
+    }
+}
+
+.productSheet-options>form>.form-fieldset--borderless {
+    height: auto;
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+}
+
+
+[data-js-discount_table]{
+
+   
+
+   .table-captionhead{
+
+    box-shadow: -1.5rem 0 #f1f2f3, 1.5rem 0 #f1f2f3;
+
+   }
+
+   
+
+
+
+    @include addBreakpoint(sm) {
+       
+        border-right: 1px solid #e8e8e8;
+
+        .table-captionhead{
+
+    box-shadow: none;
+
+   }
+        
+    }
+    
+         
+        
+   
+    @include addBreakpoint(md) {
+        border-right-width: 0;
+        
+    }
+}
+
+
+[data-js-discount_table-panel]{
+
+    .table-captionhead{
+
+    box-shadow: -1.5rem 0 #f1f2f3, 1.5rem 0 #f1f2f3;
+
+   }
+
+   @include addBreakpoint(sm) {
+      .table-captionhead{
+
+    box-shadow: none;
+
+   }
+
+
+   }
+
+
+
+
+
+}

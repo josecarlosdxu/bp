@@ -1,0 +1,34 @@
+<div class="panel panel--active" data-js-panel-name="panel01" data-js-panel-state="active">
+
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-orders"></use></svg>
+        <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Pedidos</a></div>
+    </div>
+
+    <div class="panelHeader">
+        <nav class="panel-tabs">
+            <button class="panel-tabs-item panel-tabs-item--active" data-paneltabbtn="pendientes" title="Pendientes de validación">Pendientes de validación<span class="notify"></span></button>
+            <button class="panel-tabs-item" data-paneltabbtn="cancelados" title="Cancelados">Cancelados</button>
+            <button class="panel-tabs-item" data-paneltabbtn="procesados" title="En proceso">En proceso</button>
+            <button class="panel-tabs-item" data-paneltabbtn="todos" title="Todos">Todos</button>
+        </nav>
+    </div>
+
+    <div class="panel-content fixedTableContent">
+
+        <div id="pendientes" class="fixedTableContent-tableContent">
+            {{>panelSection panelSection.pendingOrders}}
+        </div>
+        <div id="cancelados" class="fixedTableContent-tableContent" style="display:none;">
+            {{>panelSection panelSection.cancelOrders}}
+        </div>
+
+        <div id="procesados" class="fixedTableContent-tableContent" style="display:none;">
+            {{> panelSection panelSection.processOrders}}
+        </div>
+        <div id="todos" class="fixedTableContent-tableContent fixedTableContent-tableContent--follow" style="display:none;">
+            {{> panelSection panelSection.allOrders}}
+        </div>
+
+    </div>
+</div>

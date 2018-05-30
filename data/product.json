@@ -1,0 +1,29 @@
+{
+    "name": "Lote Jamón + Embutidos + Jamonero Gourmet + Cuchillo y Afilador",
+    "pvp01": "41.85",
+    "pvp02": "81.50",
+    "pvp03": "-49",
+    "iva": "10",
+    "options": [{
+        "name": "Lote de embutidos",
+        "stuff" : "asas",
+        "attributes": [{
+            "name" : "Sin embutidos",
+            "value" : "xx01",
+            "default" : true
+        }, {
+            "name" : "Con embutidos",
+            "value" : "xx02"
+        }]
+    }, {
+        "name": "Peso",
+        "attributes": [{
+        	"name" : "8 / 8.5 Kg.",
+        	"value" : "xx03"
+        }, {
+            "name" : "8.5 / 9 Kg.",
+            "value" : "xx04",
+            "default" : true
+        }]
+    }]
+}

@@ -1,0 +1,85 @@
+ <aside class="productSheet-discountBadge">
+ {{#if blackfriday}}
+ <div class="productSheetBadge"> 
+
+    <div class="productSheetBadge-old">
+
+        <p class="productSheetBadge-pvd u-mgb--min">Old PVD</p>
+        <p class="u-mgb--min"><strike>140,68 €</strike></p>
+        <p class="productSheetBadge-pvr">Old PVR <strike>153,45 €</strike></p>
+        
+    </div> 
+    <div class="productSheetBadge-new">
+        <p class="productSheetBadge-title">BLACK FRIDAY</p>
+        <p class="productSheetBadge-pvd">New PVD</p>
+        <p class="productSheetBadge-price">125,98 €</p>
+        <p class="productSheetBadge-pvr">New PVR <span>153,45 €</span></p>
+        <p class="productSheetBadge-ribbon">-20%</p>
+    </div>    
+    
+</div>
+{{else}} 
+
+
+
+
+{{#if hotdeals}}
+ <div class="productSheetBadge productSheetBadge--hot"> 
+
+    <div class="productSheetBadge-old">
+
+        <p class="productSheetBadge-pvd u-mgb--min">Old PVD</p>
+        <p class="u-mgb--min"><strike>140,68 €</strike></p>
+        <p class="productSheetBadge-pvr">Old PVR <strike>153,45 €</strike></p>
+        
+    </div> 
+    <div class="productSheetBadge-new">
+        <p class="productSheetBadge-title">hot deal</p>
+        <p class="productSheetBadge-pvd">New PVD</p>
+        <p class="productSheetBadge-price">125,98 €</p>
+        <p class="productSheetBadge-pvr">New PVR <span>153,45 €</span></p>
+        <p class="productSheetBadge-ribbon">-20%</p>
+    </div>    
+    
+</div>
+{{else}}
+
+   <div class="modularGrid">
+    {{#if gift}}
+
+    <div class="modularGrid-module">
+        <div class="productSheet-pvp0">
+            <span class="productSheet-pvp1Title">PVR</span>
+            <span itemprop="price" class="productSheet-pvp1Val">40,25 €</span>
+        </div>
+    </div>
+
+    
+    {{else}}
+    
+    <div class="modularGrid-module u-xs-75">
+        <div data-js-price_product="" class="productSheet-pvp1">
+            <meta content="EUR" itemprop="priceCurrency">
+            <span class="productSheet-pvp1Title">PVR {{#if tooltip}}<em data-js-tooltip="tooltip_productsheet_range" class="form-info">{{>svgIcon type='info'}}</em>{{/if}}</span>
+
+            <span itemprop="price" class="productSheet-pvp1Val">40,25 €</span>
+            <div data-js-price_shop="" class="productSheet-pvp2">
+                <span class="productSheet-pvp2Title">
+                    PVP
+                </span>
+                <span class="productSheet-pvp2Val">79,90 €</span>
+            </div>
+        </div>
+    </div>
+    <div class="modularGrid-module u-xs-25">
+        <div data-js-price_discount="" class="productSheet-pvp3">
+
+            <div class="productSheet-pvp3Val"> - 50% </div>
+        </div>
+    </div>
+    {{/if}}
+ </div>
+{{/if}}
+{{/if}}
+<span data-js-product_sheet="" class="form-info productSheet-info  u-flr">Transporte y 21% de IVA no incluidos</span>
+</aside>

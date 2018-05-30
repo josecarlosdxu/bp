@@ -1,0 +1,31 @@
+{{#if newuser}}
+
+<nav class="toolbar-nav" >
+    <button class="toolbar-item" id="header-login" data-js-login="loginBtn" >
+        {{>svgIcon type='login'}}
+        Iniciar sesión
+    </button>
+    <button class="toolbar-item">
+     {{>svgIcon type='newUser'}}
+        Crear cuenta
+    </button>
+     <button class="toolbar-item" data-js-expresscart="toolbar-expresscart-btn">
+       {{>svgIcon type='cart'}}
+       Mi carrito<b class="toolbar-notify">10</b>
+   </button>
+   <a class="toolbar-item " title="Contacto" href="forms.html">{{>svgIcon type='email_black'}}<b class="toolbar-notify toolbar-notify--small"></b>Contacto</a>
+
+</nav>
+{{else}}
+<nav class="toolbar-nav"> 
+    {{>toolbarOptions}}
+    <button class="toolbar-item" data-js-expresscart="toolbar-expresscart-btn">
+       {{>svgIcon type='cart'}}
+       Mi carrito<b class="toolbar-notify">10</b>
+   </button>
+   <a class="toolbar-item " title="Contacto" href="forms.html">{{>svgIcon type='email_black'}}<b class="toolbar-notify toolbar-notify--small"></b>Contacto</a>
+  
+</nav>
+
+{{/if}}
+

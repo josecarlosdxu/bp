@@ -1,0 +1,25 @@
+<td class="table-item {{#if class}} {{class}} {{/if}}">
+{{#if list}}
+    <ul class="list list--checklist">
+        {{#each list}}
+        <li class="list-item">
+        {{>svgIcon type=icon class='icon--success'}}
+         {{{text}}}
+         </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    {{>svgIcon type=icon size='lg' class='u-block u-elem-center u-op-70 '}}  {{{text}}}
+    {{/if}}
+</td>
+
+
+
+
+
+
+
+
+
+
+

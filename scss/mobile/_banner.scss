@@ -1,0 +1,355 @@
+%bannerBlue,
+.bannerBlue {
+    background-color: #e5edf1;
+    color:rgba(0,0,0,0.7);
+}
+
+@include block(banner) {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 0.25rem;
+    line-height: 0;
+    @include element(img) {
+        width: auto;
+        min-width: 100%;
+        min-height: 15rem;
+        height: auto;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+    }
+    @include element(texts) {
+        position: absolute;
+        margin-left: $um;
+        margin-bottom: $um;
+        margin-top: $um;
+        display: block;
+        line-height: 1;
+        z-index: 1;
+        font-size: $um;
+        max-width: 90%;
+    }
+    @include element(imglink) {
+        font-size: 0;
+        display: block;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+        z-index: 0;
+        position: absolute;
+        text-align: center;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+    @include element(supratitle) {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: $um;
+        color: #ffea33;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+        img {
+            max-height: 4rem;
+            max-width: 100%;
+        }
+        span {
+            margin-top: 1rem;
+            display: block;
+        }
+    }
+    @include element(title) {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: $um * 2;
+        color: #ffea33;
+        text-transform: uppercase;
+    }
+    @include element(subtitle) {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: $um;
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+        br {
+            display: block;
+            margin-top: 0.5rem;
+        }
+        sub {
+            text-transform: none;
+            display: block;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            font-size: 1rem;
+            color: #ffea33;
+            line-height: 1.1;
+            margin-top: 0.2rem;
+        }
+        .icon.icon--signs {
+            display: inline-block;
+            background: url(../img/signs.svg) no-repeat;
+            height: 1.25rem;
+            width: $um;
+        }
+    }
+    @include addBreakpoint(lg) {
+        @include element(img) {
+            min-height: 100%;
+            height: auto;
+        }
+    }
+    /*@include addBreakpoint(xs) {
+        @include element(supratitle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            color: #ffea33;
+            text-transform: uppercase;
+        }
+        @include element(title) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            color: #ffea33;
+            text-transform: uppercase;
+        }
+        @include element(subtitle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    @include addBreakpoint(sm) {
+        @include element(supratitle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #ffea33;
+            text-transform: uppercase;
+            img {
+                max-height: 30px;
+            }
+        }
+        @include element(title) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            color: #ffea33;
+            text-transform: uppercase;
+        }
+        @include element(subtitle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    @include addBreakpoint(md) {
+        @include element(supratitle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            color: #ffea33;
+            text-transform: uppercase;
+            img {
+                max-height: 35px;
+            }
+        }
+        @include element(title) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 70px;
+            color: #ffea33;
+            text-transform: uppercase;
+        }
+        @include element(subtitle) {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }*/
+}
+
+@include extendBlock(banner, inverse) {
+    @include element(supratitle) {
+        color: #fff;
+        padding-bottom: 0.5rem;
+        img {
+            max-height: 5rem;
+            max-width: 100%;
+        }
+        span {
+            margin-top: 1rem;
+            display: block;
+        }
+    }
+    @include element(subtitle) {
+        color: #ffea33;
+        padding-bottom: 0.5rem;
+        sub {
+            color: white;
+        }
+    }
+}
+
+
+/*@include extendElement(banner, subtitle, inverse) {
+    color: #ffea33;
+    padding-bottom: 0.5rem;
+    sub {
+        color: white;
+    }
+}*/
+
+@include extendElement(banner, subtitle, terms) {
+    text-transform: none;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+.banner[id="94"],
+.banner[id="96"] {
+    .banner-texts {
+        position:relative;
+    }
+    .banner-supratitle {
+        max-width: 50rem;
+        img{
+            max-height: 10rem;
+        }
+    }
+    .banner-title span {
+        display: inline-flex;
+        max-width: 16em;
+        align-items: center;
+        text-align: center;
+        margin-right: 3rem;
+        color: #ffea33;
+        font-size: $um;
+        &:before,
+        &:after {
+            content: "";
+            background: url('../img/crowd_left.svg') no-repeat center;
+            display: block;
+            width: 3.5rem;
+            height: 4rem;
+            background-size: 2rem;
+        }
+        &:after {
+            background-image: url('../img/crowd_right.svg');
+        }
+    }
+
+    .banner-subtitle {
+        padding: 0.5rem 2rem;
+        font-size: 1.8rem;
+        text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+
+    }
+
+}
+
+
+/*@include extendElement(banner, supratitle, inverse) {
+    color: #fff;
+    padding-bottom: 0.5rem;
+    img {
+        max-height: 4rem;
+        max-width: 70%;
+    }
+    span {
+        margin-top: 1rem;
+        display: block;
+    }
+}
+*/
+@include extendBlock(banner, horizontal) { 
+     padding: $um $um  $um / 2;    
+@include addBreakpoint(md) {
+     padding: $um*2 $um * 2 $um / 2;    
+      
+  }  
+   
+    @include element(caption) {
+        @extend  %sliderSubtitle;
+        text-shadow:none;        
+    }
+    @include element(header) {
+         @extend %sliderText;
+         text-align: left; 
+         font-size: $um * 2;
+         word-wrap:break-word;
+         overflow-wrap: break-word;        
+         @include addBreakpoint(md) {
+            font-size: 4rem;
+           
+             
+         }
+    }
+
+    @include element(list) {
+        margin: $um 0;
+        padding-left: 0.95rem;
+        @include addBreakpoint(md) {
+            margin: 0;            
+        }
+        
+    }
+
+     
+
+
+    @include element(listitem) {        
+         text-transform: uppercase;
+         margin-bottom: $um / 2;
+         color: inherit;
+         font-size: 1.2rem;
+         opacity: 0.8;
+         font-weight: 500;
+         line-height: 1;
+         &:before{
+            content: "-";
+            display: inline-block;
+            margin-right: 0.3rem;
+            margin-left: -0.7rem;
+         }
+         @include addBreakpoint(md) {
+            font-size: $um;
+             
+         }
+        
+    }
+
+
+    
+}
+.banner.bannerBlue {
+    
+    .banner-header,
+    .banner-caption {
+        color: black;
+        text-shadow: none;
+    }
+    .banner-caption {
+        opacity: 0.6;
+    }
+}
+
+
+.banner.bannerWhite {
+     .banner-caption , .banner-header{
+        color: black;
+        text-shadow: none;
+    }
+}

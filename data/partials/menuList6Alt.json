@@ -1,0 +1,206 @@
+{
+    "Perfumes": {
+        "title": "Perfumes",
+        "modifiers": ["primary", "selectable"],
+        "itemName": "perfumes",
+        "subcategory": "true",
+        "number": "620",
+        "link": "categoria-cosmetica.html",
+        "order": "6",
+        "image": "../../img/categories/cosmetica/2508_menu.jpg",
+        "subcategories": [{
+            "name": "Hombre",
+            "itemId": "hombre",
+            "col1": "1",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "image": "../../img/categories/cosmetica/2509_small.jpg",
+            "subcategory": "true"
+        }, {
+            "name": "Mujer",
+            "itemId": "mujer",
+            "col1": "1",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "image": "../../img/categories/cosmetica/2510_small.jpg",
+            "subcategory": "true",
+            "number": "106"
+        }, {
+            "name": "Unisex",
+            "itemId": "unisex",
+            "col1": "1",
+            "image": "../../img/categories/cosmetica/2511_small.jpg",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "subcategory": "true"
+        }]
+    },
+    "CuidadoFacial": {
+        "title": "Cuidado Facial",
+        "modifiers": ["primary", "selectable"],
+        "itemName": "cuidado_facial",
+        "subcategory": "true",
+        "number": "620",
+        "link": "categoria-cosmetica.html",
+        "order": "6",
+        "image": "../../img/categories/cosmetica/2537_menu.jpg",
+        "subcategories": [{
+            "name": "Cremas antiarrugas e hidratantes",
+            "image": "../../img/categories/cosmetica/2531_small.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "2"
+        }, {
+            "name": "Contorno de ojos",
+            "image": "../../img/categories/cosmetica/2533_small.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "20"
+        }, {
+            "name": "Sérum",
+            "image": "../../img/categories/cosmetica/2534_small.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "30"
+        }, {
+            "name": "Limpiadores y exfoliantes",
+            "image": "../../img/categories/cosmetica/2536_small.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "30"
+        }, {
+            "name": "Mascarillas",
+            "col1": "1",
+            "image": "../../img/categories/cosmetica/2537_small.jpg",
+            "subcategory": "true",
+            "number": "30"
+        }, {
+            "name": "Desmaquillantes",
+            "col1": "1",
+            "subcategory": "true",
+            "image": "../../img/categories/cosmetica/2538_small.jpg",
+            "number": "30"
+        }, {
+            "name": "Tónicos y leches limpiadoras",
+            "col1": "1",
+            "image": "../../img/categories/cosmetica/2539_small.jpg",
+            "subcategory": "true",
+            "number": "30"
+        }, {
+            "name": "Espumas y geles de afeitar",
+            "col1": "1",
+            "image": "../../img/categories/cosmetica/2513_small.jpg",
+            "subcategory": "true",
+            "number": "30"
+        }, {
+            "name": "After shave y lociones",
+            "subcategory": "true",
+            "image": "../../img/categories/cosmetica/2514_small.jpg",
+            "number": "30"
+        }]
+    },
+    "CuidadoCorporal": {
+        "title": "Cuidado corporal",
+        "itemId": "cuidado_corporal",
+        "image": "../../img/categories/cosmetica/2547_menu.jpg",
+        "modifier": " bigMenu-sectionItem--submenu",
+        "banner": "cosmetica/2547_header.jpg",
+        "subcategory": "true",
+        "number": "15",
+        "familyModifier": [
+            "secundary",
+            "selectable"
+        ],
+        "subcategories": [{
+            "name": "Jabones y geles",
+            "banner": "cosmetica/2549_header.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "2"
+        }, {
+            "name": "Desodorantes",
+            "banner": "cosmetica/2550_header.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "20"
+        }, {
+            "name": "Cremas hidratantes y exfoliantes",
+            "banner": "cosmetica/2551_header.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "30"
+        }, {
+            "name": "Cremas anticelulíticas y reafirmantes",
+            "banner": "cosmetica/2553_header.jpg",
+            "col1": "1",
+            "subcategory": "true",
+            "number": "30"
+        }]
+    },
+    "Cosmetica": {
+        "title": "Cosmética",
+        "itemId": "cosmetica",
+        "image": "../../img/categories/cosmetica/2555_menu.jpg",
+        "modifier": " bigMenu-sectionItem--submenu",
+        "subcategory": "true",
+        "number": "29",
+        "banner": "cosmetica/2555_header.jpg",
+        "familyModifier": [
+            "secundary",
+            "selectable"
+        ],
+        "subcategories": [{
+            "name": "Maquillajes y correctores",
+            "subcategory": "true",
+            "number": "2",
+            "col1": "1",
+            "banner": "cosmetica/2557_header.jpg"
+        }, {
+            "name": "Polvos compactos",
+            "subcategory": "true",
+            "number": "20",
+            "col1": "1",
+            "banner": "cosmetica/2558_header.jpg"
+        }, {
+            "name": "Coloretes",
+            "subcategory": "true",
+            "number": "30",
+            "col1": "1",
+            "banner": "cosmetica/2560_header.jpg"
+        }, {
+            "name": "Sombras de ojos",
+            "subcategory": "true",
+            "number": "30",
+            "col1": "1",
+            "banner": "cosmetica/2562_header.jpg"
+        }, {
+            "name": "Rímel",
+            "subcategory": "true",
+            "number": "30",
+            "col1": "1",
+            "banner": "cosmetica/2564_header.jpg"
+        }, {
+            "name": "Eyeliners y lápices de ojos",
+            "subcategory": "true",
+            "number": "30",
+            "col1": "1",
+            "banner": "cosmetica/2566_header.jpg"
+        }, {
+            "name": "Pintalabios, gloss y perfiladores",
+            "subcategory": "true",
+            "number": "30",
+            "col1": "1",
+            "banner": "cosmetica/2569_header.jpg"
+        }]
+    },
+    "CosmeticaNatural": {
+        "title": "Cosmética natural",
+        "image": "../../img/categories/cosmetica/2653_menu.jpg",
+        "modifier": " bigMenu-sectionItem--submenu",
+        "itemId": "cosmetica_natural",
+        "subcategory": "true",
+        "banner": "cosmetica/2653_header.jpg",
+        "number": "33",
+        "familyModifier": [
+            "secundary",
+            "last"
+        ]
+    }
+}

@@ -1,0 +1,105 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_3"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Regalos originales",
+    "description": "Bienvendio, en regalos originales encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Hogar y jardín",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/regalos/2663_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Cocina y gourmet",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/regalos/2664_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Ocio y tiempo libre",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/regalos/2665_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Deportes y fitness",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/regalos/2666_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Salud y belleza",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/regalos/2667_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Moda y complementos",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/regalos/2668_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Juguetes y bebés",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/regalos/2669_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Informática y electrónica",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/regalos/2670_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Gadgets",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/regalos/2671_menu.jpg"
+      }
+    ]
+  }
+}

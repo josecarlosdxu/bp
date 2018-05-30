@@ -1,0 +1,50 @@
+$BigBuyCountriesBg: #2A2E30;
+
+@include block(BigBuyCountries) {
+
+
+      background: $BigBuyCountriesBg;
+      //background:   $color-darkGrey-dark;
+      box-shadow:   $um 0 $BigBuyCountriesBg, -$um 0 $BigBuyCountriesBg;
+     // padding: 0 $um $um;
+
+
+    //@include addBreakpoint(xs) {
+
+        padding: 0 0 $um;
+
+      //}
+
+       @include addBreakpoint(md) {
+                background: #2A2E30 url(../img/worldmap.png) no-repeat right bottom;
+
+
+        }
+         @include addBreakpoint(xl) {
+                box-shadow: -1000px 0 0 0 #2a2e30;
+
+        }
+
+        @include element(item) {
+                @extend %type-footerlink;
+                color: #aaa;
+                list-style: none;
+                margin-bottom: $um/4;
+                font-style: italic;
+
+        }
+
+         @include element(col) {
+                padding-top:  2.25rem;
+                @extend %u-xs-3rd;
+                @extend %u-md-6th;
+                @include addBreakpoint(xs) {
+                    padding: 2.25rem 1.5rem;
+
+                }
+
+
+
+        }
+
+}

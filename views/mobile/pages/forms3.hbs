@@ -1,0 +1,40 @@
+---
+title: Creación de cuenta
+layout: mobile/layouts/clean.hbs
+breadcrumbs: Creación de cuenta
+mobile: true
+---
+<div class="modularGrid u-elem-center u-md-pd2  u-xl-65">
+   {{#unless mobile}}
+    <h1 class="title u-mgb">Creación de cuenta</h1> 
+    {{/unless}}	
+	<div class="modularGrid-module box u-pd--half u-md-pd2">
+         <form data-js-create-account="">
+        {{>steps step='1' mobile=this.mobile}}
+        <section data-js-step="content1">
+        <fieldset class="modularGrid u-pdh u-pdt2 noborder">
+                    <div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdb--half">               
+                        <input class="form-input" placeholder="Email" type="email" data-js-email="" name="email" maxlength="64" required >
+                    </div>  
+                    <div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdb--half">                      
+                        <input class="form-input" placeholder="Confirmar email" type="email" data-js-confirm_email="" name="confirmemail" maxlength="64" required>
+                    </div>         
+                    <div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdb--half"> 
+                        {{>passwordField}}
+                    </div>
+                    <div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdb--half">
+                        {{>passwordField confirm='true'}}
+                    </div>
+                </fieldset>
+        </fieldset>
+        {{>accountHeaderTabs}}
+        {{>accountTab1}}
+        {{>accountTab2}}
+        {{>accountTab3}}
+         </section>
+       <section  data-js-step="content2" style="display:none;">
+        {{>accountTab4}}
+       </section>
+       </form>
+    </div>
+</div>

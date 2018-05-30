@@ -1,0 +1,97 @@
+{
+   "top": {
+      "cardListModifiers": [
+         "secundary"
+      ],
+      "cardListTopModifiers": [
+         "topCategory"
+      ],
+      "topPage": "true",
+      "title": "Ropa y calzado",
+      "description": "Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los.",
+      "banner": "../../img/categories/moda/2573_header.jpg",
+
+      "number": "106",
+      "list": [],
+      "tabs": "true",
+       "tabId":"ropa_y_calzado_cat",
+      "tabClosed": "Mostrar otros productos de ropa y calzado",
+      "tabOpened": "Ocultar productos"
+   },
+   "wear": {
+      "cardListModifiers": [
+         "inside"
+      ],
+      "list": [
+         {
+            "cardElemModifiers": [
+               "list"
+            ],
+            "title": " Ropa interior",
+            "number": "5",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         },
+         {
+            "cardElemModifiers": [
+               "list"
+            ],
+            "title": "Pijamas y batamantas",
+            "number": "20",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         },
+         {
+            "cardElemModifiers": [
+               "list",
+               [
+                  "list"
+               ]
+            ],
+            "title": "Otras prendas",
+            "number": "30",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         },
+         {
+            "cardElemModifiers": [
+               "list"
+            ],
+            "title": "Calzado",
+            "number": "50",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         },{
+            "cardElemModifiers": [
+               "list"
+            ],
+            "title": " Ropa interior",
+            "number": "5",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         },
+         {
+            "cardElemModifiers": [
+               "list"
+            ],
+            "title": "Pijamas y batamantas",
+            "number": "20",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         },
+         {
+            "cardElemModifiers": [
+               "list",
+               [
+                  "list"
+               ]
+            ],
+            "title": "Otras prendas",
+            "number": "30",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         },
+         {
+            "cardElemModifiers": [
+               "list"
+            ],
+            "title": "Calzado",
+            "number": "50",
+            "image": "../../img/categories/moda/2573_small.jpg"
+         }
+      ]
+   }
+}

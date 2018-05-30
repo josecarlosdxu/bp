@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+{{> head }}
+<body>
+
+{{> header lockedCart='true' shop='true'}}
+    
+    <nav class="mainNav">
+        <div class="modularGrid modularGrid--boxed">
+            <div class="mainNav-content">
+                {{>mainNavHome}}
+            </div>
+        </div>
+    </nav>
+
+    {{>body}}
+
+    <footer class="footer">   
+        {{> footer landing='true'}}
+    </footer>
+    {{> bottomMessage}}
+    {{> delayedScripts }}
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+%fixedWalletHeader {
+    background: white;
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    @include addBreakpoint(xl) {
+        max-width: 1020px;
+        position: fixed;
+       //position: device-fixed;
+        left: 16.1rem;
+        top: 17.5rem;       
+        z-index: 1;
+        border-right: 1px solid #ccc;
+       
+         @-moz-document url-prefix() {
+            top: 17.6rem;
+           
+         }        
+
+    }
+    @include addBreakpoint(xxl) {
+        z-index: 1;
+        max-width: 1200px;
+    }
+}
+@include block(panelWalletHeader) {
+
+     
+
+    @extend %fixedWalletHeader;
+    
+}
+
+
+
+
+ 
+    

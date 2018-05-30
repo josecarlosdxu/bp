@@ -1,0 +1,80 @@
+@include block(grouped) {	
+
+	article:nth-child(n+2) {
+		//display:none;
+		height: 0;		   
+	    transform: scaleY(0);
+	    opacity: 0;
+	    display:block;
+	}
+	article:nth-last-child(-n+2) {
+		height: 100%;
+        transform: scaleY(1);
+        opacity: 1;
+        display:block;
+	}
+	article:nth-child(2) {
+		height: 100%;
+        transform: scaleY(1);
+        opacity: 1;
+        display:block;
+	}
+
+	@include element(section) {
+		height:10px;
+		position:relative;
+	}
+
+	@include element(more) {
+	    display: block;
+	    cursor: pointer;
+	    border:1px solid #ddd;
+	    color: $color-lightGrey-darker;
+	    background:white;
+	    vertical-align: middle;
+	    padding: 0.5rem;
+	    font-weight: 400;
+	    transition: color 0.2s, background 0.2s;
+	    width: 200px;
+	    font-size: 1rem;
+	    margin: 0px auto;
+	    border-radius: 10px;
+	    position:absolute;
+	    top:-12px;
+	    left:0;
+	    right:0;
+	    bottom:0;
+	    z-index:1;
+	    height:34px;
+	    text-align:center;
+
+	    @include addBreakpoint(md) {
+            top:-10px;
+            padding: 0.7rem;
+        }
+	}	
+
+    /*article {
+    	&:before {
+	    	counter-increment: articles;
+		}
+    }*/
+
+    @include element(checkbox) {
+        display: none;
+        &:checked {
+            ~ article {
+               
+                height: 100%;
+		        transform: scaleY(1);
+		        opacity: 1;
+		        transition: height 0.3s ease-out, transform 0.3s, opacity 0.3s 0.2s;
+            }
+            ~ .grouped-section {
+            	display:none;
+            }
+        }
+    }
+	
+	
+}

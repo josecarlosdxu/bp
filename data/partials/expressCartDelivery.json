@@ -1,0 +1,29 @@
+{
+  "deliverylist":{
+    "header":[
+      {
+        "title":"Transportista",
+        "modifier":""        
+      },
+      {
+        "title":"Tipo",
+        "modifier":"table-item--centered"        
+      },
+      {
+        "title":"Transporte",
+        "modifier":"table-item--centered"        
+      },
+      {
+        "title":"Entrega",
+        "modifier":""        
+      },
+      {
+        "title":"Coste",
+        "modifier":""        
+      }
+      
+    ]
+  }
+}
+
+ 

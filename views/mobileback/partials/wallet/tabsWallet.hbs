@@ -1,0 +1,39 @@
+<nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs">
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Movimientos</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>walletTable1}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Ingresar fondos</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>depositForm}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Retirar fondos</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>removeForm}}
+                </div>
+            </div>
+        </section>
+    </article>
+
+</nav>

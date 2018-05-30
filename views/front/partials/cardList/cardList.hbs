@@ -1,0 +1,50 @@
+
+
+
+{{#if this.tabId}}
+    <input type="checkbox" id="{{tabId}}" class="cardList-inputToggle">
+{{/if}}
+{{#if this.topPage}}
+    <div class="cardList {{#each cardListTopModifiers}} cardList--{{this}} {{/each}}" data-js-cardlist="top">
+        {{#if this.banner}}
+            <img src="{{banner}}" class="cardList-bg">
+        {{/if}}
+        <h1 class="cardList-title cardList-title--huge">{{title}}</h1>
+        <span class="cardList-number">({{number}})</span>
+        {{#if this.more}}<a href="#" class="cardList-more">{{more}}</a>{{/if}}
+        <div class="cardList-description">
+            {{{description}}}
+        </div>
+        {{#if this.tabs}}
+        <label class="cardList-btn" for="{{tabId}}" data-js-cardlist="tab">
+            <span class="cardList-btnOpen">{{tabClosed}}</span>
+            <span class="cardList-btnClose">{{tabOpened}}</span>
+        </label>
+        {{/if}}
+    </div>
+{{else}} 
+    {{#if this.title}}
+         <div class="{{#if ../mobile}}cardList-titleCont{{else}}u-pdt{{/if}}">  
+         {{#if ../mobile}}
+           <a class="cardList-title" href="#">{{{title}}}{{#if this.more}}<span class="cardList-more">{{more}}</span>{{/if}}</a>
+           <button class="cardElem-mobilebtn" data-js="openMobileSubCategory"></button>
+        {{else}}
+         <h3 class="cardList-title u-mgt">{{{title}}}</h3>
+          {{#if this.number}}<span class="cardList-number cardList-number--middle">({{number}})</span>{{/if}}
+          {{#if this.more}}<a href="#" class="cardList-more">{{more}}</a>{{/if}}       
+        {{/if}} 
+    </div>
+    {{/if}}   
+   
+{{/if}}
+
+
+{{#if list}}
+<section class="cardList{{#each cardListModifiers}} cardList--{{this}}{{/each}}"{{#if data}} {{{data}}}{{/if}}>
+    {{#each list}}   
+    <div class="cardList-item{{#each cardListItemModifiers}} cardList-item--{{this}}{{/each}}"{{#if data}} {{{data}}}{{/if}}>
+        {{> cardElem mobile=../mobile mobilebtns=../mobilebtns}}
+    </div>
+    {{/each}}
+</section>
+{{/if}}

@@ -1,0 +1,57 @@
+
+<table class="table table--comparative" data-js-accordion="accordion" data-js-accordion_selected_class="table-tr--selected">
+
+  <tbody class="table-tbody table-tbody--accordion">
+
+
+
+    {{#each list}}
+    <tr data-js-accordion="link" class="table-tr ">
+      <td class="table-item">
+
+        <div class="u-flex--center">{{>svgIcon type='chevronDown'}}<span class="subtitle2 text-normal u-tal u-mgb--0 u-pdl--3rd color-current textselect-none">{{header}}</span></div></td>
+
+      </tr>
+      <tr class="table-tr table-tr--content">
+        <td class="table-item" >
+          <section class="table-accordionContent" data-js-accordion="panel" >
+            <div class="modularGrid u-pdt--half">
+            
+
+                {{#if contentText}}       
+                  <p class="subtitle">{{contentText}}</p>
+                {{/if}}
+
+                {{#if contentlist}}
+                  {{#each contentlist}}
+                    <p class="subtitle"><strong>·{{title}}</strong></p>
+                    <p class=" subtitle u-pd--half">{{text}}</p>
+                  {{/each}}
+                {{/if}}
+
+                {{#if contentImg}}
+                  <img class="u-mgt box u-elem-center img--responsive" src="../../img/{{contentImg}}">
+
+                {{/if}}   
+                {{#if contentImg1}}
+                 <img class="u-mgt box u-elem-center img--responsive" src="../../img/{{contentImg1}}">
+                   {{/if}} 
+            </div>
+
+          </section> 
+
+        </td>
+      </tr>
+
+      {{/each}}
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+                 

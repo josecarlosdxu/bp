@@ -1,0 +1,248 @@
+    $msgBoxHeroInfoColor: $color-accentBlue-default;
+    $msgBoxHeroErrorColor: #F8635D;
+    $msgBoxHeroSuccessColor: $color-green-default;
+
+
+
+
+    @include block(msgBoxHero) {
+        padding: $um;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+        position: relative;
+        z-index: 1000;
+
+        @include element(content) {
+            padding: 1rem 0.5rem 0.5rem 0;
+        }
+        @include element(details) {
+            overflow: hidden;
+            height: auto;
+            display: block;
+        }
+        @include element(label) {
+            margin: 1rem 0;
+            border: 1px solid;
+            padding: 0.7rem 1.5rem;
+            display: inline-block;
+            font-size: 0.85rem;
+            border-radius: 2px;
+        }
+
+        @include element(input) {
+            display: none;
+        }
+
+        @include element(icon) {
+            color: white;
+            padding: 0.2rem;
+            border-radius: 5rem;
+            margin: 1.75rem $um;
+        }
+        @include element(header) {
+            margin-top: 0.5rem;
+        }
+        @include element(title) {
+            font-weight: 700;
+            font-size: 1.3333rem;
+            margin-bottom: 0.25rem;
+        }
+        @include element(subtitle) {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+        @include element(date) {
+            font-size: 0.8333rem;
+            font-weight: 700;
+        }
+        @include element(detailsItem) {
+            margin-bottom: $um;
+            opacity: 0.7;
+            &:last-child{
+               
+                margin-bottom: 0.5rem;
+            }
+            
+        }
+        /*&:after {
+            content: "";
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            z-index: -1;
+        }*/
+    }
+
+    @include extendBlock(msgBoxHero, info) {
+        background-color: mix($msgBoxHeroInfoColor, white, 10%);
+        box-shadow: 8px 0 $msgBoxHeroInfoColor inset;
+        /*&:after {
+            background-color: mix($msgBoxHeroInfoColor, white, 10%);
+            box-shadow: 8px 0 $msgBoxHeroInfoColor inset;
+        }*/
+        @include element(icon) {
+            background-color:  $msgBoxHeroInfoColor;
+        }
+        @include element(header) {
+            color: $msgBoxHeroInfoColor;
+        }
+        @include element(label) {
+            color: $msgBoxHeroInfoColor;
+        }
+    }
+    @include extendBlock(msgBoxHero, error) {
+        
+        background-color: mix( $msgBoxHeroErrorColor, white, 10%);
+        box-shadow: 8px 0  $msgBoxHeroErrorColor inset;
+        /*&:after {
+            background-color: mix( $msgBoxHeroErrorColor, white, 10%);
+            box-shadow: 8px 0  $msgBoxHeroErrorColor inset;
+        }*/
+        @include element(icon) {
+            background-color:  $msgBoxHeroErrorColor;
+        }
+        @include element(header) {
+            color:  $msgBoxHeroErrorColor;
+        }
+        @include element(label) {
+            color:  $msgBoxHeroErrorColor
+        }
+    }
+
+     @include extendBlock(msgBoxHero, success) {
+        
+        background-color: mix( $msgBoxHeroSuccessColor, white, 10%);
+        box-shadow: 8px 0  $msgBoxHeroSuccessColor inset;
+        /*&:after {
+            background-color: mix( $msgBoxHeroSuccessColor, white, 10%);
+            box-shadow: 8px 0  $msgBoxHeroSuccessColor inset;
+        }*/
+        @include element(icon) {
+            background-color:  $msgBoxHeroSuccessColor;
+        }
+        @include element(header) {
+            color:  $msgBoxHeroSuccessColor;
+        }
+        @include element(label) {
+            color:  $msgBoxHeroSuccessColor
+        }
+    }
+
+
+
+
+    .msgBoxHero-input {
+        ~.msgBoxHero {
+            /*&:before {
+                content: "";
+                display: block;
+                background-color: transparentize(black, 0.8);
+                position: fixed;
+                left: 16rem;
+                top: 8.3rem;
+                height: calc(100vh - 8.3rem);
+                width: calc(100vw - 16rem);
+                z-index: -1;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.2s ease-out;
+            }*/
+        }
+
+        ~.msgBoxHero .msgBoxHero-details {
+            max-height: 0;
+            margin-top: 0;
+           
+            transition: max-height 0.5s ease-out, margin 0.1s 0.2s;
+        }
+
+        ~.msgBoxHero .msgBoxHero-label {
+            &:before {
+                content: attr(data-open);
+            }
+        }
+        &:checked {
+
+           /* ~.msgBoxHero {
+                &:before {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }*/
+
+
+            ~.msgBoxHero .msgBoxHero-details {
+                margin-top: $um;
+                max-height: 20rem;
+               
+                transition: max-height 0.5s ease-in, margin 0.1s 0s;
+            }
+
+            ~.msgBoxHero .msgBoxHero-label {
+                &:before {
+                    content: attr(data-close);
+                }
+            }
+        }
+    }
+    /*@include extendBlock(msgBox, error) {
+    @extend %animated;
+    @extend %shake;
+    color: #fff;
+    background: #FF6863 url(../img/icons/notify_alert.svg) no-repeat 0.5rem center;
+    background-size: 14px;
+    font-weight: 400;
+    padding-left: 2rem;
+    border-left: 4px solid #c80700;
+    @include element(link) {
+        @extend %msgBox-link;
+        //color: #fff;
+    }
+}
+
+@include extendBlock(msgBox, success) {
+    @extend %animated;
+    @extend %shake;
+    color: #275900;
+    background: #9dd570 url(../img/icons/notify_success.svg) no-repeat 0.5rem center;
+    background-size: 14px;
+    padding-left: 2rem;
+    font-weight: 400;
+    border-left: 4px solid $color-green-dark;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+
+@include extendBlock(msgBox, warning) {
+    @extend %animated;
+    @extend %shake;
+    color: $color-orange-darker;
+    background: $color-orange-light  url(../img/icons/notify_warning.svg) no-repeat 0.5rem center;
+    background-size: 14px;
+    font-weight: 400;
+    padding-left: 2rem;
+    border-left: 4px solid $color-orange-darker;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+
+@include extendBlock(msgBox, info) {
+   // @extend %animated;
+   // @extend %shake;
+    color: $color-accentBlue-dark;
+    background-color: mix($color-accentBlue-default,white,10%);    
+    font-weight: 400;
+    padding: $um $um / 2;
+    border-left: 6px solid $color-accentBlue-default;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+*/

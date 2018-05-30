@@ -1,0 +1,59 @@
+@include block(bottomMessage) {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: block;
+	opacity: 1;
+	width: 100%;
+	padding: $um * 1.2  0;
+	outline: none;
+	background: $color-bottomMessage-container;
+	box-shadow: 0 0 3px $color-shadow;
+	z-index: 5;
+	pointer-events: auto;
+@include element(text) {
+	color: $color-bottomMessage-text;
+	@extend %type-step;
+}
+}
+
+
+.hide-cookies{
+	opacity: 0;
+	transition: opacity 0.5s linear;
+	pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

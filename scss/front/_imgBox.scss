@@ -1,0 +1,109 @@
+@include block(imgBox) {
+    box-shadow: 1px 0 0 #e5e5e5;
+    @include modifier(productSheet) {
+      
+        //overflow: hidden;
+        display: block;
+        position: relative;
+        //width: 25%;        
+        width: 250px;
+        @include addBreakpoint(xl) {
+
+             width: 300px;
+            
+            
+        }
+            
+        /*display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;*/
+       
+
+    }
+    @include element(figure) {
+        display: block;
+       
+        //display: table;
+        //height: 329px;
+        //position: absolute;
+        //top: 2px;
+    }
+    @include element(imgCont) {
+        //display: table-cell;
+        //vertical-align: middle;
+        display: block;
+       
+    }
+    @include element(img) {
+        @extend %img--responsive;
+    }
+    @include element(thumblist) {
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:  center; 
+        height: calc(100% - 250px);       
+        position: relative;
+        @include addBreakpoint(xl) {
+            height: calc(100% - 300px); 
+            
+        }
+       
+        /*font-size: 0;
+        padding: 1px 0;
+        flex-grow:1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:  center;
+        justify-content:  center;
+        display: none;
+        
+        
+        position: relative;
+        background: none;*/
+        
+      
+    }
+    @include element(thumblistcont) {       
+           
+        overflow: hidden;
+        width: calc(100% - 3rem);
+        margin:0 auto;
+        
+        height: 100%;
+        position: relative;
+        font-size: 0;
+        display: inline-flex;
+        align-items: center;
+        
+        
+       
+        
+    }
+    @include element(thumb) {
+        display: inline-block;
+        vertical-align: top;
+        padding: 1px;
+        background-color: #fff;
+        min-width: 64px;
+        /*@extend %u-xs-20;
+        @extend %u-md-25;
+        @extend %u-lg-25;
+        @extend %u-xl-25;*/
+        @include addBreakpoint(xs) {
+            max-width: 64px;
+        }
+        @include addBreakpoint(xl) {
+            max-width: 74px;
+        }
+        //width: 78px;
+        @include element(img) {
+            @extend %img--responsive;
+            border: 1px solid opacify($color-shadow, 0.05);
+        }
+        &:nth-child(4n+4) {
+            border-right: none;
+        }
+    }
+}

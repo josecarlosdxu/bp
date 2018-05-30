@@ -1,0 +1,46 @@
+<div class="modularGrid-module u-md-60">
+    <label class="form-label">Empresa</label>
+    <input type="text" name="company" class="form-input">
+    <div class="modularGrid">
+        <div class="modularGrid-module u-md-50">
+            <label class="form-label">Nombre</label>
+            <input type="text" name="name" class="form-input">
+        </div>
+        <div class="modularGrid-module u-md-50 u-md-pdl">
+            <label class="form-label">Apellidos</label>
+            <input type="text" name="surnames" class="form-input">
+        </div>
+    </div>
+    <label class="form-label">Dirección</label>
+    <input type="text" name="address" class="form-input">
+    <div class="modularGrid">
+        <div class="modularGrid-module u-md-60">
+            <label class="form-label">País</label>
+            <select name="country" class="form-select" placeholder="Elija un país">
+                <option value="">Elija un país</option>
+                {{>countryOptions}}
+            </select>
+        </div>
+        <div class="modularGrid-module u-md-40 u-md-pdl">
+            <label class="form-label">Estado / Provincia</label>
+            <input type="text"  name="postcode"  class="form-input">
+        </div>
+        <div class="modularGrid-module u-md-60">
+            <label class="form-label">País</label>
+            <input type="text" maxlength="100" name="state" class="form-input">
+        </div>
+        <div class="modularGrid-module u-md-40 u-md-pdl">
+            <label class="form-label">Población</label>
+            <input type="text"  name="city"  class="form-input">
+        </div>
+        {{>captcha}}
+        <div class="modularGrid">
+            <div class="modularGrid-module u-xs-50 u-sm-30 u-pdt--half">
+                <input type="submit" value="Enviar" class="button button--primary button--full">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modularGrid-module u-md-40  u-lg-pdl u-flr u-mgt--half  u-xs-hide u-md-show">
+    <img class="img img--responsive" src="../../img/elevador.svg">
+</div>

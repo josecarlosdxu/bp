@@ -1,0 +1,119 @@
+@include block(homeBannerList) {
+    -js-display: flex; display:flex;
+    flex-wrap: wrap;
+    padding: 0 1px;
+    background: $color-shadow;
+    justify-content: space-between;
+    @include element(item) {
+        -js-display: flex; display:flex;
+        width: 100%;
+        color: transparentize(black, 0.3);
+        height: 16rem;
+        position: relative;
+        margin-bottom: 1px;
+        height: 15rem;
+        @include addBreakpoint(sm) {
+            height: 16rem;
+        }
+        @include addBreakpoint(md) {
+            height: 17rem;
+        }
+        @include addBreakpoint(lg) {
+            height: 20.2rem;
+        }
+    }
+    @include element(title) {
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1rem;
+        color: #ffffff;
+        + .cardElem-more {
+            display: none;
+        }
+        @include addBreakpoint(lg) {
+            background: none;
+            padding: 0;
+            color: rgba(0, 0, 0, 0.7);
+            + .cardElem-more {
+                display: block;
+            }
+        }
+    }
+}
+
+@include extendElement(homeBannerList, item, col2) {
+    .homeBanner-img {
+        right: 0;
+    }
+    height: 10rem;
+    @include addBreakpoint(xs) {
+        height: 15.5rem;
+    }
+    @include addBreakpoint(sm) {
+        height: 25rem;
+    }
+    @include addBreakpoint(md) {
+        height: 17rem;
+        width: calc(50% - 0.5px);
+    }
+    @include addBreakpoint(lg) {
+        height: 20.2rem;
+    }
+}
+
+@include extendBlock(homeBannerList, stretch) {
+    @include element(item) {
+        //height: 10rem;
+        .homeBanner-img {
+            //right: 50%;
+        }
+        .homeBannerList-title {
+            //width: 70%;
+        }
+        @include addBreakpoint(xs) {
+            .homeBanner-img {
+                //right: 30%;
+            }
+        }
+        @include addBreakpoint(sm) {
+            .homeBannerList-title {
+                width: 100%;
+            }
+            height: 11rem;
+            .homeBanner-img {
+                //right: 10%;
+            }
+        }
+        @include addBreakpoint(md) {
+            height: 14rem;
+            .homeBanner-img {
+                right: 0;
+            }
+        }
+        @include addBreakpoint(lg) {
+            height: 17rem;
+        }
+    }
+}
+
+@include extendElement(homeBannerList, item, col3) {
+    .homeBanner-figure .homeBanner-img {
+        right: 0;
+    }
+    height: 12rem !important;
+    @include addBreakpoint(xs) {
+        height: 19rem !important;
+    }
+    @include addBreakpoint(sm) {
+        height: 15.5rem !important;
+        width: calc(50% - 0.5px);
+    }
+    @include addBreakpoint(md) {
+        height: 14rem !important;
+        width: calc((100% / 3) - 1px / 3);
+    }
+    @include addBreakpoint(lg) {
+        height: 17rem !important;
+    }
+}

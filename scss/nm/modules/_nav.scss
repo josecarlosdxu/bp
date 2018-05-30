@@ -1,0 +1,142 @@
+@include block(nav) {
+    @include element(item) {
+        display: block;
+        @include modifier(large) {
+            outline: 1px solid red;
+        }
+    }
+}
+
+@include extendBlock(nav, stripe) {
+    @include element(item) {
+        display: inline-block;
+    }
+}
+
+//Use when inside a nav--stripe to force block on nav-items
+@include extendBlock(nav, dropdown) {
+    @include element(item) {
+        display: block;
+    }
+}
+
+@include extendBlock(nav, bigger) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; //align-items: center;
+    padding: $um $um * 2;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    @include addBreakpoint(sm) {
+        padding: $um $um / 2;
+    }
+    @include addBreakpoint(lg) {
+        flex-wrap: nowrap;
+        padding: $um * 3 $um;
+        justify-content: center;
+    }
+    @include element(item) {
+        font-family: $type-headingscms;
+        text-transform: uppercase;
+        display: block;
+        padding: $um / 2 0;
+        width: 2.5em;
+        margin: $um / 6;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+        opacity: 0.6;
+        border: 1px solid white;
+        transition: opacity 0.2s ease-out, background 0.2s ease-out, border-color 0.2s ease-out;
+        &:hover,
+        &:focus {
+            opacity: 1;
+            border-color: $color-brandYellow-default;
+        }
+    }
+    .nav-item[data-state="selected"] {
+        opacity: 1;
+        background: $color-lightGrey-light;
+        border-color: white;
+    }
+    .nav-item[disabled] {
+        opacity: 0.2;
+        pointer-events: none;
+        background: transparent; //background: $color-lightGrey-light;
+        //border-color: white;
+    }
+}
+
+@include extendBlock(nav, vsticky) {
+    @include element(item) {
+        color: inherit;
+        font-size: 1.25rem;
+        padding: $um;
+        opacity: 0.6;
+        position: relative; //box-shadow: 8px 0 transparentize($color-accentBlue-default,1) inset;
+        transition: opacity 0.2s;
+        overflow-wrap: break-word;
+        width: 28rem;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 8px;
+            background-color: $color-accentBlue-default;
+            opacity: 0; //transition: background-color 0.2s;
+            transition: opacity 0.3s;
+        }
+        &:hover {
+            opacity: 1;
+            /*&:before{
+                 background-color: $color-shadow;
+            }*/
+        }
+        &:active {
+            &:before {
+                //background-color: $color-accentBlue-default;
+                opacity: 1;
+            }
+        }
+    }
+    .nav-item[data-state="selected"] {
+        opacity: 1;
+        &:before {
+            //background-color: $color-accentBlue-default;
+            opacity: 1;
+        }
+    }
+}
+
+
+
+[data-vslider="nav"] .nav-item {
+
+    transition: background-color 0.2s;
+    cursor: pointer;
+    &:hover {
+
+
+        background-color: transparentize( $color-accentBlue-default, 0.95);
+
+        &:before{
+            opacity: 1;
+        }
+    }
+}
+
+
+[data-vslider="cont"] [data-vslider="elem"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+[data-vslider="cont"] [data-vslider="elem"][data-state="selected"] {
+    opacity: 1;
+    transition: opacity 0.4s ease-in 0.2s;
+}

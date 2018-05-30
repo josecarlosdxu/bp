@@ -1,0 +1,317 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_3"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Perfumería y cosmética",
+    "description": "Bienvenido, en moda y complementos encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+          "col_2"
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Perfumes",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/cosmetica/2508_double.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Cosmética",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/cosmetica/2555_big.jpg"
+      }
+    ]
+  },
+  "top2": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "list": [
+
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Cuidado facial",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/cosmetica/2527_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Cuidado corporal",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/cosmetica/2547_big.jpg"
+      },
+
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Cosmética natural",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/cosmetica/2653_big.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Lotes de cosmética",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/cosmetica/2659_big.jpg"
+      }
+    ]
+  },
+  "perfumes": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Perfumes",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Perfumes de hombre",
+        "number": "5",
+        "image": "../../img/categories/cosmetica/2509_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Perfumes de mujer",
+        "number": "20",
+        "image": "../../img/categories/cosmetica/2510_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Perfumes unisex",
+        "number": "30",
+        "image": "../../img/categories/cosmetica/2511_small.jpg"
+      }
+    ]
+  },
+  "cfacial": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Cuidado facial",
+    "number": "136",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cremas antiarrugas e hidratantes",
+        "number": "50",
+        "image": "../../img/categories/cosmetica/2531_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Contorno de ojos",
+        "number": "26",
+        "image": "../../img/categories/cosmetica/2533_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Serum",
+        "number": "60",
+        "image": "../../img/categories/cosmetica/2534_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Limpiadores exfoliantes",
+        "number": "60",
+        "image": "../../img/categories/cosmetica/2536_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Mascarillas",
+        "number": "60",
+        "image": "../../img/categories/cosmetica/2537_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Desmaquillantes",
+        "number": "60",
+        "image": "../../img/categories/cosmetica/2538_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Tonicos y leches limpiadoras",
+        "number": "60",
+        "image": "../../img/categories/cosmetica/2539_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Espumas y geles de afeitar",
+        "number": "60",
+        "image": "../../img/categories/cosmetica/2513_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "After shave y lociones",
+        "number": "60",
+        "image": "../../img/categories/cosmetica/2514_small.jpg"
+      }
+    ]
+  },
+  "ccorporal": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Cuidado corporal",
+    "number": "59",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Geles",
+        "number": "11",
+        "image": "../../img/categories/cosmetica/2549_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Desodorantes",
+        "number": "4",
+        "image": "../../img/categories/cosmetica/2550_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cremas hidratantes y exfoliantes",
+        "number": "28",
+        "image": "../../img/categories/cosmetica/2551_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cremas anticelulíticas y reafirmantes",
+        "number": "28",
+        "image": "../../img/categories/cosmetica/2553_small.jpg"
+      }
+    ]
+  },
+  "cosmetica": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Cosmética",
+    "number": "59",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Maquillajes y correctores",
+        "number": "11",
+        "image": "../../img/categories/cosmetica/2557_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Polvos compactos",
+        "number": "4",
+        "image": "../../img/categories/cosmetica/2558_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Coloretes",
+        "number": "4",
+        "image": "../../img/categories/cosmetica/2560_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Sombras de ojos",
+        "number": "4",
+        "image": "../../img/categories/cosmetica/2562_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Rimel",
+        "number": "4",
+        "image": "../../img/categories/cosmetica/2564_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Eyeliners y lápices de ojos",
+        "number": "4",
+        "image": "../../img/categories/cosmetica/2566_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Pintalabios, gloss y perfiladores",
+        "number": "4",
+        "image": "../../img/categories/cosmetica/2569_small.jpg"
+      }
+    ]
+  }
+}

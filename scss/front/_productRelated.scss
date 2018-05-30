@@ -1,0 +1,8 @@
+@include block(productRelated) {
+    margin-bottom: 2rem;
+
+    @include element(title) {
+        @extend %type-section-title;
+    }
+}
+

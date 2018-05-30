@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head }}
+
+
+
+
+<body>
+  {{> header new='true'}}
+<nav class="mainNav">
+   <div class="modularGrid modularGrid--boxed">
+    <div class="mainNav-content mainNav-content--newmenu">
+        {{> mainNavHomeNew newMenu}}
+    </div>
+</div>
+</nav>
+<section class="content content--slider">
+    <div class="modularGrid">
+        {{> sliderBanner2 class='featuredSlider--short'}} 
+    </div>
+</section>
+{{>body}}
+
+<footer class="footer">
+   {{> footer landing='true'}}
+</footer>
+{{> bottomMessage}}
+
+{{#if obsolete}}
+
+
+
+ {{>oldnav}}
+{{/if}}
+
+
+{{> delayedScripts home='true'}}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

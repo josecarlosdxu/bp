@@ -1,0 +1,54 @@
+@mixin visualize() {
+    @each $bkName,
+    $bkSize in $breakpoints {
+        @include addMedia($bkName, $bkSize) {
+            $hide: $bkName + "-hide";
+            $show: $bkName + "-show";
+            $block: $bkName + "-block";
+            $cell: $bkName + "-cell";
+            $inlineBlock: $bkName + "-inlineBlock";
+            @include utility(#{$hide}) {
+                display: none;
+            }
+            @include utility(#{$show}) {
+                display: inherit;
+            }
+            @include utility(#{$show}) {
+                display: inherit;
+            }
+            @include utility(#{$block}) {
+                display: block;
+            }
+             @include utility(#{$cell}) {
+                display: table-cell;
+            }
+             @include utility(#{$inlineBlock}) {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@include visualize();
+
+
+
+.toShow{
+
+    -webkit-animation: show 0.3s ease-in-out both;
+    animation: show 0.3s ease-in-out both;
+
+}
+
+
+.toHide{
+     -webkit-animation: hide 0.3s ease-in-out both;
+     animation: hide 0.3s ease-in-out both;
+
+}
+
+.toHideDelay{
+     -webkit-animation: hide 0.3s ease-in-out 0.5s both;
+     animation: hide 0.3s ease-in-out 0.5s both;
+
+}

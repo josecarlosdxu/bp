@@ -1,0 +1,209 @@
+<div class="productSheet">
+    <div class="productSheet-ribbon"> Pequeñas rozaduras</div>
+    <div class="modularGrid">
+        <div class="modularGrid-module u-xs-100 u-sm-45 u-md-40 u-lg-25">
+            {{> imgBox elem='data-js=ee id=33'}}
+        </div>
+        <div class="modularGrid-module u-xs-65">
+            <section class="productSheet-details">
+                <header class="productSheet-header">
+                    <h3 class="productSheet-title">
+
+                        <svg viewBox="0 0 100 100" class="icon icon-plus-circle" style="display:none;">
+                            <use xlink:href="#icon-plus-circle"></use>
+                        </svg>
+
+                        Lote de Jamón + Embutidos + Cuchillos y soporte jamonero</h3>
+                        <nav class="productSheet-minisocial">
+                            {{> minisocial}}
+                        </nav>
+                    </header>
+                    <div class="productSheet-advantages">
+                        <div class="modularGrid">
+                            <div class="modularGrid-module u-xs-30">
+                                <i class="icon productSheet-advantages-icon fa-clock-o"></i>
+                                <span class="productSheet-advantages-description">Envío en<br/>24/48 h.</span>
+                            </div>
+                            <div class="modularGrid-module u-xs-30">
+                                <i class="icon productSheet-advantages-icon fa-certificate"></i>
+                                <span class="productSheet-advantages-description">2 años<br/> de garantía</span>
+                            </div>
+                            <div class="modularGrid-module u-xs-40">
+                                <i class="icon productSheet-advantages-icon fa-globe"></i>
+                                <span class="productSheet-advantages-description">Seguimiento de Envío<br/>Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-xs-40">
+                            <div class="productSheet-discountTable u-brb">
+                                {{> discountTable}}
+                            </div>
+                            <div class="productSheet-discountTable u-brb">
+                                {{> discountTable2}}
+                            </div>
+                            <div class="productSheet-discountTable">
+                                {{> discountTable3}}
+                            </div>
+                        </div>
+                        <div class="modularGrid-module u-xs-60">
+                            <div class="productSheet-options">
+                                <form action="" class="form form--inline">
+                                    <fieldset class="form-fieldset form-fieldset--borderless">
+                                        <div class="form-fieldset-title">Options & Prices</div>
+
+                                        <div class="modularGrid">
+                                            <div class="modularGrid-module u-xs-30">
+                                                <label 	for="" class="form-label form-label--inline"> Peso	</label>
+                                            </div>
+                                            <div class="modularGrid-module u-xs-70">
+                                                <select name="peso" class="form-select">
+                                                    <option value=""> 8 / 8.5 Kg. </option>
+                                                    <option value=""> 9 / 9.5 Kg. </option>
+                                                </select>
+                                            </div>
+                                            <div class="modularGrid-module u-xs-30">
+                                                <label 	for="" class="form-label form-label--inline"> Embutidos	</label>
+                                            </div>
+                                            <div class="modularGrid-module u-xs-70">
+                                                <select name="peso" class="form-select">
+                                                    <option value=""> Con embutidos </option>
+                                                    <option value=""> Sin embutidos </option>
+                                                </select>
+                                            </div>
+                                            <div class="modularGrid-module u-xs-30">
+                                                <label for="" class="form-label form-label--inline">Stock</label>
+                                            </div>
+                                            <div class="modularGrid-module u-xs-70">
+                                                <p class="form-text"> <i class="icon icon-stock icon-stock--success"></i> 2500 uds. Envío inmediato</p>
+                                            </div>
+                                        </div>
+
+                                        <aside class="productSheet-discountBadge">
+                                            <div class="modularGrid">
+                                                <div class="modularGrid-module u-xs-30">
+                                                    <label class="form-label">Precio</label>
+                                                </div>
+                                                <div class="modularGrid-module u-xs-50">
+                                                    <div class="productSheet-pvp2">En tienda<span class="productSheet-pvp2Val">{{product.pvp02}} €</span></div>
+                                                    <div class="productSheet-pvp1">RRP <strong class="productSheet-pvp1Val">10 €</strong></div>
+                                                </div>
+                                                <div class="modularGrid-module u-xs-20">
+                                                    <div class="productSheet-pvp3">{{product.pvp03}}%</div>
+                                                </div>
+                                            </div>
+
+                                        </aside>
+
+                                        <div class="form-info productSheet-info u-flr" data-js-tooltip="tooltip1">
+                                            <b class="icon form-info-icon fa-info-circle"></b> Shipping and 10% TAX not included
+                                        </div>
+                                        <div class="modularGrid">
+
+                                            <div class="modularGrid-module">
+                                                <div class="msgBox msgBox--success">Formulario enviado</div>
+                                                <div class="msgBox msgBox--error">
+                                                    No hay stock.
+                                                    <a class="msgBox-link">Avísame cuando haya stock</a>
+                                                    <div class="modularGrid">
+                                                        <div class="msgBox-content">
+                                                            <div class="modularGrid-module u-xs-70">
+                                                                <input class="form-input" type="text" placeholder="Introduzca su email">
+                                                            </div>
+                                                            <div class="modularGrid-module u-xs-30 u-pdl--half">
+                                                                <button class="button">Enviar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="modularGrid-module u-xs-30">
+<!--<div class="unitControl u-fl-right u-mgr">
+<input type="number" value="5" class="form-input unitControl-input">
+<button class="button button--icon unitControl-button unitControl-button--plus"><i class="icon fa fa-plus-square"></i></button>
+<button class="button button--icon unitControl-button unitControl-button--minus"><i class="icon fa fa-minus-square"></i></button>
+</div>
+-->
+{{> unitControl }}
+</div>
+
+<div class="modularGrid-module  u-xs-70 u-pdl--half">
+    <button class="button button--primary button--full">Añadir al carrito</button>
+    <div class="msgBox msgBox--warning">Esperando respuesta</div>
+    <div class="msgBox msgBox--success">Se ha añadido al carrito</div>
+</div>
+</div>
+
+<div class="modularGrid-module u-pdt--half">
+    <fieldset class="form-fieldset form-fieldset--addendum">
+        <div class="form-action">
+            <i class="form-action-icon fa fa-chevron-up"></i>
+            <span class="form-action-msg">Pedir cantidades superiores al stock disponible</span>
+        </div>
+        <div class="form-fieldset-content" data-js-stock="show">
+            <div class="form-description">Estimar plazo de entrega para cantidades superiores al stock</div>
+            <div class="modularGrid">
+                <div class="modularGrid-module u-xs-30">
+                    <label for="" class="form-label form-label--inline">Cantidad</label>
+                </div>
+                <div class="modularGrid-module u-xs-70">
+                    <input type="text" class="form-input" placeholder="Mínimo 2501 uds.">
+                </div>
+                <div class="modularGrid-module u-xs-30">
+                    <label for="" class="form-label form-label--inline">Comentarios</label>
+                </div>
+                <div class="modularGrid-module u-xs-70">
+                    <textarea type="text" class="form-textarea" placeholder="Díganos cual es su necesidad y le responderemos con brevedad"></textarea>
+                    <button class="button button--full">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+</div>
+
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</section>
+<div class="productSheet-dimensions">
+    <div class="productSheet-dimensionItem">
+        <i class="productSheet-dimensionItem-icon icon icon-weight"></i>
+        <span class="productSheet-dimensionDt">weight (kg)</span>
+        <span class="productSheet-dimensionDd">4.400</span>
+    </div>
+    <div class="productSheet-dimensionItem">
+        <i class="productSheet-dimensionItem-icon icon icon-box"></i>
+        <span class="productSheet-dimensionDt">box (pcs)</span>
+        <span class="productSheet-dimensionDd">40</span>
+    </div>
+    <div class="productSheet-dimensionItem">
+        <i class="productSheet-dimensionItem-icon icon icon-ft20"></i>
+        <span class="productSheet-dimensionDt">20 ft (pcs)</span>
+        <span class="productSheet-dimensionDd">-</span>
+    </div>
+
+    <div class="productSheet-dimensionItem">
+        <i class="productSheet-dimensionItem-icon icon icon-dimensions"></i>
+        <span class="productSheet-dimensionDt">dimensions (cms)</span>
+        <span class="productSheet-dimensionDd">121.50 x 80.2 x 22</span>
+    </div>
+
+    <div class="productSheet-dimensionItem">
+        <i class="productSheet-dimensionItem-icon icon icon-pallet"></i>
+        <span class="productSheet-dimensionDt">pallet (pcs)</span>
+        <span class="productSheet-dimensionDd">1</span>
+    </div>
+    <div class="productSheet-dimensionItem">
+        <i class="productSheet-dimensionItem-icon icon icon-ft40"></i>
+        <span class="productSheet-dimensionDt">40 ft (pcs)</span>
+        <span class="productSheet-dimensionDd">-</span>
+    </div>
+</div>
+</div>
+</div>
+</div>
+

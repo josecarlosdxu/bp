@@ -1,0 +1,106 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_5"
+    ],
+    "topPage": "true",
+    "title": "Moda y complementos",
+    "description": "Bienvendio, en moda y complementos encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+    "banner": "../../img/categories/banner_ropa.jpg",
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers": ["col_2"],
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Ropa y calzado",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/wear.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Complementos",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/accesories.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/jewel.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/jewel.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Complementos",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/accesories.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/jewel.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/jewel.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/jewel.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/jewel.jpg"
+      },
+       {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/jewel.jpg"
+      }
+    ]
+  }
+}

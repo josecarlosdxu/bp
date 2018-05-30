@@ -1,0 +1,78 @@
+@include block(bubble) {
+	position: relative;
+
+	display: inline-block;
+
+	height: 32px;
+	min-width: 32px;
+	padding: 0 $um / 3;
+
+	cursor: default;
+	vertical-align: top;
+
+	border: 1px solid $color-bubble-border;
+	border-radius: 3px;
+	font-family: $type-ui;
+	font-weight: 700;
+	font-size: $um;
+	text-align: center;
+	line-height: 1.6;
+
+
+
+	@include element(left) {
+		margin-left: $um / 2;
+		&:before , &:after{
+			top: 7px;
+
+			border: 6px solid transparent;
+			border-top-width: 7px;
+			border-bottom-width: 7px;
+		}
+		&:before{
+			left: -12px;
+			border-right-color: $color-bubble-left-before-border;
+		}
+		&:after {
+			left: -10px;
+
+			border-right-color: $color-bubble-left-after-border;
+		}
+	}
+
+	&:before,  &:after{
+		position: absolute;
+
+		display: block;
+
+		width: 0;
+		height: 0;
+
+		content: "";
+	}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

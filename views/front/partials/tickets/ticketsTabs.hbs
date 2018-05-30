@@ -1,0 +1,18 @@
+<nav class="tabs tabs--tickets">
+<a href="#tabpanel1" data-js-tab_idbutton="1" data-js-tab="button" class="tabs-item tabs-item--selected"> 
+        {{>svgIcon type='support_person' class='tabs-image'}}
+        <span class="tabs-itemTitle ">Atención al cliente</span>
+    </a>
+    <a href="#tabpanel2" data-js-tab_idbutton="2" data-js-tab="button" class="tabs-item {{#if deactivated}} tabs-item--disabled {{/if}}">       
+         {{>svgIcon type='support' class='tabs-image'}}
+        <span class="tabs-itemTitle">Postventa</span>
+    </a>
+    <a href="#tabpanel3" data-js-tab_idbutton="3" data-js-tab="button" class="tabs-item {{#if deactivated}} tabs-item--disabled{{/if}}">        
+         {{>svgIcon type='soporte' class='tabs-image'}}
+        <span class="tabs-itemTitle ">Soporte técnico</span>
+    </a>
+    <a href="#tabpanel4" data-js-tab_idbutton="4" data-js-tab="button" class="tabs-item {{#if deactivated}} tabs-item--disabled{{/if}}">       
+        {{>svgIcon type='administracion' class='tabs-image'}}
+        <span class="tabs-itemTitle ">Administración</span>
+    </a>
+</nav>

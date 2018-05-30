@@ -1,0 +1,51 @@
+
+<div class="modularGrid-module u-pdb--third {{#if border}} u-pdt--half  u-brt-d{{/if}}">
+
+
+
+<div class="modularGrid">
+  <div class="modularGrid-module u-xs-60">
+   <label class="form-label form-label--inline">{{#if order}}{{order}}.  {{/if}}{{label}}{{#if optional}} <span data-js-tooltip="{{optional}}" class="form-info"> <i class="icon fa fa-info-circle"></i></span>{{/if}}</label>
+  </div>
+  {{!-- <div class="modularGrid-module u-xs-45 u-tar">
+    {{#times1 3}}
+    <button class="uploadFile">Archivo nº{{this}} <svg class="uploadFile-icon" role="img"> <use xlink:href="../../img/icons/svg-defs.svg#icon-times"></use></svg></button>
+    {{/times1}}
+  </div> --}}
+
+    <div class="fileInput-container u-xs-40">
+    {{#if added}}
+     <button title="Eliminar &#10140; nombre_largo_del_archivo_1.jpg" class="uploadFile">Archivo 1<svg class="uploadFile-icon" role="img"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons/svg-defs.svg#icon-times"></use></svg></button>
+     {{>fileInput}}
+     {{!-- {{>fileInput disabled='true'}} --}}
+
+
+  {{else}}
+
+  {{#if added1}}
+
+  {{#times1 3}}
+  <button class="uploadFile" title="Eliminar &#10140; nombre_largo_del_archivo_{{this}}.jpg ">Archivo {{this}}<svg class="uploadFile-icon" role="img"> <use xlink:href="../../img/icons/svg-defs.svg#icon-times"></use></svg></button>
+  {{/times1}}
+
+  {{else}}
+
+  {{>fileInput}}
+    {{!--  {{>fileInput disabled='true'}}
+    {{>fileInput disabled='true'}} --}}
+
+
+    {{/if}}
+   {{/if}}
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+</div>

@@ -1,0 +1,36 @@
+{{!-- {{#if scrollable}}
+<div class="filter-scrollpanel">
+{{/if}} --}}
+<div class="modularGrid">
+{{#each options }}
+{{#if ../mobileclass}}
+<div class="modularGrid-module {{../../mobileclass}}">
+{{else}}
+<div class="modularGrid-module u-sm-50">
+{{/if}}
+
+<label class="form-label form-label--checkgroup">
+<input type="checkbox" class="form-checkbox" >
+{{name}}
+<small class="filter-numbers">({{number}})</small>
+</label>
+</div>
+{{/each}}
+</div>
+{{!-- {{#if scrollable}}
+</div>
+{{/if}} --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

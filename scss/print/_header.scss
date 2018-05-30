@@ -1,0 +1,82 @@
+@include block(header) {
+    min-height: 7 * $um;
+
+    background-color: #fff;
+    color: #000;
+    border-bottom: 10px solid #ededed;
+    padding: $um $um 0;
+    margin-bottom: $um / 2;
+    position: relative;
+
+
+
+
+
+
+
+
+    @include element(logo) {
+        margin: 0 ;
+        margin-top: $um / 2;
+        @include element(img) {
+            max-width: 100px;
+
+        }
+
+    }
+
+    @include element(title) {
+
+        display: block;
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1;
+        margin-left: 1.15rem;
+        position: relative;
+        margin-top: $um;
+
+
+    }
+
+    @include element(slogan) {
+
+        @extend %type-slogan-light;
+        color: #000;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        position: relative;
+        margin-top: - $um / 2;
+    }
+
+    @include element(contactInfo) {
+        line-height: $um * 1.5 ;
+        text-align: right;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+
+<a class="homeBannerList-item {{#each bannerModifiers}} homeBannerList-item--{{this}}{{/each}}" title="{{tooltip}}"  {{#if href}}{{else}}href="#" {{/if}}>
+    <figure class="homeBanner-figure">
+
+    
+
+     {{#if pictureList}}
+
+       <picture class="homeBanner-img">
+     {{#each pictureList}}
+
+
+    
+
+      <source  media="{{media}}" srcset="{{img}}"/>
+
+
+     {{/each}}
+      <img src="{{image}}" />
+
+     </picture>
+     
+
+     {{else}}
+
+     <img src="{{image}}" alt="{{imgalt}}" class="homeBanner-img">
+
+     {{/if}}
+
+
+
+    
+
+
+        
+        <figcaption class="homeBanner-figcaption">
+            <h4 class="homeBannerList-title">{{{title}}}</h4>
+            {{#if more}}
+            <p class="cardElem-more">Ver todo</p>
+            {{/if}}
+        </figcaption>
+    </figure>
+</a>
+
+
+
+

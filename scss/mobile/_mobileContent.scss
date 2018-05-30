@@ -1,0 +1,14 @@
+@include block(mobileContent) {
+    position: relative;
+    display: inline-block;
+    font-size: $um / 1.5;
+    line-height: 1.4;
+    color: #000;
+    font-weight: 300;
+    @include addBreakpoint(md) {
+        font-size: $um;
+    }
+    @include modifier(spaced) {
+        padding: $um / 2 $um / 2 $um;
+    }
+}

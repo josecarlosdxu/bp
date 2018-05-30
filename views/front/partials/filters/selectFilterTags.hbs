@@ -1,0 +1,28 @@
+<aside class="filter" data-js-filter="filter">
+<input type="checkbox" class="inputToggle" data-js-filter="checkbox" id="{{idFilter}}">
+<label for="{{idFilter}}" class="filter-headerTitle" data-js-filter="btn">{{header.title}}</label>
+<section class="filter-body{{#each bodyModifiers}} filter-body--{{this}}{{/each}}">
+<nav class="tags-list--filters">
+{{#each options }}
+ <input type="checkbox" class="tags-checkbox inputToggle" id="{{id}}">
+ <label class="tags-label" for="{{id}}">{{{name}}}{{#if number}}<small class="u-mgl--6th">({{number}})</small>{{/if}}</label>
+{{/each}}
+</nav>
+{{>selectFilterBtn nopadding='true'}}
+</section>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

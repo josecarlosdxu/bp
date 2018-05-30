@@ -1,0 +1,23 @@
+{{#if doubleBig}}
+  {{#each list}}
+  <a href="{{href}}" class="downloadElem-button{{#each btnModifiers}} {{this}}{{/each}}" {{{data-js}}}>
+    <div>
+      <img src="{{imgs.0.src}}" class="{{imgs.0.class}}"/>
+      <p class="downloadElem-text"><strong class="downloadElem-date">{{{date}}}</strong>{{{text}}}</p>  
+    </div>
+    <img src="{{imgs.1.src}}" class="{{imgs.1.class}}"/>
+    <p class="downloadElem-text"><strong class="downloadElem-date">{{{date1}}}</strong>{{{text1}}}</p>
+  </a>
+  {{/each}}  
+{{else}}
+  {{#each list}}
+ <a href="{{href}}" class="downloadElem-button{{#each btnModifiers}} {{this}}{{/each}}" {{{data-js}}}>
+    {{#each imgs}}
+    <img src="{{src}}" class="{{class}}"/>
+    {{/each}}
+    <p class="downloadElem-text"><strong class="downloadElem-date">{{{date}}}</strong>{{{text}}}</p>
+  </a>
+  {{/each}}  
+{{/if}}  
+
+

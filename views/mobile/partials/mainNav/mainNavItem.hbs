@@ -1,0 +1,33 @@
+{{#if more}}
+<li class="mainNav-itemMenu nav-item ">
+    <a class="mainNav-link mainNav-link--more" data-js-mainnav="link" href="../mobile/categoria-{{link}}.html" title="{{this.title}}">
+        {{title}}
+        {{#if number}}
+        <span class="number">({{number}})</span>
+        {{/if}}
+    </a>
+    <button data-js-menulist="button" class="mainNav-button mainNav-button--open">
+     <svg role="img" class="icon icon--inline icon--sm">
+        <use xlink:href="../../img/icons/svg-defs.svg#icon-chevronMobileRight"></use>
+     </svg>
+    </button>
+</li>  
+
+{{else}}
+<li class="mainNav-item nav-item ">
+    <a class="mainNav-link" data-js-mainnav="link" href="../mobile/categoria-{{link}}.html" title="{{this.title}}">
+    <h4 class="mainNav-linkText">{{title}}</h4>       
+    </a>    
+</li>
+{{/if}}
+
+ 
+
+
+
+
+
+
+
+
+

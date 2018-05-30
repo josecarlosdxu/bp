@@ -1,0 +1,71 @@
+<fieldset class="form-fieldset form-fieldset--sequential">
+    <h3 class="form-fieldset-title">Información fiscal</h3>
+    <div class="modularGrid">
+        <div class="modularGrid-module u-md-40">
+            <input type="radio" value="particular" id="particular" name="client_type" class="form-radio form-input--inline" data-js-account="check particular">
+            <label class="form-label form-label--inline" for="particular">Particular / emprendedor</label>
+        </div>
+        <div class="modularGrid-module u-md-30">
+            <input type="radio" value="autonomo" id="autonomo" name="client_type" class="form-radio form-input--inline" data-js-account="check autonomo">
+            <label class="form-label form-label--inline" for="autonomo">Autónomo</label>
+        </div>
+        <div class="modularGrid-module u-md-30 u-mgb--half">
+            <input type="radio" value="empresa" id="empresa" name="client_type" class="form-radio form-input--inline">
+            <label class="form-label form-label--inline" for="empresa">Empresa</label>
+        </div>
+    </div>
+    <section data-js-account="section particular" class="form-toggleSection form-toggleSection--active" >
+        <div class="modularGrid">
+            <div class="modularGrid-module u-md-50 ">
+                <label class="form-label" for="particular_name">Nombre</label>
+                <input type="text" class="form-input" id="particular_name" name="particular_name">
+            </div>
+            <div class="modularGrid-module u-md-50 u-pdl">
+                <label class="form-label" for="particular_surname">Apellidos</label>
+                <input type="text" class="form-input" id="particular_surname">
+            </div>
+        </div>
+        <div class="modularGrid">
+            <div class="modularGrid-module u-md-50 ">
+                <label class="form-label" for="particular_country">País</label>
+                <select id="particular_country" name="particular_country" class="form-select">
+                    <option value="">Elija un país</option>
+                    <option value="">Francia</option>
+                    <option value="">España</option>
+                    <option value="">Francia</option>
+                </select>
+            </div>
+            <div class="modularGrid-module u-md-50 u-pdl">
+                <label class="form-label" for="">NIF</label>
+                <span class="form-prefix"></span>
+                <input type="text" class="form-input  form-input--prefix">
+            </div>
+        </div>
+    </section>
+    <section data-js-account="section particular" class="form-toggleSection" >
+        <div class="modularGrid">
+            <div class="modularGrid-module u-md-50 ">
+                <label class="form-label" for="razon_social">Razón Social <i class="icon fa-info-circle"></i></label>
+                <input type="text" class="form-input" id="razon_social">
+            </div>
+            <div class="modularGrid-module u-md-50 u-pdl">
+                <label class="form-label" for="nombre_comercial">Nombre comercial<em class="form-label--optional">/ Opcional</em></label>
+                <input type="text" class="form-input" id="nombre_comercial">
+            </div>
+        </div>
+        <div class="modularGrid">
+            <div class="modularGrid-module u-md-50 ">
+                <label class="form-label" for="country">País</label>
+                <select id="country" name="" class="form-select">
+                    <option value="">España</option>
+                    <option value="">Francia</option>
+                </select>
+            </div>
+            <div class="modularGrid-module u-md-50 u-pdl">
+                <label class="form-label" for="">Nº identificación fiscal</label>
+                <span class="form-prefix">GB</span>
+                <input type="text" placeholder="DNI / CIF / VAT Number" class="form-input  form-input--prefix">
+            </div>
+        </div>
+    </section>
+</fieldset>

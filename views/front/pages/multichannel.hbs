@@ -1,0 +1,18 @@
+---
+layout: front/layouts/landing.hbs
+title: Multi-channel integration management
+---
+<section class="content content--full"> 
+{{>multichannelhero  apiMultiChannel.hero}}
+</section>
+
+{{>multichannelItem1 apiMultiChannel.conectores}} 
+{{>multichannelItemAlt apiMultiChannel.catalogo}}
+{{>multichannelItem apiMultiChannel.precio}}
+{{>multichannelItemAlt apiMultiChannel.stock}}
+{{>multichannelItem apiMultiChannel.pedidos}}
+{{>multichannelItemAlt apiMultiChannel.envios sectionclass='u-pdv2'}}
+
+{{>apiDropshippingMessage}}
+
+

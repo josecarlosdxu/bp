@@ -1,0 +1,89 @@
+%mainNav-item {
+    display: inline-block;
+    max-width: 16rem;
+    transition: none;
+    vertical-align: top;
+    white-space: nowrap;
+    text-decoration: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+@include block(mainNav) {
+    position: absolute;
+    z-index: 1;
+    //overflow: hidden;
+    //width: 100%;
+    width: 4rem;
+    min-height: 100%;
+    height: 100vh;
+    
+    vertical-align: top;
+    background: #353b40;
+    box-shadow: -1000px 1000px 0 1000px #353b40;
+
+    @include addBreakpoint(lg) {
+        box-shadow: none;
+        box-shadow: -1000px 1000px 0 1000px #353b40;
+        width: 16rem;
+        //transition: width 0.1s;
+        transition:none;
+    }
+    @include element(submenu) {
+        position: relative;
+        left: 0;
+        overflow: hidden;
+        height: auto;
+        padding-left: 1.75rem;
+        transition: all 0.1s;
+        display: none;
+        /*background: $color-mainNav-submenu;
+         background:#4A5054;*/
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 7%, #000 50%);
+        border-bottom: 1px solid #2E2E2E;
+        @include element(item) {
+            background: #3B4146;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            border-left: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        @include element(link) {
+            @extend %mainNav-item;
+            padding: $um / 2 $um;
+            padding-left: 1.75rem;           
+            color: #bbb;
+            outline: none;            
+            display: block;            
+            &:hover,
+            &:focus {
+                color: #fff;
+                background-color: $color-mainNav-menu-hover;
+                padding-left: 2rem;
+            }
+            @include element(title) {
+                padding-left: 0;
+                transition: all 0.1s;
+                opacity: 0;
+                font-size: 0;
+                @include addBreakpoint(lg) {
+                    padding-left: $um / 4;
+                    opacity: 1;
+                    font-size: $um / 1.5;
+                }
+            }
+            @include modifier(selected) {
+                color: $color-mainNav-submenu-linkSelected-text;
+                background-color: $color-mainNav-menu-hover;
+                &:hover,
+                &:focus {
+                    padding-left: 1.75rem;
+                    color: $color-mainNav-submenu-linkSelected-text;
+                }
+                //font-weight: 700;
+            }
+        }
+    }
+    @include element(item) {
+        position: relative;
+    }
+}

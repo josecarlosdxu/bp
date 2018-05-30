@@ -1,0 +1,45 @@
+<div class="modularGrid u-pdt--half">
+    <div class="modularGrid-module">
+
+      <div class="shoppingCartStep-content">
+        <form action="" class="form">
+            <fieldset class="form-fieldset form-fieldset--borderless">
+              <div class="modularGrid u-pdb">
+                <div class="modularGrid-module u-md-50">                   
+                    <label for="" class="form-label">Referencia del producto afectado</label>
+                    <input type="text" class="form-input">
+                </div>
+                 <div class="modularGrid-module u-md-50 u-pdl--half">  
+                     <div data-js-buy-unitcontrol="unitcontrol" class="modularGrid-module u-xs-30 u-xs-30">
+                        <label class="unitControl-label form-label">Nº Uds</label>
+                        <div class="unitControl unitControl--inline">
+                            <input type="text" data-js-quantity_to_cart="" min="1" value="3" max="67" class="form-input form-input--postfix unitControl-input">
+                            <span class="form-postfix unitControl-groupBtns">
+                                <button class="button button--icon unitControl-button unitControl-button--plus"></button>
+                                <button class="button button--icon unitControl-button unitControl-button--minus"></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>              
+                
+              </div>
+              <div class="modularGrid">               
+
+                {{>fileUpload2  border='true' label='Fotografías de la unidad 1' optional='tooltip_producto_unidad'}}
+                {{>fileUpload2  border='true' label='Fotografías de la unidad 2' optional='tooltip_producto_unidad'}}
+                {{>fileUpload2  border='true' label='Fotografías de la unidad 3' optional='tooltip_producto_unidad'}}
+                
+                 <div class="modularGrid-module  u-xs-50 u-flr u-tar">
+                    <p class="form-label--optional">Tamaño de archivos adjuntos <span>5.00 Mb</span> de 10.00 Mb</p>
+                  <div class="progressBar progressBar--tiny u-xs-70"><span class="progressBar-meter" style="width:33%;"></span></div>
+                </div>
+
+              </div>
+            </fieldset>
+        </form>
+      </div>
+       <div class="shoppingCartStep-action u-mgt">
+          <button class="button button--primary">Continuar</button>
+        </div>
+  </div>
+</div>

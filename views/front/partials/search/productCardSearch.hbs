@@ -1,0 +1,57 @@
+<article class="productCard  productCard--shoppable  productCard--landscape{{#if_eq _source.stock false}}  productCard--noStock{{/if_eq}}">
+	<figure class="productCard-content">
+		<a href="#" class="productCard-link productCard-imgCont">
+			<img src="https://www.bigbuy.eu/{{_source.id_image.[1]}}-product_list/image.jpg" alt="image" class="productCard-img">
+		</a>
+		<figcaption class="productCard-properties">
+			<div class="productCard-title">
+				<a href="#" class="productCard-link">{{_source.name}}</a>
+			</div>
+			<div class="productCard-prices">
+				<div class="productCard-pvp productCard-pvp--now">
+					<div class="productCard-pvp-name productCard-pvp--relevant">PVR</div>
+					<div class="productCard-pvp-amount productCard-pvp--relevant">{{to_fixed _source.retail_price}}€</div>
+				</div>
+				<div class="productCard-pvp productCard-pvp--before">
+					<div class="productCard-pvp-name">PVP</div>
+					<div class="productCard-pvp-amount productCard-pvp-amount--before">{{to_fixed _source.price}}€</div>
+				</div>
+				<div class="productCard-pvp productCard-pvp--discount">-{{_source.discount}}%</div>
+			</div>
+		</figcaption>
+	</figure>
+	{{#if _source.ribbon_name}}
+       <div class="productCard-ribbon">{{_source.ribbon_name}}</div>
+    {{/if}}
+
+
+    {{#if_eq _source.stock false}}
+     <div class="productCard-buy">
+            <div class="productCard-caption"> Sin Stock</div>
+        </div>
+    {{else}}
+        <div class="productCard-buy">
+            <div class="productCard-caption">
+                <div class="unitControl">
+                    <input value="5" class="form-input form-input--postfix unitControl-input" type="text">
+                    <span class="form-postfix unitControl-groupBtns">
+                        <button class="button button--icon unitControl-button unitControl-button--plus"></button>
+                        <button class="button button--icon unitControl-button unitControl-button--minus"></button>
+                    </span>
+                </div>
+                {{#if_eq _source.attribute.length 0}}
+                <button title="Añadir al carrito" class="button button--primary  productCard-ctaButton">
+                    <i class="icon fa fa-shopping-cart"></i>
+                </button>
+                {{else}}
+                <div class="form-action productCard-action">Opciones</div>
+                {{/if_eq}}
+            </div>
+        </div>
+          {{/if_eq}}
+    </article>
+   
+
+   
+
+        

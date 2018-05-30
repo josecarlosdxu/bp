@@ -1,0 +1,48 @@
+  <div class="shoppingCartStep" data-jscart="step-3">
+
+    <div class="shoppingCartStep-header">
+      <b class="shoppingCartStep-number">3</b>
+      <div class="shoppingCartStep-headertexts">
+        <h4 class="shoppingCartStep-title">Información de pago</h4>
+        <h5 class="shoppingCartStep-subtitle" data-jspayment="resume"></h5>
+      </div>
+     {{>shoppingCartEditBtn step='3'}}
+    </div>
+    <section class="shoppingCartStep-content">
+
+      <section data-jspayment="notb2b" class="modularGrid u-xxs-100 u-pdb">  
+     
+       {{>shoppingCartStepPaymentSection1}}
+       {{>shoppingCartStepPaymentSection2}}  
+
+    
+      </section>     
+      <div class="modularGrid u-pdb u-pdt--half" data-jspayment="b2b"> 
+        <h4 class="subtitle4 u-mgb">Pack Mayorista</h4>
+        <form autocomplete="off">
+        <div class="modularGrid-module u-pdl--half u-pdb--third">
+          <input value="paypal1" id="paypal1" name="b2b" class="form-radio u-mgt--3rd" type="radio" data-jspayment="paypal" checked="checked">
+          <label class="form-label form-label--inline" for="paypal1"><strong data-jspayment="resumeval">PayPal</strong><small class="u-op-60 u-mgl--3rd">(Recomendado)</small><em class="form-info u-mgt--6th" data-js-tooltip="tooltip3" ><b class="icon fa-info-circle u-mgl--3rd"></b> ¿Qué es PayPal?</em></label>
+        </div>
+        <div class="modularGrid-module u-pdl--half u-pdb--third">
+          <input value="paypal_card1" id="paypal_card1" name="b2b" class="form-radio u-mgt--3rd" type="radio">
+          <label class="form-label form-label--inline" for="paypal_card1"><strong data-jspayment="resumeval">Tarjeta bancaria (by PayPal)</strong></label>
+        </div>
+        <div class="modularGrid-module u-pdl--half u-pdb--third">
+          <input value="sofort" id="sofort" name="b2b" class="form-radio u-mgt--3rd" type="radio">
+          <label class="form-label form-label--inline" for="sofort"><strong data-jspayment="resumeval">Transferencia bancaria inmediata (by Klarna - Sofort)</strong> <em class="form-info  u-mgt--6th" data-js-tooltip="tooltip_sofort"><b class="icon form-info-icon fa-info-circle"></b>
+                           </em></label>
+        </div>
+         <div class="modularGrid-module u-pdl--half u-pdb--third" data-jswallet="0">
+          <input value="wallet" id="wallet1" name="b2b" class="form-radio u-mgt--3rd" type="radio">
+          <label class="form-label form-label--inline" for="wallet1" ><strong data-jspayment="resumeval">Monedero</strong></label>
+        </div> 
+        </form>    
+      </div>  
+       <div class="modularGrid ">    
+    <button class="button button--primary button--big" data-jscart="btn-3">Continuar</button>  
+    </div> 
+  </section>
+
+</div>
+

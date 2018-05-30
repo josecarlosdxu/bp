@@ -1,0 +1,60 @@
+ {
+     "date1": "rgrtt",
+     "test": [{
+             "date": "21/03/2016 08:36",
+             "ref": "201504568",
+             "department": "Soporte técnico",
+             "subject": "Tienda Dropshipping",
+             "state": "Responder",
+             "class": "warning",
+             "buttonMsg": "Responder",
+             "btnSvg": "undo",
+              "notify": "true"
+         }, {
+             "date": "21/03/2016 08:36",
+             "ref": "201504568",
+             "department": "Soporte técnico",
+             "subject": "Tienda Dropshipping",
+             "state": "Solucionado",
+             "class": "success",
+             "buttonMsg": "Editar",
+             "btnSvg": "pencil"
+         }
+         , {
+             "date": "21/03/2016 08:35",
+             "ref": "201504567",
+             "department": "Comercial y atención distribuidores",
+             "subject": "API",
+             "state": "Cancelado",
+
+             "buttonMsg": "Reabrir",
+             "btnSvg": "refresh"
+         }, {
+             "date": "21/03/2016 08:34",
+             "ref": "201504566",
+             "department": "Soporte técnico",
+             "subject": "Archivos CSV",
+             "state": "En proceso",
+
+             "buttonMsg": "Editar",
+             "btnSvg": "pencil"
+         }, {
+             "date": "21/03/2016 08:33",
+             "ref": "201504565",
+             "department": "Atención al cliente y posventa",
+             "subject": "Reintegro pendiente",
+             "state": "En proceso",
+
+             "buttonMsg": "Editar",
+             "btnSvg": "pencil"
+         }, {
+             "date": "21/03/2016 08:32",
+             "ref": "201504564",
+             "department": "Logística y pedidos",
+             "subject": "Web BigBuy",
+             "state": "En proceso",
+             "buttonMsg": "Editar",
+             "btnSvg": "pencil"
+         }
+     ]
+ }

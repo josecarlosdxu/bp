@@ -1,0 +1,19 @@
+<div class="panel panel--secondary panel--inactive" data-js-panel-name="panel02" data-js-panel-state="inactive">
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-invoices"></use></svg>
+        <div class="panel-titleName">
+            <a href="" class="panel-breadcrumbLink">Facturas</a>
+             <a href="" class="panel-breadcrumbLink">Factura nº 54205</a>
+        </div>
+        <!-- panel actions -->
+        <div class="panel-actions">
+            <button class="menuPanel-button"><i class="icon form-action-icon fa-print"></i>Imprimir</button>
+            <button class="menuPanel-button"><i class="icon form-action-icon fa-cloud-download"></i>Guardar PDF</button>
+        </div>
+    </div>
+    <div class="panel-content panel-content--iframecontent">
+
+  <iframe class="panel-iframe" src="../proforma.pdf" width="100%"></iframe>
+    </div>
+ {{>backButton datapanel='toggletab'}}
+</div>

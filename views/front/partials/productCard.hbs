@@ -1,0 +1,128 @@
+<article class="productCard{{#each productCardModifier}} productCard--{{this}}{{/each}}{{#if this.nostock}} productCard--noStock {{/if}}{{#if modifier}} productCard--{{modifier}}{{/if}}">
+   
+    <figure class="productCard-content">
+    {{#if image3}}
+      <a class="productCard-link productCard-imgCont productCard-imgCont--threeImgs" href="#">
+    {{else}}
+        <a class="productCard-link productCard-imgCont" href="#">
+        {{/if}}
+            <img class="productCard-img" src="{{image}}" alt="">
+            {{#if image2}}
+            <img class="productCard-img productCard-img2" src="{{image2}}" alt="">
+            {{/if}}
+            {{#if image3}}
+            <img class="productCard-img productCard-img3" src="{{image3}}" alt="">
+            {{/if}}
+        </a>
+        <figcaption class="productCard-properties">
+            <div class="productCard-title">
+                <a class="productCard-link" href="#">{{title}}</a>
+
+                <aside class="productCard-sizes">
+                    <div class="productCard-sizesItem">{{>svgIcon type='bbcode'}} Código V0300594 </div>
+                    <div class="productCard-sizesItem">{{>svgIcon type='caja_alt' }} Cajas: 33 </div>
+                    <div class="productCard-sizesItem">{{>svgIcon type='pallet3' }} Pallets: 56 </div> 
+                </aside>
+
+
+            </div>
+
+            
+
+
+
+
+
+            <div class="stockAvailability stockAvailability--vertical">
+
+                <p class="stockAvailability-title stockAvailability-title--success">
+                    Stock disponible
+                </p>
+
+                <ul class="stockAvailability-list">
+                    <li class="stockAvailability-item">12 uds. envío 24/48h</li>
+                    <li class="stockAvailability-item">52 uds. envío 10 días</li>
+                    <li class="stockAvailability-item">121 uds. envío 20 días</li>
+                    <li class="stockAvailability-item">300 uds. envío 30 días</li>
+                </ul>
+
+            </div>
+
+
+            <div class="productCard-prices">
+
+                <div class="productCard-pvp productCard-pvp--now">
+                    <div class="productCard-pvp-name productCard-pvp--relevant">
+                        PVR
+                    </div>
+                    <div class="productCard-pvp-amount productCard-pvp--relevant">
+                        {{pvp03}}€
+                    </div>
+                </div>
+                <div class="productCard-pvp productCard-pvp--before">
+                    <div class="productCard-pvp-name">
+                        PVP
+                    </div>
+                    <div class="productCard-pvp-amount productCard-pvp-amount--before">
+                        {{pvp01}}€
+                    </div>
+                </div>
+
+                <div class="productCard-pvp productCard-pvp--discount">
+                    -{{pvp02}}%
+                </div>
+            </div>
+
+             <div class="productCard-prices productCard-prices--alt">
+
+                <p class="productCard-priceitem"><span>New PVD</span> <span>8,79 €</span></p>
+               <p class="productCard-priceitem u-op-50"><span>Old PVD</span><strike>10,85 €</strike></p>
+               <p class="productCard-priceitem"><span>New PVR</span><span>9,89 €</span></p>
+               <p class="productCard-priceitem u-op-50"><span>Old PVR</span><strike>12,85 €</strike></p>
+                    
+
+              
+
+                <div class="productCard-discount">
+                    -{{pvp02}}%
+                </div>
+            </div>
+
+
+        </figcaption>
+    </figure>
+
+
+    {{#if this.ribbon}}
+    <div class="productCard-ribbon"> {{ this.ribbon}}</div>
+    {{/if}}
+    {{#if this.play}}
+    <div class="productCard-play"></div>
+    {{/if}}
+
+    <div class="productCard-buy">
+        {{#if this.nostock}}
+        <div class="productCard-caption">
+            Sin stock
+        </div>
+        {{else}}
+        <div class="productCard-caption">
+
+            {{> unitControl }}
+
+            {{#if this.options}}
+            <div class="form-action productCard-action u-pdt--half">
+                Opciones
+                <i class="form-action-icon productCard-action-icon fa fa-chevron-right"></i>
+            </div>
+            {{else}}
+            <button class="button button--primary  productCard-ctaButton" title="Añadir al carrito">
+               <svg class="icon  icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-cart"></use></svg>
+            </button>
+            {{/if}}
+
+        </div>
+        {{/if}}
+    </div>
+
+</article>

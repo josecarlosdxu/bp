@@ -1,0 +1,122 @@
+
+@include block(dataTables) {
+  @include element(figure) {
+    display:flex;
+    align-items: center ;
+
+  }
+  @include element(figureImg) {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid $color-shadow;
+    margin-right: $um / 2;
+  }
+  @include element(figcaption) {
+    outline: none;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dataTables_info {
+   -js-display: flex; display:flex;
+   justify-content: center;
+   align-items: flex-end;
+   height: $um * 2;
+}
+
+.dataTables_paginate.paging_simple_numbers {
+   -js-display: flex; display:flex;
+   justify-content: center;
+   align-items: center;
+   height: $um * 2;
+}
+
+.paginate_button {
+   cursor: pointer;
+   display: inline-block;
+   line-height: 1.2;
+   vertical-align: top;
+   padding: 0.6rem 0.5rem 0.2rem;
+   line-height: 1.5;
+   margin: 0 0.2rem;
+   &:hover,
+   &:focus {
+       text-decoration: underline;
+   }
+}
+
+.paginate_button.previous,
+.paginate_button.next {
+   padding: 0 0.5rem;
+   &:before,
+   &:after {
+       display: inline-block;
+       font-size: 1.5rem;
+       font-weight: 700;
+       padding: 0 0.2rem;
+   }
+}
+
+.paginate_button.previous {
+   &:before {
+       content: "\2039";
+   }
+}
+
+.paginate_button.next {
+   &:after {
+       content: "\203a";
+   }
+}
+
+.paginate_button.disabled {
+   pointer-events: none;
+   opacity: 0.3;
+}
+.paginate_button.current {
+    font-weight: bolder;
+    pointer-events: none;
+}
+

@@ -1,0 +1,81 @@
+
+<aside class="popup u-xs-50  u-xl-40 animated fadeInDown" data-js-popup="popup">
+    <div class="modularGrid" data-js-logincard="login">
+    <header class="popup-header">
+            <h1 class="popup-title">Identifíquese</h1>
+            <button title="Cerrar" class="button button--icon popup-close" data-js-popup="close">
+
+                <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-times"></use></svg>
+               
+            </button>
+    </header>
+    <div class="popup-content u-pdb--none">
+            <div class="modularGrid">
+                <div class="modularGrid-module u-xs-50 u-pdr u-pdb u-brdr">
+                    <form class="form" action="" data-js-popup-login='form' >
+                        <fieldset class="form-fieldset  form-fieldset--borderless" data-js-popup-content>
+                            <h3 class="form-title">Ya soy usuario</h3>
+                            <label class="form-label u-mgt--half" for="email">Email</label>
+                            <input data-js-popup-login='email' type="text" class="form-input" id="email" name="email" data-js-validate='{"empty":"required","email":"warning"}' maxlength="64">
+                            <label class="form-label" for="">Contraseña</label>
+                            <input data-js-popup-login='password' type="password" class="form-input " id="password" name="password" data-js-validate='{"empty":"required"}' maxlength="64">
+                            <a href="#"class="form-action form-action--hint " data-js-forget_passwd><span class="form-action-msg">¿Olvidó su contraseña?</span></a>
+
+                            <button class="button button--primary button--full u-mgt--half" type="submit" data-js-popup="submitAction" data-js-popup-button-login data-js-validate-form>Inicie sesión</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+                    <div class="modularGrid-module u-xs-45 u-pdl">
+
+                        <h3 class="form-title u-mgb">Usuario nuevo</h3>
+                      
+
+                        <a href="#" onclick="window.location='https://www.bigbuy.eu/es/account/create'" class="button">Crear una cuenta nueva</a>
+
+
+                    </div>
+            </div>
+    </div>
+    </div>
+    <div class="modularGrid" data-js-logincard="forget" style="display: none">
+        <header class="popup-header">
+            <h1 class="popup-title">¿Ha olvidado su contraseña?</h1>
+            <button title="Cerrar" class="button button--icon popup-close" data-js-popup="close"> 
+                <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="https://www.bigbuy.eu/public/img/icons/svg-defs.svg#icon-times"></use></svg>
+            </button>
+    </header>
+        <div class="popup-content" data-js-forget_passwd_content>
+            <form data-js-popup-login='form' class="form" action="">
+                <fieldset class="form-fieldset  form-fieldset--borderless">
+                    <div class="modularGrid u-pdb--half">
+                        <div class="modularGrid-module u-xs-20">
+                            <label class="form-label form-label--inline" for="email">Email</label>
+                        </div>
+                        <div class="modularGrid-module u-xs-80">
+                            <input data-js-forget_passwd_content='email' type="text" class="form-input" id="useremail" name="email"  data-js-validate='{"empty":"required","email":"warning"}' tabindex="5" maxlength="64">
+                        </div>
+                    </div>
+                                    <div class="form-captcha ">
+                        <div class="modularGrid">
+                            <div class="modularGrid-module u-md-40">
+                                <img src="https://www.bigbuy.eu/tools/captcha/captcha.php?ancho=175&alto=65&nocache=" id="img_captcha" class="form-captcha-image " alt="">
+                                <a href="javascript:void(0);" onclick="$(this).parent().find('img:first').prop('src','https://www.bigbuy.eu/tools/captcha/captcha.php?ancho=175&alto=65&nocache='+Math.random());" class="form-captcha-reload">
+                                    <i class="icon form-info-icon fa-refresh"> </i> Recargar imagen                                </a>
+                            </div>
+                            <div class="modularGrid-module u-sm-60 u-pdl--half">
+                                <label class="form-label" for="captcha">¿Qué pone en la imagen?</label>
+                                <input data-js-forget_passwd_content="captcha" type="text" name="captcha" class="form-input" data-js-captcha  data-js-validate='{"empty":"required"}' maxlength="10">
+                                <em class="form-info" data-js-tooltip="tooltip_captcha">
+                                    <b class="icon form-info-icon fa-info-circle"></b> ¿Para qué sirve este código?                                </em>
+                            </div>
+                        </div>
+                    </div>                    <div class="popup-action" data-js-popup-login='action'>
+                        <a href="#"class="form-action form-action--inline form-action--hint " data-js-forget-login>Iniciar sesión</a>
+                        <input class="button button--primary button--big u-elem-center u-fl-right" type="submit" data-js-popup="submitAction" data-js-popup-button-forget value="Contraseña nueva" data-js-validate-form />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</aside>

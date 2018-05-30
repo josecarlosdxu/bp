@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+//Scaffolding layer
+@import "nm/vendor/normalize";                 //normalize.css v2.1.3
+@import "nm/vendor/animate";                   //animate.css animations
+
+@import "nm/variables";                        //framework internal variables, !this is not a configuration file
+@import "nm/base";                             //custom reset
+@import "nm/utils/bem";                		   //BEM mixins to create & extend classes in a strict way.
+@import "nm/utils/breakpoints";                //BEM mixins to create & extend classes in a strict way.
+
+
+//Theme vars
+//@import "shared/colorDesat";
+@import "shared/colorOriginal";
+@import "shared/themeBase";
+@import "shared/notify";
+
+//Abstractions layer
+@import "nm/modules/modularGrid";				//Inline-block grid system
+@import "nm/modules/nav";						//Navigation & menus
+@import "nm/modules/form";                      //Forms
+@import "nm/modules/list";
+@import "nm/modules/table";                     //Tables
+@import "nm/modules/button";                    //Buttons
+@import "nm/modules/unitControl";               //Buttons to handle input type number
+@import "nm/modules/tooltip";                   //Help bubbles inline
+@import "nm/modules/responsiveImg";             //Responsive Images placeholder
+@import "nm/modules/msgBox";
+@import "nm/modules/ratioBox";
+@import "nm/modules/nmSteps";
+
+
+@import "front/minisocial";
+@import "front/productSheet";
+@import "admin/shoppingCart";
+@import "front/progressBar";
+@import "admin/productCard";
+@import "admin/productList";
+
+
+//Components layer
+@import "admin/mainNav";
+@import "admin/mainNavMenu";
+@import "admin/content";
+
+@import "admin/logo";
+@import "admin/header";
+@import "admin/toolbar";
+@import "admin/panel";
+@import "admin/panelHeader";
+@import "admin/fixedContent";
+@import "admin/fixedTableContent";
+@import "admin/selectGroup";
+@import "admin/infoSection";
+@import "admin/imgUser";
+@import "admin/downloadElem";
+@import "admin/downloadBanner";
+@import "admin/menuPanel";
+@import "admin/adressCard";
+@import "admin/scrollStocksArea";
+
+@import "admin/downloadsLang";
+
+@import "admin/dragBlock";
+
+
+
+@import "shared/icon";
+@import "shared/expressCart";
+@import "shared/langlist";
+@import "shared/popup";
+@import "shared/pack";
+@import "shared/actionGroup";
+@import "shared/loading";
+@import "shared/cmsContentSection";
+@import "shared/steps";
+
+
+//Utils
+@import "nm/utils/baseline";                    //Vertical rythm visual helper
+@import "nm/utils/proportions";        			//Common proportions used and their responsive classes
+@import "nm/utils/positions";        			//Common position and alignment properties
+@import "nm/utils/visualize";
+
+
+@import "shared/daterangepicker";
+
+
+//Documentation sytles
+
+
+//Debug
+@import "nm/utils/resetResponsive";
+@import "nm/utils/debug";
+
+
+
+html, body {
+    overflow: hidden;
+    overflow-x: auto;
+
+}
+
+
+body {
+    background: $color-body-background;
+    background: #E4E5E7;
+}
+
+
+
+.info{
+    color: rgba(0,0,0,0.5);
+    font-size: 0.9rem;
+}
+
+.notify {
+
+}
+@-moz-document url-prefix() {
+
+.infoSection-item{
+height: 13.2rem;
+}
+}
+
+
+
+
+
+

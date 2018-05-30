@@ -1,0 +1,49 @@
+<div class="panel panel--active" >
+  {{!-- <div class="panel-title">
+      <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-wallet"></use></svg>
+      <div class="panel-titleName">
+        <a href="" class="panel-breadcrumbLink">Monedero</a>
+      </div>
+  </div> --}}
+
+  <div class="panelHeader">
+   <div class="modularGrid">
+            {{!-- <div class="modularGrid-module u-xs-15"> --}}
+            <div class="modularGrid-module">
+              <img class="icon icon icon--md u-mg u-fll" src="../../img/icons/wallet.svg">
+              <h2 class="u-mgt">Saldo actual</h2>
+              <h3 href="#">998.601,34 €</h3>
+            </div>
+             {{!-- <div class="modularGrid-module u-xs-80 u-pdt ">
+              <button class="button "><svg class="icon icon--inline icon--xs" role="img">
+                 <use xlink:href="../../img/icons/svg-defs.svg#icon-download" ></use>
+             </svg>
+             Descargar extracto
+             </button>
+            </div> --}}
+          </div>
+    <nav class="panel-tabs">
+      <button data-paneltabbtn="movimientos" class="panel-tabs-item panel-tabs-item--active">Movimientos</button>
+      <button data-paneltabbtn="ingresos" class="panel-tabs-item ">Ingresar fondos</button>
+      <button data-paneltabbtn="retirar" class="panel-tabs-item ">Retirar fondos</button>
+      <button data-paneltabbtn="descargar" class="panel-tabs-item ">Descargar extracto</button>
+
+    </nav>
+  </div>
+  <div class="panel-content fixedTableContent fixedTableContent--wallet">
+    <div id="movimientos" class="fixedTableContent-tableContent" >
+      {{> panelSection panelSection.allWallet}}
+    </div>
+    <div id="ingresos" class="tableWalletContent tableWalletContent--alt" style="display:none;">
+      {{> setMoneyWallet}}
+    </div>
+    <div id="retirar" class="tableWalletContent tableWalletContent--alt"  style="display:none;">
+       {{> getMoneyWallet}}
+    </div>
+    <div id="descargar"  class="tableWalletContent tableWalletContent--alt" style="display:none;">
+       {{> downloadWallet}}
+    </div>
+
+  </div>
+
+</div>

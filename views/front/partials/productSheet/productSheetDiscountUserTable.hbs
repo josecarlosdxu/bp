@@ -1,0 +1,34 @@
+<div data-js-discount_table="" class="modularGrid-module u-xs-50{{#if class}} {{class}}{{/if}}">
+	<div class="productSheet-discountTable">
+		<table data-js-discount_table-panel="first" class="table table--ultracondensed">
+			<caption class="table-caption">
+				<div class="table-captionIcon  productSheet-discountTable--volume">
+					{{>svgIcon type=icon }}
+					
+				</div>
+				{{caption}}
+				<em data-js-tooltip="tooltip_productsheet_range" class="form-info">					
+					{{>svgIcon type='info'}}
+				</em>
+				<p class="productSheet-shortDescription u-pdl u-mgl--half">{{{description}}}</p>
+			</caption>
+			<thead class="table-thead">
+				<tr class="table-tr">
+				{{#each thead}}
+					<th class="table-item  table-item--number{{#if this.class}} {{this.class}}{{/if}}">{{{this.name}}}</th>
+				{{/each}}
+				</tr>
+			</thead>
+			<tbody class="table-tbody">
+			{{#each tbody}}
+			<tr data-js-discount_table="tr-item" class="table-tr">
+					<td class="table-item table-item--number">{{{td1}}}</td>
+					<td class="table-item table-item--number">{{{td2}}}</td>
+					<td class="table-item table-item--number u-xs-40 u-pdr">{{{td3}}}</td>
+				</tr>
+			{{/each}}
+			</tbody>
+		</table>
+	</div>
+
+</div>

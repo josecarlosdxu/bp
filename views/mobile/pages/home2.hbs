@@ -1,0 +1,18 @@
+---
+title: BigBuy mobile home
+layout: mobile/layouts/home.hbs
+---
+<div class="modularGrid modularGrid--boxed">
+<div class="modularGrid-module">
+{{>sliderBanner1}}
+</div>
+{{>homeFeatured}}
+{{>homeTopCategories}}
+{{>homeFeaturedProducts topclass='u-pdt'}}
+{{>homeCategories mobile='true'}}
+{{>homeBanners1 mobile='true'}}
+{{!-- {{>homeBigBanner}}
+{{>homeBanners2}} --}}
+
+</div>
+{{>apiDropshippingMessage}}

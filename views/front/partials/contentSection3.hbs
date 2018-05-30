@@ -1,0 +1,244 @@
+ 
+  {{!-- <div class="modularGrid u-mgt u-bg--white"> --}}
+
+
+  <div class="modularGrid modularGrid--boxed u-bg--white u-mgb2">
+
+
+
+    <div class="modularGrid-module u-pd">
+      <table class="table table--comparative u-pd "  data-js-accordion="accordion"  data-js-accordion_selected_class = 'table-tr--selected'>
+        <thead class="table-thead">
+         <tr class="table-tr" >
+          <th class="table-item table-item--theadTitle u-xs-60" ><h2 class="cmsContentSection-subtitle">Tipo de pack</h2></th>
+          <th class="table-item ">
+
+            {{>svgIcon  class='u-op-40' type='user' size='sm'}}
+
+            <span class="pack pack--none pack--medium u-mgt--3rd">Sin Pack</span>
+          </th>
+          <th class="table-item" data-js-activepack="">
+            {{>svgIcon class='icon--b2b' type='pack' size='sm'}}
+            <span class="pack pack--b2b pack--medium u-mgt--3rd"><span class="u-op-50">PACK</span> B2B</span>
+          </th>
+          <th class="table-item" >
+           {{>svgIcon class='icon--dropship' type='pack' size='sm'}}
+           <span class="pack pack--dropship pack--medium u-mgt--3rd"><span class="u-op-50">PACK</span> DROPSHIP</span>
+         </th>
+         <th class="table-item ">
+           {{>svgIcon class='icon--enterprise' type='pack' size='sm'}}
+           <span class="pack pack--enterprise pack--medium u-mgt--3rd" ><span class="u-op-50">PACK</span>BUSINESS</span>
+         </th>
+         
+       </tr>
+
+     </thead>
+      <tfoot class="table-tfoot ">
+            <tr class="table-tr ">
+              <td class="table-item  u-xs-60"></td>
+              <td class="table-item "></td>
+              <td class="table-item color-blue" data-js-activepack="">Pack Activo</td>
+              <td class="table-item "><button class="button button--primary button--big">Activar</button></td>
+              
+              <td class="table-item "><button class="button button--primary button--big">Activar</button></td>      
+            </tr>
+          </tfoot>
+     <tbody class="table-tbody table-tbody--accordion">
+       <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+           Tarifa PVD (inclusive en uds. sueltas)</td>
+           <td class="table-item ">{{>svgIcon class='icon--error' type='timesCircle'}}</td>
+           <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+           <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+           
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent }}
+          </td>
+        </tr>
+         <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+           Descuento automático de hasta el 6%</td>
+           <td class="table-item ">{{>svgIcon class='icon--error' type='timesCircle'}}</td>
+           <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+          <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+          
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent2 }}
+          </td>
+        </tr>
+
+       <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+           Bloqueo de stock</td>
+           <td class="table-item ">{{>svgIcon class='icon--error' type='timesCircle'}}</td>
+           <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+           <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+          
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent3 }}
+          </td>
+        </tr>
+
+        <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+           Pedido mínimo</td>
+           <td class="table-item ">10,00 €</td>
+           <td class="table-item ">3,00 €</td>
+           <td class="table-item">1,50 €</td>
+           <td class="table-item ">1,50 €</td>
+           
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent30 }}
+          </td>
+        </tr>
+
+
+
+
+        <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+           Servicio dropshipping - Envíos internacionales
+           <td class="table-item ">{{>svgIcon class='icon--error' type='timesCircle'}}</td>
+           <td class="table-item ">3 envíos / mes</td>
+           <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+          
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent5 }}
+          </td>
+        </tr>
+
+
+
+        <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+            Seguimiento de envío y n.º de seguimiento</td>
+           <td class="table-item ">{{>svgIcon class='icon--error' type='timesCircle'}}</td>
+           <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+          <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+          
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent50 }}
+          </td>
+        </tr>
+
+
+
+
+        <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+            Monedero (forma de pago)</td>
+           <td class="table-item ">{{>svgIcon class='icon--error' type='timesCircle'}}</td>
+           <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+          <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+           
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent4 }}
+          </td>
+        </tr>
+         <tr class="table-tr" data-js-accordion="link">
+         <td class="table-item table-item--rowtitle u-xs-60">
+           {{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+            Descarga factura online</td>
+           <td class="table-item ">{{>svgIcon class='icon--error' type='timesCircle'}}</td>
+           <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+           <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+           <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+           
+         </tr>
+         <tr class="table-tr table-tr--content">
+          <td class="table-item" colspan="100">
+            {{> accordionContent40 }}
+          </td>
+        </tr>
+
+
+          
+        <tr class="table-tr" data-js-accordion="link">
+
+
+         <td class="table-item table-item--rowtitle u-xs-60">{{>svgIcon class='u-mgr--half' type='chevronDown' data='data-js-accordion="chevron"'}}
+         Descarga de material para marketing online </td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item" >{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         <td class="table-item ">{{>svgIcon class='icon--success' type='successCircle'}}</td>
+         
+    
+       </tr>
+       <tr class="table-tr table-tr--content">
+        <td class="table-item" colspan="100">
+          {{> accordionContent7 }}
+        </td>
+      </tr>
+      <tr class="table-tr" >
+
+        <td colspan="100"  class="u-pdl">
+        {{!-- <table class="table "> 
+          <tbody class="table-tbody ">
+            <tr class="table-tr u-brd0">
+              <td class="table-item u-brd0 u-xs-60 u-tal u-pdl0"><strong>Sincronización</strong></td>
+              <td class="table-item u-brd0"></td>
+              <td class="table-item u-brd0"></td>
+              <td class="table-item u-brd0" data-js-activepack=""></td>
+              <td class="table-item u-brd0"></td>      
+            </tr>
+          </tbody>
+        </table> --}}
+       <div class="u-pdb--half  u-pdt--half u-brdr"><strong>Sincronización</strong></div>
+         {{>contentSection4}}
+         {{>contentSection5}}
+         {{>contentSection6}}
+         {{>contentSection7}}
+
+
+
+
+
+         
+       </td>
+     </tr> 
+   </tbody>
+
+
+
+
+
+         
+         
+
+
+ </table>
+
+</div>
+</div>
+
+
+
+

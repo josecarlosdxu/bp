@@ -1,0 +1,30 @@
+@include block(categoryTabs) {
+    margin: 0;
+    border-bottom: none;
+    box-shadow: 0 1px  $color-shadow;
+   
+    margin: 0 1.2rem;
+    @include element(item) {
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: $um 1rem;
+        border-bottom: none;
+        @include addBreakpoint(sm) {
+            font-size: $um;
+            padding: 1.95rem 2rem;
+        }
+        @include addBreakpoint(lg) {
+            font-size: 1.7rem;
+            font-weight: 300;
+            padding: 1.95rem 2.45rem;
+        }
+    }
+    @include addBreakpoint(xl) {
+        margin: 0;
+        //border-bottom: 1px solid $color-shadow;
+       
+    }
+    ~ .tabs-contentPanel > .homefeatured--brandsMenu {
+        margin: 0 auto 1rem;
+    }
+}

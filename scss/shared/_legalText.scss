@@ -1,0 +1,70 @@
+@include block(legalText) {
+
+    font-size: 1.1666rem;
+    h1{
+        @extend %type-section-title;
+        font-size: 2.25rem;        
+        padding: 1rem 1.5rem 0;
+        line-height: 1;
+      
+        @include addBreakpoint(sm) {             
+            padding: 1rem 0 0 ; 
+             font-size: 3rem; 
+             
+        }
+        @include addBreakpoint(md) {            
+            font-size: 4rem;           
+            text-align: center;
+            
+           
+            
+        }
+    }
+    h3 {
+        @extend %type-section-title;
+        text-transform: none;
+        font-weight: normal;
+        font-size: 1.8333rem;
+        padding: 1rem 0;
+        margin: 0;
+    }
+    article{       
+        padding: 0 1.5rem 1.5rem;      
+        @include addBreakpoint(sm) {
+            padding: 0 0 1.5rem;          
+            
+        }
+
+        
+    }
+
+    div{
+        padding-bottom: 1rem;  
+           
+    }
+
+    a {
+        text-decoration: underline;
+        color: $color-accentBlue-default;
+    }
+    ul{
+        padding: 1rem 0 0;
+
+        li{
+            padding: 0 0 0.25rem 3rem; 
+            position: relative;
+            text-indent: -4px;
+            &:before{
+                content: "-";
+                position: relative;
+                left:-0.5rem;
+                
+            }
+        }
+
+    }
+    .iprivacidad{
+        height: 115px;
+        //width:30%;
+    }
+}

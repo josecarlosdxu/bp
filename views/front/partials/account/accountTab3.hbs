@@ -1,0 +1,111 @@
+
+<div class="u-pdh" data-section="section3"{{#unless back}} style="display:none;"{{/unless}}>  
+	        
+	<div class="modularGrid">
+		<div class="modularGrid-module u-pdt--half"> 
+		    {{#if back}} 
+			<label for="" class="form-label"><strong>Empresa / Razón social</strong></label>
+			{{/if}}     
+			<input class="form-input{{#unless mobile}} u-xs-90 u-md-95{{/unless}}" type="text" required placeholder="Empresa / Razón social"  name="company" data-jscompany>
+			{{#unless mobile}}<em class="form-info u-vt  u-xxs-hide u-xs-inlineBlock u-mgt--3rd u-mgl--3" data-js-tooltip="tooltip2">{{>svgIcon type='info'}}</em>{{/unless}}
+		</div> 
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+		    {{#if back}} 
+			<label for="" class="form-label"><strong>Nombre comercial</strong></label>
+			{{/if}}  			                       
+			<input class="form-input{{#unless mobile}} u-xs-90  u-sm-85 u-md-90{{/unless}}" type="text" placeholder="Nombre comercial" name="company_name" required>
+			{{#unless mobile}}<em class="form-info u-vt  u-xxs-hide u-xs-inlineBlock u-mgt--3rd u-mgl--3" data-js-tooltip="tooltip2">{{>svgIcon type='info'}}</em>{{/unless}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+			{{#if back}} 
+			<label for="" class="form-label"><strong>País</strong></label>
+			{{/if}} 
+			{{>countriesSelect}}
+		</div>                    
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+			{{#if back}} 
+			<label for="" class="form-label"><strong>CIF / NIF / VAT</strong></label>
+			{{/if}} 
+			{{>vatField placeholder='CIF / NIF / VAT' tooltip='tooltip_empresa'}}		
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Teléfono de la empresa</strong></label>
+			{{/if}}                           
+			<input class="form-prefix u-pen" name="phone_prefix" data-js-phone-prefix readonly="true" tabindex="-1"> 	         	                           
+			<input class="form-input form-input--prefix" type="text" placeholder="Teléfono de la empresa" name="phone" required pattern="[ |+]*[0-9| |-]+"  data-jsphone>
+		</div>
+		<div class="modularGrid-module u-pdt--half">
+			{{#if back}} 
+			<label for="" class="form-label"><strong>Dirección</strong></label>
+			{{/if}}   
+			{{>adressField}}
+		</div>                    
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half">
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Localidad</strong></label>
+			{{/if}}                             
+			{{>cityField}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half"> 
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Estado / Provincia</strong></label>
+			{{/if}}                            
+			{{>stateField}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Código Postal</strong></label>
+			{{/if}}                          
+			{{>zipField}} 
+		</div>		
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half"> 
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Página web corporativa (Opcional)</strong></label>
+			{{/if}}   
+			<input class="form-input" type="text" placeholder="Página web corporativa (Opcional)">
+		</div>
+
+		<div class="modularGrid-module u-pdt--half">
+			<h3 class="form-fieldset-title">Persona de contacto</h3> 
+		</div>  
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+			{{#if back}} 
+			<label for="" class="form-label"><strong>Nombre</strong></label>
+			{{/if}}
+		    <input class="form-input" type="text" required placeholder="Nombre"  pattern="[^()/><\][\\\x22,;|]+"  name="contact_person_name" >
+			
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Apellidos</strong></label>
+			{{/if}} 
+		<input class="form-input" type="text" required placeholder="Apellidos"  pattern="[^()/><\][\\\x22,;|]+"  name="contact_person_surnames" >                          
+		
+		</div> 
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half">
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Teléfono de contacto</strong></label>
+			{{/if}}  		
+		   <input class="form-prefix u-pen" name="phone_mobile_prefix" data-js-phone-prefix readonly="true" tabindex="-1"> 	         	                            
+			<input class="form-input form-input--prefix" type="text" name="phone_mobile" placeholder="Teléfono de contacto" required pattern="[ |+]*[0-9| |-]+" data-jsphonemobile>
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+			{{#if back}} 
+			<label for="" class="form-label"><strong>Otro teléfono (Opcional)</strong></label>
+			{{/if}}  
+			<input class="form-prefix u-pen" name="phone_mobile2_prefix" data-js-phone-prefix readonly="true" tabindex="-1"> 	         
+			<input class="form-input form-input--prefix" type="text" name="phone_mobile2" placeholder="Otro teléfono (Opcional)" pattern="[ |+]*[0-9| |-]+">
+		</div> 
+
+		<div class="modularGrid-module u-pdv">
+		 {{#if back}} 
+		    <button class="button button--big button--primary">Guardar datos</button> 
+		    {{else}}	  
+			<button class="button button--big button--primary" data-js-step="fw">Continuar</button>                        
+{{/if}}
+		</div>
+	</div> 
+</div>
+
+

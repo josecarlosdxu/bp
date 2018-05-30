@@ -1,0 +1,84 @@
+@include block(contactData) {
+
+    @include element(item) {
+        max-width: 300px;
+
+        padding: $um $um / 2;
+        font-size: 0;
+
+        @extend %u-md-50;
+        @extend %u-lg-25;
+
+        @include addBreakpoint(sm) {
+             padding: $um $um * 2;
+        }
+
+         @include addBreakpoint(md) {
+             padding: $um $um / 2;
+        }
+
+        &:last-child {
+
+             max-width: 700px;
+             @extend %u-md-100;
+
+             @extend %u-lg-50;
+
+            @include addBreakpoint(lg) {
+                padding-left: $um * 1.5;
+            }
+        }
+
+
+
+    }
+
+     @include element(subItem) {
+            @extend %inlineBlock100;
+
+            font-size: 1.2rem;
+
+            @extend %u-sm-70;
+            @extend %u-md-40;
+            @extend %u-lg-60;
+            padding-left: $um * 2;
+
+
+
+             &:last-child {
+                @extend %u-sm-30;
+                @include addBreakpoint(sm) {
+                  padding-left: 1rem;
+
+                }
+                @include addBreakpoint(md) {
+                  padding-left: 0;
+
+                }
+
+
+
+             }
+
+        }
+
+
+    @include element(title) {
+        font-size: 1.6rem;
+        color:#666;
+        font-weight: 400;
+        vertical-align: top;
+        padding-top: 0.5rem;
+        padding-bottom: $um / 2;
+
+        .icon{
+            padding-right: 0.25rem;
+            margin-top: -4px;
+            margin-right: $um / 3;
+
+
+        }
+    }
+
+
+}

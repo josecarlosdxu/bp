@@ -1,0 +1,69 @@
+{
+    "list": [{
+        "selected": "true",
+        "title": "",
+        "text": "",
+        "items": [{
+            "type": "b2b",
+            "border": "u-brdr",
+            "explain": "Para clientes que valoran no tener que adquirir grandes cantidades de un artículo, ya que podrán comprar unidades sueltas a precio mayorista PVD e incluso obtener descuentos adicionales. Es perfecto para clientes que se envían todos los pedidos a su almacén, aunque se permiten 3 envíos dropshipping al mes",
+            "explain_class": "text u-pdv--half u-pdh u-mgb--min table-item--top ",
+            "include": "Incluye:",
+            "list": [{
+                "text": "Unidades sueltas a precio mayorista PVD"
+            }, {
+                "text": "Descuento automático hasta el 10% del PVD"
+            }, {
+                "text": "Hasta 3 envíos dropshipping al mes"
+            }, {
+                "text": "Bloqueo de stock por 7 días"
+            }, {
+                "text": "Descarga de trackings"
+            }, {
+                "text": "Pedido mínimo 1,50 €"
+            }],
+            "quote": "<strike>Cuota de alta 99 €<\/strike>",
+            "mounthPrice": "0 € / mes",
+            "activate": "<button class='button button--big button--primary'>Activar<\/button>"
+        }, {
+            "type": "dropship",
+            "explain": "Para clientes que son capaces de sincronizar el catálogo de BigBuy a través de archivos CSV/XML o mediante una API.",
+            "explain_class": "text u-pdv--half u-pdh u-mgb--min table-item--top",
+            "include": "Incluye Pack B2B y además:",
+            "list": [{
+                "text": "Envíos dropshipping ilimitados"
+            }, {
+                "text": "API para catálogo, pedidos, transportistas y trackings"
+            }, {
+                "text": "Catálogo de productos BigBuy por FTP en archivos CSV/XML"
+            }, {
+                "text": "Catálogo en 24 idiomas europeos"
+            }, {
+                "text": "Carga masiva de pedidos por CSV"
+            }, {
+                "text": "Pedidos agrupados en un solo envío"
+            }, {
+                "text": "Descarga de material para marketing online"
+            }, {
+                "text": "Pedido mínimo 0,01 €"
+            }],
+            "quote": "<strike>Cuota de alta 99 €<\/strike>",
+            "mounthPrice": "49 € / mes",
+            "activate": "<button class='button button--big button--primary'>Activar<\/button>"
+        }, {
+            "type": "enterprise",
+            "border": "u-brdl",
+            "explain": "Para clientes que quieren una tienda dropshipping sincronizada a BigBuy de forma completa: catálogo, stocks, pedidos, transportistas, precios de envío y trackings. Incluye acceso a Multi-Channel Integration Platform, y emarketplace Integration.",
+            "explain_class": "text u-pdv--half u-pdh u-mgb--min table-item--top",
+            "include": "Incluye Pack Dropship y además:",
+            "list": [{
+                "text": "Multi-channel Integration Platform"
+            }, {
+                "text": "Integración a emarketplaces (solo con tienda dropshipping 360º)"
+            }],
+            "quote": "<strike>Cuota de alta 99 €<\/strike>",
+            "mounthPrice": "99 € / mes",
+            "activate": "<button class='button button--big button--primary'>Activar<\/button>"
+        }]
+    }]
+}

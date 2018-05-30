@@ -1,0 +1,197 @@
+%mobileSectionTitle {
+    @extend %inlineBlock;
+    border: none;
+    font-family: $type-headings;
+    font-weight: 400;
+}
+%navIcon {
+    @extend %borderless;
+    @extend %inlineBlock;
+    width: 3.5rem;
+    height: $um * 1.5;
+    color: inherit;
+    position: relative;
+    margin-right: 0.25rem;
+    top: 0.4rem;
+}
+
+
+@include block(mobileNavBar) {
+    position: relative;
+    display: inline-block;
+    padding: $um / 3 $um / 2 0;
+    color: #fff;
+    position: relative;
+    background: $color-darkGrey-dark;
+    width: 100%;
+    vertical-align: top;
+    line-height: 2;
+    @include element(secondaryActions) {
+        color: #fff;
+        border-left: 1px solid $color-light;
+        line-height: 1.2;
+        display: inline-block;
+        padding: 0.25rem 0 0.25rem 1.25rem;
+        vertical-align: middle;
+        font-size: 1.2rem;
+        float: right;
+        margin-top: 0.5rem;
+        @include addBreakpoint(sm) {
+            padding: 0.25rem 0.75rem 0.25rem 1.25rem;
+        }
+    }
+    @include element(breadcrumb) {
+        @extend %navIcon;
+        height: 2.5rem;
+        width: 3.5rem;
+        background: url("../img/mobileIcons/home_white.svg") no-repeat center transparent;
+        border-right: 2px solid opacify($color-light,0.1);
+        position: relative;
+        //margin-right: 0.25rem;
+        top: 0.2rem;
+        @include modifier(back) {
+            background: url("../img/mobileIcons/arrowLeft.svg") no-repeat center 0.5rem;
+
+        }
+        //left: -4px;
+    }
+    @include element(close) {
+        @extend %navIcon;
+        background: url("../img/mobileIcons/times_white.svg") no-repeat center transparent;
+    }
+    @include element(back) {
+        @extend %navIcon;
+        background: url("../img/mobileIcons/arrowLeft.svg") no-repeat center transparent;
+    }
+    @include element(icon) {
+        position: relative;
+        top: 0.5rem;
+        left: 0;
+        transition: all 0.1s;
+        opacity: 0.5;
+    }
+    @include element(link) {
+        display: inline-block;
+        font-size: 1.25rem;
+        font-weight: 300;
+        height: 100%;
+        line-height: 2;
+        overflow: hidden;
+        padding-top: 1rem;
+        padding-left: $um;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    @include modifier(news) {
+        width: 100%;
+        border-bottom: 1px solid $color-shadow;
+        background-clip: padding-box;
+        min-height: 4.15rem;
+        font-weight: 300;
+        padding: 0.75rem 0;
+    }
+    /*@include modifier(back) {
+        width: 100%;
+        border-bottom: 1px solid $color-shadow;
+        min-height: 3rem;
+        font-weight: 300;
+        background: $color-brandYellow-light;
+        background-clip: padding-box;
+        color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 6rem;
+        width: 100%;
+        z-index: 2;
+        line-height: 1;
+    }*/
+    @include modifier(alt) {
+        background: $color-shadow;
+
+    }
+    @include modifier(sticky) {
+        width: 100%;
+        z-index: 1;
+        position: fixed !important;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        top:0;
+    }
+    @include modifier(fixed) {
+        width: 100%;
+        z-index: 1;
+        position: fixed;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    @include element(viewmore) {
+        background: url("../img/mobileIcons/arrowRight.svg") no-repeat 92% 12px rgba(255, 255, 255, 0.2);
+        color: inherit;
+        display: inline-block;
+        font-size: 1.25rem;
+        padding: 0.95rem 3rem 1rem 1.5rem;
+        vertical-align: top;
+        height: 3.6rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0 3px 3px 0;
+        box-shadow: 1px 0 opacify($color-light, 0.3) inset;
+    }
+    @include element(title) {
+        @extend %mobileSectionTitle;
+        vertical-align: top;
+        color: inherit;
+        padding: 0;
+        padding-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.2;
+        //@include addBreakpoint(xs) {
+            // padding-top: 0.75rem;
+            font-size: 1.3em;
+            padding: 0.5rem 0.75rem  0rem;
+        //}
+        @include modifier(news) {
+            background: #f75856;
+            @extend %mobileHomeSectionTitle;
+        }
+        @include modifier(topsales) {
+            @extend %mobileHomeSectionTitle;
+            background: #67b02c;
+        }
+        @include modifier(outlet) {
+            @extend %mobileHomeSectionTitle;
+            background: #f90;
+        }
+        @include modifier(stock) {
+            @extend %mobileHomeSectionTitle;
+            background: #06c;
+        }
+        @include modifier(ours) {
+            @extend %mobileHomeSectionTitle;
+            background: #ABAFB5;
+        }
+    }
+}
+
+
+
+%mobileHomeSectionTitle {
+    @extend %inlineBlock;
+    border: none;
+    min-height: 3.45rem;
+    font-family: $type-headings;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 1.25rem;
+    min-width: 24.5rem;
+    font-size: $um;
+    line-height: 1.2;
+    padding: 0.75rem 1rem 0 1rem;
+    border-radius: 0 4px 4px 0;
+}

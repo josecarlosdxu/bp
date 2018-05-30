@@ -1,0 +1,18 @@
+<div class="panel panel--active panel--reveal" >
+  <div class="panel-title">
+    <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-addresses"/></svg>
+    <div class="panel-titleName"><a class="panel-breadcrumbLink" href="">Direcciones</a></div>
+  </div>
+  <div class="panel-content" >
+    <nav class="panel-tabs">
+      <button data-paneltabbtn="tab10" class="panel-tabs-item panel-tabs-item--active">Direcciones de facturación</button>
+      <button data-paneltabbtn="tab11" class="panel-tabs-item"> Direcciones de envío</button>
+    </nav>
+    <div id="tab10">
+      {{>billingCards}}
+    </div>
+     <div id="tab11" style="display:none;">
+      {{>deliveryCards}}
+    </div>
+  </div>
+</div>

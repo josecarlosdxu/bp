@@ -1,0 +1,46 @@
+<section class="content content--fdivl u-pdb--half">
+	<div class="modularGrid modularGrid--boxed">
+		<div class="cardList cardList--shoppingcart">
+			{{#times 10}}
+			{{>cartTableRow1}}
+			{{/times}}
+		</div>
+	</div>
+</section>
+{{#if end}}
+<section class="content content--inverse">
+	<div class="modularGrid modularGrid--boxed u-pdv u-pdr u-tar">
+		<p class="subtitle u-pdt--half">Subtotal<span class="superSubtitle u-mgl2">6,96 €</span></p>
+		<p class="subtitle u-pdt--half">Gastos de pago<span class="superSubtitle u-mgl2">0,37 €</span></p>
+		<p class="subtitle u-pdt--half">Base imponible<span class="superSubtitle u-mgl2">7,33 €</span></p>
+		<p class="subtitle u-pdt--half">Total<span class="superSubtitle u-mgl2">7,33 €</span></p>
+		<form action="stepsCart.html" class="form u-pdt">
+			<button class="button button--primary u-mgb--half" type="submit" data-js-cartcheckout="submit">Finalizar</button>
+		</form>
+	</div>
+</section>
+{{else}}
+<section class="content content--inverse">
+	<div class="modularGrid modularGrid--boxed u-pdv u-pdr u-tar">
+		<p class="subtitle u-pdt--half">Subtotal<span class="superSubtitle u-mgl2">6,96 €</span></p>
+
+		{{#if disabled}}
+		<div class="u-mgt">
+			<div class="msgBox msgBox--warning u-md-30 u-flr">El pedido mínimo debe ser superior a 10.00 €.</div>
+		</div>
+
+		{{/if}}
+		<form action="stepsCart.html" class="form u-pdt u-clb">
+		    {{#if disabled}}
+			<a href="#" class="button button--small button--primary u-mgb--half" >Seguir comprando</a>
+			<button class="button button--primary  button--small u-mgl--3 u-mgb--half" type="submit" data-js-cartcheckout="submit" disabled>Realizar pedido</button>
+			{{else}}
+			<a href="#" class="button button--small button--ghost u-mgb--half" >Seguir comprando</a>
+			<button class="button button--primary  button--small u-mgl--3 u-mgb--half" type="submit" data-js-cartcheckout="submit">Realizar pedido</button>
+			{{/if}}
+
+		</form>
+	</div>
+</section>
+
+{{/if}}

@@ -1,0 +1,81 @@
+<section class="panel-section {{#each modifiers}} panel-section--{{this}} {{/each}}">
+    <div class="modularGrid">
+        {{#if title }}
+        <div class="modularGrid-module">
+            <div class="panel-section-title">
+                {{title}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if dataHandlers }}
+        <div class="panel-section-dataHandlers">
+            <div class="modularGrid">
+                {{#if sort}}
+                <div class="panel-section-sort">
+                    <div class="modularGrid-module u-sm-40">
+                        <label for="" class="form-label form-label--inline"> Ordenar por</label>
+                    </div>
+                    <div class="modularGrid-module u-sm-60">
+                        <select name="" id="" class="form-select form-select--inline">
+                            {{#each sort}}
+                            <option value="">{{this}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+                {{/if}}
+                {{#if filters}}
+                <div class="panel-section-filter panel-section-filter--active">
+                    <div class="modularGrid-module">
+                        <div class="form-action">
+                            <span class="form-action-msg">Filtrar</span>
+                            <i class="form-action-icon u-pdl--half fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if filterPath }}
+        <div class="panel-section-filters">
+            <div class="modularGrid-module">
+                {{{aggregate  filterPath }}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if actions }}
+        <div class="panel-actions panel-actions--inline animated slideShow">
+            <div class="modularGrid-module">
+                {{#each actions}}
+                <div class="panel-actions-item">
+                    <button class="form-action">
+                        <i class="fa form-action-icon fa-lg {{this.icon}}"></i>
+                        <span class=""> {{this.name}}</span>
+                    </button>
+                </div>
+                {{/each}}
+
+            </div>
+        </div>
+        {{/if}}
+
+
+
+    <div class="modularGrid-module">
+
+        {{{aggregate  contentPath }}}
+
+    </div>
+     </div>
+
+    {{#if pagination }}
+    <footer class="panel-footer">
+        {{> panelPagination}}
+    </footer>
+    {{/if}}
+
+</section>

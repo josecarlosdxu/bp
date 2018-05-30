@@ -1,0 +1,129 @@
+{
+  "bigmenu":{
+    "header":[
+      {
+        "title":"Perfumes",
+        "sectionID":"110",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Cuidado facial",
+        "sectionID":"111",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Cuidado corporal",
+        "sectionID":"113",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Cosmética",
+        "sectionID":"114",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Cosmética natural",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Lotes de cosmética y perfumería",
+        "sectionID":"",
+        "modifier":""
+      }
+    ],
+    "categories":[
+      {
+        "sectionID":"110",
+        "subcategories":[
+          {
+            "name":"Perfumes de hombre"
+          },
+          {
+            "name":"Perfumes de mujer"
+          },
+          {
+            "name":"Perfumes unisex"
+          }
+        ]
+      },
+      {
+        "sectionID":"111",
+        "subcategories":[
+          {
+            "name":"Cremas antiarrugas e hidratantes"
+          },
+          {
+            "name":"Contorno de ojos"
+          },
+          {
+            "name":"Sérum"
+          },
+          {
+            "name":"Limpiadores y exfoliantes"
+          },
+          {
+            "name":"Mascarillas"
+          },
+          {
+            "name":"Desmaquillantes"
+          },
+          {
+            "name":"Leches limpiadoras y tónicos"
+          },
+          {
+            "name":"Espumas y geles de afeitar"
+          },
+          {
+            "name":"After shave y lociones"
+          }
+        ]
+      },
+      {
+        "sectionID":"113",
+        "subcategories":[
+          {
+            "name":"Jabones y geles"
+          },
+          {
+            "name":"Desodorantes"
+          },
+          {
+            "name":"Cremas hidratantes y exfoliantes"
+          },
+          {
+            "name":"Cremas anticelulíticas y reafirmantes"
+          }
+        ]
+      },
+      {
+        "sectionID":"114",
+        "subcategories":[
+          {
+            "name":"Maquillajes y correctores"
+          },
+          {
+            "name":"Polvos compactos"
+          },
+          {
+            "name":"Coloretes"
+          },
+          {
+            "name":"Sombras de ojos"
+          },
+          {
+            "name":"Rímel"
+          },
+          {
+            "name":"Eyeliners y lápices de ojos"
+          },
+          {
+            "name":"Pintalabios, gloss y perfiladores"
+          }
+        ]
+      }
+
+
+    ]
+  }
+}

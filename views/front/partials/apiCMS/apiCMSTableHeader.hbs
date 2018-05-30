@@ -1,0 +1,14 @@
+<thead class="table-thead">
+<tr class="table-tr">
+{{#each thead}}
+<th class="table-th table-item">
+<div class="modularGrid modularGrid--flexCenter">
+{{#if icon}}
+<img src="../../img/{{icon}}.svg" class="icon icon--inline icon--lg">
+{{/if}}
+{{{text}}}
+</div>
+</th>
+{{/each}}
+</tr>
+</thead>

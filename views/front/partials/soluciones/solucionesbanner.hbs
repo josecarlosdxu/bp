@@ -1,0 +1,26 @@
+
+<div class="banner bannerBlue banner--horizontal{{#if class}} {{class}}{{/if}}">
+<div class="modularGrid u-pdb">    
+
+<div class="modularGrid-module u-md-50">
+<h3 class="banner-caption u-op-60">{{caption}}</h3>
+<h2 class="banner-header u-mgb">{{{header}}}</h2>
+
+{{#if list}}
+
+<ul class="banner-list u-op-60 u-pdt--half">
+
+{{#each list}}
+	
+<li class="banner-listitem">{{text}}</li>
+{{/each}}
+
+</ul>
+{{/if}}
+</div>
+<div class="modularGrid-module u-md-50 u-tar u-mgt--half u-vb u-pdr2">
+<img src="../../img/banners/{{image}}.svg" class="u-xxs-70 u-sm-60 u-md-80 u-lg-75 u-mgr">
+</div>
+</div>
+</div>
+

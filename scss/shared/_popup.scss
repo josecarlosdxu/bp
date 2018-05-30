@@ -1,0 +1,144 @@
+@include block(popup) {
+    @extend %box;
+    position: relative;
+    margin: 6rem auto;
+    //margin-top: 10%;
+    outline: none;
+    cursor: default;
+    @include element(header) {
+        z-index: 10;
+    }
+    @include element(title) {
+        padding: $um;
+        font-size: $um;
+        @extend %type-textHeaders;
+        @include modifier(new) {
+            padding: 0 1rem;
+            color: $color-accentBlue-default;
+            font-style: italic;
+            font-weight: 400;
+            -webkit-animation: pulseBlink infinite 1s;
+            animation: pulseBlink infinite 1s;
+        }
+    }
+    @include element(img) {
+        @extend %img--responsive;
+    }
+    @include element(extra) {
+        font-family: $type-headingscms;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    @include element(subtitle) {
+        margin-bottom: $um / 2;
+        font-weight: 400;
+        @extend %type-text01;
+    }
+    @include element(close) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: $um / 2;
+        color: currentcolor;
+        transition: opacity 0.15s, background 0.15s;
+        opacity: 0.5;
+        z-index: 999;
+        font-size: $um;
+        border-radius: 0 0 0 4px;
+        line-height: 1;
+        border:none;
+        background: none;
+        &:hover,
+        &:focus {
+            opacity: 1;
+            box-shadow: none;
+            background: $color-shadow;
+        }
+    }
+    @include element(content) {
+        padding: 0 $um $um;
+    }
+    @include element(footer) {
+        overflow: auto;
+        padding: $um / 1.2 $um;
+        border-top: 1px solid $color-shadow;
+        background: $color-popup-footer;
+        @include modifier(adjust) {
+            border-top: 1px solid $color-shadow;
+            background: $color-popup-footer;
+            padding: $um / 2 $um;
+            box-shadow: 0 $um $color-popup-footer;
+            margin: 0.75rem -1.5rem 0;
+        }
+    }
+    @include element(action) {
+        margin-top: $um / 2;
+        outline: none;
+    }
+    @include element(container) {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+//        cursor: wait;
+        background-color: $backgroundLoading;
+        overflow-y: auto;
+        @include modifier(cursor) {
+            cursor: pointer;
+            >.modularGrid,
+            >.modularGrid > .modularGrid-module {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@include extendElement(popup, container, inside) {
+    position: absolute;
+    background-color: transparentize($color-lightGrey-light, 0.1);
+    z-index: 0;
+    .loading {
+        margin-top: 13%;
+    }
+}
+
+@include extendElement(popup, container, warning) {
+    cursor: wait;
+    * {
+        cursor: wait;
+    }
+    .popup {
+        position: relative;
+        z-index: 0;
+        pointer-events: none;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            z-index: 1;
+        }
+        &:before {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: $backgroundLoading;
+        }
+        &:after {
+            width: 2px;
+            height: 2px;
+            top: 50%;
+            left: 50%;
+            -webkit-animation: rotateplane 1.1s infinite;
+            animation: rotateplane 1.1s infinite;
+            border-radius: 10px;
+            outline: medium none;
+            background: transparent;
+        }
+    }
+}

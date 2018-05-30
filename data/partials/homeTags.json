@@ -1,0 +1,520 @@
+{
+    "tags": {
+        "cardListModifiers": [
+            "tags"
+        ],
+        "data": "data-js-tag-slider=\"slideout\"",
+
+        "list": [{
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "A la <br> moda",
+            "titleAlt": "A la moda",
+            "alt": "Artículos para el hogar al por mayor",
+            "image": "../../img/tags-home/26_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Adelgazar",
+            "titleAlt": "Adelgazar",
+            "alt": "",
+            "image": "../../img/tags-home/1_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Ahorro",
+            "titleAlt": "Ahorro",
+            "alt": "",
+            "image": "../../img/tags-home/2_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Aire libre <br> camping",
+            "titleAlt": "Aire libre / camping",
+            "alt": "",
+            "image": "../../img/tags-home/5_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Amor <br> romántico",
+            "titleAlt": "amor / romántico",
+            "alt": "",
+            "image": "../../img/tags-home/3_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Animales",
+            "titleAlt": "Animales",
+            "alt": "",
+            "image": "../../img/tags-home/4_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Aperitivos <br> Picoteo",
+            "titleAlt": "Aperitivos / picoteo",
+            "alt": "",
+            "image": "../../img/tags-home/39_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bambú <br> pizarra",
+            "titleAlt": "Bambú / pizarra",
+            "alt": "",
+            "image": "../../img/tags-home/40_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Barbacoa <br> grill",
+            "titleAlt": "Barbacoa / grill",
+            "alt": "",
+            "image": "../../img/tags-home/41_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Batidos y <br> zumos",
+            "titleAlt": "Batidos y zumos",
+            "alt": "",
+            "image": "../../img/tags-home/42_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bebidas",
+            "titleAlt": "Bebidas",
+            "alt": "",
+            "image": "../../img/tags-home/32_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Belleza",
+            "titleAlt": "Belleza",
+            "alt": "",
+            "image": "../../img/tags-home/11_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bicicleta",
+            "titleAlt": "Bicicleta",
+            "alt": "",
+            "image": "../../img/tags-home/43_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Botiquín",
+            "titleAlt": "Botiquín",
+            "alt": "",
+            "image": "../../img/tags-home/2896_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Chef <br> cocinillas",
+            "titleAlt": "Chef / cocinillas",
+            "alt": "",
+            "image": "../../img/tags-home/15_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Cine",
+            "titleAlt": "Cine",
+            "alt": "",
+            "image": "../../img/tags-home/45_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Comodidad <br> andar cómodo",
+            "titleAlt": "comodidad / andar cómodo",
+            "alt": "Juguetes al por mayo",
+            "image": "../../img/tags-home/46_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Cosmética natural",
+            "titleAlt": "Cosmética natural",
+            "alt": "",
+            "image": "../../img/tags-home/6_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Decoración",
+            "titleAlt": "Decoración",
+            "alt": "",
+            "image": "../../img/tags-home/7_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Deportista <br> En forma",
+            "titleAlt": "deportista / en forma",
+            "alt": "",
+            "image": "../../img/tags-home/8_small.jpg"
+        },  {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bebidas",
+            "titleAlt": "Bebidas",
+            "alt": "",
+            "image": "../../img/tags-home/32_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Belleza",
+            "titleAlt": "Belleza",
+            "alt": "",
+            "image": "../../img/tags-home/11_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bicicleta",
+            "titleAlt": "Bicicleta",
+            "alt": "",
+            "image": "../../img/tags-home/43_small.jpg"
+        },{
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "A la <br> moda",
+            "titleAlt": "A la moda",
+            "alt": "Artículos para el hogar al por mayor",
+            "image": "../../img/tags-home/26_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Adelgazar",
+            "titleAlt": "Adelgazar",
+            "alt": "",
+            "image": "../../img/tags-home/1_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Ahorro",
+            "titleAlt": "Ahorro",
+            "alt": "",
+            "image": "../../img/tags-home/2_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Aire libre <br> camping",
+            "titleAlt": "Aire libre / camping",
+            "alt": "",
+            "image": "../../img/tags-home/5_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Amor <br> romántico",
+            "titleAlt": "amor / romántico",
+            "alt": "",
+            "image": "../../img/tags-home/3_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Animales",
+            "titleAlt": "Animales",
+            "alt": "",
+            "image": "../../img/tags-home/4_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Aperitivos <br> Picoteo",
+            "titleAlt": "Aperitivos / picoteo",
+            "alt": "",
+            "image": "../../img/tags-home/39_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bambú <br> pizarra",
+            "titleAlt": "Bambú / pizarra",
+            "alt": "",
+            "image": "../../img/tags-home/40_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Barbacoa <br> grill",
+            "titleAlt": "Barbacoa / grill",
+            "alt": "",
+            "image": "../../img/tags-home/41_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Batidos y <br> zumos",
+            "titleAlt": "Batidos y zumos",
+            "alt": "",
+            "image": "../../img/tags-home/42_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bebidas",
+            "titleAlt": "Bebidas",
+            "alt": "",
+            "image": "../../img/tags-home/32_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Belleza",
+            "titleAlt": "Belleza",
+            "alt": "",
+            "image": "../../img/tags-home/11_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bicicleta",
+            "titleAlt": "Bicicleta",
+            "alt": "",
+            "image": "../../img/tags-home/43_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Botiquín",
+            "titleAlt": "Botiquín",
+            "alt": "",
+            "image": "../../img/tags-home/2896_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Chef <br> cocinillas",
+            "titleAlt": "Chef / cocinillas",
+            "alt": "",
+            "image": "../../img/tags-home/15_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Cine",
+            "titleAlt": "Cine",
+            "alt": "",
+            "image": "../../img/tags-home/45_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Comodidad <br> andar cómodo",
+            "titleAlt": "comodidad / andar cómodo",
+            "alt": "Juguetes al por mayo",
+            "image": "../../img/tags-home/46_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Cosmética natural",
+            "titleAlt": "Cosmética natural",
+            "alt": "",
+            "image": "../../img/tags-home/6_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Aire libre <br> camping",
+            "titleAlt": "Aire libre / camping",
+            "alt": "",
+            "image": "../../img/tags-home/5_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Amor <br> romántico",
+            "titleAlt": "amor / romántico",
+            "alt": "",
+            "image": "../../img/tags-home/3_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Animales",
+            "titleAlt": "Animales",
+            "alt": "",
+            "image": "../../img/tags-home/4_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Aperitivos <br> Picoteo",
+            "titleAlt": "Aperitivos / picoteo",
+            "alt": "",
+            "image": "../../img/tags-home/39_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bambú <br> pizarra",
+            "titleAlt": "Bambú / pizarra",
+            "alt": "",
+            "image": "../../img/tags-home/40_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Barbacoa <br> grill",
+            "titleAlt": "Barbacoa / grill",
+            "alt": "",
+            "image": "../../img/tags-home/41_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Batidos y <br> zumos",
+            "titleAlt": "Batidos y zumos",
+            "alt": "",
+            "image": "../../img/tags-home/42_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bebidas",
+            "titleAlt": "Bebidas",
+            "alt": "",
+            "image": "../../img/tags-home/32_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Belleza",
+            "titleAlt": "Belleza",
+            "alt": "",
+            "image": "../../img/tags-home/11_small.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "tagItem"
+            ],
+            "data": "data-js-tag-slider=\"tagItem\"",
+            "title": "Bicicleta",
+            "titleAlt": "Bicicleta",
+            "alt": "",
+            "image": "../../img/tags-home/43_small.jpg"
+        }]
+    }
+}

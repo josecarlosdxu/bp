@@ -1,0 +1,38 @@
+%btnMore{
+    font: 700 14px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    &:before {
+            content: "";
+            display: inline-block;
+            height: 5px;
+            width: 5px;
+            box-shadow: -5px 0 0px, -11px 0 0px, -17px 0 0px, -5px -6px 0px, -11px -6px 0px, -17px -6px 0;
+        }
+
+}
+
+@include block(viewMore) {
+    @include element(btn) {
+        @extend %btnMore;
+        display: inline-block;
+        color: inherit;
+        margin-left: 5rem;
+        transition: opacity 0.3s;
+        text-align: left;
+        text-decoration: none;
+        fill: current-color;
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+    @include element(bar) {
+        background: white;
+        color: $color-more;
+        .viewMore-btn {
+            margin-bottom: 0;
+            margin-left: 2.25rem;
+            padding: 1rem 0;
+        }
+    }
+}

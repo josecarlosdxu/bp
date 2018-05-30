@@ -1,0 +1,58 @@
+@include block(newsletterForm) {
+    background: #FFE600;
+    margin-top: -5px; //margin-bottom: -30px;
+    color: #333;
+    @include element(title) {
+        color: #333;
+        font-size: 1.5rem;
+        padding-top: 5px;
+        margin-bottom: $um/2;
+        font-weight: bold;
+    }
+    @include element(item) {
+        position: relative;
+        padding-left: 1.5rem;
+        .form-checkbox {
+            top: 3px;
+            display: inline-block;
+            margin-right: 0.1rem;
+            position: relative;
+            margin-left: -1.5rem;
+        }
+        .form-label--inline {
+            line-height: 1;
+        }
+        /*@extend %type-footerlink;
+
+        &:after {
+            content:",";
+        }
+
+        &:last-child:after {
+            content:"";
+        }
+
+        &:hover{
+            color: $color-tags-link-hover-text;
+        }*/
+    }
+}
+
+.no-flexbox {
+    .newsletterForm-item {
+        display: block;
+    }
+    .newsletterForm-item .form-checkbox+.form-label--inline {
+        display: block;
+    }
+
+
+    .form-checkbox+.form-label::before {
+        display: inline-block;
+        margin-bottom: -0.15rem;
+    }
+}
+
+.newsletterForm .form-fieldset--related .form-label {
+    opacity: 1;
+}

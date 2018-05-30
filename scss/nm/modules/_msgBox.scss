@@ -1,0 +1,95 @@
+%msgBox-link {
+    cursor: pointer;
+    color: $color-msgBox-link-text;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+@include block(msgBox) {
+    padding: $um / 2 $um;
+    border-radius: 1px;
+    background: #CCC;
+    //transition: all 1s;
+    line-height: 1.1;
+    font-size: 0.95rem;
+
+    @include element(content) {
+        margin-top: $um / 2;
+    }
+    br{
+        display: block !important;
+    }
+    p{
+        margin-bottom: $um / 3; 
+    }
+
+    @include modifier(small) {
+        padding:0.3rem;
+        font-size:0.8rem;
+    }
+    @include modifier(auto) {
+        display: inline-block;
+        width: auto;
+        
+    }
+}
+
+@include extendBlock(msgBox, error) {
+    @extend %animated;
+    @extend %shake;
+    color: #da3b3b;
+    background: #f8d8d8 url(../img/icons/notify_alert.svg) no-repeat 0.5rem center;
+    background-size: 14px;
+    font-weight: 400;
+    padding-left: 2rem;
+    border-left: 4px solid #da3b3b;
+    @include element(link) {
+        @extend %msgBox-link;
+        //color: #fff;
+    }
+}
+
+@include extendBlock(msgBox, success) {
+    @extend %animated;
+    @extend %shake;
+    color: #275900;
+    background: #9dd570 url(../img/icons/notify_success.svg) no-repeat 0.5rem center;
+    background-size: 14px;
+    padding-left: 2rem;
+    font-weight: 400;
+    border-left: 4px solid $color-green-dark;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+
+@include extendBlock(msgBox, warning) {
+    @extend %animated;
+    @extend %shake;
+    color: $color-orange-darker;
+    background: $color-orange-light  url(../img/icons/notify_warning.svg) no-repeat 0.5rem center;
+    background-size: 14px;
+    font-weight: 400;
+    padding-left: 2rem;
+    border-left: 4px solid $color-orange-darker;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+
+@include extendBlock(msgBox, info) {
+   // @extend %animated;
+   // @extend %shake;
+    color: $color-accentBlue-dark;
+    background-color: mix($color-accentBlue-default,white,10%);    
+    font-weight: 400;
+    padding: $um $um / 2;
+    border-left: 6px solid $color-accentBlue-default;
+    @include element(link) {
+        @extend %msgBox-link;
+    }
+}
+
+
+
+

@@ -1,0 +1,82 @@
+{
+    "banners1": {
+        "listModifiers": [
+
+        ],
+        "list": [{
+            "bannerModifiers": [
+
+            ],
+            "title": "Disfraces",
+            "tooltip": "Perfumes",
+            "more": "Ver todo",
+            "imgalt": "Perfumes",
+            "image": "../../img/banners/disfraces_footer.jpg"
+        }, {
+            "bannerModifiers": [
+                "col2"
+            ],
+            "title": "Regalos originales",
+            "more": "Ver todo",
+            "tooltip": "Regalos originales",
+            "imgalt": "Regalos originales",
+            "image": "../../img/banners/2662_banner.jpg"
+        }, {
+            "bannerModifiers": [
+                "col2"
+            ],
+            "title": "Perfumería<br>Cosmética",
+            "tooltip": "Teletienda Anunciado en TV",
+            "imgalt": "Perfumería y Cosmética",
+            "more": "Ver todo",
+            "image": "../../img/banners/perfumeria_footer.jpg"
+        }]
+    },
+    "banners2": {
+        "listModifiers": [
+            "stretch"
+        ],
+        "list": [{
+            "bannerModifiers": [
+
+            ],
+            "title": "Regalos para el día del Padre",
+            "more": "Ver todo",
+            "tooltip": "Regalos para el día del Padre",
+            "imgalt": "Regalos para el día del Padre",
+            "image": "../../img/banners/dia_padre.jpg",
+            "pictureList": [
+                 {"media":"(min-width: 480px)", "img":"../../img/banners/dia_padre.jpg"},
+                 {"media":"(min-width: 300px)", "img":"../../img/banners/dia_padre_480.jpg"}
+                
+            ]
+        }, {
+            "bannerModifiers": [
+                "col3"
+            ],
+            "title": "Accesorios para viajar",
+            "more": "Ver todo",
+            "tooltip": "Accesorios para viajar",
+            "imgalt": "Accesorios para viajar",
+            "image": "../../img/banners/banner_viajar.jpg"
+        }, {
+            "bannerModifiers": [
+                "col3"
+            ],
+            "title": "Ponte en forma",
+            "more": "Ver todo",
+            "tooltip": "Ponte en forma",
+            "imgalt": "Ponte en forma",
+            "image": "../../img/banners/banner_forma.jpg"
+        }, {
+            "bannerModifiers": [
+                "col3"
+            ],
+            "title": "¿Cocinillas?",
+            "more": "Ver todo",
+            "tooltip": "¿Cocinillas?",
+            "imgalt": "¿Cocinillas?",
+            "image": "../../img/banners/banner_cocinillas.jpg"
+        }]
+    }
+}

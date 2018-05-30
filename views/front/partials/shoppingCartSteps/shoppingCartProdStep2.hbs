@@ -1,0 +1,19 @@
+<div class="shoppingCartStep{{#if active}} shoppingCartStep--active{{/if}}{{#if editable}} shoppingCartStep--editable{{/if}}" data-shoppingcart-step="2" data-js-step2>
+    <div class="shoppingCartStep-header">
+      <b class="shoppingCartStep-number">2</b>
+      <div class="shoppingCartStep-headertexts">
+          <h4 class="shoppingCartStep-title">Información del envío</h4>        
+      </div>
+      {{>shoppingCartEditBtn}}
+  </div>
+  <div class="shoppingCartStep-content">
+    <fieldset class="form-fieldset--borderless u-pdb--half" >         
+        <label class="form-label form-label--checkgroup u-pdl0"><input class="form-radio" name="shipping_eq_invoice" id="shipping_eq_invoice1" data-js-shipping_eq_invoice="1" value="1" checked="checked" type="radio"> Envío a la misma dirección de facturación</label>
+        <label class="form-label form-label--checkgroup u-pdl0"><input class="form-radio" name="shipping_eq_invoice" id="shipping_eq_invoice0" data-js-shipping_eq_invoice="0" value="0" type="radio"> Envío a otra dirección</label>        
+    </fieldset>
+    <button class="button button--primary button--big" data-js-continuar-address="">Continuar</button>   
+</div>
+</div>
+
+
+

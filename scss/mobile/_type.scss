@@ -1,0 +1,166 @@
+@include block(title) {
+    @extend %header-type;
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: $um;
+    text-decoration: none;
+    color: currentColor;
+    margin-bottom: $um / 2;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include modifier(huge) {
+        pointer-events: none;
+        margin: 0;
+        line-height: 1.1;
+        text-align: inherit;
+        @include addBreakpoint(lg) {
+            font-size: 2rem;
+        }
+    }
+    @include element(more) {
+        @extend %type-section-title;
+        font-size: 1.25rem;
+    }
+    @include element(viewMore) {
+        @extend %type-section-title;
+        font-size: 1.25rem;
+        color: $color-more;
+        margin-left: 2rem;
+        display: inline-block;
+        &:before {
+            @extend %moreBefore;
+        }
+    }
+}
+
+@include block(subtitle) {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+@include block(subtitle2) {
+    font-size: $um * 0.9;
+    font-weight: 700;
+}
+
+@include block(superSubtitle) {
+    font-size: $um;
+    font-weight: 500;
+}
+.superSubtitle2 {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  
+
+    font-size: 1.6rem;
+      
+  
+}
+
+@include block(supertitle) {
+    color: currentColor;
+    display: inline-block;
+    font-family: $type-headingscms;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+@include block(title1) {
+  display: block;
+  font-family: $type-headingscms;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.subtitle6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.title2 {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cmsContentSection-subtitle {
+ 
+   font-family: $type-headingscms;
+  font-size: $um;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+
+
+
+
+@include block(subtitle5 ){
+    font-size: $um;
+    .info{
+        font-size: 0.8em;
+    }
+} 
+
+
+@include block(subtitle4 ){
+    font-size: 1.25rem;
+  
+} 
+
+%sliderText {
+    font-family: $type-headingscms;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    line-height: 0.95;
+    color: white;
+    text-shadow: 2px 2px 2px $color-shadow;
+}
+
+%sliderSubtitle {
+    font-family: $type-headingscms;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+    line-height: 1;
+    color: #f7f7f8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.supertitle1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.ventaCMS-prominentText {
+  color: #333333;
+  font-family: "Roboto Condensed",sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 0.5rem;
+}
+.superSubtitle1 {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+.subtitle1 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+

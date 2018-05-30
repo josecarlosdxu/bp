@@ -1,0 +1,31 @@
+<table class="table table--interactive ">
+    <thead class="table-thead">
+
+        <tr class="table-tr">
+            <td class="table-th table-item table-item--handler"><input type="checkbox" class="form-checkbox" data-js-checkactions="all"> </td>
+            <th class="table-th table-item u-xs-10">Nº Factura </th>
+            <th class="table-th table-item u-xs-15">Fecha </th>
+            <th class="table-th table-item u-xs-10">CIF </th>
+            <th class="table-th table-item u-xs-15">Forma de Pago</th>
+            <th class="table-th table-item u-xs-15 table-item--number">Importe </th>
+            <th class="table-th table-item u-xs-15">Estado</th>
+        </tr>
+        <tr class="table-tr">
+                 <td colspan="100">
+                    <div class="table-actionGroup" data-js-checkActions="actions">
+                            <a href="descarga.zip" target="_blank" class="table-action"><i class="icon table-tableIcon fa-cloud-download"></i>Descargar PDF</a>
+                            <a href="descarga.zip" target="_blank" class="table-action"><i class="icon table-tableIcon fa-cloud-download"></i>Descargar Excel</a>
+                 </div>
+            </td>
+        </tr>
+
+    </thead>
+    <tbody class="table-tbody table-tbody--stripped">
+        {{>tableRowInvoice01}}
+        {{>tableRowInvoice01}}
+        {{>tableRowInvoice02}}
+        {{>tableRowInvoice01}}
+        {{>tableRowInvoice01}}
+    </tbody>
+
+</table>

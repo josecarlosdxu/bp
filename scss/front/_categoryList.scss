@@ -1,0 +1,237 @@
+%bannerText {
+    position: relative;
+    z-index: 1;
+}
+
+// NO TOCAR--------!!! INCLUYE BANNER NARANJAS
+@include block(categoryList) {
+    @include element(icondiscount) {
+
+        display: flex;
+        justify-content: center;
+        padding-right: $um * 2;
+        color: $color-lightGrey-default;
+        padding-right: $um * 2;
+        margin-right: $um * 2;
+        border-right: 1px solid $color-shadow;
+        //opacity: 0.5;
+    }
+    @include element(flexCenterContent) {
+
+        display: flex;
+        background: linear-gradient(white 50%, $color-shadow 50%, white 51%);
+        border: $um * 2 solid white;
+        border-top: none;
+        border-bottom: none;
+    }
+    vertical-align: baseline;
+    //margin-bottom: $um;
+    @include element(title) {
+        @extend .title;
+        @extend .title--huge;
+    }
+    @include element(description) {
+        @extend .keywords-topcategory;
+    }
+    @include element(descriptionFull) {
+        display: none;
+    }
+    @include element(subtitle) {
+        font-size: 1rem;
+        color: #666;
+        font-weight: 400;
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        @include modifier(big) {
+            top: -0.25rem;
+            font-size: 1.25rem;
+            padding: 0 0.25rem;
+        }
+    }
+    @include element(pagination) {
+        padding: $um 4px 0;
+    }
+    @include element(imgBg) {
+        position: absolute;
+    }
+}
+
+@include extendElement(categoryList, description, delizius) {
+    background: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    // margin: 0.3rem 0.4rem 0.5rem;
+    margin: 0.3rem 0rem 0.5rem;
+    padding: 1.25rem 2rem 2rem;
+    position: relative;
+    z-index: 0;
+    @extend %box;
+    h3 {
+        color: #ff7109;
+        display: block;
+        font-family: $type-headingscms;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1.2;
+        @extend %bannerText;
+    }
+    h4 {
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1;
+        font-family: $type-headingscms;
+        padding-bottom: $um / 2;
+        @extend %bannerText;
+    }
+    p {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        @extend %bannerText;
+    }
+    a {
+        font-weight: 300 !important;
+        padding-top: 1rem;
+        display: block;
+        color: #000 !important;
+    }
+    @include element(imgBg) {
+        right: 0;
+        bottom: $um / 2;
+        z-index: 0;
+    }
+}
+
+@include extendElement(categoryList, description, bannercenter) {
+    //text-align: center;
+    background: $color-lightGrey-light;
+    //background: $color-orange-light;
+    //padding: $um 0;
+    border-radius: $um / 3;
+    //  padding-bottom: $um * 2 !important;
+    padding: $um $um * 2;
+    //max-width: 880px;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid $color-shadow;
+    letter-spacing: -0.03em;
+    box-shadow: 0 0 0 $um * 2 white;
+    h3 {
+        //font-family: $type-headingscms;
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+        //color: $color-lightGrey-darker;
+        //line-height: 1.2;
+        //color: $color-orange-darker;
+        //color:$color-darkGrey-default;
+    }
+    h4 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        color: $color-darkGrey-light;
+    }
+    h5 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: $color-lightGrey-darker;
+        strong {
+            font-weight: 500;
+            font-size: 3rem;
+            color: $color-brandYellow-dark;
+            //color: $color-orange-darker;
+        }
+    }
+    h6 {
+        font-size: 2.25rem;
+        //font-weight: 400;
+        //padding-top: $um / 3;
+        line-height: 1.4;
+        font-weight: 300;
+        color: $color-darkGrey-light;
+        //color: $color-lightGrey-dark;
+        //color:$color-darkGrey-default;
+        //font-family: $type-headingscms;
+        letter-spacing: 0;
+        //color: white;
+        // color: $color-orange-darker;
+    }
+}
+
+@include extendElement(categoryList, description, bannerbottom) {
+    @extend %box;
+    background: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    height: 135px;
+    // margin: 0.3rem 0.4rem 0.5rem;
+    margin: 0;
+    padding: 1rem $um;
+    position: relative;
+    z-index: 0;
+    display: -webkit-flex;
+
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    box-shadow: none;
+    margin-bottom: $um;
+    h3 {
+        @extend %bannerText;
+        color: #ff7109;
+        display: block;
+        font-family: $type-headingscms;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1;
+        padding-bottom: $um / 2;
+    }
+    h4 {
+        color: #000;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1;
+        font-family: $type-headingscms;
+        padding-bottom: $um / 2;
+        @extend %bannerText;
+    }
+    @include element(imgBg) {
+        right: 0;
+        top: 0;
+        position: absolute;
+        z-index: 0;
+    }
+    @include element(yellowtext) {
+        color: #ffea33;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    @include element(whitetext) {
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    @include element(blacktext) {
+        color: #333;
+    }
+}
+
+.categoryList[data-js-tag-slider="slider"] {
+    position: relative;
+    overflow: hidden;
+    height: 43.5rem;
+    background: url("../../img/tags_bg.png");
+    margin-bottom: 1.65rem;
+    .popup-container--inside {
+        background: transparent;
+    }
+}
+
+@-moz-document url-prefix() {
+    .categoryList[data-js-tag-slider="slider"] {
+        margin-bottom: 2rem;
+    }
+}

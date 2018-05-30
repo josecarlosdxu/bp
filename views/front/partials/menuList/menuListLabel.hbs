@@ -1,0 +1,35 @@
+
+
+{{#each modifiers}}
+{{#is this 'selectable'}}
+<button class="menuList-button" data-js-menulist="button">
+
+
+ {{>svgIcon type='chevronMobileRight' size='xxs'}}
+
+
+</button>
+{{/is}}
+
+{{/each}}
+
+{{#if link}}
+<a href="{{link}}" class="menuList-link {{#each modifiers}} menuList-link--{{this}} {{/each}}" data-js-menulist="link">
+
+
+{{else}}
+<a href="#" class="menuList-link {{#each modifiers}} menuList-link--{{this}} {{/each}}" data-js-menulist="link" {{#if subcategory}} data-js-family="{{title}}"{{/if}}{{#if banner}} data-js-banner="{{banner}}"{{/if}}>
+
+
+{{/if}}
+
+
+
+
+    {{title}}
+    {{#if number}}
+    <span class="menuList-number">({{number}})</span>
+    {{/if}}
+</a>
+
+

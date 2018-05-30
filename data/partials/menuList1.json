@@ -1,0 +1,381 @@
+{
+    "list": {
+        "title": "Hogar | Jardín",
+        "modifiers": [
+            "primary",
+            "selectable"
+
+        ],
+        "itemName": "hogar_y_jardin",
+        "subcategory": "true",
+        "childs": "true",
+        "number": "950",
+        "order": "1-1",
+        "link": "categoria-hogar.html",
+
+        "principal": {
+            "title": "Hogar y jardín",
+            "subtitle": "Gran selección de productos para el hogar y el jardín",
+            "image": "../../img/categories/hogar/2399_menu.jpg"
+        },
+
+        "families": [{
+            "title": "Decoración, e iluminación",
+            "itemId": "decoracion_interiorismo_e_iluminacion",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "image": "../../img/categories/hogar/2400_menu.jpg",
+            "subcategory": "true",
+            "sectionID": "120",
+            "number": "388",
+            "order": "1-1-1",
+            "first": "true",
+            "banner": "hogar/2400_header.jpg",
+            "childs": "true",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+
+            ],
+            "subcategories": [{
+                "name": "Cuadros y carteles",
+                "image": "../../img/categories/hogar/2401_small.jpg",
+                "subcategory": "false",
+                "first": "true",
+                "number": "5",
+                "col1": "1",
+                "order": "1-1-1-1",
+                "banner": "hogar/2401_header.jpg"
+
+            }, {
+                "name": "Marcos de fotos y portafotos",
+                "image": "../../img/categories/hogar/2402_small.jpg",
+                "subcategory": "true",
+                "number": "7",
+                "col1": "1",
+                "order": "1-1-1-2",
+                "banner": "hogar/2402_header.jpg"
+
+            }, {
+                "name": "Relojes de pared y sobremesa",
+                "image": "../../img/categories/hogar/2404_small.jpg",
+                "banner": "hogar/2404_header.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "order": "1-1-1-3",
+                "number": "20"
+            }, {
+                "name": "Mecheros, pitilleras y ceniceros",
+                "image": "../../img/categories/hogar/2408_small.jpg",
+                "subcategory": "true",
+                "order": "1-1-1-4",
+                "col1": "1",
+                "banner": "hogar/2408_header.jpg",
+                "number": "20"
+            }, {
+                "name": "Mobiliario y accesorios de interior",
+                "image": "../../img/categories/hogar/2411_small.jpg",
+                "banner": "hogar/2411_header.jpg",
+                "subcategory": "true",
+                "order": "1-1-1-5",
+                "col1": "1",
+                "number": "27"
+            }, {
+                "name": "Cojines y fundas",
+                "image": "../../img/categories/hogar/2413_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2413_header.jpg",
+                "order": "1-1-1-6",
+                "col1": "1",
+                "number": "15"
+            }, {
+                "name": "Alfombras y mantas",
+                "image": "../../img/categories/hogar/2414_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2414_header.jpg",
+                "order": "1-1-1-7",
+                "col1": "1",
+                "number": "16"
+            }, {
+                "name": "Organización e interiorismo",
+                "image": "../../img/categories/hogar/2418_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2418_header.jpg",
+                "order": "1-1-1-8",
+                "col1": "1",
+                "number": "5"
+            }, {
+                "name": "Artículos de decoración",
+                "image": "../../img/categories/hogar/2419_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2419_header.jpg",
+                "order": "1-1-1-9",
+                "col1": "1",
+                "number": "20"
+            }, {
+                "name": "Iluminación solar",
+                "image": "../../img/categories/hogar/2420_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2420_header.jpg",
+                "order": "1-1-1-10",
+                "col1": "1",
+                "number": "25"
+            }, {
+                "name": "Iluminación y LED",
+                "image": "../../img/categories/hogar/2421_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2421_header.jpg",
+                "order": "1-1-1-11",
+                "col1": "1",
+                "number": "2"
+            }, {
+                "name": "Huchas y llaveros",
+                "image": "../../img/categories/hogar/2655_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2655_header.jpg",
+                "order": "1-1-1-12",
+                "col1": "1",
+                "number": "9"
+            }]
+        }, {
+            "title": "Baño",
+            "subcategory": "true",
+            "number": "159",
+            "itemId": "bano",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "order": "1-1-2",
+            "image": "../../img/categories/hogar/2424_menu.jpg",
+            "banner": "hogar/2424_header.jpg",
+            "childs": "true",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Cortinas, alfombras y toalleros",
+                "image": "../../img/categories/hogar/2427_small.jpg",
+                "subcategory": "true",
+                "number": "19",
+                "col1": "1",
+                "banner": "hogar/2427_header.jpg"
+            }, {
+                "name": "Accesorios de baño",
+                "image": "../../img/categories/hogar/2429_small.jpg",
+                "subcategory": "true",
+                "number": "1",
+                "col1": "1",
+                "banner": "hogar/2429_header.jpg"
+            }, {
+                "name": "Básculas",
+                "image": "../../img/categories/hogar/2431_small.jpg",
+                "subcategory": "true",
+                "number": "22",
+                "col1": "1",
+                "banner": "hogar/2431_header.jpg"
+            }]
+        }, {
+            "title": "Jardín y terraza",
+            "image": "../../img/categories/hogar/2435_menu.jpg",
+            "subcategory": "true",
+            "number": "98",
+            "itemId": "jardin_y_terraza",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "banner": "hogar/2435_header.jpg",
+            "childs": "true",
+            "order": "1-1-3",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Barbacoas y mangueras",
+                "image": "../../img/categories/hogar/2438_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2438_header.jpg",
+                "col1": "1",
+                "number": "23"
+            }, {
+                "name": "Decoración, iluminación y mobiliario",
+                "image": "../../img/categories/hogar/2440_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2440_header.jpg",
+                "col1": "1",
+                "number": "10"
+            }, {
+                "name": "Ahuyentadores",
+                "image": "../../img/categories/hogar/2441_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "banner": "hogar/2441_header.jpg",
+                "number": "6"
+            }]
+        }, {
+            "title": "Mascotas",
+            "subcategory": "true",
+            "number": "117",
+            "banner": "hogar/2443_header.jpg",
+            "image": "../../img/categories/hogar/2443_menu.jpg",
+            "childs": "true",
+            "itemId": "mascotas",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "order": "1-1-4",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Bienestar e higiene",
+                "image": "../../img/categories/hogar/2444_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2444_header.jpg",
+                "col1": "1",
+                "number": "20"
+            }, {
+                "name": "Viajar y pasear",
+                "image": "../../img/categories/hogar/2445_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2445_header.jpg",
+                "col1": "1",
+                "number": "29"
+            }, {
+                "name": "Cunas y colchonetas",
+                "image": "../../img/categories/hogar/2446_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2446_header.jpg",
+                "col1": "1",
+                "number": "15"
+            }, {
+                "name": "Bebederos y comederos",
+                "image": "../../img/categories/hogar/2447_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2447_header.jpg",
+                "col1": "1",
+                "number": "26"
+            }, {
+                "name": "Juguetes",
+                "image": "../../img/categories/hogar/2448_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2448_header.jpg",
+                "col1": "1",
+                "number": "27"
+            }]
+        }, {
+            "title": "Calefacción y refrigeración",
+            "subcategory": "true",
+            "number": "77",
+            "itemId": "calefaccion_y_refrigeracion",
+            "image": "../../img/categories/hogar/2450_menu.jpg",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "banner": "hogar/2450_header.jpg",
+            "childs": "true",
+            "order": "1-1-5",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Aire acondicionado y ventiladores",
+                "image": "../../img/categories/hogar/2451_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2451_header.jpg",
+                "col1": "1",
+                "number": "25"
+            }, {
+                "name": "Radiadores y estufas",
+                "image": "../../img/categories/hogar/2452_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2452_header.jpg",
+                "col1": "1",
+                "number": "28"
+            }, {
+                "name": "Humidificadores",
+                "image": "../../img/categories/hogar/2453_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2453_header.jpg",
+                "col1": "1",
+                "number": "24"
+            }]
+        }, {
+            "title": "Limpieza, aspiración y planchado",
+            "itemId": "limpieza_aspiracion_y_planchado",
+            "modifier": " bigMenu-sectionItem--submenu",
+            "image": "../../img/categories/hogar/2454_menu.jpg",
+            "subcategory": "true",
+            "banner": "hogar/2454_header.jpg",
+            "number": "69",
+            "childs": "true",
+            "order": "1-1-6",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Limpieza a vapor",
+                "image": "../../img/categories/hogar/2457_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2457_header.jpg",
+                "col1": "1",
+                "number": "3"
+            }, {
+                "name": "Fregonas, escobas y mopas",
+                "image": "../../img/categories/hogar/2459_small.jpg",
+                "banner": "hogar/2459_header.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "23"
+            }, {
+                "name": "Aspiradoras y robots",
+                "image": "../../img/categories/hogar/2461_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2461_header.jpg",
+                "col1": "1",
+                "number": "17"
+            }, {
+                "name": "Secadoras, planchas y tendederos",
+                "image": "../../img/categories/hogar/2463_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2463_header.jpg",
+                "col1": "1",
+                "number": "24"
+            }, {
+                "name": "Otros productos de limpieza",
+                "image": "../../img/categories/hogar/2651_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2651_header.jpg",
+                "col1": "1",
+                "number": "24"
+            }, {
+                "name": "Máquinas de coser",
+                "image": "../../img/categories/hogar/2466_small.jpg",
+                "subcategory": "true",
+                "banner": "hogar/2466_header.jpg",
+                "number": "2"
+            }]
+        }, {
+            "title": "Bricolaje y ferretería",
+            "subtitle": "Gran selección de productos para el hogar y el jardín",
+            "image": "../../img/categories/hogar/2468_menu.jpg",
+            "itemId": "bricolaje_y_ferreteria",
+            "banner": "hogar/2468_header.jpg",
+            "subcategory": "true",
+            "order": "1-1-7",
+            "number": "105",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }, {
+            "title": "Seguridad en el hogar",
+            "subtitle": "Gran selección de productos para la seguridad en el hogar",
+            "itemId": "seguridad_en_el_hogar",
+            "image": "../../img/categories/hogar/2471_menu.jpg",
+            "subcategory": "true",
+            "order": "1-1-8",
+            "banner": "hogar/2471_header.jpg",
+            "number": "75",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }]
+    }
+}

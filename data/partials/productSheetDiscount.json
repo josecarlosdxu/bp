@@ -1,0 +1,209 @@
+{
+    "special_sincro":
+    {
+        "items": [
+        {
+            "icon": "cart",
+            "caption": "EXTRA DISCOUNT",
+            "shortDescription": "Próximo rango Extra Discount",
+            "progressbar":
+            {
+                "init": "0,0 %",
+                "percent": "5",
+                "end": "1.5 %",
+                "text": "Añade 92,7 € más al carrito"
+            }
+        },
+        {
+            "icon": "pack",
+            "caption": "PVD ESPECIAL",
+            "shortDescription": "Este producto no computará en el extra discount, debido a que ya se le han aplicado descuentos directamente en el PVD."
+        },
+        {
+            "icon": "etiqueta",
+            "caption": "PRECIO ESPECIAL GRANDES CANTIDADES",
+            "shortDescription": "<a href='https://www.bigbuy.eu/es/contact' class='link color-blue' target='_blank'>Contacte<\/a> con el Departamento Comercial para más información."
+        }]
+    },
+    "extra_discount":
+    {
+        "items": [
+        {
+            "divclass": "u-brb",
+            "icon": "cart",
+            "caption": "EXTRA DISCOUNT",
+            "shortDescription": "Próximo rango Extra Discount",
+            "progressbar":
+            {
+                "init": "0,0 %",
+                "percent": "20",
+                "end": "1.5 %",
+                "text": "Añade 92,7 € más al carrito"
+            }
+        },
+        {
+            "divcontent": "<p class='productSheet-shortDescription u-tac'>Simulación Extra Discount en este producto <em data-js-tooltip='tooltip_productsheet_range' class='form-info'><svg role='img' class='icon icon--inline icon--xs'><use xlink:href='../../img/icons/svg-defs.svg#icon-info'><\/use><\/svg><\/em><\/p>"
+        },
+        {
+            "divclass": "u-xs-90 u-elem-center u-mgh u-pdb--half",
+            "table_thead": [
+            {
+                "content": "<tr class='table-tr'><th class='table-item u-tac u-op-40'><svg role='img' class='icon icon--inline icon--xs'><use xlink:href='../../img/icons/svg-defs.svg#icon-cart'><\/use><\/svg><\/th><th class='table-item u-tac u-op-40'><svg role='img' class='icon icon--inline icon--xs u-mgr'><use xlink:href='../../img/icons/svg-defs.svg#icon-percent'><\/use><\/svg><\/th><th class='table-item u-tac u-op-40'><svg role='img' class='icon icon--inline icon--xs'><use xlink:href='../../img/icons/svg-defs.svg#icon-euro'><\/use><\/svg><\/th><\/tr>"
+            }],
+            "tbodycontent": [
+            {
+                "content": "<tr class='table-tr color-blue'><td class='table-item table-item--number u-pdr2 table-item--markedBlue'>100 €<\/td><td class='table-item table-item--number u-pdr2'>-1,5 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>7,07 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>300 €<\/td><td class='table-item table-item--number u-pdr2'>-2,5 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>7,00 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>600 €<\/td><td class='table-item table-item--number u-pdr2'>-3,5 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>6,50 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>1.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,0 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>6,12 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>2.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,3 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>6,02 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>5.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,7 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>5,95 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>8.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,9 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow productSheet-markedRow--last'>5,55 €<\/td><\/tr>"
+            }]
+        },
+        {
+            "icon": "etiqueta",
+            "caption": "PRECIO ESPECIAL GRANDES CANTIDADES"
+        },
+        {
+            "divclass": "u-xs-90 u-elem-center u-mgh u-mgt03 u-pdb--half",
+            "table_thead": [
+            {
+                "content": "<tr class='table-tr'><th class='table-item u-tac u-op-40'>Unidades<th class='table-item u-tac u-op-40'>Precio especial<\/th><\/tr>"
+            }],
+            "tbodycontent": [
+                {
+                    "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr'>+ 600 Uds.<\/td><td class='table-item table-item--number u-pdr productSheet-markedRow'>5,35 €<em>(-20%)<\/em><\/td><\/tr>"
+                },
+                {
+                    "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr'>+ 1.000 Uds.<\/td><td class='table-item table-item--number u-pdr productSheet-markedRow'>4,75 €<em>(-30%)<\/em><\/td><\/tr>"
+                },
+                {
+                    "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr u-pdb--third'>+ Cantidad<\/td><td class='table-item table-item--number u-pdr productSheet-markedRow productSheet-markedRow--last u-pdb--third'><a href='https://www.bigbuy.eu/es/contact' target='_blank' class='link color-blue'>Contacte<\/a><\/td><\/tr>"
+                }
+
+            ]
+        }]
+    },
+    "special_login":
+    {
+        "items": [
+        {
+            "divclass": "u-brb",
+            "icon": "cart",
+            "caption": "EXTRA DISCOUNT",
+            "shortDescription": "Próximo rango Extra Discount",
+            "progressbar":
+            {
+                "init": "0,0 %",
+                "percent": "20",
+                "end": "1.5 %",
+                "text": "Añade 92,7 € más al carrito"
+            }
+        },
+        {
+            "divcontent": "<p class='productSheet-shortDescription u-tac'>Simulación Extra Discount en este producto <em data-js-tooltip='tooltip_productsheet_range' class='form-info'><svg role='img' class='icon icon--inline icon--xs'><use xlink:href='../../img/icons/svg-defs.svg#icon-info'><\/use><\/svg><\/em><\/p>"
+        },
+        {
+            "divclass": "u-xs-90 u-elem-center u-mgh u-pdb--half",
+            "table_thead": [
+            {
+                "content": "<tr class='table-tr'><th class='table-item u-tac u-op-40'><svg role='img' class='icon icon--inline icon--xs'><use xlink:href='../../img/icons/svg-defs.svg#icon-cart'><\/use><\/svg><\/th><th class='table-item u-tac u-op-40'><svg role='img' class='icon icon--inline icon--xs u-mgr'><use xlink:href='../../img/icons/svg-defs.svg#icon-percent'><\/use><\/svg><\/th><th class='table-item u-tac u-op-40'><svg role='img' class='icon icon--inline icon--xs'><use xlink:href='../../img/icons/svg-defs.svg#icon-euro'><\/use><\/svg><\/th><\/tr>"
+            }],
+            "table_tfoot": [
+            {
+                "content": "<tr class='table-tr u-bg--blue color-white u-border-blue'><td class='table-item u-tac' colspan='3'><small>Condiciones Especiales: TheraCosm GmbH<\/small><\/td><\/tr>"
+            }],
+            "tbodycontent": [
+            {
+                "content": "<tr class='table-tr color-blue'><td class='table-item table-item--number u-pdr2 table-item--markedBlue'>100 €<\/td><td class='table-item table-item--number u-pdr2'>-1,5 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>7,07 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>300 €<\/td><td class='table-item table-item--number u-pdr2'>-2,5 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>7,00 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>600 €<\/td><td class='table-item table-item--number u-pdr2'>-3,5 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>6,50 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>1.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,0 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>6,12 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey table-tr--borderBlueInit'><td class='table-item table-item--number u-pdr2'>2.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,3 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>6,02 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey table-tr--borderBlue'><td class='table-item table-item--number u-pdr2'>5.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,7 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>5,95 €<\/td><\/tr>"
+            },
+            {
+                "content": "<tr class='table-tr color-grey table-tr--borderBlue'><td class='table-item table-item--number u-pdr2'>8.000 €<\/td><td class='table-item table-item--number u-pdr2'>-5,9 %<\/td><td class='table-item table-item--number u-pdh productSheet-markedRow'>5,55 €<\/td><\/tr>"
+            }]
+        },
+        {
+            "icon": "etiqueta",
+            "caption": "PRECIO ESPECIAL GRANDES CANTIDADES"
+        },
+        {
+            "divclass": "u-xs-90 u-elem-center u-mgh u-mgt03 u-pdb--half",
+            "table_thead": [
+            {
+                "content": "<tr class='table-tr'><th class='table-item u-tac u-op-40'>Unidades<th class='table-item u-tac u-op-40'>Precio especial<\/th><\/tr>"
+            }],
+            "tbodycontent": [
+                {
+                    "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr'>+ 600 Uds.<\/td><td class='table-item table-item--number u-pdr productSheet-markedRow'>5,35 €<em>(-20%)<\/em><\/td><\/tr>"
+                },
+                {
+                    "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr'>+ 1.000 Uds.<\/td><td class='table-item table-item--number u-pdr productSheet-markedRow'>4,75 €<em>(-30%)<\/em><\/td><\/tr>"
+                },
+                {
+                    "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr u-pdb--third'>+ Cantidad<\/td><td class='table-item table-item--number u-pdr productSheet-markedRow productSheet-markedRow--last u-pdb--third'><a href='https://www.bigbuy.eu/es/contact' target='_blank' class='link color-blue'>Contacte<\/a><\/td><\/tr>"
+                }
+
+            ]
+        }]
+    },
+    "nologin_nopack":
+    {
+        "items": [
+        {
+            "icon": "pack",
+            "caption": "CON PACK MAYORISTA",
+            "shortDescription": "Acceda de manera exclusiva al Precio de Venta al Distribuidor (PVD), incluso al adquirir unidades sueltas."
+        },
+        {
+            "divclass": "u-xs-90 u-elem-center u-mgh u-pdb--half",
+            "table_thead": [
+            {
+                "content": "<tr class='table-tr'><th class='table-item u-tac'>Uds.<\/th><th class='table-item u-tac'>PVD<\/th><th class='table-item u-tac'>Dto.(%)<\/th><\/tr>"
+            }],
+            "tbodycontent": [
+                {
+                    "content": "<tr class='table-tr color-grey'><td class='table-item table-item--number u-pdr2'>1<\/td><td class='table-item table-item--number u-pdr2'>1,95 €<\/td><td class='table-item table-item--number u-pdr'>1,95 €<\/td><\/tr>"
+                }]
+        },
+        {
+            "divcontent": "<p class='productSheet-shortDescription'>Active el Pack Mayorista que mejor se ajuste a su negocio:<\/p>"
+        },
+        {
+            "divclass": "u-xs-90 u-elem-center u-pdb--half u-tac",            
+            "divcontent": "<a class='button pack button--pack pack--b2b' href='https://www.bigbuy.eu/es/packs-mayoristas.html' target='_blank'>PACK <strong>B2B<\/strong></a> <a class='button pack button--pack pack--dropship' href='https://www.bigbuy.eu/es/packs-mayoristas.html' target='_blank'>PACK <strong>DROPSHIP<\/strong></a> <a class='button pack button--pack pack--enterprise' href='https://www.bigbuy.eu/es/packs-mayoristas.html' target='_blank'>PACK <strong>ENTERPRISE<\/strong></a>"
+        },
+        {
+            "icon": "etiqueta",
+            "caption": "PRECIO ESPECIAL GRANDES CANTIDADES",
+            "notooltip":"true",
+            "shortDescription": "<a href='https://www.bigbuy.eu/es/contact' class='link color-blue' target='_blank'>Contacte<\/a> con el Departamento Comercial para más información."
+        }]
+    }
+}

@@ -1,0 +1,37 @@
+@include block(mobilePack) {
+    @extend %u-sm-90;
+    font-size: $um / 1.75;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    box-shadow: 0 3px #ccc;
+    padding-bottom: 0.25rem;
+    line-height: 1.2;
+    //max-width: 7rem;
+    @include addBreakpoint(xs) {
+        width: 98%;
+        font-size: $um / 1.5;
+
+    }
+
+    @include addBreakpoint(sm) {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    @include modifier(pro) {
+        box-shadow: 0 3px $color-pro-pack;
+    }
+    @include modifier(business) {
+        box-shadow: 0 3px $color-business-pack;
+    }
+    @include modifier(premium) {
+        box-shadow: 0 3px $color-premium-pack;
+    }
+    @include modifier(welcome) {
+        box-shadow: 0 3px $color-welcome-pack;
+    }
+    @include modifier(basic) {
+        box-shadow: 0 3px $color-basic-pack;
+    }
+}

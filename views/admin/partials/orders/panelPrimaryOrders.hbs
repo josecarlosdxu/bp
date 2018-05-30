@@ -1,0 +1,30 @@
+<div class="panel panel--active" data-js-panel-name="panel01" data-js-panel-state="active">
+
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-orders"></use></svg>
+        <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Pedidos</a></div>
+    </div>
+
+    <div class="panelHeader">
+        <nav class="panel-tabs">
+            <button class="panel-tabs-item panel-tabs-item--active" data-paneltabbtn="tab10">Pendientes de validación<span class="notify"></span></button>
+            <button class="panel-tabs-item" data-paneltabbtn="tab11">Procesados</button>
+            <button class="panel-tabs-item" data-paneltabbtn="tab12">Todos</button>
+        </nav>
+    </div>
+
+    <div class="panel-content fixedTableContent">
+
+        <div id="tab10" class="fixedTableContent-tableContent">
+            {{>panelSection panelSection.pendingOrders}}
+        </div>
+
+        <div id="tab11" class="fixedTableContent-tableContent" style="display:none;">
+            {{> panelSection panelSection.allOrders}}
+        </div>
+        <div id="tab12" class="fixedTableContent-tableContent" style="display:none;">
+            {{> panelSection panelSection.allOrders}}
+        </div>
+
+    </div>
+</div>

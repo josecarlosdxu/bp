@@ -1,0 +1,50 @@
+<nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs">
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Datos de usuario</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding ">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>userTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Información adicional</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent  nopadding">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>infoTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Newsletter</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>newsletterTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Facturación</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>billingTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+</nav>

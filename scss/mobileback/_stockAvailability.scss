@@ -1,0 +1,79 @@
+$bordersColor: $color-lightGrey-dark;
+%firstStockElemBefore {
+    &:before {
+        top: 9px;
+        box-shadow: -1px -1px $bordersColor;
+    }
+}
+%stockElemTitleBefore {
+    font-size: $um;
+    content: "\25CF";
+    line-height: 0.5;
+}
+@include block(stockAvailability) {
+    display:flex;
+    align-items: center;
+    @include element(title) {
+        display: inline-block;
+        line-height: initial !important;;
+        margin-bottom: 0 !important;
+        @include modifier(success) {
+            &:before {
+                @extend %stockElemTitleBefore;
+                color: $color-green-default;                
+            }
+        }
+        @include modifier(error) {
+            &:before {
+                @extend %stockElemTitleBefore;
+                color: $color-red-dark;
+            }
+        }
+    }
+    @include element(list) {
+        display: block;
+        position: relative;
+        margin-left: 1rem;
+        font-size: 1rem;
+        line-height: 12px;
+        &:before {
+            content: "";
+            display: inline-block;
+            float: left;
+            height: 1px;
+            left: -0.5rem;
+            position: absolute;
+            top: 50%;
+            width: 16px;
+            background: $bordersColor;
+        }
+    }
+    @include element(item) {
+        position: relative;
+         color: $color-lightGrey-darker;
+         margin-left: 10px;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0.5rem;
+            height: 13px;
+            margin-right: $um / 2;
+            display: inline-block;
+            bottom: 6px;
+            margin-top: -2px;
+            margin-left: -10px;
+            box-shadow: -1px 1px $bordersColor;
+        }
+        &:first-child {
+            @extend %firstStockElemBefore;
+        }
+
+        &:only-of-type {
+            &:before {
+                box-shadow: 0 -1px $bordersColor;
+                top: 9px
+            }
+        }
+    }
+}
+

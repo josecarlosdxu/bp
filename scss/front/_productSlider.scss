@@ -1,0 +1,233 @@
+@include block(productSlider) {
+    display: inline-block;
+    margin-bottom: 1.9rem;
+    vertical-align: top;
+    width: 100%;
+    box-shadow: none;
+    background: white;
+    @include modifier(half) {
+        padding-right: 1%;
+        @extend %u-md-50;
+    }
+    @include modifier(secondHalf) {
+        padding-left: 1%;
+        @extend %u-md-50;
+    }
+    @include element(img) {
+        @extend %img--responsive;
+    }
+    @include element(title) {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        width: 27rem;
+        // margin: 0 0 -$um;
+        // margin-bottom: - $um * 1.25;
+        padding: 1rem;
+        vertical-align: middle;
+        text-transform: uppercase;
+        cursor: default;
+        color: #fff;
+        background: #ccc;
+        font-size: 1.25rem;
+        font-weight: 300;
+        // line-height: $um * 2.5;
+        &:before {
+            position: absolute;
+            bottom: - $um;
+            left: 0;
+            display: block;
+            width: 0;
+            height: 0;
+            content: "";
+            border: none;
+            border-top: $um solid transparent;
+            border-left: $um solid transparent;
+        }
+        @include modifier(news) {
+            // background: $color-news;
+            background: white;
+            width: 100%;
+            color: #ff6600;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: "Roboto Condensed", sans-serif;
+            box-shadow: 0 -4px;
+            &:before {
+                // border-top-color: darken($color-news, 30%);
+            }
+        }
+        @include modifier(topsales) {
+            background: white;
+            width: 100%;
+            color: $color-topsales;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: "Roboto Condensed", sans-serif;
+            box-shadow: 0 -4px;
+            // background: $color-topsales;
+            &:before {
+                // border-top-color: darken($color-topsales, 15%);
+            }
+        }
+        @include modifier(outlet) {
+            background: white;
+            width: 100%;
+            color: $color-outlet;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: "Roboto Condensed", sans-serif;
+            box-shadow: 0 -4px;
+            // background: $color-outlet;
+            &:before {
+                // border-top-color: darken($color-outlet, 10%);
+            }
+        }
+        @include modifier(stock) {
+            background: white;
+            width: 100%;
+            color: $color-stock;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: "Roboto Condensed", sans-serif;
+            box-shadow: 0 -4px;
+            // background: $color-stock;
+            &:before {
+                // border-top-color: darken($color-stock, 20%);
+            }
+        }
+        @include modifier(ours) {
+            background: white;
+            width: 100%;
+            color: $color-darkGrey-light;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: "Roboto Condensed", sans-serif;
+            box-shadow: 0 -4px;
+            // background: $color-stock;
+            &:before {
+                // border-top-color: darken($color-stock, 20%);
+            }
+        }
+    }
+    @include element(more) {
+        @extend .viewMore-btn !optional;
+        .icon {
+            margin-left: 0.3rem;
+            margin-top: -4px;
+        }
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+    @include element(category) {
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: none;
+        margin-left: 3rem;
+        color: #666;
+        display: inline-block;
+    }
+    @include element(chevron) {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        color: inherit;
+        bottom: 1rem;
+        @include modifier(left) {
+            margin-right: 3rem;
+        }
+        @include modifier(right) {}
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: .8rem .4rem;
+        }
+    }
+    @include element(container) {
+        border: 2px solid #f00;
+        @include modifier(row2) {
+            max-height: $um * 27;
+        }
+    }
+    @include element(slider) {
+        position: relative;
+        overflow: hidden;
+        // border-top: 1px solid $color-shadow;
+        background: #fff;
+        // box-shadow: 0 1px 3px $color-shadow;
+        @include addBreakpoint(sm) {
+            //padding: 0 $um * 2;
+        }
+        @include modifier(banner) {
+            padding: 0;
+        }
+    }
+    @include element(item) {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        word-spacing: 0;
+        font-size: 14px;
+    }
+    .productSlider-item.next:first-child {
+        left: 100%;
+    }
+    .productSlider-item.prev.last-child {
+        right: 100%;
+    }
+    .productSlider-item.current:first-child,
+    .productSlider-item.current.last-child {
+        right: 0;
+        left: 0;
+    }
+    .productSlider-item.target:first-child,
+    .productSlider-item.target.last-child {
+        right: 0;
+        left: 0;
+    }
+    .nav {
+        font-size: 0;
+        position: absolute;
+        width: 100%;
+        top: 45%;
+        height: 0px;
+        @extend %type-bigMenu-section;
+    }
+    .nav .back,
+    .nav .forth {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        min-height: 4rem;
+        cursor: pointer;
+        color: $color-shadow;
+        background: none;
+        @include addBreakpoint(sm) {
+            width: $um * 2;
+            box-shadow: none;
+        }
+    }
+    .nav .forth {
+        right: 1%;
+        //box-shadow: -6px 0 15px 9px $color-bg-content;
+    }
+    .nav .back {
+        left: 1%;
+        //box-shadow: 6px 0 15px 9px $color-bg-content;
+    }
+    .nav .back:hover,
+    .nav .back:focus,
+    .nav .back:active,
+    .nav .forth:hover,
+    .nav .forth:focus,
+    .nav .forth:active {
+        color: opacify($color-shadow, 0.1);
+    }
+    .nav .forth:before {
+        content: "";
+    }
+}

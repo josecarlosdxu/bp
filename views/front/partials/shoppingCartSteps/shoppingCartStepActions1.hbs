@@ -1,0 +1,31 @@
+{{!--   section with js anchors --}}
+ <div class="shoppingCartStep shoppingCartStep--active" data-jscart="step-1"{{#if active}} data-js-active="true"{{/if}}>
+  <div class="shoppingCartStep-header">
+      <b class="shoppingCartStep-number">1</b>
+      <div class="shoppingCartStep-headertexts">
+          <h4 class="shoppingCartStep-title">Seleccione Pack Mayorista</h4>
+          {{#if subtitle}}
+          <h5 class="shoppingCartStep-subtitle">Pack Business: cuota semestral</h5>
+          {{else}}
+          <h5 class="shoppingCartStep-subtitle">Pack <span data-jspack="name" class="u-cap"></span>: <span data-jsquote="payQuote" class="u-cap"></span></h5>
+          {{/if}}
+      </div>
+      {{>shoppingCartEditBtn step='1'}}
+  </div>
+<div class="shoppingCartStep-content">
+<form autocomplete="off">
+<div class="msgBox msgBox--info u-mgt1">Para adquirir una Tienda Dropshipping 360º, es necesario contratar el Pack Enterprise</div>
+
+<div class="pricePanel-container pricePanel-container--midsize u-pdv">
+{{>priceBigPanel  pricePanels.panel1 expresscart='true'}}
+{{>priceBigPanel  pricePanels.panel2 expresscart='true'}}
+{{>priceBigPanel  pricePanels.panel3 expresscart='true'}}
+</div>
+
+<button class="button button--primary button--big" disabled data-jscart="btn-1" >Continuar</button>
+
+</form> 
+</div>
+</div>
+
+

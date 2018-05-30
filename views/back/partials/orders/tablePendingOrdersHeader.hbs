@@ -1,0 +1,99 @@
+<table class="table table--interactive panelHeader-fixedTableHeader">
+    <thead class="table-thead">
+    {{#if all}}
+        <tr class="table--tr table-tr--sort">
+         <th class="table-th table-item u-pdb--none" colspan="100">
+                   <button class="button button button--condensed button--primary">Descargar CSV</button>
+                   <span class="info u-mgl--half">Haga click para descargar un fichero CSV con sus pedidos. Aplique los filtros que considere necesarios. Este proceso puede demorarse unos minutos.</span>
+            </th>
+        </tr>
+        {{/if}}
+        <tr class="table--tr table-tr--sort">
+          
+            <th width="12%" data-js-paginador-asc="asc" data-js-paginador-order="date_add" class="table-th table-item ">Fecha</th>
+            <th width="7%" data-js-paginador-asc="asc" data-js-paginador-order="id_order" class="table-th table-item ">N.º pedido</th>
+            <th width="9%" data-js-paginador-asc="asc" data-js-paginador-order="ref_order_supplier" class="table-th table-item ">Ref. interna</th>
+            <th width="13%" data-js-paginador-asc="asc" data-js-paginador-order="customer" class="table-th table-item ">Destinatario</th>
+            <th width="11%" data-js-paginador-asc="asc" data-js-paginador-order="payment" class="table-th table-item ">Forma de pago</th>
+            <th width="9%" data-js-paginador-asc="asc" data-js-paginador-order="id_carrier" class="table-th table-item ">Mensajería</th>
+            <th width="9%" data-js-paginador-asc="asc" data-js-paginador-order="dropshipping" class="table-th table-item ">RDO<span data-js-tooltip="tooltip_dropshipping" class="form-info"><i class="icon icon-sort fa fa-info-circle"></i></span></th>
+            <th width="6%" data-js-paginador-asc="asc" data-js-paginador-order="total_paid" class="table-th table-item table-item--number">Importe</th>
+            <th width="11%" data-js-paginador-asc="asc" data-js-paginador-order="id_order_state" class="table-th table-item ">Estado</th>
+            <th width="6%" data-js-paginador-asc="asc" data-js-paginador-order="-" class="table-th table-item ">Tracking</th>
+            <th width="7%" data-js-paginador-asc="asc" data-js-paginador-order="action" class="table-th table-item ">Acciones</th>
+        </tr>
+
+        <tr data-js-paginador-filtro-content="" class="table-tr  table-tr--filters">
+            <th class="table-th table-item u-pdr">
+                <button data-js-datepicker="icon" class="button button--decorative  u-locked-evts">
+                <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-calendar"></use></svg></button>
+                <input data-js-paginador-filtro-field="" data-js-datepicker="input" name="date_add" id="date_add" class="form-input form-input--collapse form-input--prefix">
+            </th>
+            <th class="table-th table-item table-item--number">
+                <input data-js-paginador-filtro-field="" name="id_order" id="id_order" class="form-input form-input--collapse ">
+            </th>
+            <th class="table-th table-item table-item--number">
+                <input data-js-paginador-filtro-field="" name="ref_order_supplier" id="ref_order_supplier" class="form-input form-input--collapse ">
+            </th>
+            <th class="table-th table-item ">
+                <input data-js-paginador-filtro-field="" name="customer" id="customer" class="form-input form-input--collapse ">
+            </th>
+            <th class="table-th table-item ">
+                <select data-js-paginador-filtro-field="" class="form-select form-select--collapse" id="payment" name="payment">
+                    <option value="">--</option>
+                    <option value="paypal">Paypal</option>
+                    <option value="credit-card">Tarjeta de crédito</option>
+                    <option value="monedero">Monedero</option>
+                    <option value="contrarrembolso">Contrarrembolso</option>
+                    <option value="transferencia">Transferencia bancaria</option>
+                    <option value="paypal-revisando">Revisión PayPal</option>
+                </select>
+            </th>
+            <th class="table-th table-item ">
+                <select data-js-paginador-filtro-field="" class="form-select form-select--collapse" id="id_carrier" name="id_carrier">
+                    <option value="">--</option>
+                    <option value="1">Chrono</option>
+                    <option value="2">Correos</option>
+                    <option value="3">GLS</option>
+                    <option value="4">SEUR</option>
+                    <option value="5">Recogida de Almacen</option>
+                    <option value="6">TNT</option>
+                    <option value="7">Campillo</option>
+                    <option value="8">A revisar</option>
+                    <option value="9">A revisar Paypal</option>
+                </select>
+            </th>
+            <th class="table-th table-item table-item--boolean u-xs-5">
+                <select data-js-paginador-filtro-field="" class="form-select form-select--collapse" id="dropshipping" name="dropshipping">
+                    <option value="">-</option>
+                    <option value="0">Sin rembolso</option>
+                    <option value="1">Pendiente</option>
+                    <option value="2">Reembolsado</option>
+                </select>
+            </th>
+            <th class="table-th table-item table-item--number">
+                <input data-js-paginador-filtro-field="" name="total_paid" id="total_paid" class="form-input form-input--collapse ">
+
+            </th>
+            <th class="table-th table-item ">
+                <select data-js-paginador-filtro-field="" class="form-select form-select--collapse" id="id_order_state" name="id_order_state">
+                    <option value="">--</option>
+                    <option value="6">Cancelado</option>
+                    <option value="2">En proceso</option>
+                    <option value="10">Entregado</option>
+                    <option value="5">Expedido</option>
+                    <option value="1">Pendiente de pago</option>
+                    <option value="7">Procesado</option>
+                </select>
+            </th>
+            <th class="table-th table-item table-item--handler table-item--handler"><i class="icon icon-placeholder fa-fw"></i></th>
+            <th class="table-th table-item table-item--handler table-item--handler"><i class="icon icon-placeholder fa-fw"></i></th>
+        </tr>
+    </thead>
+</table>
+
+
+
+
+
+

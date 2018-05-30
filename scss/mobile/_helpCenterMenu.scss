@@ -1,0 +1,184 @@
+@include block(helpCenterMenu) {
+    margin: $um;
+    background-color: white;
+    @include element(link) {
+        align-items: center;
+        display: flex;
+        padding: 1rem 1.5rem 1rem 1rem;
+        min-height: 6rem;
+        box-shadow: 0 1px $color-shadow;
+        &:first-child {
+            //box-shadow: 0 1px $color-shadow, 0 -1px $color-shadow;
+        }
+        &:last-child {
+            background-image: linear-gradient(to top, $color-shadow, transparent 6px);
+            box-shadow: none;
+        }
+        @include addBreakpoint(lg) {
+            //display: none;
+        }
+    }
+    @include element(item) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        border: 1px solid $color-shadow;
+        margin-bottom: 1px;
+        margin-bottom: -1px;
+    }
+    @include element(button) {
+        color: rgba(0, 0, 0, 0.6);
+        background-color: transparent;
+        border: none;
+        display: flex;
+        font-size: 0;
+        height: 1.5rem;
+        line-height: 0;
+        padding: 0;
+        transition: transform 0.1s ease 0s;
+        width: 1rem;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        //-----------
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        min-height: 5rem;
+        order: 1;
+        transform: rotate(90deg);
+        //--------
+        @include modifier(secundary) {
+            @include addBreakpoint(lg) {
+                //display: none;
+            }
+        }
+    }
+    @include element(section) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: $color-lightGrey-light;
+    }
+    @include element(questions) {
+        padding: 0;
+        width: 100%;
+        order: 3;
+        display: block;
+        background-color: white;
+        pointer-events: none;
+        overflow: hidden;
+        border-top: 1px solid transparentize(black, 0.85);
+        height: 0;
+        background-image: linear-gradient($color-shadow, white 6px);
+    }
+    @include element(sectionlist) {
+        width: 100%;
+        order: 3;
+        display: none;
+        box-shadow: 0 -1px $color-shadow;
+        @include addBreakpoint(lg) {
+            //padding-left: 1rem;
+        }
+    }
+    @include element(img) {
+        fill: $color-accentBlue-default;
+        background-color: $color-lightGrey-light;
+        border: 1px solid $color-lightGrey-dark;
+        padding: 0.4rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    @include element(label) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        //border: 1px solid;
+        padding: 0.5rem;
+        width: calc(100% - 5rem);
+        min-height: 6rem;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        &:active{
+            background-color: transparent !important;
+
+        }
+
+        //box-shadow: -1px 0 $color-shadow inset;
+        //@include modifier(secundary) {}
+    }
+    @include element(labelTexts) {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0.75rem;
+        width: calc(100% - 4rem);
+        align-self: flex-start;
+    }
+    @include element(labelTitle) {
+        font-family: $type-headingscms;
+    }
+    @include element(labelText) {
+        font-size: 0.9rem;
+        font-style: normal;
+        line-height: 1.2;
+    }
+    @include element(chevron) {
+        height: 24px;
+        width: 24px;
+        //transform: rotate(90deg);
+    }
+}
+
+.helpCenterMenu-item.opened {
+    border-left: 3px solid $color-accentBlue-default;
+    //margin-top: -1px;
+    > .helpCenterMenu-sectionlist {
+        display: block;
+    }
+    >.helpCenterMenu-button:not(.helpCenterMenu-button--secundary) {
+        transform: rotate(-90deg);
+    }
+}
+
+
+.helpCenterMenu-section.opened {
+
+>.helpCenterMenu-button{
+	transform: rotate(-90deg);
+
+}
+>.helpCenterMenu-questions{
+	 display: block;
+        height: auto;
+        pointer-events: auto;
+
+}
+}
+
+
+/*@include extendElement(helpCenterMenu, item, opened) {
+    margin-top: -2px;
+    @include element(sectionlist) {
+        display: block;
+        margin-bottom: -1px;
+    }
+    @include element(button) {
+        &:not(.helpCenterMenu-button--secundary) {
+            transform: rotate(-90deg);
+        }
+    }
+}*/
+
+/*@include extendElement(helpCenterMenu, section, opened) {
+    @include element(button) {
+        transform: rotate(-90deg);
+    }
+    @include element(questions) {
+        display: block;
+        height: auto;
+        pointer-events: auto;
+    }
+}*/
+
+.link--question.helpCenterMenu-link {
+    line-height: 1.2;
+}

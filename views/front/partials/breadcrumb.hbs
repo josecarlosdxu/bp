@@ -1,0 +1,17 @@
+<nav class="breadcrumb">
+    {{#if breadcrumblist}}
+        {{#each breadcrumblist}}
+        <div class="breadcrumb-cont"><a href="#" class="breadcrumb-link"><span>{{this}}</span></a></div>
+        {{/each}}
+    {{else}}
+    <div class="breadcrumb-cont">
+        <a href="#" class="breadcrumb-link"><span>Main section</span></a>
+    </div>
+    <div class="breadcrumb-cont">
+        <a href="#" class="breadcrumb-link"><span>Subsection</span></a>
+    </div>
+    <div class="breadcrumb-cont breadcrumb-cont--active">
+        <a href="#" class="breadcrumb-link "><span>Current section</span></a>
+    </div>
+    {{/if}}
+</nav>

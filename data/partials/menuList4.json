@@ -1,0 +1,70 @@
+{
+   "list": {
+      "title": "Deportes |  Fitness",
+      "order": "4",
+      "modifiers": [
+         "primary",
+         "selectable"
+      ],
+      "itemName": "deportes_y_fitness",
+      "subcategory": "true",
+      "number": "230",
+      "banner": "deportes/header-deportes_fitness.jpg",
+      "link": "categoria-deportes.html",
+      "principal": {
+         "title": "Deportes y fitness",
+         "subtitle": "Gran selección de productos del deporte y fitness",
+         "image": "../../img/categories/deportes/2491_menu.jpg"
+      },
+      "families": [
+         {
+            "title": "Aparatos de musculación y fitness",
+            "itemId": "aparatos_de_musculacion",
+            "banner": "deportes/2492_header.jpg",
+            "image": "../../img/categories/deportes/2492_menu.jpg",
+            "subcategory": "true",
+            "number": "36",
+            "familyModifier": [
+               "secundary",
+               "last"
+            ]
+         },
+         {
+            "title": "Cinturones vibratorios y electroestimuladores",
+            "banner": "deportes/2493_header.jpg",
+            "image": "../../img/categories/deportes/2493_menu.jpg",
+            "itemId": "cinturones_vibratorios_y_electroestimuladores",
+            "subcategory": "true",
+            "number": "112",
+            "familyModifier": [
+               "secundary",
+               "last"
+            ]
+         },
+         {
+            "title": "Ropa, complementos y wearable technology",
+            "banner": "deportes/2495_header.jpg",
+            "image": "../../img/categories/deportes/2495_menu.jpg",
+            "itemId": "ropa_complementos_y_wearable_technology",
+            "subcategory": "true",
+            "number": "33",
+            "familyModifier": [
+               "secundary",
+               "last"
+            ]
+         },
+         {
+            "title": "Actividades al aire libre",
+            "banner": "deportes/2496_header.jpg",
+            "image": "../../img/categories/deportes/2496_menu.jpg",
+            "itemId": "actividades_al_aire_libre",
+            "subcategory": "true",
+            "number": "25",
+            "familyModifier": [
+               "secundary",
+               "last"
+            ]
+         }
+      ]
+   }
+}

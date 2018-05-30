@@ -1,0 +1,296 @@
+$color-black-default:           #000;
+$color-white-default:           #fff;
+
+$color-darkGrey-default:        #4a5054;
+$color-darkGrey-light:          #565d62;
+$color-darkGrey-dark:           #353b40;
+
+//$color-lightGrey-default:       #d6d8db;
+// $color-lightGrey-light:         lighten($color-lightGrey-default, 5);
+$color-lightGrey-default:       lighten(#d6d8db, 2);
+$color-lightGrey-light:         lighten($color-lightGrey-default, 8);
+$color-lightGrey-lighter:       lighten($color-lightGrey-default, 10);
+$color-lightGrey-dark:          darken($color-lightGrey-default, 12);
+$color-lightGrey-darker:        darken($color-lightGrey-default, 20);
+
+$color-red-default:             #f8d8d8;
+$color-red-default:             #E53B51;
+$color-red-light:               lighten($color-red-default, 20);
+//$color-red-light:               #fa7e7a;
+
+$color-red-dark:                darken($color-red-default, 10);
+$color-red-darker:              darken($color-red-default, 25);
+
+$color-green-default:           #67b02c;
+$color-green-light:             desaturate(lighten($color-green-default, 30),5);
+$color-green-dark:              darken($color-green-default, 15);
+$color-green-darker:            darken($color-green-default, 30);
+
+$color-accentBlue-default:      #0090ff;
+$color-accentBlue-light:        lighten($color-accentBlue-default, 40);
+$color-accentBlue-dark:         darken($color-accentBlue-default, 15);
+
+$color-orange-default:          #ffb84f;
+$color-orange-light:            lighten($color-orange-default, 5);
+$color-orange-dark:             darken($color-orange-default, 15);
+$color-orange-darker:           #B56300;
+
+
+
+$color-brandYellow-default:     #ffe600;
+$color-brandYellow-light:       lighten($color-brandYellow-default,30);
+$color-brandYellow-lighter:     lighten($color-brandYellow-default,40);
+$color-brandYellow-dark:        darken($color-brandYellow-default, 15);
+$color-brandYellow-darker:      darken($color-brandYellow-default, 30);
+
+$color-gold-default: 			#8B6C3F;
+
+$color-news:                    #ff6600;
+$color-topsales:                #68af2d;
+$color-outlet:                  #fe9900;
+$color-stock:                   #a800cc;
+
+$color-shadow:                  rgba(0,0,0,0.1);
+$color-light:                   rgba(255,255,255,0.1);
+$ghostColor:                    black;
+$ghostAltColor:                 white;
+
+
+
+
+$allInOneColor: #FDC401;
+
+//$gradient-mainNav: linear-gradient(#414244,#343638);
+//$gradient-header: linear-gradient(#4b5055,#43474c);
+//$gradient-accent: linear-gradient(lighten($color-brandYellow-default,15) 30% , $color-brandYellow-default 60%);
+
+// Color by Block
+
+$color-body-background: $color-darkGrey-light;
+$color-panel-footer-background: $color-lightGrey-lighter;
+
+$color-mobileMenu-container-border: $color-darkGrey-default;
+$color-mobileMenu-item-border: $color-darkGrey-default;
+
+$color-productCard-background: $color-white-default;
+$color-box-background: $color-white-default;
+
+$color-toolbar-expressCart-total-background: $color-accentBlue-default;
+$color-shoppingCarActive-step-number-background: $color-accentBlue-default;
+$color-shoppingCarActive-step-text: $color-accentBlue-default;
+$color-shoppingCart-options-text: $color-accentBlue-default;
+$color-shoppingCart-total-text: $color-accentBlue-default;
+$color-shoppingCart-subtotal-text: $color-accentBlue-default;
+$color-shoppingCart-discount-text: $color-darkGrey-dark;
+
+$color-productSheet-pvp2-color: $color-brandYellow-dark;
+$color-productSheet-options-background: $color-lightGrey-lighter;
+$color-buttonUp-hover-background: $color-brandYellow-default;
+$color-mobileMenu-background: $color-darkGrey-dark;
+
+$color-mainNav-linkSelected: $color-white-default;
+$color-toolbar-expressCart-background: $color-darkGrey-dark;
+$color-toolbar-langlist-background: $color-darkGrey-dark;
+$color-toolbar-item-hover-background: $color-darkGrey-dark;
+$color-toolbar-itemActive-background: $color-darkGrey-dark;
+$formInverse-fieldset-background: $color-darkGrey-dark;
+
+$color-productCardNoStock-buy-background: $color-red-default;
+
+$color-panelActive-title-background: $color-brandYellow-light;
+$color-panelActive-border: $color-brandYellow-light;
+$color-panel-background: $color-lightGrey-light;
+
+$color-panelInline-actions-background: $color-brandYellow-light;
+$color-panel-toggletab: $color-brandYellow-light;
+$mainNav-background: $color-darkGrey-dark;
+$color-mainNav-submenu-linkSelected-text: $color-brandYellow-light;
+$color-mainNav-submenu-link-hover-text: $color-brandYellow-light;
+$color-mainNav-menu-link-selected-background: $color-brandYellow-light;
+
+$color-productSlider-banner-navActive: $color-brandYellow-default;
+
+$color-mainNav-link-selected-background: $color-brandYellow-default;
+
+$color-rating-iconSelected-text: $color-orange-default;
+$color-rating-iconSelected-textShadow: $color-brandYellow-dark;
+
+$color-productSheet-pvp1-background: $color-brandYellow-default;
+$color-productSheet-pvp2-background: darken($color-brandYellow-default,4);
+
+$color-productCard-action-ctaButton: $color-brandYellow-darker;
+$color-productCard-caption-nostock-background: $color-red-default;
+
+$color-form-labelError: $color-red-dark;
+
+$color-bubble-border: $color-lightGrey-darker;
+$color-bubble-left-after-border: $color-white-default;
+$color-bubble-left-before-border: $color-lightGrey-darker;
+
+$color-rating-icon-text: $color-lightGrey-dark;
+
+$color-review-footer-background: $color-lightGrey-lighter;
+
+$color-form-label-disabled-text: $color-lightGrey-darker;
+
+$color-asideCart-total-text: $color-darkGrey-light;
+$color-asideCart-totalPrice-text: $color-darkGrey-default;
+
+$color-bigMenu-item-text: $color-darkGrey-default;
+
+$color-minisocial-comments-text: $color-darkGrey-default;
+
+$color-inputError-text: $color-red-dark;
+$color-inputError-border: $color-red-dark;
+$color-inputError-background: $color-red-default;
+$color-inputError-focus-text: $color-darkGrey-default;
+
+$color-placeholder-text: $color-darkGrey-light;
+
+$color-button-text: $color-darkGrey-default;
+$color-button-background: $color-lightGrey-default;
+$color-button-border: $color-lightGrey-dark;
+$color-button-hover-border: $color-lightGrey-default;
+$color-button-hover-background: $color-lightGrey-light;
+$color-button-hover-boxShadow: $color-lightGrey-darker;
+$color-button-active-background: $color-lightGrey-default;
+$color-button-active-border: $color-lightGrey-dark;
+
+
+$color-buttonPrimary-text: $color-brandYellow-darker;
+$color-buttonPrimary-border: $color-brandYellow-dark;
+$color-buttonPrimary-background: $color-brandYellow-default;
+$color-buttonPrimary-boxShadow: $color-brandYellow-dark;
+$color-buttonPrimary-hover-border: $color-brandYellow-dark;
+$color-buttonPrimary-hover-background: $color-brandYellow-light;
+$color-buttonPrimary-hover-boxShadow: $color-brandYellow-dark;
+$color-buttonPrimary-active-border: $color-brandYellow-default;
+$color-buttonPrimary-active-boxShadow: $color-brandYellow-dark;
+
+$color-buttonUp-background: $color-brandYellow-default;
+
+$color-buttonSuccess-text: $color-green-darker;
+$color-buttonSuccess-border: $color-green-dark;
+$color-buttonSuccess-background: $color-green-default;
+$color-buttonSuccess-hover-border: $color-green-default;
+$color-buttonSuccess-hover-background: $color-green-light;
+$color-buttonSuccess-hover-boxShadow: $color-green-default;
+$color-buttonSuccess-active-background: $color-green-default;
+$color-buttonSuccess-active-border: $color-green-dark;
+$color-buttonSuccess-active-boxShadow: $color-green-darker;
+
+$color-iconError: $color-red-default;
+$color-iconSuccess: $color-green-default;
+
+$color-icon-stock: $color-green-default;
+$color-icon-stockError: $color-red-default;
+$color-icon-stockSuccess: $color-green-default;
+
+$color-buttonError-text: $color-white-default;
+$color-buttonError-border: $color-red-dark;
+$color-buttonError-background: $color-red-default;
+$color-buttonError-hover-border: $color-red-default;
+$color-buttonError-hover-background: $color-red-light;
+$color-buttonError-hover-boxShadow: $color-red-darker;
+$color-buttonError-active-background: $color-red-default;
+$color-buttonError-active-border: $color-red-dark;
+$color-buttonError-active-boxShadow: $color-red-darker;
+
+$color-buttonWarning-text: $color-orange-darker;
+$color-buttonWarning-border: $color-orange-darker;
+$color-buttonWarning-background: $color-orange-default;
+$color-buttonWarning-hover-border: $color-orange-dark;
+$color-buttonWarning-hover-boxShadow: $color-orange-darker;
+$color-buttonWarning-hover-background: $color-orange-light;
+$color-buttonWarning-active-border: $color-orange-dark;
+$color-buttonWarning-active-background: $color-orange-default;
+$color-buttonWarning-active-boxShadow: $color-orange-darker;
+
+$color-msgBox-link-text: $color-white-default;
+$color-msgBox-link-border: $color-white-default;
+
+$color-msgBoxWarning-text: $color-orange-darker;
+$color-msgBoxWarning-background: $color-orange-dark;
+
+
+$color-msgBoxSucess-text: $color-white-default;
+$color-msgBoxSucess-background: $color-green-default;
+
+$color-msgBoxError-text: $color-white-default;
+$color-msgBoxError-background: $color-red-default;
+
+$color-bigMenu-sections: $color-lightGrey-lighter;
+$color-productSlider-nav-button: $color-lightGrey-light;
+
+$color-contactInfo-mainText: opacify($color-light,0.5);
+$color-contactInfo-icon: $color-brandYellow-default;
+
+$color-content-bg: $color-lightGrey-light;
+
+$color-productCard-buy: red;
+
+$color-expresscart-background: $color-darkGrey-dark;
+$color-expresscart-estimationQuantity-text: $color-accentBlue-default;
+$color-expresscart-total-text: $color-accentBlue-default;
+
+$color-footer-background: $color-darkGrey-dark;
+$color-footer-advantages-background: $color-lightGrey-lighter;
+$color-footer-utils-background: $color-darkGrey-default;
+$color-footer-sitemap-link-hover: $color-lightGrey-default;
+$color-footer-contactInfo-text: rgba(255,255,255,0.5);
+$color-footer-contactInfo-icon: rgba(255,255,255,0.5);
+$color-footer-terms-text: rgba(255,255,255,0.2);
+
+$color-header-background: $color-darkGrey-default;
+
+$color-mobileMenu-link-text: $color-white-default;
+$color-mobileNav-section-after: $color-darkGrey-default;
+
+$color-mainNav-background: $color-darkGrey-dark;
+$color-mainNav-menu-hover: $color-darkGrey-default;
+$color-mainNav-submenu: $color-darkGrey-dark;
+$color-mainNav-link-text: $color-white-default;
+
+$color-table-tr-error: $color-red-default;
+
+$color-tableInteractive-tr-text-hover: $color-accentBlue-default;
+$color-tableStripped-tr-even: $color-lightGrey-lighter;
+
+$color-tableInteractive-tr-selected-text: $color-accentBlue-default;
+$color-tableInteractive-tr-selected-text-hover: $color-accentBlue-dark;
+$color-tableInteractive-tr-selected-text-evenChild: $color-brandYellow-lighter;
+
+$color-tableInteractive-tr-selected-background: $color-brandYellow-light;
+
+$color-button-error-border: $color-red-dark;
+$color-button-error-background: $color-red-default;
+
+$color-body: $color-darkGrey-default;
+$color-toolbar-background: $color-darkGrey-dark;
+
+$color-shoppingCart-step-title-background: $color-lightGrey-light;
+$color-shoppingCart-total-background: $color-lightGrey-light;
+$color-productReview-footer: $color-lightGrey-lighter;
+
+$color-tags-link-hover-text: $color-lightGrey-default;
+
+//Type
+$type-ui: "Roboto", sans-serif;
+$type-headings: "Roboto", sans-serif;
+$type-headingscms: "Roboto Condensed", sans-serif;
+$type-icons: "FontAwesome";
+
+$sprite-bg: "../img/sprite.png";
+$sprite-cards-svg: "../img/credit_card_icons.svg";
+
+
+
+
+
+
+
+
+
+$heroGreenDark:#2DB6A3;
+
+$heroGreenLight:mix($heroGreenDark, white,60%);

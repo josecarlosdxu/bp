@@ -1,0 +1,443 @@
+@charset "UTF-8";
+
+
+
+$rangeTrackFocusColor: lighten($color-accentBlue-default, 30%);
+
+$rangeTrackColor: #3799ff;
+
+$rangeProgressColor: #4A5056;
+$rangeDefaultColor: #DCDDDF;
+$rangeDefaultColor: #4A5056;
+$rangeProgressColor: #DCDDDF;
+
+
+$rangeThumbColor: $color-lightGrey-default;
+
+
+
+$rangeThumbFocusColor: $color-accentBlue-dark;
+
+
+:root {
+
+    --spacingx: 15px;
+    --spacingy: 15px;
+
+    --basev: tomato;
+    --baseh: cyan;
+
+    --posx: 0;
+    --posy: 0;
+    --opacity: 0.2;
+    --sizerbglimit:20px;
+}
+
+
+
+
+
+@include block(sizer) {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    line-height: 1.2;
+    padding: 0;
+    background-color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.15); //box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2);
+    background-clip: padding-box;
+    border-right: none;
+    border-bottom: none;
+    width: auto;
+    font-size: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    z-index: 1000;
+    max-width: 100%;
+    min-width: 10rem;
+    flex-direction: column;
+    p {
+        font-size: 11px;
+        width: 100%;
+        text-align: right;
+        padding: 0.25rem 0.5rem;
+        width: calc(100% - 1.5rem);
+        opacity: 0.7;
+    }
+    &:before {
+        width: 100%;
+        content: "XXS 0 › 320";
+        text-align: right;
+        background-color: red;
+        display: inline-block;
+        padding: 0.25rem 0.5rem 0.25rem 2.25rem;
+        background-color: grey;
+        background-image: linear-gradient(to right, transparent, black);
+        transition: background-color 0.3s;
+
+
+        color: transparentize(white, 0.23); //border-left:20px solid;
+        //box-shadow: 0 0 0 1px black;
+    }
+
+    /*&:after {
+        position: absolute;
+        background-color: gainsboro;
+        width: 1.25rem;
+        height: 1.25rem;
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        top: 0.25rem;
+        left: 0.25rem;
+        content: "";
+        border-radius: 3rem;
+    }*/
+    @include addBreakpoint(xs) {
+
+        &:before {
+            content: "XS 320 › 480";
+            /*}
+
+        &:after {*/
+            background-color: #DD2C00;
+        }
+    }
+
+    @include addBreakpoint(sm) {
+
+        &:before {
+            content: "SM 480 › 768";
+            /*}
+        &:after {*/
+            background-color: #FFAB00;
+        }
+    }
+
+    @include addBreakpoint(md) {
+
+        &:before {
+            content: "MD 768 › 940";
+            /*}
+        &:after {*/
+            background-color: #AEEA00;
+        }
+    }
+
+    @include addBreakpoint(ls) {
+
+        &:before {
+            content: "LS 940 › 1024";
+            /*}
+        &:after {*/
+            background-color: #00C853;
+        }
+    }
+
+    @include addBreakpoint(lg) {
+
+        &:before {
+            content: "LG 1024 › 1200";
+            /*}
+        &:after {*/
+            background-color: #00B8D4;
+        }
+    }
+
+    @include addBreakpoint(xl) {
+
+
+        &:before {
+            content: "XL 1200 › 1400";
+            /*}
+        &:after {*/
+            background-color: #6200EA;
+        }
+    }
+
+    @include addBreakpoint(xxl) {
+        &:before {
+            content: "XXL › 1400";
+            /*}
+        &:after {*/
+            background-color: #C51162;
+        }
+    }
+
+
+    @include element(label) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1.25rem 0;
+        cursor: pointer;
+        width: 100%;
+        justify-content: flex-end;
+
+        >input[type="color"] {
+            display: inline-block;
+            margin-left: 0.5rem;
+            border: none;
+            width: 1.5rem;
+            margin-left: 0.5rem;
+            height: 1.8rem;
+            padding: 0;
+            background-color: transparent;
+        }
+        >input[type="range"] {
+            display: inline-block;
+            margin-left: 0.5rem;
+            width: auto;
+            min-width: 129px;
+        }
+        >input {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    @include element(labeltools) {
+        padding: 0.1rem 0.5rem 0.2rem;
+        display: block;
+        text-align: right;
+        width: 2rem;
+        position: absolute;
+        top: 1.75rem;
+        right: 0;
+        &:before {
+            content: "";
+            border: 5px solid transparent;
+            border-bottom: none;
+            border-top: 7px solid rgba(0, 0, 0, 0.7);
+            display: inline-block;
+        }
+    }
+
+    @include element(results) {
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 0.2rem 0.5rem;
+        margin-left: 0.5rem;
+        max-width: 4em;
+        text-align: right;
+    }
+
+    @include element(grid) {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100vh;
+        background-color: transparent;
+        background-image: linear-gradient(transparent calc(var(--spacingy) - 1px), var(--baseh) 1px), linear-gradient(to right, transparent calc(var(--spacingx) - 1px), var(--basev) var(--spacingx));
+        z-index: 500;
+        background-size: var(--spacingx) var(--spacingy);
+        background-repeat: repeat;
+        pointer-events: none;
+        background-position: var(--posx) var(--posy), var(--posx) var(--posy);
+        opacity: var(--opacity);
+    }
+
+    @include element(headerControls) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include element(hideBtn) {
+
+        border: none;
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.5);
+        transition: color 0.1s;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center; //margin-left: 0.25rem; 
+        svg {
+            fill: currentcolor;
+            width: 18px;
+            height: 18px; //pointer-events:none;
+        }
+        &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+
+    @include element(controls) {
+        display: none;
+        padding: 0.75rem 1.5rem;
+        background-color: white;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    @include element(launcher) {
+        display: none;
+
+
+        &:checked {
+            ~.sizer .sizer-labeltools:before {
+                border-bottom: 7px solid rgba(0, 0, 0, 0.7);
+                border-top: none;
+            }
+
+            ~.sizer .sizer-controls,
+            ~.sizer-grid {
+                display: block;
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix() {
+    .sizer-label>input[type="color"] {
+        height: 1.5rem;
+    }
+}
+
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    overflow: hidden;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background: $rangeDefaultColor;   
+    border: none;
+    border-radius: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; //border: 1px solid rgba(0, 0, 0, 0.2); //border: 2px solid white;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: $rangeTrackColor;
+    margin-top: -7px;
+
+
+}
+
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: $rangeProgressColor;
+   
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+//--------------------------//
+
+input[type=range]::-ms-fill-lower {
+    background: $rangeDefaultColor;
+    border-radius: 0;
+    height: 2px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: $rangeProgressColor;
+    border-radius: 0;
+    height: 2px;
+}
+
+input[type=range]::-ms-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: $rangeTrackColor;
+    margin-top: 0px;
+    border:none;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: $rangeDefaultColor;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: $rangeProgressColor;
+}
+
+input[type=range]:focus::-ms-thumb {
+    background: $rangeTrackColor;
+    border: none;
+    height: 15px;
+    width: 15px;
+}
+
+
+input[type=range] {
+    /* fix for FF unable to apply focus style bug  */
+    border: 1px solid white;
+    /*required for proper track sizing in FF*/
+    width: auto;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    background: $rangeProgressColor;
+    border: none;
+    border-radius: 0;
+}
+
+input[type=range]::-moz-range-progress {
+    background: $rangeDefaultColor;
+    height: 2px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: $rangeTrackColor;
+    margin-top: 0px;
+}
+/*hide the outline behind the border*/
+
+input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+input[type=range]:focus::-moz-range-track {
+    // background: $rangeTrackFocusColor;
+}
+input[type=range]:focus::-moz-range-thumb {
+    //background: $rangeThumbFocusColor;
+    border: none;
+}

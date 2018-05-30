@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+{{> head }}
+<body class="printPage">
+    <div class="modularGrid modularGrid--boxed">
+        <div class="modularGrid-module">
+            <div class="header">
+                <div class="modularGrid">
+                    {{> header }}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modularGrid-module">
+           <div class="cmsContent">
+            <div class="cmsContent-message">
+                {{> marginMessage }}
+            </div>
+            <div class="cmsContent-content">
+                {{> body }}
+            </div>
+        </div>
+
+    </div>
+    <div class="modularGrid-module printPage-footer">
+        {{> footer }}
+    </div>
+</div>
+</body>
+</html>

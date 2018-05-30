@@ -1,0 +1,89 @@
+{
+    "sincroPrestashop": {
+        "list": [{
+            "btnModifiers": [
+                "downloadElem-button--big"
+            ],
+            "data-js": "data-js-downloadBanner-id=\"csvfiles\" data-js-downloadBanner=\"banner\" ",
+            "href": "#",
+            "imgs": [{
+                "src": "../../img/draw_csv.svg",
+                "class": "downloadElem-csvImg"
+            }, {
+                "src": "../../img/draw_csv_select.svg",
+                "class": "downloadElem-csvImg downloadElem-csvImg--alt"
+            }],
+            "date": "16/10/2013 06:57",
+            "text": "Products, combinations and categories CSV"
+        }]
+    },
+    "importacionPrestashop": {
+        "list": [{
+
+            "href": "#",
+            "imgs": [{
+                "src": "../../img/draw_pdf.svg",
+                "class": "downloadElem-csvImg"
+            }],
+            "date": "16/10/2013 06:57",
+            "text": "Import Manual"
+        }]
+    },
+    "video": {
+        "list": [{
+
+            "imgs": [{
+                "src": "../../img/draw_video.svg",
+                "class": "downloadElem-videoImg"
+            }],
+            "date": "16/10/2013 06:57",
+            "text": "Videotutorial de importación Prestashop"
+        }]
+    },
+
+    "csvTarifa": {
+        "doubleBig": "true",
+
+        "list": [{
+            "href": "#",
+            "btnModifiers": [
+                "downloadElem-button--big"
+            ],
+            "data-js": "data-js-downloadBanner-id=\"restrictedpack\" data-js-downloadBanner=\"banner\"",
+
+            "imgs": [{
+                "src": "../../img/draw_xml.svg",
+                "class": "downloadElem-csvImg"
+            }, {
+                "src": "../../img/draw_csv.svg",
+                "class": "downloadElem-csvImg"
+            }],
+            "date": "16/10/2013 06:57",
+            "text": "Products XML",
+            "date1": "16/10/2013 06:57",
+            "text1": "General products & Manufacturer CSV"
+
+        }]
+    },
+    "csvCostes": {
+        "doubleBig": "true",
+
+        "list": [{
+            "btnModifiers": [
+                "downloadElem-button--big"
+            ],
+            "data-js": "",
+            "imgs": [{
+                "src": "../../img/draw_pdf.svg",
+                "class": "downloadElem-csvImg"
+            }, {
+                "src": "../../img/draw_csv.svg",
+                "class": "downloadElem-csvImg"
+            }],
+            "date": "16/10/2013 06:57",
+            "text": "Manual general shipping costs<br/>Correos, Chrono, SEUR, UPS, DHL, TNT, GLS and DASCHER.",
+            "date1": "16/10/2013 06:57",
+            "text1": "General shipping costs CSV<br/>Correos, Chrono, SEUR, UPS, DHL, TNT, GLS and DASCHER."
+        }]
+    }
+}

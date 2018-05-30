@@ -1,0 +1,60 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Deportes y fitness",
+    "description": "Bienvendio, en ocio y tiempo libre encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Aparatos de musculación y fitness",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/deportes/2492_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Cinturones vibratorios y electroestimuladores",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/deportes/2493_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Ropa, complementos y wearable tecnology",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/deportes/2495_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Actividades al aire libre",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/deportes/2496_big.jpg"
+      }
+    ]
+  }
+}

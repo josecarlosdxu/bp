@@ -1,0 +1,33 @@
+<div class=" u-pdh u-xxs-100 u-md-50 u-lg-3rd u-mgb2">
+    {{#if mobile}} 
+    <div class="u-bg--white u-brd u-h100  u-v-between u-pdh--half u-pdb2 u-pdt">
+    {{else}} 
+    <div class="u-bg--white u-brd u-h100  u-v-between u-pdh u-pdv2">
+    {{/if}}
+<div class="modularGrid u-pdh--half">
+    <div class="modularGrid-module u-sm-10 u-xxs-hide u-sm-inlineBlock">
+      {{>svgIcon type=img size='md' class='color-blue'}}  
+    </div>
+    <div class="modularGrid-module u-sm-90 u-pdl--half ">
+    <h4 class="title1  u-upp u-h225">{{title}}</h4>        
+    </div>
+    <div class="modularGrid-module">
+    	<ul class="list list--checklist list--midsize u-block u-op-80{{#if mobile}} u-pdv{{else}} u-pd{{/if}}">
+    		{{#each items}}
+    		<li class="list-item u-pdb">
+    			{{>svgIcon type='done' class='list-icon u-op-60'}}
+
+    			<span class="u-op-70">{{text}}</span>
+    		</li>
+    		{{/each}}
+    	</ul>        
+    </div>
+</div>   
+ <button class="button button--primary button--big u-elem-center{{#unless mobile}} u-mgt2{{/unless}}">+ info</button>
+
+</div>
+
+
+</div>
+
+			

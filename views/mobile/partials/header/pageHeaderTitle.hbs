@@ -1,0 +1,55 @@
+{{#if top}}
+    <div class="mobileNavBar mobileNavBar--news mobileNavBar--sticky" >
+{{else}}
+    <div class="mobileNavBar mobileNavBar--news" >            
+{{/if}}  
+    <div class="modularGrid modularGrid--boxed">
+        <div class="modularGrid-module">		
+			{{#if close}}
+                <a class="mobileNavBar-close popup-close" href="../mobile/searchResults2.html" title="Cerrar"></a>           
+			{{else}}
+                {{#if back}}
+                    <a class="mobileNavBar-back" href="../mobile/searchResults2.html" title="Cerrar"></a>     
+                {{else}}
+				    <a class="mobileNavBar-breadcrumb" href="../mobile/home.html"> </a>		
+                {{/if}}   		
+	        {{/if}}          
+            <h1 class="mobileNavBar-title">{{title}}</h1>
+            {{#if filter}}
+            	{{>filterbutton}}
+             {{/if}}      
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

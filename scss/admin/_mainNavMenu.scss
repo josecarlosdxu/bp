@@ -1,0 +1,127 @@
+
+
+@include block(mainNavMenu) {
+    position: absolute;
+
+    @include element(item) {
+        position: relative;
+        display: block;
+        transition: all 0.1s;
+        vertical-align: top;
+        white-space: nowrap;
+        text-decoration: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background: darken(#353B40, 5);
+        }
+
+        &:hover > .mainNavMenu--submenu {
+            display: block;
+        }
+
+        @include modifier(sub) {
+            // background-image: url("../../../img/icons/chevronRight.svg");
+            // background-repeat: no-repeat;
+            // background-position: center right 2%;
+            // background-origin: content-box;
+            // background-size: 9%;
+
+            &:before {
+                content: "\203A";
+                position: absolute;
+                display: block;
+                top:.9rem;
+                right: 12px;
+                color: #bbb;
+                font-size: 18px;
+
+            }
+        }
+    }
+
+    @include element(link) {
+        @extend %mainNavMenu-item;
+        padding: $um / 1.5 ;
+        color: $color-mainNav-link-text;
+        border-bottom: 1px solid rgba(74, 80, 84, 0.6);
+
+        white-space: normal;
+        overflow: hidden;
+        width: 4rem;
+        width: 16rem;
+        color: #bbb;
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+
+        @include addBreakpoint(lg) {
+
+        }
+
+        &:hover {
+            padding-left: $um / 1.15;
+            color: #fff;
+            fill: #FFF;
+        }
+
+        @include modifier(selected) {
+            color: #333;
+            fill: #333;
+            background-color: $color-mainNav-menu-link-selected-background;
+            box-shadow: -1px 0 rgba(0, 0, 0, 0.1) inset;
+            font-weight: 500;
+
+            &:hover, &:focus {
+                color: #333;
+                fill: #333;
+                cursor: default;
+                padding: $um / 1.5 ;
+                background-color: $color-mainNav-menu-link-selected-background;
+            }
+        }
+    }
+
+    @include element(itemText) {
+        display: none;
+        display: inline-block;
+        @include addBreakpoint(lg) {
+
+        }
+    }
+
+    @include element(pack) {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@include extendBlock(mainNavMenu,submenu) {
+    position: absolute;
+    display: none;
+    height: auto;
+    width: 16rem;
+    background: darken(#353B40, 5);
+    top:0;
+    left: 16rem;
+    vertical-align: top;
+    white-space: nowrap;
+    text-decoration: none;
+
+
+    @include element(item) {
+
+    }
+
+    @include element(link) {
+
+    }
+
+    @include element(itemText) {
+
+    }
+}
+
+

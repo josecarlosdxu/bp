@@ -1,0 +1,33 @@
+
+$loadingStep1:-10px 12px 0 6px $color-brandYellow-default, 10px 12px 0 6px white;
+$loadingStep3:10px 12px 0 6px $color-brandYellow-default, -10px 12px 0 6px white;
+
+@include block(loading) {
+  display: block;  
+  width: 6px;
+  height: 6px;
+  margin: 50vh auto 0;
+  animation: loadAnimate 1s infinite ease-in-out;
+  -webkit-animation: loadAnimate 1s infinite ease-in-out;
+  border-radius: 8px;
+  outline: medium none;
+  box-shadow: $loadingStep2;
+  opacity: 0.5;
+
+}
+
+
+
+@-webkit-keyframes loadAnimate {
+  0%,100%{ box-shadow:$loadingStep1; }
+
+  50% { box-shadow:$loadingStep3;}
+}
+
+@keyframes loadAnimate {
+  0%,100%{ box-shadow:$loadingStep1; }
+
+  50% { box-shadow:$loadingStep3;}
+}
+
+

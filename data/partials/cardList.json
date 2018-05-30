@@ -1,0 +1,218 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_3"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Moda y complementos",
+    "description": "Bienvenido, en moda y complementos encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Ropa y calzado",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/moda/2573_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Complementos",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/moda/2584_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bisutería",
+        "more": "Ver todo",
+        "number": "98",
+        "image": "../../img/categories/moda/2598_big.jpg"
+      }
+    ]
+  },
+  "wear": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Ropa y calzado",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": " Ropa interior",
+        "number": "5",
+        "image": "../../img/categories/moda/2575_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Pijamas y batamantas",
+        "number": "20",
+        "image": "../../img/categories/moda/2577_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list",
+          [
+            "list"
+          ]
+        ],
+        "title": "Otras prendas",
+        "number": "30",
+        "image": "../../img/categories/moda/2580_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Calzado",
+        "number": "50",
+        "image": "../../img/categories/moda/2582_small.jpg"
+      }
+    ]
+  },
+  "accesories": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Complementos",
+    "number": "136",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Gafas de sol",
+        "number": "50",
+        "image": "../../img/categories/moda/2586_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Bolsos y carteras",
+        "number": "26",
+        "image": "../../img/categories/moda/2588_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Paraguas",
+        "number": "60",
+        "image": "../../img/categories/moda/2590_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Gorros y bufandas",
+        "number": "61",
+        "image": "../../img/categories/moda/2591_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Relojes y pulseras",
+        "number": "62",
+        "image": "../../img/categories/moda/2595_small.jpg"
+      }
+    ]
+  },
+  "jewellery": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Bisutería",
+    "number": "59",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Anillos",
+        "number": "11",
+        "image": "../../img/categories/moda/2600_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Pulseras",
+        "number": "4",
+        "image": "../../img/categories/moda/2602_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Collares",
+        "number": "28",
+        "image": "../../img/categories/moda/2604_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Pendientes",
+        "number": "28",
+        "image": "../../img/categories/moda/2661_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Otros complementos",
+        "number": "16",
+        "image": "../../img/categories/moda/2606_small.jpg"
+      }
+    ]
+  },"bottom": {
+    "cardListModifiers": [
+
+    ],
+
+    "list": [
+      {
+        "cardListItemModifiers":[
+        "full"
+        ],
+
+        "cardElemModifiers": [
+          "primary",
+          "banner"
+        ],
+        "primaryTitle": "Moda y complementos",
+
+        "more": "Ver todo",
+        "image": "../../img/categories/banner_ropa.jpg"
+      }
+
+    ]
+  }
+}

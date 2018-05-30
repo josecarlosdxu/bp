@@ -1,0 +1,59 @@
+@include block(mTDList) {
+    display: table;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+
+    @include element(item) {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        min-height: $um * 2;
+        font-size: 1.25rem;
+        vertical-align: top;
+        padding-top: $um / 2;
+        padding-bottom: $um / 2;
+
+
+        &:nth-child(odd){
+            //background: rgba(0,0,0,0.05);
+        }
+
+        @include modifier(dt) {
+            font-weight: 700;
+            padding-left: $um / 2;
+            background: rgba(0,0,0,0.05);
+            border-right: 1px solid rgba(0,0,0,0.1);
+             @include addBreakpoint(xs) {
+                width: 45%;
+                //background: tan;
+
+            }
+            @include addBreakpoint(sm) {
+                width: 30%;
+
+
+            }
+            @include addBreakpoint(md) {
+                width: 20%;
+
+            }
+            @include addBreakpoint(lg) {
+                width: 15%;
+
+            }
+            @include addBreakpoint(xl) {
+                width: 15%;
+
+
+            }
+
+        }
+        @include modifier(dd) {
+            text-align: left;
+            padding-left: $um / 2;
+
+
+        }
+
+
+    }
+
+}

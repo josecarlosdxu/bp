@@ -1,0 +1,529 @@
+{
+    "footerFeatures": {
+        "mobileFeaturesListModifier": "footerFeatures",
+        "mobileFeatureModifier":["portrait", "centered", "smallImage"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "<a href=\"forms.html\">Ser distribuidor de BigBuy</a>",
+            "image": "../../img/distribuidores.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "<a href=\"packsMayoristas.html\">Packs Mayoristas</a>",
+            "image": "../../img/pack.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "<a href=\"contactoMob.html\"> Contacta con nosotros</a>",
+            "image": "../../img/addresses.svg",
+            "text": ""
+        }
+       ]
+    },
+    "entregaHeader": {
+        "mobileFeaturesListModifier": "pagosCMSItems",
+        "mobileFeatureModifier":["portrait", "centered","mediumImage"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Trabajamos con mensajerías urgentes",
+            "image": "../../img/urgente.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Seguimiento de envío Tracking ID Online",
+            "image": "../../img/tracking.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Envíos a Baleares, Ceuta, Melilla y Canarias",
+            "image": "../../img/camion2.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Envíos urgentes a toda Europa",
+            "image": "../../img/europa.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "CSV con tabla de portes en el panel de control",
+            "image": "../../img/csv2.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Módulo de portes para PrestaShop",
+            "image": "../../img/prestashop.svg",
+            "text": ""
+        }
+       ]
+    },
+    "pagosHeader": {
+        "mobileFeaturesListModifier": "pagosCMSItems",
+        "mobileFeatureModifier":["portrait","mediumImage","textLeft"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Contra Reembolso",
+            "image": "../../img/cod.svg",
+            "text": "Se abonará el importe total del pedido al transportista. Esta forma de pago está disponible exclusivamente en España peninsular y Baleares. Tiene un coste del 1% (mín. 0,85€)"
+        },
+        {
+            "textHeader": "Transferencia bancaria",
+            "image": "../../img/oppositeArrows.svg",
+            "text": "Esta forma de pago demora la entrega hasta confirmar el cobro en nuestro banco. Dispone de 24h. para validarla adjuntando en su panel de control el justificante de la transferencia, recibirá un email con los pasos al finalizar el pedido"
+        },
+        {
+            "textHeader": "Tarjeta débito o crédito",
+            "image": "../../img/doubleCards.svg",
+            "text": "Admitimos la mayoría de tarjetas de crédito o débito del mundo a través de la pasarela de pago PayPal en modo invitado. No es necesario abrir cuenta ni registrarse. Tiene un coste del 1% (+0,30€ por transacción)"
+        },
+        {
+            "textHeader": "Monedero / Saldo",
+            "image": "../../img/wallet2.svg",
+            "text": "Se puede recargar vía transferencia y usar dicho saldo para hacer nuevos pedidos. Dispone de un historial de movimientos en su panel de control y la posibilidad de transferir el saldo (mín.300€) a su cuenta bancaria o PayPal. Aconsejable por ser muy cómoda y sin ningún gasto adicional"
+        },
+        {
+            "textHeader": "PayPal ™",
+            "image": "../../img/paypal.svg",
+            "text": "Es la plataforma de pago más segura de Internet, admite vincular los pagos a su tarjeta (crédito/débito) o incluso a su cuenta bancaria. Tiene un coste del 1% (+0,30€ por transacción) <a href='http://www.paypal.com'>+info</a>"
+        },
+        {
+            "textHeader": "Reembolso Dropshipping",
+            "image": "../../img/camion2.svg",
+            "text": "En los envíos Dropshipping el transportista cobrará el importe total de su pedido de venta. En aprox. 10 días este reembolso será reintegrado en su monedero. Servicio disponible para España peninsular y Baleares. Tiene un coste del 2% (mín. 0,90€) "
+        }
+       ]
+    },
+    "dropshippingStoreHeader": {
+        "mobileFeaturesListModifier": "dropshippingStoreHeader",
+        "mobileFeatureModifier":["portrait", "centered", "mediumImage"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Trabaje desde casa",
+            "image": "../../img/homework.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Sin ser informático",
+            "image": "../../img/nerd.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Sin invertir en stock",
+            "image": "../../img/cajas01.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Alta rentabilidad ",
+            "image": "../../img/graph.svg",
+            "text": ""
+        }
+       ]
+    },
+    "featuresB2B": {
+        "mobileFeaturesListModifier": "dropshippingStore",
+        "mobileFeatureModifier":["portrait","centered","mediumImage"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Teletienda - Anunciado en TV",
+            "image": "../../img/tv.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Cocina Gourmet",
+            "image": "../../img/appliance.svg",
+            "text": ""
+        },
+         {
+            "textHeader": "Pequeño electrodoméstico",
+            "image": "../../img/gourmet.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Hogar - Limpieza",
+            "image": "../../img/vacuum.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Perfumes - Higiene Personal",
+            "image": "../../img/perfume.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Salud - Belleza",
+            "image": "../../img/lipstick.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Fitness - Deportes",
+            "image": "../../img/pilates.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Regalos Originales",
+            "image": "../../img/original.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Electrónica Informática",
+            "image": "../../img/mouse.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Outlet y Ofertas Liquidaciones",
+            "image": "../../img/outlet.svg",
+            "text": ""
+        }
+       ]
+    },
+    "dropshippingStore": {
+        "mobileFeaturesListModifier": "dropshippingStore",
+        "mobileFeatureModifier":["portrait"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Software Prestashop",
+            "image": "../../img/prestashop.svg",
+            "text": "<p>Instalación y configuración de un eCommerce Prestashop en su hosting</p>"
+        },
+        {
+            "textHeader": "Diseño",
+            "image": "../../img/diseno.svg",
+            "text": "<p>Adaptación de uno de nuestros diseños con su logotipo y contenidos personalizados</p>"
+        },
+        {
+            "textHeader": "Dominio y hosting",
+            "image": "../../img/hosting.svg",
+            "text": "<p>Para que sea 100% de su propiedad y a su nombre, le guiamos dónde y cómo registrar dominio y hosting</p>"
+        }
+        ,
+        {
+            "textHeader": "Sincronización a BigBuy",
+            "image": "../../img/synchronized.svg",
+            "text": "<p>Instalación de scripts de sincronización con tareas programadas cron a nuestras bases de datos MYSQL</p>"
+        }
+        ,
+        {
+            "textHeader": "Métodos de envío",
+            "image": "../../img/europa.svg",
+            "text": "<p>Instalación módulo portes con todos los precios y mensajerías a cualquier país de Europa</p>"
+        }
+        ,
+        {
+            "textHeader": "Formas de pago",
+            "image": "../../img/doubleCards.svg",
+            "text": "<p>Configuración de diversos métodos de pago. Contra rembolso, Tarjeta, Transferencia y Paypal</p>"
+        }
+        ,
+        {
+            "textHeader": "Soporte técnico",
+            "image": "../../img/support.svg",
+            "text": "<p>Para cualquier incidencia con la sincronización podrá contactar con nuestro departamento de soporte</p>"
+        }
+        ,
+        {
+            "textHeader": "Documentación",
+            "image": "../../img/documentation.svg",
+            "text": "<p>Multitud de documentación técnica para para iniciar y configurar su ecommerce Prestashop sincronizado a BigBuy</p>"
+        }
+        ,
+        {
+            "textHeader": "Marketing Online",
+            "image": "../../img/target.svg",
+            "text": "<p>En la zona de descargas de BigBuy dispone en diferentes idiomas de banners, newsletters, etc.</p>"
+        }
+         ,
+        {
+            "textHeader": "Compatible otros stocks",
+            "image": "../../img/cajas.svg",
+            "text": "<p>Ecommerce programado para convivir con artículos de otros proveedores</p>"
+        }
+         ,
+        {
+            "textHeader": "Web Multilingüe",
+            "image": "../../img/flags.svg",
+            "text": "<p>Sincronización disponible a 23 idiomas europeos. Traducciones por profesionales nativos</p>"
+        }
+         ,
+        {
+            "textHeader": "Posicionamiento SEO",
+            "image": "../../img/seo.svg",
+            "text": "<p>Webs adaptadas con URL´s amigables que facilitan su labor para escalar puestos en los resultados de buscadores</p>"
+        }
+         ,
+        {
+            "textHeader": "Sincronización Pedidos",
+            "image": "../../img/sync_files.svg",
+            "text": "<p>Transmita los pedidos a Bigbuy, sin necesidad de pasarlos a mano (disponible en Pack Premium)</p>"
+        }
+         ,
+        {
+            "textHeader": "Venta marketplaces",
+            "image": "../../img/marketplaces.svg",
+            "text": "<p>En paralelo con su PrestaShop, podrá vender en eBay, Amazon, Rakuten, etc.</p>"
+        }
+         ,
+        {
+            "textHeader": "Requisito",
+            "image": "../../img/bb-pack.svg",
+            "text": "<p>Tener activo en BigBuy un <strong>pack mayorista</strong> Pro, Business o Premium</p>"
+        }
+       ]
+    },
+    "wholesalePacks": {
+        "mobileFeaturesListModifier": "wholesalePacks",
+        "mobileFeatureModifier":["portrait","tinyImage","mediaObject"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Unidades sueltas a precio mayorista PVD",
+            "image": "../../img/icons/pvd.svg",
+            "text": "<p>Miles de artículos del catálogo de BigBuy, con la posibilidad de comprar unidades sueltas a precio mayorista <span title=\"Precio Venta Distribuidor\" class=\"tooltip-link\" data-js-tooltip=\"tooltip_PVD\"> PVD</span></p>"
+        },
+        {
+            "textHeader": "Descuento automático",
+            "image": "../../img/icons/autoDiscount.svg",
+            "text": "<p>Descuento adicional sobre el PVD de hasta el 6 % en función del importe total del carrito de la compra</p>"
+        },
+        {
+            "textHeader": "Envíos Dropshipping a toda Europa",
+            "image": "../../img/icons/dropshipping.svg",
+            "text": "<p>Envío desde BigBuy directo al cliente final con el nombre y la imagen de su empresa. <a target=\"_blank\" href=\"http://www.bigbuy.eu/es/dropshipping.html\" class=\"mediaObject-link\">+info</a></p>"
+        },
+         {
+            "textHeader": "Traducciones nativas a 24 idiomas europeos",
+            "image": "../../img/icons/globe.svg",
+            "text": "<p>Nuestro catálogo está traducido a 24 idiomas europeos por traductores profesionales nativos.</p>"
+        },
+         {
+            "textHeader": "Descarga de material para marketing online",
+            "image": "../../img/icons/marketing.svg",
+            "text": "<p>Su panel de control dispone de banners, imágenes y newsletters en multitud de idiomas para usarlo en su web.</p>"
+        },
+       {
+            "textHeader": "Bloqueo de Stocks",
+            "image": "../../img/icons/stockreserve.svg",
+            "text": "<p>Servicio gratuito de bloqueo de stock por 7 días sin entregar dinero a cuenta. <a target=\"_blank\" href=\"http://www.bigbuy.eu/es/bloqueo-de-stocks.html\" class=\"mediaObject-link\">+info</a></p>"
+        },
+        {
+            "textHeader": "Sincroniza con BigBuy – API / FTP / CSV / XML",
+            "image": "../../img/icons/csv.svg",
+            "text": "<p>Facilitamos multitud de opciones para sincronizar el catálogo, los transportistas y los pedidos con BigBuy <a target=\"_blank\" href=\"http://www.bigbuy.eu/es/sincronizacion.html\" class=\"mediaObject-link\">+info</a></p>"
+        }
+       
+        
+       ]
+    },
+    "stockLock": {
+        "mobileFeaturesListModifier": "twoColumns",
+        "mobileFeatureModifier":["landscape"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Bloqueo de stocks hasta 7 días",
+            "image": "../../img/block-stock.svg",
+            "text": "<p>Reserve la mercancia que estime vender por 7 días y al terminar la promoción pase el pedido por las unides vendidas.</p>"
+        },
+        {
+            "textHeader": "Sin entregar dinero a cuenta",
+            "image": "../../img/x100.svg",
+            "text": "<p>Reserve la mercancia sin entregar dinero a cuenta. Sólo disponible a clientes con Pack Mayorista.</p>"
+        },
+        {
+            "textHeader": "Descarga imágenes y videos",
+            "image": "../../img/traduccion.svg",
+            "text": "<p>Facilitamos videos, banners e imágenes de todos los productos para que los use en su web y las descripciones en 23 idiomas.</p>"
+        }
+        ,
+        {
+            "textHeader": "Ideal para webs de compra colectiva",
+            "image": "../../img/compra-colectiva.svg",
+            "text": "<p>Enfocado a venta flash en webs como Groupon, LetsBonus, Living Social, Vente Privee, etc.</p>"
+        }
+        ,
+        {
+            "textHeader": "Entrega urgente a toda Europa",
+            "image": "../../img/envio-europa.svg",
+            "text": "<p>Envíos directos a su almacén o al cliente final en cualquier país de Europa a precios muy competitivos.</p>"
+        }
+        ,
+        {
+            "textHeader": "Envío Dropshipping",
+            "image": "../../img/anonimo.svg",
+            "text": "<p>Nos encargamos del envío directo al cliente final, y entregamos con su nombre e imagen de empresa.</p>"
+        }
+       ]
+    },
+    "dropshippingFeatures": {
+        "mobileFeaturesListModifier": "pagosCMSItems",
+        "mobileFeatureModifier":["portrait", "centered", "mediumImage"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "No necesita almacenar, <strong>ni invertir en stock</strong>. Miles de productos de BigBuy pasarán a ser su stock",
+            "image": "../../img/cajas01.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Realizamos la preparación de pedidos y el empaquetado, <strong>nos convertimos en su operador logístico</strong>",
+            "image": "../../img/empaquetado.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Nos encargamos del <strong>envío directo al cliente final</strong>, y entregamos con su nombre e imagen de empresa",
+            "image": "../../img/camion2.svg",
+            "text": ""
+        }
+       ]
+    },
+     "proveedorFeatures": {
+        "mobileFeaturesListModifier": "fiveColumns",
+        "mobileFeatureModifier":["portrait", "centered", "mediumImage"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Ser su <strong>canal online</strong> de distribución",
+            "image": "../../img/canal.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Acceso a todos los países del <strong>mercado europeo</strong>",
+            "image": "../../img/europa.svg",
+            "text": ""
+        }
+        ,
+        {
+            "textHeader": "<strong>Plataforma logística</strong> y gestión del picking propia",
+            "image": "../../img/picking.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "<strong>Servicio Dropshipping</strong> con gran red de distribuidores",
+            "image": "../../img/camion2.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "<strong>Venta al por mayor</strong>B2B online",
+            "image": "../../img/business.svg",
+            "text": ""
+        }
+       ]
+    },
+    "importadorFeatures": {
+        "mobileFeaturesListModifier": "fiveColumns",
+        "mobileFeatureModifier":["portrait", "centered", "mediumImage"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Su oficina en China",
+            "image": "../../img/china.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Investigación y búsqueda de producto",
+            "image": "../../img/lupa.svg",
+            "text": ""
+        }
+        ,
+        {
+            "textHeader": "Desarrollo de nuevos productos y moldes",
+            "image": "../../img/producto.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Branding creatividad diseño gráfico y 3D",
+            "image": "../../img/design2.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Gestión de muestras",
+            "image": "../../img/muestras.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Gestión de producción",
+            "image": "../../img/gestion.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Inspección de producto y control de calidad",
+            "image": "../../img/inspeccion.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Pequeñas y grandes cantidades",
+            "image": "../../img/cantidades.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Negociación de precios y cotización",
+            "image": "../../img/import.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Transporte e importación",
+            "image": "../../img/business.svg",
+            "text": ""
+        }
+       ]
+    },
+    "nosotrosFeatures": {
+        "mobileFeaturesListModifier": "threeColumns",
+        "mobileFeatureModifier":["portrait", "centered"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Atención al cliente y posventa",
+            "image": "../../img/person-support.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Comercial y ventas",
+            "image": "../../img/graph.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Exportación",
+            "image": "../../img/europa.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Logística",
+            "image": "../../img/forklift.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Administración y contable",
+            "image": "../../img/calculator.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Compras e importación",
+            "image": "../../img/businessman.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Contenidos y traducción",
+            "image": "../../img/translate.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Programación",
+            "image": "../../img/laptop.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "Diseño",
+            "image": "../../img/design.svg",
+            "text": ""
+        }
+       ]
+    },
+     "csvFeatures": {
+        "mobileFeaturesListModifier": "twoFixedColumns",
+        "mobileFeatureModifier":["portrait", "centered", "tinyImage", "bigTitle"],
+        "jsAnchor": "",
+        "test": [{
+            "textHeader": "Actualizados diariamente (cada 8h.)",
+            "image": "../../img/time.svg",
+            "text": ""
+        },
+        {
+            "textHeader": "CSV/XML en 23 idiomas diferentes",
+            "image": "../../img/languages.svg",
+            "text": ""
+        }
+       ]
+    }
+}

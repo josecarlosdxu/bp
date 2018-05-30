@@ -1,0 +1,77 @@
+{
+    "list": [
+    {
+        "header": "Accesos directos",
+        "contentText": "Header rediseñado para incluir enlaces a secciones relevantes, como Novedades, Top Ventas, el Blog o una categoría determinada.",
+        "contentImg" : "accesos-directos.jpg"
+    },
+    {
+        "header": "Menú avanzado",
+        "contentText": "Menú superior con imágenes de subcategorías y con estética similar al B2B Shop de BigBuy.",
+        "contentImg" : "menu-avanzado.jpg"
+    },
+    {
+        "header": "Acceso a categorías",
+        "contentText": "Acceso a multitud de categorías y subcategorías, seleccionadas estratégicamente por BigBuy, desde diferentes puntos de la tienda.",
+        "contentImg" : "acceso-categorias1.jpg"
+    },
+    {
+        "header": "Visibilidad de elementos de confianza",
+        "contentText": "Incluimos elementos que aportan confianza en distintos lugares visibles de su tienda: Envío 24/48h, Seguimiento envío tracking, Pago 100% seguro y 2 años de garantía.  Sus clientes los verán en la home, la ficha de producto y el carrito.",
+        "contentImg" : "elementos-confianza.jpg",
+        "contentImg1" : "elementos-confianza1.jpg"
+    },
+    {
+        "header": "Top Ventas automatizados",
+        "contentText": "Debido a que los Prestashop estándar no tienen histórico de ventas, BigBuy presincroniza sus Top Ventas y los muestra en las secciones principales de su tienda.",
+        "contentImg" : "top-ventas.jpg"
+
+    },
+    {
+        "header": "Módulo de creación de newsletters",
+        "contentText": " Cuando alguien se suscriba a la newsletter, su email se registrará automáticamente en una lista de contactos de Mailchimp. El módulo de desarrollo de newsletters permite diseñar fácilmente una plantilla de email con productos, que podrá enviar a los usuarios suscritos.",
+        "contentImg" : "newsletter.jpg",
+        "contentImg1" : "newsletter2.jpg"
+    },
+    {
+        "header": "Diferentes diseños",
+        "contentText": " Cada tienda incluye skins de diferentes colores, que podrá cambiar cuando lo prefiera. Asimismo, vamos añadiendo skins temáticos, para fechas como Navidad, verano o San Valentín.",
+        "contentImg" : "disenos.jpg"
+    },
+    {
+        "header": "Navegación por categorías y subcategorías con imágenes",
+        "contentText": " Todas las categorías y subcategorías de su ecommerce incluyen imágenes con las que hacer la navegación más intuitiva y visual.",
+        "contentImg" : "nav-categorias.jpg"
+    },
+    {
+        "header": "Optimización de la ficha de producto para maximizar la conversión",
+        "contentText": " Hemos rediseñado la ficha de producto, añadiendo nuevos elementos con los que potenciar las ventas.",
+        "contentImg" : "fichaProducto.jpg"
+    },
+    {
+        "header": "Navegación por marcas",
+        "contentText": " La Tienda Dropshipping 360º incluye una página en la que su cliente puede visualizar todas las marcas disponibles en la tienda, y navegar a través de ellas de manera sencilla.",
+        "contentImg" : "marcas1.jpg"
+    },
+    {
+        "header": "Optimización del carrito para potenciar la conversión",
+        "contentText": " Al igual que las fichas de producto, el check out también se ha optimizado de cara a hacer crecer las ventas.",
+        "contentImg" : "elementos-confianza2.jpg"
+    },
+    {
+        "header": "Próximamente, los clientes de Tienda Dropshipping 360º podrán acceder a:",
+        "contentlist": [
+        {
+            "title": " Filtrado por atributos:",
+            "text": "Un cliente podrá filtrar por multitud de prestaciones. Por ejemplo, si está mirando televisiones, podrá filtrar por si son 4K o no."
+        },
+        {
+            "title": " Explicación de prestaciones:",
+            "text": "En cada subcategoría de producto, podrá añadir explicaciones de en qué consisten las ventajas de cada prestación."
+        },
+        {
+            "title": " Sugerencias de producto:",
+            "text": "Su tienda mostrará productos similares, sustitutorios y accesorios, para potenciar la venta cruzada."
+        }]
+    }]
+}

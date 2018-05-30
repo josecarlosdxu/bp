@@ -1,0 +1,40 @@
+---
+title: BigBuy
+---
+<div class="modularGrid modularGrid--boxed">
+    <div class="modularGrid-module">
+        {{>bannertop1}}
+
+        <h2 class="mobileNavBar-title mobileNavBar-title--news">Novedades
+            <a class="mobileNavBar-viewmore" title="Ver todos" href="searchResults.html">Ver todos</a>
+        </h2>
+        <div class="modularGrid-module  u-pdt--third">
+            {{> productList productList.home}}
+        </div>
+        <h2 class="mobileNavBar-title mobileNavBar-title--topsales">Top ventas
+            <a class="mobileNavBar-viewmore" title="Ver todos" href="searchResults.html">Ver todos</a>
+        </h2>
+        <div class="modularGrid-module  u-pdt--third">
+            {{> productList productList.home2}}
+        </div>
+        <h2 class="mobileNavBar-title mobileNavBar-title--outlet">Outlet
+            <a class="mobileNavBar-viewmore" title="Ver todos" href="searchResults.html">Ver todos</a>
+        </h2>
+        <div class="modularGrid-module  u-pdt--third">
+            {{> productList productList.home}}
+        </div>
+        <h2 class="mobileNavBar-title mobileNavBar-title--stock">De nuevo en stock
+            <a class="mobileNavBar-viewmore" title="Ver todos" href="searchResults.html">Ver todos</a>
+        </h2>
+        <div class="modularGrid-module  u-pdt--third u-pdb">
+            {{> productList productList.home2}}
+        </div>
+        <h2 class="mobileNavBar-title mobileNavBar-title--ours">Nuestra selección
+            <a class="mobileNavBar-viewmore" title="Ver todos" href="searchResults.html">Ver todos</a>
+        </h2>
+        {{>bannerbottom}}
+        <div class="modularGrid-module  u-pdt--third">
+            {{> productList productList.home}}
+        </div>
+    </div>
+</div>

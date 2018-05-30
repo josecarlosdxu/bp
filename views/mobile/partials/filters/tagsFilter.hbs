@@ -1,0 +1,14 @@
+<fieldset class="form-fieldset--sequential u-md-50">
+<h4 class="filter-title">{{header.title}}</h4>
+<div class="modularGrid">
+<nav class="tags-list--filters">
+{{#each options }}
+{{#if_lt @index compare=10}}
+<input type="checkbox" class="tags-checkbox inputToggle" id="{{id}}">
+<label class="tags-label" for="{{id}}">{{{name}}} <span class="tags-number">({{number}})</span></label>
+{{/if_lt}}
+{{/each}}
+</nav>
+<button class="button button--narrow u-elem-center u-mgt">Ver todos los tags</button>
+</div>
+</fieldset>

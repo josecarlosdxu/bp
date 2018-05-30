@@ -1,0 +1,67 @@
+@include block(imgshop) {
+
+    display: inline-block;
+    width: auto;
+    font-size: 1rem;
+
+    @include element(logo) {
+        border: 1px solid transparentize(black, 0.85);
+        width: auto;
+        display: inline-block;
+        position: relative;
+        font-size: 0;
+        line-height: 0;
+        min-width: 12rem;
+    }
+    @include element(favicon) {
+        border: 1px solid transparentize(black, 0.85);
+        width: auto;
+        display: inline-block;
+        position: relative;
+        font-size: 0;
+        line-height: 0;
+    }
+    @include element(img) {
+        display: block;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+    }
+    @include element(button) {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border: none;
+        background-color: transparentize(black, 0.55);
+        border-radius: 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0.25rem;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    @include element(input) {
+        position: absolute;
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+       
+        cursor: pointer !important; //visibility: hidden;
+    } // <input type="file" data-fileimg="input" class="imgshop-input">
+}
+
+@include extendBlock(imgshop, valencia) {
+    @include element(img) {
+        height: 65px;
+        width: auto;
+        pointer-events:none;
+    }
+}

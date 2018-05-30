@@ -1,0 +1,70 @@
+<article class="productCard {{#each productCardModifier}} productCard--{{this}} {{/each}} {{#if this.nostock}} productCard--noStock {{/if}}">
+
+    <figure class="productCard-content">
+        <a class="productCard-link" href="#">
+            <img class="productCard-img" src="{{image}}" alt="">
+        </a>
+        <figcaption class="productCard-properties">
+            <div class="productCard-title">
+                <a class="productCard-link" href="#">{{title}}</a>
+            </div>
+            <div class="productCard-prices">
+                <div class="productCard-pvp productCard-pvp--before">
+                    <div class="productCard-pvp-name">
+                        PVR
+                    </div>
+
+                    <div class="productCard-pvp-amount">
+                        {{pvp01}}€
+                    </div>
+                </div>
+                <div class="productCard-pvp productCard-pvp--now">
+
+                    <div class="productCard-pvp-name productCard-pvp--relevant">
+                        PVD
+                    </div>
+
+                    <div class="productCard-pvp-amount productCard-pvp--relevant">
+                        {{pvp03}}€
+                    </div>
+
+                </div>
+
+                <div class="productCard-pvp productCard-pvp--discount">
+                    -{{pvp02}}%
+                </div>
+
+            </div>
+        </figcaption>
+    </figure>
+
+    {{#if this.ribbon}}
+    <div class="productCard-ribbon"> {{ this.ribbon}}</div>
+    {{/if}}
+
+    <div class="productCard-buy">
+        {{#if this.nostock}}
+        <div class="productCard-caption">
+            Sin stock
+        </div>
+        {{else}}
+        <div class="productCard-caption">
+           <!-- <input type="text" class="form-input productCard-quantity" placeholder="Uds.">-->
+
+            {{#if this.options}}
+            <div class="form-action productCard-action u-pdt--half">
+                Opciones
+              <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-chevronRight"/></svg>
+            </div>
+            {{else}}
+             {{> unitControlMini }}
+            <button class="button button--primary  productCard-ctaButton" title="Bloquear">
+               <svg class="icon  icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-lock"/></svg>
+            </button>
+            {{/if}}
+
+        </div>
+        {{/if}}
+    </div>
+
+</article>

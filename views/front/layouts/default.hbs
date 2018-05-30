@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+{{> head }}
+<body>
+    <div class="header">
+        <div class="modularGrid modularGrid--boxed">
+         {{> header }}
+        </div>
+    </div>
+    <nav class="mainNav mainNav--long">
+        <div class="modularGrid modularGrid--boxed">
+            <div class="mainNav-content">
+                {{> mainNavHome}}
+            </div>
+        </div>
+    </nav>
+    <section class="content">
+        <div class="modularGrid modularGrid--boxed u-pdt">            
+            {{> breadcrumb}}
+            {{>body}}
+        </div>
+    </section>
+    <footer class="footer">
+        {{> footer}}
+    </footer>
+     {{> bottomMessage}}
+    {{> delayedScripts}}
+</body>
+</html>

@@ -1,0 +1,31 @@
+---
+title: Detalle de pedido
+layout: mobileback/layouts/clean.hbs
+---
+<div class="modularGrid">
+    <div class="modularGrid-module">
+        <div class="mobileBackTopBar">
+            <div class="modularGrid modularGrid--boxed">
+              {{>breadcrumb_home}}
+              <a class="mobileBackTopBar-breadcrumb" href="../mobileback/orders.html">
+                  <img src="../../img/icons/orders.svg" alt="icon">
+              </a>
+              <h2 class="mobileBackTopBar-title">nº 001130</h2>
+              <button class="mobileBackTopBar-button" data-js-popuplauncher="../../static/popups/popup_deleteorder.html" > <img  src="../../img/mobileIcons/trash.svg"></button>
+              {{!-- <button class="mobileBackTopBar-button" data-js-popuplauncher="../../static/popups/popup_add_order.html"> <img  src="../../img/mobileIcons/paperclip.svg"></button> --}}
+              <button class="mobileBackTopBar-button" data-js-popuplauncher="../../static/popups/popup_downloadorder.html"> <img  src="../../img/mobileIcons/file_download.svg"></button>
+              <button class="mobileBackTopBar-button" data-js-popuplauncher="../../static/popups/popup_repeatorder.html"> <img  src="../../img/mobileIcons/clone.svg"></button>
+
+
+
+          </div>
+      </div>
+      <div class="mobileBackContent">
+        <div class="modularGrid-module">
+            {{>tabsOrderDetail}}
+        </div>
+    </div>
+</div>
+</div>
+
+

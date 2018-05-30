@@ -1,0 +1,231 @@
+@include block(planCard) {
+
+    @extend %inlineBlock100;
+    height: 100%; //@extend %u-sm-3rd;
+    //@extend %u-sm-3rd;
+    background-color: white;
+    padding: 2px;
+    @include addBreakpoint(lg) {
+        padding: 5px;
+    }
+
+    @include element(imgList) {
+        @extend %inlineBlock100;
+        margin-bottom: $um / 2;
+        &:after {
+            padding-top: 85.71%;
+            content: "";
+            display: block;
+        }
+    }
+    @include element(devices) {
+        width: $um*3;
+        height: $um*3;
+        display: none;
+        +p {
+            display: none;
+        }
+        @include addBreakpoint(sm) {
+            display: block;
+        }
+    }
+
+    @include element(name) {
+        font-weight: normal;
+        text-transform: capitalize;
+    }
+
+    @include element(ribbon) {
+
+        background-color: #fcc401;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+        color: #ffffff;
+        font-size: 0.9rem;
+        left: -45%;
+        letter-spacing: 0.05em;
+        padding: 0.5rem 0;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        top: -42%;
+        transform: rotate(-45deg);
+        transform-origin: 100% 100% 0;
+        width: 100%;
+        z-index: 1;
+        +img {
+            filter: blur(3px);
+        }
+    }
+
+
+
+    @include element(imgItem) {
+        @extend %inlineBlock100;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 0;
+        display: none;
+        @include modifier(active) {
+            display: inline-block;
+        }
+    }
+
+    @include element(img) {
+        @extend %img--responsive;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    @include element(theme) {
+        overflow: hidden;
+        position: relative;
+    }
+
+    @include element(actions) {
+        @extend %inlineBlock100; //padding-left: 5px;
+        //@include addBreakpoint(lg) {
+        padding: $um / 2; //}
+    }
+
+
+    @include element(buyButtons) {
+
+        @extend %inlineBlock100;
+        @extend %u-xs-60;
+        @extend %u-sm-100;
+        @include addBreakpoint(sm) {
+            padding-top: $um;
+        }
+
+        @include addBreakpoint(lg) {
+            padding-top: 0;
+            text-align: right;
+        }
+        .button {
+            font-size: 1rem;
+            height: 3rem;
+            padding: 0 1.5rem;
+            margin-bottom: $um / 2;
+        }
+    }
+
+
+    @include element(actionsItem) {
+
+        @extend %inlineBlock100;
+        @extend %u-xs-40;
+        @extend %u-sm-100;
+        @extend %u-lg-3rd;
+    }
+
+    @include element(actionsItemTitle) {
+
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1;
+    }
+
+
+    @include element(colorBtn) {
+
+        display: inline-block;
+        border-radius: 0;
+        background: #ccc;
+
+
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 0;
+        border: none;
+        margin-right: 0.5rem;
+        margin-top: 0.75rem;
+        position: relative;
+        top: 0;
+        vertical-align: top;
+
+        &:focus {
+            outline: none;
+        }
+        @include modifier(selected) {
+
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1.25rem;
+                height: 0.3rem;
+                bottom: -0.5rem;
+                background: inherit;
+            }
+        }
+
+
+
+
+        @include modifier(parisGreen) {
+            background: #64afa0;
+        }
+
+        @include modifier(parisPink) {
+            background: #d16572;
+        }
+
+        @include modifier(parisYellow) {
+            background: #d8a44a;
+        }
+
+        @include modifier(parisBlue) {
+            background: #72a1bb;
+        }
+
+
+        @include modifier(londonGreen) {
+            background: #5da957;
+        }
+
+        @include modifier(londonOrange) {
+            background: #f36c21;
+        }
+
+        @include modifier(londonRed) {
+            background: #f05440;
+        }
+
+        @include modifier(londonBlue) {
+            background: #199ad6;
+        }
+    }
+    .button{
+         margin-right: $um / 2;
+
+    }
+
+    @include element(select) {
+        display: none;////
+
+        +.button {
+           
+            margin-left: auto;
+
+        }
+    }
+}
+
+
+@include extendElement(planCard, actionsItem, prices) {
+    font-size: $um;
+    line-height: 1;
+    margin-bottom: 5px;
+
+    @include element(littlePrice) {
+        font-size: 0.9rem;
+        color: #666;
+        font-weight: 300;
+    }
+}
+
+@include extendElement(planCard, actionsItem, btns) {
+    padding-bottom: $um;
+}

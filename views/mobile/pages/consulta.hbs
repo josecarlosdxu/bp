@@ -1,0 +1,54 @@
+---
+title: Consulta P1_F05050181
+breadcrumbs: Consulta P1_F05050181
+layout: mobile/layouts/clean.hbs
+---
+
+{{!-- <div class="mobileNavBar">
+    <div class="modularGrid modularGrid--boxed">
+         <div class="modularGrid-module">
+           <!-- <a class="mobileNavBar-breadcrumb" href="../mobile/HOME.html"></a> -->
+            <svg role="img" class="mobileTabs-itemHeader--breadcrumb">
+                <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-arrowLeft"></use>
+            </svg>
+            <h1 class="mobileNavBar-title">Consulta P1_F05050181</h1>
+        </div>
+    </div>
+</div> --}}
+<div class="modularGrid modularGrid--boxed box">
+	<div class="u-pd--half">
+		<div class="modularGrid-module u-xs-80">
+		     <h3 class="mobileText-subtitle">Pendiente de expedir, problema con el paquete</h3>
+	    </div>
+	    <div class="modularGrid-module u-xs-20">
+	    	<div class="msgBox msgBox--small u-tac">
+			    Soporte técnico
+			</div>
+	        <div class="span-warning u-tar">En curso</div>
+	    </div>
+    </div>
+    <div class="modularGrid-module">
+         {{>conversationTicket}}
+    </div>
+    <div class="modularGrid-module u-pd">
+    	 {{>responseTicket}}
+    </div>
+    <div class="modularGrid-module">
+        <nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs">
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--pb">
+                    <div class="modularGrid-module mobileTabs-itemHeader--arrow">
+                        <h4 class="mobileTabs-itemTitle mobileTabs-itemTitle--full u-pdt--half u-pdb">Archivos adjuntos <span class="mobileTabs-itemTitleInfo">9</span></h4>
+                    </div>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding ">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                        	{{>responseTicketFileAttach}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </nav>
+    </div>
+</div>

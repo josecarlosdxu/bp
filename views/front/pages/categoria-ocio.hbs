@@ -1,0 +1,35 @@
+---
+title: Categorias
+layout: front/layouts/default_alt.hbs
+breadcrumblist:
+- Inicio
+- Moda y complementos
+---
+{{>breadcrumb}}
+<div class="modularGrid-module u-xs-25 u-pdb u-pdr">
+	<ul class="menuList">
+		{{> menuList menuList1.list }}
+		{{> menuList menuList2.list }}
+		{{> menuList menuList3.list }}
+		{{> menuList menuList4.list }}
+		{{> menuList menuList5.list }}
+		{{> menuList menuList6.list }}
+		{{> menuList menuList7.list }}
+		{{> menuList menuList8.list }}
+		{{> menuList menuList9.list }}
+	</ul>
+	{{>menuListDescription menuList7.list}}
+</div>
+
+<div class="modularGrid-module u-xs-75">
+	<section class="categoryList">
+		{{> cardList cardListOcio.top }}
+		{{> cardList cardListOcio.party }}
+
+
+	</section>
+
+
+</div>
+
+

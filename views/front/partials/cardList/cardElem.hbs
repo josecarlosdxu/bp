@@ -1,0 +1,64 @@
+{{#if categoryTitle}}
+{{!--  <input type="radio" class="inputToggle" id="{{idSection}}" name="mobileCategories"> --}}
+<div class="cardElem {{#each this.cardElemModifiers}} cardElem--{{this}} {{/each}}" data-js="mobileCategory">
+  <a href="#" class="cardElem-title">{{categoryTitle}} <span class="cardElem-more">Ver todos</span></a>
+{{!--   <a href="#" class="cardElem-title">{{categoryTitle}} <span class="cardList-more cardElem-mobilebtn" data-js="openMobileCategory">Ver todos</span></a>
+ --}}
+ 
+  <figure class="cardElem-figure">
+    <figcaption class="cardElem-figcaption">
+      {{#each categoryTexts}}
+      <a href="#"  title="{{this}}" class="cardElem-link">{{this}}</a>
+      {{/each}}
+    </figcaption>
+    <div class="cardElem-imgCont">
+      <a href="#"  class="cardElem-imglink"><img src="{{image}}" alt="" class="cardElem-img"></a>
+    </div>
+  </figure>
+
+ 
+
+
+ 
+
+
+
+  {{!-- <h1>{{random 0 100000}}</h1> --}}
+ {{!--  <h1> {{this.index}}</h1>
+   <h1>{{this.key}}</h1>
+    <h1>{{_view.contentIndex}}</h1> --}}
+
+   {{#if mobilebtns}} <button class="cardElem-mobilebtn" data-js="openMobileCategory" ></button> {{/if}}    
+
+  {{#if families}}   
+  <ul class="cardElem-families" data-js="mobileFamilies">
+  {{#each families}}
+  {{>familiesItem}}  
+   {{/each}}
+   </ul>
+  {{/if}}
+</div>
+{{else}}
+<a href="#" class="cardElem{{#each this.cardElemModifiers}} cardElem--{{this}}{{/each}}">
+  <figure class="cardElem-figure">
+    <figcaption class="cardElem-figcaption">
+      <div class="cardElem-text">
+        {{#if primaryTitle}}
+        <h2 class="cardElem-title cardElem-title--inline">{{primaryTitle}}{{#if this.number}}</h2>
+        <span class="title-number title-number--middle">({{number}})</span>
+        {{/if}}
+        {{else}}
+        <h4 class="cardElem-title" {{#if titleAlt}}title="{{{titleAlt}}}"{{/if}}>{{{title}}}</h4>
+        {{#if this.number}}<span class="number cardElem-number">({{number}})</span> {{/if}}
+        {{/if}}
+      </div>
+      {{#if more}}
+      <p class="cardElem-more">{{more}}</p>
+      {{/if}}
+    </figcaption>
+    <div class="cardElem-imgCont">
+      <img title="{{titleAlt}}" src="{{image}}" alt="{{alt}}" class="cardElem-img">
+    </div>
+  </figure>
+</a>
+{{/if}}

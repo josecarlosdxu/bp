@@ -1,0 +1,157 @@
+{
+  "bigmenu":{
+    "header":[
+        {
+        "title":"Videocámaras y cámaras fotográficas",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Telefonía y accesorios",
+        "sectionID":"110",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Televisores y reproductores de DVD",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Tablets, libros electrónicos y accesorios",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Videojuegos, consolas y accesorios",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Drones",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Scooters eléctricos",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Relojes y smartwatch",
+        "sectionID":"114",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Audio y HI-FI",
+        "sectionID":"111",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Ordenadores y periféricos",
+        "sectionID":"112",
+        "modifier":"bigMenu-sectionItem--submenu"
+      },
+      {
+        "title":"Pilas, cargadores y adaptadores",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Accesorios de electrónica",
+        "sectionID":"",
+        "modifier":""
+      }
+    ],
+    "categories":[
+      {
+        "sectionID":"110",
+        "subcategories":[
+          {
+            "name":"Teléfonos móviles"
+          },
+          {
+            "name":"Teléfonos fijos"
+          },
+          {
+            "name":"Fundas y carcasas"
+          },
+          {
+            "name":"Baterías y cargadores"
+          },
+          {
+            "name":"Monopod"
+          },
+          {
+            "name":"Power bank"
+          },
+          {
+            "name":"Accesorios de telefonía"
+          }
+        ]
+      },
+      {
+        "sectionID":"111",
+        "subcategories":[
+          {
+            "name":"Altavoces"
+          },
+          {
+            "name":"Auriculares"
+          },
+          {
+            "name":"Radios y equipos de música"
+          },
+          {
+            "name":"Grabadoras"
+          },
+          {
+            "name":"Componentes y accesorios"
+          }
+        ]
+      },
+      {
+        "sectionID":"112",
+        "subcategories":[
+          {
+            "name":"Ordenadores portátiles"
+          },
+          {
+            "name":"Monitores"
+          },
+          {
+            "name":"Impresoras"
+          },
+          {
+            "name":"Teclados"
+          },
+          {
+            "name":"Ratones y alfombrillas"
+          },
+          {
+            "name":"Redes, software y componentes"
+          },
+          {
+            "name":"Accesorios de informática"
+          }
+        ]
+      },
+      {
+        "sectionID":"114",
+        "subcategories":[
+          {
+            "name":"Relojes de sobremesa y pared"
+          },
+          {
+            "name":"Despertadores"
+          },
+          {
+            "name":"Smartwatch"
+          },
+          {
+            "name":"Relojes de pulsera"
+          }
+        ]
+      }
+    ]
+  }
+}

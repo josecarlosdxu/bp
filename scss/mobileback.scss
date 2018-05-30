@@ -1,0 +1,171 @@
+@charset "UTF-8";
+//Scaffolding layer
+@import "nm/vendor/normalize3"; //normalize.css v2.1.3
+@import "nm/vendor/animate"; //animate.css animations
+@import "nm/variables"; //framework internal variables, !this is not a configuration file
+@import "nm/base"; //custom reset
+@import "nm/utils/bem"; //BEM mixins to create & extend classes in a strict way.
+@import "nm/utils/breakpoints"; //BEM mixins to create & extend classes in a strict way.
+
+//Theme vars
+//@import "shared/colorDesat";
+@import "shared/colorOriginal";
+@import "shared/themeBase";
+//Abstractions layer
+@import "nm/modules/modularGrid"; //Inline-block grid system
+@import "nm/modules/nav"; //Navigation & menus
+@import "nm/modules/form"; //Forms
+@import "nm/modules/list";
+@import "nm/modules/table"; //Tables
+@import "nm/modules/tooltip"; //Help bubbles inline
+@import "nm/modules/responsiveImg"; //Responsive Images placeholder
+@import "nm/modules/msgBox";
+@import "nm/modules/ratioBox";
+//Components layer*/
+@import "shared/icon";
+@import "shared/pack";
+//Debug
+@import "nm/utils/debug";
+@import "nm/vendor/idangerous.swiper";
+@import "mobile/mobileText";
+@import "mobile/button";
+@import "mobile/buttonUser";
+@import "mobile/buttonLogin";
+@import "mobile/table";
+@import "mobile/form";
+@import "mobile/mobileHeader";
+@import "mobile/mobileToolbar";
+@import "mobile/mobileContent";
+//@import "mobile/mobileNavBar";
+@import "mobile/mainNav";
+@import "mobile/contactData";
+@import "mobile/tags";
+@import "mobile/cart";
+@import "mobile/mobileCMS";
+@import "mobile/mobileFeaturesList";
+@import "mobile/mobileFeature";
+@import "mobile/pricePanel";
+@import "mobile/mobileTabs";
+@import "mobile/mobilePack";
+@import "mobile/popup";
+@import "mobile/loading";
+
+@import "mobile/mobileLanglist";
+
+@import "mobile/buttonPagination";
+
+
+@import "back/infoSection";
+
+
+@import "mobileback/responsiveTable";
+@import "mobileback/btnDownloads";
+@import "mobileback/mobileBackContent";
+@import "mobileback/mTDList";
+@import "mobileback/sectionLink";
+@import "mobileback/mobileBackTopBar";
+
+@import "shared/stockAvailability";
+@import "mobileback/stockAvailability";
+@import "mobile/uploadFile";
+@import "shared/csstabs";
+
+//Utils
+@import "nm/utils/baseline"; //Vertical rythm visual helper
+@import "nm/utils/proportions"; //Common proportions used and their responsive classes
+@import "nm/utils/positions"; //Common position and alignment properties
+@import "nm/utils/visualize";
+@import "nm/utils/sizer";
+@import "shared/color";
+
+
+
+html {
+
+    overflow-x: hidden;
+}
+body {
+    background: $color-body-background;
+    background: #E4E5E7;
+    background: #E7E7E4;
+    background: #ebebeb;
+    padding-top: 6rem;
+    //transition: left 0.3s ease-in-out;
+    min-height: 100vh;
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;*/
+    -webkit-overflow-scrolling: none;
+}
+.table-item--handler .icon {
+    display: none;
+}
+.body--locked {
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+b, strong {
+    font-weight: 700;
+}
+.modularGrid--boxed {
+    max-width: 1200px;
+    padding-right: 1px
+}
+.paddingHack {
+    padding: 0 1px;
+}
+.form-select[disabled] {
+    background-color: gainsboro;
+}
+.accordion-icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 $um / 2;
+}
+figure {
+    margin: 0;
+}
+.mediaObject-link {
+    color: #333;
+    text-decoration: underline;
+}
+.buttonLogin {
+    box-shadow: none;
+    /*margin-right: 0;
+     width: 2rem;*/
+}
+[data-js-popuplauncher] {
+    cursor: pointer;
+}
+.u-vh {
+    min-height: calc( 100vh - 6rem);
+}
+.button[disabled] {
+    border-color: $color-shadow;
+    background-clip: padding-box;
+    background-color: rgba(150, 150, 150, 0.3);
+    color: opacify($color-shadow, 0.1);
+    .icon {
+        opacity: 0.3;
+    }
+}
+.button--cart[disabled], .button--cart.disabled {
+    background-color: transparent;
+    opacity: 0.2;
+    pointer-events:none;
+}
+.morris-hover.morris-default-style {
+    display: none !important;
+}
+
+
+
+
+
+
+

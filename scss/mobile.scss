@@ -1,0 +1,379 @@
+@charset "UTF-8";
+//Scaffolding layer
+@import "nm/vendor/normalize3"; //normalize.css v2.1.3
+@import "nm/vendor/animate"; //animate.css animations
+@import "nm/variables"; //framework internal variables, !this is not a configuration file
+@import "nm/base"; //custom reset
+@import "nm/utils/bem"; //BEM mixins to create & extend classes in a strict way.
+@import "nm/utils/breakpoints"; //BEM mixins to create & extend classes in a strict way.
+
+//Theme vars
+@import "shared/colorOriginal";
+@import "shared/themeBase";
+@import "shared/dots";
+@import "mobile/type";
+@import "shared/viewMore";
+@import "shared/color";
+//Abstractions layer
+@import "nm/modules/modularGrid"; //Inline-block grid system
+@import "nm/modules/nav"; //Navigation & menus
+@import "nm/modules/form"; //Forms
+@import "nm/modules/list";
+@import "nm/modules/table"; //Tables
+@import "nm/modules/centerLine";
+@import "nm/modules/layoutcol";
+@import "nm/vendor/nouislider";
+
+//Buttons
+@import "nm/modules/tooltip"; //Help bubbles inline
+@import "nm/modules/responsiveImg"; //Responsive Images placeholder
+@import "nm/modules/msgBox";
+@import "nm/modules/ratioBox";
+@import "nm/modules/panel";
+@import "nm/modules/shop";
+@import "front/rating";
+@import "front/progressBar";
+@import "front/minisocial";
+@import "front/productSheet";
+@import "front/footerAwards";
+@import "front/contentTickets";
+@import "mobile/content";
+@import "front/imgBox";
+//Components layer*/
+
+@import "mobile/minisocial";
+@import "mobile/bubble";
+@import "shared/icon";
+@import "shared/pack";
+@import "shared/notify";
+@import "shared/message";
+@import "shared/grouped";
+@import "shared/cmsFlexbox";
+@import "shared/legalText";
+//Debug
+@import "nm/utils/debug";
+@import "nm/modules/nmList";
+@import "nm/modules/baloon";
+//@import "nm/vendor/idangerous.swiper";
+@import "mobile/mobileText";
+@import "mobile/button";
+@import "mobile/buttonUser";
+@import "mobile/buttonLogin";
+@import "mobile/table";
+
+@import "mobile/buttonPagination";
+@import "mobile/mobileHeader";
+@import "mobile/mobileToolbar";
+@import "mobile/mobileContent";
+@import "mobile/mobileNavBar";
+@import "mobile/mainNav";
+@import "mobile/contactData";
+@import "mobile/footer";
+@import "mobile/BigBuyCountries";
+@import "mobile/popularSearch";
+@import "mobile/recentSearch";
+@import "mobile/tags";
+@import "mobile/cart";
+@import "mobile/errorPage";
+@import "mobile/nouislidermobile";
+@import "mobile/responsiveTable";
+@import "mobile/imgBox";
+@import "mobile/productSheet";
+@import "mobile/responsiveImg";
+@import "mobile/productList";
+@import "mobile/productCard";
+@import "mobile/mobileCMS";
+@import "mobile/mobileFeaturesList";
+@import "mobile/mobileFeature";
+//@import "front/planCard";
+@import "mobile/planCard";
+@import "mobile/venideroSteps";
+
+@import "mobile/mobileTabs";
+@import "mobile/mobilePack";
+@import "mobile/popup";
+@import "mobile/loading";
+@import "mobile/mobileLanglist";
+@import "mobile/bottomMessage";
+@import "mobile/banner";
+@import "mobile/paypalbanner";
+@import "mobile/mobileAwards";
+@import "mobile/sliderCategories";
+@import "mobile/menuList";
+@import "mobile/helpCenterMenu";
+@import "mobile/helpSection";
+@import "mobile/unitControl";
+@import "mobile/breadcrumbs";
+@import "mobile/families";
+@import "mobile/cmsContact";
+@import "mobile/socialLink";
+//Utils
+@import "nm/utils/baseline"; //Vertical rythm visual helper
+@import "nm/utils/proportions"; //Common proportions used and their responsive classes
+@import "nm/utils/positions"; //Common position and alignment properties
+@import "nm/utils/visualize";
+@import "shared/stockAvailability";
+@import "mobile/uploadFile";
+@import "mobile/featuredSlider";
+@import "mobile/homeslider";
+@import "mobile/homefeatured";
+@import "mobile/categoryList";
+@import "mobile/cardList";
+@import "mobile/cardElem";
+@import "front/categoryTabs";
+@import "mobile/categoryTabs";
+@import "mobile/category";
+@import "mobile/homeBannerList";
+@import "mobile/homeBanner";
+@import "mobile/homeBigBanner";
+@import "mobile/panel";
+@import "front/tabs";
+@import "mobile/tabs";
+@import "front/featuredList";
+@import "mobile/featuredList";
+@import "front/mediaObject";
+@import "front/brandList";
+@import "front/landingBanner";
+@import "front/checkbox";
+@import "front/hero";
+@import "mobile/hero";
+@import "mobile/filter";
+@import "mobile/rangeFilter";
+@import "mobile/preheader";
+@import "nm/modules/charts";
+@import "front/shoppingCartStep";
+@import "mobile/shoppingCartStep";
+@import "mobile/pricePanel";
+@import "mobile/steps";
+@import "shared/csstabs";
+
+@import "mobile/imgBoxBtn";
+
+
+@import "front/productSheetBadge";
+@import "nm/utils/sizer";
+@import "mobile/form";
+
+body {
+    background: $color-body-background;
+    background: #E4E5E7;
+    background: #E7E7E4;
+    background: #ebebeb;
+    background: #f1f2f3;
+    padding-top: 6.25rem; //transition: left 0.3s ease-in-out;
+    min-height: 100vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none; //-webkit-overflow-scrolling: none;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+}
+
+.table-item--handler .icon {
+    display: none;
+}
+
+.body--locked {
+    //min-width: 100%;
+    /*width: 100%;
+    height: 100%;
+    height: calc(100vh + 6rem);
+    position: fixed;
+    margin-top: 6.25rem;
+    z-index: 0;
+    padding: 0;*/
+    overflow: hidden;
+}
+
+
+.body--locked.ioslocked {
+    //min-width: 100%;
+    /*width: 100%;
+    height: 100%;
+    height: calc(100vh + 6rem);
+   
+    margin-top: 6.25rem;
+    z-index: 0;
+    padding: 0;*/
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+
+    
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+.modularGrid--boxed {
+    max-width: 1200px; //padding-right: 1px
+}
+
+.paddingHack {
+    padding: 0 1px;
+}
+
+
+
+
+
+/*
+.uploadFile {
+    font-size: 1.4rem;
+    display: block;
+    border: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    color: #333;
+    vertical-align: middle;
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
+
+    @include element(icon) {
+        @extend .icon;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        opacity: 0.7;
+        margin: 0 3px 0 4px;
+
+    }
+}
+*/
+
+.form-select[disabled] {
+    background-color: GAINSBORO;
+}
+
+.accordion-icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 $um / 2;
+}
+
+figure {
+    margin: 0;
+}
+
+
+
+
+
+/*.mediaObject-link {
+    color: #333;
+    text-decoration: underline;
+}*/
+
+[data-js-popuplauncher] {
+    cursor: pointer;
+}
+
+.rating-icon {
+    font-size: 2rem;
+    vertical-align: top;
+    height: 20px;
+    width: 20px;
+    &:before {
+        font-family: $type-ui;
+        content: "★";
+        top: -5px;
+    }
+}
+
+.productReview-item {
+    padding-top: 1rem;
+}
+
+.modularGrid-module,
+.modularGrid-module--legible {
+    @include addBreakpoint(xs) {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .mobileCMS .u-pdl--half {
+        padding-left: 0 !important;
+    }
+    .mobileCMS-section form.u-pdr {
+        padding-right: 0 !important;
+    }
+}
+
+.form-radio+label {
+    margin-top: 3px;
+}
+
+[data-js-payment_item]~.form-fieldset {
+    display: none;
+}
+
+[data-js-payment_item]:checked~.form-fieldset {
+    display: block;
+}
+
+
+
+
+dl {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    dt,
+    dd {
+        padding: $um / 2 $um / 2 $um / 1.5;
+        align-items: center;
+        display: flex;
+    }
+    dt {
+        font-weight: 700;
+        background-color: $color-lightGrey-light;
+        width: 40%;
+    }
+    dd {
+        box-shadow: -1px 0 $color-shadow;
+        width: 60%;
+    }
+}
+
+// *:focus-within {
+//   background: gainsboro;
+//   outline: 1px solid red;
+// }
+table.table[data-jsshop="shop"] tbody tr {
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+    td.table-item.u-lg-25 {
+        padding: 0 1rem;
+    }
+    strong[data-jsshop="price"] {
+        padding-right: 1rem;
+    }
+
+    @include addBreakpoint(lg) {
+        display: table-row;
+    }
+    .form-label[data-jsshop="label"] {
+
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+}

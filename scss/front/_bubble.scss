@@ -1,0 +1,73 @@
+@include block(bubble) {
+	position: relative;
+
+	display: inline-block;
+
+	height: 16px;
+	padding: 0 $um / 3;
+
+	cursor: default;
+	vertical-align: top;
+
+	border: 1px solid $color-bubble-border;
+	border-radius: 3px;
+
+	font: bold 12px/1.25 "Arial", "_sans";
+
+	@include element(left) {
+		margin-left: $um / 4;
+		&:before , &:after{
+			top: 2px;
+
+			border: 6px solid transparent;
+			border-top-width: 5px;
+			border-bottom-width: 5px;
+		}
+		&:before{
+			left: -12px;
+
+			border-right-color: $color-bubble-left-before-border;
+		}
+		&:after {
+			left: -10px;
+
+			border-right-color: $color-bubble-left-after-border;
+		}
+	}
+
+	&:before,  &:after{
+		position: absolute;
+
+		display: block;
+
+		width: 0;
+		height: 0;
+
+		content: "";
+	}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

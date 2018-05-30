@@ -1,0 +1,177 @@
+$multiChannelHeroColor: #1b9988;
+
+
+
+
+
+@include block(hero) {
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    @include element(supertitle) {
+        font-family: 'Roboto Condensed';
+        font-size: 4rem;
+        margin-top: 1.5rem;
+    }
+
+    @include element(title) {
+        font-family: 'Roboto Condensed';
+        font-size: 3.25rem;
+        margin-top: 1.5rem;
+    }
+    @include element(subtitle) {
+        font-family: 'Roboto Condensed';
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        opacity: 0.8;
+    }
+}
+
+
+
+@include extendBlock(hero, midsize) {
+    width: 80rem;
+    margin: 2rem;
+    @include element(image) {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@include extendBlock(hero, dropship360) {
+    background-color: #85b1ce;
+    color: white;
+
+    @include element(image) {
+        width: 45rem;
+        margin-top: -1rem;
+    }
+    @include element(container) {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include element(title) {
+        padding: 0 1rem 1rem;
+        line-height: 1.1;
+        text-align: center;
+    }
+    @include element(subtitle) {
+        padding: 0 1rem;
+        line-height: 1.1;
+        text-align: center;
+    }
+    @include element(supertitle) {
+        padding: 0 1rem;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .hero-supertitle+.hero-subtitle {
+        margin-bottom: 2rem;
+    }
+}
+
+@include extendBlock(hero, multi) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 69rem;
+    height: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
+
+
+    @include element(container) {
+
+        margin: 0;
+        padding: 0;
+        width: 54rem;
+    }
+
+    @include element(title) {
+        color: $multiChannelHeroColor;
+        font-size: 4rem;
+        line-height: 0.95;
+        margin-bottom: 1rem;
+    }
+    @include element(image) {
+        flex-grow: 0;
+        display: block;
+        flex-shrink: 0;
+        width: 586px;
+        height: 356px;
+        position: relative;
+        img {
+            position: relative;
+        }
+
+        &:before {
+            position: absolute;
+            opacity: 0.1;
+            width: 700px;
+            height: 700px;
+            left: -49%;
+            top: -40%;
+            content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMxYjk5ODgiIGQ9Ik0yMS4zIDE5LjZjLS4zIDAtLjcuMS0uOS4zbC01LjctNS43Yy41LS42LjgtMS4zLjgtMi4yIDAtLjgtLjMtMS42LS44LTIuMmw0LTRjLjUuNCAxIC42IDEuNy42IDEuNSAwIDIuNy0xLjIgMi43LTIuN3MtMS4zLTIuNy0yLjgtMi43LTIuNyAxLjItMi43IDIuN2MwIC42LjIgMS4yLjYgMS43bC00IDRjLS42LS41LTEuMy0uOC0yLjItLjgtLjggMC0xLjYuMy0yLjIuOGwtMi41LTIuN2MuMi0uMy4zLS42LjMtLjkgMC0uOS0uOC0xLjctMS43LTEuN3MtMS44LjgtMS44IDEuNy44IDEuNyAxLjcgMS43Yy40IDAgLjctLjEgMS0uM2wyLjYgMi42Yy0uNS42LS44IDEuNC0uOCAyLjIgMCAuNC4xLjguMiAxLjFsLTQgMS44Yy0uNC0uNS0xLS45LTEuNy0uOS0xLjIuMS0yLjEgMS0yLjEgMi4xcy45IDIuMSAyLjEgMi4xIDIuMS0uOSAyLjEtMi4xYzAtLjIgMC0uNC0uMS0uNWw0LTEuOGMuNiAxIDEuNyAxLjcgMi45IDEuN2wuMiAyLjVjLS43LjItMS4yLjktMS4yIDEuNiAwIC45LjggMS43IDEuNyAxLjdzMS43LS44IDEuNy0xLjdjMC0uOS0uNy0xLjYtMS41LTEuN2wtLjItMi41Yy42LS4xIDEuMS0uNCAxLjUtLjdsNS43IDUuN2MtLjIuMy0uMy42LS4zLjkgMCAuOS44IDEuNyAxLjcgMS43LjkgMCAxLjctLjggMS43LTEuNyAwLS45LS44LTEuNy0xLjctMS43eiIvPjwvc3ZnPg==);
+        }
+    }
+
+    @include element(features) {
+        display: flex;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @include element(fitem) {
+
+        display: flex;
+        align-items: center;
+        color: $multiChannelHeroColor;
+        flex-grow: 1;
+        width: 50%;
+        position: relative;
+        margin-bottom: 2rem;
+        &:before {
+            content: "";
+            display: block;
+            background-color: white;
+            border-radius: 50%;
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+        svg {
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            width: 32px;
+            height: 32px;
+            opacity: 0.7;
+        }
+    }
+
+
+
+    @include element(ftitle) {
+        @extend .cmsContentSection-subtitle;
+        padding-bottom: 0 !important;
+        margin-left: 0.75rem;
+    }
+
+    @include element(slogan) {
+        @extend .hero-subtitle;
+        font-weight: 400;
+    }
+    @include element(content) {
+        padding: 2rem;
+    }
+    @include element(badge) {
+        background-color: transparentize($multiChannelHeroColor, 0.75);
+        padding: 1.75rem 2rem;
+        font-size: 1.2rem;
+        border-radius: 6px;
+    }
+}

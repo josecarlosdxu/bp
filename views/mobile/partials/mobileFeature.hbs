@@ -1,0 +1,15 @@
+{{!-- mobileFeature --}}
+
+
+<div class="mobileFeature {{#each mobileFeatureModifier}} mobileFeature--{{this}} {{/each}}">
+        <figure class="mobileFeature-figure">
+          <img class="mobileFeature-img" alt="" src="{{image}}">
+          <figcaption class="mobileFeature-figcaption">
+            <p class="mobileFeature-textHeader">{{{ textHeader }}}</p>
+            <div class="mobileFeature-textBlock">
+            {{{ text }}}
+            </div>
+          </figcaption>
+        </figure>
+</div>
+

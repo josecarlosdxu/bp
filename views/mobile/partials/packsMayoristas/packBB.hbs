@@ -1,0 +1,46 @@
+<section class="pricePanel pricePanel--midsize">
+	<div class="pricePanel-header u-tac">
+
+		{{#if user}}
+		{{>svgIcon type='user' size='sm' class='u-op-50 '}}
+		<span class="pack pack--{{packname}} pack--big">sin pack</span>
+		{{else}}
+		{{>svgIcon type='pack' size='sm' class=iconclass}}
+		<span class="pack pack--{{packname}} pack--big"><span class="u-op-50">Pack</span>{{packname}}</span>
+		
+		{{/if}}
+		
+		
+	</div>
+	{{#if advice}}
+		<div class="sectiongrey font-size1">{{{advice}}}</div>
+	{{/if}}
+	{{#if message}}
+		<div class="u-pdb u-pdh--half u-op-60 font-size1">{{{message}}}</div>
+	{{/if}}
+	<h4 class="subtitle4 u-mgt u-pdh">{{include}}</h4>
+	<ul class="list list--line list--regularsize u-op-70 u-pd">
+		{{#each list}}    
+		<li class="list-item">{{{text}}}</li> 
+		{{/each}}
+
+	</ul>
+	<div class="u-flex--center u-v-end u-flex-grow1">
+
+		{{{quote}}}
+
+		<p class="subtitle4 u-pdt--half u-pdb">{{price}}</p>  
+
+
+		 <button class="button button--primary"{{#if disabled}} disabled {{/if}}>{{#if user}}Crear cuenta{{else}}Activar{{/if}}</button>
+	</div>
+</section>
+
+
+
+
+
+          
+
+
+

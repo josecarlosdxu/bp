@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" id="home">
+{{> head }}
+<body>  
+ {{> header }}
+    
+    <nav class="mainNav mainNav--long">
+        <div class="modularGrid modularGrid--boxed">
+            <div class="mainNav-content">
+                {{> mainNavHome}}
+            </div>
+        </div>
+    </nav>
+    <section class="content content--slider">
+        <div class="modularGrid">
+            {{> sliderBanner1}}
+        </div>
+    </section>
+    {{>body}}
+    <section class="content u-pdt u-pdb">
+        <div class="modularGrid modularGrid--boxed">
+           {{> keywords full='true'}}
+       </div>
+   </section>
+    <footer class="footer">
+        {{> footer}}
+    </footer>
+    {{> bottomMessage}}
+    {{> delayedScripts home='true'}}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

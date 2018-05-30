@@ -1,0 +1,81 @@
+@include block(supertitle) {
+    margin-bottom: $um / 1.5;
+
+    @extend %type-textHeaders;
+    @include element(icon) {
+        position: relative;
+        top: -3px;
+
+        display: inline-block;
+
+        width: $um * 1.3;
+        height: $um * 1.3;
+        margin-right: $um / 2;
+
+        text-align: center;
+
+        color: #fff;
+        border-radius: 4px;
+        background-color: #000;
+        background-image: linear-gradient(#666 30%,#000 70%);
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.2) inset;
+
+        font-size: $um / 1.5;
+        line-height: $um * 1.3;
+    }
+
+    @include element(breadcrumb) {
+        text-decoration: none;
+
+        @extend %type-breadcrumblink;
+        &:before {
+            margin: 0 0.5rem;
+
+            content: "/";
+
+            font-weight: normal;
+        }
+    }
+
+
+    
+
+    @include modifier(sub2) {
+     position: relative;
+     top: -2px;
+
+     margin-bottom: $um / 1.5;
+
+     @extend %type-text01;
+     .supertitle-icon{
+        top: 0;
+    }
+}
+
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

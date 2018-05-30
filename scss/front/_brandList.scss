@@ -1,0 +1,283 @@
+@include block(brandList) {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    padding: 0;
+    margin-left: 0;
+    align-content: flex-start;
+    width: 100%;
+    @include addBreakpoint(md) {
+        width: calc(100% - 1rem);
+    }
+    @include addBreakpoint(xl) {
+        margin: 0 0 0 -1rem;
+        width: calc(100% + 1rem);
+    }
+    @include element(link) {
+        display: flex;
+        background: white;
+        opacity: 0.9;
+        box-shadow: 0 0 0 1px $color-shadow;
+        transition: box-shadow 0.1s, opacity 0.1s;
+        background: white;
+        border: none;
+        &:hover,
+        &:focus {
+            opacity: 1;
+            outline: none;
+            box-shadow: 0 0 0 1px $color-shadow, 0 1px 4px transparentize(black, 0.8);
+            .brandList-img {
+                opacity: 1;
+            }
+        }
+        width: calc(100% / 2 - 0.75rem);
+        height: 60px;
+        margin: 0 0 0.5rem 0.5rem;
+        @include addBreakpoint(xs) {
+            width: calc(100% / 3 - 0.65rem);
+            padding: 0.5rem;
+        }
+        @include addBreakpoint(sm) {
+            width: calc(100% / 5 - 0.6rem);
+        }
+        @include addBreakpoint(md) {
+            width: calc(100% / 7 - 1rem);
+            margin: 0 0 1rem 1rem;
+        }
+        @include addBreakpoint(lg) {
+            width: calc(100% / 9 - 1rem);
+            padding: 0.75rem;
+        }
+        @include addBreakpoint(xl) {
+            width: calc(100% / 11 - 1rem);
+        }
+    }
+    @include element(img) {
+        height: auto;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        transition: opacity 0.1s;
+        opacity: 0.6;
+        max-width: 100%;
+    }
+    @include modifier(hometabs) {
+        min-height: 0;
+        margin-bottom: 2rem;
+        @include addBreakpoint(xl) {
+            min-height: 29.5rem;
+            margin-bottom: 0;
+        }
+    }
+    @include element(title) {
+        @extend %type-section-title;
+        font-size: $um * 1.4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1em 0 2rem;
+        padding: 0 1rem;
+        &:after {
+            content: "";
+            display: block;
+            background: $color-lightGrey-darker;
+            height: $um / 6;
+            width: calc(100% - 5rem);
+        }
+        @include addBreakpoint(xl) {
+            padding: 0;
+        }
+    }
+}
+
+// @include extendBlock(brandList, filters) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0;
+//     padding: 0.5rem 0.5rem 0;
+//     width: calc(100% + 0.5rem);
+//     @include element(label) {
+//         // box-shadow: 0 0 0 1px $color-shadow;
+//         display: block;
+//         margin-right: 0.5rem;
+//         width: calc(100% / 12 - 0.5rem);
+//         margin-bottom: 0.5rem;
+//         position: relative;
+//         &:after {
+//             content: "";
+//             background: transparentize(black, 0.95);
+//             display: block;
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             opacity: 0;
+//             transition: opacity 0.1s;
+//         }
+//         &:hover,
+//         &:focus {
+//             &:after {
+//                 opacity: 0.5;
+//             }
+//         }
+//         @include element(img) {
+//             transition: opacity 0.2s ease-in;
+//         }
+//     }
+//     @include element(input) {
+//         &:checked {
+//             +.brandList-label {
+//                 .brandList-img {
+//                     opacity: 1;
+//                 }
+//                 &:after {
+//                     opacity: 1;
+//                 }
+//             }
+//         }
+//     }
+//     /*.brandList-input:checked +.brandList-label {
+//         background-color: whitesmoke;
+//     }*/
+// }
+@include extendBlock(brandList, filters) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1.5rem 0 0.1rem 1.2rem;
+    width: 100%;
+    @include element(label) {
+        box-shadow: 0 0 0 1px $color-shadow, -2px 1px 6px $color-shadow;
+        margin-right: 1rem;
+        width: calc(100% / 11 - 1rem);
+        padding: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:after {
+            display: none;
+        }
+        @include element(img) {
+            transition: none;
+            opacity: 0.6;
+            margin: 0.1rem 0.25rem 0;
+            max-width: calc(100% - 0.6rem);
+        }
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 0 1px transparentize(black, 0.5);
+            .brandList-img {
+                opacity: 1;
+            }
+            .brandList-number {
+                // box-shadow: 0 -1px transparentize(black, 0.5);
+            }
+        }
+    }
+    @include element(input) {
+        &:checked {
+            +.brandList-label {
+                box-shadow: 0 0 0 1px $color-more;
+                .brandList-img {
+                    opacity: 1;
+                }
+                .brandList-number {
+                    //box-shadow: 0 -1px $color-more;
+                    color: $color-more;
+                    // background-color: mix($color-more, white, 40%);
+                }
+            }
+        }
+    }
+    @include element(number) {
+        display: block;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-bottom: 0.2rem;
+        color: transparentize(black, 0.5);
+        margin: auto 0 0.2rem;
+        width: 100%;
+        line-height: 1.1;
+    }
+}
+
+@include extendBlock(brandList, mobileFilters) {
+    @extend .brandList--filters;
+    margin: 0 1rem 0.2rem 0;
+    width: calc(100% + 1rem);
+    padding: 0.5rem 0 0;
+    //margin-left: 0.25rem;
+    @include addBreakpoint(sm) {
+        width: 100%;
+    }
+    @include addBreakpoint(md) {
+        width: calc(100% + 1rem);
+    }
+    @include element(label) {
+        padding: 0.25rem 0.5rem;
+        width: calc(100% / 3 - 1rem);
+        @include addBreakpoint(xs) {
+            width: calc(100% / 4 - 1rem);
+        }
+        @include addBreakpoint(sm) {
+            width: 7.5rem;
+        }
+        @include addBreakpoint(md) {
+            width: calc(100% / 4 - 1rem);
+        }
+        @include addBreakpoint(lg) {
+            width: calc(100% / 5 - 1rem);
+        }
+    }
+}
+
+@include extendBlock(brandList, searchResults) {
+    @extend .brandList--filters;
+    padding: 1px;
+    overflow: hidden;
+    height: 10.5rem;
+    @include element(label) {
+        width: calc(100% / 4 - 1rem);
+        background-color: white;
+    }
+}
+
+@include extendBlock(brandList, searchResultsFull) {
+    @extend .brandList--filters;
+    padding: 1px;
+    overflow: hidden;
+    height: calc(100% - 7.5rem);
+    margin-bottom: $um * 1.5;
+    @include element(label) {
+        width: calc(100% / 7 - 1rem);
+        background-color: white;
+        @include addBreakpoint(lg) {
+            width: calc(100% / 9 - 1rem);
+            margin-bottom: $um;
+        }
+    }
+}
+
+.no-flexbox {
+    .brandList--hometabs {
+        display: block;
+        text-align: left;
+
+        .brandList-link{
+            display: inline-block;
+
+        }
+    }
+
+    .brandList.brandList--filters{
+        display: block;
+
+        .brandList-label{
+            display: inline-block;
+
+        }
+
+    }
+}

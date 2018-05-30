@@ -1,0 +1,1225 @@
+%placeholder-text {
+    opacity: 0.45;
+    font-style: italic;
+}
+
+
+
+
+@include block(form) {
+    font-size: 1rem;
+    @include element(toggleSection) {
+        display: none;
+        @include modifier(active) {
+            display: block;
+        }
+    }
+    @include element(title) {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        @extend %type-text01;
+    }
+    @include element(subtitle) {
+        margin-bottom: $um / 2;
+        color: #333;
+        font-size: $um / 1.4;
+        font-weight: 700;
+        @extend %type-text01;
+    }
+    @include element(description) {
+        margin: $um / 3 0 $um / 2;
+        color: #666;
+        font-weight: 300;
+        @extend %type-step;
+    }
+    @include element(box) {
+        padding: $um / 2 $um $um / 2.25;
+        vertical-align: top;
+        @extend %box;
+    }
+    @include element(img) {
+        vertical-align: top;
+    }
+    @include element(link) {
+        display: inline-block;
+        margin-top: $unit-mod / 3;
+        transition: color 0.1s;
+        vertical-align: top;
+        cursor: pointer;
+        color: #222;
+        &:hover,
+        &:focus {
+            color: #999;
+        }
+    }
+    @include element(label) {
+        display: block;
+        margin-bottom: $unit-mod / 3;
+        padding-right: $unit-mod / 3; // color: #333;
+        color: currentcolor;
+        line-height: 1.1;
+        @include modifier(error) {
+            color: $color-form-labelError;
+        }
+        @include modifier(mini) {
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+        @include modifier(optional) {
+            //margin-left: $um / 6;
+            cursor: default; //color: #999;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1em;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        @include modifier(inline) {
+            display: inline-block;
+            margin-top: $unit-mod / 3;
+            /*vertical-align: inherit;
+        line-height: 1.2;
+        padding-bottom: .5rem;
+        width: calc(100% - 3rem);*/
+        }
+        @include modifier(img) {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            vertical-align: top;
+        }
+        @include modifier(disabled) {
+            cursor: not-allowed !important;
+            opacity: 0.7;
+            color: $color-form-label-disabled-text !important;
+        }
+        @include modifier(fSize) {
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            display: block;
+            margin: 2px 0 0 22px !important;
+        }
+    }
+    @include element(legend) {
+        @extend %type-text01;
+        @include modifier(borderless) {
+            border: none;
+            line-height: $um * 1.5;
+        }
+    }
+    @include element(fieldset) {
+        //Usar clases de position en vez de margin genérico para todos los fieldsets margin-bottom: $unit-mod - 1 ;
+        padding: $um / 2 $um $um / 2.25;
+        vertical-align: top;
+        border: none;
+        outline: 1px solid $color-shadow;
+        @include element(title) {
+            margin-bottom: $um / 2;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        @include modifier(borderless) {
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+        @include modifier(inside) {
+            padding: $um / 2.5 $um / 1.5;
+            background: #f5f5f5;
+        }
+        @include modifier(addendum) {
+            margin-right: -1.5rem;
+            margin-left: -1.5rem;
+            padding: 0 1.5rem 0;
+            border: none;
+            border-top: 1px solid $color-shadow;
+            border-bottom: 1px solid $color-shadow;
+            outline: none;
+            background: #eee;
+        }
+        @include modifier(sequential) {
+            padding: $um;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $color-shadow;
+            background: #fff;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        @include modifier(sequentialAlt) {
+            padding: $um;
+            border: none;
+            outline: none;
+            border-top: 1px solid $color-shadow;
+            background: #fff;
+            &:first-child {
+                border-top: none;
+            }
+        }
+    }
+    @include element(radio) {
+        width: auto;
+        margin-right: $um / 5;
+        cursor: pointer; //width: 1.25rem;
+        //height: 1.25rem;
+        position: relative;
+        top: 0;
+        &[disabled] {
+            @extend %disabled;
+            +label {
+                color: #999;
+                cursor: not-allowed;
+            }
+        }
+        +label {
+            margin-top: 0;
+            padding-left: 0;
+        }
+        @include modifier(middle) {
+            margin-top: 5px;
+        }
+        @include modifier(inline) {
+            top: 0;
+        }
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    @include element(action) {
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.6);
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 500;
+        vertical-align: text-top;
+        @include modifier(inline) {
+            display: inline-block;
+            padding: 0.5rem 0;
+        }
+        @include modifier(hint) {
+            text-decoration: underline;
+        }
+        @include element(icon) {
+            margin-right: 0.25rem;
+            font-size: 1.2rem;
+        }
+        @include element(msg) {
+            font-size: 0.96rem;
+            font-weight: 400;
+        }
+        &:hover {
+            color: #333;
+        }
+    }
+    @include element(text) {
+        margin: 0.5rem 0;
+        font-weight: 300;
+    }
+    @include element(textinfo) {
+        font-weight: 300;
+        font-size: 0.9rem;
+        font-style: normal;
+        line-height: 1.25;
+        margin-top: -1px;
+        min-height: 12px;
+        vertical-align: text-top;
+        @include modifier(inline) {
+            padding: 0.8rem 0;
+        }
+        @include modifier(title) {
+            font-weight: 500;
+        }
+    }
+    @include element(checkbox) {
+        width: auto;
+        position: relative;
+        top: 1px;
+        margin-right: $um / 5;
+        cursor: pointer;
+        vertical-align: top;
+        &[disabled] {
+            @extend %disabled;
+            +label {
+                color: #999;
+                cursor: not-allowed;
+            }
+        }
+        +label {
+            margin-top: 0;
+            padding-left: 0;
+        }
+        &:focus {
+            //box-shadow: none;
+            // outline: none;
+        }
+    }
+    @include element(postfix) {
+        @extend %form-item;
+        width: $um * 1.5;
+        margin-left: - $um * 1.7;
+        padding: 0;
+        padding-top: $um / 4;
+        cursor: pointer; //transition: all 0.2s ease-out;
+        text-align: center;
+        color: opacify($color-shadow, 0.4);
+        border-color: transparent;
+        border-left: 1px solid opacify($color-shadow, 0.1);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        box-shadow: none;
+        font-size: $um / 1.2;
+    }
+    @include element(prefix) {
+        @extend %form-item;
+        z-index: 2;
+        width: 40px;
+        margin-right: -44px;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+        text-align: center;
+        color: opacify($color-shadow, 0.4);
+        border: none;
+        background-color: transparent;
+        height: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; //border-color: transparent;
+        //border-right: 1px solid opacify($color-shadow, 0.1);
+        //border-top-right-radius: 0;
+        //border-bottom-right-radius: 0;
+        box-shadow: -1px 0 $color-shadow inset;
+        font-size: $um / 1.5;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    @include element(inputMsg) {
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0 0 3px 3px;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        max-height: 5.5rem;
+        overflow: auto;
+        @include modifier(warning) {
+            color: $color-inputMsgWarning-text;
+            background: $color-inputMsgWarning-background;
+            font-weight: 400;
+            @extend %animated;
+            @extend %shake;
+        }
+        @include modifier(info) {
+            @extend %animated;
+            color: $color-lightGrey-lighter;
+            background: $color-accentBlue-default;
+            font-weight: 400; // @extend %shake;
+        }
+        @include modifier(error) {
+            color: #fff;
+            background: #f8d8d8;
+        }
+        @include modifier(inline) {
+            padding: 0.7rem;
+            border-radius: 3px;
+            &:before {
+                position: absolute;
+                top: 38%;
+                left: -8px;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                content: "";
+                border: 4px solid transparent;
+                border-right: 4px solid #f75856;
+            }
+        }
+        @include modifier(options) {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            background: white;
+            padding: 0;
+            a {
+                display: block;
+                color: rgba(0, 0, 0, 0.7);
+                padding-bottom: 0.25rem;
+                font-size: 1rem;
+                line-height: 1.2;
+                padding: 0.25rem 0.5rem 0.3rem;
+                vertical-align: top;
+                cursor: default;
+                &:hover,
+                &:focus {
+                    color: white;
+                    background: $color-accentBlue-default;
+                }
+            }
+        }
+        @include modifier(options_mobile) {
+            -webkit-overflow-scrolling: touch;
+            max-height: 13rem;
+            a {
+                padding: 0.5rem 0.5rem 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+        @include modifier(loading) {
+            background: whitesmoke;
+            pointer-events: none;
+            opacity: 0.2;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                z-index: 1;
+                width: 2px;
+                height: 2px;
+                top: calc( 50% + 4px);
+                left: 50%;
+                -webkit-animation: rotateplaneDark 1.1s infinite;
+                animation: rotateplaneDark 1.1s infinite;
+                border-radius: 10px;
+                outline: medium none;
+                background: tan;
+                box-shadow: -6px -6px 0 6px black, 6px -6px 0 6px black; // opacity: 0.4;
+            }
+        }
+    }
+    @include element(input) {
+        @extend %form-item;
+        background-position: 110%;
+        @include modifier(fileinput) {
+            outline: 1px solid;
+        }
+        @include modifier(file) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+        @include modifier(collapse) {
+            margin: 0;
+        }
+        @include modifier(postfix) {
+            padding-right: $um *2;
+            text-align: left;
+            position: relative;
+            float: left;
+        }
+        @include modifier(prefix) {
+            padding-left: 4rem;
+            background: transparent;
+            &:-moz-placeholder,
+            &::-moz-placeholder,
+            &::-webkit-placeholder,
+            &::-ms-input-placeholder {
+                padding-left: 3.5rem;
+            }
+        }
+        @include modifier(datarange) {
+            padding-left: 3.5rem;
+            background: transparent;
+            &:-moz-placeholder,
+            &::-moz-placeholder,
+            &::-webkit-placeholder,
+            &::-ms-input-placeholder {
+                padding-left: 3.5rem;
+            }
+            width: $um * 11;
+        }
+        @include modifier(number) {
+            text-align: right;
+        }
+        @include modifier(warning) {
+            border-color: $color-inputWarning-border;
+            background: #fff url(../img/icon-form-input-warning.png) no-repeat 98%;
+            @extend .animated;
+            @extend .shake;
+        }
+        @include modifier(info) {
+            border-color: $color-accentBlue-default;
+            background: #fff url(../img/icon-form-input-info.png) no-repeat 98%;
+            @extend .animated; // @extend .shake;
+        }
+
+
+        &:focus {
+            border-color: #9cf;
+            box-shadow: 0 0 3px #9cf;
+            outline: none;
+        }
+        &[disabled] {
+            @extend %disabled;
+        }
+        &[type="number"] {
+            text-align: right;
+        }
+        &[readonly] {
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0;
+            border: none;
+            border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            background: inherit;
+            box-shadow: none;
+        }
+
+
+
+
+        /* &:-moz-placeholder {
+            @extend %placeholder-text;
+        }
+        &::-moz-placeholder {
+            @extend %placeholder-text;
+        }
+        &::-webkit-input-placeholder {
+            @extend %placeholder-text;
+
+        }
+        &::-ms-input-placeholder {
+            @extend %placeholder-text;
+        }*/
+    }
+    @include element(select) {
+        @extend %form-item;
+        -moz-appearance: inherit;
+        -webkit-appearance: none;
+        background: #ffffff url("../img/icons/caretDown.svg") no-repeat scroll calc(100% - 0.2rem) 60%;
+        padding: 0 $um 0 $um / 2;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+            border-color: #9cf;
+            box-shadow: 0 0 3px #9cf;
+        }
+        @include modifier(inline) {
+            margin-bottom: 0;
+            vertical-align: inherit;
+            display: inline-block;
+            width: auto;
+            margin-right: 5px;
+        }
+        @include modifier(collapse) {
+            margin: 0;
+        }
+        @include modifier(rating) {
+            display: none;
+        }
+        &[disabled] {
+            @extend %disabled;
+        }
+        @include modifier(error) {
+            //color: #CC0000;
+            //background: #fff;
+            border-color: rgba(255, 0, 0, 0.3); //border-left: 4px solid #f00;
+            background-color: #feeeee;
+            background-image: url("../img/icons/caretDownRed.svg");
+            color: #CC0000;
+            border-left: 4px solid #f75856;
+        }
+    }
+    @include element(radiogroup) {
+        display: inline-flex; //overflow: hidden;
+        //vertical-align: top;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border: none;
+        input {
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-top: 0.4rem;
+        }
+        /**label {
+            display: inline-block;
+            margin: 0.5rem 0; //float: left;
+            //clear: right;
+            //margin: 0 0 0.35rem;
+            //padding-left: 0;
+            /*white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+            font-size: 1rem;*/
+        /*width: calc(100% - 2rem);
+        }*/
+    }
+    @include element(textarea) {
+        min-height: $um * 3;
+        padding: $um/ 2;
+        resize: none;
+        @extend %form-item;
+        @include modifier(inline) {
+            margin-left: -1%;
+        }
+        &:focus {
+            border-color: #9cf;
+            outline: none;
+            box-shadow: 0 0 3px #9cf;
+        }
+        &[readonly] {
+            height: inherit;
+            min-height: inherit;
+            margin-bottom: 0;
+            padding: 0;
+            white-space: normal;
+            border: none;
+            background: inherit;
+            box-shadow: none;
+        }
+
+        &::-webkit-input-placeholder {
+            opacity: 0.45;
+            font-style: italic;
+        }
+        &::-moz-placeholder {
+            font-style: italic;
+            opacity: 0.45;
+        }
+        /* firefox 19+ */
+        &:-ms-input-placeholder {
+            font-style: italic;
+            opacity: 0.45;
+        }
+        /* ie */
+        input:-moz-placeholder {
+            font-style: italic;
+            opacity: 0.45;
+        }
+
+
+
+
+
+        @include modifier(tall) {
+            min-height: $um * 6;
+            &::-webkit-input-placeholder {
+                font-style: italic;
+            }
+            &::-moz-placeholder {
+                font-style: italic;
+            }
+            /* firefox 19+ */
+            &:-ms-input-placeholder {
+                font-style: italic;
+            }
+            /* ie */
+            input:-moz-placeholder {
+                font-style: italic;
+            }
+        }
+    }
+    @include element(info) {
+        display: inline-block;
+        cursor: help;
+        color: #7d7d7d;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 0.9rem;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1rem;
+        margin-top: -3px;
+        font-style: italic;
+        min-height: 12px;
+        vertical-align: text-top;
+        align-self: flex-start;
+
+
+        &:not([data-js-tooltip]) {
+            cursor: default;
+        }
+        @include modifier(inline) {
+            padding: 0.8rem 0;
+        }
+        @include modifier(discountTable) {
+            font-style: normal;
+            margin-top: 0;
+            text-decoration: underline;
+        }
+        &:hover,
+        &:focus {
+            color: #666;
+            outline: none;
+            .icon {
+                color: opacify($color-shadow, 0.6);
+            }
+        }
+    }
+    @include element(captcha) {
+        margin-bottom: $um / 2;
+        padding: $um / 2;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: $um / 8;
+        background: #fff;
+        max-width: 400px;
+        @include element(image) {
+            min-height: 54px;
+            margin-bottom: $um / 2;
+            @extend %img--responsive;
+        }
+        @include element(reload) {
+            display: inline-block;
+            margin: 0 0 $um / 4;
+            color: #1aa1e1;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@include extendElement(form,
+fieldset,
+inverse) {
+    padding: 1rem;
+    border: none;
+    background-color: $formInverse-fieldset-background;
+    @include element(label) {
+        color: #ccc;
+    }
+    @include element(fieldset-title) {
+        color: $color-white-default;
+    }
+}
+
+@include extendElement(form,
+label,
+inline) {
+    @include element(img) {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: -0.67rem;
+        margin-bottom: -0.5rem;
+    }
+    +.ui-after {
+        margin-left: -$um / 6;
+        margin-top: $um / 2;
+    }
+    +.form-info {
+        font-style: normal;
+        margin-top: 1px;
+    }
+}
+
+
+
+@include extendElement(form,
+fieldset,
+compressed) {
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    @include element(label) {
+        color: #666; //font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+    @include element(textarea) {
+        font-size: 0.9rem;
+    }
+    p {
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.1;
+    }
+    .form-fieldset-title {
+        font-weight: 400;
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@include extendElement(form,
+fieldset,
+selected) {
+    border-color: rgba(0, 149, 255, 0.24);
+    background: rgba(102, 188, 255, 0.1);
+    outline: 1px solid transparentize($color-accentBlue-dark, 0.8);
+
+    color: #2267B3;
+}
+
+@include extendElement(form,
+fieldset,
+step) {
+    padding: $um;
+    border: none;
+    @include element(formgroup) {}
+    @include element(label) {}
+    @include element(select) {}
+    @include element(input) {}
+}
+
+@include extendElement(form,
+fieldset,
+related) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    outline: none;
+    @include element(checkbox) {
+        margin-right: 0.5rem;
+        margin-top: 0.4rem;
+    }
+    @include element(label) {
+
+        margin: 0.4rem 0 0.5rem;
+        width: calc(100% - 2rem);
+        opacity: 0.7;
+        font-size: 0.9em;
+    }
+
+    .related-label {
+        margin: 0.45rem 0 0.5rem;
+        font-size: inherit;
+        opacity: 1;
+    }
+}
+
+@include extendElement(form,
+input,
+error) {
+    color: #CC0000;
+    background: #fff;
+    border-color: rgba(255, 0, 0, 0.3);
+    border-left: 4px solid #f75856;
+    background: #feeeee;
+    color: #CC0000;
+    &:focus {
+        color: $color-inputError-focus-text;
+        background: #fff;
+        &::-webkit-input-placeholder {
+            @extend %placeholder-text;
+        }
+        &:-ms-input-placeholder {
+            @extend %placeholder-text;
+        }
+    }
+    &:after {
+        //content: "...";
+    }
+    &::-webkit-input-placeholder {
+        opacity: 0.5;
+        color: $color-inputError-text;
+    }
+    &:-ms-input-placeholder {
+        color: $color-inputError-text;
+        @extend %placeholder-text;
+    }
+    +.form-postfix {
+        color: #c00;
+        border-left-color: rgba(255, 0, 0, 0.3);
+    }
+}
+
+@include extendElement(form,
+input,
+err) {
+    @extend .form-input--error;
+}
+
+@include extendElement(form,
+label,
+checkgroup) {
+    //display: flex;
+    position: relative;
+    padding-left: 1.6rem;
+    display: block;
+    width: 100%;
+    margin: 0.75rem 0;
+    cursor: pointer; //font-size: 1.2rem;
+    @include element(checkbox) {
+        margin-top: 0;
+        position: absolute;
+        top: 1px;
+        left: 0;
+    }
+    @include element(radio) {
+        margin-top: 0;
+        top: 1px;
+        left: 0;
+        margin-right: 0.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+select::-ms-expand {
+    display: none;
+}
+
+.form-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+
+@include extendElement(form,
+input,
+search) {
+
+    padding-right: 2rem;
+    background-position: calc(100% - 0.5rem) center;
+    background-size: $um;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBvcGFjaXR5PSIuMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgZD0iTTEzLjMzNiAzLjQwM2MtMy44OTIgMC03LjA1OCAzLjE2Ni03LjA1OCA3LjA1OCAwIDEuNjYgMS4xMTYgMy42NDIgMS4xMTYgMy42NDIuMjMzLjQxNC4xNDkgMS4wMjktLjE4NyAxLjM2NWwtMy4zNDkgMy4zNDhjLS4zMzguMzM4LS4zMzguODg4IDAgMS4yMjRsLjMwNi4zMDZjLjMzNi4zMzYuODg2LjMzNiAxLjIyMSAwbDMuNDEtMy40MWMuMzM2LS4zMzYuOTYxLS40NDEgMS4zODktLjIzNCAwIDAgMS42OTcuODIgMy4xNS44MiAzLjg5MyAwIDcuMDU5LTMuMTY2IDcuMDU5LTcuMDU5cy0zLjE2My03LjA2LTcuMDU3LTcuMDZ6bTAgMTEuOTU1Yy0yLjY5OSAwLTQuODk2LTIuMTk3LTQuODk2LTQuODk3czIuMTk3LTQuODk3IDQuODk2LTQuODk3YzIuNzAxIDAgNC44OTcgMi4xOTcgNC44OTcgNC44OTdzLTIuMTk2IDQuODk3LTQuODk3IDQuODk3eiIvPjwvc3ZnPg==);
+}
+
+
+// .form-input:invalid:not(:placeholder-shown)  {
+//  color: #CC0000;
+//  background: #fff;
+//  border-color: rgba(255, 0, 0, 0.3);
+//  border-left: 4px solid #f00;
+//  background: #feeeee;
+//  color: #CC0000;
+//  box-shadow: none;
+// }
+
+/*input[type=range] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+  height: 15px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: none;
+  background: rgba(0,0,0,0.1);
+  border-radius: 3px;
+  border: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  height: 14px;
+  width: 14px;
+  border-radius: 15px;
+  background: #dbdde0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background:rgba(0,0,0,0.1);
+}
+
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: none;
+  background: rgba(0,0,0,0.1);
+  border-radius: 3px;
+  border: none;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow:none;
+  border: 1px solid rgba(0,0,0,0.2);
+  height: 12px;
+  width: 12px;
+  border-radius: 15px;
+  background: #dbdde0;
+  cursor: pointer;
+}
+
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border: none;
+  border-width: 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+}
+input[type=range]::-ms-fill-upper {
+  background:rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 2px;
+  box-shadow:none;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  height: 12px;
+  width: 12px;
+  border-radius: 15px;
+  background: #dbdde0;
+  cursor: pointer;
+  margin-top:1.5px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(0,0,0,0.1);
+}
+input[type=range]:focus::-ms-fill-upper {
+   background: rgba(0,0,0,0.1);
+}*/
+
+//********************************* NO EXPORTAR **************************************//
+//***********************************************************************//
+@-moz-document url-prefix() {
+    .form-info {
+        margin-top: -1.5px;
+    }
+}
+
+label[for=""] {
+    cursor: default;
+}
+
+.no-flexbox {
+    .form-select {
+        background: white;
+        padding: 0;
+        padding-left: 0.5rem;
+    }
+}
+
+
+
+.form-label .form-info {
+    margin: 0;
+    color: inherit;
+}
+
+
+
+input[data-check="input"]~[data-check="elem"] {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+input[data-check="input"]:checked~[data-check="elem"] {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+input.form-radio.form-input--error:not(:valid) {
+    box-shadow: 0 0 1px 1px $color-form-labelError;
+    border-radius: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 11.5px;
+    height: 11.5px;
+    border: 1px solid transparent;
+    margin-right: 0.5rem;
+    +.form-label {
+        color: $color-form-labelError;
+        position: relative;
+    }
+}
+
+:-moz-ui-invalid:not(output) {
+    box-shadow: none;
+}
+
+:-moz-ui-invalid {
+    box-shadow: 0 0 0 3px green;
+}
+
+.form-textarea--error:not(:valid),
+.form-input--error:not(:valid),
+.form-input--err:not(:valid) {
+    color: #C00;
+    border-color: rgba(255, 0, 0, 0.3);
+    border-left: 4px solid #f75856;
+    background-color: #feeeee;
+    color: #C00;
+}
+
+
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+
+    -webkit-box-shadow: 0 0 0px 1.75rem white inset;
+}
+
+
+input.form-input--err:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1.75rem #feeeee inset;
+}
+
+.form-info--normal {
+    display: inline-flex;
+    width: auto;
+    opacity: 0.4;
+    align-items: center;
+    font-style: normal;
+}
+
+
+
+/*input..form-input--err:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+    background-color: white !important;
+}*/
+
+
+/*input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+input.form-input--err:-webkit-autofill{
+
+    &:hover,&:focus,&:active {  
+    -webkit-box-shadow: 0 0 0px 1000px #feeeee inset;
+}
+}*/
+
+.form-select option[hidden] {
+    opacity: 0.45;
+    font-style: italic;
+}
+
+.form-input--prefix+.form-inputMsg {
+    margin-left: -2px;
+}
+
+
+.form-input.disabled {
+    pointer-events: none;
+    @extend %disabled;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+
+.form-input::-webkit-input-placeholder {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.form-input:-moz-placeholder {
+    opacity: 0.45;
+    font-style: italic;
+}
+
+.form-input::-moz-placeholder {
+    opacity: 0.45;
+    font-style: italic;
+}
+
+.form-input:-ms-input-placeholder {
+    opacity: 0.45;
+    font-style: italic;
+}
+
+
+
+
+
+$ratingWidth:18px;
+
+
+@include extendElement(form,
+radiogroup,
+rating) {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    width: $ratingWidth * 5 + 1px;
+    height: 18px;
+    vertical-align: top;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
+    background-size: contain;
+   
+    input {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        clear: right;
+        width: 18px;
+        height: 18px;
+        margin: 5px 0 0;
+        cursor: pointer;
+        opacity: 0;
+        &:hover+label,
+        &:checked+label {
+            opacity: 1;
+        }
+    }
+
+    label {
+        position: absolute;
+        z-index: 1;
+        height: 18px;
+        padding: 0;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
+        background-size: contain;
+        font-size: $um * 1.2;
+        margin: 0;
+        left: 0;
+        width: $ratingWidth;
+        opacity: 0;
+        top:0;
+
+        &:nth-of-type(2){           
+            width: $ratingWidth * 2;
+        }
+        &:nth-of-type(3){           
+            width: $ratingWidth * 3;
+        }
+        &:nth-of-type(4){           
+            width: $ratingWidth * 4;
+        }
+        &:nth-of-type(5){           
+            width: $ratingWidth * 5;
+           
+        }
+        
+    }
+}
+
+
+.form-radiogroup:not(.form-radiogroup--rating) label {
+    display: inline-block;
+    margin: 0.5rem 0;
+    width: calc(100% - 2rem);
+}

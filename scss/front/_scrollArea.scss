@@ -1,0 +1,13 @@
+@include block(scrollArea) {
+    @include element(header) {
+        padding-right: 20px;
+        border-bottom: 1px solid $color-shadow;
+    }
+    @include element(content) {
+        overflow-y: scroll;
+    }
+    @include element(footer) {
+        border-top: 1px solid opacify($color-shadow, 0.07);
+        //box-shadow: 0 0 7px $color-shadow;
+    }
+}

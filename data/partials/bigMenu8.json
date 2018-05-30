@@ -1,0 +1,74 @@
+{
+    "bigmenu": {
+        "header": [{
+            "title": "Juguetes y juegos",
+            "sectionID": "110",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }, {
+            "title": "Bebés y niños",
+            "sectionID": "111",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }, {
+            "title": "Material escolar",
+            "sectionID": "112",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }],
+        "categories": [{
+                "sectionID": "110",
+                "subcategories": [{
+                    "name": "Jugetes para bebés"
+                }, {
+                    "name": "Juegos de mesa para niños"
+                }, {
+                    "name": "Juegos educativos y de habilidad"
+                }, {
+                    "name": "Puzzles y construcciones"
+                }, {
+                    "name": "Muñecos y peluches"
+                }, {
+                    "name": "Jugar a ser mayor"
+                }, {
+                    "name": "Jugar al aire libre"
+                }, {
+                    "name": "Vehículos, circuitos y radio control"
+                }, {
+                    "name": "Patinetes y triciclos"
+                }, {
+                    "name": "Otros juguetes"
+                }]
+            }, {
+                "sectionID": "111",
+                "subcategories": [{
+                    "name": "Lactancia"
+                }, {
+                    "name": "Menaje infantil"
+                }, {
+                    "name": "Hora de dormir"
+                }, {
+                    "name": "Relax y diversión"
+                }, {
+                    "name": "Salud y seguridad"
+                }, {
+                    "name": "Paseo y viaje"
+                }, {
+                    "name": "Gorras y paraguas"
+                }, {
+                    "name": "Decoración infantil"
+                }]
+            }, {
+                "sectionID": "112",
+                "subcategories": [{
+                    "name": "Mochilas preescolares"
+                }, {
+                    "name": "Mochilas escolares"
+                }, {
+                    "name": "Estuches y plumieres"
+                },
+                {
+                    "name": "Otro material escolar"
+                }]
+            }
+
+        ]
+    }
+}

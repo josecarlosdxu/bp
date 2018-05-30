@@ -1,0 +1,49 @@
+
+<section class="panel-section">
+<div>
+  {{!-- <div class="panel-section-title panelHeader-fixedPanelTitleBar">
+    Seleccione los archivos que desee descargar
+    <div class="pack-groupPacks u-mgl u-pdl">
+      <span class="">1 idioma disponible en Pack </span>
+      <a class="pack pack--pro">Pro </a>
+      <span class=" u-mgl u-pdl">23 idiomas disponibles en Packs </span>
+      <a class="pack pack--business">Business </a>
+      <a class="pack pack--premium">Premium </a>
+    </div>
+  </div> --}}
+  <div data-js-checkactions="actions" class="actionGroup">
+    {{> selectGroup}}
+  </div>
+  <div class="u-pd">
+
+
+    <fieldset class="form-fieldset--borderless">
+
+  <div class="msgBox msgBox--warning msgBox--auto u-mgb--half">El día 1 deMayo de 2018 esta pestaña ya no estará disponible</div>
+
+
+
+    <h3 class="form-fieldset-title" >CSV/XML Tarifa </h3>
+    {{>downloadButton downloadBtns.csvTarifa}}  
+      <div class="modularGrid-module u-pdv--half ">
+        <h4 class="subtitle3 u-flex--center ">Sincronización Prestashop  
+          <a href="http://www.bigbuy.eu/es/archivos-csv-xml.html" target="_blank" class="form-info u-mgl--3 u-mgt0 u-val--txb">
+            {{>svgIcon type='info'}}Más información
+          </a>
+        </h4>
+      
+        </div>
+        {{>panelDownloadsCSV}}
+      </fieldset>
+    </div>
+  </section>
+  <section class="panel-section">
+    <div class="panel-section-title u-brdt">
+      Manual de importación Prestashop
+    </div>
+    <div class="u-pd">
+    {{>downloadButton downloadBtns.importacionPrestashop}}   
+</div>
+</section>
+{{> languagesSelectListPro }}
+

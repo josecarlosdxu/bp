@@ -1,0 +1,12 @@
+<fieldset class="form-fieldset--sequential u-md-50">	
+	<h3 class="form-fieldset-title u-pdb--half">{{header.title}}</h3>
+	<aside class="filter" data-js-filter="filter">
+	<input type="checkbox" class="inputToggle" data-js-filter="checkbox" id="{{idFilter}}">
+	<label for="{{idFilter}}" class="filter-headerTitle" data-js-filter="btn">{{header.title}}</label>
+	<section class="filter-body">
+	{{>selectFilterContent}}
+	</section>
+	</aside>
+</fieldset>
+
+

@@ -1,0 +1,49 @@
+---
+title: Product Wallet Gift
+---
+
+<div class="modularGrid-module u-lg-100"  itemtype="http://data-vocabulary.org/Product" itemscope="">
+    <div class="productSheet" data-js-customer_group="" data-js-stock_quantity="0" data-js-product_attribute="0" data-js-id_product="7452" data-ng-controller="ProductDetailCtrl">
+    
+        {{>imgBoxList}}
+    
+      
+        <section class="productSheet-details">
+             <div class="productSheet-features">
+                {{>productSheetHeader}}
+                {{>productSheetAdvantages}}
+             
+                {{>productSheetDimensions nobrand='true'}}
+                {{>productSheetDiscountTable}}
+               
+            </div>
+          
+               <section class="productSheet-options">
+                   <form data-js-frm_cart="" class="form form--inline" action="">
+                       <div itemtype="http://data-vocabulary.org/Offer" itemscope="" itemprop="offerDetails" class="form-fieldset form-fieldset--borderless">
+
+
+                         <div class="productSheet-attributesCont">
+
+                            <div class="productSheet-bigIcon productSheet-bigIcon--gift">
+                                {{>svgIcon type='giftcard' size='xl'}}
+                           
+
+                            <div class="modularGrid-module u-tac color-black">
+                            <p>Comprando ahora</p>
+                            <p><strong>50€ de regalo</strong></p>
+                            <p>en el monedero Bigbuy</p>
+                            </div>
+                            </div>
+
+                        </div>
+                        {{>productSheetDiscountBadge gift='true'}}
+                        {{>productSheetActions}}
+                    </div>
+                </form>
+            </section>
+
+            </section>
+      
+    </div>
+</div>

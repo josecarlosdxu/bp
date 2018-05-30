@@ -1,0 +1,206 @@
+%notify {
+    background: $color-red-dark;
+    display: block;
+    position: absolute;
+    border-radius: 30px; // --px for mac;
+}
+
+@include block(mobileToolbar) {
+    height: 75px;
+    padding: 0;
+    color: opacify($color-light, 0.5);
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    @include modifier(hide) {
+        display: none;
+    }
+    @include element(notify) {
+        @extend %notify;
+        font-size: 11px;
+        font-weight: 400;
+        padding: 0.5rem 0;
+        text-align: center;
+        top: 0.75rem;
+        top: 1.25rem;
+        min-width: 26px;
+        line-height: 1.2;
+        height: 26px;
+        margin-left: -0.5rem;
+        color: $color-brandYellow-lighter;
+    }
+    @include element(title) {
+        font-size: $um / 1.2;
+        font-weight: 300;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 $um / 1.5;
+        color: #fff;
+        position: relative;
+        top: 2.1rem;
+    }
+    @include element(navgroup) {
+        display: inline-block;
+        overflow: visible;
+        position: relative;
+        vertical-align: top;
+        font-size: 0;
+        @include modifier(filters) {
+            float: right;
+            padding: 1.1rem 1.1rem 0 0;
+        }
+        @include modifier(hide) {
+            display: none;
+        }
+    }
+    @include element(button) {
+        height: 74px;
+        display: inline-block;
+        font-size: 0;
+        @include addBreakpoint(md) {
+            width: 4.25rem;
+        }
+    }
+    @include element(searchCont) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        height: 6.3rem;
+        padding: 1rem 0 0;
+        right: 0;
+        color: #000;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: none;
+        background-color: white;
+        //-webkit-transition: opacity 0.1s ease-in;
+        transition: opacity 0.1s;
+        top: 0;
+        @include addBreakpoint(md) {
+            opacity: 1;
+            background-color: transparent;
+            right: auto;
+            width: calc(100% - 28rem);
+            left: 6.75rem;
+            pointer-events: auto;
+            -webkit-transition: none;
+            transition: none;
+            //padding: 0.25rem 0 0;
+        }
+        @include addBreakpoint(xl) {
+            left: calc((100vw - 1200px) / 2 + 6rem);
+            width: 71.5rem;
+        }
+    }
+    @include element(searchForm) {
+        position: relative;
+        margin-left: 1.2rem;
+        padding-bottom: 1px;
+        width: calc(100% - 5.5rem);
+        @include addBreakpoint(md) {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    @include element(searchfield) {
+        font-size: 1.25rem;
+        box-shadow: 0 0 0 1px $color-shadow, 0 0 0 2px transparentize($color-accentBlue-default,1) inset;
+        height: 4rem;
+        padding-right: 5rem;
+        border-radius: 0;
+        border: none;
+        padding: 0 5rem 0 1.5rem;
+        vertical-align: middle;
+        margin: 0;       
+        &::-webkit-input-placeholder {
+            color: #ccc;
+        }
+        &::-moz-placeholder {
+            color: #999;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px transparentize(black,1), 0 0 0 2px $color-accentBlue-default inset;
+            +.button--searchSelected:not([disabled]){
+                box-shadow: -2px 0 $color-accentBlue-default;
+            }
+        }
+        @include addBreakpoint(md) {
+            box-shadow: none;
+            width: 100%;
+            /*&:focus {
+                box-shadow: 0 0 0 2px $color-accentBlue-default inset;
+            }*/
+        }
+    }
+    @include element(searchResults) {
+        font-size: 1rem;
+        display: block;
+        padding: 0;
+        background-color: white;
+        position: relative;
+        width: 100%;
+        //display: none;
+        max-height: calc(100vh - 5rem);
+        overflow-x: hidden;
+        margin-top: 0;
+        // margin-top: 0.5rem;///////////////////////// to end animation
+        box-shadow: none;
+        transform-origin: left top;
+        transform: scaleY(0);
+        transition: transform 0.1s, margin-top 0.1s;
+        //pointer-events: none;
+        @include addBreakpoint(md) {
+            //margin: 0;
+            //ox-shadow: 0 0 0 1px $color-shadow;
+            box-shadow: 0 -5px 0 white, 0 -6px 0 $color-lightGrey-light, 0 0 0 1px$color-shadow;
+        }
+    }
+    @include element(searchResultsCont) {
+        display: flex;
+        padding: 0 1.25rem 1.25rem;
+        flex-wrap: wrap;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+        //max-height: calc(100vh - 8rem);
+        //overflow-x: hidden;
+        @include addBreakpoint(md) {
+            //padding-top: 0.5rem;
+        }
+    }
+}
+
+.mobileToolbar-searchCont[data-js-show] {
+    opacity: 1;
+    //-webkit-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+    pointer-events: auto;
+}
+
+.mobileToolbar-searchCont[data-js-active] {
+   /* opacity: 1;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    pointer-events: auto;
+    /*.mobileToolbar-searchForm {
+                max-width: calc(100% - 5.5rem);
+                opacity: 1;
+            }*/
+    .mobileToolbar-searchResults {
+
+        transform: scaleY(1);
+        margin-top: 0.5rem;
+        transition: transform 0.2s ease-out, margin-top 0.2s ease-out 0.1s;
+    }
+    .mobileToolbar-searchResultsCont {
+        transition: opacity 0.2s ease-out 0.3s;
+        opacity: 1;
+    }
+}
+

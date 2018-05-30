@@ -1,0 +1,625 @@
+@include block(button) {
+    background: #D6D8DB;
+    border: 1px solid #adb1b7;
+    border-radius: 4px;
+    color: inherit;
+    height: 3.75rem;
+    margin: 0;
+    padding: 0 $um 0.2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: inline-block;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: none;
+    vertical-align: middle;
+    position: relative;
+    width: auto;
+    background-image: none;
+    /*@include addBreakpoint(lg) {
+        height: 4rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+
+    }*/
+    @include modifier(iconAlt) {
+        border: none;
+        background: transparent;       
+        &:hover,
+        &:focus {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    @include modifier(bigger) {
+        font-size: 1.2rem;
+        padding: 1rem 1.75rem;
+    }
+    @include modifier(logo) {
+        width: 7.5rem;
+    }
+    @include modifier(edit) {
+        font-size: 0;
+        padding: 0;
+        background: url('../img/mobileIcons/pencil.svg') no-repeat center;
+        border: none;
+        &:hover,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    @include modifier(buttonInline) {
+        margin-left: 0;
+    }
+    @include element(backButton) {
+        // background-image: url("../../img/mobileIcons/chevronLeftBlack.svg");
+        // background-repeat: no-repeat;
+        // background-size: auto 2rem;
+        // background-position: center center;
+        @include addBreakpoint(xs) {
+            background-position: center;
+            background-size: auto 1.5rem;
+        }
+        @include addBreakpoint(sm) {
+            background-position: 0.75rem center;
+            background-size: auto 1.5rem;
+        }
+        @include addBreakpoint(md) {
+            background-position: 0.75rem center;
+            background-size: auto 1.5rem;
+        }
+        @include addBreakpoint(lg) {
+            background-position: 2.5rem center;
+        }
+        @include addBreakpoint(xl) {
+            background-position: 25% center;
+        }
+        @include addBreakpoint(xxl) {
+            background-position: 30% center;
+        }
+    }
+    @include element(fullWidth) {
+        width: $um*2;
+        height: $um*2;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-image: url("../img/mobileIcons/fullWidth.svg");
+        background-repeat: no-repeat;
+        background-size: auto $um*2;
+        background-position: 50% center;
+    }
+    @include element(plusButton) {
+        background-image: url("../img/mobileIcons/plus.svg");
+        background-repeat: no-repeat;
+        background-size: auto 1.5rem;
+        background-position: 7% center;
+        // background:red;
+        @include addBreakpoint(xs) {
+            background-position: 15% center;
+            background-size: auto 1.5rem;
+            font-size: 1.4rem;
+            // background:white;
+        }
+        @include addBreakpoint(sm) {
+            background-position: 25% center;
+            background-size: auto 1.5rem;
+            font-size: 1.4rem // background:white;
+        }
+        @include addBreakpoint(md) {
+            background-position: 30% center;
+            background-size: auto 1.5rem;
+            font-size: 1.4rem;
+            // background:lime;
+        }
+        @include addBreakpoint(lg) {
+            background-position: 35% center;
+            // background:blue;
+        }
+        @include addBreakpoint(xl) {
+            background-position: 40% center;
+            // background:cyan;
+        }
+        @include addBreakpoint(xxl) {
+            background-position: 40% center;
+            // background:green;
+        }
+    }
+    &:hover {
+        outline: none;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        outline: none;
+    }
+    @include modifier(borderless) {
+        background-color: transparent;
+        @extend %borderless;
+    }
+    @include modifier(logo) {
+        //@extend %toolbarMobileBtn;
+        @extend %borderless;
+        background: transparent;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 0;
+        margin-left: 0.5rem;
+        margin-top: 1.25rem;
+         min-width: 40px;
+        @include addBreakpoint(xs) {
+            margin-left: 0.25rem;
+            min-width: 60px;
+            height: 60px;
+            margin-top: 6px;
+        }
+        //----------------ribbon -------------
+        /* background:  url("../img/ribbon.svg") no-repeat right center / 2.5rem auto;
+      width: 7.5rem;*/
+    }
+    @include modifier(selectedGreen) {
+        color: darken($color-buttonSuccess-border, 10%);
+        border-color: lighten($color-buttonSuccess-border, 10%);
+        background-color: lighten($color-buttonSuccess-background, 10%);
+    }
+    @include modifier(successText) {
+        @extend %successBtnBg_text;
+        span {
+            display: none;
+        }
+        span.track {
+            display: block;
+            float: right;
+        }
+        &:after {
+            @extend %successAfter;
+            float: left;
+            top: 2px;
+            margin-right: 10px;
+        }
+    }
+    @include modifier(successText_error) {
+        @extend %successBtnBg_text_error;
+        span {
+            display: none;
+        }
+        span.track {
+            display: block;
+            float: right;
+        }
+        &:after {
+            content: "\f00d";
+            color: #fff;
+            @extend %type-icons01;
+            font-weight: normal;
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            float: left;
+            top: 2px;
+            margin-right: 10px;
+        }
+    }
+    @include modifier(trackText) {
+        @extend %trackBtnBg_text;
+        span {
+            display: none;
+        }
+        span.track {
+            display: block;
+            float: right;
+        }
+        &:after {
+            content: "\f00d";
+            color: #fff;
+            @extend %type-icons01;
+            font-weight: normal;
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            float: left;
+            top: -1px;
+            margin-right: 10px;
+            margin-left: -1px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+    @include modifier(full) {
+        width: 100%;
+    }
+    @include modifier(primary) {
+        background-color: #FDE403;
+        border: 1px solid #E5CF00;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    @include modifier(addcart) {
+        //display: inline-flex;
+        margin-right: $um / 6;
+        width: auto;
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            background-repeat: no-repeat;
+            background-image: url("../img/mobileIcons/sprite.svg");
+            background-position: 0 -120px;
+            margin-bottom: -0.5rem;
+            margin-left: -0.75rem;
+        }
+    }
+    @include modifier(options) {
+        background-repeat: no-repeat;
+        background-image: url("../img/mobileIcons/arrowRight.svg");
+        background-position: right center;
+        padding-left: 0;
+        padding-right: 4rem;
+        text-align: right;
+    }
+    @include modifier(info) {
+        background-repeat: no-repeat;
+        background-image: url("../img/mobileIcons/info.svg");
+        background-position: center;
+        background-size: 50%;
+    }
+    @include modifier(alert) {
+        background-repeat: no-repeat;
+        background-image: url("../img/mobileIcons/alert.svg");
+        background-position: center;
+        background-size: 50%;
+    }
+    @include modifier(cart) {
+        @extend %borderless;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        //width: 4.5rem;
+        background-image: url("../img/mobileIcons/sprite.svg");
+        background-position: 0 25px;
+    }
+    @include modifier(lang) {
+        /*@extend %button;
+        @extend %toolbarMobileBtn;
+        height: 4rem;
+        width: 4rem;
+        //background: url("../img/icons/es.svg") no-repeat center transparent;
+        border-radius: 40px;
+        padding: 0 2rem;
+        margin-right: $um / 2;
+        position: relative;
+        top:-2px;*/
+        @extend %borderless;
+        padding: 0 0.5rem;
+        font-weight: 300;
+        background: transparent;
+        font-size: $um;
+    }
+    @include modifier(home) {
+        @extend %borderless;
+        background: url("../img/mobileIcons/store.svg") no-repeat center transparent;
+    }
+    @include modifier(breadcrumb) {
+        @extend %borderless;
+        background: url("../img/mobileIcons/arrowLeft.svg") no-repeat center transparent;
+    }
+    @include modifier(link) {
+        @extend %borderless;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    /*@include modifier(logout) {
+        @extend %borderless;
+         background: url("../img/mobileIcons/logout.svg") no-repeat center transparent;
+         //background: url("../img/mobileIcons/newuser.svg") no-repeat center transparent;
+    }
+     @include modifier(login) {
+        @extend %borderless;
+        //background: url("../img/mobileIcons/login.svg") no-repeat center transparent;
+         background: url("../img/mobileIcons/login.svg") no-repeat center transparent;
+    }*/
+    @include modifier(cartSelected) {
+        @extend %borderless;
+        background-repeat: no-repeat;
+        //width: 4.5rem;
+        background-image: url("../img/mobileIcons/sprite.svg");
+        background-position: 0 -25px;
+    }
+    @include modifier(search) {
+        @extend %borderless;
+        background: url("../img/mobileIcons/search.svg") no-repeat center transparent;
+        @include addBreakpoint(md) {
+            display: none !important;
+        }
+    }
+    @include modifier(back) {
+        @extend %borderless;
+        min-width: 5rem;
+        background: url("../img/mobileIcons/arrowLeft.svg") no-repeat center transparent;
+    }
+    @include modifier(searchSelected) {
+        border-radius: 0;
+        max-height: 3rem;
+        border: none;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 0;
+        padding: 0 2rem;
+        //$color-brandYellow-default    
+        background-color: $color-brandYellow-default;
+        background-image: url("../img/mobileIcons/search_active.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: border-color 0.2s, background-color 0.3s;
+        height: 100%;
+        margin: 0;
+        &:disabled {
+            background-color: white !important;
+            border-color: white !important;
+            transition: border-color 0.2s, background-color 0.3s;
+            height: 3rem;
+            margin: 2px;
+        }
+    }
+    @include modifier(times) {
+        @extend %borderless;
+        min-width: 2rem;
+        width: 100%;
+        height: 2rem;
+        padding: 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../img/mobileIcons/times.svg");
+    }
+    @include modifier(menu) {
+        @extend %borderless;
+        width: 3.7rem;
+        background: url("../img/mobileIcons/hamburguer.svg") no-repeat center transparent;
+        position: relative;
+        padding: 0 1.5rem;
+        left: -1px;
+        // box-shadow: 0 -1px #4a5054 inset, 0 -1px #363b41 ;
+    }
+    /*@include modifier(login) {
+        @extend %toolbarMobileBtn;
+        background-position: center;
+        background-image: url("../../img/mobileIcons/user.svg");
+    }
+
+     @include modifier(loginSelected) {
+        @extend %toolbarMobileBtn;
+        background-position: center;
+        background-image: url("../../img/mobileIcons/user-select.svg");
+
+    }*/
+    @include modifier(hide) {
+        display: none;
+    }
+    @include modifier(show) {
+        display: inline-block;
+    }
+    @include modifier(blackf) {
+        color:white;
+        background-color: black;
+        border-color: black;
+        
+    }
+}
+
+@include extendBlock(button,
+condensed) {
+    font-size: 1.2rem;
+    height: auto;
+    padding: 0.25rem 1.25rem;
+    padding-block-end: 6px;
+    padding-block-start: 0.25px;
+    line-height: 1.1;
+    .icon {
+        position: relative;
+        top: 0.2rem;
+    }
+}
+
+@include extendBlock(button,
+compressed) {
+    min-height: 2.9rem;
+    padding: 1rem $um 1.2rem;
+    height: auto;
+    line-height: 1.1;
+    //top: 2px;
+}
+
+@include extendBlock(button,
+narrow) {
+    height: auto;
+    line-height: 1.1;
+    padding: 0.5rem 1rem 0.6rem;
+    font-size: 1.2rem;
+}
+
+@include extendBlock(button,
+native) {
+    min-height: 2.9rem;
+    padding: 0.8rem 1rem;
+    height: auto;
+    line-height: 1.1;
+    //top: 2px;
+}
+
+@include extendBlock(button,
+icon) {
+    @extend %borderless;
+    background-color: transparent;
+    font-size: 2rem;
+    color: opacify($color-shadow, 0.3);
+}
+
+@include extendBlock(button,
+tinyIcon) {
+    @extend %borderless;
+    background-color: transparent;
+    font-size: 0;
+    padding: $um / 3 $um / 2;
+    width: auto;
+    margin: 0;
+    height: 3rem;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@include extendBlock(button,
+ghost) {
+    background: transparent;
+    border: 1px solid transparentize($ghostColor, 0.5);
+    box-shadow: 0 0 0 1px transparentize($ghostColor, 0.95) inset;
+    color: transparentize($ghostColor, 0.3);
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: transparent;
+        background: transparentize($ghostColor, 0.3);
+        box-shadow: none;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        color: invert($ghostColor);
+    }
+}
+
+@include extendBlock(button,
+small) {
+    font-size: 1.1rem;
+    height: auto;
+    padding: 0.5rem 0.75rem 0.6rem;
+    @include addBreakpoint(xs) {
+        font-size: 1.2rem;
+        height: auto;
+        padding: 0.55rem 1rem 0.75rem;
+    }
+}
+
+
+%toolbarMobileBtn {
+    @extend %borderless;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 4rem;
+}
+
+%borderless {
+    border: none;
+    border-radius: 0;
+}
+
+a.button {
+    display: inline-flex;
+    align-items: center;
+    //line-height: 2.75;
+}
+
+a.button--compressed {
+    padding: 1rem $um 1.2rem;
+}
+
+a.button--icon {
+    line-height: 1.75;
+    vertical-align: middle;
+}
+
+%parametersBtn {
+    //font-size: 12px;
+    //height: 4rem;
+    color: #ffffff;
+}
+
+%successBtnBg_text {
+    @extend %parametersBtn;
+    border-color: $color-buttonSuccess-border;
+    background-color: $color-buttonSuccess-background;
+}
+
+%successBtnBg_text_error {
+    @extend %parametersBtn;
+    border-color: $color-buttonError-border;
+    background-color: $color-buttonError-background;
+}
+
+%trackBtnBg_text {
+    @extend %parametersBtn;
+    border-color: $color-buttonTrack-border;
+    background-color: $color-buttonTrack-background;
+    ;
+}
+
+%successAfter {
+    vertical-align: top;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 1rem;
+    height: 0.65rem;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    content: "";
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: 3px;
+    //margin: 0 auto;
+}
+
+@media (max-width: 380px) {
+    .button--addcart {
+        width: 100%;
+        margin-right: 0;
+    }
+    //width: 100%;
+}
+
+@-moz-document url-prefix() {
+    button--condensed .icon {
+        top: 0.35rem;
+    }
+}
+
+.button[disabled] {
+    background-color: transparentize($color-lightGrey-default, 0.7);
+    border-color: $color-shadow;
+    color: transparentize(black, 0.5);
+}
+
+$videoBtnColor: #fdc401;
+
+.button.videoPulse {
+    width: $um * 3.5;
+    padding: 0;
+    font-size: 0;
+    height: $um * 3.5;
+    background-color: $videoBtnColor;
+    border-radius: 20rem;
+    //display: block;
+    box-shadow: none;
+    border:none;
+    position: relative;
+    &:before{
+        content: "";
+        width: 0;
+        height: 0;
+        border: 1.2rem solid $videoBtnColor;
+        border-right-width: 0;
+        border-left: 1.75rem solid #333;
+        margin-right: -0.5rem;
+        display: inline-block;
+        margin-top: 7px;
+      
+
+
+    }
+}
+

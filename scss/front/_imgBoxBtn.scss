@@ -1,0 +1,40 @@
+@include block(imgBoxBtn) {
+    position: absolute;
+    //z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    //background-size: 12px;
+    color: #fff;
+    border: none;
+    //bottom: 1.6rem;
+    //border: 1px solid #fff;
+    //width: 0;
+    padding: 0.5rem 0 0.3rem;
+    height: 3rem;
+    width: 1.8rem;
+    z-index: 1;
+    .icon {
+        position: relative;
+        width: 12px;
+        //left: -7px;
+    }
+    @include modifier(minus) {
+        left:0;
+        border-radius: 0 20px 20px 0;
+        border-left: none;
+        padding-right: 0.5rem;
+        background-position: left center;
+        background-image: url("../img/mobileIcons/chevronLeft.svg");
+    }
+    @include modifier(plus) {
+        right: 0;
+        border-radius: 20px 0 0 20px;
+        padding-left: 0.5rem;
+        border-right: none;
+        background-position: right center;
+        background-image: url("../img/mobileIcons/chevronRight.svg");
+    }
+    &:focus {
+        outline: 0;
+    }
+}

@@ -1,0 +1,45 @@
+
+@include block(conversation) {
+
+    @include element(req) {
+        position: relative;
+        display: block;
+        color:initial;
+        padding-left: 1rem;
+        padding-bottom: .3rem;
+
+        &::before {
+            content: "\221F";
+            position: absolute;
+            display: block;
+            top:-.3rem;
+            left: 0;
+            color:initial;
+        }
+
+        &:first-child {
+            padding-left: 0;
+            &:before {
+                content: "";
+            }
+        }
+    }
+
+    @include element(res) {
+        position: relative;
+        display: block;
+        color:tomato;
+        padding-left: 1rem;
+        padding-bottom: .3rem;
+
+        &::before {
+            content: "\221F";
+            position: absolute;
+            display: block;
+            top:-.3rem;
+            left: 0;
+            color:tomato;
+
+        }
+    }
+}

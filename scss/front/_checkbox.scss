@@ -1,0 +1,293 @@
+/*$formCheckBoxSize:13px;
+%formCheckBoxBefore {
+    background-color: white;
+    border-radius: 2px;
+    height: $formCheckBoxSize;
+    left: 0;
+    margin-right: $um / 4;
+    box-shadow: 0 0 0 1px transparentize(black, 0.7) inset;
+    width: $formCheckBoxSize;
+    pointer-events: none;
+}
+
+%formCheckBoxAfter {
+    border-color: white;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    height: 4px;
+    left: 3px;
+    position: absolute;
+    top: 7px;
+    transform: rotate(-45deg);
+    width: 7px;
+    transition: border-color 0.1s;
+}
+
+.form-checkbox {
+    width: auto;
+    position: relative;
+    top: 3px;
+    margin-right: $um / 5;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+    &[disabled] {
+        @extend %disabled;
+        + label {
+            color: #999;
+            cursor: not-allowed;
+        }
+    }
+    + .form-label {
+        margin-top: 0;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+        }
+        &:before {
+            @extend %formCheckBoxBefore;
+        }
+        &:after {
+            @extend %formCheckBoxAfter;
+        }
+        /*&:hover,
+        &:focus,
+        &:active {
+            //color: $color-gold-default;
+            &:before {
+                //box-shadow: 0 0 0 1px currentColor inset;
+            }
+        }*/
+
+
+/*}
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    &:checked {
+        display: none;
+        + .form-label {
+            //color: $color-gold-default;
+            /*&:before {
+                //content:"\2611";
+                //background: currentColor;
+                //box-shadow: none;                
+            }*/
+
+
+/* &:after {
+                border-color: black;
+            }
+        }
+    }
+}
+
+.form-radiogroup {
+    position: relative;
+    .form-checkbox {
+        display: block;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+    }
+    .form-checkbox + .form-label {
+        display: inline-flex;
+        margin: 0 0 0.35rem;
+        padding-left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .form-label {
+        &:hover,
+        &:focus,
+        &:active {
+            &:before {
+                // box-shadow: 0 0 0 1px currentColor inset;
+            }
+        }
+    }
+}
+
+.newsletterForm-item {
+    padding: 0;
+    .form-checkbox {
+        //display: none;
+        position: absolute;
+        left: $um;
+        top: 0;
+        opacity: 0;
+    }
+    .form-checkbox +.form-label--inline {
+        display: inline-flex;
+    }
+    .form-checkbox:checked +.form-label--inline {
+        color: #353B40;
+    }
+    .form-label {
+        &:hover,
+        &:focus,
+        &:active {
+            color: #353B40;
+            // &:before {
+            // box-shadow: 0 0 0 1px currentColor inset;
+            //}
+        }
+        &:after {
+            top: 5px;
+        }
+    }
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /*&:before {
+        background: white;
+        border-radius: 3px;
+        content: "";
+        display: block;
+        height: 14px;
+        left: 0;
+        margin-right: $um / 4;
+        box-shadow: 0 0 0 1px transparentize(black, 0.75) inset;
+        width: 14px;
+        pointer-events: none;
+    }*/
+
+
+/* &:before,
+    &:after {
+        content: "";
+        display: block;
+    }
+    &:before {
+        @extend %formCheckBoxBefore;
+    }
+    &:after {
+        @extend %formCheckBoxAfter;
+        top: 12px;
+        left: 14px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        //color: $color-gold-default;
+        &:before {
+            //box-shadow: 0 0 0 1px $color-gold-default inset;
+        }
+    }
+}
+
+.filter-checkbox {
+    display: block;
+    height: 1rem;
+    left: 0.5rem;
+    position: absolute;
+    top: 0.75rem;
+    width: 1rem;
+    visibility: hidden;
+    &:checked + .filter-label {
+        //color: $color-gold-default;
+        &:before {
+            //background: currentColor;
+            //box-shadow: none;
+        }
+        &:after {
+            border-color: black;
+        }
+    }
+}
+
+.filter-body--xtraRange .filter-option {
+    flex-wrap: wrap;
+}
+
+@-moz-document url-prefix() {
+    .form-checkbox + .form-label::after,
+    .form-checkbox + .card-name::after {
+        top: 6px;
+    }
+    .newsletterForm-item .form-label::after,
+    .newsletterForm-item .card-name::after {
+        top: 5px;
+    }
+    .filter-label::after {
+        left: 13px;
+        top: 13.25px;
+    }
+}
+*/
+
+.form-checkbox--inline {
+    top: 0;
+}
+
+
+.form-checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        background-color: #ededed;
+        background-image: none;        
+        border: 1px solid rgba(0,0,0,0.3);
+        display: inline-block;
+        height: 13px;
+        width: 13px;
+        flex-shrink:0;
+        border-radius:2px;
+        box-shadow: 0 1px white inset;
+        transition:border-color 0.2s;
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+
+ .form-checkbox:checked, .form-checkbox[checked]:not([checked="false"]) {
+        /*appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;*/
+        background-image: url("../img/icons/done.svg");
+        background-position: -2px -2px;
+        background-size: 1.25rem;
+        border-color: rgba(0,0,0,0.4);
+        /*border: 1px solid rgba(0,0,0,0.5);
+        display: inline-block;
+        height: 13px;
+        width: 13px;
+        border-radius:2px;*/
+
+    }
+
+/*@-moz-document url-prefix() {
+    .form-checkbox:checked {
+        -moz-appearance: none;
+       /* background-image: url("../../img/icons/done.svg");
+        background-position: -2px -2px;
+        background-size: 1.25rem;
+       
+        display: inline-block;
+        height: 13px;
+        width: 13px;
+        border-radius:2px;*/
+
+   /* }
+}*/

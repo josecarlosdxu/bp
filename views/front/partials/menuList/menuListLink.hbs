@@ -1,0 +1,8 @@
+<a href="{{target}}" class="menuList-link {{#each modifiers}} menuList-link--{{this}} {{/each}} {{#if selected }} {{selected}} {{/if}}" data-js-menulist="link" {{#if subcategory}} data-js-subcategory="{{name}}"{{/if}} {{#if banner}} data-js-banner="{{banner}}"{{/if}}>
+    {{name}}
+    {{#if number}}
+    <span class="menuList-number">({{number}})</span>
+    {{/if}}
+</a>
+
+

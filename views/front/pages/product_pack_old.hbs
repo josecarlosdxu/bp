@@ -1,0 +1,50 @@
+---
+title: Product Pack
+---
+
+<div class="productSheet">
+	<div class="modularGrid">
+		<div class="modularGrid-module u-xs-25">
+			<section class="imgBox imgBox--productSheet">
+				<article class="pricePanel pricePanel--huge pricePanel--pro" data-js-pack="image">
+					<div class="pricePanel-header">
+						{{>svgIcon type='pack' size='lg' class='pricePanel-icon'}}        
+						<h4 class="pricePanel-name" data-js-pack="name">Pack Pro</h4>
+					</div>        
+				</article>
+			</section>
+		</div>
+		<div class="modularGrid-module u-xs-75">
+			<section class="productSheet-details">
+				<div class="modularGrid">
+					<div class="modularGrid-module u-xs-60">
+						{{>productSheetHeader text='Alta pack' pack='true'}}
+					</div>
+					<div class="modularGrid-module u-xs-40">
+						<div class="productSheet-options productSheet-options--simple">
+							<form action="" class="form u-pd" >
+								<label class="form-label">Seleccione su opción:</label>
+								<select name="Seleccione su opción:" data-js-select_attributes="161" class="form-select" data-js-pack="select">
+									<option value="1346"> Pro Semestral (Ahorro 1 Mes) </option>
+									<option value="1345"> Pro Anual (Ahorro 3 Meses) </option>
+									<option value="1344"> Premium Semestral (Ahorro 1 Mes) </option>
+									<option value="1343"> Premium Anual (Ahorro 3 Meses) </option>
+									<option value="1342"> Business Semestral (Ahorro 1 Mes) </option>
+									<option value="1341"> Business Anual (Ahorro 3 Meses) </option>
+								</select>
+							</form>
+
+							<aside class="productSheet-discountBadge u-pdb">
+								<div class="productSheet-pvp1" data-js-price_product="">
+									<span class="productSheet-pvp1Title">PVD </span>
+									<span class="productSheet-pvp1Val" itemprop="price">145,00 €</span>
+								</div>
+								<button class="button button--primary button--big u-mgt">Finalizar</button>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>

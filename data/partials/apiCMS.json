@@ -1,0 +1,95 @@
+{
+    "table": {
+        "title": {
+            "classes": "supertitle u-pd",
+            "text": "Resumen servicios de sincronización"
+        },
+        "thead": [
+            {}, {
+                "icon": "csv2",
+                "text": "Manual"
+            }, {
+                "icon": "informatico",
+                "text": "Desarrolladores<br>Programadores"
+            }
+        ],
+        "tbody": [
+            [{
+                "icon": "catalog",
+                "class": "table-item--rowtitle",
+                "text": "Sincronización<br>Catálogo y Stock",
+                "textAlt": "Sincronización Catálogo y Stock"
+            }, {
+                "list": [{
+                    "icon": "success",
+                    "text": "Descarga CSV Standard"
+                }, {
+                    "icon": "success",
+                    "text": "Descarga CSV Categorías"
+                }, {
+                    "icon": "success",
+                    "text": "Descarga CSV Marcas"
+                }, {
+                    "icon": "success",
+                    "text": "Descarga XML"
+                }, {
+                    "icon": "success",
+                    "text": "Descarga CSV Prestashop + CSV Categorías"
+                }]
+            }, {
+                "list": [{
+                    "icon": "success",
+                    "text": "CSV + XML + CSV Prestashop + CSV Categorías en 24 idiomas"
+                }, {
+                    "icon": "success",
+                    "text": "API Catálogo"
+                }]
+            }],
+            [{
+                "icon": "truck-delivery2",
+                "class": "table-item--rowtitle",
+                "text": "Sincronización Transportistas"
+            }, {
+                "list": [{
+                    "icon": "success",
+                    "text": "Descarga CSV Tarifas Transportistas (Orientativa)"
+                }, {
+                    "icon": "success",
+                    "text": "Módulo Transportistas Prestashop"
+                }]
+            }, {
+                "list": [{
+                    "icon": "success",
+                    "text": "API Transportistas"
+                }, {
+                    "icon": "success",
+                    "text": "API Trackings ID"
+                }]
+            }],
+            [{
+                "icon": "orders3",
+                "class": "table-item--rowtitle",
+                "text": "Sincronización Pedidos"
+            }, {
+                "list": [{
+                    "icon": "success",
+                    "text": "Carga de Pedidos desde CSV"
+                }, {
+                    "icon": "success",
+                    "text": "Pedidos Manuales"
+                }, {
+                    "icon": "success",
+                    "text": "Pedidos Manuales Fulfillment by Amazon (FBA)"
+                }]
+            }, {
+                "list": [{
+                    "icon": "success",
+                    "text": "API Pedidos"
+                }, {
+                    "icon": "success",
+                    "text": "API Pedidos agrupados a una fecha"
+                }]
+            }]
+        ]
+    }
+}

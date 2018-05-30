@@ -1,0 +1,20 @@
+<form class="form" action="searchResults2.html" >
+  <div class="modularGrid">
+    <div class="modularGrid--boxed form-fieldset--top box">
+      <form action="filters.html">
+        <button class="button button--primary" type="submit" >Ver 37 resultados</button>
+        <button class="button" type="submit" >Eliminar filtros</button>
+      </form>
+    </div>
+    <div class="form-fieldset--firstFull">
+      {{>rangeFilter  filters.prices}}
+      {{>stockFilter}}
+      {{>optionFilter filters.available}}
+      {{>optionFilter filters.categories}}
+      {{>optionFilter filters.video}}
+      {{>optionFilter filters.featuredB2b}}
+      {{>brandsFilter filters.brands}}
+      {{>tagsFilter filters.tags}}
+    </div>
+  </div>
+</form>

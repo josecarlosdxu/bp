@@ -1,0 +1,122 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_5"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Ocio y tiempo libre",
+    "description": "Bienvendio, en ocio y tiempo libre encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Fiestas y celebraciones",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/ocio/2473_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Camping y montaña",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/ocio/2490_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Playa y piscina",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/ocio/2497_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Maletas y equipaje de mano",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/ocio/2498_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Accesorios para automóviles",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/ocio/2499_big.jpg"
+      }
+    ]
+  },
+  "party": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+    "title": "Fiestas y celebraciones",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Artículos eróticos",
+        "number": "5",
+        "image": "../../img/categories/ocio/2476_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Artículos románticos",
+        "number": "20",
+        "image": "../../img/categories/ocio/2478_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list",
+          [
+            "list"
+          ]
+        ],
+        "title": "Artículos de broma",
+        "number": "30",
+        "image": "../../img/categories/ocio/2481_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Juegos de mesa y otros",
+        "number": "50",
+        "image": "../../img/categories/ocio/2486_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Disfraces y artículos para celebraciones",
+        "number": "50",
+        "image": "../../img/categories/ocio/2488_small.jpg"
+      }
+    ]
+  }
+}

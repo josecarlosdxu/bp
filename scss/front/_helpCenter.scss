@@ -1,0 +1,56 @@
+@include block(helpCenter) {
+    // background:#303538;
+    display: none;
+    @include element(title) {
+        padding: 3.25rem 0 0;
+        vertical-align: text-bottom;
+        cursor: pointer;
+        transition: all 0.2s;
+        opacity: 0.8;
+        display: inline-block;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    @include element(section) {
+        padding: 0 0 2rem 2rem;
+        display: inline-block;
+        vertical-align: top;
+        @include addBreakpoint(lg) {
+            min-width: 15%;
+        }
+    }
+    @include element(contents) {
+        display: none;
+    }
+    @include element(subtitle) {
+        @extend %type-footerlink;
+        font-weight: 600;
+        color: #FFF;
+        font-size: 1.1rem;
+        margin-bottom: $um/4;
+        margin-top: $um/2;
+        vertical-align: bottom;
+    }
+    @include element(item) {
+        @extend %type-footerlink;
+        color: #AAA;
+        list-style: none;
+        margin-bottom: $um/4;
+        display: inline-block;
+        &:hover {
+            color: #fff;
+        }
+    }
+    @include element(link) {
+        text-decoration: none;
+        color: currentColor;
+        @include modifier(big) {
+            @extend .subtitle3;
+        }
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}

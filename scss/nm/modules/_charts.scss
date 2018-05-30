@@ -1,0 +1,81 @@
+@include block(charts) {
+    display: flex;
+    @include element(title) {
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+    @include element(number) {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: $um * 1.5;
+    }
+}
+
+@include extendBlock(charts, circular) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include addBreakpoint(sm) {
+        justify-content: space-between;
+    }
+    @include element(item) {
+        @extend %type-section-title;
+        display: flex;
+        //flex: 1 1 0;
+        justify-content: end;
+        margin: $um * 2;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 14rem;
+        overflow: hidden;
+    }
+    @include element(svg) {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: -5rem;
+    }
+    @include element(number) {
+        margin-bottom: 1.5rem;
+        margin-top: -1.7rem;
+        opacity: 0;
+    }
+    @include element(title) {
+        opacity: 0;
+    }
+    @include element(circle) {
+        position: absolute;
+        stroke-dasharray: 510;
+        stroke-dashoffset: 255;
+        stroke: $color-lightGrey-default;
+        stroke-width: 4;
+        top: 0;
+        left: 0;
+        @include modifier(top) {
+            transition: stroke-dashoffset 2s ease-out;
+            stroke: #FDC301;
+        }
+    }
+}
+
+.charts--circular .charts-item[data-js-active] {
+    .charts-number {
+        animation: show 1s ease-out forwards;
+    }
+    .charts-title {
+        animation: show 1s ease-out 0.5s forwards;
+    }
+    .charts-circle:not(.charts-circle--top) {
+        animation: dash 1s ease-out forwards;
+    }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 306;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}

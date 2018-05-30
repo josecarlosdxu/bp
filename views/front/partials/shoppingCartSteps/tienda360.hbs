@@ -1,0 +1,64 @@
+{{#if selected}}
+<div class="u-flex--center u-pd--half u-brd u-mgv u-bg--lighter">			
+							
+						<img src="../../img/3.svg" class="icon icon--inline icon--lg u-mgl2 ">
+					
+						<strong class="u-mgh">yourolddomain.com</strong>
+					
+					<strong class="u-mgh">Tema</strong>
+						Valencia
+					<strong class="u-mgr  u-mgl2 u-pdl2">Versión</strong>	
+					 1.7
+						
+					
+		</div>
+
+{{else}}
+
+<table class="table u-brd u-mgv" data-jsshop="shop">	
+			<tbody>
+				<tr>
+					<td class="table-item table-item--thumb u-tar">		
+						<input name="tienda1" id="tienda{{id}}" class="form-checkbox form-checkbox--inline" type="checkbox">
+					</td>
+					<td class="table-item table-item--thumb">							
+						<img src="../../img/3.svg" class="icon icon--inline icon--lg ">
+					</td>
+					<td class="table-item u-xs-20">
+					
+						<label for="tienda{{id}}" class="form-label"><strong>{{#if second}}<span data-jsshop="numeral">2ª</span> {{/if}}Tienda dropshipping 360º</strong></label>	
+					
+					</td>
+					<td class="table-item u-xs-25">
+					<label class="form-label form-label--inline" >Tema</label>	
+						<select name=""  class="form-select form-select--inline  " placeholder="seleccionar" data-jsshop="theme">
+							<option value="0"  disabled selected>Seleccionar</option>
+							<option value="1">Valencia</option>
+							<option value="2">Ibiza</option>
+							<option value="3">Formentera</option>
+							
+						</select>
+					</td>
+					<td class="table-item u-xs-25">
+					<label class="form-label form-label--inline" >Catálogo</label>	
+						<select name=""  class="form-select form-select--inline  " placeholder="seleccionar" data-jsshop="catalog">
+							<option value="0"  disabled selected>Seleccionar</option>
+							<option value="1">Completo</option>
+							<option value="2">Electrónica</option>
+							
+						</select>
+					</td>
+					{{#if second}}
+					<td class="table-item table-item--number"><em class="u-op-50 u-mgr">50% Descuento</em> <strong>335€</strong></td>
+
+					{{else}}
+					
+					<td class="table-item table-item--number"><strong>770€</strong></td>
+
+					{{/if}}
+				</tr>
+			</tbody>
+
+		</table> 
+
+{{/if}}

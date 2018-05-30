@@ -1,0 +1,17 @@
+---
+title: BigBuy mobile home
+layout: mobile/layouts/clean.hbs
+breadcrumbs: Catálogos
+---
+<section class="content content--full">
+{{>catalogohero  catalogoData.hero mobile='true'}}
+</section>
+<section class="content content--light u-brt">
+<div class="modularGrid modularGrid modularGrid--boxed u-tac u-pdt u-pdb2">
+    <h2 class="supertitle u-xxs-80 u-xs-100 u-md-70 u-lg-100 u-pd2">Acceda a miles de productos de multitud de categorías, con novedades diarias
+ y artículos de primeras marcas.
+</h2>
+</div>
+</section>
+{{>homeCategories mobile='true'}}
+{{>apiDropshippingMessage}}

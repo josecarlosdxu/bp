@@ -1,0 +1,371 @@
+%bigmenuSections-selected {
+    // color: #000;
+    outline: 0;
+    background-color: transparent;
+    background-image: url("../img/icons/chevronBtnRightAlt.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25rem) center; //box-shadow: 0 1px 0 $color-shadow;
+    background-size: 1rem 1rem;
+    transition: background-position 0.1s;
+}
+
+%bigMenuShow {
+    -webkit-animation: show 0.3s ease-in-out both;
+    animation: show 0.3s ease-in-out both;
+}
+
+@include block(bigMenu) {
+    @extend %box;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    /*height: 29.8rem;
+    height: 33.3rem;*/
+    height: 37.5rem;
+    margin-top: -1px;
+    opacity: 0;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease-out 0.2s;
+    @include element(sections) {
+        flex-basis: 25rem;
+        height: auto;
+        //height: 100%;
+       
+       // padding-bottom: 1rem;
+        .nav.nav--dropdown {
+            padding-top: $um / 2;
+            width: 100%;
+            flex-grow: 1;
+        }
+    }
+    @include element(sectionItem) {
+        @extend %type-bigMenu-section;
+        @extend .nav-item;
+        color: rgba(0, 0, 0, 0.7);
+        padding: $um / 2 2rem 0.55rem $um;
+        transition: all 0.15s ease-out;
+        text-decoration: none;
+        outline: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 25rem;
+        @include modifier(submenu) {
+            @extend %bigmenuSections-selected;
+            outline: 0 !important;
+            background-color: transparent;
+            background-position: calc(100% - 0.5rem) center;
+            box-shadow: none;
+            &:hover {
+                @extend %bigmenuSections-selected;
+            }
+        }
+        @include modifier(submenuSelected) {
+            background-color: rgba(0, 0, 0, 0.05) !important;
+            color: #000;
+            background-position: calc(100% - 0.25rem) center;
+            cursor: default;
+            +.bigMenu-subSections {
+
+                //opacity: 1;
+                display: flex; //opacity: 1;
+                -webkit-animation: show 0.4s ease-in forwards;
+                animation: show 0.4s ease-in forwards;
+            }
+        } // &:hover,
+        //&:focus {
+        // background-color: rgba(0, 0, 0, 0.03);
+        // }
+    }
+    @include element(promotions) {
+        height: 21.5 * $um;
+        @include addBreakpoint(lg) {}
+        @include addBreakpoint(xl) {}
+    }
+    @include element(subSectionsHolder) {
+        font-size: 1.05rem;
+        font-weight: 500;
+        flex-grow: 2;
+        width: calc(100% - 25.1rem);
+    }
+    @include element(subSections) {
+        display: none;
+        align-items: flex-start;
+        height: 100%; //justify-content: space-between;
+        justify-content: flex-start;
+        position: relative;
+        padding-top: 1.8rem;
+        opacity: 0; //transition: opacity 0.2s ease-in;
+        position: absolute;
+        left: 25.1rem;
+        width: calc(100% - 25.1rem);
+        padding: 0;
+        z-index: 1;
+        top: 0;
+        background-color: white;
+        box-shadow: 1px 0 $color-shadow inset;
+
+        @include modifier(show) {
+            display: flex; //opacity: 1;
+            -webkit-animation: show 0.4s ease-in forwards;
+            animation: show 0.4s ease-in forwards;
+        }
+        .nav--dropdown {
+            width: 100%;
+            flex-grow: 1;
+        }
+    }
+    @include element(item) {
+        font-size: 1.05rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+        line-height: 1.1;
+        color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        min-width: 18rem;
+        &:hover,
+         :focus {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        @include modifier(all) {
+            @extend %bigMenu-item;
+            font-weight: 600;
+            padding-left: 2.5rem;
+            margin-left: 0;
+        }
+        @include modifier(active) {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        &:hover+.bigMenu-image.bigMenu-subsectionImage--secundary {
+            opacity: 1;
+        }
+    }
+    @include element(message) {
+        margin-top: 2rem;
+        padding: $um;
+        color: #444;
+        box-shadow: 0 -1px 0 0 $color-shadow;
+        @include element(cta) {
+            margin-left: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    @include modifier(active) {
+        @extend %bigMenuShow;
+        display: flex;
+        align-items: flex-start;
+
+
+        transition: box-shadow 0.2s ease-out;
+        box-shadow: 0 1px 1px opacify($color-shadow, 0.1), 1px 3px 4px opacify($color-shadow, 0.1);
+    }
+    @include element(categorySection) {
+        //align-items: center;
+        background: white; //display: flex;
+        display: block;
+        height: 100%; //justify-content: space-between;
+        position: absolute;
+        right: 0;
+        width: calc(100% - 25.1rem);
+        opacity: 0;
+        transition: opacity 0.15s ease-out;
+        box-shadow: 1px 0 $color-shadow inset;
+        @include modifier(show) {
+            //@extend %bigMenuShow;
+            //display: flex;
+            transition: opacity 0.4s ease-in-out;
+            opacity: 1;
+        }
+    }
+    @include element(categoryTexts) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        font-size: 1.2rem;
+        height: 50%;
+        justify-content: flex-start;
+        padding: 1rem 0 0 $um;
+        max-width: 450px;
+    }
+    @include element(subcategory) {
+        padding: 0.5rem 1rem 0 0;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        position: static;
+    }
+    @include element(categoryTitle) {
+        color: rgba(0, 0, 0, 0.3);
+        letter-spacing: -0.003em;
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1;
+    }
+    @include element(categorySubTitle) {
+        padding-top: 1rem;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 1.2rem;
+        font-weight: 400;
+        max-width: 25em;
+        padding-left: 0.5rem;
+    }
+    @include element(subcategoryTitle) {
+        color: rgba(0, 0, 0, 0.3);
+        letter-spacing: -0.003em;
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 1.2;
+        padding: 0.5rem 0 0 1.45rem;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; //justify-content: flex-start;  
+        +.bigMenu-categorySubTitle {
+            padding: 1.75rem 0 0 1.5rem;
+            max-width: 33rem;
+            margin-top: 2rem;
+        }
+    }
+    @include element(imgcont) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-out;
+    }
+    @include element(image) {
+        max-width: 450px; // max-height: 450px;
+        align-self: end;
+    }
+    @include element(subsectionImage) {
+        align-self: center;
+        height: 450px;
+        width: 450px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include modifier(secundary) {
+            align-self: flex-end;
+            max-height: 300px;
+            width: auto;
+            margin-right: $um;
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+        }
+        &:not(.bigMenu-subsectionImage--secundary) {
+            -webkit-animation: show 0.3s ease-in-out both;
+            animation: show 0.3s ease-in-out both;
+        }
+    }
+    @include element(subcategories) {
+        z-index: 1;
+        position: static;
+        width: auto;
+        max-height: 37rem;
+        padding-top: 4rem;
+        -webkit-columns: 18rem;
+        columns: 18rem;
+        -webkit-column-gap: 0;
+        column-gap: 0;
+        &:hover~.bigMenu-imgcont {
+            opacity: 0;
+        }
+        .bigMenu-item{
+            overflow: hidden;
+        }
+    }
+}
+
+
+
+
+.no-flexbox,
+[data-useragent*='MSIE 10.0'] {
+    .bigMenu--active {
+        display: table;
+        table-layout: fixed;
+        opacity: 1;
+    }
+    .bigMenu-sections {
+        display: table-cell;
+        width: 25rem;
+       
+    }
+    .bigMenu-sections .nav.nav--dropdown {
+        display: block;
+    }
+    .bigMenu-sectionItem { 
+        width: 100%;
+        display: block;
+    }
+    .bigMenu-categorySection--show {
+        display: table;
+        top: 0;
+       
+        left:25rem;
+    }
+    .bigMenu-categoryTexts {
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+        z-index: 1;
+    }
+   /* .bigMenu-image {
+        display: table-cell;
+        float: right;
+    }
+    .bigMenu-subSections--show {
+        display: block;
+        height: 37.5rem;
+        width: 75rem;
+        .nav.nav--dropdown {
+            display: inline-block;
+            vertical-align: top;
+            .bigMenu-item {
+                display: block;
+            }
+        }
+    }
+    .bigMenu-subcategory {
+        display: block;
+    }
+    .bigMenu-subsectionImage {
+        float: right;
+    }*/
+}
+
+
+.bigMenu-sections:hover + .bigMenu-categorySection{
+    opacity: 0 !important;
+}
+
+
+
+
+
+///   hoverintent 
+.bigMenu-category.active {
+    .bigMenu-subSections {
+        display: flex;
+        -webkit-animation: show 0.4s ease-in forwards;
+        animation: show 0.4s ease-in forwards;
+    }
+
+
+
+    .bigMenu-sectionItem {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+}
+
+.bigMenu-item:hover+.bigMenu-imgcont>.bigMenu-subsectionImage--secundary {
+    opacity: 1;
+}

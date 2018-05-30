@@ -1,0 +1,326 @@
+{
+    "list": {
+        "title": "Informática | Electrónica",
+         "order": "9",
+        "modifiers": [
+            "primary",
+            "selectable"
+        ],
+        "itemName": "informatica_y_electronica",
+        "subcategory": "true",
+        "number": "610",
+        "link": "categoria-electronica.html",
+
+        "principal":{
+            "title":"Informática y electrónica",
+            "subtitle": "Gran selección de productos de informática y electrónica",
+            "image": "../../img/categories/electronica/2609_menu.jpg"
+        },
+
+        "families": [
+        {
+            "title": "Videocámaras y cámaras fotográficas",
+            "itemId": "videocamaras_y_camaras_fotograficas",
+            "image": "../../img/categories/electronica/2614_menu.jpg",
+            "subcategory": "true",
+            "number": "215",
+            "banner": "electronica/2614_header.jpg",
+
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        },
+        {
+            "title": "Telefonía y accesorios",
+            "itemId": "telefonia_y_accesorios",
+            "modifier":" bigMenu-sectionItem--submenu",
+            "image": "../../img/categories/electronica/2617_menu.jpg",
+            "subcategory": "true",
+            "number": "445",
+            "banner": "electronica/2617_header.jpg",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Teléfonos móviles",
+                "banner": "electronica/2618_header.jpg",
+                "image": "../../img/categories/electronica/2618_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "122"
+            }, {
+                "name": "Teléfonos fijos",
+                "banner": "electronica/2619_header.jpg",
+                "image": "../../img/categories/electronica/2619_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "45"
+            }, {
+                "name": "Fundas y carcasas",
+                "banner": "electronica/2620_header.jpg",
+                "image": "../../img/categories/electronica/2620_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "167"
+            }, {
+                "name": "Baterías y cargadores",
+                "banner": "electronica/2621_header.jpg",
+                "image": "../../img/categories/electronica/2621_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "23"
+            }, {
+                "name": "Monopod",
+                "banner": "electronica/2622_header.jpg",
+                "image": "../../img/categories/electronica/2622_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "9"
+            }, {
+                "name": "Power bank",
+                "banner": "electronica/2623_header.jpg",
+                "image": "../../img/categories/electronica/2623_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "9"
+            }, {
+                "name": "Accesorios de telefonía",
+                "banner": "electronica/2624_header.jpg",
+                "image": "../../img/categories/electronica/2624_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "50"
+            }]
+        }, {
+            "title": "Televisores y reproductores de DVD",
+            "itemId": "televisores_y_reproductores_de_dvd",
+            "banner": "electronica/2625_header.jpg",
+            "image": "../../img/categories/electronica/2625_menu.jpg",
+            "subcategory": "true",
+            "number": "35",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }, {
+            "title": "Tablets, libros electrónicos y accesorios",
+            "itemId": "tablets_libros_electronicos",
+            "banner": "electronica/2626_header.jpg",
+            "image": "../../img/categories/electronica/2626_menu.jpg",
+            "subcategory": "true",
+            "number": "89",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }, {
+            "title": "Videojuegos, consolas  y accesorios",
+            "itemId": "videojuegos_y_consolas",
+            "banner": "electronica/2627_header.jpg",
+            "image": "../../img/categories/electronica/2627_menu.jpg",
+            "subcategory": "true",
+            "number": "135",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }, {
+            "title": "Drones",
+            "itemId": "drones",
+            "subcategory": "true",
+            "number": "60",
+            "image": "../../img/categories/electronica/2628_menu.jpg",
+            "banner": "electronica/2628_header.jpg",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }, {
+            "title": "Scooters eléctricos",
+            "itemId": "scooters_electricos",
+            "image": "../../img/categories/electronica/2629_menu.jpg",
+            "subcategory": "true",
+            "number": "60",
+            "banner": "electronica/2629_header.jpg",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }, {
+            "title": "Relojes y smartwatch",
+            "itemId": "relojes_smartwatch",
+            "modifier":" bigMenu-sectionItem--submenu",
+            "image": "../../img/categories/electronica/2630_menu.jpg",
+            "banner": "electronica/2630_header.jpg",
+            "subcategory": "true",
+            "number": "89",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Relojes de sobremesa y pared",
+                "banner": "electronica/2631_header.jpg",
+                "image": "../../img/categories/electronica/2631_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "122"
+            }, {
+                "name": "Despertadores",
+                "banner": "electronica/2633_header.jpg",
+                "image": "../../img/categories/electronica/2633_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "45"
+            }, {
+                "name": "Smartwatch",
+                "banner": "electronica/2634_header.jpg",
+                "image": "../../img/categories/electronica/2634_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "23"
+            }, {
+                "name": "Relojes de pulsera",
+                "banner": "electronica/2635_header.jpg",
+                "image": "../../img/categories/electronica/2635_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "9"
+            }]
+        }, {
+            "title": "Audio y HI-FI",
+            "itemId": "audio_y_hifi",
+            "modifier":" bigMenu-sectionItem--submenu",
+            "subcategory": "true",
+            "banner": "electronica/2636_header.jpg",
+            "image": "../../img/categories/electronica/2636_menu.jpg",
+            "number": "89",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Altavoces",
+                "banner":"electronica/2637_header.jpg",
+                "image": "../../img/categories/electronica/2637_small.jpg",
+                "col1": "1",
+                "subcategory": "true",
+                "number": "122"
+            }, {
+                "name": "Auriculares",
+                "banner":"electronica/2638_header.jpg",
+                "image": "../../img/categories/electronica/2638_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "45"
+            }, {
+                "name": "Radios y equipos de música",
+                "banner":"electronica/2639_header.jpg",
+                "image": "../../img/categories/electronica/2639_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "167"
+            }, {
+                "name": "Grabadoras",
+                "banner":"electronica/2640_header.jpg",
+                "image": "../../img/categories/electronica/2640_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "23"
+            }, {
+                "name": "Componentes y accesorios",
+                "banner":"electronica/2641_header.jpg",
+                "image": "../../img/categories/electronica/2641_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "9"
+            }]
+        }, {
+            "title": "Ordenadores y periféricos",
+            "itemId": "ordenadores_y_perifericos",
+            "modifier":" bigMenu-sectionItem--submenu",
+            "image": "../../img/categories/electronica/2642_menu.jpg",
+            "subcategory": "true",
+            "banner":"electronica/2642_header.jpg",
+            "number": "189",
+            "familyModifier": [
+                "secundary",
+                "selectable"
+            ],
+            "subcategories": [{
+                "name": "Ordenadores portátiles",
+                "banner":"electronica/2643_header.jpg",
+                "image": "../../img/categories/electronica/2643_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "122"
+            }, {
+                "name": "Monitores",
+                "banner":"electronica/2644_header.jpg",
+                "image": "../../img/categories/electronica/2644_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "45"
+            }, {
+                "name": "Impresoras",
+                "banner":"electronica/2645_header.jpg",
+                "image": "../../img/categories/electronica/2645_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "167"
+            }, {
+                "name": "Teclados",
+                "banner":"electronica/2646_header.jpg",
+                "image": "../../img/categories/electronica/2646_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "23"
+            }, {
+                "name": "Ratones y alfombrillas",
+                "image": "../../img/categories/electronica/2656_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "banner":"electronica/2656_header.jpg",
+                "number": "23"
+            }, {
+                "name": "Redes, software y componentess",
+                "banner":"electronica/2647_header.jpg",
+                "image": "../../img/categories/electronica/2647_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "19"
+            }, {
+                "name": "Accesorios de informática",
+                "banner":"electronica/2650_header.jpg",
+                "image": "../../img/categories/electronica/2650_small.jpg",
+                "subcategory": "true",
+                "col1": "1",
+                "number": "23"
+            }]
+        }, {
+            "title": "Pilas, cargadores y adaptadores",
+            "itemId": "pilas_cargadores_y_adaptadores",
+            "image": "../../img/categories/electronica/2648_menu.jpg",
+            "subcategory": "true",
+            "banner":"electronica/2648_header.jpg",
+            "number": "33",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }, {
+            "title": "Accesorios de electrónica",
+            "itemId": "accesorios_de_electronica",
+            "banner":"electronica/2649_header.jpg",
+            "image": "../../img/categories/electronica/2649_menu.jpg",
+            "subcategory": "true",
+            "number": "46",
+            "familyModifier": [
+                "secundary",
+                "last"
+            ]
+        }]
+    }
+}

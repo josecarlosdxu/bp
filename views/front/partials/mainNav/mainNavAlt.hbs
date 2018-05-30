@@ -1,0 +1,73 @@
+<ul class="mainNav-menu" data-js-mainnav="menu" >
+    <li class="mainNav-item--icon nav-item " data-js-mainnav="item" >
+         <a class="mainNav-link mainNav-link--icon" href="home2.html">
+         {{> svgIcon type='home'}}
+          </a>
+    </li>
+     <li class="mainNav-item--icon mainNav-item--last nav-item " data-js-mainnav="item">
+         <a class="mainNav-link mainNav-link--icon" data-js-directory="btn">
+         {{> svgIcon type='hamburguer'}}
+          </a>
+    </li>
+
+    <li class="mainNav-item nav-item " data-js-mainnav="item">
+        <a href="#" class="mainNav-link mainNav-link--icon" data-js-mainnav="link" title="Perfumes" >
+
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+
+        <span>Perfumes</span>
+        </a>
+         <!-- {{!-- {{> bigMenu menuList6.list  hidePrincipal='true' subsectionSelected='perfumes'}} --}} -->
+         {{> bigMenu menuList6.list subsectionSelected='perfumes'}}
+
+
+    </li>
+    <li class="mainNav-item nav-item " data-js-mainnav="item">
+        <a  class="mainNav-link mainNav-link--icon" data-js-mainnav="link" href="#" title="Cuidado facial">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Cuidado<br/>facial</span>
+        <!-- br tag only for old categories at production ---->
+
+        </a>
+         {{> bigMenu menuList6.list subsectionSelected='cuidado_facial' }}
+
+    </li>
+    <li class="mainNav-item nav-item " data-js-mainnav="item">
+        <a href="#" class="mainNav-link mainNav-link--icon" data-js-mainnav="link" title="Cuidado corporal">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Cuidado<br/>corporal</span>
+
+        </a>
+         {{> bigMenu menuList6.list subsectionSelected='cuidado_corporal'}}
+
+    </li>
+    <li class="mainNav-item nav-item " data-js-mainnav="item">
+        <a href="#" class="mainNav-link mainNav-link--icon" data-js-mainnav="link" title="Cosmética">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Cosmética</span>
+
+        </a>
+         {{> bigMenu menuList6.list subsectionSelected='cosmetica'}}
+
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item" >
+        <a href="#" class="mainNav-link mainNav-link--icon" data-js-mainnav="link" title="Cosmética natural">
+
+        <span>Cosmética<br/>natural</span>
+
+        </a>
+
+
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a href="#" class="mainNav-link mainNav-link--icon" data-js-mainnav="link" title="Lotes de cosmética y perfumería">
+        <span>Lotes cosmética<br/>y perfumería</span>
+
+        </a>
+    </li>
+</ul>
+<aside class="mainNav-featured">
+<a href="#" class="mainNav-featuredLink"><span>Perfumes de hombre</span></a>
+<a href="#" class="mainNav-featuredLink"><span>Perfumes de mujer</span></a>
+<a href="#" class="mainNav-featuredLink"><span>Perfumes unisex</span></a>
+</aside>

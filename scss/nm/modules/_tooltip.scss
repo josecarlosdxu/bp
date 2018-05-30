@@ -1,0 +1,108 @@
+@include block(tooltip) {
+    position: absolute;
+    z-index: 50;
+    width: 28rem;
+    background: $color-tooltip-background;
+    background: #353b40;
+    border-radius: 6px;
+    padding: $um $um * 1.2 $um * 1.5;
+    text-align: left;
+    color: $color-tooltip-text;
+    color: #fff;
+    display: none;
+    top: $um;
+    left: $um;
+    box-shadow: 0 0 0 1px #fff;
+    z-index: 105;
+    &:before,
+    &:after {
+        display: block;
+        content: "";
+        border: 10px solid transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+    }
+    a {
+        color: #FFF;
+        text-decoration: underline;
+    }
+    @include element(link) {
+        //font-style: italic;
+        border-bottom: none;
+       // border-color: inherit;
+        cursor: pointer;
+        color:black;
+        //&:hover,&:focus{
+            text-decoration: underline;
+        //}
+    }
+    @include element(close) {
+        position: absolute;
+        cursor: pointer !important;
+        right: $um / 2;
+        top: $um / 3;
+        font-size: $um / 1.2;
+        color: #fff;
+    }
+    @include modifier(top) {
+        &:before {
+            border-top: 10px solid #fff;
+            bottom: -20px;
+        }
+        &:after {
+            border-top: 10px solid #353b40;
+            bottom: -19px;
+        }
+    }
+    @include modifier(topLeft) {
+        @extend .tooltip--top;
+        &:before,
+        &:after {
+            left: 3rem;
+        }
+    }
+    @include modifier(topRight) {
+        @extend .tooltip--top;
+        &:before,
+        &:after {
+            left: auto;
+            right: $um;
+        }
+    }
+    @include modifier(bottom) {
+        &:before {
+            border-bottom: 10px solid #fff;
+            top: -20px;
+        }
+        &:after {
+            border-bottom: 10px solid #353b40;
+            ;
+            top: -19px;
+        }
+    }
+    @include modifier(bottomLeft) {
+        @extend .tooltip--bottom;
+        &:before,
+        &:after {
+            left: 3rem;
+        }
+    }
+    @include modifier(bottomRight) {
+        @extend .tooltip--bottom;
+        &:before,
+        &:after {
+            left: auto;
+            right: $um;
+        }
+    }
+}
+
+.tooltip-link[data-js-tooltip] {
+    //font-style: italic;
+     text-decoration: none;
+    border-bottom: 1px dotted;
+    border-color: inherit;
+    cursor: help;
+    color: black;
+}

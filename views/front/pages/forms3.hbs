@@ -1,0 +1,38 @@
+---
+title: Creación de cuenta
+layout: front/layouts/default_alt.hbs
+---
+<div class="modularGrid u-elem-center u-md-pd2 u-xl-65">
+    {{#unless mobile}}
+    <h1 class="title u-mgb">Creación de cuenta</h1> 
+    {{/unless}} 
+    <div class="modularGrid-module box u-pd--half u-md-pd2">
+        {{!-- <form data-js-create-account="" action="https://192.168.0.48/bigbuy_e/account/ajax_create_account_show" method="post" autocomplete="off"> --}}
+            <form data-js-create-account="" action="https://192.168.0.48/bigbuy_e/account/ajax_create_account_show" method="post" >
+            {{>steps step='1'}}
+            <section data-js-step="content1">
+                <div class="modularGrid u-pdh u-pdt2">
+                    <div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdb--half">               
+                        <input class="form-input" placeholder="Email" type="email" data-js-email="" name="email" maxlength="64" required >
+                    </div>  
+                    <div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdb--half">                      
+                        <input class="form-input" placeholder="Confirmar email" type="email" data-js-confirm_email="" name="confirmemail" maxlength="64" required >
+                    </div>         
+                    <div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdb--half"> 
+                        {{>passwordField}}
+                    </div>
+                    <div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdb--half">
+                        {{>passwordField confirm='true'}}
+                    </div>
+                </div>
+                {{>accountHeaderTabs}}
+                {{>accountTab1}}
+                {{>accountTab2}}
+                {{>accountTab3}}
+            </section>
+            <section  data-js-step="content2" style="display:none;">             
+                {{>accountTab4}}
+            </section>
+        </form>
+    </div>
+</div>

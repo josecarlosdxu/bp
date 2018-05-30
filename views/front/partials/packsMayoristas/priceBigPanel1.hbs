@@ -1,0 +1,20 @@
+<section class="pricePanel pricePanel--big pricePanel--basic">
+    <div class="pricePanel-header">
+        {{>svgIcon size='sm' type='pack' class='pricePanel-icon'}}
+        <h4 class="pricePanel-name">Pack Basic</h4>
+    </div>
+    <div class="pricePanel-subheader">Cuota de alta 99€</div>
+    <table class="pricePanel-content">
+
+    <tr class="pricePanel-radiogroup"> 
+    <td class="table-item table-item--thumb u-pdl--half">  
+        <input class="form-radio" id="noquotes" name="quote" type="radio"></td>  
+    	<td><label class="form-label form-label--inline" for="noquotes">Pack Basic <em class="form-label--optional">(Sin cuota mensual)</em></label> </td>   
+    </tr> 
+    </table>   
+    {{#unless  expresscart}}
+    <div class="pricePanel-sectionbtn" >
+        <button class="button button--primary button--big">Activar pack</button>
+    </div>
+    {{/unless}}
+</section>

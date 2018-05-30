@@ -1,0 +1,159 @@
+{
+    "cards": {
+        "cardListModifiers": [
+            "categories"
+        ],
+        "title": "",
+        "number": "",
+        "more": "",
+        "data": "data-js=\"homeCategories\"",
+        "list": [{
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_0",
+                "categoryTitle": "Hogar | Jardín",
+                "categoryTexts": [
+                    "Baño",
+                    "Calefacción y Refrigeración",
+                    "Decoración e iluminación",
+                    "Jardín y Terraza",
+                    "Limpieza, Aspiración y Planchado",
+                    "Mascotas"
+                ],
+
+                "image": "../../img/categories/hogar/2399_medium.jpg"
+            }, {
+
+
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_1",
+                "categoryTitle": "Cocina | Gourmet",
+                "categoryTexts": [
+                    "Accesorios y utensilios de cocina",
+                    "Gourmet",
+                    "Menaje",
+                    "Pequeño Electrodoméstico",
+                    "Repostería",
+                    "Enología"
+                ],
+
+                "image": "../../img/categories/cocina/2403_medium.jpg"
+            }, {
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_2",
+                "categoryTitle": "Ocio | Tiempo Libre",
+                "categoryTexts": [
+                    "Fiestas y Celebraciones",
+                    "Accesorios para Automóviles",
+                    "Camping y Montaña",
+                    "Maletas y Equipaje de Mano",
+                    "Playa y Piscina"
+                ],
+                "title": "Artículos eróticos",
+                "image": "../../img/categories/ocio/2472_medium.jpg"
+            }, {
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_3",
+                "categoryTitle": "Deportes | Fitness",
+                "categoryTexts": [
+                    "Actividades al Aire Libre",
+                    "Cinturones Vibratorios y Electroestimuladores",
+                    "Fitness y Aparatos de Musculación",
+                    "Ropa, Complementos y Wearable Technology"
+                ],
+                "title": "Artículos eróticos",
+                "image": "../../img/categories/deportes/2491_medium.jpg"
+            }, {
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_4",
+                "categoryTitle": "Salud | Belleza",
+                "categoryTexts": [
+                    "Línea Solar",
+                    "Peluquería",
+                    "Relax y Bienestar",
+                    "Tratamientos Estéticos"
+
+                ],
+                "title": "Artículos eróticos",
+                "image": "../../img/categories/salud/2501_medium.jpg"
+            }, {
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_5",
+                "categoryTitle": "Perfumería | Cosmética",
+                "categoryTexts": [
+                    "Perfumes",
+                    "Cosmética",
+                    "Cuidado Facial",
+                    "Cuidado Corporal",
+                    "Cosmética Natural",
+                    "Lotes de Cosmética y Perfumería"
+                ],
+
+                "image": "../../img/categories/cosmetica/2507_medium.jpg"
+            }, {
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_6",
+                "categoryTitle": "Moda | Complementos",
+                "categoryTexts": [
+                    "Bisutería",
+                    "Complementos",
+                    "Ropa y Calzado "
+                ],
+
+                "image": "../../img/categories/moda/2570_medium.jpg"
+            }, {
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_7",
+                "categoryTitle": "Juguetes | Bebés",
+                "categoryTexts": [
+                    "Juguetes y juegos",
+                    "Bebés y niños",
+                    "Material escolar"
+                ],
+
+                "image": "../../img/categories/juguetes/2571_medium.jpg"
+            }, {
+                "cardElemModifiers": [
+                    "category"
+                ],
+                "idSection": "mobileCat_8",
+                "categoryTitle": "Informática | Electrónica",
+                "categoryTexts": [
+                    "Videocámaras y cámaras fotográficas",
+                    "Telefonía y accesorios",
+                    "Televisores y reproductores de DVD",
+                    "Tablets, libros electrónicos y accesorios",
+                    "Videojuegos, consolas  y accesorios",
+                    "Drones"
+                ],
+
+                "image": "../../img/categories/electronica/2609_medium.jpg"
+            }
+
+
+
+
+
+
+
+
+
+
+        ]
+    }
+}

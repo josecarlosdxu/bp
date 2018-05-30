@@ -1,0 +1,49 @@
+@include block(preheader) {
+    background-color: $color-darkGrey-light;
+    text-transform: uppercase;
+    color: white;
+    @include element(content) {
+        margin: 0 auto;
+        display: flex;
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        max-width: 1200px;
+    }
+
+    @include element(item) {
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+        color: inherit;
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: center;
+        padding: 0.1rem 1.25rem;
+        width: 7rem;
+        transition: border-color 0.2s, background-color 0.2s;
+        &:hover,
+        &:focus {
+            border-right: 1px solid transparent;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        @include modifier(selected) {
+            border-right: 1px solid transparent;
+            background-color: rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+        }
+    }
+}
+
+
+@include extendBlock(preheader, footer) {
+    background-color: $color-header-background;
+    margin-bottom: $um * 2;
+    
+    @include element(content) {
+        justify-content: center;
+        border: none;
+    }
+
+    @include element(item) {
+        @include modifier(selected) {
+            background-color: $color-footer-background;
+        }
+    }
+}

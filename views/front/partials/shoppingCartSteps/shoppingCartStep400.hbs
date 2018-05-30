@@ -1,0 +1,89 @@
+    <div class="shoppingCartStep-info">
+        <div class="modularGrid u-pdt--half">
+            <div class="modularGrid-module u-xs-10" data-js-payment-ico="">
+                <i class="icon icon-card icon-card--visa"> </i>
+            </div>
+            <div class="modularGrid-module u-xs-70 u-pdt--third u-pdl--half" data-js-payment-text="">
+
+            </div>
+        </div>
+    </div>
+    <div class="shoppingCartStep-content" style="" data-js-payment_list="">
+
+        <div class="modularGrid">
+            <div class="modularGrid-module" data-js-payment-grid="paypal">
+                <fieldset class="form-fieldset form-fieldset--borderless u-pdt--half" data-js-fieldset="paypal">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-xs-40">
+                            <input value="paypal" id="paypal" name="payment_card" class="form-radio" data-js-payment_item="" checked="checked" type="radio">
+                            <label class="form-label form-label--inline" for="paypal"><strong>PayPal</strong> </label>
+
+                            <em class="form-info " data-js-tooltip="tooltip_paypal"><b class="icon form-info-icon fa-info-circle"></b>
+                                ¿Qué es PayPal?                            </em>
+                            </div>
+                            <div style="display: none"><input value="1" id="paypal_type_record" name="paypal_type" class="form-radio" checked="checked" data-js-paypal_record="" type="radio"></div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!---BRAINTREE-->
+
+                <!---BRAINTREE-->
+
+                <div class="modularGrid-module" data-js-payment-grid="credit">
+                    <fieldset class="form-fieldset form-fieldset--borderless u-pdt--half" data-js-fieldset="credit">
+                        <div class="modularGrid">
+                            <div class="modularGrid-module u-xs-40">
+                                <input value="credit" id="credit" name="payment_card" class="form-radio" data-js-payment_item="" type="radio">
+                                <label class="form-label form-label--inline" for="credit"><strong>Tarjeta bancaria (by PayPal)</strong></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+                <div class="modularGrid-module" data-js-payment-grid="transferencia">
+                    <fieldset class="form-fieldset form-fieldset--addendum form-fieldset--selected u-pdt--half" data-js-fieldset="transferencia">
+                        <div class="modularGrid">
+                            <div class="modularGrid-module">
+                                <input value="transferencia" id="transferencia" name="payment_card" class="form-radio" data-js-payment_item="" type="radio">
+                                <label class="form-label form-label--inline" for="transferencia"><strong>Transferencia bancaria (Tradicional)</strong></label>
+                            </div>
+                            <fieldset class="form-fieldset form-fieldset--borderless " style="">
+                                <div class="modularGrid-module u-pdl u-pdb" data-js-payment_info="transferencia">
+                                    <p>Al finalizar el proceso de compra, se le enviará un correo con las instrucciones que debe seguir.</p>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="modularGrid-module" data-js-payment-grid="contrarrembolso" style="display: none;">
+                    <fieldset class="form-fieldset form-fieldset--borderless u-pdt--half" data-js-fieldset="contrarrembolso">
+                        <div class="modularGrid">
+                            <div class="modularGrid-module">
+                                <input value="contrarrembolso" id="contrarrembolso" name="payment_card" class="form-radio" data-js-payment_item="" type="radio">
+                                <label class="form-label form-label--inline" for="contrarrembolso"><strong>Contrarrembolso</strong></label>
+                            </div>
+                            <fieldset class="form-fieldset form-fieldset--borderless" style="display: none;">
+                                <div class="modularGrid-module u-pdl u-pdb" data-js-payment_info="contrarrembolso">
+                                    <p>El importe total de la compra se abonará al transportista en el domicilio.</p>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </div>
+                </div>
+
+
+
+
+                <div class="modularGrid">
+                    <div class="modularGrid-module u-xs-30 u-pdv">
+                        <button class="button button--primary button--full" data-js-button-next-carrier="">Continuar</button>
+                    </div>
+                </div>
+            </div>
+
+
+

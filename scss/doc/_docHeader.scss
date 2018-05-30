@@ -1,0 +1,16 @@
+
+@include block(docHeader) {
+    margin-bottom: $um;
+
+    @include element(projectTitle) {
+        padding: $um;
+
+        background: #f0f0f0;
+    }
+    @include element(contentTitle) {
+        padding: $um;
+
+        background: #d0d0d0;
+    }
+}
+

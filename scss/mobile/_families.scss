@@ -1,0 +1,85 @@
+@include block(families) {
+    @include element(item) {
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: 400;
+        box-shadow: 0 1px $color-shadow inset, 3px 0 $color-more inset;
+        // height: 6rem;
+        text-transform: none;
+        display: flex;
+        background: $color-lightGrey-light;
+        flex-wrap: wrap;
+    }
+    @include element(title) {
+        align-content: center;
+        color: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        height: 6rem;
+        line-height: 1.15;
+        padding-left: 1.5rem;
+        width: calc(100% - 5rem);
+        padding-bottom: 0.25rem;
+        @include modifier(full) {
+            width: 100%;
+        }
+    }
+    @include element(subcategories) {
+        display: block;
+        overflow: hidden;
+        height: auto;
+        max-height: 0;
+        width: 100%;
+        background: white;
+        order: 3;
+        position: relative;
+        //transition:max-height 0.3s 0.2s ease-in;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            height: 6px;
+            left: 3px;
+            pointer-events: none;
+            position: absolute;
+            width: calc(100% - 3px);
+            z-index: 1;
+        }
+        &:before {
+            top: 0;
+            background: linear-gradient($color-shadow, transparent);
+        }
+        &:after {
+            bottom: 0;
+            background: linear-gradient(transparent, $color-shadow);
+        }
+        .families-item {
+            box-shadow: 0 1px $color-shadow inset, 3px 0 $color-more inset;
+            height: 6rem;
+            color: inherit;
+            color: $color-lightGrey-darker;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 $um / 3 0 $um;
+            background: white;
+        }
+        .families-img {
+            height: 5.8rem;
+            width: auto;
+        }
+    }
+   
+}
+
+@include extendElement(families, item, selected) {
+    // background: red;
+    @include element(subcategories) {
+       max-height: 100%;
+       
+    }
+    > .cardElem-mobilebtn::after {
+        transform: rotate(-135deg) !important;
+    }
+}

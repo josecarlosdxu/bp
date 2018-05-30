@@ -1,0 +1,61 @@
+@include block(menuPanel) {
+    position: absolute;
+    outline:   6px solid #CCC47A;
+    display: none;
+    box-shadow: 1px 3px 3px -1px rgba(0, 0, 0, 0.15);
+
+    @include element(button) {
+        height: 46px;
+        margin-top: -14px;
+        padding: 0 1rem;
+        border:  none;
+        color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        vertical-align: text-top;
+        background: none;
+        transition: all 0.15s;
+
+
+
+        &:hover {
+
+          background: rgba(0, 0, 0, 0.1);
+
+      }
+      &:focus{
+        outline: none;
+
+    }
+
+    @include modifier(active) {
+
+        background: #CCC47A;
+
+
+        &:hover {
+          background: #CCC47A;
+
+      }
+
+
+  }
+}
+
+@include modifier(active) {
+    display: block;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 46px;
+
+
+
+}
+
+
+}
+
+

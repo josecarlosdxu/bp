@@ -1,0 +1,70 @@
+<div class="bigMenu" {{#if subsectionSelected}} data-js-bigmenu-subsection="{{subsectionSelected}}"{{/if}}   >
+    <div class="bigMenu-sections">
+        <nav class="nav nav--dropdown">
+            {{#each families}}
+            <a href="#" title="{{title}}" class="bigMenu-sectionItem {{modifier}}" {{#if this.itemId}}  data-js-bigmenu-section="{{itemId}}"{{/if}}>{{title}}</a>
+            {{/each}}
+        </nav>
+    </div>
+
+     {{#if principal}}
+        <section class="bigMenu-categorySection{{#unless hidePrincipal}} bigMenu-categorySection--show {{/unless}}" data-js-bigmenu="principal">
+        <div class="bigMenu-categoryTexts">
+
+         <h3 class="bigMenu-categoryTitle">{{principal.title}}</h3>
+         <h4 class="bigMenu-categorySubTitle">{{principal.subtitle}}</h4>
+         </div>
+         <img src="{{principal.image}}" alt="{{principal.title}}" class="bigMenu-image">
+
+       </section>
+
+       {{/if}}
+
+
+    <div class="bigMenu-subSectionsHolder">
+        {{#each families}}
+        <div class="bigMenu-subSections" data-js-bigmenu-panel="{{itemId}}">
+                <div class="nav bigMenu-subcategory">
+                        <a href="#" class="bigMenu-subcategoryTitle">{{title}} <span class="cardElem-more--menu">VER TODO</span></a>
+                         {{!-- <!--<h3 class="bigMenu-subcategoryTitle"><a href="#" class="cardElem-more--menu bigMenu-item bigMenu-item--all">{{--> --}}
+                         {{#if subtitle}}
+                            <h4 class="bigMenu-categorySubTitle">{{subtitle}}</h4>
+
+                        {{/if}}
+                   <div class="bigMenu-subSections bigMenu-subSections--show">
+                    <nav class="nav nav--dropdown" style="outline:3px solid red; position:static;">
+                        {{#each subcategories}}
+                         {{#if col1}}
+                           {{!--  <a href="#" class="bigMenu-item nav-item" {{#if image}}data-js-image="{{image}}"{{/if}} >{{name}}</a> --}}
+                            <a href="#" class="bigMenu-item nav-item">{{name}}</a>
+
+                            <img data-src="{{image}}" src="{{image}}" style="position:absolute; bottom:0; right:0; width:10rem;
+                            height:10rem;">
+                         {{/if}}
+                        {{/each}}
+
+                    </nav>
+                    <nav class="nav nav--dropdown" style="outline:3px solid green;position:static;">
+                        {{#each subcategories}}
+                         {{#if col2}}
+                            {{!-- <a href="#" class="bigMenu-item nav-item" {{#if image}} data-js-image="{{image}}"{{/if}} >{{name}}</a> --}}
+                            <a href="#" class="bigMenu-item nav-item">{{name}}</a>
+
+                            <img data-src="{{image}}" src="{{image}}" style="position:absolute; bottom:0; right:0; width:10rem;
+                            height:10rem;">
+                         {{/if}}
+                        {{/each}}
+                    </nav>
+                  </div>
+                </div>
+                {{#if image}}
+                 <img src="{{image}}" class="bigMenu-subsectionImage" >
+                {{/if}}
+        </div>
+        {{/each}}
+
+
+    </div>
+</div>
+
+

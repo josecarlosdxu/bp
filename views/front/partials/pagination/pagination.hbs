@@ -1,0 +1,36 @@
+<aside class="paginator">
+    <div class="paginator-btngroup">
+        <button data-js-paginador="inicio" class="paginator-button" disabled="disabled"><div class="paginator-flexcont"><span class="paginator-sign">&laquo;</span></div></button>
+        <button data-js-paginador="previous_var" class="paginator-button" disabled="disabled"><div class="paginator-flexcont"><span class="paginator-sign">&lsaquo;</span> <span>-10</span></div></button>
+        <button data-js-paginador="previous" class="paginator-button" disabled><div class="paginator-flexcont"><span class="paginator-sign">&lsaquo;</span></div></button>
+    </div>
+    <nav class="paginator-listlinks">
+
+    <a data-js-paginador-link="1" data-js-paginador="link" class="paginator-link paginator-link--active" href="#">1</a>
+    {{#for 2 11 1}}
+    <a data-js-paginador-link="{{this}}" data-js-paginador="link" class="paginator-link" href="#">{{this}}</a>
+    {{/for}}
+    </nav>
+    <div class="paginator-btngroup">
+        <button data-js-paginador="next" class="paginator-button"><div class="paginator-flexcont"><span class="paginator-sign">&rsaquo;</span></div></button>
+        <button data-js-paginador="next_var" class="paginator-button"><div class="paginator-flexcont"><span>+10</span> <span class="paginator-sign">&rsaquo;</span></div></button>
+        <button data-js-paginador="fin" class="paginator-button"><div class="paginator-flexcont"><span class="paginator-sign">&raquo;</span></div></button>
+    </div>
+    {{!--<!--<div class="paginator-jump">
+        <label for="" class="form-label paginator-label">Ir a página:</label>
+        <select data-js-paginador="select_page" class="form-select paginator-select">
+            {{#times1 30}}
+            <option value="{{this}}">{{this}}</option>
+            {{/times1}}
+        </select>
+    </div>-->--}}
+</aside>
+
+
+
+
+
+
+
+
+

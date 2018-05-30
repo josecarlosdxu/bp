@@ -1,0 +1,51 @@
+/*
+Responsive Image
+========
+*/
+
+.img--responsive, %img--responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@include block(img) {
+    fill: inherit;
+
+ @include modifier(xs) {
+    width: 16px;
+    height: 16px;
+}
+
+@include modifier(sm) {
+    width: 24px;
+    height: 24px;
+}
+@include modifier(md) {
+    width: 32px;
+    height: 32px;
+}
+@include modifier(lg) {
+    width: 48px;
+    height: 48px;
+}
+
+@include modifier(xl) {
+    width: 100px;
+    height: 100px;
+}
+@include modifier(xxl) {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+
+}
+
+
+
+

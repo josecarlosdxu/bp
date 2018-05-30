@@ -1,0 +1,26 @@
+<div class="expresscart-total">
+
+    <div class="modularGrid-module">
+        <span class="expresscart-estimationQuantity">Subtotal 562,65 €</span>
+    </div>
+    <div class="modularGrid-module">
+        <em class="form-info" data-js-tooltip="tooltip3" ><b class="icon form-info-icon fa-info-circle"></b> Precio final de transporte e IVA pueden variar</em>
+
+    </div>
+    {{#if lockedCart}}
+    <div class="modularGrid-module">
+        <button class="button button--primary" disabled>Finalizar pedido</button>
+    </div>
+    <div class="modularGrid-module u-mgt--half u-flex--between"> 
+        {{!--    <!--<button class="button u-mgr--half button--borderless"><i class="icon form-action-icon fa fa-print"></i> Imprimir presupuesto</button>--> --}}
+        <img class="expresscart-infoImg expresscart-infoImg--cards" src="../../img/payment-methods.png" alt="payment-methods" />       
+        <div class="msgBox msgBox--warning">El pedido mínimo debe ser mayor a 10.000€</div> 
+    </div>
+    {{else}}
+     <div class="modularGrid-module u-mgt2 u-flex--between">        
+        <img class="expresscart-infoImg expresscart-infoImg--cards" src="../../img/payment-methods.png" alt="payment-methods" />       
+        <button class="button button--primary">Finalizar pedido</button> 
+    </div>
+    {{/if}} 
+
+</div>

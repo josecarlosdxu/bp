@@ -1,0 +1,27 @@
+<ul class="mainNav-menu  mainNav-menu--hide nav" data-js-mainnav="submenu">
+    {{#times1 5}}
+        <li class="mainNav-item nav-item ">
+          <a  class="mainNav-link" data-js-mainnav="link" href="#">Subcategoría de nombre largo {{this}}</a>
+        </li>               
+    {{/times1}}       
+    <li class="mainNav-item nav-item ">
+        <a  class="mainNav-link" data-js-mainnav="link" href="searchResults2.html" title="Subcategoría de nombre largo 1">Subcategoría de nombre largo 6</a>
+        <button data-js-mainnav="btnEnter" class="mainNav-btnEnter">{{>svgIcon type='chevronMobileRight'}}</button>
+    </li>
+    <li class="mainNav-item nav-item ">
+        <a  class="mainNav-link" data-js-mainnav="link" href="searchResults2.html" title="Subcategoría de nombre largo 1">Subcategoría de nombre largo 7</a>
+        <button data-js-mainnav="btnEnter" class="mainNav-btnEnter">{{>svgIcon type='chevronMobileRight'}}</button>
+    </li>
+    <li class="mainNav-item nav-item ">
+        <a  class="mainNav-link" data-js-mainnav="link" href="searchResults2.html" title="Subcategoría de nombre largo 1">Subcategoría de nombre largo 8</a>
+        <button data-js-mainnav="btnEnter" class="mainNav-btnEnter">{{>svgIcon type='chevronMobileRight'}}</button>
+    </li>
+
+     {{#for 8 12 1}}
+   
+        <li class="mainNav-item nav-item ">
+          <a  class="mainNav-link" data-js-mainnav="link" href="#">Subcategoría de nombre largo {{this}}</a>
+        </li>               
+    {{/for}}  
+
+</ul>

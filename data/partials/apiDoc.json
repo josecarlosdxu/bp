@@ -1,0 +1,59 @@
+{
+    "banner": {},
+    "catalog": {
+        "title": "API catálogo ",
+        "image": "catalogo",
+        "subtitle": "Sincronice nuestro catalogo en su sistema en tiempo real",
+        "buttonText": "+ INFO",
+        "icon": "api-catalogo",
+        "items": [{
+            "text": "Stocks en tiempo real"
+        }, {
+            "text": "Descripciones y nombres de producto en 23 idiomas"
+        }, {
+            "text": "Árbol de categorías completo en 23 idiomas"
+        }, {
+            "text": "Consulte cambios de precio en tiempo real"
+        }, {
+            "text": "Disponible todas nuestras imágenes de producto"
+        }]
+    },
+    "pedidos": {
+        "title": "API pedidos",
+        "image": "pedidos",
+        "icon": "api-pedidos",
+        "subtitle": "Comunique pedidos de forma inmediata desde su plataforma de gestión",
+        "buttonText": "+ INFO",
+        "items": [{
+            "text": "Cree pedidos en el acto o agrupe varios pedidos en uno solo en la fecha deseada"
+        }, {
+            "text": "Consulte cambios de estado de pedido en cualquier momento"
+        }]
+    },
+    "costes": {
+        "title": "API costes de envío",
+        "image": "costes-envio",
+        "icon": "api-costes-envio",
+        "subtitle": "Incorpore nuestros costes de envío en su sistema para cualquiera de nuestros productos",
+        "buttonText": "+ INFO",
+        "items": [{
+            "text": "Costes de envío actualizados en tiempo real"
+        }, {
+            "text": "Consulte tiempos de envío de cualquier conjunto de productos BigBuy"
+        }, {
+            "text": "Obtenga todas nuestras agencias de transporte"
+        }]
+    },
+    "tracking": {
+        "title": "API trackings de envío",
+        "image": "tracking",
+        "icon": "api-tracking-envios",
+        "subtitle": "Mantenga localizado nuestros pedidos en su plataforma de gestión",
+        "buttonText": "+ INFO",
+        "items": [{
+            "text": "Trackings en el acto desde la agencia de transporte a su sistema"
+        }, {
+            "text": "Información de estado del envío actualizada de todos sus pedidos"
+        }]
+    }
+}

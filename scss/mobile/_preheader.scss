@@ -1,0 +1,69 @@
+%hoverPreheaderItem {
+
+    color: white;
+    background-color: $color-darkGrey-dark;
+}
+
+
+
+@include block(preheader) {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    padding: 0 $um / 2;
+    
+
+    justify-content: start;
+
+    @include addBreakpoint(sm) {
+        margin: $um 0;
+        padding: 0;
+        justify-content: center;
+        background-color: $color-darkGrey-default;
+    }
+    @include element(content) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include element(item) {
+        font-size: 1.2rem;
+        color: $color-lightGrey-dark;
+        text-transform: uppercase;
+        padding: $um / 2 $um;
+        display: inline-block;
+        background-color: $color-darkGrey-default;
+        border: 1px solid $color-lightGrey-dark;
+        transition: background-color 0.2s, color 0.2s;
+        text-align: center;
+        margin: $um / 3;
+         border-radius: 4px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            @extend %hoverPreheaderItem;
+        }
+
+        @include addBreakpoint(sm) {
+            border: none;
+            border-right: 1px solid $color-darkGrey-dark;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        @include modifier(selected) {
+            background-color: $color-darkGrey-dark;
+            color: white;
+            pointer-events: none;
+            @include addBreakpoint(sm) {
+                margin-right: 1px;
+            }
+        }
+        &:first-child {
+
+            @include addBreakpoint(sm) {
+                border-left: 1px solid $color-darkGrey-dark;
+            }
+        }
+    }
+}

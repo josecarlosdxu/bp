@@ -1,0 +1,18 @@
+---
+title: Formas de pago
+breadcrumbs: Formas de pago 
+layout: mobile/layouts/clean.hbs
+---
+<div class="modularGrid modularGrid--boxed u-pdb">
+	<div class="box">
+		{{> headerPagosCMS}}
+		{{> mobileFeaturesList mobileFeaturesList.pagosHeader}}
+        <div class="modularGrid">
+            <div class="modularGrid-module u-brt">
+            {{> mobileFeaturesList mobileFeaturesList.footerFeatures}}
+            </div>
+        </div>
+
+        {{>helpCenter helpAccordion.formasPago}}
+	</div>
+</div>

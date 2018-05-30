@@ -1,0 +1,16 @@
+@include block(nmSteps) {
+    list-style-type: decimal;
+    counter-reset:  li-counter -1;
+
+   @include element(item) {
+        display: inline-block;
+        position: relative;
+  }
+
+@include element(number) {
+    &:before {
+        content: counter(li-counter);
+        counter-increment: li-counter;
+    }
+  }
+}

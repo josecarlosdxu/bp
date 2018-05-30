@@ -1,0 +1,17 @@
+<div class="mobileToolbar-searchCont" data-js-search="searchBar">
+
+    <form action="home.html" class="form mobileToolbar-searchForm" data-js-search="searchForm">
+        <input type="text" class="form-input mobileToolbar-searchfield" placeholder="Buscar en todo el sitio..."  name="searchfield" data-js-search="searchField" autocomplete="off" >
+        <input disabled="disabled" class="button button--searchSelected" data-js-search="searchBtn" type="submit">
+    </form>
+
+    <button class="button button--times button--tinyIcon u-pd u-mgr--half u-md-hide" data-js-search="close" title="Cerrar" ></button>
+
+    <aside class="mobileToolbar-searchResults">
+        <section class="mobileToolbar-searchResultsCont">
+            <h3 class="subTitle u-pdb--half">820 resultados en "Teléfono fijo"</h3>
+            {{>productList productList.searchResults}}
+            <button class="button button--full button--primary" data-js-search="submit">Ver todos los resultados</button>
+        </section>
+    </aside>
+</div>

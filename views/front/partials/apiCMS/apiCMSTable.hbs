@@ -1,0 +1,115 @@
+<section class="content u-brt u-brb">
+    <div class="modularGrid modularGrid--boxed u-tac u-pd">
+        <div class="modularGrid-module u-xs-90 u-xxs-hide u-lg-show u-elem-center">
+        <h2 class="{{title.classes}}">{{{title.text}}}</h2>
+            <table class="table table--tablePanels u-mgt">
+                {{>apiCMSTableHeader}}
+                {{>apiCMSTableBody}}
+            </table>
+        </div>
+        <div class="modularGrid-module u-lg-hide">
+        <h2 class="{{title.classes}}">{{{title.text}}}</h2>
+            <table class="table table--tablePanels u-mgt">
+                <thead class="table-thead">
+                    <tr class="table-tr">
+                        <th class="table-th table-item">
+                            <div class="modularGrid modularGrid--flexCenter">
+                                <img src="../../img/{{thead.1.icon}}.svg" class="icon icon--inline icon--lg">
+                                {{{thead.1.text}}}
+
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="table-tbody">
+                    <tr class="table-tr">
+                        <td class="table-item">
+                            <p class="subtitle"><strong>{{{tbody.0.0.textAlt}}}</strong></p>
+
+                            <ul class="list list--checklist u-pdt u-pdb">
+                                {{#each tbody.0.1.list}}
+                                <li class="list-item">
+                                    {{>svgIcon type=icon class='icon--success'}}
+                                    {{{text}}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                            <p class="subtitle"><strong>{{{tbody.1.0.text}}}</strong></p>
+                            <ul class="list list--checklist u-pdt u-pdb">
+                                {{#each tbody.1.1.list}}
+                                <li class="list-item">
+                                    {{>svgIcon type=icon class='icon--success'}}
+                                    {{{text}}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                             <p class="subtitle"><strong>{{{tbody.2.0.text}}}</strong></p>
+                            <ul class="list list--checklist u-pdt u-pdb">
+                                {{#each tbody.2.1.list}}
+                                <li class="list-item">
+                                    {{>svgIcon type=icon class='icon--success'}}
+                                    {{{text}}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <table class="table table--tablePanels">
+                <thead class="table-thead">
+                    <tr class="table-tr">
+                        <th class="table-th table-item">
+                            <div class="modularGrid modularGrid--flexCenter">
+                                <img src="../../img/{{thead.2.icon}}.svg" class="icon icon--inline icon--lg">
+                                {{{thead.2.text}}}
+
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="table-tbody">
+                    <tr class="table-tr">
+                        <td class="table-item">
+                            <p class="subtitle"><strong>{{{tbody.0.0.textAlt}}}</strong></p>
+
+                            <ul class="list list--checklist u-pdt u-pdb">
+                                {{#each tbody.0.2.list}}
+                                <li class="list-item">
+                                    {{>svgIcon type=icon class='icon--success'}}
+                                    {{{text}}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                            <p class="subtitle"><strong>{{{tbody.1.0.text}}}</strong></p>
+                            <ul class="list list--checklist u-pdt u-pdb">
+                                {{#each tbody.1.2.list}}
+                                <li class="list-item">
+                                    {{>svgIcon type=icon class='icon--success'}}
+                                    {{{text}}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                             <p class="subtitle"><strong>{{{tbody.2.0.text}}}</strong></p>
+                            <ul class="list list--checklist u-pdt u-pdb">
+                                {{#each tbody.2.2.list}}
+                                <li class="list-item">
+                                    {{>svgIcon type=icon class='icon--success'}}
+                                    {{{text}}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+        <div class="modularGrid-module u-tac u-pdt--half u-pdb">
+            <p class="title title--camel u-block u-pd u-pdt--half">Sincronice su negocio con BigBuy</p>
+            <a href="#" class="button button--primary button--bigger">Ser distribuidor</a>
+        </div>
+    </div>
+</section>

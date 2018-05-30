@@ -1,0 +1,440 @@
+@include block(pricePanel) {
+    @extend %inlineBlock100;
+    @include element(name) {
+        font-size: $um;
+        font-weight: 400;
+        padding: 0.25rem;
+    }
+    /*@include element(radiogroup) {
+        outline: 1px solid red;
+    }*/
+    /*@include element(radiogroup) {
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 1.9rem 0.5rem;
+        width: 100%;
+        .form-label {
+            width: calc(100% - 2rem);
+            line-height: 1.1;
+            margin: 0;
+        }
+        .form-radio {
+            top: -1px;
+            margin-bottom: 1rem;
+        }
+    }*/
+    @include element(container) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 2rem auto 0;
+        width: 100%;
+        @include addBreakpoint(md) {
+            width: 54rem;
+        }
+        @include addBreakpoint(xl) {
+            justify-content: space-between;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+@include extendBlock(pricePanel, midsize) {
+    padding-bottom: $um;
+    margin-top: $um / 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: $um;
+    margin-top: $um;
+    background-color: white;
+    box-shadow: 0 0 0 1px #ddd;
+
+    @include addBreakpoint(md) {
+        padding: $um $um $um / 2;
+    }
+    @include addBreakpoint(lg) {
+        min-height: 25rem;
+        height: 100%;
+        margin-top: 0;
+    }
+    @include addBreakpoint(xl) {
+        box-shadow: none;
+        border-left: 1px solid #ddd;
+    }
+    @include element(header) {
+        padding-bottom: 1.2rem;
+    }
+    @include element(itemList) {
+        list-style: disc outside;
+        position: relative;
+        margin-left: 1.2rem;
+        top: 0.5rem;
+    }
+    @include element(item) {
+        padding-bottom: 0.5rem;
+    }
+}
+
+@include extendBlock(pricePanel, mediumList) {
+    padding-bottom: $um;
+    padding-top: $um;
+    @extend %u-sm-50;
+    @extend %u-lg-3rd;
+    font-size: $um / 1.5;
+    border-top: 1px solid #e9e9e9;
+    &:first-child {
+        padding-top: 0;
+        border-top: none;
+    }
+    @include addBreakpoint(sm) {
+        padding: 0 $um $um;
+        border-top: none;
+        &:nth-child(even) {
+            border-left: 1px solid #e9e9e9;
+        }
+        &:nth-child(n+3) {
+            padding-top: $um;
+            padding-bottom: $um * 2;
+            border-top: 1px solid #e9e9e9;
+        }
+        &:first-child {
+            padding: 0 $um $um;
+        }
+    }
+    @include addBreakpoint(md) {
+        padding-left: $um * 2;
+        padding-right: $um / 2;
+        &:first-child {
+            padding-left: $um * 2;
+            padding-right: $um / 2;
+        }
+    }
+    @include addBreakpoint(lg) {
+        border-left: 1px solid #ddd;
+        min-height: 27rem;
+        padding: $um $um $um / 2;
+        margin-top: 0;
+        &:nth-child(n+3) {
+            padding: $um $um $um / 2;
+            border-top: none;
+        }
+        &:first-child {
+            border-left: none;
+            padding: $um $um $um / 2;
+        }
+    }
+    @include element(header) {
+        padding-bottom: 1.2rem;
+        @include modifier(b2b) {
+            color: $color-b2b-pack;
+        }
+        @include modifier(dropship) {
+            color: $color-dropship-pack;
+        }
+        @include modifier(enterprise) {
+            color: $color-enterprise-pack;
+        }
+    }
+    @include element(itemList) {
+        list-style: disc outside;
+        position: relative;
+        margin-left: 1.2rem;
+        top: 0.5rem;
+    }
+    @include element(item) {
+        padding-bottom: 0.5rem;
+    }
+}
+
+// @include extendBlock(pricePanel, big) {
+//     width: 50%;
+//     @extend %u-md-25;
+//     text-align: center;
+//     font-size: 1.2rem;
+//     padding: $um / 2 $um / 2 $um;
+//     &:nth-child(n+3) {
+//         padding-top: $um;
+//         border-top: 1px solid #e9e9e9;
+//     }
+//     &:nth-child(odd) {
+//         border-right: 1px solid #e9e9e9;
+//     }
+//     @include addBreakpoint(md) {
+//         &:nth-child(n+3) {
+//             padding: $um / 2 $um / 2 $um;
+//             border-top: none;
+//         }
+//         &:nth-child(odd) {
+//             border-right: none;
+//         }
+//     }
+//     @include element(header) {
+//         padding-bottom: $um / 2;
+//     }
+//     @include element(icon) {
+//         display: block;
+//         margin: 0 auto $um / 2;
+//         width: 30%;
+//         @extend %u-lg-20;
+//     }
+// }
+// @include extendBlock(pricePanel, info) {
+//     padding-top: $um;
+//     border-top: 1px solid #e9e9e9;
+//     min-height: 15rem;
+//     &:nth-child(n+3) {
+//         border-left: 1px solid #e9e9e9;
+//     }
+//     &:nth-child(n+4) {
+//         border-bottom: 1px solid #e9e9e9;
+//     }
+//     @include addBreakpoint(md) {
+//         padding: $um;
+//         border-top: 1px solid #e9e9e9;
+//         border-bottom: 1px solid #e9e9e9;
+//         &:nth-child(n+3) {
+//             padding: $um;
+//             border-top: 1px solid #e9e9e9;
+//         }
+//     }
+// }
+// @include extendBlock(pricePanel, big) {
+//     outline: 1px solid tan;
+
+/*flex-basis: 22rem;
+    background: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-radius: 2px 2px 0 0;
+    height: 22rem;
+    margin-bottom: 2rem;
+    @include element(header) {
+        align-items: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: 6.25rem;
+        box-shadow: 0 0 0 1px $color-shadow;
+        border-radius: 3px 3px 0 0;
+        +label {
+            flex-grow: 1;
+            margin: 0;
+            padding-top: 1rem;
+            +label {
+                display: flex;
+                flex-grow: 2;
+                padding-top: 2.5rem;
+            }
+        }
+    }
+    @include element(sectionbtn) {
+        align-items: center;
+        border-top: 1px solid;
+        border-color: inherit;
+        display: flex;
+        height: 6rem;
+        justify-content: center;
+        width: 100%;
+    }
+    @include addBreakpoint(sm) {
+        height: 23.5rem;
+        flex-basis: 23.2rem;
+        margin-bottom: 4rem;
+    }
+    @include addBreakpoint(xl) {
+        flex-basis: 22rem;
+        margin: 0;
+    }*/
+
+//}
+@include extendBlock(pricePanel, basic) {
+    $boxBasicColor: transparentize($color-basic-pack, 0.5);
+    $borderBasicColor: transparentize($boxBasicColor, 0.3);
+    box-shadow: 0 0 0 1px $boxBasicColor inset;
+    border-color: $borderBasicColor;
+    &:first-child {
+        border-left: none;
+    }
+    @include element(header) {
+        background-color: $color-basic-pack;
+        box-shadow: 0 0 0 1px darken($color-basic-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, pro) {
+    $boxProColor: transparentize( $color-pro-pack, 0.6);
+    $borderProColor: transparentize($boxProColor, 0.2);
+    border-color: $borderProColor;
+    box-shadow: 0 0 0 1px $boxProColor inset;
+    @include element(header) {
+        background-color: $color-pro-pack;
+        box-shadow: 0 0 0 1px darken($color-pro-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, business) {
+    $boxBusinessColor: transparentize( $color-business-pack, 0.6);
+    $borderBusinessColor: transparentize($boxBusinessColor, 0.2);
+    border-color: $borderBusinessColor;
+    box-shadow: 0 0 0 1px $boxBusinessColor inset;
+    @include element(header) {
+        background-color: $color-business-pack;
+        box-shadow: 0 0 0 1px darken($color-business-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, premium) {
+    $boxPremiumColor: transparentize( $color-premium-pack, 0.5);
+    $borderPremiumColor: transparentize($boxPremiumColor, 0.3);
+    border-color: $borderPremiumColor;
+    box-shadow: 0 0 0 1px $boxPremiumColor inset;
+    &:last-child {
+        border-left: none;
+    }
+    @include element(header) {
+        background-color: $color-premium-pack;
+        box-shadow: 0 0 0 1px darken($color-premium-pack, 10%) inset;
+    }
+}
+
+@include extendBlock(pricePanel, enterprise) {
+    @include element(header) {
+        background-color: $color-enterprise-pack;
+    }
+}
+
+@include extendBlock(pricePanel, b2b) {
+    @include element(header) {
+        background-color: $color-b2b-pack;
+    }
+}
+
+@include extendBlock(pricePanel, dropship) {
+    @include element(header) {
+        background-color: $color-dropship-pack;
+    }
+}
+
+@include extendElement(pricePanel, header, enterprise) {
+    color: $color-enterprise-pack;
+}
+
+@include extendElement(pricePanel, header, b2b) {
+    color: $color-b2b-pack;
+}
+
+@include extendElement(pricePanel, header, dropship) {
+    color: $color-dropship-pack;
+}
+
+
+@include extendBlock(pricePanel, huge) {
+    display: flex;
+    justify-content: center;
+    color: white;
+    box-shadow: none;
+    @include element(header) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        padding: $um * 2 0;
+        transition: background-color 0.2s;
+    }
+    @include element(name) {
+
+        padding: 1rem 0;
+    }
+}
+
+@include extendBlock(pricePanel, big) {
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-radius: 2px 2px 3px 3px;
+    display: flex;
+    flex-basis: 23.2rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 0 1px $color-shadow inset;
+    margin-bottom: $um;
+    z-index: 1;
+
+    @include addBreakpoint(lg) {
+        margin-bottom: $um / 2;
+    }
+
+    @include element(header) {
+        align-items: center;
+        border-radius: 3px 3px 0 0;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem; //transition: background-color 0.2s ease 0s;
+        width: 100%;
+    }
+
+
+    @include element(subheader) {
+        color: black;
+        background-color: $color-lightGrey-light;
+        text-align: center;
+        width: calc(100% - 2px);
+        padding: 1rem; //margin-left: 1px;
+    }
+    @include element(content) {
+        height: 10.5rem;
+        margin: 1rem 0 1.5rem;
+        width: 100%;
+    }
+    @include element(sectionbtn) {
+        align-items: center;
+        border-top: 1px solid;
+        border-color: $color-shadow;
+        display: flex;
+        height: 5rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    @include element(name) {
+        font-family: $type-headingscms;
+        padding: 0.25rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        margin-block-start: -7px;
+        text-transform: uppercase;
+        padding-left: 0.75rem;
+    }
+}
+
+
+@include extendElement(pricePanel, container, midsize) {
+    margin: 0 auto;
+    width: 100%;
+    .pricePanel--big {
+        flex-basis: 23rem;
+        @include addBreakpoint(lg) {
+            flex-basis: calc(100% / 3 - 0.75rem);
+        }
+    }
+}

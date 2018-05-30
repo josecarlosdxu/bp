@@ -1,0 +1,25 @@
+<li class="helpCenterMenu-section" data-js-menulist="section">
+    {{#if this.questions}}
+    <button data-js-menulist="button" class="helpCenterMenu-button helpCenterMenu-button--secundary">       
+            {{>svgIcon type='chevronMobileRight' class='helpCenterMenu-chevron'}} 
+    </button>
+    <label for="{{itemId}}" class="helpCenterMenu-label helpCenterMenu-label--secundary" data-js-menulist="button" >{{title}}</label>
+
+    <div class="helpCenterMenu-questions" data-js-menulist="questions">
+    
+        {{#each questions}}
+        <a href="#" class="link--question helpCenterMenu-link" data-js-helpcenter="link">{{text}}</a>
+        {{/each}}
+   
+    </div>
+   
+    {{else}}
+    <label for="{{itemName}}" class="helpCenterMenu-label helpCenterMenu-label--secundary" data-js-menulist="link" data-js-helpcenter="link"> 
+        {{>svgIcon type='bullet'}}    
+        {{title}}
+    </label>
+    {{/if}}
+</li>
+
+
+       

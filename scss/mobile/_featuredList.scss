@@ -1,0 +1,42 @@
+@include block(featuredList) {
+    @include element(container) {
+        // height: 23.8rem;
+        height: auto;
+        padding-bottom: 1px;
+        min-height: 26.25rem;
+
+        @include addBreakpoint(lg) {
+            height: calc((100vw / 6) * 1.7);
+        }
+        @include addBreakpoint(xl) {
+            height: 27.5rem;
+        }
+    }
+}
+
+@media (max-device-width: 800px) and (orientation: portrait) {
+    .featuredList-container {
+        min-height: 26.8rem;
+    }
+}
+
+@media only screen and (max-width: 960px) and (orientation: landscape) {
+    //nexus 7
+    .featuredList-container {
+        min-height: 26.25rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    ////ipad portrait
+    .featuredList-container {
+        height: 26.1rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    ////ipad landscape
+    .featuredList-container {
+        height: 24.55rem;
+    }
+}

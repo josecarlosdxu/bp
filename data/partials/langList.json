@@ -1,0 +1,9 @@
+{
+    "userdata": {
+        "jsAnchor": "langField",
+        "checkboxId": "userLangCheckbox",
+        "hiddenFieldName": "userLang",
+        "langListId": "userLangList"
+
+    }
+}

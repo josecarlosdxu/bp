@@ -1,0 +1,198 @@
+<section class="panel-section panel-section--fullWidth">
+    <div class="modularGrid">
+        <div class="panel-section-dataHandlers">
+            <div class="modularGrid">
+            </div>
+        </div>
+        <div class="modularGrid-module">
+            <table class="table table--interactive panelHeader-fixedTableHeader panelHeader-fixedTableHeader--fullWidth">
+                <thead class="table-thead">
+                    <tr class="table-tr table--tr table-tr--sort">
+                        <th class="table-th table-item" width="8%">Id. Pedido
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="8%">Ref.
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item" width="8%">Producto
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="8%">Incidencia
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="9%">Descripción
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="8%">Unids.
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="8%">Precio
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="2%">
+
+                        </th>
+                        <th class="table-th table-item " width="8%" bgcolor="#f9f9f9">Observa
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="7%" bgcolor="#f9f9f9">OK
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="7%" bgcolor="#f9f9f9">-50
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="7%" bgcolor="#f9f9f9">-100
+                            {{>orderingIcon}}
+                        </th>
+                        <th class="table-th table-item " width="9%" bgcolor="#f9f9f9">Total Dev.
+                            {{>orderingIcon}}
+                        </th>
+
+                    </tr>
+                    <tr class="table-tr  table-tr--filters">
+                        <th class="table-th table-item" width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </th>
+                        <th class="table-th table-item " width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </th>
+                        <th class="table-th table-item" width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </th>
+                        <th class="table-th table-item " width="8%">
+                            {{!--  <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+                        <th class="table-th table-item " width="9%">
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+                        <th class="table-th table-item " width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </th>
+                        <th class="table-th table-item " width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </th>
+                        <th class="table-th table-item " width="2%">
+                            <button class="button button--icon " data-js-returns-detail="delete" title="Eliminar">
+                                <svg class="icon icon--inline icon--xs" role="img">
+                                    <use xlink:href="http://192.168.1.211/bigbuy_e/public/img/icons/svg-defs.svg#icon-trash"/>
+                                </svg>
+                            </button>
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+                        <th class="table-th table-item " width="8%" bgcolor="#f9f9f9">
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+                        <th class="table-th table-item " width="7%" bgcolor="#f9f9f9">
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+                        <th class="table-th table-item " width="7%" bgcolor="#f9f9f9">
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+                        <th class="table-th table-item " width="7%" bgcolor="#f9f9f9">
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+                        <th class="table-th table-item " width="9%" bgcolor="#f9f9f9">
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                        </th>
+
+                    </tr>
+                </thead>
+            </table>
+            <table class="table">
+                <tbody class="table-tbody table-tbody--stripped">
+                    <tr class="table-tr">
+                        <td class="table-item" width="8%">60041461</td>
+                        <td class="table-item" width="8%">60041461</td>
+                        <td class="table-item" width="8%">Nombre del producto de BigBuy</td>
+                        <td class="table-item" width="8%">Lorem ipsum dolor sit amet..</td>
+                        <td class="table-item" width="9%">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</td>
+                        <td class="table-item" width="8%">1000</td>
+                        <td class="table-item" width="8%">21.33€</td>
+                        <td class="table-item" width="2%">
+                            <button class="button button--icon " data-js-returns-detail="delete" title="Eliminar">
+                                <svg class="icon icon--inline icon--xs" role="img">
+                                    <use xlink:href="../../img/icons/svg-defs.svg#icon-trash"/>
+                                </svg>
+                            </button>
+                        </td>
+                        <td class="table-item" width="8%" bgcolor="#f9f9f9">Lorem ipsum dolor sit amet, consectetur adipisicing...</td>
+                        <td class="table-item" width="7%" bgcolor="#f9f9f9">7</td>
+                        <td class="table-item" width="7%" bgcolor="#f9f9f9">3</td>
+                        <td class="table-item" width="7%" bgcolor="#f9f9f9">2</td>
+                        <td class="table-item" width="9%" bgcolor="#f9f9f9">150€</td>
+
+                    </tr>
+                </tbody>
+                <tbody class="table-tbody">
+                    <tr class="table-tr table-tr--intro">
+                        <td class="table-item" width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </td>
+                        <td class="table-item u-prel" width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                            <div class="searchHelp">
+                                <ul>
+                                    <li>hola</li>
+                                    <li>hola</li>
+                                    <li>hola</li>
+                                    <li>hola</li>
+                                    <li>hola</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="table-item" width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </td>
+                        <td class="table-item" width="8%">
+                            {{!-- <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse "> --}}
+                            <select class="form-select u-mgb--0" data-js-returns-detail="sat_status" disabled>
+                                <option value="">&nbsp;</option>
+                                <option value="1">No funciona totalmente</option>
+                                <option value="2">No funciona parcialmente</option>
+                                <option value="3">Funciona incorrectamente</option>
+                                <option value="4">Rotura física a la recepción</option>
+                                <option value="5">Faltan piezas</option>
+                                <option value="6">Procede de garantía</option>
+                                <option value="7">Otros</option>
+                            </select>
+                        </td>
+                        <td class="table-item" width="9%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </td>
+                        <td class="table-item" width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </td>
+                        <td class="table-item" width="8%">
+                            <input data-js-paginador-filtro-field="" name="status" id="status" class="form-input form-input--collapse ">
+                        </td>
+                        <td class="table-item" width="2%">
+                            <button class="button button--icon " data-js-returns-detail="delete" title="Eliminar">
+                                <svg class="icon icon--inline icon--xs" role="img">
+                                    <use xlink:href="../../img/icons/svg-defs.svg#icon-plusCircle"/>
+                                </svg>
+                            </button>
+                        </td>
+                        <td class="table-item" width="8%" bgcolor="#f9f9f9">
+                        </td>
+                        <td class="table-item" width="7%" bgcolor="#f9f9f9">
+                        </td>
+                        <td class="table-item" width="7%" bgcolor="#f9f9f9">
+                        </td>
+                        <td class="table-item" width="7%" bgcolor="#f9f9f9">
+                        </td>
+                        <td class="table-item" width="9%" bgcolor="#f9f9f9">
+                        </td>
+
+                    </tr>
+                </tbody>
+                <tfoot class="table-tfoot">
+                    <tr class="table-tr">
+                        <td colspan="12" class="table-item table-item--number">Total:</td>
+                        <td data-js-returns-detail-total="33.26" class="table-item table-item--number">33,26 €</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>
+

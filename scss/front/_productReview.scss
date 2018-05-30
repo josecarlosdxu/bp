@@ -1,0 +1,129 @@
+@include block(productReview) {
+	margin-bottom: $um;
+
+	@include element(title) {
+		@extend %type-section-title;
+	}
+
+	@include element(description) {
+		color: #666;
+		padding: 0.5rem 0;
+		display: inline-block;
+		margin-right: 20px;
+		@extend %type-step;
+	}
+
+	@include element(content) {
+	    font-size: 0;
+
+		@extend %box;
+	}
+
+	@include element(item) {
+		border-bottom: 1px solid $color-shadow;
+	}
+
+	@include element(dates) {
+		display: inline-block;
+
+	    width: 100%;
+		padding: $um / 2  0 $um / 2  $um / 1.5;
+
+	    vertical-align: top;
+
+	    font-size: 1rem;
+
+		@extend %u-xs-100;
+		@extend %u-md-25;
+	}
+
+	@include element(user) {
+		display: inline-block;
+
+		width: 100%;
+
+		vertical-align: top;
+
+		@extend %u-xs-50;
+		@extend %u-xs-100;
+	}
+
+	@include element(posted) {
+		display: inline-block;
+		width: 100%;
+		font-size: 0.9rem;
+		color: #666;
+
+		@extend %u-xs-45;
+		@extend %u-xs-100;
+	}
+
+	@include element(ratingTitle) {
+		display: inline-block;
+
+		width: 20%;
+
+		vertical-align: top;
+
+		@extend %u-xs-35;
+	}
+	@include element(rating) {
+		display: inline-block;
+
+		width: 70%;
+
+		@extend %u-xs-60;
+	}
+
+	@include element(comments) {
+		width: 100%;
+		padding: $um / 2   $um   $um / 2  $um / 1.5;
+
+		@extend .review-dates;
+		@extend %u-xs-100;
+		@extend %u-xs-65;
+		@extend %u-md-75;
+		@extend %u-lg-75;
+	}
+
+	@include element(addTitle) {
+	    margin-bottom: $um;
+
+	    color: #666;
+
+	    @extend %type-step;
+	}
+
+
+	@include element(footer) {
+		padding: $um / 2;
+
+		background: $color-productReview-footer;
+
+		@extend .modularGrid-module;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+// banner laterales productlist
+%bannerBlue,
+.bannerBlue {
+    background-color: mix($color-accentBlue-dark, white, 70%);
+    background-color: #E5EDF1;
+    //color:white;
+}
+
+@include block(banner) {
+    padding: 0;
+    font-size: 0;
+    @include element(product) {
+        @extend %u-xs-100;
+        display: inline-block;
+        width: 100%;
+        line-height: .9;
+        margin: 0;
+        // padding: $um / 2;
+        padding: 0;
+        vertical-align: top;
+        border: 1px solid $color-shadow;
+        // height: 65px;
+        background: rgba(255, 255, 255, .5);
+       
+        /* @extend %u-sm-50;
+        @extend %u-md-25;*/
+        /*@extend %u-lg-100;*/
+        @include addBreakpoint(xs) {
+            border: none;
+            box-shadow: 0 1px 0 $color-shadow;
+        }
+        @include modifier(borderless) {
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            @include addBreakpoint(xs) {
+                padding: 0;
+            }
+        }
+        &:after{
+            background-color: white;
+            content: "" ;
+            display: block;
+            height: $um / 2;
+            width: 100%;
+
+        }
+        &:last-child{
+
+            &:after{
+                display: none;
+            }
+        }
+    }
+    @include element(img) {
+        @extend %img--responsive;
+    }
+}
+
+@include extendBlock(banner, horizontal) {
+    padding: $um*2 $um * 2 $um / 2;
+    @include element(caption) {
+        @extend %sliderSubtitle;
+        text-shadow: none;
+    }
+    @include element(header) {
+        @extend %sliderText;
+        text-align: left;
+    }
+    @include element(listitem) {
+        text-transform: uppercase;
+        margin-bottom: $um / 2;
+        color: inherit;
+        font-size: $um;        
+        font-weight: 600;
+        text-indent: -0.65em;
+        padding-left: 0.7em;
+        &:before {
+            content: "-";
+            vertical-align: top;
+            line-height: 0.8;
+            //display: inline-block;
+            margin-right: 0.25em;
+        }
+    }
+}
+
+.banner.bannerBlue, .banner.bannerWhite {
+   // color: transparentize(black, 0.3);
+    .banner-header,
+    .banner-caption {
+        color: black;
+        text-shadow: none;
+    }
+    /*.banner-caption {
+        opacity: 0.6;
+    }*/
+}

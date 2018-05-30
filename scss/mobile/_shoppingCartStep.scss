@@ -1,0 +1,145 @@
+@include block(shoppingCartStep) {
+        /*@extend %box;
+        @include element(buttonEdit) {
+            display: none;
+        }
+        @include element(info) {
+            display: none;
+        }
+        @include element(number) {
+            position: relative;
+            top: 2px;
+
+            display: inline-block;
+
+            width: $um / 1.2;
+            height: $um / 1.2;
+            margin-right: $um / 5;
+            margin-left: -3px;
+
+            text-align: center;
+            vertical-align: top;
+
+            color: #fff;
+            border-radius: $um;
+            background: #999;
+
+            font-size: 0.8rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        /*@include element(title) {
+            padding: $um/2 $um;
+
+            color: #999;
+            background: $color-shoppingCart-step-title-background;
+            box-shadow: 0 1px 0 $color-shadow;
+
+            @extend %type-step;
+        }*/
+
+        @include element(content) {
+            display: none;
+            padding: $um;
+            
+        }
+
+       /* @include element(description) {
+            margin-bottom: $um;
+
+            color: #666;
+
+            @extend %type-step;
+        }
+
+        @include element(action) {
+            display: none;
+
+            margin-bottom: $um;
+            // margin-left: $um;
+
+            // @extend %u-lg-30;
+        }*/
+
+
+
+}
+
+/*@include extendBlock(shoppingCartStep, active) {
+    outline: none;
+
+    @include element(title) {
+        color: $color-shoppingCarActive-step-text;
+        background: #fff;
+        box-shadow: 0 1px 0 $color-shadow;
+
+        @extend %type-step;
+    }
+
+    @include element(number) {
+        background: $color-shoppingCarActive-step-number-background;
+    }
+
+    @include element(content) {
+        display: block;
+    }
+
+   @include element(action) {
+        display: block;
+    }
+
+
+    @include element(description) {
+        margin-bottom: $um;
+
+        color: #666;
+
+        @extend %type-step;
+    }
+
+    @include element(info) {
+            display: none;
+            padding: 0 $um $um;
+    }
+
+}
+
+
+
+@include extendBlock(shoppingCartStep, editable) {
+
+    background: #f0f0f0;
+
+    @include element(title) {
+        padding-bottom: 0;
+        background: transparent;
+        box-shadow: none;
+
+        @extend %type-step;
+    }
+
+    @include element(number) {
+        background: #67b02c;
+    }
+
+
+
+    @include element(buttonEdit) {
+        z-index: 5;
+
+        display: inline-block;
+        float: right;
+    }
+
+    @include element(info) {
+            display: block;
+
+            padding: 0 $um $um;
+    }
+
+
+
+}
+*/
+

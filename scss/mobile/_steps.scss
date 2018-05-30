@@ -1,0 +1,30 @@
+@include block(steps) {
+    list-style-type: decimal;
+    counter-reset: li-counter;
+    outline: none;
+    font-size: $um;
+
+    @include element(item) {
+        display: inline-block;
+        position: absolute;
+        visibility: hidden;
+        user-select: none;
+        @include modifier(selected) {
+            position: relative;
+            visibility: visible;
+            user-select: auto;
+        }
+    }
+
+    @include element(number) {
+        &:before {
+            content: counter(li-counter);
+            counter-increment: li-counter;
+        }
+        &:after {
+            display: inline-block;
+            margin-right: 0.1em;
+            content: ".";
+        }
+    }
+}

@@ -1,0 +1,87 @@
+<table class="table table--interactive panelHeader-fixedTableHeader">
+     <colgroup>
+    <col style="width:10%;">
+    <col style="width:18%;">
+    <col style="width:16%;">
+    <col style="width:10%;">
+    <col style="width:15%;">
+    <col style="width:7%;">
+    <col style="width:18%;">
+    
+</colgroup>
+    <thead class="table-thead ">
+        <tr class="table--tr table-tr--sort">
+            <th class="table-th table-item" >Nº Factura
+                {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item" >Fecha
+                {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item">Empresa
+                {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item">CIF
+                {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item">Forma de Pago
+                {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item table-item--number"> Importe
+                {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item">Estado
+                {{>orderingIcon}}
+            </th>
+            <th class="table-th table-item" title="Descargar">Descargar</th>
+        </tr>
+        <tr class="table-tr  table-tr--filters">
+            <th class="table-th table-item table-item--number">
+                <input class="form-input form-input--collapse" type="text">
+            </th>
+            <th class="table-th table-item ">
+                <button data-js-datepicker="icon" class="button button--prefix button--icon u-locked-evts">
+                    <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-calendar"></use></svg>
+                </button>
+                <input data-js-paginador-filtro-field="" data-js-datepicker="input" name="date_add" id="date_add" class="form-input form-input--collapse form-input--prefix" placeholder="01/09/2014 - 15/09/2014">
+            </th>
+            <th class="table-th table-item ">
+                <input class="form-input form-input--collapse" type="text">
+            </th>
+            <th class="table-th table-item">
+                <input class="form-input form-input--collapse" type="text">
+            </th>
+            <th class="table-th table-item">
+                <select name="" id="" class="form-select form-select--collapse">
+                    <option value="">--</option>
+                </select>
+            </th>
+            <th class="table-th table-item table-item--number u-xs-5">
+                <input class="form-input form-input--collapse" type="text">
+            </th>
+            <th class="table-th table-item ">
+
+                <select data-js-paginador-filtro-field="" class="form-select form-select--collapse" id="estado_pedido" name="estado_pedido">
+                    <option value="">--</option>
+                    <option value="2">En proceso</option>
+                    <option value="5">Expedido</option>
+                    <option value="1">Pendiente de pago</option>
+                    <option value="7">Procesado</option>
+                </select>
+            </th>
+            <th class="table-th table-item table-item--number">
+                <label for="checkall" class="form-label form-label--inline form-label--mini">Todas</label>
+                <input type="checkbox" class="form-checkbox ui-after" data-js-checkActions="all" id="checkall">
+            </th>
+        </tr>
+        <tr class="table-tr table-tr--selected">
+            <td colspan="100">
+                <div class="table-actionGroup u-pd--half" data-js-checkActions="actions">
+                    <a href="descarga.zip" target="_blank" class="button button--condensed button--primary">
+                        <svg class="icon u-vm u-mgr--half icon--xs" role="img">
+                            <use xlink:href="../../img/icons/svg-defs.svg#icon-download" ></use>
+                        </svg>Descargar seleccionadas</a>
+                    </div>
+                </td>
+            </tr>
+        </thead>
+    </table>

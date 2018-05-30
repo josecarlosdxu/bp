@@ -1,0 +1,14 @@
+<section class="content content--dark{{#if topclass}} {{topclass}}{{/if}}">
+    <div class="featuredList">
+        <a href="#" class="title">Destacados b2b<span class="title-viewMore">Ver todo</span></a>
+         <div class="featuredList-container u-mgv--half">
+            {{> productList productList.featuredList}}
+        </div>
+        <button class="featuredList-btn" data-js-anchor="featuredList-btnminus">
+            {{>svgIcon type='chevronMobileLeft' size='sm'}}
+        </button>
+        <button class="featuredList-btn" data-js-anchor="featuredList-btnplus">
+            {{>svgIcon type='chevronMobileRight' size='sm'}}
+        </button>
+    </div>
+</section>

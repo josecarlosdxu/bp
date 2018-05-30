@@ -1,0 +1,45 @@
+<div class="modularGrid-module">
+  <h3 class="title">LISTADO DE CONSULTAS</h3>
+</div>
+<div class="modularGrid-module u-pdb">
+
+
+
+        <div class="modularGrid box u-pdb--half">
+
+            <div class="modularGrid-module u-pdt u-pdr u-pdl u-pdb--half u-md-30">
+                <label class="form-label" for="buscar">Buscar</label>
+                <input type="text" class="form-input" >
+            </div>
+
+            <div class="modularGrid-module u-pdt u-pdr u-pdl u-pdb--half u-md-70">
+                <label class="form-label" for="filtrar">Filtrar</label>
+                <div class="modularGrid u-pdb--half">
+                    <div class="modularGrid-module">
+                        <input type="checkbox" class="form-checkbox" id="encurso" name="encurso">
+                        <label class="form-label--inline u-mgr--half span-warning" for="encurso">En curso</label>
+
+                         <input type="checkbox" class="form-checkbox" id="responda">
+                        <label class="form-label--inline u-mgr--half span-success" for="responda">Responda</label>
+                                  
+                         <input type="checkbox" class="form-checkbox" id="cerrado">
+                        <label class="form-label--inline u-mgr--half" for="cerrado">Cerrado</label>
+                    </div>
+                </div>
+            </div>
+
+             <div class="modularGrid-module">
+            {{>tableTicketsList2 ticketsTableRows2}}
+            </div>
+
+        </div>
+
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+

@@ -1,0 +1,65 @@
+  <div class="modularGrid u-pd">
+<div class="modularGrid-module box u-pd">
+        <label class="form-label">Referencia del producto afectado</label>
+        <input class="form-input">
+		
+		<div class="modularGrid-module u-xxs-30 u-xs-30 u-sm-20 u-md-25 u-pdt--half" data-js-buy-unitcontrol="unitcontrol">                           
+	        <label class="form-label">Nº Uds</label>
+	        <input type="text" min="1" value="2" max="5999960" class="form-input form-input--number">
+        </div>
+		<div class="modularGrid">
+		    <div class="modularGrid-module">
+		        <label class="form-label u-mgb--half">Fotografías de la unidad 1</label>
+		    </div>
+		    <div class="modularGrid u-brb u-pdb--half u-mgb--half">
+		        <div class="modularGrid-module u-xs-50">
+		            
+		        </div>
+		         <div class="modularGrid-module u-xs-50 u-txr">
+		            <button class="button"> 
+		                <svg class="icon icon--inline icon--sm" role="img"> 
+		                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+		                </svg>
+		                Adjuntar
+		            </button>
+		        </div>
+		    </div>  
+		    <div class="modularGrid-module">
+		        <label class="form-label u-mgb--half">Fotografías de la unidad 2</label>
+		    </div>
+		    <div class="modularGrid u-brb u-pdb--half u-mgb--half">
+		        <div class="modularGrid-module u-xs-50">
+		            
+		        </div>
+		         <div class="modularGrid-module u-xs-50 u-txr">
+		            <button class="button"> 
+		                <svg class="icon icon--inline icon--sm" role="img"> 
+		                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+		                </svg>
+		                Adjuntar
+		            </button>
+		        </div>
+		    </div>  
+
+	    </div>
+	    <div class="modularGrid-module u-mgt--half">
+	     <button class="button button--full" name="submit">+ Añadir producto</button>
+	    </div>
+ </div>
+	    <div class="modularGrid u-pdt">
+    		<div class="responsiveTable-container">
+		        <table class="table">		
+		            <tbody class="tbody table-tbody--stripped">
+		                {{#times 3}}
+		                {{>ticketsProductTableRow}}
+		                {{/times}}
+
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+
+   <div class="modularGrid-module u-mgt--half">
+     <button class="button button--primary u-mgt--half" name="submit">Continuar</button>
+    </div>
+ </div>

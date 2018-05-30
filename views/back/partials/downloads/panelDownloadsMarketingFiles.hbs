@@ -1,0 +1,62 @@
+<form class="panel-section">
+
+    <div class="modularGrid u-pdt u-pdl">
+        <div class="modularGrid-module u-lg-60">
+            
+        
+
+       {{#each list}}
+
+       {{#if_eq @index 3}} 
+       {{else}}    
+
+            <div class="modularGrid-module u-xs-30 u-pdr">
+               <label for="{{name}}_id" class="form-label">{{{title}}}</label>
+                <select name="{{name}}" id="{{name}}_id" class="form-select">
+                    {{#each options}}  
+                       <option value="{{val}}">{{text}}</option>
+                    {{/each}} 
+                </select>     
+            </div>
+
+            {{/if_eq}}
+
+        {{/each}}  
+        </div>
+        <div class="modularGrid-module u-lg-40 u-pdr">
+            <div class="msgBox msgBox--info u-mgb u-pd--half"> Seleccione los banners que desea, y clique el botón “Descargar”</div>
+            <button class="button button--big button--primary">Descargar</button>
+
+        </div>
+
+    </div>
+
+    <div class="u-pdl u-pdb">
+    
+    {{>panelDownloadsBanner1250_768}}
+    {{>panelDownloadsBanner155_100}}
+    {{>panelDownloadsBanner355_150}}
+    </div>
+     <div class="modularGrid-module  u-pdh u-tar u-mgb2">           
+            <button class="button button--big button--primary">Descargar</button>
+
+        </div>
+
+   {{!--  downloadsBanners.json
+    <div class="featuredList">
+       
+         <div class="featuredList-container u-mgv--half">
+            {{> productList productList.featuredList}}
+        </div>
+        <button class="featuredList-btn" data-js-anchor="featuredList-btnminus">
+            {{>svgIcon type='chevronMobileLeft' size='sm'}}
+        </button>
+        <button class="featuredList-btn" data-js-anchor="featuredList-btnplus">
+            {{>svgIcon type='chevronMobileRight' size='sm'}}
+        </button>
+    </div>
+       {{#times 20}}
+        {{>panelDownloadsBanner}}
+        {{/times}} --}}
+   
+</form>

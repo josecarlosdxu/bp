@@ -1,0 +1,51 @@
+ {
+     "date1": "rgrtt",
+     "test": [{
+             "date": "21/03/2016 08:36",
+             "ref": "201504568",
+             "department": "Soporte técnico",
+             "subject": "Tienda Dropshipping",
+             "state": "Responda",
+             "class": "success",
+             "buttonMsg": "Responder",
+             "btnSvg": "undo"
+         }, {
+             "date": "21/03/2016 08:36",
+             "ref": "201504568",
+             "department": "Soporte técnico",
+             "subject": "Tienda Dropshipping",
+             "state": "En curso",
+             "class": "warning",
+             "buttonMsg": "Editar",
+             "btnSvg": "pencil"
+         }
+         , {
+             "date": "21/03/2016 08:35",
+             "ref": "201504567",
+             "department": "Comercial y atención distribuidores",
+             "subject": "API",
+             "state": "Cerrado",
+
+             "buttonMsg": "Reabrir",
+             "btnSvg": "refresh"
+         }, {
+             "date": "21/03/2016 08:33",
+             "ref": "201504565",
+             "department": "Atención al cliente y posventa",
+             "subject": "Reintegro pendiente",
+             "state": "En curso",
+             "class": "warning",
+             "buttonMsg": "Editar",
+             "btnSvg": "pencil"
+         }, {
+             "date": "21/03/2016 08:32",
+             "ref": "201504564",
+             "department": "Logística y pedidos",
+             "subject": "Web BigBuy",
+             "class": "warning",
+             "state": "En curso",
+             "buttonMsg": "Editar",
+             "btnSvg": "pencil"
+         }
+     ]
+ }

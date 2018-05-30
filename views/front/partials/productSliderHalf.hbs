@@ -1,0 +1,26 @@
+<div class="productSlider productSlider">
+	<h3 class="productSlider-title productSlider-title--topsales">
+        Top Ventas
+        <a href="#" title="Ver todas" class="productSlider-more">Ver todas</a>
+        <a href="#" class="productSlider-category">Top Hogar & Limpieza</a>
+        <a href="#" class="productSlider-category">Top Cocina Gourmet</a>
+        <a href="#" class="productSlider-category">Top Electrónica</a>
+        <a href="#" class="productSlider-chevron">
+            <svg role="img" class="icon icon--inline icon--md productSlider-chevron--left" src="">
+                <use xlink:href="../../img/icons/svg-defs.svg#icon-chevronMobileLeft"/>
+            </svg>
+        </a>
+        <a href="#" title="Ver todos" class="productSlider-chevron">
+            <svg role="img" class="icon icon--inline icon--md productSlider-chevron--rigth" src="">
+                <use xlink:href="../../img/icons/svg-defs.svg#icon-chevronMobileRight"/>
+            </svg>
+        </a>
+    </h3>
+    <div class="productSlider-slider js_slider">
+      <ul>
+         <li class="productSlider-item"> {{> productList productList.slides3 }} </li>
+         <li class="productSlider-item"> {{> productList productList.slides4}} </li>
+         <li class="productSlider-item"> {{> productList productList.slides3 }} </li>
+     </ul>
+ </div>
+</div>

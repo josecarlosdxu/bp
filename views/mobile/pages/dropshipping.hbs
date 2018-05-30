@@ -1,0 +1,33 @@
+---
+title: Dropshipping
+breadcrumbs: Dropshipping 
+layout: mobile/layouts/clean.hbs
+---
+<div class="modularGrid modularGrid--boxed u-pdb">
+  <div class="box">
+    {{>headerDropshipping}}
+  <div class="modularGrid-module u-pdb">
+        {{> mobileFeaturesList mobileFeaturesList.dropshippingFeatures}}
+</div>
+    <div class="modularGrid-module  u-brdt  u-brb">
+      <aside class="mobileCMS-section  mobileCMS-section--colorized ">
+    {{!--  <a href="../../img/mobileIcons/fullWidth.svg" class="button button--condensed button--tinyIcon button--borderless u-flr">
+          <img class="icon icon--md" alt="" src="../../img/mobileIcons/fullWidth.svg">
+        </a>  --}}
+      <h4 class="mobileCMS-sectionTitle">
+        ¿Cómo funciona la tienda Dropshipping?
+
+      </h4>
+      <div class="modularGrid-module">
+              <a href="../../img/dropshipping_big.png">
+              <img class="img--responsive u-elem-center u-md-80 u-mgt" alt="" src="../../img/dropshipping_big.png">
+            </a>
+            <a href="../../img/dropshipping_big.png" class="button button-fullWidth u-flr">
+            </a>
+      </div>
+    </aside>
+    </div>
+    {{> mobileFeaturesList mobileFeaturesList.footerFeatures}}
+    {{>helpCenter helpAccordion.dropshipping}}
+  </div>
+</div>

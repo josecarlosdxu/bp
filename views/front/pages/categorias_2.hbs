@@ -1,0 +1,63 @@
+---
+title: Categorias
+layout: front/layouts/search_layout.hbs
+breadcrumblist:
+- Inicio
+- Moda y complementos
+- Ropa y calzado
+---
+{{>breadcrumb}}
+<div class="modularGrid-module u-xs-25 u-pdb u-pdr">
+	<ul class="menuList">
+		{{> menuList menuList1.list }}
+		{{> menuList menuList2.list }}
+		{{> menuList menuList3.list }}
+		{{> menuList menuList4.list }}
+		{{> menuList menuList5.list }}
+		{{> menuList menuList6.list }}
+		{{> menuList menuList7.list }}
+		{{> menuList menuList8.list }}
+		{{> menuList menuList9.list }}
+	</ul>
+	{{>menuListTags}}
+	{{>menuListDescription menuList7.list}}
+</div>
+<div class="modularGrid-module u-xs-75 u-pdb u-mgb">
+	<section class="categoryList">
+		{{> cardList cardList2.top }}
+		{{> cardList cardList2.wear }}
+	</section>
+	<div class="modularGrid">
+		<div class="modularGrid-module u-xs-65">
+			<h2 class="subtitle2" data-js-numproducts="">57 productos en <span class="u-upp">ropa y calzado</span></h2>
+		</div>
+		<div class="modularGrid-module u-xs-35  u-tar">
+			{{>orderFilter}}
+		</div>
+	</div>
+	<div class="modularGrid">
+		<div class="modularGrid-module u-pdt--half">
+			<section class="filter-list">
+				<label class="filter-bodyLabel" for="" data-js-filter="label" data-active="false"></label>
+				{{!--<p class="form-label form-label--inline"><strong>Filtrar por:</strong></p>--}}
+				{{>rangeFilter  filters.prices}}
+				<!-- {{!-- {{>selectFilter filters.color}} --}} -->
+				{{>selectFilter filters.available}}
+				{{>selectFilter filters.categories}}
+				{{>selectFilter filters.video}}
+				{{>selectFilter filters.featuredB2b}}
+				{{>selectFilterBrands filters.brands}}
+				{{>selectFilterTags filters.tags}}
+			</section>
+		</div>
+		<input type="checkbox" name="selectedFilterList-checkbox"  id="selectedFilterList-checkbox" class="selectedFilterList-inputToggle">
+		<div class="selectedFilterList" data-js-filter="added" style="">
+			<h4 class="subtitle3 subtitle3--inline u-pdr--half">Tus filtros: <span class="subtitle3-number"><!--(106)--></span></h4>
+			<label for="selectedFilterList-checkbox" class="selectedFilterList-downBtn"></label>
+			<button class="button button--tags">Eliminar filtros</button>
+			{{>addedFilter name='Precio desde 0 €' }}{{>addedFilter name='Precio hasta 250 €' }}{{>addedFilter name='Disponibles' }}{{>addedFilter name='Hogar | Jardín'}}{{>addedFilter name='Cocina | Gourmet'}}{{>addedFilter name='Deportes | Fitness'}}{{>addedFilter name='Salud | Belleza'}}{{>addedFilter name='Perfumería | Cosmética'}}{{>addedFilter name='Moda | Complementos'}}{{>addedFilter name='Juguetes | Bebés'}}{{>addedFilter name='Informática | Electrónica'}}{{>addedFilter name='Regalos Originales'}}{{>addedFilter name='Teletienda | Anunciado en TV'}}{{>addedFilter name='Outlet | Ofertas'}}       
+		</div>
+		{{> productList productListFullpage.fullpage}}
+		{{>pagination}} 
+	</div>
+</div>

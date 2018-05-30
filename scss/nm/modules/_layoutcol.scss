@@ -1,0 +1,29 @@
+@include block(layoutcol) {
+
+
+    @include modifier(col4) {
+
+        column-width: 250px;
+        column-gap: 20px;
+       
+    }
+}
+
+[class*="layoutcol"] {
+    position: relative;
+
+    div,
+    p,
+    ul,
+    ol {
+
+
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        vertical-align: top;
+        overflow: hidden;       
+        display: inline-block;
+       
+    }
+}

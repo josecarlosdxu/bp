@@ -1,0 +1,70 @@
+
+<section class="u-pdh noborder u-pdt2"> 
+
+	<div class="modularGrid">
+		<div class="modularGrid-module">
+			<h4 class="subtitle6" >¿En que soluciones de BigBuy está interesado?</h4>
+
+			{{>accountTabTable}}
+
+			<h4 class="subtitle6 u-mgt2">¿Dispone de tienda online?</h4>						
+			<div class="u-flex--center u-pdt--half u-pdh--half u-flwrap">
+				<input type="radio" class="form-radio form-radio--inline" name="site" id="siteok" data-check="input" required>
+				<label class="form-label u-mgb--0 u-pdr" for="siteok">Sí</label>
+				<input class="form-input u-mgb--0 u-xxs-75 u-sm-80 u-lg-40" placeholder="https://www.mydomain.com"  type="text"  tabindex="-1" data-check="elem">
+			</div>			
+			<div class="u-flex--center u-pdt--four u-pdh--half">			
+				<input type="radio" class="form-radio form-radio--inline" name="site" id="siteko" >
+				<label class="form-label u-mgb--0 " for="siteko">No</label>
+			</div>
+			<div class="u-flex--center {{#if mobile}}u-mgt--half{{else}}u-mgt--6th{{/if}} u-pd--half">			
+				<input type="radio" class="form-radio form-radio--inline" name="site" id="sitecons">
+				<label class="form-label u-mgb--0" for="sitecons">En construcción</label>
+			</div>
+			<p class="subtitle6 u-pdv">Por favor, indíquenos la máxima información posible sobre usted, su empresa actual y su futuro proyecto. En función de lo que nos cuente, podremos activarle unas condiciones u otras.</p>
+			<textarea name="comments" id="" cols="30"  class="form-textarea" required></textarea>
+			<p class="subtitle6 u-mgt2">En el caso de que necesitáramos contactar con usted para darle un servicio más personalizado, ¿cómo prefiere que lo hagamos?</p>						
+			<div class="u-flex--center u-pdt--half u-pdh--half u-flwrap">
+				<input type="radio" class="form-radio form-radio--inline" name="contactuser" id="contactphone" data-check="input">
+				<label class="form-label u-mgb--0 u-pdr--half" for="contactphone">Teléfono</label>
+				{{>timeRange}}	
+			</div>
+			<div class="u-flex--center u-pdt--four u-pdh--half">
+			    <input type="radio" class="form-radio form-radio--inline" name="contactuser" id="contactmail" required>
+				<label class="form-label u-mgb--0 u-pdr--half" for="contactmail">Email</label>
+			</div>			
+			<div class="u-flex--center	u-pdt--four u-pdh--half u-flwrap">	
+				<input type="radio" class="form-radio form-radio--inline" name="contactuser" id="contactboth" data-check="input">
+				<label class="form-label u-mgb--0 u-pdr--half" for="contactboth">Ambos</label>
+				{{>timeRange}}				
+			</div>
+
+
+			<p class="subtitle6 u-mgt2">¿Qué pone en la imagen?</p>
+			<div class="modularGrid u-pdv">
+				<div class="modularGrid-module u-md-30 ">
+					 <img alt="" class="form-captcha-image " id="img_captcha" src="http://192.168.1.211/bigbuy_e/tools/captcha/captcha.php?ancho=175&amp;alto=65&amp;nocache=">
+				    
+				</div>
+				<div class="modularGrid-module u-md-40 u-pdl">
+					 <input type="text" tabindex="6" data-js-validate="{'empty':'required'}" data-js-captcha="" class="form-input" name="captcha" data-js-forget_passwd_content="captcha" required pattern="[0-9][0-9][0-9][0-9][0-9]"> 
+					<em data-js-tooltip="tooltip_captcha" class="form-info u-flex--center"> {{>svgIcon type='info'}} ¿Para qué sirve este código?</em>
+				    
+				</div>
+				<div class="modularGrid-module u-md-30 u-pd--half">
+				 <a class="link form-captcha-reload u-flex--center" onclick="$(this).parent().find('img:first').prop('src','http://192.168.1.211/bigbuy_e/tools/captcha/captcha.php?ancho=175&amp;alto=65&amp;nocache='+Math.random());" href="javascript:void(0);">
+				 	{{>svgIcon type='autorenew'}} Recargar imagen</a>
+                 </div>	
+			</div>
+		</div>	
+		<div class="modularGrid-module u-flwrap">
+			<input type="checkbox" class="form-checkbox form-checkbox--inline" data-depid="accountCreateSubmit"><label for="" class="form-label form-label--inline u-xs-85 u-mgl--min"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit provident Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <a href="" class="link">Ut enim ad minim veniam</a>
+			</label>
+		</div>	
+		<div class="modularGrid-module u-pdv">
+			<input type="text" class="u-hide" name="ajax" required  data-js-preventsubmit=""> 			
+			<button class="button button--big" data-js-step="bw">Volver</button> 
+			<button class="button button--big button--primary u-mgl--3" data-js-validate-form  id="accountCreateSubmit" disabled>Enviar</button>
+		</div>
+	</div> 
+</section>

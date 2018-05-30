@@ -1,0 +1,70 @@
+<section class="content content--light ">
+
+<div class="modularGrid modularGrid--boxed u-pdv2 u-brb u-mgb{{#if this.mobile}} u-pdh{{/if}}">
+
+<h2 class="supertitle u-pdv--half">{{supertitle}}</h2>
+<h3 class="ventaCMS-prominentText u-pdv--half">{{supersubtitle}}</h3>
+
+</div>
+
+	<div class="modularGrid modularGrid--boxed u-pdv2 u-flex--between u-flwrap">
+
+		<div class="modularGrid-module u-md-50 u-pd">
+			<h3 class="title title--huge">{{title}}</h3>
+			<p class="subtitle6 u-pdt--half">{{subtitle}}</p>
+			{{#each points}}
+			<div class="u-pd u-pdb0">
+
+              <h4 class="subtitle5 u-mgb--half u-mgt">{{title}}{{#if em}} <em class="subtitle u-inline"><small class="u-op-70">{{em}}</small></em>{{/if}}</h4>
+
+              {{#each list}}
+              <div class=" ">
+
+              <p class="subtitle6 u-op-70 u-mgt">{{title}}</p>
+
+              {{#if items}}
+              <ul class="list list--checklist list--bigsize">
+
+              {{#each items}}
+
+              <li class="list-item">
+              {{>svgIcon type='done' size='sm' class='icon--success list-icon'}}
+
+
+              {{text}}
+
+
+
+              </li>
+
+
+              {{/each}}
+              </ul>
+              {{/if}}
+
+
+              </div>
+              {{/each}}
+
+
+
+
+
+            </div>
+			{{/each}}
+
+
+		</div>
+		<div class="modularGrid-module u-md-50 u-pdh">
+			<img src="../../img/multichannel1.png" alt="" class="u-mgv2 img--responsive">
+			<br></br>
+			<img src="../../img/multichannel1_b.png" alt="" class="u-mgv2 img--responsive">
+	
+		</div>
+			
+
+	</div>
+
+</section>
+
+

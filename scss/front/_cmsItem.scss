@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@include block(cmsItem) {
+    font-size: 1rem;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 100%;
+    position: relative;
+    @include element(list) {
+        display: table;
+    }
+    @include element(image) {
+        @extend %img--responsive;
+        @extend %u-xs-50;
+        margin-left: 10%;
+    }
+    @include element(groupText) {
+        @extend %u-xs-80;
+         @include modifier(porcen) {
+            @extend %u-xs-90;
+        }
+    }
+    @include element(text) {
+        @extend %ventaCMS-sectionText;
+        display: inline-block;
+        @extend %u-lg-80;
+        @include modifier(porcen) {
+            vertical-align: top;
+            margin-top: 0.50rem;
+        }
+
+    }
+    @include element(number) {
+        display: inline-block;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        min-width: 2rem;
+        text-align: center;
+        margin-right: $um / 2;
+    }
+    @include element(arrow) {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    @include element(arrowImg) {
+        display: inline-block;
+        top: 2rem;
+    }
+    &:first-child {}
+}
+
+

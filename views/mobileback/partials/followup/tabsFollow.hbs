@@ -1,0 +1,30 @@
+
+<nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs">
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Seguimiento de stock</h4>
+        </header>
+        <button class="mobileTabs-titleTabs--search mobileTabs-itemContent--searchShow" data-js-ticket-action="searchTickets">
+            <svg role="img" class="" >
+                <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-search"></use>
+            </svg>
+        </button>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+
+            {{>followTable1}}
+
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Información</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>infoTabsFollow}}
+                </div>
+            </div>
+        </section>
+    </article>
+</nav>

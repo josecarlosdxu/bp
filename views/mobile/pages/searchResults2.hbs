@@ -1,0 +1,74 @@
+---
+title: Jardín y terraza
+breadcrumbs: Jardín y terraza
+layout: mobile/layouts/clean.hbs
+---
+{{!-- {{>pageHeaderTitle title='Jardín y terraza' back='true'}} --}}
+<div class="modularGrid modularGrid--boxed">
+    <div class="modularGrid-module mobileContent u-pd--half ">
+        <div class="modularGrid">
+
+           <div class="modularGrid-module">
+                <h3 class="mobileText-subtitle u-pdb--half">57 <small>productos encontrados</small></h3>
+           </div>
+
+           <div class="modularGrid">
+
+            <div class="modularGrid-module u-md-50 u-pd--half">
+              <label class="form-label form-label--inline">Filtrar por</label>
+              <button class="button button--blackf button--native">Black Friday</button>
+                
+            </div>
+
+
+                <div class="modularGrid-module u-md-50 u-pd--half">
+
+
+                  <div class="modularGrid">
+
+                    <div class="modularGrid-module u-xs-50 u-pdr">
+                      <fieldset class="form-fieldset "> 
+                      <select data-js-filter="order" class="form-select" id="filter-sort" name="filter-sort" placeholder="Ordenar por">
+                        <option value="0" disabled selected>Ordenar por</option>
+                        <option value="1">Más recientes primero</option>
+                        <option value="2">Top ventas</option>
+                        <option value="3">Precio</option>
+                        <option value="4">Nombre</option>
+                      </select>
+                    </fieldset>
+                        
+                    </div>
+
+                    <div class="modularGrid-module u-xs-50">
+                       <form action="filters.html" >
+                    <button class="button button--primary button--full button--native" type="submit" >Filtrar 
+                      {{>svgIcon type='filter' class='u-op-50' size='xxs'}}
+                    </button>
+                    </form>
+                        
+                    </div>
+
+
+
+                      
+                  </div>
+
+
+                   
+              
+                   
+                </div>
+
+            </div>
+
+
+        </div>   
+        {{> productList productList.relatedMobile}}
+       
+        <div class="modularGrid u-pd--half u-op-50">
+            <div class="modularGrid-module">
+                {{>menuListDescription menuList7.list}}
+            </div>
+        </div>
+    </div>   
+</div>

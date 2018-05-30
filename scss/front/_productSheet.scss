@@ -1,0 +1,577 @@
+$white50: transparentize(white, 0.5);
+@include block(productSheet) {
+    @extend %box;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    @include element(markedRow) {
+        background-color: #eff8ff;
+        border-left: 1px solid #A9E1FF;
+        border-right: 1px solid #A9E1FF;
+        @include modifier(last) {
+            border-bottom: 1px solid #A9E1FF;
+        }
+    }
+
+    @include element(bigIcon) {
+
+        padding: 0 $um $um;
+        margin: 0;
+        color: $color-shadow;
+
+        display: block;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+
+
+
+        @include modifier(gift) {
+            padding-bottom: 0;
+        }
+    }
+    @include element(attributesCont) {
+
+
+        display: block;
+        height: 100%;
+        position: relative;
+    }
+    @include element(attributes) {
+        display: block; //vertical-align: middle;
+        height: 100%;
+        padding: 0 $um;
+    }
+    @include element(info) {
+        position: relative;
+        z-index: 1;
+        display: block;
+        overflow: visible;
+        margin: $um / 4 0 $um / 2;
+        font-size: 0.8rem;
+        line-height: 1.2;
+        color: inherit;
+    } // @include element(nextEntry) {
+    //     position: relative;
+    //     font-size: 11px;
+    //     margin-left: 1.2rem;
+    //     line-height: 1.6;
+    //     color: #9A9A9B;
+    //     &:before {
+    //         content:"";
+    //         display:block;
+    //         position:absolute;
+    //         left:5px;
+    //         width:1px;
+    //         height:9px;
+    //         background: gainsboro;
+    //     }
+    //     &:after {
+    //         content:"";
+    //         display:block;
+    //         position:absolute;
+    //         left:5px;
+    //         width:5px;
+    //         height:1px;
+    //         background: gainsboro;
+    //     }
+    // }
+    @include element(details) {
+        overflow: hidden;
+        box-shadow: 1px 0 0 #e5e5e5 inset;
+        width: 75%;
+        width: calc(100% - 250px);
+        max-width: calc(100% - 250px);
+       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include addBreakpoint(xl) {
+             max-width: calc(100% - 300px);
+            
+        }
+    }
+    @include element(ribbon) {
+        background: #f90;
+        color: #fff;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
+        font-size: 0.9rem;
+        left: -34px;
+        letter-spacing: 0.1px;
+        padding: 0.4rem 3rem;
+        position: absolute;
+        text-transform: uppercase;
+        top: 17px;
+        z-index: 1;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+        max-width: 140px;
+        line-height: 1rem;
+        text-align: center;
+        @include modifier(blackFriday) {
+            align-items: center;
+            background: black;
+            border: medium none;
+            box-shadow: 0 1px white;
+            color: #ffffff;
+            display: flex;
+            height: 2.8rem;
+            left: -3px;
+            line-height: 1.1;
+            padding: 0 0 0.2rem;
+            text-align: center;
+            vertical-align: top;
+            width: 6rem;
+        }
+    }
+
+
+
+    .productSheet-ribbon--blackFriday {
+        align-items: center;
+        background: black;
+        border: medium none;
+        /* box-shadow: 0 0 0 1px black,-3rem 0 0 1px black,3rem 0 0 1px black,-3rem -0.5px 0 3px #ffffff80,3rem -0.5px 0 3px #ffffff80; */
+        color: white;
+        display: flex;
+        height: 2.8rem;
+        left: -39px;
+        line-height: 1.1;
+        padding: 0 3rem;
+        text-align: center;
+        vertical-align: top;
+        width: 14rem;
+    }
+    .productSheet-ribbon--hot {
+        align-items: center;
+        background: #e00000;
+        border: medium none;
+        /* box-shadow: 0 0 0 1px black,-3rem 0 0 1px black,3rem 0 0 1px black,-3rem -0.5px 0 3px #ffffff80,3rem -0.5px 0 3px #ffffff80; */
+        color: white;
+        display: flex;
+        height: 2.8rem;
+        left: -39px;
+        line-height: 1.1;
+        padding: 0 3rem;
+        justify-content: center;
+        vertical-align: top;
+        width: 14rem;
+        font-size: 1rem;
+    }
+
+
+
+    @include element(header) {}
+    @include element(title) {
+        @extend %type-titlecms;
+        padding: 1.2rem $um 0;
+        font-size: 1.5rem;
+        min-height: 4.2rem;
+        @include addBreakpoint(md) {
+            border-top: none;
+        }
+    }
+    @include element(shortDescription) {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        font-weight: 300;
+        color: #888;
+        padding: 1.2rem 0 0.75rem;
+        @include modifier(main) {
+            padding: 0.5rem $um 0;
+            min-height: 2.99rem;
+            line-height: 1.2;
+        }
+    }
+    @include element(advantages) {
+        padding: 0 0 0.75rem; //text-align: center;
+        cursor: default;
+        color: #999;
+        box-shadow: inset 0 -1px 0 $color-shadow;
+        display: flex;
+        justify-content: space-around;
+        @include element(description) {
+            display: inline-block;
+            margin-top: 0.7rem;
+            text-transform: uppercase;
+            background: #fff;
+            font-size: 0.8rem;
+            line-height: 1; //max-width: 120px;
+            margin-left: 2px;
+            text-align: left;
+        }
+        @include element(icon) {
+            display: inline-block;
+            float: left;
+            width: 2.3rem;
+            margin-left: $um;
+            font-size: 1.8rem;
+            line-height: $um * 2;
+        }
+    }
+    @include element(advantagesItem) {
+        //@extend %u-sm-3rd;
+        /*text-align: left;
+display: inline-block;
+//padding-left: $um;
+vertical-align: top;
+margin: 0 2.5rem;*/
+        display: inline-flex;
+    }
+    @include element(discountTable) {
+        font-weight: 300;
+        padding: 0.75rem 2.5rem 1rem;
+        padding: 0.75rem 2.5rem 0.35rem;
+        @include modifier(volume) {
+            color: #aaa;
+        }
+        @include modifier(wholesaler) {
+            color: #e4a428;
+        }
+        @include modifier(automatic) {
+            color: #aaa;
+        }
+        .table-caption {
+            padding-top: 0.4rem;
+        }
+    }
+
+    @include element(features) {
+        width: 65%;
+        display: inline-block;
+        font-size: 0;
+        vertical-align: top;
+    }
+    @include element(options) {
+
+        width: 35%;
+        display: inline-flex;
+        font-size: 0;
+        vertical-align: top; //height: 100%; //display: flex;
+        padding: 1rem 0 $um / 2 0;
+        border-top: 1px solid $color-shadow;
+        border-left: none;
+        background: $color-productSheet-options-background;
+        min-height: 420px;
+        color: #666;
+        overflow: hidden;
+        box-shadow: 0 6rem $color-productSheet-options-background;
+        position: relative;
+
+
+
+
+
+
+
+        @include addBreakpoint(sm) {
+            border-top: none;
+            border-left: 1px solid $color-shadow;
+        }
+        /*@include modifier(simple) {
+        min-height: 412px;
+        max-height: 412px;
+    }*/
+        >form {
+
+            height: 100%;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        >form>.form-fieldset--borderless {
+            width: 100%;
+            /*height: 100%;
+            display: table;
+            width: 100%;*/
+            //outline: 1px solid red;
+            /*display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;*/
+        }
+    }
+    @include element(stockCheck) {
+        color: #67b02c;
+        border-top: 1px solid $color-shadow;
+    }
+    @include element(discountBadge) {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        padding: 0 $um;
+        margin: $um / 2 0 -2rem;
+        /*transition: 0.5s linear all;
+-webkit-animation-duration: 300ms;
+-moz-animation-duration: 300ms;
+-o-animation-duration: 300ms;
+animation-duration: 300ms;
+
+border: 1px solid $color-shadow;
+/*
+border-radius: 2px;
+background-color: #5c5c5c;
+background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.5));
+box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+*/
+        /*border-radius: 3px;
+background-color: $color-brandYellow-default;*/
+        /*&.ng-enter,&.ng-leave-active {
+opacity: 0.5;
+}
+&.ng-leave,&.ng-enter-active {
+opacity: 0.8;
+}*/
+    }
+    @include element(pvp0) {
+        text-align: right;
+        background: #ffe600;
+        padding: $um 1rem 1.25rem;
+    }
+    @include element(pvp1) {
+        text-align: right;
+        background: #ffe600;
+        padding: $um 1rem 0.25rem;
+        min-height: 6rem;
+    }
+    @include element(pvp2) {
+        position: relative;
+        color: #666;
+    }
+    @include element(pvp3) {
+        text-align: center;
+        background: #4a5054;
+        min-height: 6rem;
+    }
+    @include element(pvp1Title) {
+        font-size: 1.2em;
+        color: #333;
+        position: relative;
+        top: -4px;
+        margin-right: .5rem;
+    }
+    @include element(pvp2Title) {}
+    @include element(pvp3Title) {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FFF;
+        position: relative;
+        top: 1px;
+    }
+    @include element(pvp1Val) {
+        font-size: 2.25rem;
+        color: #000;
+    }
+    @include element(pvp2Val) {
+        text-decoration: line-through;
+    }
+    @include element(pvp3Val) {
+        font-size: $um;
+        color: #fff;
+        line-height: 4;
+        position: relative;
+        font-weight: 700;
+    }
+    @include element(minisocial) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        >div:nth-child(2n) {
+            max-width: calc(60% - 70px);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        >div:nth-child(3n) {
+            max-width: calc(40% - 70px);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .at-icon-wrapper {
+            display: none;
+        }
+    }
+    @include element(dimensions) {
+        //padding: $um 0 0;
+        display: flex;
+        flex-wrap: wrap; //margin: 0 $um;
+        margin: 0 $um / 2 0 $um;
+        border-bottom: 1px solid $color-shadow;
+    }
+    @include element(bbcode) {
+        padding-left: 1.5rem;
+        font-size: 0.9rem;
+    }
+    @include element(dimensionItem) {
+        display: flex;
+        width: 50%;
+        color: #999;
+        outline: none;
+        margin: 0;
+        line-height: 1.1;
+        padding: 0.75rem 0.5rem 0.5rem 0;
+        /* @include modifier(code) {
+margin: 1.4rem auto 0;
+}*/
+    }
+    @include element(dimensionDt) {
+        display: block;
+        font-size: 0.8rem;
+    }
+    @include element(dimensionDd) {
+        font-size: 0.8rem;
+    }
+    @include element(barcode) {
+        font-size: 0;
+        width: 21px;
+        height: 16px;
+        background: url('../img/barcode.png') no-repeat;
+        display: block;
+        margin: 0 0.5rem 0 0;
+        opacity: 0.5;
+    }
+    @include element(bbcode) {
+        font-size: 0;
+        width: 21px;
+        height: 16px;
+        margin: 0 auto;
+        background: url('../img/bbcode.png') no-repeat;
+        display: block;
+        margin: 0 0.5rem 0 0;
+        opacity: 0.5;
+    }
+    @include element(subCaption) {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    @include element(wholesaler) {}
+    @include element(user) {
+        .productSheet-dimensions {
+            padding-top: 1.15rem;
+            box-shadow: -1px 0 #e5e5e5 inset;
+        }
+        .productSheet-dimensionItem {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@include extendElement(productSheet,
+discountTable,
+special) {
+    //outline: 1px solid red;
+    // border-right: 1px solid #e2e2e2;
+    // border-left: 1px solid #e2e2e2;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    width: calc( 100% + 2px);
+    right: 1px;
+    z-index: 1;
+    .table {
+        border: 10px solid white;
+        box-shadow: -1px 1px 0 1px #ffe600, 1px 1px 0 1px #ffe600; // outline: 1px solid;
+    }
+    .table-caption {
+        line-height: 1.2;
+        padding: 0.5rem 1rem 0;
+        margin-bottom: -0.5rem;
+        box-shadow: -1px -1px 0 1px #ffe600, 1px -1px 0 1px #ffe600;
+    }
+}
+
+.icon.productSheet-dimensionItem-icon {
+    opacity: 0.5;
+    margin-right: 0.75rem;
+}
+
+.productSheet-discountTable:not(.productSheet-discountTable--special) {
+    padding: 0 0.5rem 0 0.75rem;
+    padding: 0;
+
+
+    .table-caption {
+        padding: 0; //background-color: $color-lightGrey-light;
+    }
+
+    .table-captionhead {
+        background-color: $color-lightGrey-light;
+        padding: 0.5rem 0.75rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .productSheet-shortDescription {
+
+        padding: 0.5rem 0.75rem 0.75rem;
+    }
+
+    .table--ultracondensed .table-captionIcon {
+        display: inline-block;
+        margin-right: 0.5rem;
+
+        align-self: flex-start;
+    } //box-shadow: 0 27px $color-lightGrey-light inset;
+}
+
+@-moz-document url-prefix() {
+    .productSheet-dimensionItem {
+        padding: 0.5rem 0.5rem 0.5rem 0;
+    }
+}
+
+.no-flexbox {
+    .productSheet-advantages,
+    .productSheet-minisocial {
+        display: table;
+        width: 100%;
+    }
+    .productSheet-advantagesItem,
+    .productSheet-minisocial>div {
+        display: table-cell;
+        text-align: center;
+        vertical-align: top;
+    }
+    .productSheet-dimensionItem {
+        display: inline-block;
+        width: 45%;
+        >.icon,
+        >.productSheet-dimensionDt {
+            display: inline-block;
+            float: left;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:0\0) {
+    /* IE9 and IE10 rule sets go here */
+    div.productSheetBadge {
+
+        display: table;
+        width: 100%;
+    }
+
+    div.productSheetBadge div.productSheetBadge-old,
+    div.productSheetBadge div.productSheetBadge-new {
+        display: table-cell;
+    }
+    div.productSheetBadge div.productSheetBadge-old {
+        padding-left: 1.5rem;
+    }
+
+    .tags-item--productSheetBrand .tags-brandlink {
+
+        display: block;
+    }
+
+    .productSheet .imgBox-thumblist {
+        padding-bottom: 5rem;
+    }
+}

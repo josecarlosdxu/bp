@@ -1,0 +1,54 @@
+@include block(shoppingCart) {
+    margin-bottom: $um;
+    @include element(title) {
+        @extend %type-section-title;
+    }
+    @include element(itemNumber) {
+        line-height: 1rem;
+        @extend %type-breadcrumblink;
+        &:before {
+            content: " / ";
+        }
+    }
+    @include element(itemList) {
+        height: 10 * $um;
+    }
+    @include element(discount) {
+        font-weight: 700;
+    }
+    @include element(name) {
+        width: 40%;
+        padding: 0.5rem 0.5rem 0.5rem 1rem !important;
+        line-height: 1.2;
+    }
+    @include element(link) {
+        color: #333;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @include element(subtotal) {
+        //color: $color-shoppingCart-subtotal-text;
+        font-weight: 700;
+    }
+    @include element(base) {
+        color: #0090ff;
+    }
+    @include element(options) {
+        margin-left: $um / 6;
+        color: $color-shoppingCart-options-text;
+    }
+    @include element(total) {
+        @extend %type-total;
+        padding: $um;
+        text-align: right;
+        border-top: 1px solid $color-shadow;
+        background: $color-shoppingCart-total-background;
+    }
+    @include element(footer) {
+        padding: $um / 2;
+        text-align: right;
+        border-top: 1px solid $color-shadow;
+        @extend .review-footer;
+    }
+}

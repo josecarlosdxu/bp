@@ -1,0 +1,32 @@
+---
+title: Contacto
+---
+<div class="modularGrid-module">
+  <h2 class="title">Área de Contacto</h2>
+</div>
+<div class="modularGrid u-pdb">
+  <div class="modularGrid-module u-xs-65 u-pdr">
+    
+      <div class="modularGrid box">
+        <div class="modularGrid-module u-pd">
+          <h3 class="subtitle3">Seleccione departamento</h3>
+        </div>
+        {{>ticketsTabs}}
+        <div class="tabs-contentPanel" data-js-tab="panel" data-js-tab_idpanel="1" id="tabpanel1" style="display:block;">
+          {{>ticketsTabContent1 label='Seleccione el motivo' id='motivo1' placeholder='Seleccione el motivo'}}
+        </div>
+        <div class="tabs-contentPanel" data-js-tab="panel" data-js-tab_idpanel="2" id="tabpanel2" >
+        {{>ticketsTabContent4}}
+        </div>
+        <div class="tabs-contentPanel" data-js-tab="panel" data-js-tab_idpanel="3" id="tabpanel3" >
+          {{>ticketsTabContent1 label='Asunto' id='asunto1'}}
+        </div>
+        <div class="tabs-contentPanel" data-js-tab="panel" data-js-tab_idpanel="4" id="tabpanel4" >
+          {{>ticketsTabContent3}}
+        </div>
+      </div>
+   
+  </div>
+  {{>helpcenter}}
+</div>
+{{>tableTickets}}

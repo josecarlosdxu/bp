@@ -1,0 +1,39 @@
+<nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs">
+<article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Pendientes de validación <b class="mobileTabs-notify"></b></h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>ordersTable0}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Procesados</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>ordersTable1}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader">
+            <h4 class="mobileTabs-itemTitle">Todos</h4>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>ordersTable1}}
+                </div>
+            </div>
+        </section>
+    </article>
+
+</nav>

@@ -1,0 +1,48 @@
+<h3 class="title2 u-pd--half">Datos de su servidor o hosting</h3>  
+
+
+
+    <fieldset class="form-fieldset form-fieldset--borderless u-pdh--half u-mgb">
+
+
+      {{>shopFormMsg}}
+        
+      <div class="modularGrid u-lg-65">
+              <div class="modularGrid-module u-lg-30  u-pdr">            
+                {{>shoplabelInfo name='Dominio' id='domain'}}               
+                <input class="form-input" id="domain" type="text" placeholder="Ej. misitio.com">
+            </div>
+            <div class="modularGrid-module u-lg-30">
+               <label class="form-label" for="host_sel">Proveedor de hosting</label>               
+               <select name="hosting" id="host_sel" class="form-select">
+                <option value="" data-dep="soyoustart">Soyoustart</option>
+                <option value="" data-dep="professional_hosting">Professional Hosting</option>  
+            </select>
+
+        </div> 
+
+     <div class="modularGrid-module u-pdt--half">
+          <!--  <label class="form-label" >¿Ha registrado su dominio en el mismo proveedor?</label> -->
+           <label class="form-label" >¿Ha registrado su dominio en Soyoustart?</label>
+           <div role="radiogroup" class="u-flex--center  u-pdt--min">            
+            <input type="radio" class="form-radio form-input--inline" type="radio" name="host_samedomain" value="1" id="host_samedomain1"  data-dep="domain" data-deptype="hide" checked>
+            <label class="form-label u-mgb--0 u-mgr--half" for="host_samedomain1">Si</label>
+            <input type="radio" class="form-radio form-input--inline" type="radio" name="host_samedomain" value="0" id="host_samedomain0"  data-dep="domain" data-deptype="show">
+            <label class="form-label u-mgb--0" for="host_samedomain0">No</label>               
+        </div>       
+    </div>
+ 
+
+</div>
+
+{{>shopFormMsg2}}
+</fieldset>
+{{>shopFormPanel1}}
+
+{{#if success}}
+
+{{>shopFormPanel2}}
+
+
+
+{{/if}}

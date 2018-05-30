@@ -1,0 +1,97 @@
+{
+    "sectionStock": {
+        "header": [{
+            "title": "Sincronización catálogo y stock",
+            "icon": "catalog",
+            "modifier": "u-mgb-minus1"
+        }],
+        "footer": [{
+            "slogan": "Sincronice su negocio con BigBuy",
+             "anchor": "anchor_sync_transport",
+             "buttonText": "Ser distribuidor"
+        }],
+        "list": [{
+            "header": [{"item":"Sincroniza tu negocio online (ecommerce, emarketplace, ERP, etc.) con nuestro catálogo de miles de productos en 24 idiomas."}],
+            "headerIcon": "catalog",
+            "title": "Descarga manual",
+            "extraClasses":["u-mg-three-top"],
+            "items": [{
+                    "title": "CSV Standard",
+                    "icon": "csvfile",
+                    "texts": [{
+                        "text": "Facilitamos CSV Standard en 24 idiomas con todos los campos necesarios para sincronizar el catálogo de productos y stocks de BigBuy."
+                    }, {
+                        "text": "Los CSV van separados por categorías para facilitar la importación de catálogos más temáticos. <a href='https://www.bigbuy.eu/es/archivos-csv-xml.html' class='link' >+info</a>"
+                    }]
+                }, {
+                    "title": "CSV Categorías",
+                    "icon": "csvfile",
+                    "texts": [{
+                        "text": "Facilitamos CSV con la estructura de categorías de BigBuy en 24 idiomas. <a href='https://www.bigbuy.eu/es/archivos-csv-xml.html' class='link' >+info</a>"
+                    }]
+                }, {
+                    "title": "CSV Marcas",
+                    "icon": "csvfile",
+                    "texts": [{
+                        "text": "Facilitamos CSV con todas las marcas de cada producto. <a href='https://www.bigbuy.eu/es/archivos-csv-xml.html' class='link' >+info</a>"
+                    }]
+                }, {
+                    "title": "XML",
+                    "icon": "xmlfile",
+                    "texts": [{
+                        "text": "Facilitamos XML en 24 idiomas con toda la información necesaria para sincronizar el catálogo de productos y stocks de BigBuy."
+                    }, {
+                        "text": "Los XML van separados por categorías para facilitar la importación de catálogos más temáticos. <a href='https://www.bigbuy.eu/es/archivos-csv-xml.html' class='link' >+info</a>"
+                    }]
+                }, {
+                    "title": "CSV Prestashop + CSV Categorías Prestashop",
+                    "icon": "prestashopfile",
+                    "texts": [{
+                        "text": "Facilitamos CSV adaptados al entorno Prestashop en 24 idiomas con todos los campos necesarios para sincronizar la estructura de categorías, el catálogo de productos y stocks de BigBuy."
+                    }, {
+                        "text": "Los CSV van separados por categorías para facilitar la importación de catálogos más temáticos."
+                          }, {
+                          "text": "Facilitamos documentación y vídeos demostración sobre cómo hacer la importación a Prestashop. <a href='https://www.bigbuy.eu/es/archivos-csv-xml.html' class='link' >+info</a>"
+                    }]
+                }
+            ]
+        }, {
+
+            "title": "Tienda dropshipping BigBuy",
+            "items": [{
+                    "icon": "prestashopfile",
+                    "texts": [{
+                        "text": "La tienda dropshipping de BigBuy es la solución llave en mano donde ofrecemos, de forma integral, todas las necesidades de sincronización del catálogo, stocks, cálculo de portes, pedidos, tracking ID, etc."
+                    }, {
+                        "text": "Es la solución más rápida y eficaz dado que, en apenas 2-3 días, puede disponer de un negocio online totalmente sincronizado con BigBuy e invertir su tiempo en vender y promocionar su ecommerce, en vez de dedicarlo a la tediosa parte técnica de sincronización. <a href='https://www.bigbuy.eu/es/tienda-dropshipping.html' class='link' >+info</a>"
+                    }]
+
+                }
+            ]
+        }, {
+
+            "title": "Desarrolladores / Programadores",
+            "items": [{
+                    "title": "CSV + XML + CSV Prestashop + CSV Categorías en 24 idiomas",
+                    "icon": "code",
+                    "texts": [{
+                        "text": "Facilitamos, vía FTP, todos los archivos CSV/XML que ofrecemos en la descarga manual. El acceso vía FTP deberá solicitarlo al soporte técnico a través del área de contacto.  <a href='https://www.bigbuy.eu/es/archivos-csv-xml.html' class='link' >+info</a>"
+
+                    }]
+
+
+
+
+
+                },
+                 {
+                    "title": "API Catálogo",
+                    "icon": "code",
+                    "texts": [{
+                        "text": "Facilitamos una API para que programadores y desarrolladores puedan conectar su ecommerce, ERP, etc. y obtener y consultar en tiempo real todo el catálogo, estructura de categorías y stocks de BigBuy. <a href='https://www.bigbuy.eu/es/api_bigbuy.html' class='link' >+info</a>"
+                    }]
+                }
+            ]
+        }]
+    }
+}

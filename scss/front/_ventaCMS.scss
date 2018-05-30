@@ -1,0 +1,304 @@
+@include block(ventaCMS) {
+    margin-bottom: $um;
+    padding: 0;
+    text-align: center;
+    @include element(bg-img) {
+        background-image: url("../../img/warehouse.png");
+    }
+    @include element(bgColor) {
+        background: #eee;
+    }
+    @include element(bigListInverse) {
+        list-style: disc;
+        font-size: $um;
+        padding: 2.3rem;
+        font-weight: 300;
+        li {
+            padding-top: 1em;
+        }
+        @include addBreakpoint(xl) {
+            font-size: 1.7rem;
+        }
+    }
+    @include element(normalText) {
+        font-size: 1.2rem;
+    }
+    @include element(list) {
+        font-size: 1.2rem;
+        list-style: disc inside;
+        line-height: 1.5;
+        @include modifier(outStyle) {
+            list-style-position: outside;
+            padding-left: $um;
+        }
+        @include modifier(sublist) {
+            list-style: disc inside;
+            padding-left: $um*1.3;
+        }
+    }
+    @include element(prominent) {
+        padding: 0 $um;
+    }
+    @include element(prominentText) {
+        font-size: $um;
+        font-style: normal;
+        font-weight: 400;
+        font-family: $type-headingscms;
+        padding-bottom: $um / 3;
+        line-height: 1.2;
+        color: #333;
+        @include modifier(inverse) {
+            color: #fff;
+        }
+        @include modifier(link) {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        strong {
+            font-weight: 700;
+            // color: #000;
+        }
+    }
+    @include element(link) {
+        cursor: pointer;
+        text-decoration: underline;
+        color: inherit;
+    }
+    @include element(prominentImg) {
+        margin: 0 auto $um;
+        display: block;
+    }
+    //@extend %img--responsive;
+    @include element(posBox) {
+        @include modifier(posRel) {
+            position: relative;
+        }
+        @include modifier(posAbs) {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            padding: $um/2;
+        }
+    }
+    @include element(titleBox) {
+        width: 100%;
+        display: block;
+        min-height: 8.5rem;
+        padding: 2.5rem 0 2rem;
+        margin: 0 auto;
+        @include modifier(abs) {
+            position: absolute;
+            top: 12%;
+            right: 0;
+            left: 0;
+        }
+        background: rgba(255,
+        255,
+        255,
+        0.8);
+        // background: #fff;
+        @extend %u-xs-75;
+        .ventaCMS-title {
+            font-size: 4.25rem;
+        }
+    }
+    @include element(title) {
+        font-size: 5rem;
+        @extend %type-titlecms;
+        letter-spacing: -0.03em;
+        opacity: 1;
+        line-height: 1;
+        @include addBreakpoint(lg) {
+            font-size: 5rem;
+        }
+        span {
+            font-size: 18px;
+            position: absolute;
+            background: #ffe600;
+            padding: 5px 10px;
+            letter-spacing: -1px;
+        }
+    }
+    @include element(subtitleImg) {
+        // position: absolute;
+        @include modifier(bigBox) {
+            left: 2%;
+            position: absolute;
+            top: -4rem;
+        }
+        @include modifier(bigLock) {
+            left: 0%;
+            position: absolute;
+            top: -8rem;
+        }
+        @include modifier(bigCards) {
+            left: 3%;
+            position: absolute;
+            top: -9rem;
+        }
+        @include modifier(bigTruck) {
+            left: 1%;
+            position: absolute;
+            @include addBreakpoint(xs) {
+                top: -10.8rem;
+                +.ventaCMS-subtitle {
+                    margin-left: 0;
+                }
+            }
+            @include addBreakpoint(xl) {
+                top: -7.4rem;
+                +.ventaCMS-subtitle {
+                    margin-left: 6rem;
+                }
+            }
+        }
+        @include modifier(dropshippingBigPict) {
+            margin-top: -2.5rem;
+        }
+    }
+    @include element(subtitleBox) {
+        width: 100%;
+        height: 2rem;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        min-height: 5rem;
+        padding: $um 0;
+        @extend %u-xs-75;
+        background: rgba(53, 59, 64, 0.9);
+        //background: #353B40;
+        color: #fff;
+        @include modifier(lock) {
+            @include addBreakpoint(xs) {
+                padding-left: 8.5rem;
+            }
+            @include addBreakpoint(xl) {
+                padding-left: $um;
+            }
+        }
+        @include modifier(abs) {
+            position: absolute;
+            margin-top: 8.5rem;
+            right: 0;
+            left: 0;
+            top: 12%;
+        }
+    }
+    @include element(ornament) {
+        width: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 15px;
+        margin-top: -10px;
+    }
+    @include element(subtitle) {
+        @extend %type-cmsContentSectionTitle;
+        font-size: 2rem;
+        letter-spacing: -0.025em;
+        @include modifier(section) {
+            text-align: center;
+            line-height: 1.3;
+            font-size: $um * 2.25;
+        }
+        @include modifier(titleUl) {
+            font-size: 1.3rem;
+        }
+    }
+    @include element(bigSlogan) {
+        font-style: normal;
+        font-family: $type-headingscms;
+        text-align: center;
+        line-height: 1.1;
+        font-size: $um * 2.5;
+        font-weight: 700;
+        @include modifier(dropshippingStore) {
+            margin-top: -1rem;
+        }
+    }
+    @include element(sloganText) {
+        font-size: $um;
+        font-weight: 300;
+        margin-bottom: $um / 2;
+        text-align: center;
+    }
+    @include element(sectionTitle) {
+        @extend %type-cmsContentSectionTitle;
+        font-size: $um * 1.5;
+        line-height: 2;
+    }
+    @include element(itemTitle) {
+        @extend %type-cmsContentSectionTitle;
+        font-size: $um * 1.5;
+        margin-bottom: $um / 2;
+        line-height: 1;
+    }
+    @include element(bigArrowTop) {
+        display: block;
+        margin: -5rem auto 0;
+    }
+    @include element(section) {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.3;
+        padding: 2rem 3rem 3.5rem;
+        overflow: hidden;
+        p {
+            //font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+        @include modifier(inverse) {
+            background: #353b40;
+            color: #fff;
+            font-weight: 400;
+            font-weight: 400;
+        }
+        @include modifier(colorized) {
+            background: $color-brandYellow-lighter;
+            background: #fffbe5;
+        }
+        @include modifier(small) {
+            padding-bottom: 0;
+        }
+    }
+    @include element(subsection) {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        @include modifier(inverse) {
+            padding: 1rem $um;
+            background: $color-lightGrey-light;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+    @include element(sectionText) {
+        font-size: 1.2rem;
+        font-weight: 300;
+        @include modifier(inverse) {
+            color: #ccc;
+            p {
+                font-weight: 300;
+            }
+            strong {
+                font-weight: 400;
+                // color: #fff;
+            }
+        }
+    }
+}
+
+@include extendElement(ventaCMS,
+section,
+condensed) {
+    padding: $um 0;
+    @include element(subtitle) {
+        font-size: 2.5rem;
+        letter-spacing: 0;
+        vertical-align: middle;
+    }
+}

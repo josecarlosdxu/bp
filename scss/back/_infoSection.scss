@@ -1,0 +1,104 @@
+@include block(infoSection) {
+    position: relative;
+    @include element(item) {
+        font-size: 1rem;
+        border-right: 1px solid $color-shadow;
+        padding: 1.35rem $um 0;
+        text-align: center;
+        vertical-align: top;
+        min-height: 13rem;
+        position: relative;
+        cursor: pointer;
+        transition: all 100ms ease-in;
+        box-shadow: inset 0 0 0px 0 rgba(255, 245, 153, 0.5); //border-bottom: 1px solid $color-shadow;
+        &:last-child {
+            border-right: none;
+        }
+        @include addBreakpoint(lg) {
+            &:hover {
+                box-shadow: inset 0 0 0px 10px rgba(255, 245, 153, 0.5);
+                box-shadow: 0 4px 0 0 #09f inset;
+                color: #09f;
+            }
+        }
+        border-top: 1px solid $color-shadow;
+
+        @include addBreakpoint(xs) {
+             border-top: none;
+
+            &:nth-child(4n),
+            &:nth-child(4n+3) {
+                border-top: 1px solid $color-shadow;
+            }
+        }
+
+        @include addBreakpoint(md) {
+            &:nth-child(4n),
+            &:nth-child(4n+3) {
+                border-top: none;
+            }
+        }
+    }
+    @include element(title) {
+        display: block;
+        font-weight: 400;
+        font-size: 1.15rem;
+        margin-bottom: $um;
+    }
+    @include element(link) {
+        display: block;
+        font-weight: 400;
+        font-size: $um / 1.5;
+        color: #999; //position: absolute;
+        left: 0;
+        bottom: 1.9rem;
+        text-align: center;
+        width: 100%;
+        transition: all 0.1s;
+        &:hover {
+            text-decoration: underline;
+            color: #777;
+        }
+    }
+    @include element(quantity) {
+        display: block;
+        font-weight: 500;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        bottom: 1.9rem;
+        text-align: center;
+        width: 100%;
+    }
+    @include element(icon) {
+        color: #999;
+        vertical-align: top;
+        width: 2.3rem;
+        height: 2.3rem;
+        @include modifier(active) {
+            width: 5rem;
+            height: 5rem;
+            position: relative;
+            top: -10px;
+        }
+        @include modifier(wallet) {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        @include modifier(basic) {
+            color: $color-basic-pack;
+        }
+        @include modifier(pro) {
+            color: $color-pro-pack;
+        }
+        @include modifier(business) {
+            color: $color-business-pack;
+        }
+        @include modifier(premium) {
+            color: $color-premium-pack;
+        }
+        @include modifier(welcome) {
+            color: $color-welcome-pack;
+        }
+    }
+}

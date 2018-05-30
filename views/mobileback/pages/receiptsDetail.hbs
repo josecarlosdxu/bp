@@ -1,0 +1,21 @@
+---
+title: Detalle de factura
+layout: mobileback/layouts/clean.hbs
+---
+<div class="modularGrid">
+    <div class="modularGrid-module">
+        <div class="mobileBackTopBar">
+            <div class="modularGrid modularGrid--boxed">
+             {{>breadcrumb_home}}
+              <a class="mobileBackTopBar-breadcrumb" href="../mobileback/receipts.html">
+                  <img src="../../img/icons/invoices.svg" alt="icon">
+              </a>
+                <h2 class="mobileBackTopBar-title">AVENTA/2015/0353</h2>
+                 <a class="mobileBackTopBar-button" href="../proforma.pdf"><img src="../../img/mobileIcons/file_download.svg"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobileBackContent mobileBackContent--fullHeight">
+    {{>receiptDetail1}}
+</div>

@@ -1,0 +1,27 @@
+@include block(recentSearch) {
+	@include element(item) {
+		@extend %type-mobilefooterlink;
+
+        // &:after {
+        //     content:",";
+        // }
+
+        // &:last-child:after {
+        //     content:"";
+        // }
+
+		&:hover{
+			color: $color-tags-link-hover-text;
+		}
+	}
+}
+
+// @include extendBlock(recentSearch, mobile) {
+//     @include element(item) {
+//         display: block;
+//         line-height: 2;
+//         &:after {
+//             content: " ";
+//         }
+//     }
+// }

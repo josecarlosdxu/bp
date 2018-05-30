@@ -1,0 +1,113 @@
+@include block(helpSection) {
+    display: none;
+    @include modifier(selected) {
+        display: block;
+    }
+    @include element(footer) {
+        background-color: $color-lightGrey-light;
+        box-shadow: $um 0 $color-lightGrey-light, -$um 0 $color-lightGrey-light, -$um $um $color-lightGrey-light, $um $um $color-lightGrey-light;
+        margin-top: $um;
+        padding: $um 0 0;
+    }
+    @include element(accordionLink) {
+        padding: 0.6rem 1rem 0.75rem 2.5rem;
+        color: #888;
+        position: relative;
+        border: 1px solid #dedede;
+        background: #fafafa;
+        cursor: pointer;
+        margin-top: -1px;
+        font-weight: 400;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+        transition: all 0.2s;
+        &:focus {
+            outline: none;
+        }
+        &:hover,
+        &:focus {
+            color: #000;
+            background: #fff;
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+    }
+    @include element(accordionIcon) {
+        position: absolute;
+        left: 8px;
+        top: 10px;
+        transition: color 0.2s;
+    }
+    @include element(accordionPanel) {
+        display: none;
+        border: 1px solid #e5e5e5;
+        padding: $um;
+        border-top: none;
+        margin-bottom: 0;
+    }
+    @include element(section) {
+        display: flex;
+        margin-bottom: $um;
+        //border:1px solid red;
+    }
+    @include element(sectiontexts) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 1rem;
+    }
+    @include element(sectionTitle) {
+        font-family: $type-headingscms;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        padding-bottom: 0;
+        width: 100%;
+    }
+    @include element(sectionText) {       
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;       
+        width: 100%;
+    }
+    @include element(icon) {
+        background-color: $color-lightGrey-light;
+        fill: $color-accentBlue-default;
+        border: 1px solid $color-lightGrey-dark;
+        width: 40px;
+        height: 40px;
+        padding: 0.4rem;
+        @include modifier(nopadding) {
+            padding: 0.2rem;
+            
+        }
+    }
+}
+
+.cmsContentSection.helpSection {
+    padding: 0.5rem 0 1.5rem 1.5rem;
+}
+
+@include extendElement(helpSection, accordionLink, selected) {
+    background: #eff8ff;
+    box-shadow: 3px 0 #09f inset;
+    color: #09f;
+    &:hover,
+    &:focus {
+        color: #09f;
+        background: #eff8ff;
+    }
+    @include element(accordionIcon) {
+        transform: rotate(180deg);
+    }
+    + .helpSection-accordionPanel {
+        display: block;
+    }
+}
+
+

@@ -1,0 +1,12 @@
+<section class="panel panel--iconized u-mgb">
+    <h5 class="panel-header">{{>svgIcon type=icon class='u-op-70 u-pd3' size='md'}}{{title}}</h5>
+    <article class="u-pd">
+        <p class="subtitle4 u-mgb">{{{headertext}}}</p> 
+        <ul class="list list--checklist list--midsize u-block ">
+            {{#each list}}
+            <li class="list-item">{{>svgIcon type='done' class='icon--success list-icon'}}{{{text}}}</li>
+            {{/each}}
+        </ul>
+    </article>
+</section>
+   

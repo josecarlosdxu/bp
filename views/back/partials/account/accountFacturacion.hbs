@@ -1,0 +1,41 @@
+<div class="modularGrid">
+<div class="modularGrid-module u-pd u-lg-60">
+
+
+   <section class="csstabs-cont">
+    <input type="radio" name="invoicingtabs" id="invoicetab1" class="csstabs-radio" checked>
+    <label class="csstabs-label" for="invoicetab1">
+        {{>svgIcon type='person'class='csstabs-image'}}
+        <span class="csstabs-text csstabs-text--radio">Soy particular{{#unless mobile}}<em class="form-info" data-js-tooltip="tooltip_particulartop">{{>svgIcon type='info'}}</em>{{/unless}}</span> 
+    </label>
+    <aside class="csstabs-item">
+    {{>accountTab1 back='true'}}
+    </aside>
+    <input type="radio" name="invoicingtabs" id="invoicetab2" class="csstabs-radio">
+    <label class="csstabs-label" for="invoicetab2">
+        {{>svgIcon type='briefcase'class='csstabs-image'}}
+       <span class="csstabs-text csstabs-text--radio">Soy autónomo{{#unless mobile}}<em class="form-info" data-js-tooltip="tooltip_autonomotop">{{>svgIcon type='info'}}</em>{{/unless}}</span> 
+    </label>
+    <aside class="csstabs-item">
+        {{>accountTab2 back='true'}}
+    </aside>
+    <input type="radio" name="invoicingtabs" id="invoicetab3" class="csstabs-radio">
+    <label class="csstabs-label" for="invoicetab3">
+        {{>svgIcon type='domain'class='csstabs-image'}}
+        <span class="csstabs-text csstabs-text--radio">Soy empresa{{#unless mobile}}<em class="form-info" data-js-tooltip="tooltip_empresatop">{{>svgIcon type='info'}}</em>{{/unless}}</span> 
+    </label>
+    <aside class="csstabs-item">
+    {{>accountTab3 back='true'}}
+    </aside>
+
+
+</section>
+
+
+
+    
+
+
+ </div>
+  </div>
+

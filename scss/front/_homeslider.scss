@@ -1,0 +1,265 @@
+@include block(homeslider) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 41.5rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    background: transparentize(black, 0.5);
+    @include element(boxed) {
+        margin: 0 auto;
+        max-width: 1200px;
+        max-height: 26rem;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    @include element(img) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        img {
+            min-width: 100%;
+        }
+    }
+    @include element(svgimg) {
+        margin: $um * 2 $um * 2 0;
+        @include modifier(alt) {
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            max-height: 200rem;
+            width: 54rem;
+        }
+        @include addBreakpoint(xl) {
+            @include modifier(alt) {
+                width: 62rem;
+            }
+        }
+    }
+    @include element(svgCont) {
+        position: relative;
+        color: white;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px $color-shadow;
+        pointer-events: none;
+    }
+    @include element(svgText) {
+        position: absolute;
+        text-align: center;
+        @include modifier(text1) {
+            top: 11.25rem;
+            width: 12rem;
+            left: 3rem;
+        }
+        @include modifier(text2) {
+            top: 11.25rem;
+            width: 12rem;
+            left: 21.5rem;
+        }
+        @include modifier(text3) {
+            top: 11.25rem;
+            width: 12rem;
+            left: 41.5rem;
+        }
+    }
+    @include element(dots) {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -15em;
+    }
+    @include element(message) {
+        position: relative;
+        z-index: 1;
+        // width: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0 0 3rem;
+        align-items: flex-start;
+        @include addBreakpoint(xl) {
+            padding: 3rem 0 0;
+        }
+    }
+    @include element(msgPaypalIcon) {
+        height: 1em;
+        width: 5em;
+    }
+    @include element(texts) {
+        @extend %sliderText;
+        display: inline-flex;
+        background: transparentize(black, 0.6);
+        padding: 0.75rem 1rem 1rem;
+    }
+    @include element(subtitles) {
+        @extend %sliderSubtitle;
+        display: inline-flex;
+        padding-top: 0.5rem;
+        + .homeslider-texts {
+            margin-top: 0.5rem;
+        }
+        @include modifier(terms) {
+            font-family: "roboto";
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.2;
+            text-transform: none;
+        }
+        @include modifier(inverse) {
+            color: #353b40;
+            text-shadow: none;
+            align-items: center;
+        }
+    }
+    @include element(subscont) {
+        background-color: transparentize(white, 0.5);
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1.25rem 1.25rem;
+    }
+    @include element(button) {
+        display: block;
+        margin-top: $um;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+        padding: $um / 2 $um;
+        width: auto;
+        transition: box-shadow 0.1s, background 0.1s, color 0.1s;
+    }
+    @include element(dot) {
+        background: transparentize(black, 0.6);
+        width: 1rem;
+        height: 1rem;
+        border-radius: 3rem;
+        border: none;
+        box-shadow: 0 0 0 1px $color-shadow inset, 0 0 1px 1px $color-light;
+        margin: 0 $um / 6;
+        transition: background 0.1s;
+        &:hover,
+        &:focus {
+            background: transparentize(black, 0.3);
+        }
+        @include modifier(active) {
+            background: $color-brandYellow-default;
+            pointer-events: none;
+        }
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        bottom: 13.5rem;
+    }
+    .nav a {
+        background: transparentize(black, 0.6);
+        width: 1rem;
+        height: 1rem;
+        border-radius: 3rem;
+        border: none;
+        box-shadow: 0 0 0 1px $color-shadow inset, 0 0 1px 1px $color-light;
+        margin: 0 $um / 6;
+        transition: background 0.1s;
+        display: block;
+        &:hover,
+        &:focus {
+            background: transparentize(black, 0.3);
+        }
+    }
+    .nav a.active {
+        background: $color-brandYellow-default;
+        pointer-events: none;
+    }
+    .nav > div {
+        display: flex;
+        justify-content: center;
+    }
+    .nav a.back,
+    .nav a.forth {
+        display: none;
+    }
+}
+
+@include extendElement(homeslider, texts, alt) {
+    background: transparent;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    white-space: nowrap;
+}
+
+@include extendElement(homeslider, boxed, full) {
+    max-height: 24rem;
+}
+
+@include extendElement(homeslider, message, full) {
+    background-color: transparentize(darken($color-darkGrey-dark,10%),0.2);
+    width: 100%;
+    margin-top: 4.75rem;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+    @include element(title) {
+        @extend %sliderText;
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        color: #fdc401;
+        letter-spacing: 0.03em;
+        margin-bottom: 0.25em;
+    }
+    @include element(slogan) {
+        @extend %sliderText;
+        font-size: 3.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+    @include element(explains) {
+        @extend %sliderText;
+        font-size: $um;
+        font-weight: 400;
+        //display: block;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    @include element(explainsitem) {
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+        width: auto;
+        height: auto;
+        letter-spacing: 0.02em;
+        &:before {
+            content: "-";
+            display: inline-block;
+            margin-right: 0.25em;
+        }
+        small{
+            font-size: 0.7em;
+
+        }
+    }
+}
+
+@media (min-width:1200px) and (max-width: 1230px) {
+    .homeslider-boxed {
+        padding-left: 1rem;
+    }
+}
+
+.no-flexbox,
+[data-useragent*='MSIE 10.0'] {
+    .homeslider-svgCont {
+        display: inline-block;
+        float: right;
+    }
+}

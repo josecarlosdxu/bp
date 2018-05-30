@@ -1,0 +1,19 @@
+<li class="mainNav-item nav-item ">
+	{{#if alt}}
+    <div class="mainNav-link"  href="../mobile/categoria-{{link}}.html" title="{{this.title}}" data-js-mainnav="btnMore">
+    <h4 class="mainNav-linkText">{{title}}</h4> 
+     <span class="mainNav-btnEnter">
+    	{{>svgIcon type='chevronMobileRight'}}  
+    </span>      
+    </div>
+    
+    
+    {{else}}
+    <a class="mainNav-link" data-js-mainnav="link" href="../mobile/categoria-{{link}}.html" title="{{this.title}}">
+    <h4 class="mainNav-linkText">{{title}}</h4>       
+    </a>
+    <button class="mainNav-btnEnter" data-js-mainnav="btnMore">
+    	{{>svgIcon type='chevronMobileRight'}}  
+    </button>
+    {{/if}}
+</li>

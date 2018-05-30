@@ -1,0 +1,300 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Salud y belleza",
+    "description": "Bienvendio, en moda y complementos encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Relax y bienestar",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/salud/2502_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Peluquería",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/salud/2520_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Tratamientos estéticos",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/salud/2540_menu.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Línea solar",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/salud/2552_menu.jpg"
+      }
+    ]
+  },
+  "relax": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Relax y bienestar",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cojines y almohadas",
+        "number": "5",
+        "image": "../../img/categories/salud/2503_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Masajeadores",
+        "number": "20",
+        "image": "../../img/categories/salud/2504_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Zapatillas, plantillas y otros",
+        "number": "30",
+        "image": "../../img/categories/salud/2505_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Artículos de bienestar y relajación",
+        "number": "50",
+        "image": "../../img/categories/salud/2506_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Tensiómetros y termómetros",
+        "number": "50",
+        "image": "../../img/categories/salud/2518_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Calientamanos",
+        "number": "50",
+        "image": "../../img/categories/salud/2519_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Gafas de lectura y accesorios",
+        "number": "50",
+        "image": "../../img/categories/salud/2654_small.jpg"
+      }
+    ]
+  },
+  "pelu": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Peluquería",
+    "number": "136",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Champús",
+        "number": "50",
+        "image": "../../img/categories/salud/2523_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Suavizantes y acondicionadores",
+        "number": "26",
+        "image": "../../img/categories/salud/2525_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Mascarillas y tratamientos capilares",
+        "number": "60",
+        "image": "../../img/categories/salud/2526_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Espumas y fijadores",
+        "number": "60",
+        "image": "../../img/categories/salud/2528_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Secadores de pelo",
+        "number": "60",
+        "image": "../../img/categories/salud/2530_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Planchas de pelo y rizadores",
+        "number": "60",
+        "image": "../../img/categories/salud/2532_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Peines y cepillos",
+        "number": "60",
+        "image": "../../img/categories/salud/2535_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cortapelos",
+        "number": "60",
+        "image": "../../img/categories/salud/2652_small.jpg"
+      }
+    ]
+  },
+  "estetica": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Tratamientos estéticos",
+    "number": "59",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Depilación y afeitado",
+        "number": "11",
+        "image": "../../img/categories/salud/2544_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Manicura y pedicura",
+        "number": "4",
+        "image": "../../img/categories/salud/2546_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Tratamientos faciales y corporales",
+        "number": "28",
+        "image": "../../img/categories/salud/2548_small.jpg"
+      }
+    ]
+  },
+  "sol": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Línea solar",
+    "number": "59",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cremas faciales y protectoras",
+        "number": "11",
+        "image": "../../img/categories/salud/2554_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cremas corporales y protectoras",
+        "number": "4",
+        "image": "../../img/categories/salud/2556_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Aceites solares",
+        "number": "4",
+        "image": "../../img/categories/salud/2559_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Bronceadores",
+        "number": "4",
+        "image": "../../img/categories/salud/2561_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Autobronceadores",
+        "number": "4",
+        "image": "../../img/categories/salud/2563_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Activadores de melanina",
+        "number": "4",
+        "image": "../../img/categories/salud/2565_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "After sun",
+        "number": "4",
+        "image": "../../img/categories/salud/2568_small.jpg"
+      }
+    ]
+  }
+}

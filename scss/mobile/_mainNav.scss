@@ -1,0 +1,490 @@
+%mainNavLink {
+    padding: $um;
+    padding-left: $um;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    transition: all 0.1s;
+    color: #333;
+    outline: none;
+    background: #fff;
+    font-weight: 300;
+    display: block;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+}
+
+%flag {
+    height: 24px;
+    position: relative;
+    top: -2px;
+    margin-right: 0.25rem;
+}
+
+%btnMore {
+    font: 700 14px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 5px;
+        width: 5px;
+        box-shadow: -5px 0 0px, -11px 0 0px, -17px 0 0px, -5px -6px 0px, -11px -6px 0px, -17px -6px 0;
+    }
+}
+
+@include block(mainNav) {
+    //position: absolute;
+    position: fixed;
+    vertical-align: top;
+    top: 0;
+    right: 0; //min-height: 100%;
+    display: none;
+    height: auto;
+    min-height: calc(100vh + 12rem);
+    z-index: 10;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    backface-visibility: hidden; //perspective: 1000;
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(35rem);
+    transform: translateX(35rem);
+    color: #888;
+    background: #fff;
+    width: 100%;
+    @include addBreakpoint(sm) {
+        width: 26rem;
+    }
+    @include modifier(show) {
+        //-webkit-transition: -webkit-transform 0.4s ease-in-out 0.4s;
+        transition: transform 0.4s ease-in-out 0.2s;
+        transform: translateX(0rem);
+        -webkit-transform: translateX(0rem);
+    }
+    @include modifier(hide) {
+        transition: transform 0.4s ease-in-out 0.2s;
+        transform: translateX(35rem);
+        -webkit-transform: translateX(35rem);
+    }
+    @include modifier(enter) {
+        transform: translateZ(0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 0.6s ease-in-out 0s;
+        transition: transform 0.6s ease-in-out 0s;
+        -webkit-transform: translateX(0rem);
+        transform: translateX(0rem);
+    }
+    @include modifier(leave) {
+        transform: translateZ(0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 0.6s ease-in-out 0s;
+        transition: transform 0.6s ease-in-out 0s;
+        -webkit-transform: translateX(35rem);
+        transform: translateX(35rem);
+    }
+    @include element(menu) {
+        height: 100%;
+        height: calc(100vh - 6rem);
+        overflow-y: auto;
+        position: absolute;
+        top: 74px;
+        width: 100%;
+        /*background: #000;
+        background: #222;
+        background: #fff;*/
+        background-color: $color-lightGrey-light;
+        display: block;
+        z-index: 170;
+        @include browser("Safari") {
+            padding-bottom: 6rem;
+        } //padding-bottom: 6rem;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        @include modifier(hide) {
+            //display: none;
+            z-index: 160;
+        }
+        @include modifier(submenu) {
+            top: 0;
+        }
+    }
+    @include element(submenu) {
+        //display:none;
+    }
+    @include element(header) {
+        background: $color-darkGrey-default;
+        height: 74px;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        @include modifier(hide) {
+            display: none;
+        }
+    }
+    @include element(button) {
+        @extend %borderless;
+        position: relative;
+        top: 0;
+        height: 74px;
+        background: transparent;
+        position: relative;
+        color: #fff;
+        display: inline-block;
+        font-size: 1.4rem;
+        padding-right: 3.5rem;
+        padding-left: $um;
+        .flag {
+            @extend %flag;
+        }
+        @include modifier(user) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+        }
+        @include modifier(top) {
+            //background: $color-light;
+            //background-size: 20px 20px;
+            width: 100%;
+            text-align: left; //box-shadow: 1px 0 rgba(255, 255, 255, 0.25);
+            -webkit-transition: background-color 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out;
+            align-items: center;
+            align-self: center; //justify-content: center;
+            display: flex;
+            font-weight: 200;
+        }
+        @include modifier(open) {
+            width: 5.8rem;
+            height: auto;
+            padding: 0 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            background: $color-lightGrey-light;
+            color: $color-lightGrey-dark;
+        }
+        @include modifier(menu) {
+            background: url("../img/mobileIcons/times_white.svg") no-repeat center center transparent; //float: right;
+            width: 7.2rem; //background-size: 18px 18px;
+            padding: 0 1.5rem;
+        }
+        @include modifier(lang) {
+            //background: url("../img/mobileIcons/chevronAltDown.svg") no-repeat 18rem center $color-light;
+            background: transparent !important;
+            width: 100%;
+            text-align: left; //box-shadow: 1px 0 rgba(255, 255, 255, 0.25);
+            //-webkit-transition: background-color 0.2s ease-in-out;
+            //transition: background-color 0.2s ease-in-out;
+        }
+        @include modifier(back) {
+            background-image: url("../img/mobileIcons/chevronAltUp-white.svg");
+            background-color: $color-darkGrey-light;
+            background-color: rgba(255, 255, 255, 0.25);
+            color: #fff;
+        }
+        @include modifier(alt) {
+            padding: 0 0.4rem;
+            font-size: 1.25rem;
+            font-weight: 300;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+        }
+        @include modifier(leave) {
+            @extend %borderless;
+            opacity: 0.25;
+            background: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 6rem;
+            background: $color-lightGrey-default;
+        }
+        @include modifier(preheader) {
+            text-transform: uppercase;
+            font-weight: 300;
+            padding: $um / 2; // border: 1px solid rgba(255, 255, 255, 0.3);
+            font-size: 1rem;
+            font-weight: 300;
+            height: auto;
+            text-transform: uppercase;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+    }
+    @include element(item) {
+        border: none;
+        position: relative;
+        &:last-child {
+            .mainNav-link {
+                //border-bottom: none;
+            }
+        }
+    }
+    @include element(itemMenu) {
+        border: none;
+        position: relative;
+        &:last-child {
+            .mainNav-link {
+                border-bottom: none;
+            }
+        }
+        @include modifier(content) {
+            display: flex;
+        }
+    }
+    @include element(linkText) {
+        font-size: 1.25rem;
+        display: inline;
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 0;
+    }
+    @include element(link) {
+        @extend %mainNavLink;
+        position: relative;
+        font-size: 1.25rem;
+        @include modifier(more) {
+            padding-right: 6rem;
+        } //border-color:$color-lightGrey-default;
+        //
+        @include modifier(top) {
+            background: $color-lightGrey-default;
+        }
+        @include modifier(useractions) {
+            background: $color-lightGrey-default; //background-clip: padding-box;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            margin-top: -1px;
+        }
+        &:active {
+            background: rgba(0, 0, 0, 0.05);
+        }
+    }
+    @include element(btnMore) {
+        @extend %borderless;
+        opacity: 0.25;
+        background: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 6rem;
+    }
+    @include element(btnEnter) {
+        @extend %borderless; //opacity: 0.25;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 4.5rem;
+        display: flex; 
+        align-items:  center;
+        justify-content:  center ;
+        opacity: 0.6;
+        
+        
+        
+        
+        // background: $color-lightGrey-default;
+    }
+    @include element(buttonLang) {
+        @extend %mainNavLink;
+        padding: 1.375rem $um;
+        vertical-align: middle;
+        .flag {
+            @extend %flag;
+            box-shadow: 2px 2px 0 1px #fff inset, -1.5px -2px 0 1px #fff inset;
+            background: #999;
+        }
+        @include modifier(selected) {
+            background: #daefff;
+            color: #005699;
+            box-shadow: 4px 1px 0 #09f inset;
+            border-color: #09f;
+            .flag {
+                background: $color-shadow;
+                box-shadow: 2px 2px 0 1px #daefff inset, -1.5px -2px 0 1px #daefff inset;
+            }
+        }
+    }
+    @include element(background) {
+        background: rgba(0, 0, 0, 0.25);
+        display: none;
+        height: 120%;
+        height: calc(100vh + 6rem);
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2; //visibility:hidden;
+        //-webkit-transition: opacity 0.25s 0.25s;
+        //transition: opacity 0.25s 0.25s;
+        @include modifier(show) {
+            opacity: 0;
+            opacity: 0;
+            -webkit-animation: show 0.6s ease-in-out 0s both;
+            animation: show 0.6s ease-in-out 0s both; //visibility:hidden;
+            display: block;
+        }
+    }
+    @include element(notify) {
+        @extend %notify;
+        left: 0.5rem;
+        position: relative;
+        display: inline-block;
+        top: -0.2rem;
+        height: $um / 3;
+        width: $um / 3;
+        background: $color-red-darker;
+        -webkit-animation: notifyMobilePulse infinite ease 1s;
+        animation: notifyMobilePulse infinite ease 1s;
+    }
+    @include element(title) {
+        line-height: 1.1;
+        max-width: calc(100% - 8rem);
+        overflow-wrap: break-word;
+    }
+}
+
+@include extendBlock(mainNav,
+business) {
+    @include element(header) {
+        background-color: $color-business-pack;
+    }
+}
+
+@include extendBlock(mainNav,
+basic) {
+    @include element(header) {
+        background-color: $color-basic-pack;
+    }
+}
+
+@include extendBlock(mainNav,
+pro) {
+    @include element(header) {
+        background-color: $color-pro-pack;
+    }
+}
+
+@include extendBlock(mainNav,
+premium) {
+    @include element(header) {
+        background-color: $color-premium-pack;
+    }
+}
+
+@include extendElement(mainNav,
+item,
+header) {
+    @include element(link) {
+        font-weight: 700;
+        line-height: 1.1;
+        font-size: $um;
+        text-decoration: none;
+        color: currentColor;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @include element(viewMore) {
+        @extend %btnMore;
+        color: $color-more;
+        margin: 0;
+        white-space: nowrap;
+    }
+}
+
+@-moz-document url-prefix() {
+    .mainNav {
+        //transition: none;
+        //position: absolute;
+    }
+    .mainNav--show {
+        // animation: mainNavMobileShow 0.3s ease-in both;
+    }
+    .mainNav-menu {
+        padding-bottom: 0; //background: green;
+    }
+    .mainNav-buttonLang {
+        padding: 1.36rem $um;
+    }
+    .mainNav-background {
+        height: 100vh;
+    }
+}
+
+@-webkit-keyframes notifyMobilePulse {
+    0%,
+    100% {
+        background: $color-red-darker;
+    }
+    50% {
+        background: $color-red-default
+    }
+}
+
+@keyframes notifyMobilePulse {
+    0%,
+    100% {
+        background: $color-red-darker;
+    }
+    50% {
+        background: $color-red-default
+    }
+}
+
+
+@include extendBlock(mainNav,
+alt) {
+
+    @include element(header) {
+        //display: block;
+        //padding: 1.5rem 0 1.5rem 1.5rem;
+    }
+
+    .mainNav-button--menu {
+        //background-color: red;
+        //flex-grow: 1;
+        padding: 0 1.5rem;
+        width: auto;
+        min-width: 4.5rem;
+    }
+}
+
+.mainNav-button--preheader[disabled] {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+
+[data-js-mainnav="btnMore"]{
+    cursor: pointer;
+}
+
+
+.mainNav-btnEnter[data-js-mainnav="btnMore"]{
+
+    box-shadow: 1px 0 $color-shadow inset;
+    background-color: $color-shadow;
+    color:black;
+  
+    .icon{
+       
+        margin:0 auto;
+
+    }
+
+
+
+
+}

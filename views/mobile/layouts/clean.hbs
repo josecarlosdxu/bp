@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+{{> head }}
+<body>
+{{!-- <div class="sizer"></div> --}}
+    <div class="modularGrid">
+        <div class="modularGrid-module">
+            {{>header}}          
+            {{>breadcrumbs}}           
+            {{>body}}
+        </div>
+    </div>
+    <div class="modularGrid">
+        <div class="modularGrid-module">
+            {{>footer}}
+        </div>
+    </div>
+    {{>mainNav}}
+    {{>toolbarSearch}}
+    {{>delayedScripts}}
+
+
+
+
+</body>
+</html>

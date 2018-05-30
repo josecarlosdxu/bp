@@ -1,0 +1,180 @@
+{
+   "panel1": {
+      "idpanel": "1",
+      "type": "b2b",
+      "name": "b2b",
+      "subheader": "Cuota de alta",
+      "loginQuote":"0",
+      "list": [
+         {
+            "idradio": "noquote",
+            "radiovalue": "b2b",
+            "labeltext": "Pack B2B",
+            "idval":"20",
+            "labeloption": "(Sin cuota mensual)",
+            "price": "0 €",
+            "priceval":"45"
+           
+            
+            
+         }
+      ]
+   },
+   "panel2": {
+      "idpanel": "2",
+      "type": "dropship",
+      "name": "dropship",
+      "subheader": "Cuota de alta",
+      "loginQuote":"45",
+      "list": [
+         {
+            "idradio": "mensual",
+            "radiovalue": "dropship_mensual",
+            "labeltext": "Mensual",
+            "price": "49 €",
+            "idval":"21",
+            "priceval":"49"
+            
+         },
+         {
+            "idradio": "semestral",
+            "labeltext": "Semestral",
+            "radiovalue": "dropship_semestral",
+            "labeloption": "(Ahorro 1 mes)",
+            "price": "245 €",
+            "priceval": "245",
+            "idval":"22"              
+            
+         },
+         {
+            "idradio": "anual",
+            "labeltext": "Anual",
+            "radiovalue": "dropship_anual",
+            "labeloption": "(Ahorro 3 meses)",
+            "price": "439 €",
+            "idval":"23",
+            "priceval": "439"
+         }
+      ]
+   },
+   "panel3": {
+      "idpanel": "3",
+      "type": "enterprise",
+      "name": "enterprise",
+      "subheader": "Cuota de alta",
+      "loginQuote":"0",
+      "list": [
+         {
+            "idradio": "mensual",
+            "radiovalue": "enterprise_mensual",
+            "forshop": "true",
+            "labeltext": "Mensual",
+            "price": "99 €",
+            "idval":"24",
+            "priceval":"99"
+
+         },
+         {
+            "idradio": "semestral",
+            "forshop": "true",
+            "labeltext": "Semestral",
+            "radiovalue": "enterprise_semestral",
+            "labeloption": "(Ahorro 1 mes)",
+            "price": "495 €",
+            "idval":"25",
+            "priceval": "495"
+
+         },
+         {
+            "idradio": "anual",
+            "forshop": "true",
+            "labeltext": "Anual",
+            "radiovalue": "enterprise_mensual",
+            "labeloption": "(Ahorro 3 meses)",
+            "price": "1.089 €",
+            "idval":"26",
+            "priceval":"1089"
+         }
+      ]
+   },
+   "panel11": {
+      "idpanel": "11",
+      "type": "b2b",
+      "name": "b2b",
+      "subheader": "<strike>Cuota de alta</strike>",
+      "loginQuote":"0",
+      "list": [
+         {
+            "idradio": "noquote",
+            "labeltext": "Pack b2b",
+            "labeloption": "(Sin cuota mensual)",
+            "price": "0 €",
+            "priceval":"0",
+            "disabled":"true"
+         }
+      ]
+   },
+   "panel22": {
+      "idpanel": "22",
+      "type": "dropship",
+      "name": "dropship",
+      "subheader": "<strike>Cuota de alta</strike>",
+      "loginQuote":"0",
+      "list": [
+         {
+            "idradio": "mensual",
+            "labeltext": "Mensual",
+            "price": "49 €",
+            "priceval":"49"
+         },
+         {
+            "idradio": "semestral",
+            "labeltext": "Semestral",
+            "labelClass": "color-blue",
+            "labeloption": "(Pack activo)",
+            "price": "495 €",
+            "priceval": "495",
+            "selected":"true"
+         },
+         {
+            "idradio": "anual",
+            "labeltext": "Anual",
+            "labeloption": "(Ahorro 3 meses)",
+            "price": "439 €",
+            "priceval": "439"
+         }
+      ]
+   },
+   "panel33": {
+      "idpanel": "33",
+      "type": "enterprise",
+      "name": "enterprise",
+      "subheader": "Cuota de alta",
+      "loginQuote":"99",
+      "list": [
+         {
+            "idradio": "mensual",
+            "labeltext": "Mensual",
+            "price": "99 €",
+            "priceval":"99",
+            "idval":"24"
+         },
+         {
+            "idradio": "semestral",
+            "labeltext": "Semestral",
+            "labeloption": "(Ahorro 1 mes)",
+            "price": "495 €",
+            "priceval": "495",
+            "idval":"25"
+         },
+         {
+            "idradio": "anual",
+            "labeltext": "Anual",
+            "labeloption": "(Ahorro 3 meses)",
+            "price": "1.089 €",
+            "idval":"26",
+            "priceval": "1089"
+         }
+      ]
+   }
+}

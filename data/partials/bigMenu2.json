@@ -1,0 +1,134 @@
+{
+    "bigmenu": {
+
+        "principal": {
+            "title": "Hogar y jardín",
+            "subtitle": "Gran selección de productos para su hogar y su jardín",
+            "image": "../../img/categories/hogar/hogar_jardin.jpg"
+
+        },
+
+        "header": [{
+            "title": "Decoración, interiorismo e iluminación",
+            "sectionID": "110",
+            "modifier": "bigMenu-sectionItem--submenu"
+
+        }, {
+            "title": "Baño",
+            "sectionID": "111",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }, {
+            "title": "Jardín y terraza",
+            "sectionID": "113",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }, {
+            "title": "Mascotas",
+            "sectionID": "112",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }, {
+            "title": "Climatización y calefacción",
+            "sectionID": "114",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }, {
+            "title": "Limpieza, aspiración  y planchado",
+            "sectionID": "116",
+            "modifier": "bigMenu-sectionItem--submenu"
+        }, {
+            "title": "Bricolaje y ferretería",
+            "sectionID": "",
+            "modifier": ""
+        }, {
+            "title": "Seguridad en el hogar",
+            "sectionID": "",
+            "modifier": ""
+        }],
+        "categories": [{
+                "sectionID": "110",
+                "image": "../../img/categories/hogar/2400_menu.jpg",
+                "subcategories": [{
+                    "name": "Cuadros y carteles",
+                    "image": "../../img/categories/hogar/2401_small.jpg"
+                }, {
+                    "name": "Marcos de fotos y portafotos"
+                }, {
+                    "name": "Relojes de pared y sobremesa"
+                }, {
+                    "name": "Mecheros, pitilleras y ceniceros"
+                }, {
+                    "name": "Mobiliario y accesorios de interior"
+                }, {
+                    "name": "Cojines y fundas"
+                }, {
+                    "name": "Alfombras y mantas"
+                }, {
+                    "name": "Organización e interiorismo"
+                }, {
+                    "name": "Artículos de decoración"
+                }, {
+                    "name": "Iluminación solar"
+                }, {
+                    "name": "Iluminación y LED"
+                }, {
+                    "name": "Huchas y llaveros"
+                }]
+
+            }, {
+                "sectionID": "111",
+                "image": "../../img/categories/hogar/2424_menu.jpg",
+                "subcategories": [{
+                    "name": "Cortinas, alfombras y toalleros"
+                }, {
+                    "name": "Accesorios de baño"
+                }, {
+                    "name": "Básculas"
+                }]
+            }, {
+                "sectionID": "112",
+                "image": "../../img/categories/hogar/2443_menu.jpg",
+                "subcategories": [{
+                    "name": "Bienestar e higiene"
+                }, {
+                    "name": "Viajar y pasear"
+                }, {
+                    "name": "Cunas y colchonetas"
+                }, {
+                    "name": "Bebederos y comederos"
+                }, {
+                    "name": "Juguetes"
+                }]
+            }, {
+                "sectionID": "113",
+                "image": "../../img/categories/hogar/2435_menu.jpg",
+                "subcategories": [{
+                    "name": "Barbacoas y mangueras"
+                }, {
+                    "name": "Decoración, iluminación y mobiliario"
+                }, {
+                    "name": "Ahuyentadoress"
+                }]
+            }, {
+                "sectionID": "114",
+                "subcategories": [{
+                    "name": "Aire acondicionado y ventiladores"
+                }, {
+                    "name": "Radiadores y estufas"
+                }, {
+                    "name": "Humidificadores"
+                }]
+            },
+
+            {
+                "sectionID": "116",
+                "subcategories": [{
+                    "name": "Aspiradores, robots y escobas"
+                }, {
+                    "name": "Fregonas y mopas"
+                }, {
+                    "name": "Limpieza a vapor"
+                }, {
+                    "name": "Planchas, tendederos y secadoras"
+                }]
+            }
+        ]
+    }
+}

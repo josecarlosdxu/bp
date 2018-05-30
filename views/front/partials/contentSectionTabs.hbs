@@ -1,0 +1,11 @@
+<nav class="tabs">
+  {{#each list}}
+  <a class="tabs-item{{#if selected}} tabs-item--selected{{/if}}" data-js-tab="button" data-js-tab_idbutton="{{@index}}" href="#tabpanel{{@index}}">
+    {{>svgIcon type=icon size='md' class='tabs-itemIcon'}}
+    <span class="tabs-itemTexts">
+      <span class="tabs-itemTitle">{{title}}</span>
+      <span class="tabs-itemSubtitle">{{{text}}}</span>
+    </span>
+  </a>
+  {{/each}}
+</nav>

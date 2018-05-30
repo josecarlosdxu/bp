@@ -1,0 +1,64 @@
+@include block(cmsContent) {
+    a:not(.homefeatured-item) {
+        //text-decoration: underline;
+        color: #333;
+    }
+    a.tooltip-link {
+        color: inherit;
+        border-bottom: none;
+        font-style: normal;
+        cursor: pointer;
+    }
+    p {
+        margin-bottom: $um / 2;
+    }
+    .tabs-item,
+    .tabs-itemTitle,
+    .tabs-itemSubtitle {
+        text-decoration: none;
+    }
+    ul:not(.brandList) {
+        margin-bottom: $um;
+        list-style-type: disc;
+        padding-left: $um;
+        margin-top: $um / 6;
+        ul {
+            list-style: circle outside;
+            margin-bottom: 0.5rem;
+            padding-left: 0.75rem;
+        }
+    }
+    dl {
+        margin-top: -0.5rem;
+    }
+    dt {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+    dd {
+        padding-left: 0.75rem;
+    }
+    .helpSection-accordionPanel {
+        margin-bottom: 0
+    }
+    @include element(title) {
+        font-size: $um * 5.5;
+        @extend %type-titlecms;
+    }
+    @include element(subtitle) {
+        color: #333;
+        font-size: $um * 1.7;
+        @extend %type-subtitlecms;
+    }
+    @include element(description) {
+        margin-bottom: $um;
+        font-size: $um;
+        color: #999;
+        @extend %type-subtitlecms;
+    }
+    @include element(total) {
+        @extend %type-total;
+    }
+}

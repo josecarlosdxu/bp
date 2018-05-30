@@ -1,0 +1,163 @@
+{
+  "list": {
+    "title": "Moda | Complementos",
+    "description": "BigBuy te facilita <strong>comprar a precio mayorista</strong> con un amplio catálogo de ofertas y la modalidad de envío <strong>dropshipping</strong>. Descubre la <strong>venta al por mayor</strong> en una gran cantidad de productos con la posibilidad de comprar online a <strong>precio mayorista</strong>. Seguro que los productos que buscas están en BigBuy. Lo mejor de todo es que nuestros <strong>precios de venta al por mayor</strong> te ofrecen una posibilidad única de hacerte con los mejores artículos a precio mayorista. Contamos con una excelente oferta dropshipping de <strong>productos de teletienda - anunciado en TV</strong>, <strong>utensilios de cocina gourmet</strong>, <strong>electrónica</strong>, <strong>pequeños electrodomésticos</strong>, <strong>productos de hogar y limpieza</strong>, <strong>perfumes y cosmética</strong>, <strong>salud y belleza</strong>. Compra accesorios de <strong>fitness y deportes al por mayor</strong> y aprovecha la venta mayorista de <strong>regalos originales</strong>. Echa un vistazo a nuestra sección de <strong>outlet</strong> y compra al por mayor nuestras <strong>ofertas</strong> exclusivas.",
+    "checked": "checked",
+     "order": "7",
+    "modifiers": [
+      "primary",
+      "selectable"
+    ],
+    "itemName": "moda_y_complementos",
+    "subcategory":"true", "number" :"625",
+    "link" : "categoria-moda.html",
+    "principal":{
+        "title":"Moda y complementos",
+        "subtitle": "Gran selección de productos de moda y complementos",
+        "image":"../../img/categories/moda/2570_menu.jpg"
+    },
+    "families": [
+      {
+        "title": "Ropa y calzado",
+        "itemId": "ropa_y_calzado",
+        "modifier":" bigMenu-sectionItem--submenu",
+        "banner":"moda/2573_header.jpg",
+        "image":"../../img/categories/moda/2573_menu.jpg",
+        "subcategory":"true", "number" : "106",
+        "familyModifier": [
+          "secundary",
+          "selectable"
+        ],
+        "subcategories": [
+          {
+            "name": "Ropa interior",
+            "subcategory":"true", "number" : "5",
+            "banner":"moda/2575_header.jpg",
+             "image":"../../img/categories/moda/2575_small.jpg",
+            "col1": "1",
+            "selected": "menuList-link--selected"
+          },
+          {
+            "name": "Pijamas y batamantas",
+            "banner":"moda/2577_header.jpg",
+             "image":"../../img/categories/moda/2577_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "20"
+          },
+          {
+            "name": "Otras prendas",
+            "banner":"moda/2580_header.jpg",
+             "image":"../../img/categories/moda/2580_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "30"
+          },
+          {
+            "name": "Calzado y accesorios",
+             "banner":"moda/2582_header.jpg",
+              "image":"../../img/categories/moda/2582_small.jpg",
+            "subcategory":"true", "number" : "50"
+          }
+        ]
+      },
+      {
+        "title": "Complementos",
+        "itemId": "complementos",
+        "modifier":" bigMenu-sectionItem--submenu",
+        "subcategory":"true", "number" : "136",
+        "image":"../../img/categories/moda/2584_menu.jpg",
+        "banner":"moda/2584_header.jpg",
+
+        "familyModifier": [
+          "secundary",
+          "selectable"
+        ],
+        "subcategories": [
+          {
+            "name": "Gafas de sol",
+            "subcategory":"true", "number" : "50",
+            "image":"../../img/categories/moda/2586_small.jpg",
+            "col1": "1",
+            "banner":"moda/2586_header.jpg"
+          },
+          {
+            "name": "Bolsos y carteras",
+            "subcategory":"true", "number" : "50",
+             "image":"../../img/categories/moda/2588_small.jpg",
+            "col1": "1",
+            "banner":"moda/2588_header.jpg"
+          },
+          {
+            "name": "Paraguas",
+            "subcategory":"true", "number" : "26",
+             "image":"../../img/categories/moda/2590_small.jpg",
+            "col1": "1",
+            "banner":"moda/2590_header.jpg"
+          },
+          {
+            "name": "Gorros y bufandas",
+            "subcategory":"true", "number" : "60",
+             "image":"../../img/categories/moda/2591_small.jpg",
+            "col1": "1",
+             "banner":"moda/2591_header.jpg"
+          },
+          {
+            "name": "Relojes y pulseras",
+            "subcategory":"true", "number" : "60",
+             "image":"../../img/categories/moda/2595_small.jpg",
+            "col1": "1",
+             "banner":"moda/2595_header.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Bisutería",
+        "itemId": "bisuteria",
+        "modifier":" bigMenu-sectionItem--submenu",
+        "subcategory":"true", "number" : "59",
+        "image":"../../img/categories/moda/2598_menu.jpg",
+        "banner":"moda/2598_header.jpg",
+        "familyModifier": [
+          "secundary",
+          "selectable"
+        ],
+        "subcategories": [
+          {
+            "name": "Anillos",
+            "subcategory":"true", "number" : "11",
+             "image":"../../img/categories/moda/2600_small.jpg",
+            "col1": "1",
+            "banner":"moda/2600_header.jpg"
+          },
+          {
+            "name": "Pulseras",
+            "subcategory":"true", "number" : "4",
+             "image":"../../img/categories/moda/2602_small.jpg",
+            "col1": "1",
+            "banner":"moda/2602_header.jpg"
+          },
+          {
+            "name": "Collares",
+            "subcategory":"true", "number" : "28",
+             "image":"../../img/categories/moda/2604_small.jpg",
+            "col1": "1",
+            "banner":"moda/2604_header.jpg"
+          },
+          {
+            "name": "Pendientes",
+            "subcategory":"true", "number" : "16",
+             "image":"../../img/categories/moda/2661_small.jpg",
+            "col1": "1",
+            "banner":"moda/2661_header.jpg"
+          },
+          {
+            "name": "Otros complementos",
+            "subcategory":"true", "number" : "16",
+             "image":"../../img/categories/moda/2606_small.jpg",
+            "col1": "1",
+            "banner":"moda/2606_header.jpg"
+          }
+        ]
+      }
+    ]
+  }
+}

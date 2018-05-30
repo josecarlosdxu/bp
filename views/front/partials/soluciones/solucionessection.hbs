@@ -1,0 +1,42 @@
+<section class="panel panel--clean">
+{{!-- <h5 class="panel-header"> --}}
+{{!-- {{#if icon}} --}}
+<div class="u-flex--center" >
+{{>svgIcon type=icon size='lg' data='style="color:#6a7786"'}}
+{{!-- <img src="../../img/{{icon}}.svg" alt="" class="panel-headericon"> --}}
+{{!-- {{/if}} --}}
+<h4 class="title1 u-pdl--3rd u-upp">{{{title}}}</h4>
+
+</div>
+
+
+<div class="u-pdv u-pdh--half">
+
+
+
+
+<p class="subtitle6 u-block">{{headertext}}</p>
+
+
+    
+
+
+
+{{#if list}}
+
+
+<ul class="list list--checklist list--midsize u-block u-op-80  u-mgt">
+
+{{#each list}}
+	
+<li class="list-item">{{>svgIcon type='done' class='icon--success list-icon'}}<span class="u-op-60">{{text}}</span></li>
+{{/each}}
+
+</ul>
+{{/if}}
+
+</div>
+
+
+
+</section> 

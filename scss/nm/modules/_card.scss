@@ -1,0 +1,54 @@
+@include block(card) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0 $um / 5;
+    position: relative;
+    flex-basis: $um * 4;
+    align-items: flex-end;
+    justify-content: center;
+    @include modifier(bordered) {
+        min-width: $um * 4;
+        //padding: 0 $um / 2;
+        flex-basis: $um * 4;
+        /* &:before{
+            position: absolute;
+            bottom:$um / 3;
+            left:0;
+            content:"";
+            background: rgba(0,0,0,0.15);
+            width: 1px;
+            height: $um;
+
+
+
+        }*/
+    }
+    @include element(title) {
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        //margin-top: $um;
+        //padding-right: $um;
+    }
+    @include element(name) {
+        @extend .form-label;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    @include element(img) {
+        width: 45px;
+        display: block;
+        margin: 0 auto;
+        @include modifier(disabled) {
+            //opacity: 0.5;
+        }
+    }
+    @include element(container) {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}

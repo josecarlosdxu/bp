@@ -1,0 +1,18 @@
+@include block(news) {
+     @extend .modularGrid-module;
+     @extend %u-xl-40;
+     padding: $um  0 $um * 2;
+
+   @include element(list) {
+    border: 1px solid $color-lightGrey-dark;
+    padding: $um / 2  1rem ;
+    background: $color-lightGrey-default;
+    height: 17rem;
+    overflow: auto;
+    margin-top: 1rem;
+
+   }
+
+
+}
+

@@ -1,0 +1,222 @@
+@include block(import) {
+  margin-bottom: $um;
+  padding:0;
+  text-align: center;
+
+
+  @include element(list) {
+    list-style: disc inside;
+    line-height: 1.5;
+    font-size: 1.2rem;
+
+     @include modifier(link) {
+
+     }
+  }
+
+  @include element(prominent) {
+
+    padding:0 $um;
+
+  }
+
+  @include element(prominentText) {
+    text-transform: uppercase;
+    font-size: $um/1.4;
+    font-style: normal;
+    font-weight: 500;
+
+    font-family: $type-headingscms;
+    padding-bottom: $um / 3;
+    line-height: 1.2;
+
+    color: #333;
+
+    strong {
+      font-weight: 300;
+      color: #000;
+
+    }
+  }
+
+  @include element(prominentImg) {
+    // margin: 0 auto $um;
+    margin: 0;
+    display: block;
+
+//@extend %img--responsive;
+
+}
+
+@include element(titleBox) {
+  width: 100%;
+  display: block;
+  min-height: 8.5rem;
+  padding: 3.5rem 0;
+  margin: 0 auto;
+
+  @include modifier(abs) {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    left: 0;
+
+  }
+  background: rgba(255,255,255,0.8);
+// background: #fff;
+
+@extend %u-xs-75;
+}
+
+@include element(title) {
+  font-size:5rem;
+  @extend %type-titlecms;
+  letter-spacing: -0.03em;
+  opacity: 1;
+  @include addBreakpoint(lg) {
+    font-size: 5rem;
+
+  }
+}
+
+
+
+
+
+@include element(subtitleBox) {
+ width: 100%;
+  height: 2rem;
+  display: block;
+  position: relative;
+
+  margin: 0 auto;
+
+  min-height: 5rem;
+  padding: $um  0;
+
+  @extend %u-xs-75;
+
+
+  background:rgba(53, 59, 64, 0.9);
+//background: #353B40;
+
+color: #fff;
+
+@include modifier(abs) {
+  position: absolute;
+  margin-top: 8.5rem;
+  right: 0;
+  left: 0;
+  top: 12%;
+}
+}
+
+
+@include element(subtitle) {
+  @extend %type-cmsContentSectionTitle;
+  font-size: 2.5rem;
+  letter-spacing: -0.025em;
+
+  @include modifier(section) {
+    text-align: center;
+    line-height: 1.3;
+    font-size: $um * 2.25;
+  }
+}
+
+@include element(bigSlogan) {
+  font-style: normal;
+  font-family: $type-headingscms;
+  text-align: center;
+  line-height: 1.1;
+  font-size: $um * 2.5;
+  font-weight: 700;
+  @include modifier(dropshippingStore) {
+    margin-top: -1rem;
+
+  }
+}
+
+@include element(sloganText) {
+  font-size: $um;
+  font-weight: 300;
+  margin-bottom: $um / 2;
+  text-align: center;
+}
+
+@include element(sectionTitle) {
+  @extend %type-cmsContentSectionTitle;
+  font-size: $um * 1.5;
+  line-height: 2;
+}
+
+@include element(itemTitle) {
+  @extend %type-cmsContentSectionTitle;
+  font-size: $um * 1.5;
+  margin-bottom: $um / 2;
+  line-height: 1;
+}
+
+@include element(sectionText) {
+  font-size: 1.2rem;
+  font-weight: 300;
+  @include modifier(inverse) {
+    color: #ccc;
+  }
+}
+
+
+@include element(bigArrowTop) {
+  display: block;
+  margin: -5rem auto 0;
+}
+
+@include element(section) {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.3;
+  padding:  2rem 3rem 3.5rem;
+  overflow: hidden;
+
+  p {
+
+    margin-bottom: 0.5rem;
+  }
+
+  @include modifier(inverse) {
+    background: #353b40;
+    color: #fff;
+    font-weight:400;
+  }
+
+
+  @include modifier(colorized) {
+    background: $color-brandYellow-lighter;
+    background: #fffbe5;
+  }
+}
+
+
+@include element(subsection) {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+&:focus {
+  outline: none;
+}
+}
+
+@include extendElement(ventaCMS, section ,condensed) {
+
+  padding: $um  0;
+
+  @include element(subtitle) {
+
+    font-size: 2.5rem;
+    letter-spacing: 0;
+    vertical-align: middle;
+  }
+}
+

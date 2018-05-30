@@ -1,0 +1,46 @@
+@include block(stockAvailability) {
+    font-size: 11px;
+    position: relative;
+    label {
+        padding-bottom: .5rem;
+        display: inline-block;
+    }
+    @include modifier(noLogin) {
+        padding-top: 1.7rem;
+    }
+    @include modifier(bigSize) {
+        font-size: 13px;
+    }
+    @include element(nextEntry) {
+        position: relative;
+        margin-left: 1.2rem;
+        line-height: 1;
+        color: #9A9A9B;
+        padding-bottom: 4px;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            background: gainsboro;
+        }
+        &:before {
+            height: 15px;
+            width: 1px;
+            left: -10px;
+            top: -5px;
+        }
+        &:after {
+            height: 1px;
+            width: 7px;
+            top: 9px;
+            left: -10px;
+        }
+        @include modifier(long) {
+            &:before {
+                height: 17px;
+                top: -7px;
+            }
+        }
+    }
+}

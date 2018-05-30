@@ -1,0 +1,41 @@
+@include block(imgBoxBtn) {
+    display:  none;
+    outline: none;
+    position: absolute;
+    /*margin-top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    background: #d6d8db padding-box;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    width: 4rem;
+    text-align: center;
+    display: inline-block;
+    opacity: 0;
+    vertical-align: top;
+    transition: all 0.1s;
+    @include addBreakpoint(xs) {
+        margin-top: $um / 3;
+    }
+    @include addBreakpoint(sm) {
+        margin-top: 0;
+        margin-left: -2px;
+        border-radius: 0 12px 12px 0;
+    }
+    @include modifier(ready) {
+        opacity: 1;
+    }
+    @include modifier(plus) {
+        float: right;
+        clear: left;
+        width: 4.5rem; //optical effect size mobile
+        @include addBreakpoint(sm) {
+            border-radius: 12px 0 0 12px;
+            margin-right: -3px;
+        }
+        @include addBreakpoint(md) {
+            width: 4rem;
+        }
+    }*/
+}

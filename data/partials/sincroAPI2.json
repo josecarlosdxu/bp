@@ -1,0 +1,65 @@
+{
+    "sectionStock": {
+        "header": [{
+            "title": "Sincronización Transportistas",
+            "icon": "truck-delivery2",
+            "modifier": "u-mgb-minus1"
+        }],
+        "footer": [{
+            "slogan": "Sincronice su negocio con BigBuy",
+            "buttonText": "Ser distribuidor",
+            "anchor": "anchor_sync_orders"
+        }],
+        "list": [{
+            "header":[ {"item":"Debido a la dificultad de entregas en diferentes países, códigos postales, áreas remotas, por los diversos tamaños de paquetes, pesos volumétricos, por el transporte en barco, en avión, terrestre, etc., y sumado a la multitud de transportistas que ofrece BigBuy, como UPS, DHL, TNT, DPD, GLS, Dachser, Correos, etc., se convierte en más que necesario automatizar el cálculo de portes."},
+                {"item":"" }
+              ],
+            "headerIcon": "delivery2",
+            "title": "Descarga manual",
+            "extraClasses":["u-mg-three-top"],
+            "items": [{
+                "title": "CSV Tarifas Transportistas (Orientativa)",
+                "icon": "csvfile",
+                "texts": [{
+                    "text": "Facilitamos un archivo CSV con tarifas orientativas de las empresas de transporte con las que trabaja. Este archivo no tiene en cuenta costes, como el peso volumétrico, regiones o códigos postales con costes adicionales, así como medidas máximas admitidas por las diferentes agencias. <a href='https://www.bigbuy.eu/es/entrega-envio.html' class='link' >+info</a>"
+                }]
+            }, {
+                "title": "Módulo Transportistas Prestashop",
+                "icon": "csvfile",
+                "texts": [{
+                    "text": "Para aquellos clientes que usan el software Prestashop, facilitamos un conector de cálculo de portes en el que aparecen todos los transportistas que ofrece BigBuy teniendo en cuenta el peso volumétrico, las regiones o los códigos postales con costes adicionales, las medidas máximas de paquete que admiten las agencias, etc."
+                }, {
+                    "text": "Es importante destacar que el software base de Prestashop no permite añadir transportistas con peso volumétrico, por lo que sin este conector es imposible ofrecer precios exactos de todos los transportistas. <a href='https://www.bigbuy.eu/es/contact' class='link' >+info</a>"
+                }]
+            }]
+        }, {
+            "title": "Tienda dropshipping",
+            "items": [{
+                "title": "Tienda dropshipping sincronizada a BigBuy",
+                "icon": "prestashopfile",
+                "texts": [{
+                    "text": "La tienda dropshipping de BigBuy es la solución llave en mano en la que ofrecemos, de forma integral, todas las necesidades de sincronización del catálogo, stocks, cálculo de portes, pedidos, tracking ID, etc."
+                }, {
+                    "text": "Es la solución más rápida y eficaz dado que, en apenas 2-3 días, puede disponer de un negocio online totalmente sincronizado con BigBuy e invertir su tiempo en vender y promocionar su ecommerce, en lugar de dedicarlo a la tediosa parte técnica de sincronización. <a href='https://www.bigbuy.eu/es/tienda-dropshipping.html' class='link' >+info</a>"
+                }]
+            }]
+        }, {
+            "title": "Desarrolladores / Programadores",
+            "items": [{
+                "title": "API Transportistas",
+                "icon": "code",
+                "texts": [{
+                    "text": "Disponemos de una API para que desarrolladores y programadores puedan conectar su web, ecommerce, ERP, etc. y obtener o consultar en tiempo real el precio exacto y todos los transportistas que ofrece BigBuy, teniendo en cuenta cuenta el peso volumétrico, las regiones o los códigos postales con costes adicionales, las medidas máximas de paquete que admiten las agencias, etc. <a href='https://www.bigbuy.eu/es/contact' class='link' >+info</a>"
+                }]
+            }, {
+                "title": "API Trackings ID",
+                "icon": "code",
+                "texts":  [{
+                    "text": "Disponemos de una API para que programadores y desarrolladores puedan conectar su ecommerce, ERP, etc. y obtener o consultar, en tiempo real, el número de seguimiento del transportista (Tracking ID)."
+                }, {
+                    "text": "Es muy interesante ofrecer el Tracking ID en el panel de control de su ecommerce, ya que muchos compradores online lo valoran positivamente y, además, minimizará las consultas por parte de sus clientes. <a href='https://www.bigbuy.eu/es/contact' class='link' >+info</a>"
+                }]
+            }]
+        }]
+    }
+}

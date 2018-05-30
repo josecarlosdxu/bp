@@ -1,0 +1,208 @@
+@include block(toolbar) {
+    height: $um * 3;
+
+    //text-align: right;
+
+    //background: url("../img/toolbar-bg.png") no-repeat right bottom;
+
+    display: inline-block;
+    width: 100%;
+    max-width: 1210px;
+    min-width: 1024px;
+
+    position: relative;
+
+    @include element(nav) {
+       /* text-align: right;*/
+        font-size: 0;
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+@include element(item) {
+        position: relative;
+        font-size: 1rem;
+        font-weight: 400;
+
+        display: inline-block;
+
+        margin-left: -1px;
+        padding: $um $um / 1.5;
+
+        cursor: pointer;
+        transition: background 0.3s;
+        text-decoration: none;
+        color: #CCC;
+        border: none;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        outline: none;
+        background: none;
+        box-shadow: none;
+
+        vertical-align: top;
+
+        @include modifier(success) {
+            @extend %animated;
+            @extend %fadeBorderTop;
+        }
+
+        @include modifier(active) {
+            z-index: 25;
+
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.15);
+            background: $color-toolbar-itemActive-background;
+        }
+
+        @include modifier(disabled) {
+            cursor: default;
+
+            opacity: 0.36;
+            color: rgba(255,255,255,0.6);
+            background: none;
+            box-shadow: none;
+            &:hover {
+                color: rgba(255,255,255,0.6);
+                border-color: transparent;
+                background: none;
+                box-shadow: none;
+            }
+        }
+
+        &:hover, &:focus {
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.15);
+            background: $color-toolbar-itemActive-background;
+        }
+}
+
+
+@include element(itemTitle) {
+    vertical-align: bottom;
+}
+
+    @include element(userBox) {
+        background: #353b40;
+        border-radius: 3px;
+        padding: 5px 5px 9px;
+        padding-right: 4px;
+        padding-left: 10px;
+        margin-top: -8px;
+    }
+
+    @include element(userBoxPack) {
+        position: relative;
+        top: 2px;
+        margin-left: $um/2;
+    }
+
+
+    @include element(search) {
+        padding: 1rem 1rem 0 3rem;
+        text-align: left;
+        width: $um * 25;
+        width: 100%;
+        padding-left: 0;
+        display: inline-block;
+
+    }
+
+    @include element(searchAdvanced) {
+        color: #CCC;
+        padding: 0.375rem 1.5rem;
+        display: inline-block;
+        font-weight: 400;
+
+        &:hover {
+            color: #FFF;
+        }
+    }
+
+    @include element(icon) {
+        position: relative;
+        top: 1px;
+
+        margin-right: $um / 2;
+
+        font-size: $um / 1.2;
+    }
+
+    @include element(notify) {
+        @extend .notify;
+        background: red;
+        position: absolute;
+        top: 6px;
+        left: 20px;
+        color: #fff;
+        font-size: 0.8rem;
+        min-height: 1.5rem;
+        line-height: 1;
+        min-width: 1.5rem;
+        padding: 4px 0.25rem 0.33rem;
+        text-align: center;
+        font-family: Sans-Serif;
+        vertical-align: top;
+
+
+
+    }
+
+    @include element(languages) {
+        text-align: right;
+         display: inline-block;
+        vertical-align: top;
+
+        color: rgba(255,255,255,0.4);
+        position: relative;
+
+        @include element(selectorText) {
+            //margin-left: 5px;
+            padding-right: 0.25rem;
+
+            //border-left: 1px solid #666;
+        }
+    }
+
+
+}
+
+/*
+@include extendElement(toolbar, nav, topbar) {
+    font-size: 0;
+    width: 100%;
+    text-align: right;
+
+    @include addBreakpoint(xl) {
+        text-align: inherit;
+        padding: 0;
+
+
+    }
+
+
+    @include element(item) {
+        font-size: 1rem;
+         @include element(title) {
+                display: inline-block;
+
+        }
+        @include addBreakpoint(xl) {
+
+           padding-left: 0;
+
+
+        }
+
+
+    }
+
+
+
+}
+
+*/
+
+
+

@@ -1,0 +1,92 @@
+<fieldset class="form-fieldset form-fieldset--sequentialAlt">
+  <div class="modularGrid">
+    {{>fieldsetLegend title='Seleccione los campos de su consulta'}}
+</div>
+ <div class="modularGrid modularGrid--twocolumns">
+    <div class="modularGrid-module">
+      {{>select1 label=label id=id placeholder=placeholder }}
+
+    </div>
+
+  </div>
+
+
+
+<div class="modularGrid u-pdt--half">    
+<div class="modularGrid-module ">
+<label class="form-legend">Preguntas frecuentes sobre su consulta</label> 
+
+   <a href="#" class="link--question u-block u-mgt--half ">Los textos simulados son también utilizados para comparar variedades tipográficas.</a>
+
+   <a href="#" class="link--question u-block u-mgt--half ">¿Incomprensibilidad o legibilidad? Esa es la cuestión.</a>
+
+   <a href="#" class="link--question u-block u-mgt--half ">La utilidad de un contenido sin sentido</a>
+    
+    <label class="form-legend u-mgt u-mgb--half u-block">¿No ha encontrado lo que buscaba? Cree una nueva consulta</label>
+    <button class="button button--ghost">Realizar consulta</button>
+
+    </div>
+
+<div class="modularGrid-module u-mgt">
+    <table class="table table--condensed table--border">   
+    <thead class="table-thead table-thead--dark">
+        <tr class="table-tr">
+            <th class="table-th table-item ">Fecha</th>
+            <th class="table-th table-item ">Nº pedido</th>
+            <th class="table-th table-item ">Ref. interna</th>
+            <th class="table-th table-item  ">Destinatario</th>
+            <th class="table-th table-item ">Forma de pago</th>
+            <th class="table-th table-item ">Mensajería</th>
+            <th class="table-th table-item ">RDO</th>
+            <th class="table-th table-item ">Importe</th>
+            <th class="table-th table-item ">Estado</th>
+            <th class="table-th table-item ">Tracking</th>
+        </tr>
+    </thead>
+    <tbody class="table-tbody  table-tbody--stripped">
+    {{#times 3}}
+        <tr class="table-tr">
+            <td class="table-item">10/10/2100</td>
+            <td class="table-item ">12345678900</td>
+            <td class="table-item ">12345678</td>
+            <td class="table-item ">Napoleón Abelardo Tobías Higueruela Povedilla</td>
+            <td class="table-item ">VISA PayPal</td>
+            <td class="table-item ">MRW</td>
+            <td class="table-item ">--</td>
+            <td class="table-item ">10.365€</td>
+            <td class="table-item ">Expedido</td>
+            <td class="table-item ">--</td>
+        </tr>
+        {{/times}}      
+    </tbody>   
+</table> 
+</div>
+
+
+
+
+
+
+
+  </div>
+</fieldset>
+<fieldset class="form-fieldset form-fieldset--sequentialAlt">
+  <div class="modularGrid">
+  {{>fieldsetLegend title='Escriba aquí sus comentarios'}}
+    <div class="modularGrid-module">
+      <label for="" class="form-label">Mensaje</label>
+      <textarea class="form-textarea"> </textarea>
+    </div>
+    {{>fileUploads}}
+  </div>
+</fieldset>
+
+
+
+
+
+
+
+
+
+

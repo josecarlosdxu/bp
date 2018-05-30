@@ -1,0 +1,536 @@
+%colorHeroGreen,
+.colorHeroGreen:not(.info) {
+    color: $heroGreenDark;
+    .info {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+$heroGiftBg: #85b1ce;
+
+
+%heroGiftText {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 1;
+    text-align: left;
+    padding: 0;
+}
+
+@include block(hero) {
+    @include element(content) {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    @include element(title) {
+        @extend %type-section-title;
+        font-size: $um * 2;
+        text-transform: uppercase;
+        display: block;
+        margin: 0;
+        text-align: center;
+        line-height: 1;
+        padding: 0 $um;
+    }
+    @include element(subtitle) {
+        @extend .supertitle;
+        display: block;
+        font-weight: 700;
+        opacity: 0.6;
+        padding: 1rem $um $um;
+        text-align: center;
+    }
+    @include element(itemslist) {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding: $um 0;
+        border: 4px solid $color-lightGrey-light;
+    }
+    @include element(contentheader) {
+        background-color: $color-lightGrey-light;
+        padding: 1rem 2rem;
+        img {
+            max-width: 100%;
+            height: 5.5rem;
+        }
+    }
+    @include element(item) {
+        align-content: start;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        width: calc((100% - 14rem) / 8);
+        &:after {
+            content: "+";
+            display: block;
+            font-size: 2rem;
+            font-weight: 500;
+            position: absolute;
+            right: -2.05rem;
+            text-align: center;
+            width: 2rem;
+            color: $allInOneColor;
+            top: $um;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+                content: "";
+            }
+        }
+    }
+    @include element(icon) {
+        width: 3rem;
+        height: 3rem;
+        opacity: 0.4;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+    @include element(itemtitle) {
+        @extend %type-section-title;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+}
+
+
+
+@include extendBlock(hero, multichannel) {
+    background-color: $heroGreenLight;
+    padding: $um * 1.5 0 $um * 2;
+    @include element(title) {
+
+        @extend %sliderText;
+        text-align: left;
+        padding: 0;
+        /*@extend %colorHeroGreen;
+        background-color: white;
+        display: inline-block;
+        line-height: 1.2;
+        padding: 0.5rem 1.25rem $um / 2;
+        text-align: left;
+        width: auto;*/
+    }
+    @include element(subtitle) {
+        text-align: left;
+        padding: 0;
+        color: white;
+        opacity: 1;
+        font-size: $um * 2.3;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        margin: 0;
+        margin: 0.75rem 0 0.5rem;
+        line-height: 1;
+    }
+    @include element(heading) {
+        @extend .supertitle;
+        display: block;
+        font-weight: 700;
+        font-size: 1.85rem;
+        opacity: 0.55;
+        padding: 0; //text-align: center;
+    }
+}
+
+@include extendBlock(hero, catalogo) {
+    background-color: #a8d0d5;
+    padding: $um * 1.5 0 $um * 2;
+    @include element(title) {
+
+        @extend %sliderText;
+        text-align: left;
+        padding: 0;
+        /*@extend %colorHeroGreen;
+        background-color: white;
+        display: inline-block;
+        line-height: 1.2;
+        padding: 0.5rem 1.25rem $um / 2;
+        text-align: left;
+        width: auto;*/
+    }
+    @include element(subtitle) {
+        text-align: left;
+        padding: 0;
+        color: white;
+        opacity: 1;
+        font-size: $um * 2.3;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        margin: 0;
+        margin: 0.75rem 0 0.5rem;
+        line-height: 1;
+    }
+    @include element(heading) {
+        @extend .supertitle;
+        display: block;
+        font-weight: 700;
+        font-size: 1.85rem;
+        opacity: 0.55;
+        padding: 0; //text-align: center;
+    }
+}
+
+@include extendBlock(hero, soluciones) {
+    background-color: #5F7E8E;
+    @include element(title) {
+        @extend %sliderText;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-size: $um * 2;
+        @include addBreakpoint(md) {
+            font-size: 4rem;
+        }
+    }
+    @include element(subtitle) {
+        font-weight: 400;
+        opacity: 0.8;
+        padding: 1rem 1.5rem 1.5rem;
+        text-align: left;
+        color: white;
+        font-size: $um;
+        @include addBreakpoint(md) {
+            font-size: 2rem;
+        }
+    }
+    /* @include element(banner) {
+        background-color:mix($color-accentBlue-dark,white,50%);
+        font-size: $um;
+        padding: $um;
+        color:white;
+
+    }*/
+}
+
+@include extendBlock(hero, allinone) {
+    margin-bottom: $um * 3;
+    position: relative;
+    padding-top: $um * 3;
+    @include element(content) {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            height: $um * 3;
+            width: 4px;
+            background-color: $allInOneColor;
+            left: calc(50% - 2px);
+            bottom: 0 - $um * 3;
+            display: block;
+        }
+    }
+    @include element(contentheader) {
+        background-color: $allInOneColor;
+
+        img {
+            height: auto;
+        }
+    }
+    @include element(itemslist) {
+        padding: $um * 2 0;
+        border-color: $allInOneColor;
+    }
+    @include element(item) {
+        /*align-content: start;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        width: calc((100% - 14rem) / 8);*/
+        &:after {
+            /*content: "+";
+            display: block;*/
+            font-size: 2.5rem;
+            /*font-weight: 500;
+            position: absolute;
+            right: -2.05rem;
+            text-align: center;*/
+            width: 2rem;
+            color: $allInOneColor;
+            /* top: $um;*/
+        }
+        /* &:last-child {
+            &:after {
+                display: none;
+                content: "";
+            }
+        }*/
+    }
+    @include element(icon) {
+        width: 3.5rem;
+        height: 3.5rem;
+        /*opacity: 0.4;
+        display: block;
+        margin: 0 auto 1rem;*/
+    }
+    @include element(itemtitle) {
+        margin-bottom: $um / 2;
+        /*@extend %type-section-title;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        line-height: 1;*/
+    }
+}
+
+
+@include extendBlock(hero, gift) {
+    position: relative;
+    display: flex;
+    background-image: linear-gradient($color-lightGrey-light 50%, #ffffff 50%);
+    color: #666;
+    &:before {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #dbdddf;
+        content: "";
+        display: block;
+        top: calc(50% - 1px);
+        z-index: 0;
+    }
+
+    @include element(title) {
+        @extend %heroGiftText;
+        color: #33adff;
+        font-size: 2.5rem;
+        margin-bottom: 0.2rem;
+        @include addBreakpoint(md) {
+            font-size: $um * 2;
+        }
+    }
+    div {
+        margin: 0 auto;
+        width: auto;
+        background-color: white;
+        border: 3px solid #dbdddf;
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+        display: block;
+        padding: 0 0 1.5rem;
+
+        @include addBreakpoint(sm) {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 2rem 6rem 2.5rem 10.5rem;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            background-color: #99d6ff;
+            position: absolute;
+            height: 29px;
+            width: 29rem;
+
+            transform: rotate(-45deg);
+            z-index: 0;
+        }
+
+        &:before {
+            left: -8rem;
+            top: 0;
+            display: block;
+            @include addBreakpoint(sm) {
+                top: 5rem;
+            }
+        }
+        &:after {
+            display: none;
+
+            @include addBreakpoint(sm) {
+                display: block;
+                right: -8.5rem;
+                bottom: 0;
+            }
+        }
+        article {
+            position: relative;
+
+            z-index: 1;
+            max-width: 31rem;
+
+            padding: 1.25rem 1.5rem 1rem 2.5rem;
+            @include addBreakpoint(sm) {
+                padding: 1.25rem 0.5rem 1rem 2.5rem;
+            }
+        }
+    }
+    img {
+        height: 6rem;
+        left: 1.5rem;
+        position: relative;
+        top: 1rem;
+        transform: rotate(-45deg);
+        width: 6rem;
+        @include addBreakpoint(sm) {
+            position: absolute;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+    @include element(subtitle) {
+        @extend %heroGiftText;
+    }
+    @include element(subtitle1) {
+        @extend %heroGiftText;
+        font-weight: normal;
+        padding-top: 0.5rem;
+    }
+    /* background-color: $heroGiftBg;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.1;
+    @include element(title) {
+        font-family: $type-ui;
+        font-weight: 500;
+        color: inherit;
+        text-align: left;
+    }
+    @include element(subtitle) {
+        font-family: $type-ui;
+        font-weight: 300;
+        color: inherit;
+        text-align: left;
+        padding: 0 $um;
+        opacity: 1;
+        margin: 0;
+
+    }
+    @include element(subtitle1) {
+        font-weight: 500;
+        color: inherit;
+        text-align: left;
+        padding: 0 $um;
+        font-size: 2.5rem;
+
+
+    }*/
+}
+
+
+
+@include extendBlock(hero, dropshop) {
+    background-color: $heroGiftBg;
+    color: white;
+    @include element(title) {
+        @extend %sliderText;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 0;
+        text-shadow: none;
+        font-size: 3rem;
+        @include addBreakpoint(md) {
+            font-size: 3.5rem;
+        }
+    }
+    @include element(subtitle) {
+        font-weight: 400;
+        opacity: 0.8;
+        padding: 1rem 0;
+        text-align: left;
+        color: white;
+        font-size: $um;
+        @include addBreakpoint(md) {
+            font-size: 2rem;
+        }
+    }
+    /* @include element(banner) {
+        background-color:mix($color-accentBlue-dark,white,50%);
+        font-size: $um;
+        padding: $um;
+        color:white;
+
+    }*/
+}
+
+@include extendBlock(hero, dropship360) {
+    background-color: $heroGiftBg;
+
+    color: white;
+
+    @include element(title) {
+        @extend %sliderText;
+        text-align: left;
+
+
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 0;
+        text-shadow: none;
+        font-size: 3rem;
+        @include addBreakpoint(md) {
+            font-size: 4rem;
+        }
+    }
+    @include element(subtitle) {
+
+        opacity: 0.8;
+        padding: 0.5rem;
+        margin-bottom: $um;
+        color: white;
+        font-size: $um;
+        text-align: left;
+        @include addBreakpoint(md) {
+            font-size: 2.1rem;
+        }
+    }
+    @include element(image) {
+        margin: 0 auto;
+
+        max-width: 100%;
+        display: block;
+        height: auto;
+        @include addBreakpoint(lg) {
+            margin-top: -3.5rem;
+        }
+    }
+    @include element(container) {
+        max-width: 1200px;
+
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        @include addBreakpoint(md) {
+            padding-top: 5.5rem;
+        }
+    }
+}
+
+@include extendBlock(hero, dropship36050) {
+    background-color: $heroGiftBg;
+    color: white;
+    padding-top: 1.5rem;
+    @include addBreakpoint(lg) {
+        padding-top: 4.5rem;
+        
+    }
+    
+
+
+    @include element(subtitle) {
+        opacity: 1;
+        color: white;
+        margin-bottom: 0;
+        padding: 0;
+        text-align: left;
+        font-size: 2.45rem;
+    }
+
+    @include element(subtitle2) {
+        font-family: $type-headingscms;
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.2;
+        opacity: 0.8;
+    }
+}

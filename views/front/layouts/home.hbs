@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head }}
+<body>        
+{{> header lockedCart='true' shop='true'}}
+
+<nav class="mainNav">
+  <div class="modularGrid modularGrid--boxed">
+    <div class="mainNav-content">
+      {{> mainNavHome}}
+    </div>
+  </div>
+</nav>
+<section class="content content--slider">
+    <div class="modularGrid">
+        {{> sliderBanner1}}
+    </div>
+</section>
+{{>body}}
+{{>apiDropshippingMessage}}
+<footer class="footer">
+    {{> footer}}
+</footer>
+{{> delayedScripts home='true'}}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

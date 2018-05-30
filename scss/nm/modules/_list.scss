@@ -1,0 +1,184 @@
+@include block(list) {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    @include element(dt) {
+        padding: $um / 3 0;
+        vertical-align: top;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    @include element(dd) {
+        padding: $um / 3 0;
+        vertical-align: top;
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 1rem;
+        @include addBreakpoint(xs) {
+            margin-bottom: 0;
+            // background:tomato;
+        }
+    }
+    @include element(definition) {
+        outline: none;
+    }
+    @include element(item) {
+        outline: none;
+    }
+    @include modifier(numered) {}
+}
+
+@include extendElement(list, definition, inline) {
+    @include element(dt) {
+        display: inline-block;
+    }
+    @include element(dd) {
+        display: inline-block;
+    }
+}
+
+@include extendElement(list, definition, collapsed) {
+    @include element(dt) {
+        padding: 0;
+        line-height: 1.3;
+    }
+    @include element(dd) {
+        padding: 0;
+        line-height: 1.3;
+    }
+}
+
+@include extendBlock(list, numered) {
+    font-size: inherit;
+    counter-reset: counter;
+    @include element(item) {
+        display: inline-flex;
+        position: relative;
+        line-height: 1.1;
+        align-items: center;
+        font-size: 1.25rem;
+        width: 100%;
+        &:before {
+            content: counter(counter);
+            counter-increment: counter;
+            width: 2rem;
+            height: 2rem;
+        }
+        @include modifier(featured) {
+            margin-bottom: $um;
+            &:before {
+                align-items: center;
+                border: 4px solid #EDC22E;
+                border-radius: 100%;
+                display: flex;
+                font-size: $um;
+                font-weight: 700;
+                justify-content: center;
+                margin-right: 1rem;
+                padding: $um;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+
+
+@include extendBlock(list, bullet) {
+
+    width: auto;
+    font-size: inherit;
+    @include element(item) {
+        padding-bottom: $um;
+        line-height: 1.1;
+        text-indent: -0.65em;
+
+        &:before {
+            content: ".";
+            font-size: 1.5em;
+            line-height: 0;
+            vertical-align: top;
+            margin-right: 0.15em;
+        }
+    }
+    .list-item.panel-itemTitle{
+
+        &:before{
+            margin-right: 0;
+
+        }
+    }
+}
+
+
+
+@include extendBlock(list, line) {
+    padding-left: 0.95rem;
+    width: auto;
+    font-size: inherit;
+    @include element(item) {
+        padding-bottom: $um / 2;
+        line-height: 1.1;
+        text-indent: -0.6em;
+        &:before {
+            content: "-";
+            //display: inline-block;
+            font-size: 1.25em;
+            line-height: 0.8;
+            opacity: 0.6;
+            vertical-align: top;
+            //width: 0.4em;
+            margin-right: 0.2em;
+        }
+    }
+}
+
+
+@include extendBlock(list, checklist) {
+    font-size: inherit;
+    @include element(item) {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: $um / 2;
+        line-height: 1.2;
+        .icon:not(.list-icon) {
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+        }
+
+        &:before{
+            content: "";
+            display: none;
+        }
+    }
+    @include element(icon) {
+        margin: 0 .4rem 0 0;
+
+    }
+}
+
+
+@include extendBlock(list, midsize) {
+    font-size: 1.166rem;
+    font-weight: 400;
+}
+
+
+@include extendBlock(list, regularsize) {
+    font-size: 1rem;
+}
+
+
+@include extendBlock(list, bigsize) {
+    font-size: 1.3rem;
+
+    @include element(item) {
+        padding-top: $um / 2;
+        padding-bottom: 0;
+
+
+
+    }
+}
+
+

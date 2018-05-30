@@ -1,0 +1,107 @@
+@include block(productList) {
+    position: relative;
+
+    font-size: 0;
+
+    @include element(item) {
+        display: inline-block;
+
+        width: 100%;
+        padding: $um / 4;
+
+        text-align: center;
+    }
+}
+
+@include extendBlock(productList,fullpage) {
+    @include element(item) {
+        @extend %u-xs-50;
+        @extend %u-sm-3rd;
+        @extend %u-md-15;
+        @extend %u-lg-7th;
+        @extend %u-xl-7th;
+
+         padding: 0;
+         box-shadow: none;
+    }
+}
+
+@include extendBlock(productList,related) {
+    @include element(item) {
+        @extend %u-xs-50;
+        @extend %u-sm-3rd;
+        @extend %u-md-20;
+        @extend %u-xl-6th;
+    }
+
+}
+
+@include extendBlock(productList,viewedProducts) {
+    @include element(item) {
+        padding: 0;
+
+        border-bottom: 1px solid $color-shadow;
+
+        @extend %u-md-3rd;
+        @extend %u-lg-100;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+@include extendBlock(productList,menu) {
+    @include element(item) {
+        padding: 0;
+
+        @extend %u-sm-25;
+    }
+}
+
+@include extendBlock(productList,slides) {
+    padding: 2.5rem 0;
+
+    text-align: center;
+
+    @include element(item) {
+
+        @extend %u-sm-15;
+
+    }
+}
+
+@include extendBlock(productList,starProducts) {
+    @include element(item) {
+      margin-bottom: $um / 2;
+      padding: 0;
+
+      /* @extend %u-md-50;*/
+      border: 1px solid $color-shadow;
+      min-height: 82px;
+    }
+}
+
+@include extendBlock(productList,slidesHalf) {
+    @include element(item) {
+       margin: $um * 2 2% $um / 2;
+
+       @extend %u-md-25;
+        &:nth-child(3n+1) {
+            margin-left: 8.5%;
+        }
+    }
+}
+
+@include extendBlock(productList,searchBoxList) {
+    @include element(item) {
+         padding: 0;
+
+        @extend %u-md-6th;
+        @extend %u-lg-7th;
+        @extend %u-xl-8th;
+        @extend %u-xxl-10;
+
+    }
+}
+
+

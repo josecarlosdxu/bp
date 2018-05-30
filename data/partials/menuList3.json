@@ -1,0 +1,119 @@
+{
+  "list": {
+    "title": "Ocio | Tiempo libre",
+    "modifiers": [
+      "primary",
+      "selectable"
+
+    ],
+    "itemName": "ocio_y_tiempo_libre",
+    "subcategory":"true", 
+    "childs": "true",
+    "number" :"620",
+    "link" : "categoria-ocio.html",
+    "order": "3",
+
+    "principal":{
+        "title":"Ocio y tiempo libre",
+        "subtitle": "Gran selección de productos para el ocio y el tiempo libre",
+        "image":"../../img/categories/ocio/2472_menu.jpg"
+    },
+    
+    "families": [
+      {
+        "title": "Fiestas y celebraciones",
+        "itemId":"fiestas_y_celebraciones",
+        "image":"../../img/categories/ocio/2473_menu.jpg",
+        "modifier":" bigMenu-sectionItem--submenu",
+        "subcategory":"true", "number" : "89",
+        "banner":"ocio/2473_header.jpg",
+        "familyModifier": [
+          "secundary",
+          "selectable"
+        ],
+        "subcategories": [
+          {
+            "name": "Artículos eróticos",
+            "banner":"ocio/2476_header.jpg",
+            "image":"../../img/categories/ocio/2476_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "5"
+          },
+          {
+            "name": "Artículos románticos",
+            "banner":"ocio/2478_header.jpg",
+             "image":"../../img/categories/ocio/2478_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "7"
+          },
+          {
+            "name": "Artículos de broma",
+            "banner":"ocio/2481_header.jpg",
+             "image":"../../img/categories/ocio/2481_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "27"
+          },
+          {
+            "name": "Juegos de mesa y otros",
+            "banner":"ocio/2486_header.jpg",
+             "image":"../../img/categories/ocio/2486_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "16"
+          },
+          {
+            "name": "Disfraces y artículos para celebraciones",
+            "banner":"ocio/2488_header.jpg",
+             "image":"../../img/categories/ocio/2488_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "50"
+          }
+        ]
+      },
+      {
+        "title": "Camping y montaña",
+        "subcategory":"true", "number" : "142",
+        "banner":"ocio/2490_header.jpg",
+        "image":"../../img/categories/ocio/2490_menu.jpg",
+        "itemId":"camping_y_montana",
+        "familyModifier": [
+          "secundary",
+          "last"
+        ]
+      },
+      {
+        "title": "Playa y piscina",
+        "subcategory":"true", "number" : "98",
+        "banner":"ocio/2497_header.jpg",
+        "image":"../../img/categories/ocio/2497_menu.jpg",
+        "itemId":"playa_y_piscina",
+        "familyModifier": [
+          "secundary",
+          "last"
+        ]
+      },
+      {
+        "title": "Maletas y equipaje de mano",
+        "banner":"ocio/2498_header.jpg",
+        "image":"../../img/categories/ocio/2498_menu.jpg",
+        "subcategory":"true", "number" : "35",
+        "itemId":"maletas_y_equipaje_de_mano",
+        "familyModifier": [
+          "secundary",
+          "last"
+        ]
+      },
+      {
+        "title": "Accesorios para automóviles",
+        "banner":"ocio/2499_header.jpg",
+        "image":"../../img/categories/ocio/2499_menu.jpg",
+        "subcategory":"true", "number" : "162",
+        "itemId":"automocion_y_accesorios",
+        "familyModifier": [
+          "secundary",
+          "last"
+
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+<!-- Back Toolbar -->
+<div class="toolbar">
+
+   {{!-- <!-- <div class="modularGrid-module u-xs-45 u-md-25 u-lg-35 u-xl-40">
+        <div class="toolbar-search">
+            <div class="modularGrid">
+                <div class="modularGrid-module u-md-100 u-lg-55 u-xl-60 u-pdl--half">
+                    <input type="text" placeholder="Buscar en todo el sitio..." class="form-input form-input--postfix" id="inputtext1">
+                    <button class="button button--postfix">
+                    <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-search"></use></svg>
+
+                    </button>
+                </div>
+                <div class="modularGrid-module u-md-hide u-lg-show u-lg-45 u-xl-40">
+                    <a href="" class="form-action toolbar-searchAdvanced"> Búsqueda avanzada</a>
+                </div>
+            </div>
+        </div>
+    </div>--> --}}
+
+
+    <div class="modularGrid-module u-tar ">
+
+        <nav class="toolbar-nav toolbar-nav--topbar">
+
+
+
+                    <a href="../front/home.html" class="toolbar-item" title="Cerrar sesión">
+
+                        <div class="toolbar-userBox">
+                        <span class="toolbar-itemTitle">
+                                <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-logout"></use></svg>
+                                Cerrar sesión ( 0123456789-0123456789-0123456789-012345 )
+                            </span>
+                            <span class="toolbar-userBoxPack pack pack--business u-mgl--half">Business</span>  </div>
+                        </a>
+                 <a class="toolbar-item" href="../front/home.html" title="Tienda">
+                <span class="toolbar-itemTitle">
+                    <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-home"></use></svg>
+                    Tienda</span></a>
+
+
+
+            <button class="toolbar-item" title="Mi carrito">
+                <span class="toolbar-itemTitle">
+                <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-cart"></use></svg>
+                Mi carrito<b class="toolbar-notify">10</b>
+            </span>
+            </button>
+
+            {{!-- <button class="toolbar-item"  title="Cerrar sesión">
+                <div class="toolbar-userBox">
+                    <span class="toolbar-itemTitle">
+                        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-login"></use></svg>
+                        Cerrar sesión (Roberto)
+                    </span>
+                    <span class="toolbar-userBoxPack pack pack--pro">Pro</span>
+                </div>
+            </button> --}}
+
+
+        </nav>
+         <nav class="toolbar-languages" data-js-toolbar-languages="toolbar-languages">
+            <button class="toolbar-item" data-js-toolbar-languages="toolbar-languages-btn">
+                <span class="toolbar-itemTitle">
+                    <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-es"></use></svg>
+                    <span class="toolbar-languages-selectorText">Español</span>
+                    <svg role="img" class="icon icon--inline icon--xs u-vb"><use xlink:href="../../img/icons/svg-defs.svg#icon-caretDown"></use></svg>
+                </span>
+            </button>
+            {{> toolbarLanglist }}
+        </nav>
+
+
+    </div>
+
+
+
+</div>

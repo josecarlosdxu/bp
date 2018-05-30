@@ -1,0 +1,89 @@
+{
+  "featured":{
+    "list":[
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"units",
+        "title":"Unidades sueltas a precio mayorista PVD",
+        "text":"Miles de artículos del catálogo de BigBuy, con la posibilidad de comprar unidades sueltas a precio mayorista <span class='tooltip-link' data-js-tooltip='PVDToolTip'>PVD</span>"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"discount",
+        "title":"Descuento automático",
+        "text":"Descuento adicional sobre el <span class='tooltip-link' data-js-tooltip='PVDToolTip'>PVD</span> de hasta el 10% en función del importe total del carrito de la compra"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"europe",
+        "title":"Servicio dropshipping - Envíos internacionales",
+        "text":"Envío desde BigBuy directo al cliente final con el nombre y la imagen de su empresa. <a href='https://www.bigbuy.eu/es/dropshipping.html' class='link'>+info</a>"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"translations",
+        "title":"Traducciones nativas a 24 idiomas europeos",
+        "text":"Nuestro catálogo está traducido a 24 idiomas europeos por traductores profesionales nativos."
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"downloads",
+        "title":"Descarga de material para marketing online",
+        "text":"Su panel de control dispone de banners, imágenes y newsletters en multitud de idiomas para usarlo en su web."
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"block",
+        "title":"Bloqueo de stock",
+        "text":"Ofrecemos un servicio gratuito de bloqueo de stock de parte de nuestro catálogo por un máximo de 7 días, sin necesidad de entregar dinero a cuenta. Es ideal para lanzar promociones en webs de compra colectiva.  <a class='mediaObject-link' href='https://www.bigbuy.eu/es/bloqueo-de-stock.html'>+ info</a>"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"synchro",
+        "title":"Sincroniza con BigBuy – API / FTP / CSV / XML",
+        "text":"Facilitamos multitud de opciones para sincronizar catálogo, stocks, pedidos, transportistas, precios de envío y trackings con BigBuy. <a class='mediaObject-link' href='https://www.bigbuy.eu/es/archivos-csv-xml.html'>+ info</a>"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"integration",
+        "title":"Multi-channel Integration Platform",
+        "text":"Plataforma que centraliza, gestiona y sincroniza todas las necesidades de su tienda dropshipping. <a class='mediaObject-link' href='https://www.bigbuy.eu/es/archivos-csv-xml.html'>+ info</a>"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"shop",
+        "title":"Tienda dropshipping 360º",
+        "text":"Solución integral llave en mano, basada en una tienda online 360º sincronizada con BigBuy, que incluye blog, tienda en Facebook y multitud de herramientas. <a class='mediaObject-link' href='https://www.bigbuy.eu/es/tiendaDropshipping.html'>+ info</a>"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"grouped",
+        "title":"Pedidos agrupados en un solo envío",
+        "text":"Posibilidad de unificar multitud de pedidos recibidos en un sólo envío a su almacén, logística o FBA. <a class='mediaObject-link' href='https://www.bigbuy.eu/es/archivos-csv-xml.html'>+ info</a>"
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"massive",
+        "title":"Carga masiva de pedidos en CSV",
+        "text":"Posibilidad de hacer una carga masiva por CSV de pedidos con envío dropshipping."
+      },
+      {
+        "classes": [ "u-sm-50", "u-lg-3rd"],
+        "img":"couriers",
+        "title":"Envíos con los principales couriers internacionales",
+        "text":"Integración de multitud de transportistas, precios de envío y trackings con los principales couriers (UPS, DHL, TNT, GLS, DPD, etc.)"
+      }
+
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,179 @@
+<div class="productSheet-options">
+    <form data-js-frm_cart="" class="form form--inline" action="">
+        <fieldset class="form-fieldset form-fieldset--borderless">
+            <div class="modularGrid">
+                <div class="productSheet-attributesCont">
+                    {{#if cartlogo}}
+                    {{else}}
+                    <div class="productSheet-attributes">
+                       
+                            <label class="form-label" for="">Peso</label>
+                            <select class="form-select" data-js-select_attributes="158" name="Peso">
+                                <option value="775" selected="selected">8.5 / 9 Kg.</option>
+                                <option value="776">8 / 8.5 Kg.</option>
+                                <option value="779">5.5 / 6 Kg.</option>
+                            </select>
+                       
+                            <label class="form-label" for="">Lote de 4 Embutidos</label>
+                            <select class="form-select" data-js-select_attributes="152" name="Lote de 4 Embutidos">
+                                <option value="1007">Sin Embutidos</option>
+                                <option value="1006" selected="selected">Con Embutidos</option>
+                            </select>
+                       
+                    </div>
+                    {{/if}}
+                </div>
+
+               {{!--  <aside class="productSheet-discountBadge">
+                    <div class="modularGrid">
+                        <div data-js-price_product="" class="productSheet-pvp1">
+                            <span class="productSheet-pvp1Title">PVR</span>
+                            <span class="productSheet-pvp1Val">230,09 €</span>
+                            <div  class="productSheet-pvp2" data-js-price_shop="">
+                                <span class="productSheet-pvp2Title">En tiendas</span>
+                                <span class="productSheet-pvp2Val">460,90 €</span>
+                            </div>
+                        </div>
+                        <div data-js-price_discount="" class="productSheet-pvp3">
+                            <div class="productSheet-pvp3Val">- 50 %</div>
+                        </div>
+
+                    </div>
+                    <span data-js-product_sheet="" class="form-info productSheet-info  u-flr">Transporte y 10% de IVA no incluidos</span>
+                </aside> --}}
+                {{#if hotdeal}}
+
+                <aside class="productSheet-discountBadge">
+
+
+                   <div class="productSheetBadge productSheetBadge--hot"> 
+
+                    <div class="productSheetBadge-old">
+
+                        <p class="productSheetBadge-pvd u-mgb--min">Old PVD</p>
+                        <p class="u-mgb--min"><strike>140,68 €</strike></p>
+                        <p class="productSheetBadge-pvr">Old PVR <strike>153,45 €</strike></p>
+
+                    </div> 
+                    <div class="productSheetBadge-new">
+                        <p class="productSheetBadge-title">hot deal</p>
+                        <p class="productSheetBadge-pvd">New PVD</p>
+                        <p class="productSheetBadge-price">125,98 €</p>
+                        <p class="productSheetBadge-pvr">New PVR <span>153,45 €</span></p>
+                        <p class="productSheetBadge-ribbon">-20%</p>
+                    </div>    
+
+                </div>
+
+
+                <span data-js-product_sheet="" class="form-info productSheet-info  u-flr">Transporte y 21% de IVA no incluidos</span>
+            </aside>
+
+
+
+                
+                {{else}}
+                {{#if blackfriday}}
+
+                <aside class="productSheet-discountBadge">
+
+                 <div class="productSheetBadge"> 
+
+                    <div class="productSheetBadge-old">
+
+                        <p class="productSheetBadge-pvd u-mgb--min">Old PVD</p>
+                        <p class="u-mgb--min"><strike>140,68 €</strike></p>
+                        <p class="productSheetBadge-pvr">Old PVR <strike>153,45 €</strike></p>
+
+                    </div> 
+                    <div class="productSheetBadge-new">
+                        <p class="productSheetBadge-title">BLACK FRIDAY</p>
+                        <p class="productSheetBadge-pvd">New PVD</p>
+                        <p class="productSheetBadge-price">125,98 €</p>
+                        <p class="productSheetBadge-pvr">New PVR <span>153,45 €</span></p>
+                        <p class="productSheetBadge-ribbon">-20%</p>
+                    </div>    
+
+                </div>
+
+                <span data-js-product_sheet="" class="form-info productSheet-info  u-flr">Transporte y 10% de IVA no incluidos</span>
+               </aside>
+               {{else}}
+               <aside class="productSheet-discountBadge ">
+                                            <div class="modularGrid">
+                            
+                            <div class="modularGrid-module u-xxs-75">
+                                <div data-js-price_product="" class="productSheet-pvp1 ">
+                                    <span class="productSheet-pvp1Title">PVR</span>
+                                    <span class="productSheet-pvp1Val">32,64 €</span>
+                                                                            <div class="productSheet-pvp2" data-js-price_shop="">
+                                            <span class="productSheet-pvp2Title">En tiendas</span>
+                                            <span class="productSheet-pvp2Val">64,90 €</span>
+                                        </div>
+                                                                    </div>
+                            </div>
+
+                                                        <div class="modularGrid-module u-xxs-25">
+                                <div data-js-price_discount="" class="productSheet-pvp3">
+                                    <div class="productSheet-pvp3Val">- 50%</div>
+                                </div>
+                            </div>
+                                                    </div>
+                                        <span data-js-product_sheet="" class="form-info productSheet-info  u-flr">Transporte y 21% de IVA no incluidos</span>
+                </aside>
+
+
+               {{/if}}
+               {{/if}}
+
+                <aside class="productSheet-buygroup">
+
+
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-xs-35 u-lg-40 u-pdt--half" data-js-buy-unitcontrol="unitcontrol" >
+                        <p>Unidades:</p>
+                        {{>unitControl classes='unitControl--productSheet'}}
+                  </div>
+                  <div class="modularGrid-module u-xs-65 u-lg-60 u-pdl--half u-pdt--half"  >
+                    <div class="stockAvailability stockAvailability--vertical">
+                        <p class="stockAvailability-title stockAvailability-title--success">
+                            Stock disponible
+                        </p>
+                        <ul class="stockAvailability-list">
+                            <li class="stockAvailability-item">12 uds. envío 24/48h</li>
+                            <li class="stockAvailability-item">52 uds. envío 10 días</li>
+                            <li class="stockAvailability-item">121 uds. envío 20 días</li>
+                        </ul>
+                    </div>
+                    <div class="stockAvailability stockAvailability--vertical">
+            <p class="stockAvailability-title stockAvailability-title--neutral">
+                Próximas entradas
+            </p>
+            <ul class="stockAvailability-list">
+                <li class="stockAvailability-item">12 uds. en Mayo</li>                   
+            </ul>
+          </div>
+                </div>
+
+                <div class="modularGrid-module ">
+                    <button title="Añadir al carrito" class="button button--big button--primary button--addcart u-mgt--half" >
+                        Añadir al carrito
+                    </button>
+
+                    <button title="Añadir bloqueo" data-js-add_lock="" class="button button--narrow button--selected  u-mgr--min u-mgt--half" >
+
+                        {{>svgIcon type='lock'}}
+
+                    </button>
+
+                    <button title="Próximas entradas" data-js-add_lock="" class="button button--narrow button--selectedGreen u-mgt--half" data-js-ticket-action="followMe">
+                        {{>svgIcon type='stockFollow'}}
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+</fieldset>
+</form>
+</div>

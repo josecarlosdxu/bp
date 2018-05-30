@@ -1,0 +1,43 @@
+<table class="table table--tablePanels u-mgt  u-xxs-hide u-lg-show" data-jsrequired="checkbox-group">
+	<thead class="table-thead">
+		<tr class="table-tr">						
+			<th class="table-th table-item u-pd--half u-tac u-upp u-op-60">							
+				{{>svgIcon type='shopping_cart'}}
+				Canal de venta online							
+			</th>
+			<th class="table-th table-item u-pd--half u-tac u-upp u-op-60">							
+				{{>svgIcon type='store'}}
+				Canal de venta offline							
+			</th>
+		</tr>
+	</thead>
+	<tbody class="table-tbody">
+		<tr class="table-tr">
+			<td class="table-item u-xs-50 u-pd--half">
+				{{>accountTabRelated1}}				
+				{{>accountTabTableItems1}}				
+			</td>
+			<td class="table-item u-xs-50 u-pd--half">
+				{{>accountTabRelated2}}
+				{{>accountTabTableItems2}}	
+			</td>
+		</tr>
+	</tbody>	
+</table>
+<div class="u-lg-hide">
+	<section class="panel u-mgt">
+		<header class="panel-header"><div class="u-op-70 u-pd--0 u-tac font-size12 u-vm">{{>svgIcon type='shopping_cart'}}Canal de venta online</div></header>
+		<article class="panel-item currentcolor">
+			{{>accountTabRelated1}}			
+			{{>accountTabTableItems1}}
+		</article>
+	</section>
+	<section class="panel">
+		<header class="panel-header"><div class="u-op-70 u-pd--0 u-tac font-size12 u-vm">{{>svgIcon type='store'}}Canal de venta onffline</div></header>
+		<article class="panel-item currentcolor">
+			{{>accountTabRelated2}}			
+			{{>accountTabTableItems2}}
+		</article>
+	</section>
+</div>
+

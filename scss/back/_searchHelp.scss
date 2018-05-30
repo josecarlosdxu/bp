@@ -1,0 +1,28 @@
+@include block(searchHelp) {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid grey;
+  height: auto;
+  margin-top: 0;
+  position: absolute;
+  width: calc(100% - 1.5rem);
+  z-index: 999;
+  max-height: 120px;
+  overflow: auto;
+
+  @include element(focused) {
+      background: $color-lightGrey-default;
+  }
+
+  li {
+    padding: .2rem;
+  }
+
+  a {
+    color: #666;
+    font-weight: 300;
+    line-height: 1;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

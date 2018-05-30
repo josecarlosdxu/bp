@@ -1,0 +1,17 @@
+---
+layout: mobile/layouts/clean.hbs
+title: Multi-channel integration management
+breadcrumbs: All-In-One Supplier
+---
+<section class="content content--full">
+{{>multichannelhero apiMultiChannel.hero}}
+</section>
+
+{{>multichannelItem1 apiMultiChannel.conectores mobile='true'}} 
+{{>multichannelItemAlt apiMultiChannel.catalogo}}
+{{>multichannelItem apiMultiChannel.precio}}
+{{>multichannelItemAlt apiMultiChannel.stock}}
+{{>multichannelItem apiMultiChannel.pedidos}}
+{{>multichannelItemAlt apiMultiChannel.envios sectionclass='u-pdv2'}}
+
+{{>apiDropshippingMessage}}

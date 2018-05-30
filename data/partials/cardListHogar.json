@@ -1,0 +1,417 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Hogar y jardín",
+    "description": "Bienvenido, en moda y complementos encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todos" ,
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Decoración, interiorismo e iluminación",
+        "number": "27",
+        "more": "Ver todos" ,
+        "image": "../../img/categories/hogar/2400_big.jpg"
+
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Baño",
+        "number": "159",
+        "more": "Ver todos" ,
+        "image": "../../img/categories/hogar/2424_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Jardín y terraza",
+        "more": "Ver todos" ,
+        "number": "160",
+        "image": "../../img/categories/hogar/2435_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Mascotas",
+        "more": "Ver todos" ,
+        "number": "161",
+        "image": "../../img/categories/hogar/2443_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Calefacción y refrigeración",
+        "more": "Ver todos" ,
+        "number": "162",
+        "image": "../../img/categories/hogar/2450_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Limpieza, aspiración y planchado",
+        "more": "Ver todos" ,
+        "number": "163",
+        "image": "../../img/categories/hogar/2454_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Bricolaje y ferretería",
+        "more": "Ver todos" ,
+        "number": "164",
+        "image": "../../img/categories/hogar/2468_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Seguridad en el hogar",
+        "more": "Ver todos" ,
+        "number": "165",
+        "image": "../../img/categories/hogar/2471_big.jpg"
+      }
+    ]
+  },
+  "deco": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Decoración, interiorismo e iluminación",
+    "number": "106",
+    "more": "Ver todos" ,
+    "toplist": "1",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cuadros y carteles",
+        "number": "5",
+        "image": "../../img/categories/hogar/2401_small.jpg"
+
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Marcos de fotos y portafotos",
+        "number": "20",
+        "image": "../../img/categories/hogar/2402_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list",
+          [
+            "list"
+          ]
+        ],
+        "title": "Relojes de pared y sobremesa",
+        "number": "30",
+        "image": "../../img/categories/hogar/2404_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Mecheros, pitilleras y ceniceros",
+        "number": "50",
+        "image": "../../img/categories/hogar/2408_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Mobiliario y accesorios de interior",
+        "number": "50",
+        "image": "../../img/categories/hogar/2411_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cojines y fundas",
+        "number": "50",
+        "image": "../../img/categories/hogar/2413_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Alfombras y mantas",
+        "number": "50",
+        "image": "../../img/categories/hogar/2414_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Organización interiorismo",
+        "number": "50",
+        "image": "../../img/categories/hogar/2418_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Artículos de decoración",
+        "number": "50",
+        "image": "../../img/categories/hogar/2419_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Iluminación solar",
+        "number": "50",
+        "image": "../../img/categories/hogar/2420_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Iluminación y LED",
+        "number": "50",
+        "image": "../../img/categories/hogar/2421_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Huchas y llaveros",
+        "number": "50",
+        "image": "../../img/categories/hogar/2655_small.jpg"
+      }
+    ]
+  },
+  "toilet": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Baño",
+    "number": "136",
+    "more": "Ver todos" ,
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cortinas, alfombras y toalleros",
+        "number": "50",
+        "image": "../../img/categories/hogar/2427_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Accesorios de baño",
+        "number": "26",
+        "image": "../../img/categories/hogar/2429_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Básculas",
+        "number": "60",
+        "image": "../../img/categories/hogar/2431_small.jpg"
+      }
+    ]
+  },
+  "garden": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Jardín y terraza",
+    "number": "59",
+    "more": "Ver todos" ,
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Barbacoas y mangueras",
+        "number": "11",
+        "image": "../../img/categories/hogar/2438_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Decoración , iluminación y mobiliario",
+        "number": "4",
+        "image": "../../img/categories/hogar/2440_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Ahuyentadores",
+        "number": "28",
+        "image": "../../img/categories/hogar/2441_small.jpg"
+      }
+    ]
+  },
+  "pets": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Mascotas",
+    "number": "59",
+    "more": "Ver todos" ,
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Bienestar e higiene",
+        "number": "11",
+        "image": "../../img/categories/hogar/2444_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Viajar y pasear",
+        "number": "4",
+        "image": "../../img/categories/hogar/2445_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Cunas y colchonetas",
+        "number": "28",
+        "image": "../../img/categories/hogar/2446_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Bebederos y comederos",
+        "number": "28",
+        "image": "../../img/categories/hogar/2447_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Juguetes",
+        "number": "28",
+        "image": "../../img/categories/hogar/2448_small.jpg"
+      }
+    ]
+  },
+  "heating": {
+    "cardListModifiers": [
+     "secundary"
+    ],
+    "title": "Calefacción y refrigeración",
+    "number": "59",
+    "more": "Ver todos" ,
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Aire acondicionado y ventiladores",
+        "number": "11",
+        "image": "../../img/categories/hogar/2451_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Radiadores y estufas",
+        "number": "4",
+        "image": "../../img/categories/hogar/2452_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Humidificadores",
+        "number": "28",
+        "image": "../../img/categories/hogar/2453_small.jpg"
+      }
+    ]
+  },
+  "cleaning": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Limpieza, aspiración y planchado",
+    "number": "59",
+    "more": "Ver todos" ,
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Limpieza a vapor",
+        "number": "11",
+        "image": "../../img/categories/hogar/2457_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Fregonas, escobas y mopas",
+        "number": "4",
+        "image": "../../img/categories/hogar/2459_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Aspiradoras y robots",
+        "number": "28",
+        "image": "../../img/categories/hogar/2461_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Secadoras, planchas y tendederos",
+        "number": "28",
+        "image": "../../img/categories/hogar/2463_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Otros productos de limpieza",
+        "number": "28",
+        "image": "../../img/categories/hogar/2651_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Máquinas de coser",
+        "number": "28",
+        "image": "../../img/categories/hogar/2466_small.jpg"
+      }
+    ]
+  }
+}

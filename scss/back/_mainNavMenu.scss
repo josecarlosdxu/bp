@@ -1,0 +1,100 @@
+%mainNavMenu-item {
+    display: inline-block;
+    // transition: all 0.1s;
+    vertical-align: top;
+    white-space: nowrap;
+    text-decoration: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+@include block(mainNavMenu) {
+    position: absolute;
+    @include element(link) {
+        @extend %mainNavMenu-item;
+        padding: $um / 1.5;
+        color: $color-mainNav-link-text;
+        border-bottom: 1px solid rgba(74, 80, 84, 0.6);
+        white-space: normal;
+        overflow: hidden;
+        width: 4rem;
+        color: #bbb;
+        transition: background-color 0.16s, padding-left 0.16s, color 0.08s ;
+        //transition: all 150ms ease-in-out;
+        cursor: pointer;
+        @include addBreakpoint(lg) {
+            width: 16rem;
+        }
+        &:hover {
+           // padding-left: $um / 1.15;
+            color: #fff;
+            fill: #FFF;
+            background-color: $color-mainNav-menu-hover;
+        }
+        @include modifier(selected) {
+            color: #333;
+            fill: #333;
+            background-color: $color-mainNav-menu-link-selected-background;
+            box-shadow: -1px 0 rgba(0, 0, 0, 0.1) inset;
+            font-weight: 500;
+            &:hover,
+            &:focus {
+                color: #333;
+                fill: #333;
+                cursor: default;
+                padding: $um / 1.5;
+                background-color: $color-mainNav-menu-link-selected-background;
+            }
+        }
+    }
+    @include element(itemText) {
+        display: none;
+        @include addBreakpoint(lg) {
+            padding-left: 1rem;
+            display: inline-block;
+            line-height: 1.2;
+        }
+    }
+    @include element(pack) {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@include extendBlock(mainNavMenu, submenu) {
+    position: relative;
+    left: 0;
+    height: auto;
+    padding-left: 1rem;
+    transition: all 0.1s;
+    display: none;
+    width: 14rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #000 30%);
+    @include addBreakpoint(lg) {
+        padding-left: 1rem;
+        width: 16rem;
+        overflow: hidden;
+    }
+    @include element(itemText) {
+        display: inline-block;
+        @include addBreakpoint(lg) {
+            padding-left: 1rem;
+        }
+    }
+    @include element(link) {
+        background: #353b40;
+        width: 14rem;
+        @include addBreakpoint(lg) {
+            width: 16rem;
+        }
+        @include modifier(selected) {
+            color: $color-mainNav-submenu-linkSelected-text;
+            //background-color: $color-mainNav-menu-hover;
+            &:hover,
+            &:focus {
+                color: $color-mainNav-submenu-linkSelected-text;
+            }
+        }
+    }
+}

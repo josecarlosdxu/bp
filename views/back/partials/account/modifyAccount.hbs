@@ -1,0 +1,54 @@
+ <div class="modularGrid">
+   <div class="modularGrid-module u-xs-40">
+    <form class="form">
+
+      <fieldset class="form-fieldset form-fieldset--borderless u-pd ">
+        <h3 class="form-fieldset-title">Identificador de cliente: 100029</h3>
+        <div class="modularGrid">
+          <div class="modularGrid-module u-md-75 u-pdb">
+            <label for="email" class="form-label">Email</label>
+            <div class="edit" data-edit="elem">
+            <input type="mail" id="email" class="form-input edit-input" placeholder="ux@all4business.es" data-edit="input" value="ux@all4business.es" >
+            <nav class="edit-btns"><button class="edit-btn" data-edit="change">{{>svgIcon type='done_alt'}}</button><button class="edit-btn" data-edit="reset">{{>svgIcon type='clear'}}</button></nav>
+            </div>
+            <label for="pass" class="form-label">Contraseña</label>
+            <input type="password" id="pass" class="form-input" placeholder="······">
+          </div>
+        </div>
+        <h3 class="form-fieldset-title ">Envíos dropshipping</h3>
+        <div class="modularGrid">
+         <div class="modularGrid-module">
+          <label for="enterprise" class="form-label">Nombre de su empresa o web <span data-js-tooltip="tooltip_dropshipping_back" class="form-info"><i class="icon icon-sort fa fa-info-circle"></i></span></label>
+          <input type="text" id="enterprise" class="form-input u-xs-75">
+        </div>
+      </div>
+
+      <label class="form-label u-pdt--third">Logotipo de su empresa o web
+      <span data-js-tooltip="tooltip_dropshipping_back" class="form-info"><i class="icon icon-sort fa fa-info-circle"></i></span>
+
+      </label>
+      {{>changeLogo}}
+        <h3 class="form-fieldset-title">Descargas</h3>
+        <div class="modularGrid">
+         <div class="modularGrid-module u-xs-50">
+          <label class="form-label u-pdb--third ">Ha elegido como idioma de descarga:
+           </div>
+       <div class="modularGrid-module u-xs-50">
+          {{>selectLangs langList.userdata}}
+           </div>
+      </div>
+          {{!-- <svg role="img" class="icon langlist-icon icon--inline icon--xs">
+                <use xlink:href="../../img/icons/svg-defs.svg#icon-es">
+                </use>
+            </svg> Español
+            <span data-js-tooltip="tooltipUserLangPro" class="form-info"><i class="icon icon-sort fa fa-info-circle"></i></span> --}}
+          </label>
+          <p class="form-info">Con el Pack Pro solo tiene 1 idioma disponible para sincronizar la Tienda Dropshipping que ofrece BigBuy o para descargar archivos CSV/XML.</p>
+
+    {{!--   </fieldset>
+    <fieldset class="form-fieldset form-fieldset--sequential"> --}}
+    <button class="button button--primary button--big u-mgt">Guardar datos</button>
+  </fieldset>
+</form>
+</div>
+</div>

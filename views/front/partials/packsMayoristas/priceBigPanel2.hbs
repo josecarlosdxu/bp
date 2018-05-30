@@ -1,0 +1,37 @@
+<section class="pricePanel pricePanel--big  pricePanel--pro">
+    <div class="pricePanel-header">
+        {{>svgIcon size='sm' type='pack' class='pricePanel-icon'}}
+        <h4 class="pricePanel-name">Pack Business</h4>
+    </div>
+        <div class="pricePanel-subheader">Cuota de alta 99€</div>
+        <table class="pricePanel-content">
+
+        <tr class="pricePanel-radiogroup"> 
+             <td class="table-item table-item--thumb u-pdl--half"><input class="form-radio" id="mensual2" type="radio" name="quote"></td>
+            <td><label class="form-label" for="mensual2">Mensual </label></td>
+            <td class="table-item table-item--number"><strong>49€</strong></td>
+        </tr>
+        <tr class="pricePanel-radiogroup">
+            <td class="table-item table-item--thumb u-pdl--half"><input class="form-radio" id="semestral2" type="radio" name="quote"></td>
+            <td><label class="form-label" for="semestral2" >Semestral <em class="form-label--optional">(Ahorro 1 mes)</em></label></td>
+            {{#if active}}
+            <td class="table-item table-item--number"><strong>Pack activo</strong></td> 
+            {{else}}
+            <td class="table-item table-item--number"><strong>245€</strong></td> 
+            {{/if}}
+        </tr>
+        <tr class="pricePanel-radiogroup"> 
+            <td class="table-item table-item--thumb u-pdl--half"><input class="form-radio" id="anual2" type="radio" name="quote"></td>
+            <td><label class="form-label" for="anual2"  >Anual <em class="form-label--optional">(Ahorro 3 meses)</em></label></td>
+            <td class="table-item table-item--number"><strong>439€</strong></td>
+        </tr>
+         </table>
+    {{#unless  expresscart}}
+    <div class="pricePanel-sectionbtn">
+        <button class="button button--primary button--big">Activar pack</button>
+    </div>
+    {{/unless}}
+</section>
+
+
+

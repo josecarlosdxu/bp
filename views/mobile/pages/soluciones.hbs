@@ -1,0 +1,31 @@
+---
+layout: mobile/layouts/clean.hbs
+title: Soluciones
+breadcrumbs: Soluciones
+---
+<section class="content content--full">
+	{{>solucioneshero  apiSoluciones.hero}}
+</section>
+<section class="content content--light">
+    {{>solucionessupertitle  apiSoluciones.supertitle}}
+	<div class="modularGrid modularGrid--boxed u-pd">	
+        {{>solucionesbanner apiSoluciones.banner1}}
+
+		{{>solucionessection1   apiSoluciones.tiendas}}
+        {{>solucionessection1 apiSoluciones.marketplaces}}
+
+        <aside class="panel-container  panel-container--col2  u-pdb2">
+              {{>solucionessection apiSoluciones.flash}}
+              {{>solucionessection apiSoluciones.etailers}}
+         </aside>
+
+         {{>solucionesbanner  apiSoluciones.banner2}}
+
+         <aside class="panel-container panel-container--col3  u-pdb2">
+            {{>solucionessection apiSoluciones.almacenistas}}
+            {{>solucionessection apiSoluciones.tradicional}}
+            {{>solucionessection apiSoluciones.esporadicas}}
+        </aside>
+	</div>
+</section>
+{{>apiDropshippingMessage}}

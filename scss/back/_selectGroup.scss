@@ -1,0 +1,94 @@
+@include block(selectGroup) {
+    outline: none;
+    position: relative;
+    text-align: right;
+
+    @include element(button) {
+        position: relative;
+
+        outline:none;
+        margin: 0 0.5rem;
+
+        padding: 8px 1rem;
+        border-radius:0;
+        border-left:1px solid transparent;
+        border-right:1px solid transparent;
+
+        &:hover, &:focus {
+
+            border-left:1px solid transparent;
+            border-right:1px solid transparent;
+            box-shadow: none;
+        }
+
+        @include modifier(active) {
+
+            z-index: 20;
+
+            top:-1px;
+            background: #fff;
+            box-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+
+            border-left:1px solid rgba(0, 0, 0, 0.2);
+            border-right:1px solid rgba(0, 0, 0, 0.2);
+
+            &:hover, &:focus {
+                background: #fff;
+                top:-1px;
+                box-shadow: 0 -1px rgba(0, 0, 0, 0.2) ;
+                border-left:1px solid rgba(0, 0, 0, 0.2);
+                border-right:1px solid rgba(0, 0, 0, 0.2);
+
+            }
+        }
+
+    }
+
+    @include element(panel) {
+        text-align: left;
+        position: absolute;
+        display: none;
+        padding: $um / 1.5 $um;
+
+        border-color: rgba(0, 0, 0, 0.2);
+
+        background: #fff;
+        width: 35rem;
+        right: -10px;
+        z-index: 10;
+        top: 94%;
+
+
+        @include modifier(active) {
+            display: block;
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

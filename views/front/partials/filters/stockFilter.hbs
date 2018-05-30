@@ -1,0 +1,14 @@
+<aside class="filter" data-js-filter="filter">
+	<input type="checkbox" class="inputToggle" data-js-filter="checkbox" id="{{idFilter}}">
+	<label for="{{idFilter}}" class="filter-headerTitle" data-js-filter="btn">{{header.title}}</label>
+	<section class="filter-body filter-body--range">
+		<h4 class="filter-title">{{body.title}}</h4>
+		<input type="range" class="filter-range" name="inputName" id="inputId" value="30" min="1" max="1000" oninput="outputId.value = '+'+inputId.value">	
+		<div class="u-flex--center u-pdh--half">
+			<input class="form-input form-input--number u-xs-30 u-mgb--min" name="outputName" id="outputId" type="text" value="+30" onchange="inputId.value = outputId.value; outputId.value = '+'+inputId.value">
+			<label class="form-label u-mgl--half">uds.</label>
+		</div>
+		{{>selectFilterBtn}}
+	</section>
+</aside>
+

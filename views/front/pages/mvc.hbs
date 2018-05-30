@@ -1,0 +1,64 @@
+---
+title: MVC
+layout: front/layouts/default_alt.hbs
+---
+<div class="modularGrid u-pdb2">
+	<div class="modularGrid-module u-lg-70">
+		<h2 class="shoppingCart-title">Pasos de la compra</h2> 
+
+
+		<div class="shoppingCartStep shoppingCartStep--active" data-shoppingcart-step="1">
+			<div class="shoppingCartStep-header">
+				<b class="shoppingCartStep-number">1</b>
+				<div class="shoppingCartStep-headertexts">
+					<h4 class="shoppingCartStep-title">Seleccione Pack Mayorista</h4>
+					{{#if subtitle}}
+					<h5 class="shoppingCartStep-subtitle">Pack Business: cuota semestral</h5>
+					{{/if}}
+				</div>
+				{{>shoppingCartEditBtn}}
+			</div>
+
+			<div class="shoppingCartStep-content">
+
+				<div class="msgBox msgBox--info u-mgt1"><span class="u-mgl--half">Para adquirir una tienda dropshipping, es necesario contratar el Pack Enterprise</span></div>
+				<div class="pricePanel-container pricePanel-container--midsize u-pdv">
+					{{>priceBigPanel js_anchor='data-jspack' js_val='b2b' js_name='b2b' expresscart='true' opacity='true'}}
+					{{>priceBigPanel js_anchor='data-jspack' js_val='dropship' js_name='dropship' expresscart='true' opacity='true'}}
+					{{>priceBigPanel js_anchor='data-jspack' js_val='enterprise' js_name='enterprise' expresscart='true' opacity='true'}}
+				</div>
+				
+				<button class="button button--primary button--big">Continuar</button>   
+			</div>
+		</div>
+		<div class="shoppingCartStep shoppingCartStep--active" data-shoppingcart-step="2">
+			<div class="shoppingCartStep-header">
+				<b class="shoppingCartStep-number">2</b>
+				<div class="shoppingCartStep-headertexts">
+					<h4 class="shoppingCartStep-title">Seleccione Tienda dropshipping 360º (Opcional)</h4>				
+				</div>
+				{{>shoppingCartEditBtn}}
+			</div>
+
+			<div class="shoppingCartStep-content">
+
+				<div class="msgBox msgBox--info u-mgt1 u-mgb"><p class="u-mgl--half">La tienda dropshipping 360º solo es compatible con el Pack Enterprise</p>   
+				 <div class="pricePanel-container pricePanel-container--midsize u-pdt--half u-pdl--half">
+					{{>priceBigPanel js_anchor='data-jspack' js_val='enterprise' js_name='enterprise2' expresscart='true' opacity='true'}}
+				</div> 
+				</div>
+				<button class="button button--primary button--big">Continuar</button>   
+			</div>
+		</div>
+
+
+	</div>
+	<div class="modularGrid-module u-lg-30 u-pdl">
+		<h2 class="shoppingCart-title">Resumen</h2>
+
+	</div>
+</div>
+
+
+
+

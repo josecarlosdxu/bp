@@ -1,0 +1,69 @@
+<form action="" class="form">
+    <div class="modularGrid">
+        <div class="modularGrid-module u-md-40 u-pdl--half">
+            <fieldset class="form-fieldset form-fieldset--borderless ">
+                <h3 class="form-fieldset-title">Dirección de envío</h3>
+                <label class="form-label form-label--inline u-md-35"  title="Nombre" for="name1">Nombre</label>
+                <input type="text" class="form-input form-input--inline u-md-60" id="name1">
+                <label class="form-label form-label--inline  u-md-35" for="enterprise1" title="Empresa">Empresa</label>
+                <input type="text" class="form-input  form-input--inline u-md-60" id="enterprise1">
+                <label class="form-label form-label--inline  u-md-35" for="adress1" title="Dirección">Dirección</label>
+                <textarea type="text" id="adress1" class="form-textarea form-textarea--inline u-md-60" >c/ Solar Navarro, 13 Alaquàs, Valencia, 49501
+                </textarea>
+                <label class="form-label form-label--inline  u-md-35" for="country1" title="País">País</label>
+                <input type="text" class="form-input  form-input--inline u-md-60" id="country1">
+                <label class="form-label form-label--inline  u-md-35" for="phone1" title="Teléfono">Teléfono</label>
+                <input type="text" class="form-input  form-input--inline u-md-60" id="phone1">
+                <label class="form-label form-label--inline  u-md-35" for="nif1" title="Nº identificación fiscal">Nº identificación fiscal</label>
+                 <span class="form-prefix">GB</span>
+                <input type="text" class="form-input  form-input--inline form-input--prefix u-md-60" id="nif1" placeholder="DNI / CIF / VAT Number">
+            </fieldset>
+            <fieldset class="form-fieldset form-fieldset--borderless u-mgt">
+                <h3 class="form-fieldset-title">Dirección de facturación</h3>
+                <label class="form-label form-label--inline u-md-35"  title="Nombre" for="name2">Nombre</label>
+                <input type="text" class="form-input form-input--inline u-md-60" id="name2">
+                <label class="form-label form-label--inline  u-md-35" for="enterprise2" title="Empresa">Empresa</label>
+                <input type="text" class="form-input  form-input--inline u-md-60" id="enterprise2">
+                <label class="form-label form-label--inline  u-md-35" for="adress2" title="Dirección">Dirección</label>
+                <textarea type="text" id="adress2" class="form-textarea form-textarea--inline u-md-60" >c/ Solar Navarro, 13 Alaquàs, Valencia, 49501
+                </textarea>
+                <label class="form-label form-label--inline  u-md-35" for="country2" title="País">País</label>
+                <input type="text" class="form-input  form-input--inline u-md-60" id="country2">
+                <label class="form-label form-label--inline  u-md-35" for="phone2" title="Teléfono">Teléfono</label>
+                <input type="text" class="form-input  form-input--inline u-md-60" id="phone2">
+                <label class="form-label form-label--inline  u-md-35" for="nif2" title="Nº identificación fiscal">Nº identificación fiscal</label>
+                <span class="form-prefix">GB</span>
+                <input type="text" class="form-input  form-input--inline form-input--prefix u-md-60" id="nif2" placeholder="DNI / CIF / VAT Number">
+            </fieldset>
+        </div>
+        <div class="modularGrid-module u-md-30 u-pdl">
+           <fieldset class="form-fieldset form-fieldset--borderless">
+            <h3 class="form-fieldset-title">Método de envío</h3>
+            <select class="form-select u-md-60 u-flr"name="shipmethod" id="shipmethod">
+                <option value="1">Recogida en almacén</option>
+                <option value="2">Chronoexpress</option>
+                <option value="3">Correos</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-fieldset form-fieldset--borderless u-mgt">
+            <h3 class="form-fieldset-title">Método de pago</h3>
+            <label class="form-label form-label" for="payment1" title="Dirección">Transferencia bancaria</label>
+            <textarea type="text" id="payment1" class="form-textarea " >
+                Concepto: Pedido Num. XXXXX La Caixa
+                NºCuenta: 2100 5955 78 0200045154
+                IBAN: ES1521005955780200045154
+                BIC/SWIFT: CAIXESBBXXX
+            </textarea>
+        </fieldset>
+        <fieldset class="form-fieldset form-fieldset--borderless">
+            <div class="form-fieldset-title">Información adicional</div>
+            <div class="form-radiogroup u-md-60">
+                <input type="checkbox" id="dropshipping" class="form-checkbox">
+                <label title="Dropshipping" for="dropshipping" class="form-label form-label--inline">Dropshipping</label>
+                <input type="checkbox" id="reembolso" class="form-checkbox">
+                <label title="Reembolso" for="reembolso" class="form-label form-label--inline">Reembolso</label>
+            </div>
+        </fieldset>
+    </div>
+</div>
+</form>

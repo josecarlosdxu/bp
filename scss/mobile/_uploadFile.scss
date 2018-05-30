@@ -1,0 +1,43 @@
+@include block(uploadFile) {
+	font-size: 1.4rem;
+	//display:block;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	/*border-radius: $um / 6;*/
+	background: rgba(0, 0, 0, 0.1);
+	color: #333;
+
+	vertical-align: middle;
+	padding: $um / 1.5 $um / 1.5 $um / 1.5 $um ;
+	font-weight: 500;
+
+	//0.375rem 0.25rem 0.375rem 0.75rem;
+
+
+	//margin-right: 0.5rem;
+	//margin-bottom: 0.5rem;
+	transition: color 0.2s, background 0.2s;
+
+	@include element(icon) {
+		@extend .icon;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		vertical-align: -6px;
+		opacity: 0.7;
+		margin: 0 3px 0 4px;
+	}
+
+	&:hover, &:focus{
+
+		//color: rgba(0, 0, 0, 0.7);
+		color: rgba(0, 0, 0, 0.7);
+		background: rgba(0, 0, 0, 0.05);
+
+		/*.uploadFile-icon {
+			opacity: 0.7;
+		}*/
+
+	}
+}

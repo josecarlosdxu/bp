@@ -1,0 +1,34 @@
+<div class="panel panel--active" data-js-panel-name="panel01" data-js-panel-state="active">
+
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-stockFollow"></use></svg>
+        <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Seguimiento de stock</a></div>
+    </div>
+
+    <div class="panelHeader">
+        <nav class="panel-tabs">
+            <button class="panel-tabs-item panel-tabs-item--active" data-paneltabbtn="tab10">Seguimiento de stock</button>
+           <button class="panel-tabs-item" data-paneltabbtn="tab11">Información</button>
+           {{!--  
+            <button class="panel-tabs-item" data-paneltabbtn="tab12">Todos</button> --}}
+        </nav>
+    </div>
+
+    <div class="panel-content panel-content--fullWidth fixedTableContent">
+
+        <div id="tab10" class="fixedTableContent-tableContent fixedTableContent-tableContent--follow">
+            {{>panelSection panelSection.follow}}
+        </div>
+        
+        <div class="panel-tabs-content" id="tab11" style="display:none;">
+            <section class="panel-section  panel-section--borderless">
+                 {{> infoFollow}}
+            </section>
+        </div>
+        {{!--
+        <div id="tab12" class="fixedTableContent-tableContent" style="display:none;">
+            {{> panelSection panelSection.allOrders}}
+        </div>
+ --}}
+    </div>
+</div>

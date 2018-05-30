@@ -1,0 +1,658 @@
+%borderChevronDown {
+    border: none;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    content: "";
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+@include block(mobileTabs) {
+    @extend %inlineBlock100;
+    margin-top: -1px;
+    @include addBreakpoint(sm) {
+        width: 100%;
+        margin-left: 0;
+    }
+    @include addBreakpoint(lg) {
+        margin-top: 0;
+    }
+    @include element(titleTabs) {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: $color-darkGrey-dark;
+        font-weight: 700;
+        font-family: $type-headingscms;
+        margin: 1rem 0 0.5rem 1rem;
+        @include modifier(mgt) {
+            margin-top: 2rem;
+        }
+        @include modifier(search) {
+            position: absolute;
+            right: $um;
+            //margin-top: -10px;
+            font-size: 0;
+            padding: 1rem;
+            border: none;
+            background: transparent;
+            z-index: 1;
+            svg {
+                width: 20px;
+                height: 20px;
+                opacity: 0.4;
+            }
+        }
+    }
+    @include element(editBtn) {
+        float: right;
+        height: 3.75rem;
+        margin: -1rem -0.75rem -1rem 0;
+        opacity: 0.4;
+        width: 3.75rem;
+        display: none; //border-radius: 3rem;
+    }
+    @include element(item) {
+        @extend %inlineBlock100; //border-bottom: 1px solid #ddd;
+        margin-bottom: -2px;
+        @include modifier(mgTop) {
+            margin-top: 1px;
+        }
+    }
+    @include element(itemHeader) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        padding: 0.75rem 1rem;
+        font-size: 0;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        @include modifier(svg) {
+            width: 36px;
+            height: 36px;
+            opacity: 0.5;
+            margin: 0 0.5rem;
+        }
+        @include modifier(breadcrumb) {
+            width: 26px;
+            height: 36px;
+            fill: $color-lightGrey-lighter;
+            opacity: 0.5;
+        }
+        @include modifier(arrow) {
+            //pointer-events: none;
+            width: calc(100% - $um);
+            width: calc(100% - 1.5rem);
+            &:before {
+                display: none;
+                content: "";
+                width: 0;
+                height: 0;
+                left: -1rem;
+                position: relative;
+                top: $um + 0.2;
+                border: 4px solid transparent;
+                border-top: 4px solid opacify($color-shadow, 0.3);
+                border-bottom: none;
+            }
+            .title1 {
+                font-size: $um;
+                text-transform: none;
+                @include addBreakpoint(md) {
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    
+                }
+            }
+        }
+        @include modifier(arrowTwo) {
+            &:before {
+                left: -0.5rem;
+                top: 0.8rem;
+            }
+        }
+        @include modifier(bgHeader) {
+            background: $color-tableStripped-tr-even;
+        }
+        .title,
+        .subtitle6 {
+            width: 100%;
+            margin: 0;
+        }
+
+        @include addBreakpoint(sm) {
+            .title {
+                width: auto;
+            }
+            .subtitle6 {
+                margin-left: 4rem;
+                padding-top: 0;
+            }
+        }
+        @include addBreakpoint(xl) {
+            .subtitle6 {
+                width: auto;
+                margin: 0;
+                padding-top: $um / 2;
+            }
+        }
+    }
+    @include element(chevron) {
+        @extend %inlineBlock;
+        margin-left: -$um *2;
+        top: 0.25rem;
+        @include addBreakpoint(md) {
+            width: 3rem;
+            height: 3rem;
+            float: left;
+        }
+    }
+    @include element(itemTitle) {
+        @extend %inlineBlock;
+        @extend %header-type;
+        text-align: left;
+        font-size: $um;
+        font-weight: 400;
+       //pointer-events: none;
+        line-height: 1.2;
+        @include addBreakpoint(md) {
+            font-weight: 300;
+            font-size: $um * 1.15;
+            margin-bottom: $um / 6;
+        }
+        @include addBreakpoint(lg) {
+            font-size: $um * 1.2;
+        }
+        @include modifier(full) {
+            width: 100%;
+        }
+    }
+    @include element(itemTitleInfo) {
+        //width:100%;
+        position: absolute;
+        right: 0;
+        @include modifier(detail) {
+            margin-left: .375rem;
+            cursor: default;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1rem;
+            color: #999;
+        }
+    }
+    @include element(itemSubtitle) {
+        @extend %inlineBlock;
+        font-size: $um / 1.5;
+        vertical-align: bottom;
+        left: 1px;
+        line-height: 1.2;
+        color: #888;
+        //pointer-events: none;
+        padding-left: $um;
+        @include addBreakpoint(md) {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #666;
+        }
+    }
+    @include element(packs) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        //pointer-events: none;
+        padding-top: 1rem;
+        font-size: 0.9rem;
+        @include addBreakpoint(xs) {
+            font-size: 1rem;
+        }
+        /*width: 100%;
+        margin-top: $um / 2;
+        border-radius: none;
+        text-align: center;
+        /*9th {
+            width: 20%;
+        }
+        .img {
+            width: $um;
+            margin: 0 auto;
+        }
+        td {
+            padding-top: 1px;
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.1;
+        }*/
+        //@extend %u-sm-85;
+        //@extend %u-md-60;
+        //@extend %u-xl-40;
+        /*@include addBreakpoint(sm) {
+            margin-bottom: -$um / 1.5;
+        }*/
+    }
+    @include element(packsItem) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        flex-basis: 20%;
+        line-height: 1.1;
+        .img {
+            width: 1.5rem;
+        }
+        @include addBreakpoint(xs) {
+            .img {
+                width: 1.75rem;
+            }
+        }
+    }
+    @include element(itemContent) {
+        padding: $um;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        font-size: 1rem;
+        line-height: 1.2;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.3s ease-in, margin 0s, opacity 0.1s;
+        position: relative;
+        margin-top: -3rem;
+        opacity: 0; //pointer-events: none;
+        z-index: 0; //color: $color-accentBlue-dark;
+        p {
+            margin-top: 0.25rem;
+            line-height: 1.2;
+        }
+        a {
+            color: #666;
+        }
+        @include modifier(searchShow) {
+            display: none;
+        }
+        @include addBreakpoint(sm) {
+            @include modifier(imgWidth) {
+                width: 100%;
+                max-width: 278px;
+            }
+        }
+        @include modifier(selected) {
+            background: #F2F9FF;
+            background: #fff;
+            opacity: 1;
+            margin-top: 0;
+            height: auto;
+            border-top: none; // border-bottom: 1px solid $color-accentBlue-default;
+            border-left: 4px solid $color-accentBlue-default; // box-shadow: 0 -2px inset $color-accentBlue-default;
+            border-right: 1px solid $color-accentBlue-default;
+            border-bottom: 2px solid $color-accentBlue-default;
+            //pointer-events: auto;
+            @include addBreakpoint(lg) {
+                background: transparent;
+            }
+        }
+    }
+    @include element(notify) {
+        @extend %notify;
+        display: inline-block;
+        position: relative;
+        margin-left: $um / 6;
+        top: - 0.2rem;
+        height: $um / 3;
+        width: $um / 3;
+        background: $color-red-darker;
+        -webkit-animation: notifyMobilePulse infinite ease 1s;
+        animation: notifyMobilePulse infinite ease 1s;
+    }
+    @include element(itemDesc) {
+        cursor: default;
+        color: #999;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 0.4rem;
+    }
+}
+
+@include extendElement(mobileTabs, itemHeader, selected) {
+    // background: transparentize($color-accentBlue-default, 0.9);
+    background-color: #daefff;
+    box-shadow: 3px 0 $color-accentBlue-default inset, 0 -1px transparentize($color-accentBlue-default, 0.9) inset;
+    border-color: $color-accentBlue-default;
+    color: $color-accentBlue-dark;
+    @include element(itemHeader) {
+        background-color: transparent;
+        color: $color-accentBlue-default;
+        @include modifier(arrow) {
+            &:before {
+                border-top: none;
+                border-bottom: 4px solid $color-accentBlue-default;
+            }
+        }
+    }
+    @include element(itemTitle) {
+        color: $color-accentBlue-dark;
+    }
+    @include element(itemTitleInfo) {
+        @include modifier(detail) {
+            color: $color-accentBlue-dark;
+        }
+    }
+    @include element(itemSubtitle) {
+        color: transparentize($color-accentBlue-dark, 0.3);
+    }
+    @include element(itemDesc) {
+        display: none;
+    }
+    +.mobileTabs-itemContent--searchShow {
+        display: block;
+        margin: -41px 1px 0 0;
+        svg {
+            fill: $color-accentBlue-default;
+            opacity: 1;
+        }
+    }
+    svg {
+        //fill: $color-accentBlue-default;
+        opacity: 1;
+    }
+    .title,
+    .subtitle6 {
+        opacity: 1;
+    }
+    +.mobileTabs-itemContent {
+        display: flex;
+        height: auto;
+        opacity: 1;
+        //padding-top: $um * 3;
+        border-left-color: $color-accentBlue-default;
+        //box-shadow: 3px 0 $color-accentBlue-default inset;
+    }
+}
+
+@include extendElement(mobileTabs, item, sectionRowTitle) {
+    @include element(itemHeader) {
+        background: #eee;
+        padding: $um;
+        cursor: default;
+        &:before {
+            display: none;
+        }
+    }
+    @include element(itemTitle) {
+        font-size: $um / 1.2;
+        padding-right: 0;
+        @include addBreakpoint(md) {
+            font-size: $um;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+        @include addBreakpoint(lg) {
+            font-size: $um * 1.2;
+        }
+    }
+}
+
+@include extendElement(mobileTabs, item, backtab) {
+    transition: top 0.3s ease-out;
+    @include element(itemHeader) {
+        padding: 0.75rem 1rem 1.2rem 2rem;
+        &:before {
+            top: 0.5rem;
+            left:-0.5rem;
+            position: relative;
+        }
+        @include addBreakpoint(sm) {
+            &:before {
+                //left: -1.4rem;
+            }
+        }
+        /*@include addBreakpoint(md) {
+            &:before {
+                top: 1.3rem;
+            }
+        }*/
+        @include modifier(pb) {
+            padding-bottom: 0.3rem;
+            padding-left: 1rem;
+        }
+        @include modifier(drop) {
+            padding: $um 1.25rem;
+        }
+    }
+    @include element(itemContent) {
+        color: rgba(0, 0, 0, 0.7);
+        min-height: 37px;
+    }
+    @include element(itemTitle) {
+        font-family: $type-ui;
+        font-weight: 300;
+        font-size: $um / 1.2;
+        @include addBreakpoint(md) {
+            font-size: $um;
+            margin-bottom: 0;
+        }
+    }
+    @include addBreakpoint(lg) {
+        border-bottom: none;
+    }
+}
+
+@include extendElement(mobileTabs, item, editable) {
+    @include element(editBtn) {
+        display: inline-block;
+    }
+}
+
+@include extendElement(mobileTabs, item, altBg) {
+    @include addBreakpoint(lg) {
+        background: $color-content-bg;
+        margin-bottom: 1px;
+        border-bottom: none;
+        box-shadow: 30rem 0 $color-content-bg, -30rem 0 $color-content-bg, -30rem -1px #E5E5E5, 30rem -1px #E5E5E5, -30rem 1px #E5E5E5, 30rem 1px #E5E5E5; //padding-top: $um;
+    }
+    .mobileTabs-itemHeader {
+        @include addBreakpoint(lg) {
+            background: transparent;
+        }
+    }
+}
+
+@include extendBlock(mobileTabs, numered) {
+    counter-reset: counter;
+    background: white;
+    @include element(itemHeader) {
+        padding-left: 1.25rem;
+        &:before {
+            top: 0;
+        }
+    }
+    @include element(itemTitle) {
+        display: inline-flex !important;
+        position: relative;
+        align-items: center;
+        &:before {
+            display: flex; //width: 2rem;
+            //height: 2rem;
+            margin: 0 $um / 6; //justify-content: center;
+            //align-items: center;
+            // border-radius: 100%;
+            //opacity: 1;
+            //font-size: 1rem;
+            content: counter(counter)". ";
+            counter-increment: counter; // box-shadow: 0 0 0 1px currentColor inset;
+        }
+        /* &:after {
+            position: absolute;
+            content: counter(counter);
+            counter-increment: counter;
+            left: 0;
+            top: 0;
+            color: white;
+            opacity: 1;
+            font-weight: 700;
+        }*/
+    }
+}
+
+@include extendElement(mobileTabs, itemHeader, drop) {
+    align-items: center;
+    display: flex !important;
+    &:before {
+        top: -0.5rem !important;
+        /*display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-top: 6px solid currentColor;
+        border-bottom: none;
+        opacity: 0.6;*/
+    }
+    @include addBreakpoint(md) {
+        &:before {}
+    }
+    @include addBreakpoint(lg) {
+        //pointer-events: none;
+        border: none;
+        padding: 1rem 0 0 !important;
+        &:before {
+            display: none !important;
+        }
+        +.mobileTabs-itemContent {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            opacity: 1;
+            margin: 0;
+            padding-top: 0;
+            border: none;
+            justify-content: space-between;
+        }
+    }
+    @include element(headerIcon) {
+        opacity: 0.7;
+        margin-left: $um / 2;
+        margin-right: $um / 2;
+        height: $um;
+        width: $um;
+        @include addBreakpoint(md) {
+            height: 48px;
+            width: 48px;
+        }
+        @include addBreakpoint(lg) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .title {
+        font-size: 1.2rem; //margin-left: $um;
+        max-width: calc(100% - 7rem);
+    }
+    @include addBreakpoint(md) {
+        .title {
+            font-size: $um;
+        }
+    }
+}
+
+.mobileTabs-itemHeader--selected.mobileTabs-itemHeader--drop {
+    color: $color-accentBlue-default;
+    &:before {
+        border-top: none; //border-bottom: 6px solid currentColor;
+        opacity: 1;
+    }
+    @include addBreakpoint(lg) {
+        background: transparent;
+        color: black;
+        border: none;
+        box-shadow: none;
+        svg {
+            fill: black;
+        }
+    }
+}
+
+.mobileTabs-itemContent.nopadding {
+    background: white;
+}
+
+.mobileTabs-itemContent[data-js-accordion="panel"] {
+   display: none; ///////////////////////////////
+    //display: block;
+    @include addBreakpoint(lg) {
+        display: flex;
+        z-index: 0;
+       // height: 0;///////////////
+        //opacity: 0;//////////
+       
+    }
+}
+
+.mobileTabs-itemContent--selected[data-js-accordion="panel"] {
+    display: block;
+    z-index: 0;
+    opacity: 1;
+    height: auto;
+    background-color: white;
+}
+
+.mobileTabs-itemHeader[data-js-accordion="link"]:not(.mobileTabs-itemHeader--custom) {
+    //display: block;
+    display: flex;
+    flex-wrap: wrap;
+   
+
+
+    &:before {
+        @extend %borderChevronDown;
+        height: 0.6rem;
+        margin-right: 0.75rem;
+        //margin-top: 0.25rem;
+        margin-top: -0.75rem;
+        width: 0.6rem;
+        opacity: 0.6;
+    }
+    >svg.icon {
+        display: none;
+    }
+    .mobileTabs-itemTitle {
+        max-width: calc(100% - 3rem);
+        display: inline-block;
+
+       
+    }
+}
+
+.mobileTabs-itemHeader--selected[data-js-accordion="link"]:not(.mobileTabs-itemHeader--custom) {
+    &:before {
+        border-color: #0065b3;
+        opacity: 1;
+        transform: rotate(-135deg);
+        //top: $um / 2;
+    }
+}
+
+.mobileTabs--numered .mobileTabs-itemHeader--selected[data-js-accordion="link"]:not(.mobileTabs-itemHeader--custom) {
+    &:before {
+        top: 0.2rem;
+    }
+}
+
+@include extendElement(mobileTabs, itemContent, accordion) {
+    margin:0;
+    padding:0 $um;
+  
+
+
+
+
+}
+.mobileTabs-itemHeader--selected  + .mobileTabs-itemContent--accordion{
+    padding-top: $um;
+  
+}
+
+

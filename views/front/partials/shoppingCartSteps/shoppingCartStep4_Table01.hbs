@@ -1,0 +1,46 @@
+<table class="table table--border shoppingCartStep-table" data-js-accordion_selected_class="table-tr--selected" data-js-accordion="accordion" >
+    <thead class="table-thead">
+        <tr class="table-tr">
+            <th class="table-item">Plazo de preparación</th>
+            <th class="table-item">Artículos</th>
+            <th class="table-item">Importe</th>
+            <th class="table-item">Transportista</th>
+        </tr>
+    </thead>
+    <tbody class="table-tbody  table-tbody--accordion">
+
+    <tr class="table-tr">
+            <td colspan="100" class="table-item">
+            <input type="radio" name="order_type" class="form-radio" id="delay">
+            <label for="delay" class="form-inline">Opción 1: una única entrega</label>
+            </td>
+
+    </tr>
+
+
+    {{!-- {{> shoppingCartStep4_TableItem preparation_time= 'Menos de 24.' uds='2' price='51,11 €'}} --}}
+    {{> shoppingCartStep4_TableItem preparation_time= '90 días.' uds='2' price='51,11 €'}}
+
+
+
+    <tr class="table-tr">
+            <td colspan="100" class="table-item">
+            <input type="radio" name="order_type" class="form-radio" id="delay">
+            <label for="delay" class="form-inline">Opción 2: varias entregas</label>
+            </td>
+
+    </tr>
+
+    {{> shoppingCartStep4_TableItem preparation_time= 'Menos de 24.' uds='2' price='51,11 €'}}
+    {{> shoppingCartStep4_TableItem preparation_time= '90 días.' uds='2' price='51,11 €'}}
+
+
+
+
+
+
+
+
+
+    </tbody>
+</table>

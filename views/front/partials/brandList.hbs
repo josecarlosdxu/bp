@@ -1,0 +1,10 @@
+
+{{#if title}}
+<p class="brandList-title">{{title}}</p>
+{{/if}}
+<nav class="brandList{{#each modifiers}} brandList--{{this}}{{/each}}" >
+   {{#each test}}
+    <a href="#" class="brandList-link" href="#"><img src="{{../imgFolder}}{{image-name}}" class="brandList-img"></a>
+    {{/each}}
+    {{!-- <a href="#" class="brandList-link brandList-link--seemore" href="#">  Ver todos ›</a> --}}
+</nav>

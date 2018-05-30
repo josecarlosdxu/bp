@@ -1,0 +1,36 @@
+@include block(productDescription) {
+    @include element(title) {
+        @extend %type-section-title;
+    }
+
+    @include element(content) {
+        margin-bottom: 2rem;
+
+        padding: $um;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

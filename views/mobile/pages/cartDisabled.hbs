@@ -1,0 +1,17 @@
+---
+title: Carrito
+---
+<div class="mobileNavBar mobileNavBar--news" data-js-selecteditem="cartBtn">
+<div class="modularGrid modularGrid--boxed modularGrid-equalHeights">
+<div class="modularGrid-module u-pdr--half u-tar">
+<form action="stepsCart.html">
+<h2 class="mobileNavBar-title u-fll">Carrito</h2>
+<h4 class="mobileNavBar-title">Subtotal<span class="u-mgl">9.999,32 €</span></h4>
+<button class="button button--primary button--condensed" type="submit" disabled>
+{{>svgIcon type='arrowRight'}}
+</button>
+</form>
+</div>
+</div>
+</div>
+{{>cartTable disabled='true'}}

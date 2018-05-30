@@ -1,0 +1,34 @@
+<aside class="filter" data-js-filter="filter">
+<input type="checkbox" class="inputToggle" data-js-filter="checkbox" id="{{idFilter}}">
+<label for="{{idFilter}}" class="filter-headerTitle" data-js-filter="btn">{{header.title}}</label>
+<section class="filter-body{{#each bodyModifiers}} filter-body--{{this}}{{/each}}">
+
+<div class="filter-scrollpanel">
+<nav class="brandList brandList--filters">
+{{#each options }}
+<input type="checkbox" class="inputToggle brandList-input" id="{{image-name}}">
+<label class="brandList-label" for="{{image-name}}">
+<img src="{{../imgFolder}}{{image-name}}.{{image-ext}}" class="brandList-img">
+<span class="brandList-number">({{number}})</span>
+</label>
+{{/each}}
+</nav>
+</div>
+{{>selectFilterBtn nopadding='true'}}
+</section>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

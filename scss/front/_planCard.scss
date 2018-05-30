@@ -1,0 +1,204 @@
+$devicesWidth: 4rem;
+$devicesOpacity:0.7;
+@include block(planCard) {
+    box-shadow: 0 0  1px $color-shadow;
+    // @extend %u-xs-3rd;
+    // @extend %inlineBlock;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+    background-color: white;
+    @include element(actions) {
+        padding: $um;
+        background-color: white;
+    }
+    @include element(devices) {
+        width: $devicesWidth;
+        height: $devicesWidth;
+        opacity: $devicesOpacity;
+    }
+    @include element(name) {
+        @extend .subtitle5;
+        opacity: 0.7;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    @include element(theme) {
+        // overflow: hidden;
+        // position: relative;
+    }
+    @include element(ribbon) {
+        background-color: #fcc401;
+        box-shadow: 0 0  1px $color-shadow;
+        color: white;
+        font-size: 0.9rem;
+        left: -50%;
+        letter-spacing: 0.05em;
+        padding: 0.5rem 0 0.7rem;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        top: -30%;
+        -webkit-transform:  rotate(-45deg);
+        transform: rotate(-45deg);
+        transform-origin: 100% 100% 0;
+        width: 100%;
+        z-index: 1;
+        & + img {
+            filter: blur(3px);     
+        } 
+
+    }
+    @include element(select) {
+        margin: 0;
+        margin-right: $um / 2;
+        width: auto;
+        flex-grow:1;
+        // pointer-events:none;/////
+        // visibility: hidden;/////
+        + .button{
+            margin-right: $um / 3;
+        
+    }
+        
+    }
+
+ 
+    
+
+
+    /*position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    outline: none;
+    //: 25% !important;
+    
+   /* @include element(img) {
+        @extend %img--responsive;
+        position: relative;
+        padding: 0.25rem;
+        @include addBreakpoint(xs) {
+            //max-height: 22rem;
+        }
+        @include addBreakpoint(xl) {
+           // max-height: 26rem;
+        }
+    }
+    @include element(imgList) {
+        height: 28rem;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        @include addBreakpoint(xs) {
+            max-height: 26rem;
+        }
+        @include addBreakpoint(xl) {
+            max-height: 28rem;
+        }
+    }
+    @include element(imgItem) {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;       
+        &:first-child{
+             opacity: 1;
+             animation:none !important;
+
+        }
+    }
+    @include element(icon) {
+        opacity: 0.5;
+        width: 75%;
+    }
+    @include element(actionsItem) {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        // text-align: center;
+        @extend %u-xs-30;
+        // @extend %u-xl-3rd;
+        vertical-align: middle;
+        // padding: 1rem 0.25rem 1rem 1.5rem;
+        @include modifier(prices) {
+            text-align: right;
+            @extend %u-xs-40;
+        }
+        @include modifier(btns) {
+            outline: none;
+            @extend %u-xs-35;
+            display: none;
+        }
+    }
+    @include element(bigPrice) {
+        font-size: $um * 2;
+        line-height: 1;
+    }
+    @include element(littlePrice) {
+        font-size: 0.9rem;
+        color: #999;
+    }
+    @include element(actionsItemTitle) {
+        font-size: 1.1rem;
+        font-weight: 400;
+        display: block;
+    }
+    @include element(colorBtn) {
+        display: inline-block;
+        border-radius: 0;
+        background: #ccc;
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 0;
+        border: none;
+        margin-right: 0.5rem;
+        margin-top: 0.75rem;
+        position: relative;
+        &:focus {
+            outline: none;
+        }
+        @include modifier(selected) {
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1.25rem;
+                height: 0.3rem;
+                bottom: -0.5rem;
+                background: inherit;
+            }
+        }
+        @include modifier(parisGreen) {
+            background: #64afa0;
+        }
+        @include modifier(parisPink) {
+            background: #d16572;
+        }
+        @include modifier(parisYellow) {
+            background: #d8a44a;
+        }
+        @include modifier(parisBlue) {
+            background: #72a1bb;
+        }
+        @include modifier(londonGreen) {
+            background: #5da957;
+        }
+        @include modifier(londonOrange) {
+            background: #f36c21;
+        }
+        @include modifier(londonRed) {
+            background: #f05440;
+        }
+        @include modifier(londonBlue) {
+            background: #199ad6;
+        }
+    }*/
+}

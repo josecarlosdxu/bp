@@ -1,0 +1,8 @@
+<aside class="filter" data-js-filter="filter">
+<input type="checkbox" class="inputToggle" data-js-filter="checkbox" id="{{idFilter}}">
+<label for="{{idFilter}}" class="filter-headerTitle" data-js-filter="btn">{{header.title}}</label>
+<section class="filter-body{{#each bodyModifiers}} filter-body--{{this}}{{/each}}">
+{{>selectFilterContent}}
+</section>
+</aside>
+

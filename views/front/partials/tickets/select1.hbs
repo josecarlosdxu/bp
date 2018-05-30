@@ -1,0 +1,20 @@
+    {{#if label}}
+
+    <label class="form-label" for="{{id}}">{{label}}</label>
+    {{else}}
+    <label class="form-label">Nombre</label>
+    {{/if}}
+    <select class="form-select" {{#if id}} id="{{id}}" {{/if}}>
+    {{#if placeholder}}
+    <option>-- {{placeholder}} --</option>
+    {{else}}
+        <option>-- Seleccione el motivo de su consulta --</option>
+        {{/if}}
+        <option>Dudas comerciales</option>
+        <option>Dudas para ser distribuidor</option>
+        <option>Packs Mayoristas</option>
+        <option>Tienda Dropshipping</option>
+        <option>Consultas de stock</option>
+        <option>Necesito un presupuesto</option>
+        <option>Otra consulta</option>
+    </select>

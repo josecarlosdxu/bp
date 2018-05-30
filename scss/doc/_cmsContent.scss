@@ -1,0 +1,55 @@
+@include block(cmsContent) {
+    @include element(container) {
+         margin-bottom: $um;
+    }
+
+    h1,h2,h3,h4,h5,p,pre {
+        margin-top: 0;
+        margin-bottom: $um;
+    }
+
+    br{
+        display: none;
+    }
+
+    ul {
+        margin-bottom: $um;
+        list-style-type: disc;
+        padding-left: $um;
+    }
+    li {
+        margin-left: $um;
+
+        list-style-type: disc;
+    }
+    h1 {
+        margin-bottom: 2rem;
+
+        font-size: 3rem;
+    }
+    h2 {
+    }
+    pre {
+        padding: $um;
+
+        background: #f0f0f0;
+    }
+
+
+    /*
+    table {
+        width: 100%;
+        margin-bottom: $um;
+        td {
+            height: 3rem;
+
+            text-align: center;
+
+            border: 1px solid $color-shadow;
+            background: #f0f0f0;
+        }
+        th {
+            text-align: left;
+        }
+    }*/
+}

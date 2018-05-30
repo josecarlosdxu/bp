@@ -1,0 +1,17 @@
+---
+title: Pasos de la compra
+layout: front/layouts/default_alt.hbs
+---
+
+    <div class="modularGrid-module u-lg-50 u-mgb2">
+        <h2 class="title u-mgb--half u-tal">Pasos de la compra</h2>    
+        {{> shoppingCartProdStep1 }}
+        {{> shoppingCartProdStep2 }}
+        {{> shoppingCartProdStep3 active='true'}}
+        {{> shoppingCartProdStep4}}
+       
+    </div>
+    <div class="modularGrid-module u-lg-50 u-lg-pdl u-mgb2">
+        <h2 class="title u-mgb--half u-tal">Resumen del pedido</h2>
+        {{>shoppingCartProdStepFinal}}        
+    </div>

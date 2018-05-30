@@ -1,0 +1,137 @@
+{
+    "list": [
+    {
+        "title": "Inicio",
+        "itemclass" : " mainNav-link--active",
+        "bigitem":
+        {
+            "name": "IR A INICIO",
+            "img": "home_menu"
+        }
+    },
+    {
+        "title": "Soluciones",
+        "items": [
+        {
+            "name": "CANAL ONLINE",
+            "img": "laptop",
+            "children": [
+            {
+                "name": "Ampliar catálogo"
+            },
+            {
+                "name": "Tienda online"
+            },
+            {
+                "name": "Emarketplaces"
+            },
+            {
+                "name": "Flash Deals"
+            }]
+        },
+        {
+            "name": "CANAL OFFLINE",
+            "img": "store",
+            "children": [
+            {
+                "name": "Comercio tradicional"
+            },
+            {
+                "name": "Almacenistas y distribuidores"
+            }]
+        },
+        {
+            "name": "ALL-IN-ONE-SUPPLIER",
+            "img": "all-in-one"
+        }]
+    },
+    {
+        "title": "Servicios",
+        "items": [
+        {
+            "name": "SERVICIO DROPSHIPPING",
+            "img": "serv-drop"
+        },
+        {
+            "name": "B2B VENTA AL POR MAYOR",
+            "img": "b2b-menu"
+        },
+        {
+            "name": "TIENDA DROPSHIPPING 360º",
+            "img": "tienda360"
+        },
+        {
+            "name": "MULTI-CHANNEL INTEGRATION PLATFORM",
+            "img": "multichannel"
+        },
+        {
+            "name": "SINCRONICE CON BIGBUY ",
+            "img": "autorenew"
+        }]
+    },
+    {
+        "title": "Catálogo",
+        "items": [
+            {
+            "name": "B2B SHOP",
+            "img": "b2b_menu"
+        },
+        {
+            "name": "Navegación",
+            "img": "catalog",
+             "children": [
+            {
+                "name": "Categorías"
+            },
+            {
+                "name": "Etiquetas"
+            },
+            {
+                "name": "Marcas"
+            }]
+        }      
+        ]
+    },
+    {
+        "title": "Pricing",
+        "items": [
+        {
+            "name": "PACKS MAYORISTAS",
+            "img": "pack"
+        },
+        {
+            "name": "TIENDA DROPSHIPPING 360º",
+            "img": "tienda360"
+        }]
+    },
+    {
+        "title": "Recursos",
+        "items": [
+        {
+            "name": "CONTACTA",
+            "img": "email_black"
+        },
+        {
+            "name": "HELP CENTER",
+            "img": "helpcenter"
+        },
+        {
+            "name": "BLOG",
+            "img": "pencil"
+        },
+        {
+            "name": "ACADEMY",
+            "img": "academy"
+        }]
+    },
+    {
+        "title": "B2B Shop",
+        "bigitem":
+        {
+            "name": "IR A B2B SHOP",
+            "img": "b2b_menu"
+
+        }
+
+    }]
+}

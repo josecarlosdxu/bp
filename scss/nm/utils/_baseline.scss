@@ -1,0 +1,41 @@
+/*
+
+Baseline
+========
+
+Creates a repeating background with lines at every base-line-height step to debug vertical rythm.
+
+    <body class="nm-baseline">
+
+*/
+
+@if $debug {
+    $baseline-line-color: #ccc;
+    @include block(baselineGrid) {
+        background-image: repeating-linear-gradient(
+                            0deg,
+                            $baseline-line-color,
+                            $baseline-line-color 1px,
+                            transparent 1px,
+                            transparent);
+        background-size: $base-line-height $base-line-height;
+    }
+
+}
+
+@include block(baselineGrid) {
+    //position: relative;
+    //left: 0;
+
+    //transition: left 0.15s ease-out 0s;
+
+    @include modifier(fixed) {
+        position: fixed;
+        //top: 0;
+        //left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+}

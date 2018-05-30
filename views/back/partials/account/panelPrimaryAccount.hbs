@@ -1,0 +1,60 @@
+<div class="panel panel--active panel--reveal" data-js-panel-name="panel01">
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-user"></use></svg>
+        <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Mi cuenta</a></div>
+
+    </div>
+
+     <div class="panel-content">
+
+        <!-- panel tabs -->
+        <nav class="panel-tabs">
+            <button class="panel-tabs-item " data-panelTabBtn="tab1">Mi cuenta</button>
+            <button class="panel-tabs-item " data-panelTabBtn="tab2">Datos del usuario</button>
+            <button class="panel-tabs-item " data-panelTabBtn="tab3">Datos del sector</button>
+            <button class="panel-tabs-item" data-panelTabBtn="tab4">Newsletter</button>
+            <button class="panel-tabs-item panel-tabs-item--active" data-panelTabBtn="tab5">Datos de facturación</button>
+
+        </nav>
+        
+        <div class="panel-tabs-content" id="tab1" style="display:none;">
+            <section class="panel-section panel-section--borderless u-pd ">
+               
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                            {{>generalInfo0}}
+                        </div>
+                       
+                    </div>
+                    <div class="modularGrid ">
+                         <div class="modularGrid-module u-pdt">
+                            {{> panelSection panelSection.ordersGraph}}
+                        </div>
+                    </div>
+               
+            </section>
+        </div>
+        <!-- panel tabs content-->
+        <div class="panel-tabs-content" id="tab2" style="display:none;">
+            <section class="panel-section panel-section--borderless ">
+                {{> modifyAccount}}
+            </section>
+        </div>
+
+        <div class="panel-tabs-content" id="tab3" style="display:none;" >
+            <section class="panel-section panel-section--borderless">
+                {{> modifyAccountSector}}
+            </section>
+        </div>
+        <div class="panel-tabs-content" id="tab4" style="display:none;">
+            <section class="panel-section  panel-section--borderless">
+                {{> accountNewsletter}}
+            </section>
+        </div>
+        <div class="panel-tabs-content" id="tab5" >
+            <section class="panel-section  panel-section--borderless">
+                {{> accountFacturacion}}
+            </section>
+        </div>
+    </div>
+</div>

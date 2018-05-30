@@ -1,0 +1,42 @@
+---
+title: Tienda dropshipping
+layout: front/layouts/default_alt.hbs
+---
+<div class="modularGrid u-pdb">
+  <section class="box u-pdt--half">
+    <div class="modularGrid-module u-tac u-pdt">
+      {{>dropshopSection1}}      
+      {{>dropshopSectionFeatures}}
+      <section class="ventaCMS-section ventaCMS-section--inverse  ventaCMS-section--condensed u-mgb">
+        <h2 class="ventaCMS-subtitle ventaCMS-subtitle--section">¡Su negocio llave en mano!
+          {{>svgIcon size='lg'type='keys'}}
+        </h2>
+      </section>
+    </div>
+    <div class="modularGrid-module u-mgt">
+      <section class="u-pdb ">
+        <h2 class="ventaCMS-subtitle ventaCMS-subtitle--section u-pd--half">Le ofrecemos una Tienda Online de Regalos Originales</h2>
+        <div class="modularGrid u-elem-center u-pd u-mgt u-mgl--half  u-mgr--half">
+         {{> planCardItem name='lisboa'}}
+         {{> planCardItem name='vancouver'}}
+         {{> planCardItem name='melbourne'}}
+         {{> planCardItem name='zurich'}}
+         {{> planCardItem name='oslo'}}
+         {{> planCardItem name='berlin'}}       
+         
+
+       </div> 
+     </section>
+   </div>
+   {{>promoDiscountWallet}}
+   {{>dropshopSectionFeatures2 dropShop.features2}}
+   <section class="ventaCMS-section ventaCMS-section--colorized u-mgt  u-brdt  u-brb">
+    <h2 class="ventaCMS-sectionTitle">¿Cómo funciona la tienda Dropshipping?</h2>
+    <div class="modularGrid-module u-xs-90 u-elem-center u-pd u-mgb">
+      <img class=" img--responsive" alt="" src="../../img/dropshipping_big.png">
+    </div>
+  </section>
+  {{>info}}
+  {{>faqsTiendaDropshipping}}
+</section>
+</div>

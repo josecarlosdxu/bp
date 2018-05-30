@@ -1,0 +1,26 @@
+<form class="form">
+    <div class="modularGrid">
+
+        <div class="modularGrid-module sequential u-md-50">
+            <h3 class="form-fieldset-title">Newsletter</h3>
+            <label class="form-label u-pdb--half">¿Desea recibir nuestra Newsletter?</label>
+
+            <div class="u-iblock u-pdb u-pdr">
+                <input type="radio" value="1" name="newsletter" id="newsletter1" class="form-radio">
+                <label for="newsletter1" class="form-label form-label--inline"> Sí</label>
+            </div>
+            <div class="u-iblock u-pdb u-pdr">
+                <input type="radio" value="0" name="newsletter" id="newsletter0" class="form-radio">
+                <label for="newsletter0" class="form-label form-label--inline"> No</label>
+            </div>
+        </div>
+        {{>accountFieldset3}}
+        {{>accountFieldset4}}
+        <div class="modularGrid-module sequential">
+            <div class="modularGrid-module  u-pdb">
+                <button  class="button button--compressed">Guardar preferencias</button>
+            </div>
+        </div>
+    </div>
+</form>
+

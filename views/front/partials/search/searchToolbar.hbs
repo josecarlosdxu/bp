@@ -1,0 +1,9 @@
+ <div class="searchForm searchForm--active">
+        <form data-js-search_form="" autocomplete="off"  method="get" class="form">
+            <input type="text" maxlength="100" name="q" id="inputtext1" class="searchForm-searchInput" placeholder="Buscar en todo el sitio...">  
+        </form> 
+         {{#unless search}}   
+          {{> searchBox}}  
+         {{/unless}}  
+</div>
+

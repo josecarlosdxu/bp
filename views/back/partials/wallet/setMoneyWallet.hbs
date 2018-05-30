@@ -1,0 +1,34 @@
+
+  <section class="panel-section panel-section--borderless">
+    <form class="form" data-js-wallet="form">
+      <div class="modularGrid">
+        <div class="modularGrid-module u-xs-45 ">
+          <fieldset class="form-fieldset form-fieldset--sequential">
+            <h3 class="form-fieldset-title u-pdb--half">Ingresar fondos al monedero</h3>
+            <h4 class="walletStep-title"><b class="walletStep-number">1</b>Cantidad <em class="form-label--optional">Mínimo: 300 €</em></h4>
+            <input type="text" data-js-wallet="quantity"  class="form-input u-xs-20 form-input--postfix form-input--number"/>
+            <span class="form-postfix">
+             <svg role="img" class="icon  icon--xxs u-vm"><use xlink:href="../../img/icons/svg-defs.svg#icon-euro"></use>
+             </svg>
+             </span>
+
+              <h4 class="walletStep-title u-mgt"><b class="walletStep-number">2</b>Método de transferencia</h4>
+             <div class="modularGrid-module u-pdt--third">
+                <input type="radio" value="sofort" id="sofort" name="tipo" class="form-radio walletStep-radio" checked >
+                <label class="form-label form-label--inline" for="sofort"><strong>Transferencia bancaria inmediata (by Sofort)</strong> <a class="form-info " href="#"><b class="icon form-info-icon fa-info-circle"></b></a> <span class="notify--new">New</span></label>
+                <div class="walletStep-explain"><p>Esta forma de pago sólo esta disponible para usuarios con cuenta bancaria en determinados paises de la unión europea. Por favor revise la<a target="_blank" href="https://www.sofort.com/eng-INT/buyer/sb/overview/"><strong> lista de países disponibles</strong></a></div>
+            </div>
+              <div class="modularGrid-module u-pdt--third u-mgb">
+                <input type="radio" value="transferencia" id="transfer" name="tipo" class="form-radio walletStep-radio">
+                <label class="form-label form-label--inline" for="transfer"><strong>Transferencia bancaria 24 - 72h</strong>  <a class="form-info " href="#"><b class="icon form-info-icon fa-info-circle"></b></a></label>
+                <div class="walletStep-explain"><p>Al finalizar el proceso de compra, se le enviará un correo con las instrucciones que debe seguir.</p></div>
+            </div>
+          <button class="button button--primary u-mgt--3rd" data-js-wallet="button">Ingresar fondos</button>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+

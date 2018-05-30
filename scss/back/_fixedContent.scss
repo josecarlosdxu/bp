@@ -1,0 +1,33 @@
+@include block(fixedContent) {
+    padding-top: 4px;
+
+@include addBreakpoint(lg) {
+    padding-top: 39px;
+    padding-bottom: 40px;
+}
+    /*padding-top: 39px;
+
+
+    @include element(tableContent) {
+
+
+         @include addBreakpoint(lg) {
+
+
+           width: 980px;
+          }
+
+        @include addBreakpoint(xl) {
+
+            width: 1020px;
+         }
+
+        @include addBreakpoint(xxl) {
+
+            width: 1200px;
+        }
+    }
+*/
+
+}
+

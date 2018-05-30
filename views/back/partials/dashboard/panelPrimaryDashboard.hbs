@@ -1,0 +1,21 @@
+<div class="panel panel--active" data-js-panel-name="panel01" data-js-panel-state="active">
+    <div class="panel-title">
+        <img src="../../img/icons/user.svg" class="icon icon--xs u-mgt--half" style="position: relative; top: 2px;">
+        <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Mi cuenta</a></div>
+    </div>
+    <div class="panel-content">
+        <div class="modularGrid u-pd">
+            <div class="modularGrid-module u-xl-60">
+                {{>generalInfo}}
+                {{!-- {{> panelSection panelSection.recentOrders }}
+                {{> panelSection panelSection.recentInvoices}}
+                {{> panelSection panelSection.recentTrackings}} --}}
+            </div>
+            <div class="modularGrid-module u-xl-40 u-pdl">
+                {{!-- {{> panelSection panelSection.pendingTasks}} --}}
+                {{> panelSection panelSection.ordersGraph}}
+                {{!-- {{> panelSection panelSection.invoicesGraph}} --}}
+            </div>
+        </div>
+    </div>
+</div>

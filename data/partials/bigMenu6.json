@@ -1,0 +1,122 @@
+{
+  "bigmenu": {
+    "header": [
+      {
+        "title": "Relax y bienestar",
+        "sectionID": "110",
+        "modifier": "bigMenu-sectionItem--submenu"
+      },
+      {
+        "title": "Peluquería",
+        "sectionID": "111",
+        "modifier": "bigMenu-sectionItem--submenu"
+      },
+      {
+        "title": "Tratamientos estéticos",
+        "sectionID": "112",
+        "modifier": "bigMenu-sectionItem--submenu"
+      }
+      ,
+      {
+        "title": "Línea solar",
+        "sectionID": "113",
+        "modifier": "bigMenu-sectionItem--submenu"
+      }
+    ],
+    "categories": [
+      {
+        "sectionID": "110",
+        "subcategories": [
+          {
+            "name": "Cojines y almohadas"
+          },
+          {
+            "name": "Masajeadores"
+          },
+          {
+            "name": "Zapatillas, plantillas y otros"
+          },
+          {
+            "name": "Artículos de bienestar y relajación"
+          },
+          {
+            "name": "Tensiómetros y termómetros"
+          },
+          {
+            "name": "Calientamanos"
+          },
+          {
+            "name": "Gafas de lectura y accesorios"
+          }
+        ]
+      },
+      {
+        "sectionID": "111",
+        "subcategories": [
+          {
+            "name": "Champús"
+          },
+          {
+            "name": "Suavizantes y acondicionadores"
+          },
+          {
+            "name": "Mascarillas y tratamientos capilares"
+          },
+          {
+            "name": "Espumas y fijadores"
+          },
+          {
+            "name": "Secadores de pelo"
+          },
+          {
+            "name": "Planchas de pelo y rizadores"
+          },
+          {
+            "name": "Peines y cepillos"
+          },
+          {
+            "name": "Cortapelos"
+          }
+        ]
+      },{
+        "sectionID": "112",
+        "subcategories": [
+          {
+            "name": "Depilación y afeitado"
+          },
+          {
+            "name": "Manicura y pedicura"
+          },
+          {
+            "name": "Tratamientos faciales y corporales"
+          }
+        ]
+      },{
+        "sectionID": "113",
+        "subcategories": [
+          {
+            "name": "Cremas faciales protectoras"
+          },
+          {
+            "name": "Cremas corporales protectoras"
+          },
+          {
+            "name": "Aceites solares"
+          },
+          {
+            "name": "Bronceadores"
+          },
+          {
+            "name": "Autobronceadores"
+          },
+          {
+            "name": "Activadores de bronceado"
+          },
+          {
+            "name": "After sun"
+          }
+        ]
+      }
+    ]
+  }
+}

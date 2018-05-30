@@ -1,0 +1,19 @@
+<fieldset class="form-fieldset--sequential u-md-50">
+	<h4 class="filter-title">{{header.title}}</h4>
+	<div class="modularGrid">
+		<nav class="brandList brandList--mobileFilters">
+		    {{#each options}}
+
+		    {{#if_lt @index compare=8}}
+			
+			<input type="checkbox" class="inputToggle brandList-input" id="{{image-name}}">
+			<label class="brandList-label" for="{{image-name}}">
+				<img src="{{../../imgFolder}}{{image-name}}.{{image-ext}}" class="brandList-img"/>
+				<span class="brandList-number">({{number}})</span>
+			</label>
+			{{/if_lt}}
+			{{/each}}
+		</nav>
+		<button class="button button--narrow u-elem-center">Ver todas las marcas</button>
+	</div>
+</fieldset>

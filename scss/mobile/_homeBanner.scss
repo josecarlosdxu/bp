@@ -1,0 +1,42 @@
+@include block(homeBanner) {
+    @include element(figure) {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* @include addBreakpoint(lg) {
+            height: 20rem;
+        }*/
+    }
+    @include element(figcaption) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        font-size: $um;
+        color: inherit;
+        padding: 1rem;
+
+        @include addBreakpoint(md) {
+             padding: $um;
+
+        }
+    }
+    @include element(img) {
+        height: 100%;
+        position: absolute;
+        right:0;
+        @include addBreakpoint(md) {
+            position: absolute;
+            right: 0;
+        }
+        /*@include addBreakpoint(sm) {
+            min-width: 100%;
+            //height: 15rem;
+
+        }
+
+        @include addBreakpoint(lg) {
+            min-height: 100%;
+        }*/
+    }
+}

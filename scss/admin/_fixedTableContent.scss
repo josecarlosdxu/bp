@@ -1,0 +1,52 @@
+@include block(fixedTableContent) {
+    padding-bottom: 75px;
+    @include element(tableContent) {
+        padding-top: 76px;
+        @include addBreakpoint(lg) {
+            width: 980px;
+        }
+        @include addBreakpoint(xl) {
+            width: 1020px;
+        }
+        @include addBreakpoint(xxl) {
+            width: 1200px;
+        }
+        @include modifier(downloads) {
+            padding-top: 37px;
+
+        }
+    }
+}
+
+
+
+
+
+@include extendBlock(fixedTableContent, bigHeader) {
+    margin-top: -68px;
+    padding-top: 144px;
+}
+@include extendBlock(fixedTableContent, singleRow) {
+    padding-top: 0;
+    @include element(tableContent) {
+        padding-top: 37px;
+    }
+}
+@include extendBlock(fixedTableContent, singleRowNoHeader) {
+    padding-top: 0;
+    //outline: 1px solid red;
+    @include element(tableContent) {
+        padding-top: 37px;
+    }
+    .panelHeader-fixedTableHeader {
+        top:0;
+        @include addBreakpoint(lg) {
+            top: 100px;
+            @-moz-document url-prefix() {
+                top: 101px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,135 @@
+@include block(dragBlock) {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 0;
+    position: relative;
+    cursor: default;
+    pointer-events: none;
+    margin-bottom: 0.75rem;
+    opacity: .5;
+    transition: all 0.2s;
+
+    @include element(container) {
+        display: inline-block;
+        padding: $um;
+        width: 100%;
+    }
+    @include element(arrowBtn) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: $um * 3;
+        border: none;
+        background: transparent;
+        width: 2rem;
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    @include element(name) {
+        font-size: $um * 0.75;
+        padding: $um;
+        font-weight: 400;
+        display: inline-block;
+        margin-left: $um / 2;
+    }
+    @include element(button) {
+        display: inline-block;
+        background: none;
+        border: none;
+        border-radius: 0;
+        height: 100%;
+        width: $um * 2.5;
+        color: rgba(0, 0, 0, 0.5);
+        transition: all 0.2s;
+        &:hover, &:focus {
+            color: rgba(0, 0, 0, 0.7);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    @include element(buttonGroup) {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: $um * 3;
+        border-left: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    @include element(content) {
+        display: none;
+        cursor: default;
+        padding: $um $um $um / 2;
+        overflow: hidden;
+        box-shadow: 0 1px $color-shadow inset;
+        background: #f4f4f4;
+        background: linear-gradient(-45deg, $color-shadow, #f4f4f4 1px, #f4f4f4 3px, $color-shadow 4px, #f4f4f4 4px);
+        background: -webkit-linear-gradient(-45deg, $color-shadow, #f4f4f4 1px, #f4f4f4 3px, $color-shadow 4px, #f4f4f4 4px);
+        background-size: 5px 5px;
+    }
+}
+@include extendBlock(dragBlock, draggable) {
+    pointer-events: auto;
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab;
+    opacity: 1;
+
+    &:hover {
+        @extend %box-shadow;
+        border-color: rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+    }
+}
+@include extendBlock(dragBlock, opened) {
+    cursor: default;
+    opacity: 1;
+    box-shadow: 2px 0 #09f inset;
+    border-left-color: #09f;
+    pointer-events:auto;
+    &:hover {
+        box-shadow: 2px 0 #09f inset;
+        border-color: $color-shadow;
+        border-left-color: #09f;
+    }
+    @include element(arrowBtn) {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+    @include element(content) {
+        display: block;
+        box-shadow: 2px 0 #09f inset;
+    }
+}
+@include extendBlock(dragBlock, contentItem) {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 0;
+    position: relative;
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab;
+    margin-bottom: 0.75rem;
+    transition: all 0.2s;
+    background: white;
+    padding: 0;
+    opacity: 1;
+    pointer-events:auto;
+    &:active {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+    }
+    &:hover {
+        @extend %box-shadow;
+        border-color: rgba(0, 0, 0, 0.3);
+    }
+    @include element(name) {
+        margin: 0;
+    }
+}

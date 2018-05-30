@@ -1,0 +1,47 @@
+@include block(contentTickets) {
+
+	@include element(scrollArea) {
+ 	    overflow-y: scroll;
+ 	    max-height: 13.5rem;
+ 	    background: $color-lightGrey-light;
+ 	    outline: 1px solid $color-lightGrey-default;
+ 	    padding: 1rem 1rem 0.1rem;
+ 	    @include modifier(title) {
+ 	    	font-weight: bold;
+ 	    }
+ 	    @include modifier(content) {
+ 	    	font-size: 0.95rem;
+ 	    	border-bottom: 1px solid $color-lightGrey-default;
+ 	    	&:last-child {
+	    		border-bottom: none;
+	    	}
+ 	    }
+	}
+	@include element(attachArea) {
+		background: $color-lightGrey-light;
+ 	    padding: 1rem 1rem 0.1rem;
+ 	    @include modifier(flex) {
+	 	    display: inline-flex;
+	    	justify-content: flex-end;
+	    }
+	    @include modifier(title) {
+	    	color: $color-darkGrey-default;
+	    }
+	    @include modifier(content) {
+	    	border-bottom: 1px solid $color-lightGrey-default;
+	    	&:last-child {
+	    		border-bottom: none;
+	    	}
+	    }
+ 	}
+ 	@include element(footer) {
+ 		border-top: 1px solid $color-lightGrey-default;
+ 		button {
+	 		margin-right: 0.3rem;
+ 		}	
+ 	}
+ 	
+
+
+
+}

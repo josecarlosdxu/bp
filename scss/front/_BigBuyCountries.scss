@@ -1,0 +1,14 @@
+@include block(BigBuyCountries) {
+
+    background: #2a2e30 url(../img/worldmap.png) no-repeat right bottom;
+
+
+    @include element(item) {
+        @extend %type-footerlink;
+        color: #AAA;
+        list-style: none;
+        margin-bottom: 1rem;
+        font-style: italic;
+
+    }
+}

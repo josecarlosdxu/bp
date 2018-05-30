@@ -1,0 +1,525 @@
+@include block(mainNav) {
+    display: none;
+    vertical-align: top; //height: 4.5rem;
+    z-index: 4;
+    background-color: $color-mainNav-background;
+    position: fixed;
+    width: 100%; //width: 100vw;
+    
+    top: $headerHeight;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.1);
+
+    @include element(subMenu) {
+        display: block;
+        width: calc(100% / 7); //background-color: white;
+        position: absolute;
+        font-size: 0.98rem;
+        color: black;
+        z-index: 1;
+        height: $newMenuHeight;
+        box-shadow: 1px 0 $color-shadow;
+        transition: opacity 0.3s;
+        opacity: 0;
+        pointer-events: none;
+
+        &:before,
+        &:after {
+            position: absolute;
+            top: 0;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        &:before {
+            left: -5px;
+            background: linear-gradient(to right, transparentize(black, 1), $color-shadow);
+        }
+        &:after {
+            right: -5px;
+            background: linear-gradient(to left, transparentize(black, 1), $color-shadow);
+        }
+    }
+    @include element(content) {
+        display: flex; //flex-wrap: wrap;
+        color: $color-mainNav-link-text;
+        width: 100vw;
+        max-width: 1200px;
+    }
+    @include element(featured) {
+        font-size: 1rem;
+        flex-grow: 0;
+        align-items: center;
+        color: transparentize(white, 0.5);
+        display: flex;
+        border-left: 1px solid transparentize(white, 0.9);
+        transition: color 0.1s;
+        justify-content: space-around;
+        width: 30rem;
+        @include addBreakpoint(xl) {
+            width: auto;
+        }
+    }
+    @include element(featuredLink) {
+        display: block;
+        color: inherit;
+        padding: 0 2rem;
+        transition: color 0.1s;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            color: white;
+        }
+        >span {
+            pointer-events: none;
+            line-height: 1.1;
+            display: inline-block;
+        }
+    }
+    @include element(menu) {
+        vertical-align: top;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        @include addBreakpoint(xl) {
+            flex-grow: 2;
+        }
+        @include modifier(new) {
+
+
+
+
+
+
+            /*.mainNav-item{
+            .mainNav-link--arrow{
+        &:hover,
+        &:focus {
+        box-shadow: 0 2px $color-mainNav-link-selected-background inset;
+        background-color: $color-mainNav-link-selected-background;
+        &:after {
+            border-bottom-width: 4px;
+            border-top-width: 0;
+        }}
+             
+            }
+            
+        }
+
+        +.mainNav-subMenu{
+            background-color: white;
+            opacity: 1;
+            z-index: 2;
+            &:before, &:after{
+                        opacity: 1;
+                    }
+        }*/
+        }
+    }
+    @include element(item) {
+        display: block;
+        width: 100%;
+        line-height: 1.15;
+        vertical-align: top;
+        &:focus {
+            outline: none;
+        }
+        @include modifier(icon) {
+            width: auto;
+        }
+        @include modifier(last) {
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+    @include element(link) {
+        @extend %type-menu-light;
+        font-style: 1rem;
+        position: relative;
+        display: flex;
+        width: 100%;
+        white-space: nowrap; //// temporally for br
+        min-height: 53px;
+        transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+        vertical-align: top;
+        text-decoration: none;
+        color: inherit;
+        box-shadow: 0 1px $color-mainNav-background inset;
+        >span {
+            pointer-events: none; // line-height: 1.1;
+            line-height: 1.25;
+            display: inline-block;
+        }
+        &:hover,
+        &:focus {
+            background-color: $color-light;
+            outline: none;
+        }
+        @include addBreakpoint(xs) {
+            padding: $um / 1.5 $um / 1.6;
+        }
+        @include addBreakpoint(xl) {
+            padding: $um / 1.5 0.85rem;
+        }
+        @include modifier(home) {
+            padding-top: 21px;
+            padding-bottom: 0;
+            display: inline-block;
+            vertical-align: top;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-mainNav-linkSelected;
+                background-color: $color-mainNav-link-selected-background;
+            }
+        }
+        @include modifier(logo) {
+            padding: 12px 1rem 0 0;
+            padding-bottom: 0;
+            vertical-align: top;
+            display: none;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-mainNav-linkSelected;
+                background-color: $color-mainNav-link-selected-background;
+            }
+        }
+        @include modifier(selected) {
+            //color: $color-mainNav-linkSelected;
+            box-shadow: 0 2px $color-mainNav-link-selected-background inset;
+            background-color: $color-mainNav-link-selected-background; //transition: background-color 0.2s, box-shadow 0.2s;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $color-mainNav-link-selected-background;
+            }
+            &:after {
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 0;
+                left: 1rem;
+                position: absolute;
+                width: 0;
+                border: 0.5rem solid transparent;
+                border-bottom-color: white;
+                border-top: none;
+            }
+        }
+        @include modifier(icon) {
+            align-items: center;
+        }
+        @include modifier(active) {
+            box-shadow: 0 -4px $color-brandYellow-default inset;
+        }
+    }
+    @include addBreakpoint(xs) {
+        display: block;
+    }
+    +.content,
+    +script+.content,
+    ~script~.content {
+        padding-top: 13.5rem;
+    }
+    +.content--slider {
+        padding-top: 11.79rem;
+    }
+    +.content--full {
+        padding-top: 11.7rem;
+    }
+
+    @include element(subMenuItem) {
+        height: calc(100% / 5);
+        line-height: 1.1;
+        padding: 1.5rem 0.75rem 0;
+        padding: 0;
+        opacity: 0.5;
+        cursor: pointer;
+        background-color: transparent;
+        color: currentColor;
+        transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+        &:hover,
+        &:focus {
+            background-color: $color-accentBlue-default;
+            color: white;
+        }
+        .icon {
+            transition: none;
+        }
+        a.currentcolor{
+           
+             padding: 1.5rem 0.75rem 0;
+             display: inline-block;
+             width: 100%;
+             height: 100%;
+
+        }
+    }
+}
+
+@include extendBlock(mainNav, long) {
+    @include element(link) {
+        font-style: 0.9rem;
+        cursor: pointer;
+        @include addBreakpoint(xl) {
+            padding: $um / 1.5 0.9rem;
+        }
+        @include modifier(home) {
+            padding-top: 21px !important;
+        }
+    }
+}
+
+@include extendBlock(mainNav, sticky) {
+    /*position: fixed;
+    top: 4.5rem;
+    border-bottom: 1px solid #4a5054;*/
+}
+
+@include extendElement(mainNav, menu, backward) {
+    left: 6.25rem;
+    pointer-events: none;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: center bottom 0;
+    background: $color-mainNav-background; //box-shadow: 3rem -5rem  transparentize(#353b40,0.5);
+    box-shadow: 3rem -5rem 5rem #353b40; //color: #353b40;
+    transition: transform 0.1s ease-out;
+    width: calc(100vw - 7.75rem);
+    @include addBreakpoint(xl) {
+        left: auto;
+        right: 0;
+        width: calc(100% - 6.25rem);
+    }
+}
+
+@include extendElement(mainNav, menu, forward) {
+    //right: 0;
+    //pointer-events: none;
+    // position: absolute;
+    transform: scaleY(1);
+    pointer-events: auto;
+    transition: transform 0.1s ease-in; //outline: 1px solid red;
+    // transform-origin: center bottom 0;
+    // width: calc(100% - 6.25rem);
+    //background: #353b40;
+    //color: #353b40;
+    //transition: transform 0.2s;
+    .bigMenu {
+        min-width: 1200px;
+        left: -6.25rem;
+    }
+}
+
+.no-flexbox,
+[data-useragent*='MSIE 10.0'] {
+    .mainNav-menu {
+        display: block;
+        height: 4.4rem;
+    }
+    .mainNav-item {
+        display: inline-block;
+        width: auto;
+    }
+    .mainNav-link {
+        display: table-cell;
+    }
+    .nav-item,
+    .bigMenu-sectionItem {
+        display: inline-block;
+    }
+    .mainNav-link--icon {
+        vertical-align: top;
+    }
+    .mainNav-link--icon:not([title]) {
+        vertical-align: middle;
+    }
+}
+
+@include extendElement(mainNav, link, arrow) {
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 3px transparent inset;
+    background-color: transparent;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    >span {
+        text-transform: uppercase;
+    }
+    &:before {
+        content: "";
+        border: 4px solid transparent;
+        border-top-color: white;
+        border-bottom-color: white;
+        margin-right: $um / 4;
+        border-bottom-width: 0;
+    }
+}
+
+@include extendElement(mainNav, menu, new) {
+
+    cursor: pointer;
+
+
+    @include element(item) {
+        @include element(subMenu) {
+            transition: background-color 0.4s;
+        }
+
+        &:hover,
+        &:focus {
+            //box-shadow: 0 -4px $color-mainNav-link-selected-background inset;
+            //background-color: $color-mainNav-link-selected-background;
+            @include element(subMenu) {
+                background-color: white;
+                .icon {
+                    color: $color-accentBlue-default;
+                    transition: none;
+                }
+                @include element(subMenuItem) {
+                    opacity: 1;
+                    &:hover,
+                    &:focus {
+                        .icon {
+                            color: white;
+                            transition: none;
+                        }
+                    }
+                }
+
+                &:before,
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:last-child {
+            .mainNav-subMenu {
+                width: calc(100% / 7 + 1px);
+            }
+        }
+    }
+    @include element(link) {
+        @include modifier(arrow) {
+            transition: box-shadow 0.4s ease-in, background-color 0.4s ease-in;
+        }
+    }
+}
+
+
+@include extendElement(mainNav, content, newmenu) {
+    position: relative; //cursor: pointer;
+    &:after {
+        content: "";
+        display: block;
+        background-color: $color-lightGrey-light;       
+        height: $newMenuHeight;
+        width: 100%;
+        position: absolute;
+        left:0;
+        top: 4.45rem;
+        transition: opacity 0.2s;
+        opacity: 0;
+        box-shadow: 0 1px 1px opacify($color-shadow, 0.1), 1px 3px 4px opacify($color-shadow, 0.1);
+        pointer-events: none;
+    }
+    @include element(menu) {
+        //pointer-events: none;
+    }
+}
+
+@include extendElement(mainNav, content, active) {
+
+    &:after {
+        opacity: 1;
+    }
+    @include element(item) {
+        //transition: background-color 0.2s;
+        &:hover,
+        &:focus {
+            box-shadow: 0 -4px $color-mainNav-link-selected-background inset;
+            background-color: $color-mainNav-link-selected-background;
+        } //pointer-events: auto;
+        //touch-action:none;
+    }
+
+    @include element(subMenu) {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+@include extendElement(mainNav, subMenuItem, whithchildren) {
+    height: auto;
+
+    a.currentcolor{
+         padding-bottom: $um;
+    }
+   
+    p {
+        font-size: 1em;
+        padding-bottom: 0.1rem;
+        padding-left: 2rem;
+        padding-top: 0.25rem;
+        text-indent: -0.5em;
+        &:before {
+            content: "\2022";
+            margin-right: 0.2em;
+        } //opacity: 0.8;
+    }
+}
+
+@include extendElement(mainNav, subMenuItem, big) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1rem 3rem;
+    position: relative;
+    strong {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .icon {
+        padding: 1rem;
+    }
+}
+
+
+.mainNav-subMenuItem div {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.mainNav-menu--new .mainNav-item {
+    .mainNav-link--arrow {
+        cursor: default;
+    }
+
+    .mainNav-link--active {
+        box-shadow: 0 -4px $color-brandYellow-default inset;
+    }
+
+    &:hover,
+    &:focus {
+        .mainNav-link--arrow {
+            &:before {
+                border-bottom-width: 4px;
+                border-top-width: 0;
+            }
+        } //.mainNav-link--active {
+        //box-shadow: 0 0 $color-brandYellow-default inset;
+        //}
+    }
+}

@@ -1,0 +1,18 @@
+<!--<div class="mainNav-itemMenu--content">-->
+
+	<a class="mainNav-link mainNav-link--more" data-js-mainnav="link" href="../mobile/categoria-{{link}}.html" title="{{this.title}}">
+	     	{{#if title}}{{title}}  {{/if}}
+	     	{{#if name}}{{name}}  {{/if}}
+	</a>
+	<!--<button data-js-menulist="navigate" class="mainNav-button mainNav-button--open ma5-btn-enter">
+	 <svg role="img" class="icon icon--inline icon--sm">
+	    <use xlink:href="../../img/icons/svg-defs.svg#icon-chevronMobileRight"></use>
+	 </svg>
+	</button>-->
+	 {{#if childs}}
+		<span class="ma5-btn-enter">
+			
+			{{>svgIcon type='chevronMobileRight' size='sm'}}		
+		</span>
+	 {{/if}}
+<!--</div>-->

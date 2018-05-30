@@ -1,0 +1,36 @@
+---
+title: Categorias
+layout: front/layouts/default_alt.hbs
+breadcrumblist:
+- Inicio
+- Cocina gourmet
+---
+{{>breadcrumb}}
+<div class="modularGrid-module u-xs-25 u-pdb u-pdr">
+	<ul class="menuList">
+
+		{{> menuList menuList2.list }}
+		{{> menuList menuList1.list }}
+		{{> menuList menuList3.list }}
+		{{> menuList menuList4.list }}
+		{{> menuList menuList5.list }}
+		{{> menuList menuList6.list }}
+		{{> menuList menuList7.list }}
+		{{> menuList menuList8.list }}
+		{{> menuList menuList9.list }}
+	</ul>
+	{{>menuListDescription menuList7.list}}
+</div>
+
+<div class="modularGrid-module u-xs-75">
+	<section class="categoryList">
+		{{> cardList cardListCocina.top }}
+		{{> cardList cardListCocina.elec }}
+		{{> cardList cardListCocina.menaje }}
+		{{> cardList cardListCocina.reposteria }}
+		{{> cardList cardListCocina.gourmet }}
+	</section>
+
+    {{> cardList cardListCocina.bottom }}
+
+</div>

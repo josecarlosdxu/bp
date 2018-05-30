@@ -1,0 +1,259 @@
+@include block(mobileFeaturesList) {
+    position: relative;
+    font-size: 0;
+
+    @include element(item) {
+        @extend %inlineBlock100;
+        position: relative;
+        font-size: $um;
+    }
+
+}
+
+
+@include extendBlock(mobileFeaturesList, dropshippingStore) {
+
+    @include element(item) {
+        padding: $um / 3;
+        @extend %u-xs-50;
+        @extend %u-sm-3rd;
+        @extend %u-md-25;
+        @include addBreakpoint(sm) {
+            padding: $um / 2;
+        }
+        @include addBreakpoint(md) {
+            padding: $um;
+        }
+    }
+}
+
+@include extendBlock(mobileFeaturesList, pagosCMSItems) {
+    margin: 0 auto;
+    @extend %u-xs-90;
+    @extend %u-md-90;
+
+    @include addBreakpoint(sm) {
+        padding:0;
+        text-align: center;
+    }
+
+    @include addBreakpoint(md) {
+        padding:0;
+        text-align: center;
+    }
+
+    @include addBreakpoint(xxl) {
+        padding: $um * 2 $um * 3;
+        margin: 0 auto;
+    }
+
+    @include element(item) {
+        padding: $um / 3;
+        @extend %u-xs-50;
+        @extend %u-sm-3rd;
+        @extend %u-md-3rd;
+
+        @include addBreakpoint(sm) {
+            padding: $um / 2;
+        }
+
+        @include addBreakpoint(md) {
+            padding: $um;
+        }
+    }
+}
+
+@include extendBlock(mobileFeaturesList, dropshippingStoreHeader) {
+
+
+    width: 80%;
+    margin: 0 auto;
+    @extend %u-sm-90;
+    @extend %u-md-80;
+
+    @include addBreakpoint(xl) {
+        padding: $um * 2;
+    }
+
+    @include element(item) {
+        padding:  0 0  $um;
+        width: 50%;
+        @extend %u-sm-25;
+
+        @include addBreakpoint(md) {
+            padding: $um 0;
+        }
+
+        @include addBreakpoint(lg) {
+            padding: $um 0;
+        }
+
+
+
+    }
+}
+
+
+@include extendBlock(mobileFeaturesList, footerFeatures) {
+
+    margin: 0 auto;
+    padding: $um * 2 0;
+
+    @extend %u-md-90;
+    @extend %u-lg-65;
+    @extend %u-xl-60;
+
+    @include element(item) {
+        width: 30%;
+        @extend %u-xs-3rd;
+        padding: 1rem;
+        @include addBreakpoint(xs) {
+            padding: $um / 2;
+        }
+
+        @include addBreakpoint(md) {
+            padding: $um;
+        }
+    }
+
+}
+
+
+
+@include extendBlock(mobileFeaturesList, wholesalePacks) {
+
+/* margin: 0 auto;
+padding: $um * 2 0;
+
+@extend %u-md-90;
+@extend %u-lg-65;
+@extend %u-xl-60;*/
+
+
+@include element(item) {
+    width: 50%;
+    @extend %u-sm-3rd;
+
+    padding: 1rem;
+    @include addBreakpoint(xs) {
+        padding: $um / 2;
+    }
+
+    @include addBreakpoint(md) {
+        padding: $um / 2 $um;
+    }
+}
+
+}
+@include extendBlock(mobileFeaturesList, twoColumns) {
+
+    margin: 0 auto;
+
+    @extend %u-lg-95;
+
+    @include addBreakpoint(md) {
+
+        padding: $um 0;
+    }
+    @include addBreakpoint(lg) {
+        padding: $um * 1.5  0;
+    }
+
+    @include element(item) {
+        @extend %u-sm-50;
+        padding: 1rem;
+        @include addBreakpoint(xs) {
+            padding: $um $um / 2;
+        }
+
+        @include addBreakpoint(md) {
+            padding: $um / 2 $um;
+
+        }
+    }
+
+}
+@include extendBlock(mobileFeaturesList, threeColumns) {
+
+    margin: 0 auto;
+
+    @include addBreakpoint(sm) {
+        padding:0;
+        text-align: center;
+    }
+
+    @include addBreakpoint(md) {
+        padding:0;
+        text-align: center;
+    }
+
+    @include addBreakpoint(xxl) {
+        padding: $um * 2 0;
+        margin: 0 auto;
+    }
+
+    @include element(item) {
+        padding: $um / 3;
+        width: 50%;
+        @extend %u-sm-3rd;
+        @extend %u-md-3rd;
+
+        @include addBreakpoint(sm) {
+            padding: $um / 2;
+
+            &:nth-child(3n+3) {
+              //background: red;
+            }
+             &:nth-child(3n+1) {
+              //background: tan;
+            }
+        }
+
+        @include addBreakpoint(md) {
+            padding: $um;
+        }
+    }
+
+}
+@include extendBlock(mobileFeaturesList, fiveColumns) {
+    padding-bottom: $um;
+
+     @include element(item) {
+        width: 50%;
+        @extend %u-sm-3rd;
+        @extend %u-md-20;
+        padding: 1rem;
+
+    }
+
+}
+
+@include extendBlock(mobileFeaturesList, twoFixedColumns) {
+
+    margin: 0 auto;
+
+    @extend %u-lg-95;
+
+    @include addBreakpoint(md) {
+
+    }
+    @include addBreakpoint(lg) {
+
+    }
+
+    @include element(item) {
+        @extend %u-sm-50;
+        padding: 1rem;
+        @include addBreakpoint(xs) {
+            padding: $um $um / 2;
+        }
+
+        @include addBreakpoint(md) {
+            padding: $um / 2 $um;
+
+        }
+    }
+
+}
+
+

@@ -1,0 +1,34 @@
+{
+    "title": "Sincronización total a BigBuy",
+
+    "list": [
+
+
+        {
+            "img": "catalog_24",
+            "caption": "Catálogo en 24 idiomas"
+        },
+        {
+            "img": "stock_precios",
+            "caption": "Stock y precios"
+        },
+        {
+            "img": "pedidos",
+            "caption": "Pedidos"
+        },
+        {
+            "img": "transportistas",
+            "caption": "Transportistas"
+        },
+        {
+            "img": "precio_envio",
+            "caption": "Precios de envío"
+        },
+        {
+            "img": "trackings",
+            "caption": "Trackings"
+        }
+
+
+    ]
+}

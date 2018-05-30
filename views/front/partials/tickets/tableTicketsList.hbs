@@ -1,0 +1,111 @@
+<table class="table table--ticketslist u-mgt table--interactive">
+    <thead class="table-thead">
+        <tr class="table--tr">
+            <th class="table-th table-item">Última actualización</th>
+            <th class="table-th table-item">Referencia</th>
+            <th class="table-th table-item">Departamento</th>
+            <th class="table-th table-item">Asunto</th>
+            <th class="table-th table-item">Estado</th>
+            <th class="table-th table-item">Acciones</th>
+        </tr>
+        <tr class="table-tr table-tr--filters">
+            <th class="table-th table-item">
+                <button class="button button--decorative  u-locked-evts" data-js-datepicker="icon">
+                    <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-calendar"></use></svg>
+                    </button>
+                    <input class="form-input form-input--collapse form-input--prefix">
+                </th>
+                <th class="table-th table-item">
+                    <input class="form-input form-input--collapse" >
+                </th>
+                <th class="table-th table-item ">
+                    <select class="form-select form-select--collapse" >
+                        <option value="">--</option>
+                        <option value="">Atención al cliente y posventa</option>
+                        <option value="">Logística y pedidos</option>
+                        <option value="">Comercial y atención distribuidores</option>
+                        <option value="">Soporte técnico</option>
+                        <option value="">Administración</option>
+                    </select>
+                </th>
+                <th class="table-th table-item ">
+                    <select class="form-select form-select--collapse" >
+                        <option>--</option>
+                        <option>Dudas comerciales</option>
+                        <option>Dudas para ser distribuidor</option>
+                        <option>Packs Mayoristas</option>
+                        <option>Tienda Dropshipping</option>
+                        <option>Consultas de stock</option>
+                        <option>Necesito un presupuesto</option>
+                        <option>Otra consulta</option>
+                    </select>
+                </th>
+                <th class="table-th table-item">
+                    <select class="form-select form-select--collapse" >
+                        <option>--</option>
+                        <option>Pendiente</option>
+                        <option>En proceso</option>
+                    </select>
+                </th>
+                <th class="table-th table-item">
+                </th>
+            </tr>
+        </thead>
+        <tfoot>
+
+
+        <tr>
+      {{!-- <td colspan="100"> <div class="pagination">
+
+            <div class="pagination-item ">
+                <div class="form-action">
+                   <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-chevronLeft"></use></svg>
+                    <span class="form-action-msg">Atrás</span>
+                </div>
+            </div>
+
+            <div class="pagination-item">
+                Mostrando <strong>1-10</strong> de <strong>150</strong>
+            </div>
+
+            <div class="pagination-item">
+                <div class="form-action">
+                    <span class="form-action-msg">Adelante </span>
+                    <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-chevronRight"></use></svg>
+                </div>
+            </div>
+
+        </div>
+
+        </td> --}}
+    </tr>
+
+
+
+        </tfoot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <tbody class="table-tbody table-tbody--stripped">
+            {{>ticketsTableRows }}
+        </tbody>
+    </table>
+   <div class="dataTables_info" id="opened-tickets-list_info" role="status" aria-live="polite">Mostrando tickets del 1 al 4 de un total de 4 tickets</div>
+  <div class="dataTables_paginate paging_simple_numbers" id="opened-tickets-list_paginate">
+   <a class="paginate_button previous disabled" aria-controls="opened-tickets-list" data-dt-idx="0" tabindex="0" id="opened-tickets-list_previous">Anterior</a>
+   <span><a class="paginate_button current" aria-controls="opened-tickets-list" data-dt-idx="1" tabindex="0">1</a></span>
+   <a class="paginate_button next disabled" aria-controls="opened-tickets-list" data-dt-idx="2" tabindex="0" id="opened-tickets-list_next">Siguiente</a>
+</div>

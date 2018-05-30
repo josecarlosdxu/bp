@@ -1,0 +1,29 @@
+<section class="mobileCMS-section u-brt">
+    <h4 class="mobileCMS-sectionTitle u-pdb--half">Dudas frecuentes</h4>
+    <div class="modularGrid">
+        <div class="modularGrid-module modularGrid-module--legible">
+            <table class="table table--comparative u-pd u-mgt " data-js-accordion="accordion" data-js-accordion_selected_class="table-tr--selected">
+                <tbody class="table-tbody table-tbody--accordion">
+                {{#each items}}
+                    <tr data-js-accordion="link" class="table-tr">
+                        <td class="table-item table-item--rowtitle"><span class="table-accordionIcon "></span>
+                            {{{this.title}}}
+                        </td>
+                    </tr>
+                    <tr class="table-tr table-tr--content">
+                        <td class="table-item">
+                            <section class="table-accordionContent" data-js-accordion="panel">
+                                <div class="modularGrid u-pd">
+                                    <div class="modularGrid-module modularGrid-module--legible">
+                                        {{{this.content}}}
+                                    </div>
+                                </div>
+                            </section>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

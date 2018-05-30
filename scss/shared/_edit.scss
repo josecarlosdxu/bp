@@ -1,0 +1,86 @@
+$editBtnBg: #F0F6FF;
+
+
+$editBtnColor:#2480EE;
+
+
+@include block(edit) {
+    position: relative;
+     margin-bottom: 0.75rem;
+
+
+    &:after {
+        position: absolute;
+        right: 0.5rem;
+        pointer-events:none;
+        top: 0.5rem;
+        content: "";
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        opacity: 0;
+        transition: opacity 0.2s;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.5rem;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='..' preserveAspectRatio='xMidYMid meet'><path d='M47.029 141.952l-42.029 42.028v21.02h21.019l42.029-42.029v-1.914l-19.105-19.104h-1.914zm-22.925 55.405h-5.727v-5.734h-5.736v-5.729l5.736-5.734 11.462 11.463-5.735 5.734zm0-19.103l-3.821-3.82 26.746-26.746 3.821 3.821-26.746 26.745zm59.373-38.088l-13.643-13.643c-2.031-2.031-5.354-2.031-7.385 0l-2.946 2.945c-.021.021-.032.043-.052.063l-6.688 6.692 21.01 21.012 6.695-6.69c.02-.019.043-.03.061-.049l2.947-2.946c2.032-2.03 2.032-5.355.001-7.384zm-81.477-128.665v2.499h2.5l7.373-7.373-2.499-2.499-7.374 7.373zm11.805-6.807c.26-.26.26-.68 0-.94l-1.56-1.559c-.259-.261-.68-.261-.94 0l-1.22 1.219 2.5 2.5 1.22-1.22z'/></svg>");
+    }
+
+    @include element(input) {
+        margin-bottom: 0;
+
+    }
+
+
+    @include element(btns) {
+        position: absolute;
+        bottom: -2rem;
+        right: -1px;
+        height: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100000;
+    }
+
+    @include element(btn) {
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        margin: 0 1px 0;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 0;
+        background-color: $editBtnBg;
+        color: $editBtnColor;
+        transition: all .2s;
+        box-shadow: 0 -1px  transparentize($editBtnColor,1);
+        visibility: inherit;
+        &:hover,
+        &:focus {
+            background-color: $editBtnColor;
+            color: $editBtnBg;
+            box-shadow: 0 -1px  $editBtnColor;
+        }
+    }
+}
+
+.edit:hover:after {
+    opacity: 0.25;
+}
+
+.edit:focus-within:after {
+    opacity: 0;
+}
+
+
+.edit:focus-within .edit-btns,
+.edit-input:focus+.edit-btns {
+
+    opacity: 1;
+    visibility: visible;
+}

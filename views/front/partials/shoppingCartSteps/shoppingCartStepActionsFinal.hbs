@@ -1,0 +1,67 @@
+
+    <section class="shoppingCartStep" data-jscart="step-4"> 
+    	<div class="shoppingCartStep-header shoppingCartStep-header--final">
+    		<b class="shoppingCartStep-number">4</b>
+    		<div class="shoppingCartStep-headertexts">
+    			<h4 class="shoppingCartStep-title">Confirmar pedido</h4>          
+    		</div>    		
+    	</div>
+    	<div class="modularGrid u-pdb2 u-pdt--half" data-jsquote="container" data-jsstep="show-2" style="display:none;">
+    		<div class="modularGrid-module  u-pdh2 u-pdt" >
+    			<div class="pricePanel-header pricePanel-header--dropship u-mgb--half" data-jspack="header" >
+    				{{>svgIcon size='sm' type='pack'}}
+    				<span class="pack pack--dropship pack--big" data-jspack="pack"><span class="u-op-50">Pack</span> <span data-jspack="name">Dropship</span></span>
+    			</div>
+    		</div>            
+    		 <div class="modularGrid-module  u-pdh2 " data-jsquote="pack" style="display:none;"> 
+    			<p class="u-flex--between">Cuota de alta <strong data-jsprice="login"></strong></p>
+    			<p class="u-flex--between"><span data-jsquote="payQuote" class="u-cap">Cuota Semestral</span><strong data-jsprice="price"></strong></p> 
+    		</div>
+    		{{>finalShop}}
+            <div data-jsquote="totals" style="display:none;">
+
+    		<div class="modularGrid-module u-pdh2  u-pdt u-mgt--half" >
+    			<p class="u-flex--between u-brt u-pdt"><strong class="u-pdt--four">Subtotal</strong><strong class="u-pdt--four" data-jsprice="subtotal"></strong></p>
+    			{{!-- <p class="u-flex--between u-pdt"><span>Costes de forma de pago</span><span  data-jsprice="paycost">0.00</span></p>
+    			<p class="u-flex--between  u-pdt"><span>Base imponible</span><span  data-jsprice="base">1600</span></p> --}}
+                <p class="u-flex--between  u-pdt"><span>IVA</span><span  data-jsprice="iva"></span></p>
+
+    		</div>
+    		<div class="modularGrid-module u-pdh2 u-pdt2" > 
+    			<h3 class="subtitle5 u-flex--between"><span>Total</span><span  data-jsprice="total"></span></h3>
+    		</div>
+            </div>
+    		
+    		<div class="modularGrid-module u-pdh2 u-pdt2" data-jscartsmessage="full"  style="display:none;"> 
+    		<div class="msgBox msgBox--info u-mgb">
+    				<p><strong>El proceso de pago se hará en dos pasos:</strong></p>
+    				<p>1. Se le redirigirá a PayPal para hacer el pago del  Pack Mayorista.</p>
+    				<p>2. A continuación, le redirigiremos a una pasarela de pago de PayPal como invitado, desde la que podrá pagar su tienda dropshipping con tarjeta bancaria sin necesidad de loguearse.</p>
+    			</div>
+                <form action="" data-jscart="form">
+    			<button class="button button--primary button--full" data-jscart="finalbtn">Finalizar</button>
+                </form>
+    		</div>
+            <div class="modularGrid-module u-pdh2 u-pdt2" data-jscartsmessage="pack" style="display:none;"> 
+            <div class="msgBox msgBox--info u-mgb">                    
+                    <p>Se le redirigirá a PayPal para hacer el pago del  Pack Mayorista.</p>                  
+                </div>
+                <form action="" data-jscart="form">
+                <button class="button button--primary button--full" data-jscart="finalbtn">Finalizar</button>
+                </form>
+            </div> 
+            <div class="modularGrid-module u-pdh2 u-pdt2" data-jscartsmessage="update"  style="display:none;"> 
+            <div class="msgBox msgBox--info u-mgb">
+                    <p>Su Pack actual es válido hasta el 27/07/2017. Cuando finalice este periodo, comenzará a aplicarse su nueva cuota: <span data-jscartsmessage="quote"></span>.
+                </div>
+                <form action="" data-jscart="form">
+                <button class="button button--primary button--full" data-jscart="finalbtn">Finalizar</button>
+                </form>
+            </div>
+            <div class="modularGrid-module u-pdh2 u-pdt2" data-jscartsmessage="shop"  style="display:none;"> 
+                <form action="" data-jscart="form">
+                <button class="button button--primary button--full" data-jscart="finalbtn">Finalizar</button>
+                </form>
+            </div>
+    	</div>
+    </section>

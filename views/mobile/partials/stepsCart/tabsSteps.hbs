@@ -1,0 +1,71 @@
+<nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs mobileTabs--numered">
+    <article class="mobileTabs-item mobileTabs-item--backtab mobileTabs-item--editable ">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+
+            <h4 class="mobileTabs-itemTitle  ">Información de facturación</h4>
+            <button class="button--edit mobileTabs-editBtn" data-js-edit="">Editar</button>
+
+
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent ">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>facturacionTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+    <article class="mobileTabs-item mobileTabs-item--backtab ">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+            <h4 class="mobileTabs-itemTitle ">Información del envío</h4>
+             <button class="button--edit mobileTabs-editBtn" data-js-edit="">Editar</button>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>envioTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab ">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+            <h4 class="mobileTabs-itemTitle ">Método del envío</h4>
+             <button class="button--edit mobileTabs-editBtn" data-js-edit="">Editar</button>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+
+                    {{>metodoTab}}
+
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab ">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+            <h4 class="mobileTabs-itemTitle ">Plazo de preparación del envío</h4>
+             <button class="button--edit mobileTabs-editBtn" data-js-edit="">Editar</button>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>plazoTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="mobileTabs-item mobileTabs-item--backtab ">
+        <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--custom">
+            <h4 class="mobileTabs-itemTitle ">Información de pago</h4>
+            <button class="button--edit mobileTabs-editBtn" data-js-edit="">Editar</button>
+        </header>
+        <section data-js-accordion="panel" class="mobileTabs-itemContent ">
+            <div class="modularGrid">
+                <div class="modularGrid-module">
+                    {{>pagoTab}}
+                </div>
+            </div>
+        </section>
+    </article>
+</nav>

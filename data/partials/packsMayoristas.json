@@ -1,0 +1,42 @@
+{
+
+    "b2b1":
+    {
+
+
+        "iconclass": "icon--b2b",
+        "packname": "b2b",
+        "advice": "Este pack no es compatible con la tienda Dropshipping 360º",
+
+        "list": [
+
+
+            {
+                "text": "Unidades sueltas a precio mayorista PVD"
+            },
+            {
+                "text": "Descuento automático hasta el 10% del PVD"
+            },
+            {
+                "text": "Hasta 3 envíos dropshipping al mes"
+            },
+            {
+                "text": "Bloqueo de stock por 7 días"
+            },
+            {
+                "text": "Descarga de trackings"
+            },
+            {
+                "text": "Pedido mínimo 1,50 €"
+            }
+
+
+
+        ]
+
+
+
+
+    }
+
+}

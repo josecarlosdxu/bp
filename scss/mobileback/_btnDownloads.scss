@@ -1,0 +1,64 @@
+@include block(btnDownloads) {
+    border: 0.5rem solid transparent;
+    border-radius: 9px;
+    box-shadow: 0 0 0 1px opacify($color-shadow, 0.05) inset;
+    padding: $um / 2;
+    background: $color-lightGrey-lighter padding-box;
+    @extend %inlineBlock100;
+    text-align: left;
+    font-size: 1.2rem;
+    @extend %u-sm-50;
+    @extend %u-md-3rd;
+    @extend %u-lg-25;
+    @extend %u-xl-20;
+    color: #444;
+    @include addBreakpoint(sm) {
+        font-size: 1rem;
+    }
+    @include addBreakpoint(md) {
+        font-size: 1.1rem;
+    }
+    @include element(image) {
+        width: $um * 3;
+        height: $um * 3;
+        display: block;
+        float: left;
+        margin-right: $um / 2;
+        @include addBreakpoint(sm) {
+            width: $um * 2;
+            height: $um * 2;
+        }
+        @include modifier(alt) {
+            display: none;
+        }
+    }
+    @include element(txt) {
+        @extend %inlineBlock;
+        font-weight: 300;
+        @include modifier(header) {
+            font-weight: 700;
+            display: block;
+        }
+    }
+}
+@include extendBlock(btnDownloads, selected) {
+    background: transparentize($color-accentBlue-default, 0.9) padding-box;
+    box-shadow: 0 0 0 1px transparentize($color-accentBlue-default, 0.5) inset;
+    &:before {
+        background: transparentize($color-accentBlue-default, 0.5);
+        border-radius: 3px 0 0 3px;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 4px;
+    }
+    @include element(image) {
+        display: none;
+        @include modifier(alt) {
+            display: block;
+        }
+    }
+}

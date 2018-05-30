@@ -1,0 +1,193 @@
+div#driver-popover-item {
+  display: none;
+  position: absolute;
+  background: white;
+  
+  //color: #2d2d2d;
+  margin: 0;
+  padding: 0.7rem 1.2rem 1rem;
+  border-radius: 0;
+  min-width: 250px;
+  max-width: 280px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000000000;
+
+  .driver-popover-tip {
+    border: 5px solid white;
+    content: '';
+    position: absolute;
+
+    &.bottom {
+      bottom: -10px;
+      border-top-color: white;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+
+    &.left {
+      left: -10px;
+      top: 15px;
+      border-top-color: transparent;
+      border-right-color: white;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+
+    &.right {
+      right: -10px;
+      top: 15px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: white;
+    }
+
+    &.top {
+      top: -10px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: white;
+      border-left-color: transparent;
+    }
+  }
+
+  .driver-popover-footer {
+    display: block;
+    clear: both;
+    margin-top: 5px;
+
+    a {
+      display: inline-block;
+      padding: 3px 10px;
+      border: 1px solid #d4d4d4;
+      text-decoration: none;
+      text-shadow: 1px 1px 0 #fff;
+      color: #2d2d2d;
+      font: 11px/normal sans-serif;
+      cursor: pointer;
+      outline: 0;
+      background-color: #f1f1f1;
+      border-radius: 2px;
+      zoom: 1;
+      margin: 10px 0 0;
+    }
+
+    a.driver-disabled {
+      color: #808080;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .driver-close-btn {
+      float: left;
+    }
+
+    .driver-btn-group {
+      float: right;
+    }
+  }
+
+  .driver-popover-title {
+   /* font: 19px/normal sans-serif;
+    margin: 0 0 5px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    line-height: 1.5;
+    zoom: 1;*/
+    line-height: 1.2;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .driver-popover-description {
+    //margin-bottom: 0;
+    //font: 14px/normal sans-serif;
+    line-height: 1.1;
+    padding: 0.5rem 0;
+    //color: #2d2d2d;
+    //font-weight: normal;
+    //zoom: 1;
+  }
+  p{
+    padding:0 3rem 0 0;
+  }
+}
+
+.sholo-no-animation {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+div#driver-page-overlay {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  zoom: 1;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
+  z-index: 100002 !important;
+
+  // If you update this duration, make sure to update `ANIMATION_DURATION_MS` constant
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+div#driver-highlighted-element-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 300px;
+  background: white;
+  z-index: 100003 !important;
+  display: none;
+  margin-top: -1px;
+
+  // If you update this duration, make sure to update `ANIMATION_DURATION_MS` constant
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.driver-highlighted-element {
+  z-index: 100004 !important;
+  position: relative;
+}
+
+
+.driver-closebtn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.3rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  width: 2rem;
+  height: 2rem;
+
+  &:hover{
+    opacity: 1;
+  }
+
+
+
+}
+

@@ -1,0 +1,84 @@
+{
+    "list": [{
+        "header": {
+            "title": "Canal de venta online",
+            "points": [{
+                "name": "• SERVICIO DROPSHIPPING"
+            }, {
+                "name": "• CATÁLOGO SINCRONIZADO"
+            }, {
+                "name": "• INTEGRACIÓN Y CONECTORES"
+            }]
+        },
+        "items": [{
+            "img": "shopping_cart",
+            "title": "TIENDAS ONLINE",
+            "list": [{
+                "text": "Ampliar catálogo tienda online existente"
+            }, {
+                "text": "Desarrollada por BigBuy - Tienda Dropshipping 360º <a href='#' class='link color-blue'>+info<\/a>"
+            }, {
+                "text": "Desarrollada por el cliente mediante Multi-Channel Integration Platform <\/em><a href='#'  class='link color-blue'>+info<\/a>"
+            }, {
+                "text": "Desarrollada por el cliente mediante API o CSV/XML <\/em><a href='#'  class='link color-blue'>+info<\/a>"
+            }]
+     
+        }, {
+            "img": "chrono",
+            "title": "FLASH DEALS",
+            "list": [{
+                "text": "Bloqueo de Stocks <\/em><a href='#'  class='link color-blue'> +info<\/a>"
+            }, {
+                "text": "Fotos alta definición"
+            }, {
+                "text": "Carga masiva de pedidos por CSV"
+            }, {
+                "text": "Retorno de trackings"
+            }]
+        }, {
+            "img": "emarket",
+            "title": "EMARKETPLACES",
+            "list": [{
+                "text": "Integración desarrollada por el cliente"
+            }, {
+                "text": "Integración desarrollada por BigBuy<\/em><a href='#'  class='link color-blue'> +info<\/a>"
+            }]
+        }, {
+            "img": "b2b",
+            "title": "ETAILERS - MINORISTAS ONLINE",
+            "list": [{
+                "text": "Descuentos especiales por volumen"
+            }, {
+                "text": "Opciones de sincronización: FTP, CSV, XML, API"
+            }]
+        }]
+    }, {
+        "header": {
+            "title": "CANAL DE VENTA TRADICIONAL",
+            "points": [{
+                "name": "• COMPRA AL POR MAYOR"
+            }, {
+                "name": "• DESCUENTOS POR VOLUMEN"
+            }, {
+                "name": "• COMPRA DE UNIDADES SUELTAS"
+            }]
+        },
+        "items": [{
+            "img": "stock-propio2",
+            "title": "ALMACENISTAS Y DISTRIBUIDORES",
+            "list": [{
+                "text": "Venta directa"
+            }, {
+                "text": "Regalo promocional"
+            }, {
+                "text": "Catálogo de puntos y fidelización"
+            }]
+        }, {
+            "img": "store",
+            "title": "COMERCIO TRADICIONAL",
+            "list": [{
+                "text": "Comercios varios y tiendas de regalo"
+            }]
+        }]
+    }]
+}

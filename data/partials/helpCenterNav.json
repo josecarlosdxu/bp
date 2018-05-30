@@ -1,0 +1,128 @@
+{
+    "fullpage": {
+        "jsAnchor": "helpCenterNav",
+        "test": [{
+            "title": "Postventa",
+            "itemName": "postventa",
+            "subsections": [{
+                "title": "Condiciones para distribuidores",
+                "itemId": "postventaCondiciones"
+            }, {
+                "title": "Modificaciones de pedido",
+                "itemId": "postventaModificaciones"
+            }, {
+                "title": "Incidencias",
+                "itemId": "postventaIncidencias"
+            }, {
+                "title": "Anulaciones",
+                "itemId": "postventaAnulacion"
+            }, {
+                "title": "Devoluciones",
+                "itemId": "postventaDevoluciones"
+            }]
+        }, {
+            "title": "Garantía",
+            "itemName": "garantia",
+            "subsections": [{
+                "title": "Condiciones",
+                "itemId": "garantiaCondiciones"
+            }, {
+                "title": "Plazos",
+                "itemId": "garantiaPlazos"
+            }, {
+                "title": "Uso de la garantía",
+                "itemId": "garantiaUso"
+            }]
+        }, {
+            "title": "Entrega y envío",
+            "itemName": "envio",
+            "subsections": [{
+                "title": "Métodos de envío",
+                "itemId": "envioMetodos"
+            }, {
+                "title": "Plazos de entrega",
+                "itemId": "envioPlazos"
+            }, {
+                "title": "Costes de envío",
+                "itemId": "envioCostes"
+            }, {
+                "title": "Países donde operamos",
+                "itemId": "envioPaises"
+            }, {
+                "title": "Seguimiento de envío",
+                "itemId": "envioSeguimiento"
+            }]
+        }, {
+            "title": "Impuestos",
+            "itemName": "impuestos",
+            "subsections": [{
+                "title": "Condiciones generales",
+                "itemId": "impuestosGenerales"
+            }, {
+                "title": "Recargo de equivalencia",
+                "itemId": "equivalencia"
+            }, {
+                "title": "IVA",
+                "itemId": "iva"
+            }]
+        }, {
+            "title": "Formas de pago",
+            "itemName": "formaspago",
+            "subsections": [{
+                "title": "Formas de pago disponibles",
+                "itemId": "formaspagoDisponibles"
+            }, {
+                "title": "Compra segura",
+                "itemId": "formaspagoCompraSegura"
+            }, {
+                "title": "Paypal",
+                "itemId": "formaspagoPaypal"
+            }, {
+                "title": "Monedero",
+                "itemId": "formaspagoMonedero"
+            }]
+        }, {
+            "title": "Generales",
+            "itemName": "general",
+            "subsections": [{
+                "title": "Mayoristas",
+                "itemId": "generalMayoristas"
+            }, {
+                "title": "Tarifas y precios",
+                "itemId": "general-tarifas"
+            }]
+        }, {
+            "title": "Packs Mayoristas",
+            "itemName": "packsMayoristas",
+            "subsections": [{
+                "title": "Información sobre Packs Mayoristas",
+                "itemId": "packsMayoristas-info"
+            }, {
+                "title": "Sincronización CSV / XML ",
+                "itemId": "packsMayoristas-sincro"
+            }, {
+                "title": "Descargas de marketing",
+                "itemId": "packsMayoristas-descargas"
+            }]
+        }, {
+            "title": "Dropshipping  / envío anónimo",
+            "itemName": "dropshipping"
+        }, {
+            "title": "Bloqueo de stocks",
+            "itemName": "bloqueoStocks"
+        }, {
+            "title": "Panel de control",
+            "itemName": "panelControl"
+        }, {
+            "title": "Tienda  dropshipping",
+            "itemName": "tiendaDropshipping"
+        }, {
+            "title": "Productos",
+            "itemName": "productos",
+            "subsections": [{
+                "title": "Perfumes",
+                "itemId": "productos-perfumes"
+            }]
+        }]
+    }
+}

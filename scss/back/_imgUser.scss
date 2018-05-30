@@ -1,0 +1,51 @@
+@include block(imgUser) {
+    position: relative;
+    margin-bottom: $um / 2;
+    overflow: hidden;
+
+
+    background: #fff;
+
+
+
+
+    @include element(img) {
+
+        @extend %img--responsive;
+        padding: 3px;
+        border: 1px solid opacify($color-shadow, 0.1);
+    }
+    @include element(caption) {
+        position: absolute;
+        height: 3rem;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        bottom: -3rem;
+        transition: all 0.15s ease-out;
+
+        @include modifier(fixed) {
+            bottom: 0;
+            line-height: 3;
+            padding-bottom: 0.5rem;
+            color: white;
+            background: none;
+            height: auto;
+        }
+    }
+
+
+
+    @include element(button) {
+        width: 100%;
+        height: 3rem;
+
+        border-radius: 0;
+        color: #000;
+    }
+
+    &:hover .imgUser-caption {
+
+        //background: red;
+        bottom: 0;
+    }
+}

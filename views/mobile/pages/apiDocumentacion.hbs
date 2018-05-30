@@ -1,0 +1,32 @@
+---
+layout: mobile/layouts/clean.hbs
+title: API Documentación
+accordion: accordiontrue
+breadcrumbs: API Documentación
+---
+<section class="content content--full u-brb">
+    {{>apiDocumentacionBanner}}
+</section>
+<section class="content content--full content--light">
+    {{>apiCMSHeaderSlogan title='Sincroniza con BigBuy a través de nuestra API, solo para desarrolladores y programadores'}}
+</section>
+<section class="content content--full u-brb">
+    {{>apiDocumentacionFeatured}}
+</section>
+
+<section class="content content--light">
+    <div class="modularGrid modularGrid modularGrid--boxed">
+        <nav class="mobileTabs" data-js-accordion="accordion"  data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion_selected_class="mobileTabs-itemHeader--selected">
+            {{>mobileApiDocItem apiDoc.catalog}}
+            {{>mobileApiDocItemAlt apiDoc.pedidos}}
+            {{>mobileApiDocItem apiDoc.costes}}
+            {{>mobileApiDocItemAlt apiDoc.tracking}}
+        </nav>
+    </div>
+</section>
+{{>apiDropshippingMessage}}
+
+
+
+
+

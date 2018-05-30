@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+{{> head }}
+
+<body class="doc baselineGrid">
+
+    <!-- Project title and partial name -->    
+    <div class="docHeader">
+        <div class="docHeader-projectTitle">
+            <div class="modularGrid modularGrid--boxed">        
+                <div class="modularGrid-module">
+                    <h1>BigBuy Front-end framework</h1>
+                </div>
+            </div>
+        </div>
+        <div class="docHeader-contentTitle">
+            <div class="modularGrid modularGrid--boxed">        
+                <div class="modularGrid-module">
+                    <h2>{{page.categories}} / {{title}}</h2>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <!-- Description of the partial -->
+    <div class="modularGrid modularGrid--boxed">
+
+        <div class="modularGrid-module u-md-20">
+            <nav class="docNavigation">
+                
+                {{#categories}}
+                <h1 class="title">{{category}}</h1>
+                <ul class="docNavigation-category">                    
+                        {{#each pages}}
+                            <li><a href="{{basename}}.html">{{data.title}}</a></li>
+                        {{/each}}
+                </ul>    
+                {{/categories}}
+                             
+            </nav>
+        </div>
+        <div class="modularGrid-module u-md-80">
+            <article class="cmsContent">
+                <section>
+                     <h1 class="title">{{title}}</h1>
+                    {{#markdown}}
+                        {{>body}}
+                    {{/markdown}}
+                </section>
+            </article>
+        </div>
+    </div>
+
+</body>
+</html>

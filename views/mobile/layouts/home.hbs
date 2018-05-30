@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+{{> head }}
+<body>
+
+    <div class="modularGrid">
+        <div class="modularGrid-module">
+           {{>header shop='true' newuser='true'}}
+          
+            {{>body}}
+        </div>
+    </div>
+    <div class="modularGrid">
+        <div class="modularGrid-module">
+            {{>footer}}
+        </div>
+    </div>
+    {{>langMenu}}
+    {{>userMenu}}
+    {{>mainNav}}
+    {{>toolbarSearch}}
+    {{>delayedScripts home='true'}}
+
+</body>
+</html>

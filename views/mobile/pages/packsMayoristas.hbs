@@ -1,0 +1,59 @@
+---
+title: Packs Mayoristas
+breadcrumbs: Packs Mayoristas 
+layout: mobile/layouts/clean.hbs
+---
+
+<div class="modularGrid modularGrid--boxed u-pdv2">
+<h3 class="supertitle1 u-mgv2 u-elem-center u-tac">Tenemos un pack mayorista <strong>para cada tipo de cliente</strong></h3>
+{{>tabsPacks}}
+</div>
+
+<section class="content content--light u-brt">
+<div class="modularGrid modularGrid--boxed ">
+<div class="mobileCMS-section--adjust">
+{{>packsFeatured packsFeatured.featured}}
+</div>
+</div>
+</section>
+<section class="content u-brt u-pdb">
+<div class="modularGrid modularGrid--boxed ">
+<div class="mobileCMS-section--adjust">
+<h2 class="supertitle1 u-block u-pd2 u-tac">Comparativa de packs</h2>
+{{> tablePacks}}
+</div>
+</div>
+</section>
+<section class="content content--light u-brt">
+<div class="modularGrid modularGrid--boxed u-pdv2">
+<h4 class="supertitle1 u-tac u-elem-center u-pd u-mgb">Active el pack mayorista que mejor se ajuste a su negocio</h4>
+<div class="pricePanel-container u-lg-90 u-xl-80 pricePanel-container--midsize u-pd">
+{{>priceBigPanel  pricePanels.panel1}}
+{{>priceBigPanel  pricePanels.panel22 active='true'}}
+{{>priceBigPanel  pricePanels.panel3}}
+</div>
+
+</div>
+</section>
+<section class="content  u-pd u-brt">
+<div class="modularGrid modularGrid--boxed u-flex--between u-flwrap">
+<div class="modularGrid-module  u-sm-100 u-md-40  u-pdb2  u-pdt2 u-mgb">
+<h5 class="supertitle u-mgb--3rd">Sincroniza con BigBuy</h5>
+<button class="button button--primary button--big u-block">+ info</button>
+<img src="../../img/sincroniza-bigbuy.svg" class="u-xxs-100 u-xs-80 u-sm-60 u-md-100">
+</div>
+<div class="modularGrid-module u-sm-100 u-md-40  u-pdb2 u-mgb2">
+<h6 class="superSubtitle u-mgb--0">Tienda dropshipping sincronizada</h6>
+<h5 class="supertitle u-mgb--3rd">Solución llave en mano</h5>
+<button class="button button--primary button--big u-block">+ info</button>
+<img src="../../img/solucion-enmano.svg" class="img--responsive u-xxs-hide u-md-show">
+<img src="../../img/solucion-enmano2.svg" class="img--responsive u-xxs-100 u-xs-80 u-sm-60 u-md-hide u-mgt2">
+</div>
+</div>
+</section>
+<section class="content content--light u-brt">
+<div class="modularGrid modularGrid--boxed ">
+{{>info}}
+{{>faqs}}
+</div>
+</section>

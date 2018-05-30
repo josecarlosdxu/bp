@@ -1,0 +1,38 @@
+@include block(rangeFilter) {
+    @include element(fieldset) {
+        @extend .form-fieldset;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        margin-top: $um;
+        font-size: 1.2rem;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%), linear-gradient(white calc(50% - 1px), rgba(0, 0, 0, 0.2) 51%, white 51%);
+        background-repeat: repeat;
+        background-size: 12px 100%;
+
+    }
+    @include element(input) {
+        @extend .form-input;
+        @extend .form-input--postfix;
+        outline: none;
+        margin: 0;
+    }
+    @include element(inputCont) {
+        position: relative;
+        min-width: 40%;
+        max-width: 9rem;
+        &:after {
+            content: "\20AC";
+            align-items: center;
+            border-left: 1px solid $color-shadow;
+            font-size: 1.3rem;
+            height: 100%;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            width: 3.3rem;
+            color: transparentize(black, 0.6);
+            display: flex;
+        }
+    }
+}

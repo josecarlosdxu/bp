@@ -1,0 +1,345 @@
+@include block(homeslider) {
+    @include element(boxed) {
+        height: 25rem;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+        align-items: flex-start;
+        padding: $um;
+        margin: 0 auto;
+        max-width: 1200px;
+        @include addBreakpoint(md) {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        @include modifier(full) {
+            padding: 0;
+            justify-content: center;
+        }
+    }
+    @include element(img) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: auto;
+    }
+    @include element(svgimg) {
+        max-width: 90%;
+        margin: 0;
+        height: auto;
+        @include addBreakpoint(md) {
+            margin: 1.25rem 1.5rem 0.5rem;
+            height: auto;
+        }
+        /*@include addBreakpoint(xl) {
+            @include modifier(alt) {
+                bottom: auto;
+                //max-height: 50rem;
+                top: -1.5rem;
+                width: 50rem;
+                outline: 1px solid tan;
+            }
+        }*/
+    }
+    @include element(svgCont) {
+        position: relative;
+        color: white;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px $color-shadow;
+        pointer-events: none;
+        padding: 0;
+        //order: 0;
+        max-width: 26rem;
+        text-align: center;
+        @include addBreakpoint(md) {
+            max-width: 100%;
+            //order: 2;
+        }
+    }
+    @include element(msgPaypalIcon) {
+        height: 1em;
+        width: 5em;
+    }
+    @include element(svgText) {
+        position: absolute;
+        text-align: center;
+        display: none;
+        @include addBreakpoint(lg) {
+            display: inherit;
+            font-size: 12px;
+        }
+        @include modifier(text1) {
+            top: 9.5rem;
+            width: 7rem;
+            left: 0.75rem;
+        }
+        @include modifier(text2) {
+            top: 9.5rem;
+            width: 10rem;
+            left: 19.75rem;
+        }
+        @include modifier(text3) {
+            top: 9.5rem;
+            width: 10rem;
+            left: auto;
+            right: 0;
+        }
+    }
+    @include element(dots) {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -15em;
+    }
+    @include element(message) {
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // order: 1;
+        @include addBreakpoint(sm) {
+            align-items: flex-start;
+        }
+        @include addBreakpoint(md) {
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: auto;
+        }
+        @include addBreakpoint(lg) {
+            padding: 3rem;
+        }
+    }
+    @include element(texts) {
+        font-family: $type-headingscms;
+        background: transparentize(black, 0.6);
+        font-size: 2rem;
+        display: inline-flex;
+        line-height: 1;
+        font-weight: 700;
+        line-height: 0.95;
+        padding: 0.5rem 1rem 0.5rem;
+        color: white;
+        text-shadow: 2px 2px 2px $color-shadow;
+        text-transform: uppercase;
+        @include addBreakpoint(xs) {
+            font-size: 2.25rem;
+        }
+        @include addBreakpoint(lg) {
+            font-size: 3.5rem;
+        }
+    }
+    @include element(subtitles) {
+        font-family: $type-headingscms;
+        display: none;
+        font-size: 1.5rem;
+        line-height: 1;
+        font-weight: 700;
+        line-height: 1.1;
+        color: white;
+        padding: 0.25rem 1.5rem 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        letter-spacing: 0.03em;
+        + .homeslider-texts {
+            margin-top: 0.5rem;
+        }
+        @include addBreakpoint(md) {
+            padding: 0.5rem 0;
+            display: inline-flex;
+        }
+    }
+    @include element(button) {
+        display: block;
+        margin-top: $um;
+        font-size: 1.1rem;
+        margin-top: 0.75rem;
+        padding: 1rem $um;
+        height: auto;
+        width: auto;
+        font-weight: 400;
+        transition: box-shadow 0.1s, background 0.1s, color 0.1s;
+        font-family: "Roboto";
+        &:active {
+            background: #363A3D;
+            color: #fde403;
+            border-color: black;
+        }
+    }
+    @include element(subscont) {
+        background-color: transparentize(white, 0.5);
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1.25rem 1rem;
+    }
+}
+
+@include extendElement(homeslider, texts, alt) {
+    background: transparent;
+    padding: 0;
+    white-space: nowrap;
+}
+
+@include extendElement(homeslider, svgimg, big) {
+    @include addBreakpoint(xl) {
+        max-height: 25rem;
+    }
+}
+
+@include extendElement(homeslider, subtitles, terms) {
+    font-family: "roboto";
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: none;
+    padding: 0.5rem 0;
+    display: inline-flex;
+}
+
+@include extendElement(homeslider, subtitles, locked) {
+    padding: 0.5rem 0;
+    display: inline-flex;
+}
+
+@include extendElement(homeslider, subtitles, inverse) {
+    color: #353b40;
+    text-shadow: none;
+    align-items: center;
+}
+
+.homeslider-img > img {
+    height: auto;
+    width: 100%;
+}
+
+@include extendElement(homeslider, svgimg, alt) {
+    height: auto;
+    position: absolute;
+    right: -2rem;
+    width: 40rem;
+    box-shadow: 10rem 0 #20407a;
+    bottom: -6rem;
+    @include addBreakpoint(sm) {
+        bottom: auto;
+    }
+    @include addBreakpoint(md) {
+        bottom: auto;
+        height: auto;
+        right: 0;
+        top: -3rem;
+        width: 39rem;
+    }
+    @include addBreakpoint(xl) {
+        bottom: auto;
+        top: -1.5rem;
+        width: 50rem;
+    }
+}
+
+@include extendElement(homeslider, message, full) {
+    font-family: $type-headingscms;
+    font-weight: 700;
+    align-self: center;
+    background-color: transparentize(darken($color-darkGrey-dark,10%),0.2);
+    color: #ffffff;
+    //max-height: calc(100% - 6rem);
+    width: calc(100% - 3rem);
+    //padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: $um;
+    @include addBreakpoint(md) {
+        padding: 2.5rem;
+    }
+    @include addBreakpoint(xl) {
+        max-height: 100%;
+        width: 100%;
+    }
+    @include element(title) {
+        color: #fdc401;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: $um;
+        @include addBreakpoint(xs) {
+            font-size: 2rem;
+        }
+        @include addBreakpoint(md) {
+            font-size: 2.25rem;
+            margin-bottom: 0.25rem;
+        }
+        @include addBreakpoint(lg) {
+            font-size: 3rem;
+        }
+    }
+    @include element(slogan) {
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: $um;
+       
+        @include addBreakpoint(xs) {
+            font-size: 1.8rem;
+        }
+        @include addBreakpoint(md) {
+            font-size: 2rem;
+        }
+        @include addBreakpoint(sm) {
+            font-size: 2.25rem;
+            padding-right: 1.5rem;
+        }
+        @include addBreakpoint(lg) {
+            font-size: 3rem;
+        }
+        @include addBreakpoint(xl) {
+            margin-bottom: 1rem;
+        }
+    }
+    @include element(explains) {
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: 400;
+        justify-content: space-around;
+        display: flex;
+        font-size: 1rem;
+        padding: 0.25rem 0 0;
+        @include addBreakpoint(xs) {
+            padding: 0.5rem 0 0;
+        }
+        @include addBreakpoint(sm) {
+            font-size: 1.2rem;
+        }
+        @include addBreakpoint(xl) {
+            font-size: $um;
+            padding: 0;
+        }
+    }
+    @include element(explainsitem) {
+        height: auto;
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+        margin: 0;
+        min-width: 0;
+        padding: 0.5rem 0 0;
+        width: auto;
+        text-transform: uppercase;
+        text-indent: -0.25em;       
+        &:before {
+            content: "-";
+            display: inline-block;
+            margin-right: 0.25em;
+        }
+    }
+}

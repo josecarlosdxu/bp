@@ -1,0 +1,33 @@
+<form class="panel-section">
+
+    <div class="modularGrid modularGrid--flexCenter u-flwrap u-pdt u-pdl"> 
+
+        <div class="modularGrid-module u-lg-20 u-pdr">
+            {{#each list}}      
+
+            {{#if_eq @index 2}}     
+
+            <label for="{{name}}_id" class="form-label">{{{title}}}</label>
+            <select name="{{name}}" id="{{name}}_id" class="form-select">
+                {{#each options}}  
+                <option value="{{val}}">{{text}}</option>
+                {{/each}} 
+            </select>     
+
+            {{/if_eq}}
+            {{/each}}  
+        </div>
+        <div class="modularGrid-module u-lg-80  u-pdt--half u-flex--center u-pdr">
+            <div class="msgBox msgBox--info msgBox--auto u-pd--half"> Seleccione los banners que desea, y clique el botón “Descargar”</div>            
+            <button class="button button--big button--primary u-mgh">Descargar</button>
+        </div>
+    </div>
+    <div class="u-pdl u-pdb">
+        {{>panelDownloadsBannerNewsletter}}
+   </div>
+   <div class="modularGrid-module  u-pdh u-tar u-mgb2">           
+    <button class="button button--big button--primary">Descargar</button>
+</div>
+
+
+</form>

@@ -1,0 +1,67 @@
+{
+    "list": [{
+        "title": "Hogar y jardín",
+        "link": "hogar-jardin",
+        "more":"true"
+    }, {
+        "title": "Cocina y gourmet",
+        "link": "cocina-gourmet",
+        "more":"true"
+    }, {
+        "title": "Ocio y tiempo libre",
+        "link": "ocio-tiempo-libre",
+        "more":"true"
+    }, {
+        "title": "Deportes y fitness",
+        "link": "deportes-fitness",
+        "more":"true"
+    }, {
+        "title": "Salud y belleza",
+        "link": "salud-belleza",
+        "more":"true"
+    }, {
+        "title": "Perfumería y cosmética",
+        "link": "perfumeria-cosmetica",
+        "more":"true"
+    }, {
+        "title": "Moda y complementos",
+        "link": "moda-complementos",
+        "more":"true"
+    }, {
+        "title": "Juguetes y bebés",
+        "link": "juguetes-bebes",
+        "more":"true"
+    }, {
+        "title": "Informática y electrónica",
+        "link": "informatica-electronica",
+        "more":"true"
+    }],
+    "hogar": {
+        "imgSrc": "../../img/categories/hogar/",
+        "families": [{
+            "name": "Decoración, interiorismo e iluminación",
+            "img": "2400_big"
+        }, {
+            "name": "Baño",
+            "img": "2424_big"
+        }, {
+            "name": "Jardín y terraza",
+            "img": "2435_big"
+        }, {
+            "name": "Mascotas",
+            "img": "2443_big"
+        }, {
+            "name": "Climatización y calefacción",
+            "img": "2450_big"
+        }, {
+            "name": "Limpieza, aspiración y planchado",
+            "img": "2454_big"
+        }, {
+            "name": "Bricolaje y ferretería",
+            "img": "2468_big"
+        }, {
+            "name": "Seguridad del hogar",
+            "img": "2471_big"
+        }]
+    }
+}

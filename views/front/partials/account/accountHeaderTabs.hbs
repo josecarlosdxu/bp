@@ -1,0 +1,24 @@
+	
+<div class="u-pdh tabs tabs--form" >
+	<div class="tabs-item tabs-item--selected u-pdb u-xxs-100 u-sm-50 u-md-3rd" data-href="section1" data-js-tab="label" >
+		{{>svgIcon type='person' class='tabs-image'}}		
+		<label class="form-label form-label--checkgroup"><input value="1" type="radio" class="form-radio" name="type_customer">Soy particular <em class="form-info u-vt  u-mgt--3rd u-mgl--3 u-xxs-hide u-xs-inlineBlock" data-js-tooltip="tooltip_particulartop">{{>svgIcon type='info'}}</em></label>	    
+	</div>
+	<div class=" tabs-item u-pdb u-xxs-100 u-sm-50 u-md-3rd" data-href="section2" data-js-tab="label">
+		{{>svgIcon type='briefcase' class='tabs-image'}}
+		<label class="form-label form-label--checkgroup"><input value="2" type="radio" class="form-radio" name="type_customer">Soy autónomo <em class="form-info u-vt  u-mgt--3rd u-mgl--3 u-xxs-hide u-xs-inlineBlock" data-js-tooltip="tooltip_autonomotop">{{>svgIcon type='info'}}</em></label>	    
+	</div>
+	<div class=" tabs-item u-pdb u-xxs-100 u-sm-50 u-md-3rd" data-href="section3" data-js-tab="label" tabindex="7">
+			{{>svgIcon type='domain' class='tabs-image'}}
+		 <label class="form-label form-label--checkgroup"><input value="3" type="radio" class="form-radio" name="type_customer">Soy empresa <em class="form-info u-vt  u-mgt--3rd u-mgl--3 u-xxs-hide u-xs-inlineBlock" data-js-tooltip="tooltip_empresatop">{{>svgIcon type='info'}}</em></label>	    
+	</div>    
+</div>
+{{#unless back}}
+<div class="modularGrid u-pdh u-pdt--half u-pdb0">
+	<div class="msgBox msgBox--info u-mgb--half u-pd">
+		<p class="u-mgb--0"><strong>Aviso:</strong>Los datos que introduzca en este formulario son los que usaremos más adelante. Para evitar problemas de facturación, aduanas y entregas, por favor, introduzca sus datos correctos.</p>
+	</div> 
+</div> 
+
+{{/unless}}
+

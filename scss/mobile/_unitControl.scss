@@ -1,0 +1,51 @@
+@include block(unitControl) {
+    display: inline-flex;
+    border: none;
+    @include element(input) {
+        @extend .form-input;
+        max-height: 3rem;
+        padding: 0 10px;
+        border-radius: 0;
+        box-shadow: none;
+        border-radius: 0;
+        border-color: $color-shadow;
+        text-align: center;
+        max-width: 6rem;
+        border-left: 0;
+        border-right: 0;
+        margin: 0;
+    }
+    @include element(button) {
+        font-size: $um;
+        border: 1px solid $color-shadow;
+        display: block;
+        width: 2.5rem;
+        height: 3rem;
+        @include modifier(plus) {
+            border-radius: 0 3px 3px 0;
+            border-left: none;
+        }
+        @include modifier(minus) {
+            border-radius: 3px 0 0 3px;
+            padding-bottom: 0.4rem;
+            font-size: 2rem;
+            border-right: none;
+
+        }
+        &:hover,&:focus,&:active{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+
+@include extendBlock(unitControl,productSheet) {
+    margin-top: 0.25rem;
+    @include element(input) {
+        max-width: 3.5rem;
+
+    }
+
+
+}

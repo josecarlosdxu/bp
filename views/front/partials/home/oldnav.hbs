@@ -1,0 +1,98 @@
+
+<input id="oldnavclose" type="checkbox" >
+<table id="oldnav" class="oldnav" style="width=100%;height:100%; position:fixed; top:0;left:0;width: 100%; z-index:10000;" border="0" align="center">
+   <tbody style="height: 100%;width: 100%;display: table;">
+      <tr width="100%" height="100%">
+         <td width="100%" valign="center" height="100%" style="text-align:center;">
+            <label for="oldnavclose" class="oldnav-label" style="display: block;position: absolute;height: 100%;width: 100%;top: 0;left: 0;z-index: 0;" ></label>
+            <div class="oldnav-popup">
+
+
+               <table align="center" width="100%">
+                  <tbody>
+                     <tr>
+                        <td><img src="../../img/oldnav_alert.gif" alt="alert" style=" margin-bottom:-2px;margin-right:10px;"><strong class="oldnav-title">Por favor, actualice su navegador</strong></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p class="oldnav-subtitle">BigBuy utiliza las últimas tecnologías para ser más rápido y seguro.<br>Su navegador es incompatible con ellas.<br>Actualícelo o descargue uno de los siguientes navegadores:</p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table align="center" width="100%" style="margin:20px auto;">
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center;">
+                           <a href="https://www.google.com/chrome/" target="_blank" class="oldnav-link">
+                           <img src="../../img/oldnav_ch.gif" alt="chrome" >
+                           <span class="oldnav-name">Chrome<small class="oldnav-subname">by Google</small> </span>                
+                           </a>
+                        </td>
+                        <td style="text-align: center;">
+                           <a href="https://www.mozilla.org/es-ES/firefox/new/" target="_blank" class="oldnav-link">
+                           <img src="../../img/oldnav_ff.gif" alt="chrome" >
+                           <span class="oldnav-name">Firefox<small class="oldnav-subname">by Mozilla</small></span>                 
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div style="text-align: center;">               
+               <label for="oldnavclose" class="oldnav-button" >Aceptar</label>
+               </div>
+               <label for="oldnavclose" class="oldnav-x" ><img src="../../img/oldnav_x.gif" alt="close"></label>
+            </div>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<!--[if gt IE 8]><!-->
+<script>
+document.getElementById('oldnavclose').checked=false;
+</script> 
+<!--<![endif]-->
+
+<!--[if lte IE 8]>
+    <script>
+
+        function alerta(){       
+
+        document.getElementById('oldnav').style.display="none";    
+
+    
+        }
+
+var ele,
+i = 0,
+coll = document.getElementsByTagName('label'),
+len = coll.length;
+
+for(i;i<len;i++){
+
+ele = coll[i];
+
+if(ele.getAttribute('for')==='oldnavclose'){
+
+ele.attachEvent('onclick',alerta);
+
+
+}
+    
+
+
+}
+
+      
+       
+
+  
+</script>
+
+ 
+<![endif]-->
+
+
+
+
+

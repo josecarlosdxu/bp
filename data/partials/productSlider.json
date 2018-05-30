@@ -1,0 +1,195 @@
+{
+    "slides": {
+        "productListModifier": "slides",
+        "productCardModifier": ["borderless","shoppable"],
+        "test": [{
+            "title": "Calefactor Halógeno SYCL 20",
+            "pvp01": "3",
+            "pvp02": "18,91",
+            "pvp03": "11,09",
+            "image": "http://londonred.dropshippershop.com/16792-large_default/calefactor-halogeno.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "11,77",
+            "pvp03": "6,43",
+            "image": "http://londonred.dropshippershop.com/821-large_default/balanza-digital-portatil.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "11,77",
+            "pvp03": "6,43",
+            "image": "http://londonred.dropshippershop.com/821-large_default/balanza-digital-portatil.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "11,77",
+            "pvp03": "6,43",
+            "image": "http://londonred.dropshippershop.com/821-large_default/balanza-digital-portatil.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "11,77",
+            "pvp03": "6,43",
+            "image": "http://londonred.dropshippershop.com/821-large_default/balanza-digital-portatil.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "11,77",
+            "pvp03": "6,43",
+            "image": "http://londonred.dropshippershop.com/821-large_default/balanza-digital-portatil.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }, {
+            "title": "Vaporeta Monster 1200",
+            "pvp01": "91,60",
+            "pvp02": "58,37",
+            "pvp03": "33,23",
+            "image": "http://londonred.dropshippershop.com/868-large_default/vaporeta-monster-1200.jpg"
+        }, {
+            "title": "Balanza Digital Portátil",
+            "pvp01": "18,20",
+            "pvp02": "11,77",
+            "pvp03": "6,43",
+            "image": "http://londonred.dropshippershop.com/821-large_default/balanza-digital-portatil.jpg"
+        }, {
+            "title": "Balanza Romana Portátil",
+            "pvp01": "5,00",
+            "pvp02": "1,25",
+            "pvp03": "3,75",
+            "image": "http://londonred.dropshippershop.com/16769-large_default/bascula-romana-portatil.jpg"
+        }]
+    }
+
+}
+

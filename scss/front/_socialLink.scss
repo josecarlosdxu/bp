@@ -1,0 +1,99 @@
+@include block(socialLink) {
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    transition: border-color 0.1s, color 0.1s, background-color 0.1s;
+    @include element(container) {}
+
+
+    @include modifier(button) {
+        display: inline-flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 0.9rem;
+        padding-bottom: 0.1rem;         
+        text-transform: uppercase;
+        width: calc(68px + 1rem - 3px); 
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: transparentize(white,0.4);
+            color: black;
+            background-color: transparentize(white,0.4);
+        }       
+    }
+
+
+    @include modifier(twitter) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $twitter-color;
+            color: white;
+            background-color: $twitter-color;
+        }
+    }
+     @include modifier(facebook) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $facebook-color;
+            color: white;
+            background-color: $facebook-color;
+        }
+    }
+     @include modifier(pinterest) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $pinterest-color;
+            color: white;
+            background-color: $pinterest-color;
+        }
+    }
+     @include modifier(gplus) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $gplus-color;
+            color: white;
+            background-color: $gplus-color;
+        }
+    }
+     @include modifier(linkedin) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $linkedin-color;
+            color: white;
+            background-color: $linkedin-color;
+        }
+    }
+    @include modifier(blog) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $blog-color;
+            color: white;
+            background-color: $blog-color;
+        }
+    }
+
+
+
+
+
+    
+    
+
+
+
+}
+
+
+

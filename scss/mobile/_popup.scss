@@ -1,0 +1,167 @@
+@include block(popup) {
+    @extend %box;
+    @extend %inlineBlock100;
+    position: relative;
+    margin: $um auto;
+    outline: none;
+    position: relative;
+    text-align: left; // margin-right: -1px;
+    //margin-bottom: 20%;
+    @include element(header) {
+        color: $color-lightGrey-default;
+        background: $color-darkGrey-default;
+    }
+    @include element(img) {
+        width: 100%;
+        height: auto;
+    }
+    @include element(container) {
+        //position: absolute;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        cursor: wait;
+        text-align: center;
+        background-color: opacify($color-shadow, 0.6);
+        font-size: 0; //overflow: hidden;
+        min-height: 100vh;
+        height: 100%;
+        overflow-y: auto; //height: auto !important;
+        //padding: 0 1px; //padding hack
+        //box-shadow: 0 6000rem 0 6000rem opacify($color-shadow, 0.6);
+        //background-color: $backgroundLoading;
+        @include modifier(cursor) {
+            cursor: pointer;
+        }
+    }
+    @include element(title) {
+        @extend %type-textHeaders;
+        padding: $um;
+        font-size: $um;
+        font-weight: 300;
+        line-height: 1.2;
+        @include modifier(new) {
+            &:after {
+                /* font-size: 2rem;
+                content: "\2738";
+                line-height: 0.5;
+                //color: $color-accentBlue-default;*/
+                -webkit-animation: pulseBlink infinite 1s;
+                animation: pulseBlink infinite 1s;
+                background: $color-accentBlue-default;
+                border-radius: 4px;
+                color: white;
+                content: "New";
+                display: inline-block;
+                font-size: 0.9rem;
+                padding: 0.25rem 0.5rem;
+                vertical-align: top;
+                margin-left: 0.25rem;
+            }
+        }
+    }
+    @include element(close) {
+        position: absolute;
+        top: 0.25rem;
+        right: -0.25rem;
+        font-weight: 300;
+        font-size: $um * 1.5;
+        opacity: 0.5;
+    }
+    @include element(content) {
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: $um;
+    }
+    @include element(contentTitle) {
+        font-size: $um;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    @include element(full) {
+        margin: 0px;
+    }
+    @include element(sticky) {
+        position: absolute;
+        @include modifier(results) {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 320px;
+            height: 60px;
+        }
+    }
+    .subtitle{ 
+        font-size: 1.2rem;       
+        font-weight: 400;
+    }
+}
+
+@include extendBlock(popup, info) {
+    @include element(title) {
+        font-size: 1.2rem;
+        padding-right: $um * 2;
+    }
+    @include element(header) {
+        color: $color-darkGrey-default;
+        background: #fff;
+    }
+}
+
+@include extendBlock(popup, full) {
+
+    margin: 1.25rem auto;
+    max-width: calc(100% - 2.5rem);
+    @include element(title) {
+        font-size: 1.5rem;
+        padding-right: 4.25rem;
+        font-weight: 700;
+    }
+    @include element(header) {
+        color: $color-darkGrey-default;
+        background: #fff;
+    }
+}
+
+
+@include extendElement(popup, header, alt) {
+
+    background-color: white;
+    color: black;
+
+
+    @include element(title) {
+
+        font-weight: bold;
+
+        @include modifier(new) {
+            padding: 0 1rem;
+            color: #0090ff;
+            font-style: italic;
+            font-weight: 400;
+            -webkit-animation: pulseBlink infinite 1s;
+            animation: pulseBlink infinite 1s;
+
+            &:after {
+                display: none;
+                content: "";
+            }
+        }
+    }
+    @include element(close) {
+        color:black;
+        //opacity: 1;
+
+        svg{
+            display: none;
+        }
+        &:before{
+            content: "\2715";
+        }
+    }
+}

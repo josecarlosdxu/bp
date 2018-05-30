@@ -1,0 +1,41 @@
+        <div class="modularGrid-module sequential u-md-50">
+            <h3 class="form-fieldset-title">¿Cuál es su canal/es de venta?</h3>
+            <div class="modularGrid u-pdt--half">
+                <div class="modularGrid-module u-sm-55 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_3"  id="sector_3" class="form-checkbox">
+                    <label title="Venta al mayor / Distribución" for="sector_3" class="form-label form-label--inline">Venta al mayor / Distribución</label>
+                </div>
+                <div class="modularGrid-module u-sm-45 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_4"  name="sector" id="sector_4" class="form-checkbox">
+                    <label title="Tienda física / Comercio" for="sector_4" class="form-label form-label--inline">Tienda física / Comercio</label>
+                </div>
+                <div class="modularGrid-module u-sm-55 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_5" data-js-gadget="sector" name="sector" id="sector_5" class="form-checkbox">
+                    <label title="E-MarketPlace  (Ebay, Amazon, etc.)" for="sector_5" class="form-label form-label--inline">E-MarketPlace  (Ebay, Amazon, etc.)</label>
+                </div>
+                <div class="modularGrid-module u-sm-45 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_6" data-js-gadget="sector" name="sector" id="sector_6" class="form-checkbox">
+                    <label title="Tienda Online / e-Commerce " for="sector_6" class="form-label form-label--inline">Tienda Online / e-Commerce </label>
+                </div>
+                <div class="modularGrid-module u-sm-55 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_7" data-js-gadget="sector" name="sector" id="sector_7" class="form-checkbox">
+                    <label title="Venta Flash / Web compra colectiva" for="sector_7" class="form-label form-label--inline">Venta Flash / Web compra colectiva</label>
+                </div>
+                <div class="modularGrid-module u-sm-45 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_8" data-js-gadget="sector" name="sector" id="sector_8" class="form-checkbox">
+                    <label title="Regalo Promocional" for="sector_8" class="form-label form-label--inline">Regalo Promocional</label>
+                </div>
+                <div class="modularGrid-module u-sm-55 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_9" data-js-gadget="sector" name="sector" id="sector_9" class="form-checkbox">
+                    <label title="Venta directa" for="sector_9" class="form-label form-label--inline">Venta directa</label>
+                </div>
+                <div class="modularGrid-module u-sm-45 u-md-100 u-lg-50 u-pdb">
+                    <input type="checkbox" value="2_11" data-js-gadget="sector" name="sector" id="sector_11" class="form-checkbox">
+                    <label title="Ninguno" for="sector_11" class="form-label form-label--inline">Ninguno</label>
+                </div>
+                {{#if contentPath }}
+                {{{aggregate contentPath}}}
+                {{/if}}
+
+            </div>
+        </div>

@@ -1,0 +1,349 @@
+%cardElemFont {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+}
+
+%cardElemImgPos {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@include block(cardElem) {
+    @extend %box;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    @include element(more) {
+        @extend .cardList-more;
+        margin-left: $um;
+        display: block;
+        display: inline-block;
+        @include modifier(menu) {
+            @extend .cardList-more;
+            margin-left: $um;
+        }
+    }
+    @include element(imgCont) {
+        align-items: flex-end;
+        display: flex;
+        justify-content: flex-end;
+    }
+    @include element(figcaption) {
+        line-height: 1.2;
+        position: relative;
+        z-index: 1;
+    }
+    @include element(figure) {
+        display: block;
+        width: 100%;
+        line-height: 0;
+        position: relative;
+        height: 100%;
+    }
+    @include element(text) {
+        display: inline;
+    }
+   
+
+    
+}
+
+@include extendBlock(cardElem, primary) {
+    @extend %cardElemFont;
+    transition: box-shadow 0.2s ease-out, opacity 0.2s ease-out;
+    opacity: 0.9;
+    @include element(figure) {
+        width: 100%;
+        line-height: 0;
+        position: relative;
+        height: 100%;
+    }
+    @include element(figcaption) {
+        font-size: inherit;
+        line-height: 1;
+        width: 100%;
+        padding: 0.95rem 1.25rem 0;
+        position: absolute;
+    }
+    @include element(title) {
+        font-weight: 700;
+        color: #333;
+        font-size: inherit;
+        text-shadow: 1px 1px 3px white;
+
+        @include modifier(inline) {
+            display: inline;
+            line-height: 1;
+        }
+        @include modifier(huge) {
+            font-size: 2.1rem;
+        }
+    }
+    @include element(subtitle) {
+        text-transform: none;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.1rem;
+        padding: 0.2rem 0 0.5rem;
+        font-family: $type-ui;
+        font-weight: 500;
+    }
+    @include element(img) {
+        height: 100%;
+        width: auto;
+        @include addBreakpoint(xl) {
+            width: 100%;
+            height: auto;
+        }
+    }
+    @include element(imgCont) {
+        @extend %cardElemImgPos;
+        width: 100%;
+        height: 100%;
+        transform: scale(1) translate3d(0, 0, 0);
+        transition: transform 0.2s ease-in;
+    }
+    @include element(more) {
+        text-shadow: 1px 1px 3px white;
+        
+    }
+    &:hover {
+        box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
+        opacity: 1;
+        @include element(imgCont) {
+            transform: scale(1.03);
+        }
+    }
+    .title-number--middle{
+         text-shadow: 1px 1px 3px white;
+
+    }
+}
+
+@include extendBlock(cardElem, category) {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: none;
+    transition: none;
+    overflow: visible;
+    margin-bottom: 0.5rem;
+    @include element(title) {
+        @extend %cardElemFont;
+        font-weight: 700;
+        color: transparentize(black, 0.3);
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        > *:not(.cardList-more) {
+            font-size: inherit;
+            display: inline-block;
+        }
+    }
+    @include element(figure) {
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        background: white;
+        display: flex;
+        height: 11.6667rem;
+        margin-bottom: 0.9rem;
+    }
+    @include element(img) {
+        @extend %cardElemImgPos;
+        height: 100%;
+        width: auto;
+    }
+    @include element(figcaption) {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        padding: 1rem 1.25rem 0;
+    }
+    @include element(link) {
+        color: inherit;
+        display: inline;
+        opacity: 0.55;
+        font-size: 1.1rem;
+        padding-bottom: 0.1rem;
+        margin-bottom: 0.2rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 12em;
+        overflow: hidden;
+        transition: opacity 0.1s, box-shadow 0.1s;
+        &:hover,
+        &:focus {
+            box-shadow: 0 -1px transparentize(black, 0.6) inset;
+            opacity: 1;
+        }
+        @include addBreakpoint(xl) {
+            max-width: 17em;
+        }
+    }
+}
+
+@include extendBlock(cardElem, list) {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    background: white;
+    opacity: 0.9;
+    transition: box-shadow 0.3s ease-out, opacity 0.2s ease-out;
+    @include element(title) {
+        font-weight: 400;
+        line-height: 1;
+        display: inline;
+        font-size: 1rem;
+    }
+    @include element(text) {
+        font-size: 1.1rem;
+    }
+    @include element(figure) {
+        display: flex;
+        height: 7.41rem;
+        width: 100%;
+    }
+    @include element(figcaption) {
+        width: calc(100% - 90px);
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        color: $color-darkGrey-light;
+    }
+    @include element(imgCont) {
+        width: 90px;
+        height: 90px;
+        padding: 1rem 1rem 0;
+        transform: scale(1) translate3d(0, 0, 0);
+        transition: transform 0.2s ease-out;
+    }
+    @include element(img) {
+        max-height: 100%;
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    &:hover {
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        @include element(imgCont) {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@include extendBlock(cardElem, categoryItem) {
+    @include element(imgCont) {
+        padding: 0;
+    }
+    @include element(figcaption) {
+        padding-left: 1.5rem;
+        color: black;
+    }
+    @include element(title) {
+        @extend %cardElemFont;
+        font-weight: 700;
+        font-size: 1.5rem;
+        opacity: 0.7;
+    }
+    @include element(text) {
+        text-align: left;
+    }
+    @include element(img) {
+        max-width: 90px;
+    }
+}
+
+@include extendBlock(cardElem, tagItem) {
+    @include element(imgCont) {
+        padding: 0;
+        width: auto;
+    }
+    @include element(figcaption) {
+        padding-left: 1.5rem;
+        color: black;
+        width:calc(100% - 116px) ;
+    }
+    @include element(title) {
+        @extend %cardElemFont;
+        font-weight: 700;
+        font-size: 1.25rem;
+        opacity: 0.7;
+    }
+    @include element(text) {
+        text-align: left;
+    }
+    @include element(img) {
+        max-width: 116px;
+    }
+    @include element(figure) {
+        justify-content: space-between;
+
+
+
+
+    }
+}
+
+@include extendBlock(cardElem, banner) {
+    @extend %cardElemFont;
+    @include element(figure) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        line-height: 0;
+        position: relative;
+        height: $um * 5;
+    }
+    @include element(figcaption) {
+        font-size: 1.75rem;
+        line-height: 1.15;
+        width: 100%;
+        padding: 1rem 1.25rem 0;
+    }
+    @include element(imgCont) {
+        max-height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@-moz-document url-prefix() {
+    .cardElem--primary > .cardElem-figcaption {
+        padding: 0.9rem 1.25rem 0;
+    }
+    .cardElem--primary:hover {
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    .cardElem--list:hover {
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.no-flexbox {
+    
+    .cardElem--category .cardElem-link {
+        display: block;
+    }
+
+    .cardElem--category .cardElem-figcaption, .cardElem--list .cardElem-imgCont{
+        display: inline-block;
+
+    }
+    .cardElem--list .cardElem-figure {
+        display: table;
+        height: 7.41rem;
+        width: 100%;
+    }
+
+    .cardElem--list .cardElem-figcaption{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+}

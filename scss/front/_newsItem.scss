@@ -1,0 +1,61 @@
+@include block(newsItem) {
+    position: relative;
+    @include element(header) {
+        font-family: $type-headingscms;
+        text-transform: none;
+    }
+    @include element(date) {
+        display: -webkit-inline-flex;
+        display: inline-flex;
+        vertical-align: top;
+        font-weight: 300;
+        font-size: $um / 1.25;
+        color: black;
+        margin-right: $um / 1.5;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 3.4rem;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0 0.3rem;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+    @include element(day) {} @include element(month) {
+        font-weight: 300;
+    }
+    @include element(year) {
+        //background: tan;
+        text-align: center;
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.7);
+        letter-spacing: 0.05em;
+    }
+    @include element(title) {
+        @extend %inlineBlock;
+        font-size: 1.4rem;
+    }
+    @include element(bodytext) {
+        padding: 0.3rem 0 1rem 5rem;
+        line-height: 1.2;
+        position: relative;
+        margin-top: -$um;
+    }
+    @include element(link) {
+        color: black;
+        opacity: 0.5;
+        text-decoration: underline;
+        transition: all 0.2s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.newsItem-day + .newsItem-month, .newsItem-month +.newsItem-day {
+    &:before{
+        content: "/";
+    }
+}

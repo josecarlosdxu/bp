@@ -1,0 +1,62 @@
+@include block(bottomMessage) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    z-index: 10;
+    background: transparentize($color-darkGrey-dark, 0.05);
+    padding: 1rem 0;
+    color: $color-lightGrey-default;
+    @include element(content) {
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-size: 0;
+    }
+    @include element(text) {
+      font-size: $um / 1.25;
+      padding-bottom: $um / 2;
+
+
+    }
+    @include element(contentSection) {
+
+      display: inline-block;
+      vertical-align: top;
+      padding: $um / 2  $um;
+      width: 100%;
+
+      @include addBreakpoint(sm) {
+         width: 60%;
+
+
+      }
+
+
+      @include modifier(button) {
+        padding: 0;
+
+        padding-bottom: $um;
+        text-align: center;
+        width: 100%;
+
+         @include addBreakpoint(sm) {
+          width: 30%;
+          padding: $um * 1.5 $um;
+          text-align: right;      
+      }
+
+      }
+
+
+
+    }
+}
+
+
+.hide-cookies{
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+

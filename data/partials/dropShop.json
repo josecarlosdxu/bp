@@ -1,0 +1,68 @@
+{
+    "features2": {
+        "header": {
+            "title": "¿Qué incluye la Tienda Dropshipping?"
+        },
+        "list": [{
+            "svgImage": "prestashop",
+            "figTitle": "Software Prestashop",
+            "figText": "Instalación y configuración de un eCommerce Prestashop en su hosting"
+        }, {
+            "svgImage": "diseno",
+            "figTitle": "Diseño",
+            "figText": "Adaptación de uno de nuestros diseños con su logotipo y contenidos personalizadosg"
+        }, {
+            "svgImage": "hosting",
+            "figTitle": "Dominio y hosting",
+            "figText": "Para que sea 100% de su propiedad y a su nombre, le guiamos dónde y cómo registrar dominio y hosting"
+        }, {
+            "svgImage": "synchronized",
+            "figTitle": "Sincronización a BigBuy",
+            "figText": "Instalación de scripts de sincronización con tareas programadas cron a nuestras bases de datos MYSQL"
+        }, {
+            "svgImage": "europa",
+            "figTitle": "Métodos de envío",
+            "figText": "Instalación módulo portes con todos los precios y mensajerías a cualquier país de Europa "
+        }, {
+            "svgImage": "doubleCards",
+            "figTitle": "Formas de pago",
+            "figText": "Configuración de diversos métodos de pago. Contra rembolso, Tarjeta, Transferencia y Paypal"
+        }, {
+            "svgImage": "support",
+            "figTitle": "Soporte técnico",
+            "figText": "Para cualquier incidencia con la sincronización podrá contactar con nuestro departamento de soporte"
+        }, {
+            "svgImage": "documentation",
+            "figTitle": "Documentación",
+            "figText": "Multitud de documentación técnica para para iniciar y configurar su eCommerce Prestashop sincronizado a BigBuy"
+        }, {
+            "svgImage": "target",
+            "figTitle": "Marketing Online",
+            "figText": "En la zona de descargas de BigBuy dispone en diferentes idiomas de banners, newsletters, etc. "
+        }, {
+            "svgImage": "cajas",
+            "figTitle": "Compatible otros stocks",
+            "figText": "Ecommerce programado para convivir con artículos de otros proveedores "
+        }, {
+            "svgImage": "flags",
+            "figTitle": "Web Multilingüe",
+            "figText": "Sincronización disponible a 23 idiomas europeos. Traducciones por profesionales nativos"
+        }, {
+            "svgImage": "seo",
+            "figTitle": "Posicionamiento SEO",
+            "figText": "Webs adaptadas con URL´s amigables que facilitan su labor para escalar puestos en los resultados de buscadores"
+        }, {
+            "svgImage": "sync_files",
+            "figTitle": "Sincronización Pedidos",
+            "figText": "Transmita los pedidos a Bigbuy, sin necesidad de pasarlos a mano (disponible en Pack Premium)"
+        }, {
+            "svgImage": "marketplaces",
+            "figTitle": "Venta marketplaces",
+            "figText": "Paralelamente a su Prestashop podrá vender en Ebay, Amazon, Rakuten, etc."
+        }, {
+            "svgImage": "bb-pack",
+            "figTitle": "Requisito",
+            "figText": "Tener activo en BigBuy un <strong>pack mayorista</strong> Pro, Business o Premium"
+        }]
+    }
+}

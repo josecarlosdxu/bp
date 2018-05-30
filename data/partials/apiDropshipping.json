@@ -1,0 +1,170 @@
+{
+    "banner": {},
+    "slogan": {
+        "containerClasses": [
+            "modularGrid",
+            "modularGrid--boxed",
+            "u-pdt2",
+            "u-tac",
+            "u-pdb--half"
+        ],
+        "title": "¿Qué es el servicio dropshipping BigBuy?",
+        "subtitle": "El dropshipping es un modelo de negocio que te permite disponer de todo el stock de BigBuy sin necesidad de invertir un solo euro",
+        "subtitleClasses": [
+            "superSubtitle",
+            "u-md-80",
+            "u-xl-50",
+            "u-elem-center",
+            "u-pd"
+        ]
+    },
+    "features": {
+        "title": "Ventajas de trabajar con un proveedor dropshipping como BigBuy",
+        "items": [{
+            "image": "stock-propio",
+            "alt": "Mayorista dropshipping con stock propio",
+            "title": "Mayorista Dropshipping con Stock propio",
+            "text": "No somos intermediarios, somos un dropshipper con un almacén logístico de 20.000 m2 dónde almacenamos y distribuimos nuestro propio stock."
+        }, {
+            "image": "precio-mayorista",
+            "alt": "Precio mayorista en unidades sueltas",
+            "title": "Precio mayorista en unidades sueltas",
+            "text": "Acceso a precios de venta al por mayor incluso en unidades sueltas, necesario para realizar el servicio dropshipping."
+        }, {
+            "image": "envios-europa",
+            "alt": "Envios dropshipping a toda Europa",
+            "title": "Envios a toda Europa",
+            "text": "BigBuy es un proveedor dropshipping con precios muy económicos para envíos a toda Europa. Agencias de transporte disponibles: UPS, DHL, TNT, Feddex, GLS, Seur DPD, Correos, Dachser, etc <a href='#' class='link'>+info<\/a>"
+        }, {
+            "image": "sincronizacion",
+            "title": "Opciones de sincronización a su ecommerce",
+            "alt": "Opciones de sincronización a su ecommerce",
+            "text": "Catálogo de productos: CSV, XML, FTP.  Carga de pedidos en CSV, API. Transportistas: API, Conector Prestashop. <a href='#' class='link'>+info<\/a>"
+        }, {
+            "image": "envios-marca",
+            "alt": "Envios dropshipping con su imagen y nombre de marca",
+            "title": "Envios con su imagen y nombre de marca",
+            "text": "Nuestro servicio dropshipping incluye envíos con su nombre e imagen de empresa, para que sus clientes identifiquen los pedidos con su ecommerce."
+        }, {
+            "image": "marketplaces2",
+            "alt": "Venda en emarketplaces (Amazon, Ebay, Cdiscount, Rakuten, etc.)",
+            "title": "Venda en emarketplaces (Amazon, Ebay, Cdiscount, Rakuten, etc.)",
+            "text": "Posibilidad de vender todo el catálogo de nuestra empresa dropshipping en emarketplaces como Amazon, Ebay, Cdiscount, Rakuten, etc."
+        }, {
+            "image": "catalogo",
+            "alt": "Catálogo en 24 idiomas Europeos",
+            "title": "Catálogo en 24 idiomas Europeos",
+            "text": "BigBuy es un distribuidor dropshipping con un catálogo disponible en 24 idiomas europeos con traducciones 100 % nativas."
+        }, {
+            "image": "tienda-dropshipping",
+            "alt": "Solución llave en mano: tienda dropshipping",
+            "title": "Solución llave en mano:<br>tienda dropshipping",
+            "text": "Ofrecemos una solución integral para realizar dropshipping: entregamos tienda completa en Prestashop sincronizada con Bigbuy.<a href='#' class='link'>+info<\/a>"
+        }, {
+            "image": "descarga-catologo",
+            "alt": "Descarga del catálogo por categorías",
+            "title": "Descarga del catálogo por categorías",
+            "text": "Posibilidad de descarga  catálogo por categorías pudiendo sincronizar una web temática o multi-categoría."
+        }]
+    },
+    "explain": {
+        "items": [{
+            "image": "stock-propio2",
+            "text": "No necesita almacenar, <strong>ni invertir en stock<\/strong>. Miles de productos de BigBuy pasarán a ser su stock."
+        }, {
+            "image": "operador-logistico",
+            "text": "Realizamos la preparación de pedidos y el empaquetado, nos convertimos en <strong>su operador logístico<\/strong>."
+        }, {
+            "image": "envio-directo",
+            "text": "Nos encargamos del <strong>envío directo al cliente final<\/strong>, y entregamos con su nombre e imagen de empresa."
+        }]
+    },
+    "categories": {
+        "cardListModifiers": [
+            "col_3", "categories"
+        ],
+        "list": [{
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Hogar <br> jardín",
+            "titleAlt": "Hogar y jardín",
+            "alt": "Artículos para el hogar al por mayor",
+            "image": "../../img/categories/hogar/2399_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Cocina <br> gourmet",
+            "titleAlt": "Cocina y gourmet",
+            "alt": "Productos de cocina al por mayor",
+            "image": "../../img/categories/cocina/2403_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Ocio <br> tiempo libre",
+            "titleAlt": "Ocio y tiempo libre",
+            "alt": "Mayorista de productos de ocio y tiempo libre",
+            "image": "../../img/categories/ocio/2472_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Deportes <br> Fitness",
+            "titleAlt": "Deportes y Fitness",
+            "alt": "Mayorista de deportes",
+
+            "image": "../../img/categories/deportes/2491_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Salud <br> belleza",
+            "titleAlt": "Salud y belleza",
+            "alt": "venta de productos de belleza al por mayor",
+            "image": "../../img/categories/salud/2501_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Perfumería <br> cosmética",
+            "titleAlt": "Perfumería y cosmética",
+            "alt": "Perfumes al por mayor",
+            "image": "../../img/categories/cosmetica/2507_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Moda <br> complementos",
+            "titleAlt": "Moda y complementos",
+            "alt": "Artículos para el hogar al por mayor",
+            "image": "../../img/categories/moda/2570_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Juguetes <br> bebés",
+            "titleAlt": "Juguetes y bebés",
+            "alt": "Juguetes al por mayo",
+            "image": "../../img/categories/juguetes/2571_mini.jpg"
+        }, {
+            "cardElemModifiers": [
+                "list",
+                "categoryItem"
+            ],
+            "title": "Informática <br> electrónica",
+            "titleAlt": "Informática y electrónica",
+            "alt": "Mayorista de informática",
+            "image": "../../img/categories/electronica/2609_mini.jpg"
+        }]
+    }
+}

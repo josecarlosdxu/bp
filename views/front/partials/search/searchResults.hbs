@@ -1,0 +1,37 @@
+<input type="checkbox" class="inputToggle" id="searchResults-toggle" data-js-search="launch" data-js-reset="uncheck">
+<section class="searchResults" >
+	<label for="searchResults-toggle" class="searchResults-toggleLabel"></label>
+	<section class="searchResults-container">
+		<a href="home2.html" class="searchResults-homelink" title="home"><img class="header-logo-img" src="../../img/logo-bigbuy.svg" alt="logo"></a>
+		<span class="loader" style="display:none;">
+			<svg class="circular" viewBox="25 25 50 50">
+				<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="8" ></circle>
+			</svg>
+		</span>
+		<div class="searchResults-content">
+			<aside class="searchResults-cats">
+				<input type="checkbox" class="inputToggle" id="searchResults-checkCats" data-js="input showcategories" data-js-reset="uncheck">
+				<label class="button searchResults-selectCatBtn" for="searchResults-checkCats" data-js="label showcategories">Todas las categorías</label>
+				<div class="searchResults-catsContainer">
+					<header class="searchResults-catsTexts">
+						<h6 class="title title--camel" data-js="categories name">Seleccione CATEGORÍAS</h6>
+						<button class="button" data-js="categories select btn" disabled >Buscar en todas las categorías</button>
+					</header>
+					{{> homeFeaturedBrands brandsMenu.menu search='true'}}
+				</div>
+			</aside>
+			<form action="" class="searchResults-form" data-js-search="form">
+				<input type="text"  class="searchResults-inputText" name="" placeholder="Buscar en todo el sitio..." data-js-search="searchfield"/>
+			
+
+            <button class="button searchResults-buttonForm button--primary" type="submit" data-js-search="button" disabled>
+
+            {{>svgIcon type='search'}}            	
+
+            </button>
+				
+			</form>
+		</div>
+		{{> searchResultsProducts resultado-buscador.hits}}
+	</section>
+</section>

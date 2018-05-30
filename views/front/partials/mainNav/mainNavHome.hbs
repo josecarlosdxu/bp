@@ -1,0 +1,80 @@
+<ul class="mainNav-menu{{#if backward}} mainNav-menu--backward{{/if}}" data-js-mainnav="menu" data-js-mainnavback="menu">
+    {{#if backward}}
+    {{else}}
+
+    <li class="mainNav-item--icon nav-item " data-js-mainnav="item">
+         <a class="mainNav-link mainNav-link--icon" href="home2.html">
+         {{> svgIcon type='home'}}
+          </a>
+    </li>
+     {{!-- <!--<li class="mainNav-item--icon mainNav-item--last nav-item " data-js-mainnav="item">
+         <a class="mainNav-link mainNav-link--icon" >
+         {{> svgIcon type='hamburguer'}}
+          </a>
+    </li>--> --}}
+    {{/if}}
+    <li class="mainNav-item nav-item " data-js-mainnav="item">
+        <a href="categoria-hogar.html" class="mainNav-link mainNav-link--icon" data-js-mainnav="link" title="Hogar jardín" >
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Hogar<br/>Jardín</span>
+        </a>
+         {{> bigMenu menuList1.list }}
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a  class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" href="categoria-cocina.html" title="Cocina Gourmet">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Cocina<br/>Gourmet</span>
+        </a>
+         {{> bigMenu menuList2.list}}
+    </li>
+      <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a  class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" href="categoria-ocio.html" title="Ocio Tiempo libre">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Ocio<br/>Tiempo libre</span>
+        </a>
+         {{> bigMenu menuList3.list }}
+    </li>
+      <li class="mainNav-item nav-item " data-js-mainnav="item">
+        <a  class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" href="categoria-deportes.html" title="Deportes Fitness">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Deportes<br/>Fitness</span>
+        </a>
+         {{> bigMenu menuList4.list }}
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a href="categoria-ocio.html" class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" title="Salud Belleza">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Salud<br/>Belleza</span>
+        </a>
+        {{> bigMenu menuList5.list }}
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a href="categoria-cosmetica.html" class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" title="Perfumería Cosmética">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Perfumería<br/>Cosmética</span>
+        </a>
+        {{> bigMenu menuList6.list }}
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a href="categoria-moda.html" class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" title="Moda Complementos">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Moda<br/>Complementos</span>
+        </a>
+        {{> bigMenu menuList7.list }}
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a href="categoria-juguetes.html" class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" title="Juguetes Bebés">
+       {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Juguetes<br/>Bebés</span>
+        </a>
+        {{> bigMenu menuList8.list }}
+    </li>
+    <li class="mainNav-item nav-item" data-js-mainnav="item">
+        <a href="categoria-electronica.html" class="mainNav-link  mainNav-link--icon" data-js-mainnav="link" title="Informática Electrónica">
+        {{> svgIcon type='caretDown' class='u-mgt--6th'}}
+        <span>Informática<br/>Electrónica</span>
+        </a>
+        {{> bigMenu menuList9.list }}
+    </li>
+</ul>
+

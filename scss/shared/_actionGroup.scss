@@ -1,0 +1,156 @@
+@include block(actionGroup) {
+    background: #09f;
+    display: none;
+    position: relative;
+    @include modifier(error) {
+        background: $color-red-default;
+        box-shadow: 0 -1px #c00, 0 1px #c00, ;
+        color: #400;
+        padding: $um $um $um / 1.5;
+    }
+    @include modifier(warning) {
+        display: block;
+        padding: $um $um $um / 1.5;
+        background: $color-orange-default;
+    }
+    @include element(header) {
+        padding-bottom: $um / 2;
+    }
+    @include element(body) {
+        display: none;
+    }
+    @include element(footer) {
+        padding-top: $um / 2;
+    }
+    @include element(title) {
+        font-size: $um / 1.2;
+        font-weight: 600;
+    }
+    @include element(action) {
+        background: none;
+        color: #fff;
+        border: none;
+        padding: $um/2;
+        border-radius: 0;
+        transition: background 0.1s;
+        font-weight: 400;
+        display: inline-block;
+        position: relative;
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    @include element(icon) {
+        //position: relative;
+        // top: 4px;
+        vertical-align: bottom;
+        will-change: transform;
+    }
+    @include element(panel) {
+        text-align: left;
+        position: absolute;
+        display: none;
+        padding: $um / 1.5 $um;
+        border: 5px solid #76C3FF;
+        background: #fff;
+        width: 42rem;
+        left: 0;
+        top: 34px;
+        z-index: 10;
+        @include modifier(active) {
+            display: block;
+        }
+        @include modifier(full) {
+            width: 100%;
+
+        }
+    }
+    @include element(closelabel) {
+        display: none;
+        //background: $color-shadow;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    @include element(options) {
+        display: inline-block;
+        margin-right: -0.25rem;
+        border-left: 1px solid #76c3ff;
+        &:first-child {
+            border-left: none;
+        }
+    }
+    @include element(checkbox) {
+        display: none;
+        ~ .actionGroup-panel {
+            opacity: 0;
+            .actionGroup-body {
+                display: block;
+            }
+        }
+        &:checked {
+            /* ~.actionGroup-closelabel {
+                display: block;
+            }*/
+            ~.actionGroup-action {
+                @extend .actionGroup-action--active;
+                //z-index: 1;
+            }
+            ~ .actionGroup-panel {
+                display: block;
+                -webkit-animation: show 0.2s ease-in both;
+                animation: show 0.2s ease-in both;
+                /*.actionGroup-body {
+                    display: block;
+                }*/
+            }
+        }
+    }
+    @include element(button) {
+        float: right;
+        margin-right: 0.2rem;
+        margin-top: 0.4rem;
+    }
+}
+
+@include extendElement(actionGroup, action, active) {
+    background: #76c3ff;
+    color: #fff;
+    border: none;
+    &:hover {
+        background: #76c3ff;
+        color: #fff;
+        border: none;
+    }
+    @include element(icon) {
+        @extend %flipX;
+    }
+}
+
+@include extendBlock(actionGroup, flexcontainer) {
+    -js-display: flex; display:flex;
+    align-items: center;
+    @include element(action) {
+        white-space: nowrap;
+    }
+    @include element(select) {
+        margin: 0;
+        width: auto;
+    }
+}
+
+@-moz-document url-prefix() {
+    .actionGroup {
+        top: 4px;
+    }
+    .actionGroup-button {
+        margin-top: 0.15rem;
+        margin-right: 0.25rem;
+    }
+}

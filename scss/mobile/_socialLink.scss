@@ -1,0 +1,132 @@
+@include block(socialLink) {
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    transition: border-color 0.1s, color 0.1s, background-color 0.1s;
+    @include element(container) {
+        padding-top: 0.5rem;
+        padding-bottom: 0.25rem;
+    }
+    @include modifier(twitter) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $twitter-color;
+            color: white;
+            background-color: $twitter-color;
+        }
+    }
+    @include modifier(facebook) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $facebook-color;
+            color: white;
+            background-color: $facebook-color;
+        }
+    }
+    @include modifier(pinterest) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $pinterest-color;
+            color: white;
+            background-color: $pinterest-color;
+        }
+    }
+    @include modifier(gplus) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $gplus-color;
+            color: white;
+            background-color: $gplus-color;
+        }
+    }
+    @include modifier(blog) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $blog-color;
+            color: white;
+            background-color: $blog-color;
+        }
+    }
+      @include modifier(linkedin) {
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $linkedin-color;
+            color: white;
+            background-color: $linkedin-color;
+        }
+    }
+    @include modifier(button) {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+        padding-bottom: 0.2rem;
+        margin-right: 0.75rem;
+        text-transform: uppercase;
+        width: calc(68px + 1rem - 2px);
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 490px) {
+    .socialLink {
+        //display: inline-block;
+        height: 47px;
+        width: 47px;
+        //border-radius: 4px;
+        // border: 2px solid rgba(0, 0, 0, 0.1);
+        margin-right: 0.75rem;
+        margin-bottom: 0.75rem;
+        .icon.icon--inline.icon--md {
+
+         
+            width: 45px;
+            height: 45px;
+       
+        }
+    }
+    .socialLink:not(.socialLink--button) {
+        /*width: 34px;
+        height: 34px;
+        outline: 3px solid red;*/
+      
+    }
+    .socialLink.socialLink--button {
+        width: calc(100px + 0.75rem + 3px);
+        margin-right: 0;
+        &:first-child {
+            margin-right: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+  
+    .socialLink:not(.socialLink--button) {
+      
+        width: 38px;
+        height: 38px;
+      .icon.icon--inline.icon--md {
+        width: 36px;
+        height: 36px;
+      
+    }
+}
+ 
+}
+

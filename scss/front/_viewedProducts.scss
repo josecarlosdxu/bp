@@ -1,0 +1,12 @@
+@include block(viewedProducts) {
+    margin-bottom: 2rem;
+
+    @include element(title) {
+        @extend %type-section-title;
+    }
+
+	@include addBreakpoint(xs) {
+		margin-left: $um;
+	}
+
+}

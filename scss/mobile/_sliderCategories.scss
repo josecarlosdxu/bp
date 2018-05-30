@@ -1,0 +1,58 @@
+@include block(sliderCategories) {
+    display: block;
+    white-space: nowrap;
+    @include element(container) {
+        outline: none;
+        width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+        padding-bottom: $um / 2;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        z-index: 0;
+    }
+    @include element(item) {
+        outline: none;
+        display: inline-flex;
+        position: relative;
+        width: $um * 7.5;
+        height: $um * 7.5;
+        flex-wrap: nowrap;
+        margin-right: $um / 5;
+        padding: $um / 3;
+        transition:width 0.2s, height 0.2s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        @include addBreakpoint(md) {
+            width: 13rem;
+            height: 13rem;
+            
+        }
+        @include addBreakpoint(lg) {
+            width: 15rem;
+            height: 15rem;
+            
+        }
+    }
+    @include element(itemName) {
+        outline: none;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1;
+        z-index: 1;
+        white-space: normal;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    @include element(itemBg) {
+        outline: none;
+        border: 1px solid $color-shadow;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+}

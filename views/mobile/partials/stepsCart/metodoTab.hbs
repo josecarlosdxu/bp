@@ -1,0 +1,128 @@
+{{!-- <form action="" class="form "> --}}
+    <div class="modularGrid">
+        <div class="modularGrid-module u-brb u-pdb u-mgb--half" data-js-carrier_list_content="">
+            <div class="responsiveTable-container">
+                <table class="table responsiveTable-table responsiveTable-table--auto">
+                    <thead class="table-thead">
+                        <tr class="table-tr responsiveTable-tr">
+                            <th class="responsiveTable-th">Transportista</th>
+                            <th class="responsiveTable-th u-xxs-hide u-sm-cell u-tac">Tipo</th>
+                            <th class="responsiveTable-th u-xxs-hide u-sm-cell">Transporte</th>
+                            <th class="responsiveTable-th">Entrega</th>
+                            <th class="responsiveTable-th">Coste</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-tbody table-tbody--stripped" data-js-carrier_list="">
+                        <tr class="table-tr responsiveTable-tr">
+                            <td class="responsiveTable-td">
+                                <label class="form-label form-label--checkgroup u-pdl0">
+                                <input type="radio" value="55_0" id="recogida_almacenradio" name="shipping_method" class="form-radio" data-js-carrier_name="recogida_almacen" data-js-carrier_item="0" data-js-carrier_cost="0" data-js-carrier_dropshipping="false">Pallet delivery <span class="form-info">
+                                        
+                                        {{>svgIcon type='info' }}
+                                    </span>   <img class="u-mgl u-xxs-50 u-sm-40  u-md-25 u-lg-20 form-img" src="../../img/pallet-delivery-01.svg"></label> </td>
+                                <td class="responsiveTable-td u-xxs-hide u-sm-cell u-tac">
+                                     {{>svgIcon type='pallet2' class='u-op-60' size='sm'}}
+                                </td>
+                                <td class="responsiveTable-td u-xxs-hide u-sm-cell">
+                                    {{>svgIcon type='truck2' class='u-op-60' size='md'}}
+                                </td>
+                                <td class="responsiveTable-td"> ---</td>
+                                <td class="responsiveTable-td">0,00 €</td>
+                            </tr>
+                        <tr class="table-tr responsiveTable-tr">
+                            <td class="responsiveTable-td">
+                                <label class="form-label form-label--checkgroup u-pdl0">
+                                <input type="radio" value="55_0" id="recogida_almacenradio" name="shipping_method" class="form-radio" data-js-carrier_name="recogida_almacen" data-js-carrier_item="0" data-js-carrier_cost="0" data-js-carrier_dropshipping="false">EWC - Recogida almacen</label></td>
+                                <td class="responsiveTable-td u-xxs-hide u-sm-cell u-tac">
+                                    {{>svgIcon type='box' class='u-op-60' size='md'}}
+                                </td>
+                                <td class="responsiveTable-td u-xxs-hide u-sm-cell"> ---
+                                </td>
+                                <td class="responsiveTable-td"> ---</td>
+                                <td class="responsiveTable-td">0,00 €</td>
+                            </tr>
+                            <tr class="table-tr responsiveTable-tr">
+                                <td class="responsiveTable-td">
+                                    <label class="form-label form-label--checkgroup u-pdl0">
+                                    <input type="radio" value="69_156101" id="tntradio" name="shipping_method" class="form-radio" data-js-carrier_name="tnt" data-js-carrier_item="156101" data-js-carrier_cost="62.74" data-js-carrier_dropshipping="false"><img class="form-img" src="../../img/carrier/tnt_mini.png"></label></td>
+                                    <td class="responsiveTable-td u-xxs-hide u-sm-cell u-tac">
+                                        {{>svgIcon type='pallet2' class='u-op-60' size='sm'}}
+                                    </td>
+                                    <td class="responsiveTable-td u-xxs-hide u-sm-cell">
+                                        {{>svgIcon type='truck2' class='u-op-60' size='md'}}
+                                    </td>
+                                    <td class="responsiveTable-td">5-6 días</td>
+                                    <td class="responsiveTable-td">62,74 €</td>
+                                </tr>
+                                <tr class="table-tr responsiveTable-tr">
+                                    <td class="responsiveTable-td">
+                                        <label class="form-label form-label--checkgroup u-pdl0">
+                                        <input type="radio" value="52_1025" id="glsfedexradio" name="shipping_method" class="form-radio" data-js-carrier_name="glsfedex" data-js-carrier_item="1025" data-js-carrier_cost="126.36" data-js-carrier_dropshipping="false"><img class="form-img" src="../../img/carrier/glsfedex_mini.png"></label></td>
+                                        <td class="responsiveTable-td u-xxs-hide u-sm-cell u-tac">
+                                             {{>svgIcon type='box' class='u-op-60' size='md'}}
+                                        </td>
+                                        <td class="responsiveTable-td u-xxs-hide u-sm-cell">
+                                            {{>svgIcon type='van2' class='u-op-60' size='md'}}
+                                        </td>
+                                        <td class="responsiveTable-td">5-8 días</td>
+                                        <td class="responsiveTable-td">126,36 €</td>
+                                    </tr>
+                                    <tr class="table-tr responsiveTable-tr">
+                                        <td class="responsiveTable-td">
+                                             <label class="form-label form-label--checkgroup u-pdl0">
+                                            <input type="radio" value="115_98212" id="ups_aereoradio" name="shipping_method" class="form-radio" data-js-carrier_name="ups_aereo" data-js-carrier_item="98212" data-js-carrier_cost="230.08" data-js-carrier_dropshipping="false"><img class="form-img" src="../../img/carrier/ups_aereo_mini.png"></label></td>
+                                            <td class="responsiveTable-td u-xxs-hide u-sm-cell u-tac">
+                                                {{>svgIcon type='box' class='u-op-60' size='md'}}
+                                            </td>
+                                            <td class="responsiveTable-td u-xxs-hide u-sm-cell">
+                                                {{>svgIcon type='plane' class='u-op-60' size='md'}}
+                                            </td>
+                                            <td class="responsiveTable-td">48 h</td>
+                                            <td class="responsiveTable-td">230,08 €</td>
+                                        </tr>
+                                        <tr class="table-tr responsiveTable-tr">
+                                            <td class="responsiveTable-td">
+                                                 <label class="form-label form-label--checkgroup u-pdl0">
+                                                <input type="radio" value="75_80542" id="dhlradio" name="shipping_method" class="form-radio" data-js-carrier_name="dhl" data-js-carrier_item="80542" data-js-carrier_cost="329.65" data-js-carrier_dropshipping="false"><img class="form-img" src="../../img/carrier/dhl_mini.png"></label></td>
+                                                <td class="responsiveTable-td u-xxs-hide u-sm-cell u-tac">
+                                                    {{>svgIcon type='box' class='u-op-60' size='md'}}
+                                                </td>
+                                                <td class="responsiveTable-td u-xxs-hide u-sm-cell">
+                                                    {{>svgIcon type='ship2' class='u-op-60' size='md'}}
+                                                </td>
+                                                <td class="responsiveTable-td">48 h</td>
+                                                <td class="responsiveTable-td">329,65 €</td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="modularGrid-module u-md-50 u-pdt u-sm-pdr">
+                                <label class="form-label">
+                                    Nota para el transportista visible en la etiqueta
+                                    <span class="form-info">
+                                        <img src="../../img/icons/info.svg" class="icon icon--inline">
+                                    </span>
+                                    <em class="form-label--optional"><span data-js_max="40">40</span> Car.</em>
+                                </label>
+                                <div class="modularGrid-module">
+                                    <input type="text" class="form-input" maxlength="255">
+                                </div>
+                            </div>
+                            <div class="modularGrid-module u-md-50 u-sm-pdr ">
+                                <label class="form-label u-pdt">
+                                    Su referencia interna
+                                    <span class="form-info">
+                                        <img src="../../img/icons/info.svg" class="icon icon--inline">
+                                    </span>
+                                    <em class="form-label--optional">Opcional</em>
+                                </label>
+                                <div class="modularGrid-module">
+                                    <input type="text" class="form-input" maxlength="12">
+                                </div>
+                            </div>
+                             {{>stepsCartNextBtn popup='popup_delivery' popupfunc='isSubbmitedPopup'}}
+                        </div>
+                    {{!-- </form> --}}

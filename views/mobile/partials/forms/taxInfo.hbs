@@ -1,0 +1,114 @@
+<fieldset class="form-fieldset--borderless u-pd u-brb">
+            <h3 class="form-fieldset-title u-mgt">Información fiscal</h3>
+            <div class="modularGrid">
+                <div class="modularGrid-module u-md-40 u-mgb--half">
+                    <input type="radio" checked="checked" value="1" id="tc_particular" name="type_customer" class="form-radio form-input--inline" placeholder="">
+                    <label for="tc_particular" class="form-label form-label--inline">Soy particular / emprendedor</label>
+                </div>
+                <div class="modularGrid-module u-md-25 u-mgb--half">
+                    <input type="radio" value="2" id="tc_autonomo" name="type_customer" class="form-radio form-input--inline" placeholder="">
+                    <label for="tc_autonomo" class="form-label form-label--inline">Soy autónomo</label>
+                </div>
+                <div class="modularGrid-module u-md-25 u-mgb--half">
+                    <input type="radio" value="3" id="tc_empresa" name="type_customer" class="form-radio form-input--inline" placeholder="">
+                    <label for="tc_empresa" class="form-label form-label--inline">Soy empresa</label>
+                </div>
+            </div>
+            <div class="modularGrid u-pdt--half">
+                <div class="modularGrid-module u-sm-50 u-lg-25 ">
+                    <label class="form-label" for="">Nombre</label>
+                    <input type="text" name="nombre" class="form-input">
+                </div>
+                <div class="modularGrid-module u-sm-50 u-lg-25 u-sm-pdl">
+                    <label class="form-label" for="">Apellidos</label>
+                    <input type="text" name="nombre" class="form-input">
+                </div>
+                <div class="modularGrid-module u-sm-50 u-lg-25 u-lg-pdl">
+                    <label class="form-label" for="country">País</label>
+                    <select data-js-country="" name="country" class="form-select">
+                        <option value="">Elija un país</option>
+                        <option value="231">Afganistán</option>
+                        <option value="230">Albania</option>
+                        <option value="1">Alemania</option>
+                        <option value="40">Andorra</option>
+                        <option value="41">Angola</option>
+                        <option value="42">Anguila</option>
+                        <option value="232">Antártida</option>
+                        <option value="235">British Indian Ocean Territory</option>
+                        <option value="239">Cocos (Keeling), Islas</option>
+                        <option value="6">España</option>
+                        <option value="91">Gabón</option>
+                        <option value="92">Gambia</option>
+                        <option value="93">Georgia</option>
+                        <option value="196">Georgia del Sur e Islas Sandwich del Sur</option>
+                        <option value="96">Groenlandia</option>
+                        <option value="98">Guadalupe</option>
+                        <option value="234">Isla Bouvet</option>
+                        <option value="123">Kirguistán</option>
+                        <option value="219">Uzbekistán</option>
+                        <option value="220">Vanuatu</option>
+                        <option value="225">Wallis y Futuna</option>
+                        <option value="229">Zimbabwe</option>
+                    </select>
+                </div>
+                <div class="modularGrid-module u-sm-50 u-lg-25 u-sm-pdl">
+                    <label class="form-label" for="vat_number">NIF</label>
+                    <span data-js-country_prefix="" class="form-prefix">20</span>
+                    <input type="text" maxlength="18" placeholder="" name="vat_number" class="form-input  form-input--prefix">
+                </div>
+            </div>
+            <div class="modularGrid">
+            </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset--borderless u-pd u-brb">
+            <div class="modularGrid u-mgt--half">
+                <div class="modularGrid-module u-sm-25">
+                    <label class="form-label" for="">Código postal</label>
+                    <input type="text" name="nombre" class="form-input">
+                </div>
+                <div class="modularGrid-module u-sm-75 u-sm-pdl">
+                    <label class="form-label" for="state">Provincia</label>
+                    <select style="" data-js-state="select" name="state" class="form-select" disabled="">
+                        <option value="">Elija una provincia</option>
+                        <option value="314">ALBACETE</option>
+                        <option value="316">ALMERÍA</option>
+                        <option value="328">CUENCA</option>
+                        <option value="342">MURCIA</option>
+                        <option value="358">VALENCIA / VALÉNCIA</option>
+                    </select>
+                    <input type="text" maxlength="64" name="state" data-js-state="text" class="form-input" disabled="" style="display: none;">
+                </div>
+                <div class="modularGrid-module u-lg-50">
+                    <label class="form-label" for="">Localidad</label>
+                    <input type="text" name="nombre" class="form-input">
+                </div>
+                <div class="modularGrid-module u-lg-50 u-lg-pdl">
+                    <label class="form-label" for="">Dirección</label>
+                    <input type="text" name="nombre" class="form-input">
+                </div>
+                <div class="modularGrid-module u-sm-50">
+                    <label class="form-label" for="phone">Teléfono o Móvil</label>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-xs-20">
+                            <input type="text" tabindex="50"  maxlength="4" name="phone-prefix" class="form-input">
+                        </div>
+                        <div class="modularGrid-module u-xs-80 u-pdl--half">
+                            <input type="text" maxlength="12" name="phone" class="form-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="modularGrid-module u-sm-50 u-sm-pdl">
+                    <label class="form-label" for="phone_mobile">Otro Teléfono o Móvil<em class="form-label--optional u-pdl--half">Opcional</em>
+                    </label>
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-xs-20">
+                            <input type="text" tabindex="50"  maxlength="4" name="phone-prefix" class="form-input">
+                        </div>
+                        <div class="modularGrid-module u-xs-80 u-pdl--half">
+                            <input type="text" maxlength="12" name="phone" class="form-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>

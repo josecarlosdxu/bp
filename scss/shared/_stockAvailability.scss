@@ -1,0 +1,194 @@
+$bordersColor: $color-lightGrey-dark;
+%firstStockElemBefore {
+    &:before {
+        top: 0.9rem;
+        box-shadow: -1px -1px $bordersColor;
+    }
+}
+
+%stockElemTitleBefore {
+    font-size: $um;
+    content: "\25CF";
+    line-height: 0.5;
+}
+
+@include block(stockAvailability) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @include element(title) {
+        display: inline-block;
+        @include modifier(success) {
+            &:before {
+                @extend %stockElemTitleBefore;
+                color: $color-green-default;
+               
+            }
+        }
+        @include modifier(error) {
+            &:before {
+                @extend %stockElemTitleBefore;
+                color: $color-red-dark;
+            }
+        }
+         @include modifier(neutral) {
+            &:before {
+                @extend %stockElemTitleBefore;
+                color: #BABDC4;
+            }
+        }
+    }
+    @include element(list) {
+        display: block;
+        position: relative;
+        line-height: 1.2;
+        margin-left: 0.75rem;
+        &:before {
+            content: "";
+            display: inline-block;
+            float: left;
+            height: 1px;
+            left: -0.75rem;
+            position: absolute;
+            top: 50%;
+            width: 0.75rem;
+            background: $bordersColor;
+        }
+    }
+    @include element(item) {
+        position: relative;
+        color: $color-lightGrey-darker;
+        display: flex;
+        &:before {
+            content: "";
+            position: relative;
+            width: 0.75rem;
+            height: 1.5rem;
+            margin-right: $um / 2;
+            display: inline-block;
+            bottom: 0.38rem;
+            margin-top: -0.51rem;
+            box-shadow: -1px 1px $bordersColor;
+        }
+        &:first-child {
+            @extend %firstStockElemBefore;
+        }
+        &:only-of-type {
+            &:before {
+                box-shadow: 0 -1px $bordersColor;
+                box-shadow: none;
+                top: 1rem;
+            }
+        }
+        @include modifier(nextHide) {
+            box-shadow: none !important;
+        }
+    }
+}
+
+.stockAvailability-title+.stockAvailability-list {
+    margin-left: 2rem;
+    &:before {
+        left: -1.25rem;
+        width: 1.25rem;
+    }
+}
+
+@include extendBlock(stockAvailability, vertical) {
+    display: block;
+    vertical-align: top;
+    font-size: 1.2rem;
+    @include element(title) {
+        font-size: 0.9rem;     
+    }
+    @include element(list) {
+        padding: 0;
+        padding-top: 0.25rem;
+        &:before {
+            display: none;
+        }
+    }
+    @include element(item) {
+        font-size: 0.9rem;
+        color: currentColor;
+        opacity: 0.7;
+        line-height: 1.1;
+        padding-bottom: 0.25rem;
+        display: flex;
+        box-shadow: -1px 0 $bordersColor;
+        &:before {
+            content: "";
+            position: relative;
+            width: 0.5rem;
+            height: 1.3rem;
+            margin-right: $um / 3;
+            display: inline-block;
+            bottom: 0.38rem;
+            margin-top: -0.3rem;
+            box-shadow: -1px 1px $bordersColor;
+        }
+        &:first-child {
+            &:before {
+                top: -0.2rem;
+                box-shadow: -1px 1px $bordersColor;
+                height: 1rem;
+            }
+        }
+        &:last-child {
+            box-shadow: none;
+        }
+    }
+    .stockAvailability-title+.stockAvailability-list {
+        margin-left: 0.5rem;
+    }
+}
+
+@include extendBlock(stockAvailability, bigSize) {
+    display: block;
+    @include element(title) {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    /*@include element(list) {
+        padding: 0;
+        padding-top: 0.25rem;
+        &:before {
+            display: none;
+        }
+    }*/
+    @include element(item) {
+        font-size: 1rem;
+        /*color: currentColor;
+        opacity: 0.7;
+        &:before {
+            content: "";
+            position: relative;
+            width: 0.5rem;
+            height: 1.3rem;
+            margin-right: $um / 3;
+            display: inline-block;
+            bottom: 0.38rem;
+            margin-top: -0.3rem;
+            box-shadow: -1px 1px $bordersColor;
+        }
+        &:first-child {
+            &:before {
+                top: auto;
+                box-shadow: -1px 1px $bordersColor;
+                height: 1rem;
+            }
+        }*/
+    }
+}
+
+@-moz-document url-prefix() {
+
+    .stockAvailability-item:first-child::before {
+        top: 1rem;
+    }
+
+    .stockAvailability-item::before {
+
+        margin-top: -0.5rem;
+    }
+}

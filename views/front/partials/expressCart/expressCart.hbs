@@ -1,0 +1,166 @@
+<!-- ExpressCart -->
+<div class="expresscart" data-js-expresscart="expresscart">
+    <section class="scrollArea box">
+        <header class="scrollArea-header">
+            <table class="table table--condensed">
+                <thead class="table-thead">
+                    <tr class="table-tr">                       
+                        <th class="table-item table-item--boolean u-xs-15" >Código <span class="u-helpCursor icon--waiting u-vb" data-js-tooltip="tooltip_SKU" title="Código">{{>svgIcon type='info' }}</span></th>
+                        <th class="table-item u-xs-15">Producto</th>
+                        <th class="table-item u-xs-20"> <span class="u-pdl--half">Plazo preparación</span> <span class="u-helpCursor icon--waiting u-vb" data-js-tooltip="tooltip_plazo" title="Plazo preparación">{{>svgIcon type='info' }}</span></th>
+                        <th class="table-item u-xs-10" title="Unidades">Uds.</th>
+                        <th class="table-item  table-item--number">PVR  <span class="u-helpCursor icon--waiting u-vb" data-js-tooltip="tooltip_PVR" title="PVR">{{>svgIcon type='info' }}</span></th>
+                        <th class="table-item  table-item--number">Extra Discount <span class="u-helpCursor icon--waiting u-vb u-mgr" data-js-tooltip="tooltip_Volumen">{{>svgIcon type='info' }}</span></th>
+                        <th class="table-item  table-item--number">Precio</th>
+                        <th class="table-item  table-item--number u-xs-10">Importe</th>
+                        <th class="table-item u-xs-5" > </th>
+                    </tr>
+                </thead>
+            </table>
+        </header>
+        <div class="scrollArea-content expresscart-itemList">
+            <table class="table  table--condensed">
+                <tbody class="table-tbody table-tbody--stripped">
+                    {{> expressCartRow2 }}
+                    {{> expressCartRow2 }}
+                    {{> expressCartRow2 }}
+                    {{> expressCartRow2 }}
+                    {{> expressCartRow2 }}
+                </tbody>
+            </table>
+        </div>
+        <footer class="scrollArea-footer">
+          {{!--  <!-- <form action="" class="form">--> --}}
+                <div class="modularGrid">
+                  {{!--   <!--<div class="modularGrid-module u-md-25">
+
+                        <div class="expresscart-section">
+                            <div class="modularGrid">
+                                <div class="modularGrid-module">
+                                    <h3 class="expresscart-title">Productos recomendados</h3>
+                                    {{> productList productList.starProducts}}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>--> --}}
+                    <div class="modularGrid-module u-md-45">
+                        <div class="expresscart-section">
+                            <div data-js-expresscart="form">
+                                <fieldset class="form-fieldset form-fieldset--borderless">
+                                    <p class="expresscart-title">Estimar gastos de envío</p>
+                                   
+                                        <div class="modularGrid" data-js-shipping-cost="shipping-cost">
+                                            <div class="modularGrid-module u-md-30">
+                                                <label for="" class="form-label form-label--inline">País</label>
+                                            </div>
+                                            <div class="modularGrid-module u-md-70">
+                                                <select type="text" class="form-select  form-input--inline">
+                                                        <option value="">España</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="modularGrid" data-js-shipping-cost="shipping-cost">
+                                            <div class="modularGrid-module u-md-30">
+                                                <label for="" class="form-label form-label--inline">Código Postal</label>
+                                            </div>
+                                            <div class="modularGrid-module u-md-70">
+                                                 <input type="text" class="form-input form-input--inline">
+                                            </div>
+                                        </div>
+                                        <div class="modularGrid" data-js-shipping-cost="shipping-cost">
+                                            <div class="modularGrid-module u-md-40"></div>
+                                            <div class="modularGrid-module u-md-60 u-mgt--half" data-js-toolbarexpresscart_msg="">
+                                                 <button class="button u-mgt--half u-flr " data-js-expresscart="estimate">Estimar gastos</button>
+                                            </div>
+                                        </div>
+                                   
+
+
+                                <table class="table table--condensed table--interactive"  style="display:none;">
+                                    <tbody><tr class="table-tr">
+                                        <td class="table-item"><input type="radio" value="chronoexpress" id="chronoradio" name="shipping_method" class="form-radio"></td>
+                                        <td class="table-item"><img src="../../img/chrono_mini.png"></td>
+                                        <td class="table-item table-item--number">12,09 €</td>
+
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td class="table-item"><input type="radio" value="chronoexpress" id="chronoradio" name="shipping_method" class="form-radio"></td>
+                                        <td class="table-item"><img src="../../img/correos_mini.png"></td>
+                                        <td class="table-item table-item--number">26,90 €</td>
+
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td class="table-item"><input type="radio" value="chronoexpress" id="chronoradio" name="shipping_method" class="form-radio"></td>
+                                        <td class="table-item"><img src="../../img/gls_mini.png"></td>
+                                        <td class="table-item table-item--number">0,00 €</td>
+
+                                    </tr>
+                                </tbody></table>
+                            </fieldset>
+                            <p class="expresscart-pickup">
+                            <img class="expresscart-pickupImg" src="../../img/icono-almacen.svg" alt="" />
+                            <span class="expresscart-pickupTxt"><strong>EXW</strong> - Para pedidos superiores a 1000€ ofrecemos recogida en almacén: Ex Works</span>                                
+                           </p>
+                            <img class="expresscart-infoImg" src="../../img/transport-companies.jpg" alt="transport companies" />
+                        </div>
+                        <div data-js-expresscart="results" class="" style="display:none;">
+                           <fieldset class="form-fieldset form-fieldset--borderless">
+                             <div class="u-mgb">
+                                <span class="expresscart-title">Gastos de envío estimados</span>
+                                <button class="button u-flr" data-js-expresscart="recalculate">Recalcular</button>
+                                <p class="expresscart-subtitle">
+                                    <span class="expresscart-subtitleItem"><strong>País:</strong> España</span>
+                                    <span class="expresscart-subtitleItem"><strong>Código Postal:</strong> 1234566</span>
+                                </p>
+                             </div>
+                            {{>expressCartScrollSection expressCartDelivery.deliverylist}}
+                          </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="modularGrid-module u-md-55">
+                    <div class="expresscart-section expresscart-section--totals">
+                        <fieldset class="form-fieldset form-fieldset--borderless">
+                            <h3 class="expresscart-title">Carrito de la compra</h3>
+                            <div class="u-mgb--half expresscart-amount">Importe:<span class="expresscart-amountNumber">500 €</span> </div>
+                             <div class="u-mgb--half">Gastos estimados transporte:<span class="u-flr"><em data-js-expresscart-shipping-cost="" class="form-info"><i class="fa fa-clock-o fa-large"></i> Pendiente</em></span> </div>
+                             <div class="u-mgb--half">Extra Discount alcanzado:<span class="u-flr">83€ (2%)</span> </div>
+                            <div class="modularGrid">
+                                <div class="expresscart-discountExpress u-mgb--half">
+                                    <div class="modularGrid-module u-xs-45 u-pdr">
+                                        <div class="u-mgb--half">Próximo rango de Extra Discount:</div>
+                                    </div>
+                                    <div class="modularGrid-module u-xs-55">
+                                        <div class="modularGrid">
+                                            <div class="modularGrid-module u-xs-15 u-pdr--half u-tar">
+                                                 <span class="progressBar-range progressBar-range--init">2%</span>
+                                            </div>
+                                            <div class="modularGrid-module u-xs-70">
+                                                 <div class="progressBar progressBar--collapsed "><span class="progressBar-meter u-md-60" ></span></div>
+                                            </div>
+                                            <div class="modularGrid-module u-xs-15 u-tar">
+                                                 <div class="progressBar-range progressBar-range--end">3%</div>
+                                            </div>
+                                            <div class="modularGrid-module">
+                                                <div class="progressBar-remainder" data-js-tooltip="tooltip3"><b class="icon fa-info-circle"></b> Añade 100€ al carrito</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           {{>expressCartTotal}}
+                        </fieldset>
+
+                    </div>
+                </div>
+            </div>
+       {{!-- <!-- </form>--> --}}
+    </footer>
+</section>
+</div>
+
+
+
+

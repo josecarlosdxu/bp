@@ -1,0 +1,92 @@
+{
+    "list": [
+
+        {
+            "title": "Versión Prestashop",
+            "name": "psversion",
+            "options": [
+            {
+                "text": "Todas",
+                "val": "all_psversions"
+            },
+            {
+                "text": "1.7",
+                "val": "psversion_17"
+            },
+            {
+                "text": "1.6",
+                "val": "psversion_16"
+            }]
+        },
+        {
+            "title": "Tema",
+            "name": "theme",
+            "options": [
+            {
+                "text": "Todos",
+                "val": "all_themes"
+            },
+            {
+                "text": "Valencia",
+                "val": "valencia_theme"
+            },
+            {
+                "text": "Ibiza",
+                "val": "ibiza_theme"
+            },
+            {
+                "text": "Formentera",
+                "val": "formentera_theme"
+            },
+            {
+                "text": "Menorca",
+                "val": "menorca_theme"
+            }]
+        },
+        {
+            "title": "Catálogo",
+            "name": "catalog",
+            "options": [
+            {
+                "text": "Todos",
+                "val": "all_catalogs"
+            },
+            {
+                "text": "Hogar Jardín",
+                "val": "homegarden_catalog"
+            },
+            {
+                "text": "Cocina Gourmet",
+                "val": "cooking_catalog"
+            },
+            {
+                "text": "Informática Electrónica",
+                "val": "electronics_catalog"
+            }]
+        }
+        ,
+        {
+            "title": "Redes",
+            "name": "socila",
+            "options": [
+            {
+                "text": "Instagram",
+                "val": "social_is"
+            },
+            {
+                "text": "Twitter",
+                "val": "social_tw"
+            },
+            {
+                "text": "Facebook",
+                "val": "social_fw"
+            },
+            {
+                "text": "Google +",
+                "val": "social_gp"
+            }]
+        }
+        
+
+    ]
+}

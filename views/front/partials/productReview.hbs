@@ -1,0 +1,108 @@
+<section class="productReview">
+	<h2 class="productReview-title">Customer reviews</h2>
+	<div class="productReview-content">			
+		<article class="productReview-item">			
+			<aside class="productReview-dates">
+				<h4 class="productReview-user">Opinión de Abelardo</h4>
+				{{!-- <p class="productReview-posted">Posted on 04/07/2013</p> --}}
+				<span class="productReview-ratingTitle">Valoración</span>
+				<div class="productReview-rating">
+					{{> rating1}}
+				</div>
+				
+			</aside>
+			<section class="productReview-comments">
+				<h4 class="productReview-comments-title">Excellent</h4> 
+				<p>I tried it yesterday and loved it! It was very quick and easy to use.</p>
+			</section> 
+		</article>
+		<article class="productReview-item">			
+			<aside class="productReview-dates">
+				<h4 class="productReview-user">Opinión de Eduvigis</h4>
+				{{!-- <p class="productReview-posted">Posted on 02/07/2013</p> --}}
+				<span class="productReview-ratingTitle">Valoración</span>
+				<div class="productReview-rating">
+					{{> rating2}}
+				</div>
+				{{!-- <span class="productReview-ratingTitle">Quality</span>
+				<div class="productReview-rating">
+					{{> rating1}}
+				</div> --}}
+			</aside>
+			<section class="productReview-comments">
+				<h4 class="productReview-comments-title">Good quality, better priceee!</h4> 
+				<p>I sell many of these in my shop. I buy them here among other things and I am so satisfied! I absolutely recommend this website for wholesalers. Excellent service and great value for money. Good job guys.</p>
+			</section> 
+		</article>
+		<footer class="productReview-footer">
+                <form action="" class="form" data-js-form_comment="">
+                    <fieldset class="form-fieldset form-fieldset--borderless">
+                        <div class="modularGrid" data-js-comments_head="">
+                            <div class="modularGrid-module">
+                                <span class="productReview-description">¿Te ha gustado nuestro producto?</span>
+                                <button class="button productReview-button button--primary" data-js-add_review="" type="button">Añade tu opinión</button>
+                            </div>
+                        </div>
+                        <div class="modularGrid">
+                        	
+                            <div class="modularGrid-module hide" data-js_fieldset_comment="">
+                                <div class="modularGrid">
+                                    <div class="modularGrid-module u-xs-25">
+                                        <label for="customer_name_field" class="form-label">Nombre</label>
+                                        <input name="customer_name_field" id="customer_name_field" class="form-input" data-js-comment_data="" data-js-validate="" maxlength="64" tabindex="1">
+                                    </div>
+                                         <div class="modularGrid-module u-xs-70 u-pdl--half">
+                                        <label for="title_field" class="form-label">Título</label>
+                                        <input name="title_field" id="title_field" class="form-input" data-js-comment_data="" data-js-validate="" tabindex="2" maxlength="128">
+                                    </div>
+                                </div>
+                                <div class="modularGrid">
+                                     <div class="modularGrid-module u-xs-25 ">
+                                        <label for="calidad" class="form-label"> Valoración </label>
+                                        <div class="form-radiogroup form-radiogroup--rating">
+                                            <input name="quality_field" value="1" id="quality_rating1" data-js-rating="star" type="radio">
+                                            <label for="quality_rating1" ></label>
+                                            <input name="quality_field" value="2" id="quality_rating2" data-js-rating="star" type="radio">
+                                            <label for="quality_rating2" ></label>
+                                            <input name="quality_field" value="3" id="quality_rating3" data-js-rating="star" type="radio">
+                                            <label for="quality_rating3" ></label>
+                                            <input name="quality_field" value="4" id="quality_rating4" data-js-rating="star" type="radio">
+                                            <label for="quality_rating4" ></label>
+                                            <input name="quality_field" value="5" id="quality_rating5" data-js-rating="star" type="radio">
+                                            <label for="quality_rating5" ></label>
+                                        </div>
+                                    </div>
+                                    <div class="modularGrid-module u-xs-70 u-pdl--half">
+                                        <label for="content_field" class="form-label">Escriba su comentario</label>
+                                        <textarea name="content_field" id="content_field" cols="30" rows="10" class="form-textarea" data-js-comment_data="" data-js-validate="" tabindex="3" maxlength="400"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modularGrid">
+                                    <div class="modularGrid-module u-pdb--half">
+                                                     <div class="form-captcha ">
+                        <div class="modularGrid">
+                            <div class="modularGrid-module u-md-40">
+                                <img src="https://www.bigbuy.eu/tools/captcha/captcha.php?ancho=175&amp;alto=65&amp;nocache=" id="img_captcha" class="form-captcha-image " alt="">
+                                <a href="javascript:void(0);" onclick="$(this).parent().find('img:first').prop('src','https://www.bigbuy.eu/tools/captcha/captcha.php?ancho=175&amp;alto=65&amp;nocache='+Math.random());" class="form-captcha-reload">
+                                    <i class="icon form-info-icon fa-refresh"> </i> Recargar imagen                                </a>
+                            </div>
+                            <div class="modularGrid-module u-sm-60 u-pdl--half">
+                                <label class="form-label" for="captcha">¿Qué pone en la imagen?</label>
+                                <input data-js-forget_passwd_content="captcha" name="captcha" class="form-input" data-js-captcha="" data-js-validate="" maxlength="10" type="text">
+                                <em class="form-info" data-js-tooltip="tooltip_captcha">
+                                    <b class="icon form-info-icon fa-info-circle"></b> ¿Para qué sirve este código?                                </em>
+                            </div>
+                        </div>
+                    </div>                                     </div>
+                                </div>
+                                 <div class="modularGrid">
+                                <div class="modularGrid-module  u-xs-25 ">
+                                    <button class="button button--primary  button--full " data-js-validate-form="" tabindex="100">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div></fieldset>
+            </form>
+        </footer>
+	</div>	
+</section>	

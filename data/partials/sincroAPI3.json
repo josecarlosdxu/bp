@@ -1,0 +1,72 @@
+{
+    "sectionStock": {
+        "header": [{
+            "title": "Sincronización Pedidos",
+            "icon": "orders3"
+
+        }],
+        "footer": [{
+            "slogan": "Sincronice su negocio con BigBuy",
+            "buttonText": "Ser distribuidor"
+        }],
+        "list": [{
+            "header": [{ "item": "BigBuy ofrece diversas soluciones para pasar los pedidos que reciba en su ecommerce o emarketplace. Desde la solución más sencilla, que sería pasar un pedido en la propia web, a cargar pedidos desde un CSV, o incluso las soluciones más complejas, como acceder a nuestra API de pedidos. Disponemos también de una API para procesar pedidos y, en una fecha indicada, agruparlos y hacer un envío único." }],
+            "headerIcon": "orders3",
+            "title": "Carga de pedidos manual",
+            "extraClasses": ["u-mg-three-top"],
+            "items": [{
+                "title": "Carga de Pedidos desde CSV",
+                "icon": "csvfile",
+                "texts": [{
+                    "text": "Para agilizar el proceso de hacer pedidos manuales en BigBuy, facilitamos la carga de pedidos por CSV. En su panel de control, podrá descargar un ejemplo de CSV y un manual de estructura del archivo."
+                }]
+            }, {
+                "title": "Pedidos Manuales",
+                "icon": "csvfile",
+                "texts": [{
+                    "text": "Procese sus pedidos en la plataforma de BigBuy introduciendo los artículos en el carrito y seleccione entre las distintas opciones de transporte y formas de pago."
+                }, {
+                    "text": "Podrá elegir la opción Dropshipping para que sus pedidos sean enviados por BigBuy de forma anónima."
+                }]
+            }, {
+                "title": "Pedidos Manuales Fulfillment by Amazon (FBA)",
+                "icon": "csvfile",
+                "texts": [{
+                    "text": "Procese sus pedidos al por mayor directamente en BigBuy para ser enviados a Fulfillment by Amazon (FBA)."
+                }, {
+                    "text": "BigBuy preparará y enviará los pedidos con las etiquetas requeridas por Amazon."
+                }]
+            }]
+        }, {
+            "title": "Tienda dropshipping",
+            "items": [{
+                "title": "Tienda dropshipping sincronizada a BigBuy",
+                "icon": "prestashopfile",
+                "texts": [{
+                    "text": "La tienda dropshipping de BigBuy es la solución llave en mano donde ofrecemos, de forma integral, todas las necesidades de sincronización del catálogo, stocks, cálculo de portes, pedidos, tracking ID, etc."
+                }, {
+                    "text": "Es la solución más rápida y eficaz dado que, en apenas 2-3 días, puede disponer de un negocio online totalmente sincronizado a BigBuy e invertir su tiempo en vender y promocionar su ecommerce, en vez de dedicarlo a la tediosa parte técnica de sincronización. <a href='https://www.bigbuy.eu/es/tienda-dropshipping.html' class='link' >+info</a>"
+                }]
+            }]
+        }, {
+            "title": "Desarrolladores / Programadores",
+            "items": [{
+                "title": "API Pedidos",
+                "icon": "code",
+                "texts": [{
+                    "text": "Disponemos de una API para que desarrolladores y programadores puedan conectar su ecommerce, ERP, etc. y transferir, de forma automatizada, los pedidos a BigBuy.  <a href='https://www.bigbuy.eu/es/contact' class='link' >+info</a>"
+                }]
+            }, {
+                "title": "API Pedidos agrupados a una fecha",
+                "icon": "code",
+                "texts": [{
+                    "text": "Disponemos de una API para que desarrolladores y programadores puedan conectar su ecommerce, ERP, etc. y transferir a BigBuy, de manera automatizada, todos los pedidos que les van llegando en un solo pedido agrupado (teniendo en cuenta una fecha/hora límite de preparación)."
+                }, {
+                    "text": "Esta API está destinada a distribuidores que no tienen stock en su almacén y necesitan bloquear stock en BigBuy de la mercancía que van vendiendo para, finalmente, ejecutar en BigBuy un único pedido agrupado con toda la mercancía vendida (teniendo en cuenta la fecha/hora indicada por el distribuidor)."
+                }, {
+                    "text": "La ventaja principal de agrupar pedidos y enviarlos al almacén del distribuidor es que, una vez recibida la mercancía, puede expedir cada pedido a precios de transportista locales; la desventaja es que conlleva diversos costes: el envío a su almacén, los embalajes de cartón y relleno, el personal para la preparación, el seguimiento de envío y el mayor plazo de entrega para sus clientes. <a href='https://www.bigbuy.eu/es/contact' class='link' >+info</a>"
+                }]
+            }]
+        }]
+    }
+}

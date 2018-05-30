@@ -1,0 +1,37 @@
+{
+    "list": [{
+        "selected": "true",
+        "icon": "tienda360",
+        "title": "TIENDA DROPSHIPPING 360º",
+        "text": "Tienda dropshipping 360º desarrollada por BigBuy. Negocio digital, solución integral llave en mano."
+    }, {
+        "icon": "multichannel",
+        "title": "MULTI-CHANNEL INTEGRATION PLATFORM",
+        "text": "Plataforma que centraliza, gestiona y sincroniza todas las necesidades de su tienda dropshipping."
+    }, {
+        
+        "icon": "autorenew",
+        "title": "API, FTP, CSV, XML",
+        "text": "Descarga por FTP de archivos CSV/XML y acceso a la API de BigBuy."
+    }, {
+        "icon": "emarket",
+        "title": "EMARKETPLACE",
+        "text": "Venta en emarketplaces como eBay, Amazon, Cdiscount, Fnac, Carrefour, etc."
+    }, {
+        "icon": "chrono",
+        "title": "FLASH DEALS",
+        "text": "Webs de compra colectiva como Groupon, LetsBonus, Living Social, Vente-privee, etc."
+    }, {
+        "icon": "b2b",
+        "title": "ETAILERS (MINORISTAS ONLINE)",
+        "text": "Negocios online que compran grandes cantidades al por mayor."
+    }, {
+        "icon": "store",
+        "title": "MINORISTA O MAYORISTA TRADICIONAL",
+        "text": "Comercios, distribuidores o almacenistas, regalo promocional, venta directa, etc."
+    }, {
+        "icon": "calendar_alt",
+        "title": "VENTAS ESPORÁDICAS AL POR MAYOR",
+        "text": "Regalos de empresa, bodas, bautizos, fiestas, eventos, etc."
+    }]
+}

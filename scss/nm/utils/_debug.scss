@@ -1,0 +1,35 @@
+/*
+    DEBUG visualization tools 
+    Rules are at error state by default, only valid states override the error as there are 
+    far less valid rules than wrong ones.
+
+    Needs to set body class to debug to show.
+*/
+
+%errorstyle {
+    outline: 2px solid red;
+}
+
+%successtyle {
+    outline: none;
+}
+
+%revealstyle {
+    outline: 1px solid green;
+}
+
+@if debug { body.debug {
+    
+    select {
+        @extend %errorstyle;
+    }
+
+    select.form-select {
+        @extend %successtyle;
+    }
+
+    .modularGrid-module {
+        @extend %revealstyle;
+    }
+
+}}

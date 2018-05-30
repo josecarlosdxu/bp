@@ -1,0 +1,69 @@
+<section class="downloadsCSV u-brb">
+    <header class="downloadsCSV-header">
+        <h3 class="downloadsCSV-headerTitle">Descarga archivos DEMO</h3>
+        <img class="downloadsCSV-headerIcon"  src="../../img/mobileIcons/download-inverse.svg">
+
+    </header>
+    <div class="modularGrid">
+        <div class="modularGrid-module">
+        <div class="downloadsCSV-downloadBar" data-js-downloadCsv="bar" style="display: none;">
+
+           <!-- <button data-js-downloadCsv="buttonPanel" class="downloadsCSV-buttonPanel" >
+                    Descargar archivos
+                    <svg class="icon icon--inline icon--xs u-vb" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-caretDown"></use></svg>
+            </button>-->
+        {{> languagesCsvSelectList }}
+        </div>
+        <div class="msgBox msgBox--error u-mgt--6th u-hide">Debe seleccionar al menos un idioma y una familia</div>
+        </div>
+    </div>
+
+    <div class="modularGrid">
+        <div class="modularGrid-module u-xs-80 u-sm-pdl2">
+            <h4 class="downloadsCSV-sectionTitle">CSV</h4>
+            <div class="modularGrid">
+                <div class="modularGrid-module u-xs-25">
+                    <h5 class="downloadsCSV-elemTitle">CSV General</h5>
+                    <button class="downloadsCSV-elem" data-js-downloadCsv="elem">
+                        <img class="downloadsCSV-elemImg" src="../../img/draw_csv.svg">
+                        <img class="downloadsCSV-elemImg downloadsCSV-elemImg--alt" src="../../img/draw_csv_select.svg">
+                        <p class="downloadsCSV-elemText">Todo en un CSV</p>
+                        <p class="downloadsCSV-elemText downloadsCSV-elemText--alt">(Productos + combinaciones)</p>
+                    </button>
+                </div>
+                <div class="modularGrid-module u-xs-50">
+                    <h5 class="downloadsCSV-elemTitle">CSV para Prestashop*</h5>
+                    <button class="downloadsCSV-elem" data-js-downloadCsv="elem">
+                        <img class="downloadsCSV-elemImg" src="../../img/draw_csv.svg">
+                        <img class="downloadsCSV-elemImg downloadsCSV-elemImg--alt" src="../../img/draw_csv_select.svg">
+                        <p class="downloadsCSV-elemText">CSV Productos</p>
+                    </button>
+                    <button class="downloadsCSV-elem" data-js-downloadCsv="elem">
+                        <img class="downloadsCSV-elemImg" src="../../img/draw_csv.svg">
+                        <img class="downloadsCSV-elemImg downloadsCSV-elemImg--alt" src="../../img/draw_csv_select.svg">
+                        <p class="downloadsCSV-elemText">CSV Combinaciones</p>
+                        <p class="downloadsCSV-elemText downloadsCSV-elemText--alt">(Atributos: tallas, colores, pesos, etc.)</p>
+                    </button>
+                </div>
+                <div class="modularGrid-module u-xs-25">
+                    <h5 class="downloadsCSV-elemTitle">CSV de Categorías</h5>
+                    <button class="downloadsCSV-elem" data-js-downloadCsv="elem">
+                        <img class="downloadsCSV-elemImg" src="../../img/draw_csv.svg">
+                        <img class="downloadsCSV-elemImg downloadsCSV-elemImg--alt" src="../../img/draw_csv_select.svg">
+                        <p class="downloadsCSV-elemText">Todo en un CSV</p>
+                    </button>
+                </div>
+            </div>
+            <p class="downloadsCSV-explains">*Para clientes con pack mayorista Pro o superior, facilitamos en inglés y español un completo manual y video tutorial donde se explica con todo detalle la forma de importar el CSV manualmente en un entorno Prestashop</p>
+        </div>
+        <div class="modularGrid-module u-xs-20 u-brdl u-pdr2">
+            <h4 class="downloadsCSV-sectionTitle">XML</h4>
+            <h5 class="downloadsCSV-elemTitle">XML General</h5>
+            <button class="downloadsCSV-elem" data-js-downloadCsv="elem">
+                <img class="downloadsCSV-elemImg" src="../../img/draw_xml.svg">
+                <img class="downloadsCSV-elemImg downloadsCSV-elemImg--alt" src="../../img/draw_xml_select.svg">
+                <p class="downloadsCSV-elemText">Todo en un XML</p>
+            </button>
+        </div>
+    </div>
+</section>

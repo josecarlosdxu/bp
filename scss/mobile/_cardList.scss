@@ -1,0 +1,367 @@
+$cardListTematicsMargin:0.8rem;
+@include block(cardList) {
+    display: flex;
+    flex-wrap: wrap;
+    @include element(more) {
+        @extend .cardElem-more;
+    }
+    @include element(title) {
+        color: currentColor;
+        text-decoration: none;
+        align-content: center;
+        color: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        height: 6rem;
+        line-height: 1.15;
+        padding-bottom: 0.25rem;
+        padding-left: 1.5rem;
+        width: calc(100% - 5rem);
+        @include addBreakpoint(sm) {
+            font-family: "Roboto Condensed", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1.1;
+            font-size: $um;
+            margin: 0;
+            width: auto;
+            padding: 0;
+            display: inline-block;
+        }
+    }
+    @include element(titleCont) {
+        background: $color-lightGrey-light;
+        height: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: none;
+        box-shadow: 0 0 0 1px $color-shadow;
+        &:nth-of-type(1) {
+            margin-top: $um;
+        }
+        @include addBreakpoint(sm) {
+            align-items: baseline;
+            display: flex;
+            height: 4.5rem;
+            padding-left: 0.5em;
+            padding-top: $um;
+            background: transparent;
+            box-shadow: none;
+            margin: 0;
+            &:nth-of-type(1) {
+                margin-top: 0;
+            }
+        }
+        .cardElem-mobilebtn {
+            align-items: center;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border: none;
+            box-shadow: -1px 0 $color-shadow;
+            color: #000000;
+            display: flex;
+            font-size: 0;
+            height: 6rem;
+            justify-content: center;
+            margin: 0;
+            order: 2;
+            outline: none;
+            position: relative;
+            width: 5rem;
+            @include addBreakpoint(sm) {
+                display: none;
+            }
+        }
+        .cardList-more {
+            width: 100%;
+            // display: block;
+            @include addBreakpoint(sm) {
+                margin-left: 2rem;
+                width: auto;
+            }
+        }
+    }
+}
+
+@include extendBlock(cardList, skew) {
+    justify-content: space-around;
+    align-content: space-between;
+    background: $color-shadow;
+    padding-top: 1px;
+    @include element(item) {
+        width: 100%;
+        background: white;
+        margin-bottom: 1px;
+        @include addBreakpoint(md) {
+            width: calc(50% - 1px);
+            &:nth-child(odd) {
+                box-shadow: 1px 0 transparentize(black, 0.8) inset;
+            }
+        }
+    }
+}
+
+@include extendBlock(cardList, categories) {
+    //background: $color-shadow;
+    padding: 0;
+    padding-top: 1.4rem;
+    padding-bottom: 1.6rem;
+    align-items: flex-start;
+    justify-content: center;
+    @include element(item) {
+        display: flex;
+        margin-top: 0;
+        //box-shadow: 0 0 0 1px $color-shadow; ///// apiDropshipping mobile portrait
+        padding: 0 0.75rem;
+        padding: 0;
+        width: calc(100% - 30px);
+        margin: 0;
+        @include addBreakpoint(sm) {
+            box-shadow: none;
+            margin-bottom: 1.75rem;
+        }
+        @include addBreakpoint(md) {
+            width: calc(100% / 2 - 22px);
+            margin-left: 15px;
+        }
+        /*@include addBreakpoint(md) {
+            margin-left: 0;
+            width: calc(100% / 3 - 5px);
+            // background: white;
+        }*/
+        @include addBreakpoint(lg) {
+            width: calc((100% / 3) - (2rem / 3));
+            margin-left: 0;
+            margin-top: 1rem;
+            //background: transparent;
+            // margin-bottom:1.75rem;
+        }
+    }
+    @include element(more) {
+        // font-size: 0;
+    }
+    @include addBreakpoint(md) {
+        justify-content: flex-start;
+        //padding: 0 2px 3px;
+    }
+    @include addBreakpoint(lg) {
+        justify-content: space-between;
+        padding-top: 1.4rem;
+        padding-bottom: 1.6rem;
+    }
+}
+
+@include extendBlock(cardList, col_3) {
+    justify-content: space-around;
+    padding: 0;
+   
+    @include element(item) {
+        width: 100%;
+        display: block;
+        padding: 0.5rem 1rem;
+        
+        @include addBreakpoint(md) {
+            display: block;
+            width: calc(100% / 2 - 0.75rem);
+            margin-bottom: $um; 
+            font-size: $um;
+            padding: 0;
+            @include modifier(col_2) {
+                width: 100%;
+                
+            }
+        }
+        @include addBreakpoint(lg) {
+            display: block;
+            width: calc(100% / 3 - 0.75rem);
+            margin-top: 1rem;
+            font-size: $um;
+            padding: 0;
+            margin-bottom: 0;
+            @include modifier(col_2) {
+                width: calc(100% / 1.5 - 0.333rem);
+                max-width: 100%;
+            }
+        }
+    }
+    @include addBreakpoint(md) {
+        justify-content: space-between;
+        padding:0 1rem;
+        
+    }
+   
+     @include addBreakpoint(lg) {
+       // padding:0;
+        
+    }
+}
+
+@include extendBlock(cardList, tags) {
+    justify-content: space-between;
+    @include element(item) {
+        width: calc((100% / 4) - (4rem / 4));
+        margin-right: 0;
+        margin-bottom: 1.3rem;
+    }
+}
+
+.cardList--tags[data-js-tag-slider="slide"] {
+    //position: absolute;
+    //top: 1.25rem;
+    left: 0;
+    width: 100%;
+    display: block;
+    background: darken($color-lightGrey-light, 5%);
+    box-shadow: 0 2rem darken($color-lightGrey-light, 5%), 0 -21rem darken($color-lightGrey-light, 5%);
+    -webkit-animation: hide 0.3s ease-in-out both;
+    animation: hide 0.3s ease-in-out both;
+    //@include addBreakpoint(md) {
+    // left:1.5rem;
+    padding: 0 0.8rem;
+    //}
+    @include addBreakpoint(lg) {
+        left: 0;
+        padding: 0 0 0 0.8rem;
+    }
+    .cardList-item {
+        display: inline-block;
+        margin-bottom: 0.6rem;
+        margin-right: 0.8rem;
+        margin-bottom: 0.8rem;
+        vertical-align: top;
+        width: 100%;
+        @include addBreakpoint(sm) {
+            width: calc(100% / 2 - 0.8rem / 2);
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+        @include addBreakpoint(md) {
+            width: calc(100% / 3 - 2.4rem / 3);
+            &:nth-child(2n+2) {
+                margin-right: $cardListTematicsMargin;
+            }
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+        }
+        @include addBreakpoint(lg) {
+            width: calc(100% / 4 - 3.2rem / 4);
+            //max-width: 24rem;
+            &:nth-child(3n+3) {
+                margin-right: $cardListTematicsMargin;
+            }
+            &:nth-child(4n+4) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.cardList--tags[data-js-active="true"] {
+    -webkit-animation: show 0.3s ease-in both;
+    animation: show 0.3s ease-in 0.2s both;
+}
+
+.cardList--tags[data-js-tag-slider="slideout"] {
+    background: url("../../img/tags_bg.png");
+    background-position: 0 -1.5rem;
+    .cardList-item {
+        display: none;
+    }
+}
+
+@include extendBlock(cardList,
+shoppingcart) {
+    @include element(item) {
+        width: 100%;
+        margin: $um / 2;
+        margin-bottom: 0;
+        padding: 0;
+        @include addBreakpoint(md) {
+            width: calc(100% / 2 - 0.75rem);
+            margin: $um / 2 $um / 2 0 0;
+        }
+        @include addBreakpoint(lg) {
+            width: calc(100% / 3 - 0.75rem);
+        }
+    }
+}
+
+@include extendBlock(cardList,
+secundary) {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    @include addBreakpoint(sm) {
+        height: auto;
+        padding-top: 1px;
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        height: 6px;
+        left: 3px;
+        pointer-events: none;
+        position: absolute;
+        width: calc(100% - 3px);
+        z-index: 1;
+    }
+    &:before {
+        background: linear-gradient($color-shadow, transparent);
+        top: 0;
+    }
+    &:after {
+        background: linear-gradient(transparent, $color-shadow);
+        bottom: 0;
+    }
+    @include addBreakpoint(sm) {
+        &:before,
+        &:after {
+            display: none;
+        }
+        justify-content: flex-start;
+        width: calc(100% + 3rem);
+        overflow: hidden;
+        padding-left: 0.5rem;
+    }
+    @include element(item) {
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 0 0 1px $color-shadow, 3px 0 $color-more inset;
+        @include addBreakpoint(sm) {
+            width: 18.06666rem;
+            margin-bottom: 0.9rem;
+            margin-right: 0.9rem;
+            box-shadow: none;
+        }
+        @include addBreakpoint(md) {
+            margin-right: calc(100vw / 3 - (100vw / 3 - 2rem));
+            margin-bottom: calc(100vw / 3 - (100vw / 3 - 2rem));
+            width: calc(100% / 3 - 2.1rem);
+        }
+        @include addBreakpoint(lg) {
+            margin-right: calc(100vw / 4 - (100vw / 4 - 2rem));
+            margin-bottom: calc(100vw / 4 - (100vw / 4 - 2rem));
+            width: calc(100% / 4 - 2.1rem);
+        }
+        @include addBreakpoint(xl) {
+            width: calc(100% / 5 - 1.1rem);
+            margin-bottom: 0.95rem;
+            margin-right: 0.95rem;
+        }
+    }
+}
+
+.cardList-titleCont.families-item--selected {
+    box-shadow: 0 0 0 1px $color-shadow, 3px 0 $color-more inset;
+    @include addBreakpoint(sm) {
+        box-shadow: none;
+    }
+    +.cardList.cardList--secundary {
+        height: auto;
+    }
+}

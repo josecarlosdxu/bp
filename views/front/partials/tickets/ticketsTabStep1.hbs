@@ -1,0 +1,28 @@
+<div class="modularGrid">
+    <div class="modularGrid-module">
+
+      <div class="shoppingCartStep-content">
+        <form action="" class="form">
+            <fieldset class="form-fieldset form-fieldset--borderless">               
+
+              <div class="modularGrid">
+
+                {{>fileUpload2  label='Fotografía del embalaje exterior' optional='tooltip_golpes' }}
+                {{>fileUpload2  border='true' label='Fotografía de la caja abierta' optional='tooltip_abierta'}}
+                {{>fileUpload2  border='true' label='Fotografía de la etiqueta adherida' optional='tooltip_etiqueta'}}
+
+                {{>fileUpload2  border='true' label='Escaneo o fotografía del albarán' optional='tooltip_albaran'}}
+
+              </div>
+              <div class="modularGrid-module  u-xs-50 u-flr u-tar">
+                    <p class="form-label--optional">Tamaño de archivos adjuntos <span>5.00 Mb</span> de 10.00 Mb</p>
+                  <div class="progressBar progressBar--tiny u-xs-70"><span class="progressBar-meter" style="width:33%;"></span></div>
+                </div>
+            </fieldset>
+        </form>
+      </div>
+       <div class="shoppingCartStep-action u-mgt">
+          <button class="button button--primary">Continuar</button>
+        </div>
+  </div>
+</div>

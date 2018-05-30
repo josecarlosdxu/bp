@@ -1,0 +1,21 @@
+<div class="banner bannerBlue banner--horizontal u-mgb">
+            <div class="modularGrid u-pdb">
+                <div class="modularGrid-module u-md-50">
+                    <h3 class="banner-caption">{{caption}}</h3>
+                    <h2 class="banner-header u-mgb2">{{{header}}}</h2>
+
+
+                    <ul class="banner-list">
+
+                        {{#each list}}
+                        <li class="banner-listitem">{{text}}</li>
+                      
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <div class="modularGrid-module u-md-50 u-tac u-mgt--half u-vb">
+                    <img src="../../img/banners/{{image}}.svg" class="u-xxs-70 u-sm-60 u-md-80 u-lg-65">
+                </div>
+            </div>
+        </div>

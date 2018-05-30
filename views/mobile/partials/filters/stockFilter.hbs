@@ -1,0 +1,31 @@
+<fieldset class="form-fieldset--sequential u-md-50 ">
+	<h4 class="filter-title">Stock</h4>
+
+	<div class="modularGrid">
+
+		<div class="modularGrid-module">
+		    
+	
+
+
+
+
+	<label for="stockInput" class="form-label">A partir de</label>
+	
+	<input class="filter-range u-mw-100" name="stock" id="stockInput" value="30" min="1" max="1000" oninput="stockOutput.value = '+'+stockInput.value" type="range">
+<div class="u-flex--center u-pdt">
+
+	<input class="form-input form-input--number u-xs-20 u-mgb--min" name="outputName" id="stockOutput" value="+30" onchange="stockInput.value = stockOutput.value; stockOutput.value = '+'+stockInput.value" type="text"><label class="form-label u-mgl--half">uds.</label>
+</div>
+
+	</div>
+		</div>
+	    
+
+	
+</fieldset>
+
+
+
+
+			

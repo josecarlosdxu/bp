@@ -1,0 +1,86 @@
+---
+title: Contacte con nosotros
+breadcrumbs: Contacte con nosotros
+layout: mobile/layouts/clean.hbs
+---
+
+
+<div class="mobileNavBar mobileNavBar--alt">
+    <div class="modularGrid modularGrid--boxed u-pdt--half u-pdb">
+        <img src="../../img/comercial_mail2.svg" class="u-mgr u-mgt--half"><img src="../../img/comercial_phone2.svg" class="u-mgr u-mgt--half">
+        </div>
+    </div>
+</div>
+
+
+<div class="modularGrid modularGrid--boxed u-pdb">
+    <div class="modularGrid-module">
+        <h2 class="mobileTabs-titleTabs">Área de Contacto</h2>
+    </div>
+    <div class="modularGrid-module">
+        <nav class="mobileTabs">
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header class="mobileTabs-itemHeader mobileTabs-itemHeader--pb mobileTabs-itemHeader--selected">
+                    <div class="modularGrid-module mobileTabs-itemHeader--arrow">
+                        {{>svgIcon type='support_person' class='mobileTabs-itemHeader--svg'}}
+                        <h4 class="mobileTabs-itemTitle u-pdt--half u-pdb">Atención al cliente</h4>
+                    </div>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding mobileTabs-itemContent--selected ">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module u-pd">
+                        {{>tabTickets01}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                 <header class="mobileTabs-itemHeader mobileTabs-itemHeader--pb">
+                   <div class="modularGrid-module mobileTabs-itemHeader--arrow">
+                        {{>svgIcon type='support' class='mobileTabs-itemHeader--svg'}}
+                        <h4 class="mobileTabs-itemTitle u-pdt--half u-pdb">Logística y Postventa</h4>
+                    </div>
+                </header>
+                <section  class="mobileTabs-itemContent  nopadding">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                 <header  class="mobileTabs-itemHeader mobileTabs-itemHeader--pb">
+                    <div class="modularGrid-module mobileTabs-itemHeader--arrow">
+                        {{>svgIcon type='soporte' class='mobileTabs-itemHeader--svg'}}
+                        <h4 class="mobileTabs-itemTitle u-pdt--half u-pdb">Soporte técnico</h4>
+                    </div>
+                </header>
+                <section  class="mobileTabs-itemContent nopadding">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header class="mobileTabs-itemHeader mobileTabs-itemHeader--pb">
+                   <div class="modularGrid-module mobileTabs-itemHeader--arrow">
+                         {{>svgIcon type='administracion' class='mobileTabs-itemHeader--svg'}}
+                        <h4 class="mobileTabs-itemTitle u-pdt--half u-pdb">Administración</h4>
+                    </div>
+                </header>
+                <section class="mobileTabs-itemContent nopadding">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </nav>
+    </div>
+
+
+</div>

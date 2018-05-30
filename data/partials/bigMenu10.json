@@ -1,0 +1,83 @@
+{
+  "bigmenu": {
+    "header": [
+      {
+        "title": "Ropa y calzado",
+        "sectionID": "110",
+        "modifier": "bigMenu-sectionItem--submenu"
+      },
+      {
+        "title": "Complementos",
+        "sectionID": "111",
+        "modifier": "bigMenu-sectionItem--submenu"
+      },
+      {
+        "title": "Bisutería",
+        "sectionID": "112",
+        "modifier": "bigMenu-sectionItem--submenu"
+      }
+    ],
+    "categories": [
+      {
+        "sectionID": "110",
+        "subcategories": [
+          {
+            "name": "Ropa interior"
+          },
+          {
+            "name": "Pijamas y batamantas"
+          },
+          {
+            "name": "Juegos educativos y de habilidad"
+          },
+          {
+            "name": "Otras prendas"
+          },
+          {
+            "name": "Calzado y accesorios"
+          }
+        ]
+      },
+      {
+        "sectionID": "111",
+        "subcategories": [
+          {
+            "name": "Gafas de sol"
+          },
+          {
+            "name": "Bolsos y carteras"
+          },
+          {
+            "name": "Paraguas"
+          },
+          {
+            "name": "Gorros, bufandas y otros"
+          },
+          {
+            "name": "Relojes y pulseras"
+          }
+        ]
+      },
+      {
+        "sectionID": "112",
+        "subcategories": [
+          {
+            "name": "Anillos"
+          },
+          {
+            "name": "Pulseras"
+          },
+          {
+            "name": "Collares "
+          },
+          {
+            "name": "Pendientes"
+          },
+          {
+            "name": "Conjuntos de bisutería"
+          }
+        ]
+      }
+    ]
+  }
+}

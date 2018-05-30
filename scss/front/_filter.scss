@@ -1,0 +1,368 @@
+$rangeProgressColor: #4A5056;
+$rangeDefaultColor: #DCDDDF;
+$rangeDefaultColor: #4A5056;
+$rangeProgressColor: #DCDDDF;
+
+
+%filterSection {
+    background-color: white; //border: 1px solid $filterBorderColor;
+    box-shadow: 0 0 1px transparentize(black, 0.75);
+    width: 100%;
+}
+
+%filterOptionFocus {
+    transition: background 0.1s, color 0.1s;
+    &:hover,
+    &:focus {
+        background: transparentize($color-accentBlue-default, 0.9);
+        color: $color-accentBlue-dark;
+    }
+}
+
+@include block(filter) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 0;
+    width: calc(100% / 7 - 0.51rem);
+    line-height: 1.2; //position: relative;
+    margin-right: $filterMarginRight;
+    margin-bottom: 0.5rem;
+    @include element(list) {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% + 0.4rem);
+        padding-bottom: $um / 3;
+        position: relative;
+        left: 0;
+        z-index: 2;
+    }
+    @include element(headerTitle) {
+        @extend %filterSection;
+        height: $filterHeight;
+        padding: 0 1.5rem 0 0.75rem;
+        line-height: 1;
+        align-items: center;
+        display: flex;
+        font-size: 0.9rem;
+        background: white url("../img/icons/caretDown.svg") no-repeat;
+        background-position: right 60%;
+        background-position: calc(100% - 0.2rem) 60%;
+        border-radius: 2px;
+        position: relative;
+        box-shadow: 0 0 0 1px transparentize(black, 0.85);
+
+        @include addBreakpoint(lg) {
+            font-size: 1rem;
+        }
+    }
+    @include element(body) {
+        @extend %filterSection;
+        @extend %closeTransition;
+        min-width: calc(100% / 7 - 0.5rem);
+        width: auto;
+        padding: 0.25rem 1rem 1rem;
+        padding: 0;
+        position: absolute;
+        top: $filterHeight + 5px; //left: 0;
+        font-size: 1rem;
+        border-radius: 0 0 2px 2px;
+        border-top: none;
+    }
+    .inputToggle:checked~.filter-headerTitle {
+        border-radius: 2px 2px 0 0;
+        background-image: url("../img/icons/caretUp.svg");
+        box-shadow: 0 6px white, 0 0 1px transparentize(black, 0.75);
+        z-index: 1;
+    }
+    &:after {
+        visibility: visible;
+    }
+    .inputToggle:checked~.filter-body {
+       
+
+       transform: scaleY(1);
+       height: auto;
+       opacity: 1;
+       transition: opacity 0.1s;
+
+
+    }
+    @include element(checkbox) {
+        @extend .form-checkbox;
+
+        position: static;
+        width: 1.2rem;
+    }
+    @include element(option) {
+        //@extend %filterOptionFocus;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+    @include element(scrollpanel) {
+        max-height: 7.5rem;
+        height: auto;
+        margin-top: -0.5rem; // border-top: 1px solid $color-shadow;
+        overflow-y: auto;
+        overflow-x: hidden;
+        /*.filter-option:nth-child(odd) {
+            @extend %filterOptionFocus;
+            background: transparentize(black, 0.98);
+        }*/
+        //margin: 0.75rem;
+    }
+    @include element(label) {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        line-height: 1.1;
+    }
+    @include element(colorlabel) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0.5rem;
+        &:hover,
+        &:focus {
+            >.filter-colorItem {
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+                &:before {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    @include element(colorItem) {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        pointer-events: none;
+        &:before {
+            content: "";
+            width: 0.6rem;
+            height: 0.4rem;
+            border-bottom: 2px solid currentColor;
+            border-left: 2px solid currentColor;
+            display: block;
+            transform: rotate(-45deg);
+            position: relative;
+            top: -1px;
+            opacity: 0;
+            transition: opacity 0.1s;
+        }
+    }
+    @include element(colorInput) {
+        &:checked+.filter-colorlabel>.filter-colorItem {
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4) inset;
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    @include element(bodyLabel) {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        cursor: default !important; //-webkit-animation: show 0.6s ease-in-out 0.1s both;
+        //animation: show 0.6s ease-in-out 0.1s both;
+       
+    }
+    @include element(title) {
+        padding: 0.25rem 0.75rem;
+        font-weight: 400;
+        font-size: 0.95em;
+    }
+    @include element(range) {
+        display: block;
+        padding: 1rem 1rem 1.5rem 0.7rem;
+        min-width: 100%;
+    }
+}
+
+.filter-bodyLabel[data-active="true"] {
+    //transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+    pointer-events: auto;
+
+
+
+   ~ .filter-deactivate .filter-headerTitle {
+        //transition: background-color 0.4s ease-in-out;
+        background-color: #BFBFBF;
+    }
+
+
+
+
+
+    /* transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+    pointer-events:auto;*/
+}
+
+.filter-headerTitle::selection {
+    background: white;
+}
+
+.filter-headerTitle::-moz-selection {
+    background: white;
+}
+
+.filter-checkbox+.filter-label {
+    padding: 0.75rem 0.5rem 0.75rem 0.35rem;
+}
+
+@include extendBlock(filter,
+locked) {
+    height: $filterHeight;
+    width: $filterWidth;
+    background: red;
+    border-radius: 3px;
+}
+
+@include extendBlock(filter,
+deselect) {
+
+    @include element(headerTitle) {
+        background-color: rgb(200, 200, 200);
+    }
+}
+
+
+
+@include extendElement(filter,
+body,
+range) {
+    width: $filterWidth * 1.25;
+    border-radius: 0 0 2px 2px;
+    top: $filterHeight + 5px; //border-top: 1px solid $filterBorderColor;
+    /*  &:after {
+        content: "";
+        width: 100%;
+        height: 7px;
+        display: block;
+        background: white;
+        position: absolute;
+        top: -7px;
+        left: 0;
+        z-index: 1;
+        width: 123px;
+        //border-left: 1px solid $filterBorderColor;
+        //border-right: 1px solid $filterBorderColor;
+        //box-shadow: 1px 0 $filterBorderColor, -1px 0 $filterBorderColor;
+    }*/
+}
+
+@include extendElement(filter,
+body,
+xtraRange) {
+    @extend .filter-body--range;
+    width: calc(100% - 0.61rem);
+    top: $filterHeight + 5px;
+    padding: 1rem 0 0;
+    left: 0;
+    border-radius: 0 0 2px 2px;
+    &:after {
+        display: none;
+    }
+    @include element(option) {
+        display: inline-flex;
+        width: calc(100% / 4 - 0.2rem); //flex-wrap: wrap;
+    }
+    @include element(label) {
+        display: flex;
+    }
+}
+
+@-moz-document url-prefix() {
+    .filter-checkbox {
+        margin: 0;
+    }
+    /*.filter-body--range::after {
+        width: 123px;
+    }*/
+    .filter:nth-child(4n+4) .filter-body:not(.filter-body--xtraRange) {
+        min-width: calc(100% / 7 - 0.45rem);
+    }
+    .filter-body--xtraRange {
+        width: calc(100% - 0.61rem);
+    }
+}
+
+@media only screen and (min-height: 780px) {
+    .filter-scrollpanel {
+        max-height: 17rem;
+    }
+}
+
+.filter[data-js-filter="filter"] {
+    z-index: -1;
+}
+ /*.filter-body{ 
+
+input[type=range]::-webkit-slider-runnable-track {
+
+    background-image: linear-gradient(to right,  $rangeDefaultColor var(--sizerbglimit), $rangeProgressColor var(--sizerbglimit));
+    
+   
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+   
+    background-image: linear-gradient(to right,  $rangeDefaultColor var(--sizerbglimit), $rangeProgressColor var(--sizerbglimit));
+}
+
+
+
+}*/
+
+
+
+
+/*.filter[data-js-filter="filter"][style="z-index: 2;"] {
+    opacity: 1;
+}*/
+
+.no-flexbox {
+    .filter-list {
+        display: block;
+
+        font-size: 0;
+    }
+
+    .filter-label {
+        display: block;
+        &:before {
+            display: inline-block;
+        }
+    }
+
+
+    .filter {
+        display: inline-block;
+        font-size: 1rem;
+    }
+    .filter-headerTitle {
+        display: block;
+        padding-top: 0.75rem;
+    }
+
+    .filter-body--xtraRange .filter-option {
+        display: inline-block;
+        width: auto;
+        min-width: calc(100% / 4 - 0.2rem);
+    }
+}

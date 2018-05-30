@@ -1,0 +1,51 @@
+<li class="featuredSlider-item">
+  <div class="homeslider-boxed">
+    <aside class="homeslider-message">
+      <p class="homeslider-texts{{#if alt}} homeslider-texts--alt{{/if}}">
+       {{text1}}
+       {{#if text2}}<br>{{text2}}{{/if}}
+       {{#if text3}}<br>{{text3}}{{/if}}
+     </p>
+     {{#if subtitle1}}
+     <p class="homeslider-subtitles">
+       {{subtitle1}}
+       {{#if subtitle2}}<br>{{subtitle2}}{{/if}}
+       {{#if subtitle3}}<br>{{subtitle3}}{{/if}}
+     </p>
+     {{/if}}
+     <button class="button button--primary homeslider-button" title="{{buttontext}}">{{buttontext}}</button>
+   </aside>
+   {{#if svgImg}}
+   <img src="../../img/banners/{{svgImg}}.svg" class="homeslider-svgimg" >
+   {{/if}}
+
+   {{#if svgImgAlt}}
+   <picture class="homeslider-svgimg homeslider-svgimg--alt">
+    <source  media="(min-width: 1200px)" srcset="../../img/banners/{{svgImgAlt}}.svg"/>
+    <source srcset="../../img/banners/{{svgImgAlMobile}}.svg" media="(min-width: 1024px)" />
+    <source srcset="../../img/banners/{{svgImgAlMobile}}.svg" media="(min-width: 300px)" />
+    <img src="../../img/banners/{{svgImgAlt}}.svg"  width="100%" />
+  </picture>
+
+
+
+  {{/if}}
+
+</div>
+
+{{#if img}}
+
+<picture class="homeslider-img">
+  <source  media="(min-width: 1200px)" srcset="../../img/banners/{{img}}.jpg"/>
+  <source srcset="../../img/banners/{{imgTablet}}.jpg" media="(min-width: 1024px)" />
+  <source srcset="../../img/banners/{{imgMobile}}.jpg" media="(min-width: 300px)" />
+  <img src="../../img/banners/{{img}}.jpg"  />
+</picture>
+{{/if}}
+
+
+{{#if pngImg}}
+<img src="../../img/banners/{{pngImg}}.png" class="homeslider-img">
+{{/if}}
+
+</li>

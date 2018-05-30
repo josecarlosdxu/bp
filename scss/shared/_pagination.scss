@@ -1,0 +1,8 @@
+@include block(pagination) {   
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: $um;
+    @include element(item) {
+        padding: $um / 2 ;
+    }
+}

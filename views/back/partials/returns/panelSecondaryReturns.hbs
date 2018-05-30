@@ -1,0 +1,82 @@
+<div class="panel panel--secondary panel--inactive" data-js-panel-name="panel02" data-js-panel-state="inactive">
+  <div class="panel-title">
+    <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-wallet"/></svg>
+    <div class="panel-titleName">
+      <a class="panel-breadcrumbLink" href="">Devoluciones</a>
+      <a class="panel-breadcrumbLink" href="">DEV0728934</a>
+    </div>
+</div>
+
+<div class="panelHeader">
+  <nav class="panel-tabs">
+    <button data-paneltabbtn="tabA" class="panel-tabs-item panel-tabs-item--active">
+      Productos a devolver
+    </button>
+    <button data-paneltabbtn="tabB" class="panel-tabs-item">
+      Datos de recogida
+    </button>
+    <button class="button button--condensed  button--primary u-mgl--half" data-js-productReturns="button">Añadir producto</button>
+  </nav>
+
+</div>
+
+<div class="panel-content fixedTableContent">
+  <div id="tabA" class="fixedTableContent-tableContent fixedTableContent-tableContent--fullWidth">
+    {{> tableProductsReturns }}
+  </div>
+  <div id="tabB" class="" style="display:none;">
+    {{> tableDataReturns }}
+  </div>
+
+</div>
+<aside data-js-menupanel_idpanel="1" data-js-menupanel="panel" class="menuPanel   " style="left: 124.4px;">
+  <form class="form">
+    <fieldset class="form-fieldset form-fieldset--sequential">
+      <h3 class="form-fieldset-title u-pdb--half">Retirar fondos de su monedero</h3>
+      <div class="modularGrid">
+        <div class="modularGrid-module  u-md-50">
+          <label class="form-label">Id. Producto</label>
+          <input type="text" class="form-input form-input--postfix form-input--number">
+        </div>
+        <div class="modularGrid-module  u-md-50 u-pdl">
+          <label class="form-label">Referencia</label>
+          <input type="text" class="form-input form-input--postfix form-input--number">
+        </div>
+      </div>
+      <div class="modularGrid">
+        <div class="modularGrid-module">
+          <label class="form-label">Producto</label>
+          <input type="text" class="form-input form-input--postfix form-input--number">
+        </div>
+      </div>
+      <div class="modularGrid">
+        <div class="modularGrid-module ">
+          <label class="form-label">Incidencia</label>
+          <input type="text" class="form-input ">
+        </div>
+        <div class="modularGrid-module">
+          <label class="form-label">Descripción</label>
+          <input type="text" class="form-input ">
+        </div>
+      </div>
+      <div class="modularGrid">
+        <div class="modularGrid-module  u-md-20">
+          <label class="form-label">Unidades</label>
+          <input type="text" class="form-input form-input--postfix form-input--number">
+        </div>
+        <div class="modularGrid-module  u-md-30 u-pdl">
+          <label class="form-label">Precio</label>
+          <input type="text" class="form-input form-input--postfix form-input--number">
+          <span class="form-postfix">€</span>
+        </div>
+      </div>
+      <div class="modularGrid">
+        <div class="modularGrid-module u-md-30">
+          <button class="button button--full button--primary u-mgt--half">Enviar</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</aside>
+{{>backButton datapanel='toggletab'}}
+</div>

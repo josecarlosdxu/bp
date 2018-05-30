@@ -1,0 +1,40 @@
+---
+layout: front/layouts/landing.hbs
+title: Soluciones
+---
+<section class="content content--full">
+	{{>solucioneshero  apiSoluciones.hero}}
+</section>
+<section class="content content--light u-pdv2">
+	{{>solucionessupertitle  apiSoluciones.supertitle}}
+
+	<div class="modularGrid modularGrid--boxed">
+
+		<div class="modularGrid-module bannerBlue u-pdh u-mgv2 u-pdb">
+			{{>solucionesbanner  apiSoluciones.banner1}}
+			{{>solucionessection1 apiSoluciones.tiendas}}
+			{{>solucionessection1 apiSoluciones.marketplaces}}
+			<aside class="panel-container panel-container--col2 u-pdh2 u-pdt u-pdb2">
+				{{>solucionessection apiSoluciones.flash}}
+				{{>solucionessection apiSoluciones.etailers}}
+			</aside>
+		</div>
+		<div class="modularGrid-module modularGrid-module bannerBlue u-pdh u-mgv2 u-pdb">
+
+	{{!-- </div>
+
+
+	<div class="modularGrid bannerBlue modularGrid--boxed u-pd u-mgv2"> --}}
+		{{>solucionesbanner  apiSoluciones.banner2}}
+		<aside class="panel-container panel-container--col3 u-pdh2  u-pdv2">
+			{{>solucionessection apiSoluciones.almacenistas}}
+			{{>solucionessection apiSoluciones.tradicional}}
+			{{>solucionessection apiSoluciones.esporadicas}}
+		</aside>
+	</div>
+</div>
+</section>
+
+
+
+{{>apiDropshippingMessage}}

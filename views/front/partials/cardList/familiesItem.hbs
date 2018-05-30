@@ -1,0 +1,19 @@
+
+
+{{!-- {{>menuListLabel src=this.itemName modifiers=this.modifiers title=this.title }} --}} 
+  {{#if subcategories}}
+      <li class="families-item" data-js="mobileFamily">
+      <a class="families-title" href="#">{{{title}}} <span class="cardElem-more">Ver todos</span></a>
+      <button class="cardElem-mobilebtn" data-js="openMobileSubCategory"></button>
+      <nav class="families-subcategories">
+      {{#each subcategories}}
+          <a href="#" class="families-item">{{{name}}}<img src="{{{image}}}" alt="" class="families-img"></a>
+      {{/each}}
+      </nav>
+  {{else}}
+      <li class="families-item">
+      <a class="families-title families-title--full" href="#">{{{title}}} <span class="cardElem-more">Ver todos</span></a>
+  {{/if}}
+</li>
+
+

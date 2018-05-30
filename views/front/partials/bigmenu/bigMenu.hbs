@@ -1,0 +1,57 @@
+<div class="bigMenu">
+    {{#if families}}
+    <ul class="bigMenu-sections" data-depth="1">
+        {{#each families}}
+
+        
+
+
+
+        
+
+        
+   
+      
+        
+       
+
+       <li class="bigMenu-category{{#if ../subsectionSelected}}{{#if_eq ../../subsectionSelected  itemId}} selected{{/if_eq}}{{/if}}"> 
+                
+            <a href="#" title="{{title}}" class="bigMenu-sectionItem {{modifier}}">{{title}}</a>             
+            <div class="bigMenu-subSections">
+                {{#if subcategories}}
+                <nav class="bigMenu-subcategories" data-depth="2">
+                    {{#each subcategories}}                  
+                    <a href="#" class="bigMenu-item nav-item" data-depth="2">{{name}}</a>
+                    <figure class="bigMenu-imgcont" data-depth="2">
+                        <img data-src="{{image}}" src="" alt="" class="bigMenu-image bigMenu-subsectionImage--secundary"> 
+                    </figure>
+                    {{/each}}
+                </nav>
+                {{/if}}
+                <a href="#" class="bigMenu-subcategoryTitle">{{title}} <span class="cardElem-more--menu">VER TODO</span></a>
+                {{#if subtitle}}
+                <h4 class="bigMenu-categorySubTitle">{{subtitle}}</h4>
+                {{/if}}
+                <figure class="bigMenu-imgcont" data-depth="1">
+                    <img data-src="{{image}}"  src="" alt="" class="bigMenu-image"> 
+                </figure> 
+            </div> 
+        </li>
+        {{/each}}
+        
+    </ul>
+    {{/if}}
+    {{#if principal}}
+    <section class="bigMenu-categorySection{{#unless hidePrincipal}} bigMenu-categorySection--show {{/unless}}" data-js-bigmenu="principal">
+        <div class="bigMenu-categoryTexts">
+            <h3 class="bigMenu-categoryTitle">{{principal.title}}</h3>
+            <h4 class="bigMenu-categorySubTitle">{{principal.subtitle}}</h4>
+        </div>
+        <figure class="bigMenu-imgcont" data-depth="0">
+            <img src="{{principal.image}}" alt="{{principal.title}}" class="bigMenu-image"/> 
+        </figure>
+    </section>
+    {{/if}}
+</div>
+

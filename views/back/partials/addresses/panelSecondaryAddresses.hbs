@@ -1,0 +1,22 @@
+<div class="panel panel--secondary panel--inactive" data-js-panel-name="panel02" data-js-panel-state="inactive">
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-addresses"></use></svg>
+        <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Dirección de entrega</a> / 29202274W</div>
+        <div class="panel-actions">
+            <button class="menuPanel-button" id="btnToggleForm"><i class="icon form-action-icon fa-pencil"></i>Modificar</button>
+            <button class="menuPanel-button"><i class="icon form-action-icon fa-times"></i>Borrar</button>
+            <button class="menuPanel-button"><i class="icon form-action-icon fa-check"></i>Asignar por defecto</button>
+        </div>
+    </div>
+    <aside class="panel-content panel-content--contrast">
+        <div class="modularGrid">
+            <div class="modularGrid-module">
+                <section class="panel-section u-lg-55">
+                    {{> addressCard }}
+                    {{> createAddress }}
+                </section>
+            </div>
+        </div>
+    </aside>
+    {{>backButton datapanel='toggletab'}}
+</div>

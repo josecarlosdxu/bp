@@ -1,0 +1,26 @@
+<section class="panel panel--iconized u-mgb">
+    <h5 class="panel-header">{{>svgIcon type=icon class='u-op-70 u-pd3' size='md'}}{{title}}</h5>
+    <div class="modularGrid u-xxs-100 u-pdh u-md-pdh2 u-pdt u-md-pdt2 u-pdb">
+        <div class="modularGrid-module u-lg-60 u-lg-pdr u-mgb">
+            <p class="subtitle4 u-mgb">{{{headertext}}}</p>  
+            {{#each list}}
+            <p class="title2 u-pdt">· {{{titlelist}}}</p>
+            <p class="subtitle6 u-pdt--half u-pdr u-pdl--half">{{subtitlelist}}</p>
+            <ul class="list list--checklist list--midsize u-pdv u-mgl--half u-op-80">
+                {{#each items}}
+                <li class="list-item">{{>svgIcon type='done' class='icon--success list-icon'}}{{{text}}}</li>
+                {{/each}}
+            </ul>
+            {{/each}}
+        </div>
+        <div class="modularGrid-module u-lg-40">
+            <img src="../../img/{{image}}" alt="" class="u-xxs-90 u-xs-80 u-sm-70 u-md-60 u-lg-100">
+        </div>
+    </div>
+</section>
+
+
+
+        
+
+   

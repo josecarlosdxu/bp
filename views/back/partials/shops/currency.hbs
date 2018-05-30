@@ -1,0 +1,18 @@
+  <nav data-js-lang="list" class="currencylist currencylist--multiselect" data-jscurrency="multiple">
+  
+
+  <input type="checkbox" class="inputToggle" id="currency_multiselect"> 
+  <label class="currencylist-selected enabled" for="currency_multiselect" data-jscurrency="text" >Monedas seleccionadas --- </label>
+
+   <section class="currencylist-container">
+
+   {{#each currency.list}}
+
+   <label><input type="checkbox" data-jscurrency="item" {{#if checked}}checked="{{checked}}" {{/if}}class="form-checkbox" name="langs" value="{{code}}">{{{name}}}</label>
+
+   {{/each}}
+   
+</section>
+<label class="currencylist-closed" for="currency_multiselect"></label>
+
+</nav>

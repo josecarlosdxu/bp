@@ -1,0 +1,39 @@
+@include block(searchForm) {
+    position: relative;
+    order: 1;
+    margin-right: 1px;
+    padding-right: 1rem;
+    font-size: 0;
+    margin-top: 1rem;
+    flex-grow: 2;
+    @include element(searchInput) {
+        margin: 0;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        box-shadow: none;
+        display: inline-block;
+        height: 30px;
+        line-height: 1.3rem;
+        padding: 0 0.75rem;
+        position: relative;
+        vertical-align: bottom;
+        background-image: url("../img/mobileIcons/search_active.svg");
+        background-repeat: no-repeat;
+        background-size: $um;
+        background-position: calc(100% - 0.5rem) center;
+
+
+        @include modifier(big) {
+            height: 3.9rem;
+            border-radius: 3px;
+            background-size: 2rem;
+            padding: 0 $um;
+            
+        }
+
+    }
+   
+}
+
+
+

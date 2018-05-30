@@ -1,0 +1,61 @@
+@include block(uploadFile) {
+    font-size: 1rem;
+    display: block;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    vertical-align: middle;
+    padding: $um / 4 $um /5 $um / 3.5 $um / 2;
+    font-weight: 400;
+    transition: color 0.2s, background-color 0.2s;
+    @include element(icon) {
+        @extend .icon;
+        width: 1.2rem;
+        height: 1.2rem;
+        display: inline-block;
+        vertical-align: -3px;
+        opacity: 0.3;
+        margin: 0 3px 0 4px;
+        transition: opacity 0.2s;
+    }
+    &:hover,
+    &:focus {
+        color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.05);
+        .uploadFile-icon {
+            opacity: 0.7;
+        }
+    }
+    @include modifier(inline) {
+        display: inline-block;
+        margin: 0.2rem 0 0.05rem 0.25rem;
+    }
+}
+
+
+@include extendBlock(uploadFile, blackf) {
+    background-color: black;
+    color: white;
+    @include element(icon) {
+        opacity: 0.6;
+    }
+}
+@include extendBlock(uploadFile, hot) {
+    background-color: #e00000;
+    color: white;
+    @include element(icon) {
+        opacity: 0.7;
+    }
+}
+
+.uploadFile[data-js-filter-var-val="85"]{
+    @extend .uploadFile--hot;
+    
+    
+}
+.uploadFile[data-js-filter-var-val="72"]{
+    @extend .uploadFile--blackf;
+    
+}

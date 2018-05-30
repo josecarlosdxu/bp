@@ -1,0 +1,522 @@
+$tabsVerticalWidth:25rem;
+%tabsVerticalContentWidth {
+    width: calc(100% - 25rem);
+}
+
+@include block(tabs) {
+    font-family: $type-ui;
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: -1px;
+    box-shadow: 0 -1px #ccc inset;
+    color: #999;
+    @include element(container) {}
+    @include element(item) {
+        display: inline-block;
+        text-align: left;
+        margin: 0;
+        padding: 1rem;
+        vertical-align: top;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin-right: -1px;
+        min-height: 50px;
+        top: 0;
+        overflow: hidden;
+        position: relative;
+        color: #555;
+        transition: all 0.15s;
+        cursor: pointer;
+        text-decoration: none; // max-width: 100px;
+        &:last-child {
+            border-right: 1px solid #ddd;
+        }
+        &:hover {
+            background: #FFF;
+            opacity: 1;
+        }
+        &:focus {
+            outline: none;
+        }
+        @include modifier(large) {
+            height: 90px;
+            box-shadow: 0 1px 0 1px #fff inset;
+            padding-top: $um / 2;
+        }
+        @include modifier(selected) {
+            border-bottom-color: transparent;
+            cursor: default;
+            box-shadow: 0 5px 0 $color-accentBlue-default inset;
+            background: #fff;
+            border-right: 1px solid #ccc; // z-index: 1;
+            opacity: 1;
+        }
+        @include modifier(disabled) {
+            pointer-events: none;
+        } // @include modifier(contact) {
+        //     max-width: 20%;
+        // }
+    }
+    @include element( contentPanel) {
+        display: none;
+        padding: 0;
+        @include modifier(selected) {
+            display: block;
+        }
+        @include addBreakpoint(lg) {
+            padding: 0 1rem;
+        }
+        @include addBreakpoint(xl) {
+            padding: 0;
+        }
+        /*&:target{
+
+        }*/
+    }
+    @include element(itemTitle) {
+        @include addBreakpoint(xs) {
+            font-size: 1.2rem;
+        }
+        /*@include addBreakpoint(xl) {
+            font-size: 1.38rem;
+        }*/
+        display: block;
+        text-decoration: none;
+        font-weight: 400;
+        @include modifier(contact) {
+            @include addBreakpoint(xs) {
+                font-size: 1.38rem;
+            } // max-width: 200px;
+            // font-size: 1rem;
+            // font-weight: 300;
+            // margin-bottom: 0.5rem;
+            // opacity: 0.8;
+            // position: relative;
+            // bottom: -4px;
+        }
+    }
+    @include element(itemSubtitle) {
+        color: #999;
+        font-size: 0.9rem;
+        line-height: 1.15;
+        display: block;
+        text-decoration: none;
+        @include addBreakpoint(xs) {
+            max-width: 11.5rem;
+            margin-top: 0.5rem;
+        }
+        @include addBreakpoint(xl) {
+            max-width: 14rem;
+            margin-top: 0.75rem;
+        }
+    }
+}
+
+@include extendElement(tabs, item, selected) {
+    color: #ddd;
+    color: $color-accentBlue-default;
+    @include element(itemTitle) {
+        color: $color-accentBlue-default;
+    }
+    @include element(itemTitle) {
+        color: $color-accentBlue-default;
+    }
+    @include element(image) {
+        color: $color-accentBlue-default;
+    }
+}
+
+@include extendBlock(tabs, packs) {
+    padding-left: $um / 3;
+    @include element(item) {
+        max-width: 16.5%;
+    }
+    @include element(itemSubtitle) {
+        max-width: 100%;
+        margin-top: 0.2rem;
+    }
+}
+
+@include extendBlock(tabs, hugue) {
+    /*background: linear-gradient(#fff, #f8f8f8) ;
+    box-shadow: 0 -1px #ddd inset;*/
+    //padding: 0 $um / 2;
+    @include addBreakpoint(xs) {
+        padding: 0 $um / 3;
+    }
+    @include addBreakpoint(xl) {
+        padding: 0 $um / 2;
+    }
+    margin-bottom: $um;
+    @include element(item) {
+        background: #fff;
+        color: #666;
+        min-height: 70px;
+        min-width: 20%;
+        padding: 1rem $um;
+        @include addBreakpoint(xs) {
+            padding: 1rem 1.25rem;
+        }
+        @include addBreakpoint(xl) {
+            padding: 1rem $um;
+        }
+        opacity: 0.6;
+        &:hover {
+            color: #333;
+            opacity: 1;
+        }
+        @include modifier(selected) {
+            //color:$color-accentBlue-default;
+            box-shadow: 0 -6px 0 0$color-accentBlue-default;
+            opacity: 1;
+            &:hover {
+                color: $color-accentBlue-default;
+                opacity: 1;
+            }
+        }
+    }
+    @include element(itemTitle) {
+        font-size: 1rem;
+        @include addBreakpoint(lg) {
+            font-size: 1.3rem;
+        }
+        @include addBreakpoint(xl) {
+            font-size: 1.4rem;
+        }
+        font-weight: 400; // @include modifier(mini) {
+        //   font-size: 1rem;
+        // }
+    }
+}
+
+@include extendBlock (tabs, contact) {
+    @include element(item) {
+        max-width: 20%;
+    }
+    @include element(itemTitle) {
+        font-size: 1.4rem;
+    }
+}
+
+@include extendBlock (tabs, tickets) {
+    display: flex;
+    box-shadow: 0 -1px $color-lightGrey-default inset;
+    @include element(item) {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+        margin: 0;
+        border-color: $color-lightGrey-default;
+        border-left: none;
+        align-items: center;
+        justify-content: flex-end;
+        color: #787f87;
+        transition: color 0.3s, box-shadow 0.2s; // border-radius: 3px 3px 0 0;
+        &:hover {
+            color: $color-darkGrey-default; //box-shadow: 0 -5px 0 0 $color-darkGrey-default;
+            background: #fff;
+            border-right: 1px solid #ccc;
+            opacity: 1;
+        }
+        @include modifier(selected) {
+            //color:$color-accentBlue-default !important;
+            pointer-events: none; //background-color: red;
+            border-bottom-color: transparent; // border-radius: 0;
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+    @include element(image) {
+        fill: currentcolor;
+        width: 100%;
+        height: $um * 2.5;
+    }
+    @include element(itemTitle) {
+        //font-size: $um / 1.4;
+        line-height: 1;
+        text-align: center;
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@include extendBlock (tabs, mini) {
+    box-shadow: 0 -1px $color-lightGrey-default inset;
+    padding: 0 $um / 3;
+    @include element(item) {
+        padding: 0;
+        min-height: 0;
+        color: $color-lightGrey-dark;
+        border-radius: 3px 3px 0 0;
+        border-color: $color-lightGrey-default;
+        @include modifier(selected) {
+            color: $color-accentBlue-default;
+            border-bottom: 1px solid white;
+            margin-bottom: -1px;
+            border-radius: 0;
+        }
+    }
+    @include element(itemTitle) {
+        font-size: 1rem;
+        line-height: 1;
+        text-align: center;
+        padding: $um / 2 $um;
+        color: inherit; //color: $color-shadow;
+        /* display:flex;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;*/
+    }
+}
+
+.tabs-contentPanel[data-state="selected"],
+.inputToggle:checked+.tabs-contentPanel {
+    display: block;
+}
+
+.inputToggle:checked+.tabs-contentPanel:not([data-js-showevt]) {
+    opacity: 0;
+    -webkit-animation: show 0.6s ease-in-out both;
+    animation: show 0.6s ease-in-out both;
+}
+
+@include extendBlock (tabs, full) {
+    display: flex;
+    flex-wrap: wrap;
+    @include addBreakpoint(md) {
+        flex-wrap: nowrap;
+    }
+    @include element(item) {
+        background: $color-lightGrey-default;
+        align-items: center;
+        border: none;
+        display: flex;
+        flex-grow: 1;
+        font-size: 1.25rem;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 1;
+        padding: 0;
+        width: 100%;
+        &:hover,
+        &:focus {
+            background: $color-lightGrey-dark;
+        }
+        @include addBreakpoint(md) {
+            font-size: $um;
+        }
+    }
+    .tabs-item[data-state="selected"] {
+        background: $color-darkGrey-default;
+        color: white;
+    }
+}
+
+.tabs--full .tabs-item {}
+
+.no-flexbox {
+     :checked.inputToggle+:not([data-js-showevt]).tabs-contentPanel,
+     :checked.selectedFilterList-inputToggle+:not([data-js-showevt]).tabs-contentPanel {
+        opacity: 1;
+        position: relative;
+    }
+    .categoryTabs~.tabs-contentPanel>.homefeatured--brandsMenu {
+        position: static;
+    }
+    .tabs--tickets {
+        display: block;
+        .tabs-item {
+            display: inline-block;
+            width: 25%;
+        }
+    }
+    .tabs--tickets .tabs-item--selected {
+        border-bottom: 1px solid white;
+    }
+}
+
+@include extendElement(tabs, container, vertical) {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $color-lightGrey-default;
+    transition: all 0.2s;
+    .tabs {
+        box-shadow: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        position: relative;
+        width: $tabsVerticalWidth;
+        max-width: 100%;
+        border-right: 1px solid $color-lightGrey-default;
+        cursor: pointer;
+    }
+    @include element(itemTexts) {
+        padding-left: 1.25rem;
+    }
+    @include element(itemTitle) {
+        color: currentColor;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.03em;
+    }
+    @include element(itemSubtitle) {
+        color: currentColor;
+        max-width: 100%;
+        font-size: 0.95rem;
+        opacity: 0.7;
+        line-height: 1.1;
+        margin-top: 0.4rem;
+    }
+    @include element(itemIcon) {
+        /*margin-top: -0.25rem;
+        padding: 0 0.25rem;*/
+        transition: none 0s ease 0s;
+        fill: $color-accentBlue-default;
+    }
+    @include element(item) {
+        display: flex;
+        transition: none;
+        overflow: visible; //margin-bottom: -1px;
+        //transition: box-shadow 0.16s ease-in;
+        //transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+        border: none;
+        border-bottom: 1px solid $color-lightGrey-default; //box-shadow: -1px 0 $color-lightGrey-default inset, 0 0 $color-accentBlue-default inset;
+        box-shadow: -1px 0 $color-lightGrey-default inset, 4px 0 transparentize($color-accentBlue-default, 1) inset;
+        min-height: 7.7rem;
+        padding: 1rem 1.5rem 0.75rem;
+        color: rgba(0, 0, 0, 0.8);
+        &:last-child {
+            border-bottom: none;
+        }
+        &:after {
+            border: 10px solid transparent;
+            border-right: none;
+            content: "";
+            display: block;
+            position: absolute;
+            right: -9px;
+            top: calc(50% - 10px);
+            z-index: 1;
+        }
+        &:hover,
+        &:focus {
+            //box-shadow: -1px 0 $color-lightGrey-default inset, 0 0 $color-accentBlue-default inset;
+            color: $color-accentBlue-default;
+            background-color: transparentize($color-accentBlue-default, 0.9);
+            box-shadow: -1px 0 $color-lightGrey-default inset, 4px 0 $color-accentBlue-default inset; //z-index: 1;
+        }
+        pointer-events:auto;
+        &:active {
+            background-color: $color-accentBlue-default;
+            border-bottom-color: $color-accentBlue-default;
+            box-shadow: none;
+            color: white;
+            .tabs-itemIcon {
+                fill: currentColor;
+            }
+        }
+    }
+    .tabs-item--selected {
+        background-color: $color-accentBlue-default;
+        border-bottom-color: $color-accentBlue-default; //box-shadow: 0 0 $color-lightGrey-default inset, 5px 0 $color-accentBlue-default inset;
+        box-shadow: none;
+        color: white;
+        &:after {
+            border-left-color: $color-accentBlue-default;
+        }
+        .tabs-itemIcon {
+            fill: currentColor;
+        }
+        &:hover,
+        &:focus {
+            background-color: $color-accentBlue-default;
+            color: white;
+        }
+        pointer-events:none; //border-right-color:transparent;
+        //border-left-color:$color-accentBlue-default;
+        //border-bottom: 1px solid $color-lightGrey-default;
+    }
+    .tabs-contentPanel {
+        @extend %tabsVerticalContentWidth;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .tabs-contentPanel[style="display: block;"],
+    .tabs-contentPanel--selected {
+        pointer-events: auto;
+        opacity: 0;
+        -webkit-animation: show 0.4s ease-out forwards;
+        animation: show 0.4s ease-in forwards;
+    }
+}
+
+
+
+
+
+
+
+/*.tabs-container--vertical .tabs-contentPanel:target {
+ 
+  opacity: 1;
+  pointer-events: auto;
+
+}*/
+
+.tabs-container--vertical .tabs-itemIcon,
+.tabs-container--vertical .tabs-itemTexts {
+
+    pointer-events: none;
+}
+
+
+@include extendBlock(tabs, form) {
+
+    display: flex;
+    justify-content: space-between;
+    box-shadow: none;
+    flex-wrap: wrap;
+
+    @include element(item) {
+        font-size: 1rem;
+        border: none;
+        text-align: center;
+        flex-grow: 0;
+        display: block;
+        padding: 0;
+        min-width: 0;
+        min-height: 0;
+        padding-top: 1.5rem;
+        color: currentcolor;
+        @include modifier(selected) {
+            box-shadow: none;          
+            cursor: pointer;
+        
+        }
+    }
+
+
+    @include element(image) {
+        width: 3.75rem;
+        height: 3.75rem;
+        opacity: 0.3;
+        display: block;
+        margin: 0 auto 0.5rem;
+    }
+}
+
+
+
+.tabs--form .tabs-item--selected .tabs-image {
+    opacity: 1;
+}

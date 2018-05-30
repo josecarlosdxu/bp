@@ -1,0 +1,43 @@
+@include block(content) {
+    // background: url(../img/snowflake_pattern1.jpg) $color-content-bg; INVIERNO
+    background: $color-content-bg;
+    padding-top: $um;
+    max-width: 100vw;
+    overflow: hidden;
+    @include modifier(sticky) {
+        padding-top: 16.6rem;
+    }
+    @include modifier(flex) {
+        display: flex;
+        flex-direction: column;
+        padding-top: $um;
+        padding-bottom: $um / 2.5;
+    }
+    @include modifier(alt) {
+        background: darken($color-lightGrey-light, 5%);
+    }
+    @include modifier(dark) {
+        background: $color-lightGrey-default;
+    }
+    @include modifier(slider) {
+        outline: none;
+    }
+    @include modifier(full) {
+        padding-top: 0;
+    }
+    @include modifier(light) {
+        background: white;
+    }
+    @include modifier(inverse) {
+        background: #353b40;
+        color: #fff;
+        font-weight: 400;
+    }
+    @include modifier(nopadding) {
+        padding: 0;
+    }
+    .ventaCMS-subsection {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+}

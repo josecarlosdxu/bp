@@ -1,0 +1,63 @@
+<div class="panel panel--secondary panel--inactive" data-js-panel-name="panel02" data-js-panel-state="inactive">
+
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-orders"></use></svg>
+        <div class="panel-titleName">
+            <a href="" class="panel-breadcrumbLink">Pedidos</a>
+             <a href="" class="panel-breadcrumbLink">Pedido nº 12334</a>
+        </div>
+
+
+        <!-- panel actions -->
+
+        <div class="panel-actions" >
+            <button class="menuPanel-button"  data-js-orderrepeat="button">
+<svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-repeat"></use></svg>
+
+               Repetir pedido</button>
+            <button class="menuPanel-button">
+                <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-print"></use></svg>
+                Imprimir</button>
+            <button class="menuPanel-button"  data-js-menupanel="button"  data-js-menupanel_idbutton="1"  data-js-menupanel_pos="left" ><i class="icon form-action-icon fa-paperclip"></i>Adjuntar justificante</button>
+        </div>
+    </div>
+    <div class="panelHeader  panelHeader--dataContent">
+      <nav class="panel-tabs">
+                <button class="panel-tabs-item panel-tabs-item--active" data-panelTabBtn="tab1">Detalle</button>
+                <button class="panel-tabs-item" data-panelTabBtn="tab2">Facturas</button>
+                <button class="panel-tabs-item" data-panelTabBtn="tab3">Trackings</button>
+                <button class="panel-tabs-item" data-panelTabBtn="tab4">Justificantes</button>
+            </nav>
+    </div>
+
+
+
+    <div class="panel-content" id="panel_content1">
+
+        <section  id="panel_content1">
+            <!-- panel tabs -->
+
+            <!-- panel tabs content-->
+            <div class="panel-tabs-content" id="tab1">
+                {{> panelSection panelSection.formOrders}}
+                {{> panelSection panelSection.relatedOrders}}
+                {{> formOrderDetails}}
+            </div>
+            <div class="panel-tabs-content" id="tab2" style="display:none;">
+                {{> panelSection panelSection.relatedInvoices}}
+            </div>
+            <div class="panel-tabs-content" id="tab3" style="display:none;">
+                {{> panelSection panelSection.relatedTrackings}}
+            </div>
+            <div class="panel-tabs-content" id="tab4" style="display:none;">
+                {{>panelDocuments}}
+            </div>
+        </section>
+    </div>
+    <button class="panel-toggletab" data-js-panel="toggletab">
+
+
+
+    </button>
+     {{> panelUploadFile }}
+</div>

@@ -1,0 +1,113 @@
+%centerLineItem {
+    background-color: $allInOneColor;
+    content: "";
+    display: block;
+    left: calc(50% - 2px);
+    position: absolute;
+    width: 4px;
+}
+
+@include block(centerLine) {
+    position: relative;
+    @include element(content) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: $um;
+        margin: 0 auto;
+        max-width: 100%;
+        @include addBreakpoint(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include addBreakpoint(lg) {
+            max-width: 1200px;
+        }
+    }
+    @include element(itemText) {
+        width: auto;
+        order: 1;
+        padding: $um * 2 0;
+        @extend %u-md-40;
+        @include addBreakpoint(xxl) {
+            padding: $um $um * 2;
+        }
+        .title {
+            margin-bottom: 0.375rem;
+        }
+    }
+    @include element(itemBullet) {
+        width: 30%;
+        order: 0;
+        padding: $um 0;
+        margin-bottom: $um;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: $color-lightGrey-light;
+        @extend %u-xs-40;
+        @extend %u-sm-20;
+        @include addBreakpoint(md) {
+            max-width: 12%;
+            margin-bottom: 0;
+        }
+        @include modifier(alt) {
+            background-color: white;
+        }
+    }
+    @include element(itemImage) {
+        order: 2;
+        text-align: center;
+        width: 80%;
+        margin-bottom: $um * 2;
+        @include addBreakpoint(md) {
+            width: 40%;
+            margin-bottom: 0;
+        }
+    }
+
+    @include element(itemImg) {
+
+        width: 90%;
+
+        @extend %u-xs-90;        
+        @extend %u-sm-70; 
+        @extend %u-lg-60;
+        
+
+
+       
+        
+    }
+    &:before {
+        @extend %centerLineItem;
+        height: $um * 9;
+        top: 0;
+    }
+    &:after {
+        @extend %centerLineItem;
+        height: $um * 3;
+        bottom: 0;
+    }
+    @include addBreakpoint(md) {
+        &:after {
+            display: none;
+        }
+        &:before {
+            height: 100%;
+        }
+    }
+}
+
+@include extendBlock(centerLine, last) {
+    &:after {
+        display: none;
+    }
+    @include addBreakpoint(md) {
+        &:before {
+            height: 50%;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{{!-- {{#if scrollable}}
+<div class="filter-scrollpanel">
+{{/if}} --}}
+{{#each options }}
+<div class="filter-option">
+<input type="checkbox" class="filter-checkbox" id="{{id}}">
+<label class="filter-label" for="{{id}}">
+{{name}}
+{{#if number}}
+<small class="u-mgl--6th u-op-60">({{number}})</small>
+{{/if}}
+</label>
+</div>
+{{/each}}
+
+{{!-- {{#if scrollable}}
+</div>
+{{/if}} --}}
+
+
+
+
+
+
+
+
+
+
+
+
+

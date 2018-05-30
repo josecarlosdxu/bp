@@ -1,0 +1,56 @@
+@include block(mediaObject) {
+    padding-bottom: $um;
+    display: inline-block;
+    vertical-align: top;
+    @include element(imgContainer) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -$um;
+        @include addBreakpoint(sm) {
+            margin: 0;
+            
+        }
+    }
+    @include element(figcaption) {
+        padding: 0;
+        font-size: 1rem;
+        font-family: $type-ui;
+        @include addBreakpoint(xs) {
+            padding: 0 2rem;
+        }
+    }
+    @include element(title) {
+        font-family: $type-headingscms;
+        font-weight: 500;
+        font-size: $um;
+        margin-bottom: $um / 2;
+    }
+    @include element(text) {
+        font-size: 1.1rem;
+        opacity: 0.7;
+    }
+    @include element(link) {
+        @extend .link;
+        white-space: nowrap;
+    }
+    @include element(svgImg) {
+        width: 50%;
+        height: 50%;
+        @include addBreakpoint(xs) {
+            width: 45%;
+            height: 45%;
+        }
+        @include addBreakpoint(md) {
+            width: 30%;
+            height: 30%;
+        }
+    }
+}
+
+@include extendBlock(mediaObject, col3) {
+    @extend %inlineBlock;
+    width: calc(100% / 3);
+    @include element(svgImg) {
+        width: 30%;
+    }
+}

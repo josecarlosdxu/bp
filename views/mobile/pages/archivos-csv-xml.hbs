@@ -1,0 +1,21 @@
+---
+layout: mobile/layouts/clean.hbs
+title: Archivos CSV/XML
+breadcrumbs: Archivos CSV/XML
+---
+<div class="modularGrid modularGrid--boxed u-pdb">
+    <div class="box">
+        {{>headerCSV}}
+        {{>featuresCSV}}
+        {{>tableCSV}}
+        {{>explainsCSV}}
+        {{>storeCSV}}
+        <div class="modularGrid">
+            <div class="modularGrid-module u-brt">
+                {{> mobileFeaturesList mobileFeaturesList.footerFeatures}}
+            </div>
+        </div>
+        {{>helpCenter helpAccordion.archivosCSVXML}}
+    </div>
+</div>
+

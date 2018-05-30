@@ -1,0 +1,66 @@
+@include block(cmsContact) {
+    padding: $um;
+    height: 38.25rem;
+    height: 43.5rem;
+    @include modifier(comercial) {
+        background: url("../img/comercial.svg") 100% 100% no-repeat;
+        background-size: 40%;
+    }
+    @include modifier(attention) {
+        background: url("../img/asistencia.svg") 100% 100% no-repeat;
+        background-size: 40%;
+    }
+    @include modifier(logistic) {
+        background: url("../img/logistica.svg") 95% 100% no-repeat;
+        background-size: 40%;
+    }
+    @include modifier(support) {
+        background: url("../img/soporte.svg") 100% 100% no-repeat;
+        background-size: 40%;
+    }
+    @include modifier(admin) {
+        background: url("../img/admin.svg") 100% 100% no-repeat;
+        background-size: 40%;
+    }
+    @include element(phone) {
+        font-size: 2.5rem;
+        line-height: 2rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        color: #999;
+        vertical-align: middle;
+    }
+    @include element(text) {
+        max-width: 40rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        text-transform: none;
+        color: #666;
+    }
+    @include element(link) {
+        display: flex;
+        color: inherit;
+        background-color: $color-lightGrey-light;
+        padding: $um;
+        border: 1px solid $color-shadow;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 6px 2px transparent;
+        transition: box-shadow 0.2s, border-color 0.15s;
+        flex-wrap:wrap;
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 6px 2px $color-shadow;
+            border-color: transparentize(black,0.8);
+        }
+    }
+    @include element(linktext) {
+        display: flex;
+        flex-direction: column;
+        margin: 0.25rem 0;
+        i {
+            font-style: normal;
+        }
+    }
+}

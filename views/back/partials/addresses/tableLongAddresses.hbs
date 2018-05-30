@@ -1,0 +1,67 @@
+
+
+<table class="table table--interactive">
+    <thead class="table-thead table-thead--borderless">
+        <tr class="table-tr table-tr--sort">
+            <td class="table-th table-item table-item--handler"></td>
+            <th class="table-th table-item">Nombre <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item">Empresa<i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item ">CIF<i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item">Dirección <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item">RCEQ <i class="icon icon-sort fa fa-info-circle"></i> <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item">Tipo <i class="icon icon-sort fa fa-caret-down"></i></th>
+            <th class="table-th table-item ">Teléfono <i class="icon icon-sort fa fa-caret-down"></i></th>
+        </tr>
+
+        <tr class="table-tr table-tr--filters">
+            <th class="table-th table-item table-item--handler">
+                <input type="checkbox" class="form-checkbox" data-js-checkActions="all">
+            </th>
+            <th class="table-th table-item u-xs-20">
+                <input class="form-input form-input--collapse" >
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <input class="form-input form-input--collapse" type="text" >
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <input class="form-input form-input--collapse" type="text" >
+            </th>
+            <th class="table-th table-item u-xs-30">
+                <input class="form-input form-input--collapse" type="text" >
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <select name="" id="" class="form-select form-select--collapse">
+                    <option value="">---</option>
+                </select>
+            </th>
+            <th class="table-th table-item u-xs-5">
+                <select name="" id="" class="form-select form-select--collapse">
+                    <option value="">---</option>
+                </select>
+            </th>
+            <th class="table-th table-item u-xs-10">
+                <input class="form-input form-input--collapse" type="text">
+            </th>
+        </tr>
+        <!-- table actions -->
+         <tr class="table-tr">
+                 <td colspan="100">
+                    <div class="table-actionGroup" data-js-checkActions="actions">
+                      <button class="table-action"><i class="icon table-tableIcon fa-times"></i>Borrar</button>
+                 </div>
+            </td>
+        </tr>
+
+    </thead>
+    <tbody class="table-tbody table-tbody--stripped">
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+        {{>tableRowAddresses01}}
+    </tbody>
+</table>

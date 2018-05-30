@@ -1,0 +1,27 @@
+
+
+@include block(toggleView) {
+    @include element(checkbox) {
+        display: none;
+
+        &:checked + .toggleView-content {
+            max-height: 1000rem;
+            transition:max-height 1s ease-in;
+
+
+
+
+        }
+       
+
+    }
+    @include element(content) {
+        max-height: 0;
+        overflow: hidden;
+        height: auto;
+        display: inherit;
+        transition:max-height 0.5s ease-in;
+
+     
+    }
+}

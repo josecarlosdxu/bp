@@ -1,0 +1,22 @@
+<section class="content content--light u-pdt2 u-pdb2">
+    <div class="modularGrid modularGrid modularGrid--boxed">
+        <div class="u-flex--between u-pd">
+            <div class="u-md-45">
+                <h3 class="title title--huge">{{title}}</h3>
+                <h4 class="subtitle1 u-pdt--half u-pdb">{{subtitle}}</h4>
+                <ul class="list list--checklist list--midsize">
+                  {{#each items}}
+                  <li class="list-item">
+                   {{>svgIcon type='success' class='icon--success'}}
+                   {{text}}
+               </li>
+               {{/each}}
+           </ul>
+           <button class="button button--ghost button--bigger u-md-25 u-mgt">{{buttonText}}</button>
+       </div>
+       <div class="u-md-45">
+        <img src="../../img/ilustracion-{{image}}.svg" alt="">
+    </div>
+</div>
+</div>
+</section>

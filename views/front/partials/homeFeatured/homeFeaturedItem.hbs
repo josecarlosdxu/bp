@@ -1,0 +1,17 @@
+{{!-- <a href="{{href}}" class="homefeatured-item" title="{{{title}}}"> --}}
+{{#if_eq search 'true'}}
+<input class="inputToggle" id="homebrands_{{img}}" name="searchRadio" data-js="search category radio" type="checkbox" data-js-reset="uncheck">
+{{/if_eq}}
+<label  class="homefeatured-item" title="{{{title}}}" for="homebrands_{{img}}" {{#each attributes}} {{{this}}}{{/each}}>
+<img class='homefeatured-icon' src="../../img/iconos-familias-productos-{{img}}.svg">
+<p class="homefeatured-text">
+{{{name}}}
+</p>
+</label>
+
+
+
+
+
+
+

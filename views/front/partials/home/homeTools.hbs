@@ -1,0 +1,12 @@
+<section class="content{{#if mobile}} u-pdt{{else}} u-pdv2{{/if}}">
+    {{#unless mobile}}<h2 class="supertitle u-mgv2 u-elem-center u-tac u-pdh">Herramientas para sincronizar con BigBuy</h2>{{/unless}}
+	<div class="modularGrid modularGrid modularGrid--boxed modularGrid--equalHeights u-pdt u-flwrap{{#unless mobile}} u-pdb2 u-mgb2{{/unless}}">
+
+	{{#each list}}
+		{{>homeToolsItem mobile=../mobile}}
+	{{/each}}
+		
+
+	</div>
+
+</section>

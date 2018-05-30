@@ -1,0 +1,431 @@
+$col3Width:24.4rem;
+$col4Width:18.0625rem;
+$col5Width:14.3rem;
+%showSubcategoriesBtn {
+    padding: 0.45rem 0.5rem;
+    font-weight: 700;
+    transition: background 0.1s, box-shadow 0.1s;
+    > b {
+        text-transform: uppercase;
+    }
+    &:hover {
+        background: rgba(0, 0, 0, 0.04);
+        box-shadow: -1.5rem 0 rgba(0, 0, 0, 0.04), 1.5rem 0 rgba(0, 0, 0, 0.04);
+    }
+}
+
+@include block(cardList) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    @include element(more) {
+        @extend %btnMore;
+        color: $color-more;
+        margin-left: 2rem;
+    }
+    @include element(item) {
+        // display:flex;
+        margin-bottom: 13px;
+        @include modifier(full) {
+            width: 100%;
+        }
+    }
+    @include element(description) {
+        @extend .keywords-topcategory;
+        a {
+            @extend .link;
+            color: black;
+        }
+    }
+    @include element(number) {
+        @extend .title-number;
+        @include modifier(middle) {
+            @extend .title-number--middle;
+        }
+    }
+    @include element(title) {
+        @extend .title;
+        @include modifier(huge) {
+            @extend .title--huge;
+            line-height: 1.1;
+        }
+        @include modifier(aColor) {
+            color: initial;
+        }
+    }
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+    @include element(inputToggle) {
+        display: none;
+    }
+    @include element(btn) {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        &:before {
+            font-weight: 700;
+            content: "\203a";
+            display: block;
+            font-size: 1.75rem;
+            height: $um / 1.5;
+            width: $um / 3;
+            line-height: 0.4;
+            transform: none;
+            transition: transform 0.2s;
+            transform-origin: 50% 60%;
+            opacity: 0.5;
+        }
+    }
+    @include element(btnOpen) {
+        @extend %showSubcategoriesBtn;
+        display: block;
+        padding-left: $um / 3;
+    }
+    @include element(btnClose) {
+        @extend %showSubcategoriesBtn;
+        display: none;
+        padding-left: $um / 2;
+    }
+    @include modifier(inside) {
+        @extend %closeTransition;
+    }
+}
+
+@include extendBlock(cardList, top) {
+    display: block;
+}
+
+@include extendBlock(cardList, topCategory) {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2.5rem;
+    //padding: 0 0 $um / 2;
+    //height: 126px;
+    @include element(description) {
+        @extend .u-xs-65;
+        padding: 0.25rem 0 0;
+    }
+    @include element(bg) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        min-height: 125px;
+        width: auto;
+    }
+    &:after {
+        background: rgba(0, 0, 0, 0) linear-gradient(to right, $color-content-bg 70%, transparentize($color-content-bg, 1));
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 60rem;
+    }
+    &:not([data-type='searchresult']) {
+        min-height: 125px;
+    }
+}
+
+@include extendBlock(cardList, col_3) {
+    justify-content: flex-start;
+    @include addBreakpoint(xl) {
+        justify-content: space-between;
+    }
+    @include element(item) {
+        //width: $col3Width;
+        width: calc(100% / 3 - 1rem);
+        font-size: $um;
+        margin-right: 1rem;
+        .cardElem--primary {
+            height: 291px;
+        }
+        @include modifier(col_2) {
+            width: 49.7rem;
+        }
+        @include modifier(col_3) {
+            width: 100%;
+        }
+        @include modifier(full) {
+            width: 100%;
+        }
+        &:only-of-type {
+            width: 100%;
+        }
+        @include addBreakpoint(xl) {
+            margin-right: 1rem;
+            width: calc(100% / 3 - 0.75rem);
+            &:last-child {
+                margin-right: auto;
+            }
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .cardList-item.cardList-item--col_2{
+        width: calc(100% / 1.5 - 0.25rem);
+
+    }
+}
+
+
+@include extendBlock(cardList, col_4) {
+    justify-content: flex-start;
+    @include addBreakpoint(xl) {
+        justify-content: space-between;
+    }
+    @include element(item) {
+        width: $col4Width;
+        font-size: 1.3rem;
+        margin-right: 1rem;
+        .cardElem--primary {
+            height: $col4Width;
+        }
+        @include modifier(col_2) {
+            width: 37rem;
+        }
+        @include modifier(col_3) {
+            width: 56rem;
+        }
+        @include modifier(col_4) {
+            width: 100%;
+        }
+        @include modifier(full) {
+            width: 100%;
+        }
+        &:only-of-type {
+            width: 100%;
+        }
+        @include addBreakpoint(xl) {
+            margin-right: 0;
+        }
+    }
+}
+
+@include extendBlock(cardList, col_5) {
+    justify-content: flex-start;
+    @include addBreakpoint(xl) {
+        justify-content: space-between;
+    }
+    @include element(more) {
+        font-size: 1rem;
+        //margin-top: 0.25rem;
+    }
+    @include element(item) {
+        width: $col5Width;
+        font-size: 1.25rem;
+        margin-right: 1rem;
+        .cardElem--primary {
+            height: $col5Width;
+        }
+        @include modifier(col_2) {
+            width: 29.45rem;
+        }
+        @include modifier(col_3) {
+            width: 44.6rem;
+        }
+        @include modifier(col_4) {
+            width: 59.8rem;
+        }
+        @include modifier(col_5) {
+            width: 100%;
+        }
+        @include modifier(full) {
+            width: 100%;
+        }
+        &:only-of-type {
+            width: 100%;
+        }
+        @include addBreakpoint(xl) {
+            margin-right: 0;
+        }
+    }
+}
+
+@include extendBlock(cardList, skew) {
+    @include element(more) {
+        //font-size: 1.1rem;
+        margin-top: 0.1rem;
+    }
+    @include element(item) {
+        width: $col5Width;
+        height: $col5Width;
+        font-size: 1.25rem;
+        @include modifier(one) {
+            width: 59.8rem;
+            width: calc(100% - 40.2rem);
+            font-size: $um;
+        }
+        @include modifier(two) {
+            width: 39.25rem;
+            font-size: $um;
+        }
+        @include modifier(col_5) {
+            width: 100%;
+        }
+    }
+}
+
+@include extendBlock(cardList, secundary) {
+    justify-content: flex-start;
+    @include element(item) {
+        width: calc(100% / 3 - 2.7rem);
+        margin-right: 0.9rem;
+        margin-bottom: 0.9rem;
+        &:nth-child(3n + 0) {
+            margin-right: 0;
+        }
+        @include addBreakpoint(xl) {
+            width: 18.06666rem;
+            &:nth-child(3n + 0) {
+                margin-right: 0.9rem;
+            }
+            &:nth-child(4n + 0) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@include extendBlock(cardList, categories) {
+    justify-content: space-between;
+    @include element(item) {
+        width: calc((100% / 3) - (2rem / 3));
+        margin-right: 0;
+    }
+}
+
+@include extendBlock(cardList, tags) {
+    justify-content: space-between;
+    // position: absolute;
+    @include element(item) {
+        width: calc((100% / 4) - (4rem / 4));
+        margin-right: 0;
+        margin-bottom: 1.35rem;
+    }
+}
+
+@include extendBlock(cardList, inside) {
+    justify-content: flex-start;
+    padding: 0.89rem;
+    padding-bottom: 0;
+    padding-right: 0;
+    background: transparentize($color-shadow, 0.05);
+    border-bottom: 1px solid $color-shadow;
+    margin-bottom: 1rem;
+    box-shadow: 1px 0 $color-shadow inset, -1px 0 $color-shadow inset;
+    @include element(item) {
+        margin-right: 0.85rem;
+        margin-bottom: 0.85rem;
+        width: calc(100% / 4 - 0.85rem);
+        @include addBreakpoint(xxl) {
+            width: 17.6666rem;
+            &:nth-child(4n + 0) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.cardList-inputToggle:checked {
+    + .cardList--topCategory > .cardList-btn {
+        > .cardList-btnOpen {
+            display: none;
+        }
+        >.cardList-btnClose {
+            display: block;
+        }
+        &:before {
+            transform: rotate(90deg);
+        }
+    }
+    ~ .cardList--inside {
+        @extend %openTransition;
+        /*height: 100%;
+        transform: scaleY(1);
+        opacity: 1;
+        transition: height 0.2s ease-out, transform 0.2s, opacity 0.2s 0.1s;*/
+    }
+}
+
+@-moz-document url-prefix() {
+    .cardList-btn::before {
+        line-height: 0.3;
+    }
+}
+
+.cardList--tags[data-js-tag-slider="slide"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    background: darken($color-lightGrey-light, 5%);
+    box-shadow: 0 2rem darken($color-lightGrey-light, 5%);
+    -webkit-animation: hide 0.2s ease-in-out both;
+    animation: hide 0.2s ease-in-out both;
+    .cardList-item {
+        display: inline-block;
+        margin-bottom: 1.35rem;
+        margin-right: 1.333rem;
+        max-width: 24rem;
+        width: calc(100% / 4 - 4rem / 4);
+        &:nth-child(4n+4) {
+            margin-right: 0;
+        }
+    }
+    //// animation
+}
+
+.cardList--tags[data-js-active="true"] {
+    -webkit-animation: show 0.3s ease-in both;
+    animation: show 0.3s ease-in 0.2s both;
+}
+
+.cardList--tags[data-js-tag-slider="slideout"] {
+    background: url("../../img/tags_bg.png");
+    background-position: 0 -1.5rem;
+    .cardList-item {
+        display: none;
+    }
+}
+
+.no-flexbox {
+    .cardList {
+        display: block;
+    }
+    .cardList-item {
+        display: inline-block;
+    }
+    .cardList--skew .cardList-item--two {
+        float: right;
+    }
+    .cardList--categories .cardList-item {
+        margin-right: 0.75rem;
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+    }
+    [data-js-active='true'].cardList--tags {
+        opacity: 1;
+    }
+    [data-js-tag-slider='slide'].cardList--tags .cardList-item {
+        height: 7.4rem;
+        display: inline-block;
+        background-color: white;
+    }
+
+    .cardList--secundary{
+        font-size: 0;
+    }
+    
+}

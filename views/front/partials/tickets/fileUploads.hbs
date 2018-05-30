@@ -1,0 +1,21 @@
+
+<div class="modularGrid u-tar">
+    <div class="modularGrid-module  u-xs-50">
+        <p class="form-label--optional">Tamaño de archivos adjuntos <span>5.00 Mb</span> de 10.00 Mb</p>
+        <div class="progressBar progressBar--tiny u-xs-70"><span class="progressBar-meter" style="width:33%;"></span></div>
+    </div>
+</div>
+<div class="modularGrid u-tar">
+    <div class="fileInput-container">
+        {{#times1 3}}
+        <button class="uploadFile" title="Eliminar &#10140; nombre_largo_del_archivo_{{this}}.jpg ">Archivo {{this}} <svg class="uploadFile-icon" role="img"> <use xlink:href="../../img/icons/svg-defs.svg#icon-times"></use></svg></button>
+        {{/times1}}
+        {{>fileInput}}
+    </div>
+</div>
+
+
+
+
+
+

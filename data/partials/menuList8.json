@@ -1,0 +1,224 @@
+{
+  "list": {
+    "title": "Juguetes | Bebés",
+     "order": "8",
+    "modifiers": [
+      "primary",
+      "selectable"
+    ],
+    "itemName": "juguetes_y_bebes",
+    "link": "categoria-juguetes.html",
+    "subcategory":"true", "number" : "8330",
+    "principal":{
+        "title":"Juguetes y bebés",
+        "subtitle": "Gran selección de productos de juguetes y bebés",
+        "image":"../../img/categories/juguetes/2571_menu.jpg"
+    },
+    "families": [
+      {
+        "title": "Juguetes y juegos",
+        "banner":"juguetes/2572_header.jpg",
+        "itemId": "juguetes_y_juegos",
+        "modifier":" bigMenu-sectionItem--submenu",
+        "image":"../../img/categories/juguetes/2572_menu.jpg",
+        "subcategory":"true", "number" : "94",
+        "familyModifier": [
+          "secundary",
+          "selectable"
+        ],
+        "subcategories": [
+          {
+            "name": "Juguetes para bebés",
+            "banner":"juguetes/2574_header.jpg",
+            "image":"../../img/categories/juguetes/2574_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "10"
+          },
+          {
+            "name": "Juegos de mesa para niños",
+            "banner":"juguetes/2576_header.jpg",
+            "image":"../../img/categories/juguetes/2576_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "2"
+          },
+          {
+            "name": "Juegos educativos y de habilidad",
+            "banner":"juguetes/2578_header.jpg",
+            "image":"../../img/categories/juguetes/2578_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "20"
+          },
+          {
+            "name": "Puzzles y construcciones",
+            "banner":"juguetes/2579_header.jpg",
+            "image":"../../img/categories/juguetes/2579_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "8"
+          },
+          {
+            "name": "Muñecos y peluches",
+            "banner":"juguetes/2581_header.jpg",
+            "image":"../../img/categories/juguetes/2581_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "10"
+          },
+          {
+            "name": "Jugar a ser mayor",
+            "banner":"juguetes/2583_header.jpg",
+            "image":"../../img/categories/juguetes/2583_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "9"
+          },
+          {
+            "name": "Jugar al aire libre",
+            "banner":"juguetes/2585_header.jpg",
+            "image":"../../img/categories/juguetes/2585_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "30"
+          },
+          {
+            "name": "Vehículos, circuitos y radio control",
+            "image":"../../img/categories/juguetes/2587_small.jpg",
+            "banner":"juguetes/2587_header.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "1"
+          },
+          {
+            "name": "Patinetes y triciclos",
+            "banner":"juguetes/2589_header.jpg",
+            "image":"../../img/categories/juguetes/2589_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "30"
+          },
+          {
+            "name": "Otros juguetes",
+            "banner":"juguetes/2660_header.jpg",
+            "image":"../../img/categories/juguetes/2660_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "30"
+          }
+        ]
+      },
+      {
+        "title": "Bebés y niños",
+        "itemId": "ninos_y_bebes",
+        "modifier":" bigMenu-sectionItem--submenu",
+        "banner":"juguetes/2593_header.jpg",
+        "image":"../../img/categories/juguetes/2593_menu.jpg",
+        "subcategory":"true",
+        "number" : "54",
+        "familyModifier": [
+          "secundary",
+          "selectable"
+        ],
+        "subcategories": [
+          {
+            "name": "Lactancia",
+            "banner":"juguetes/2594_header.jpg",
+            "col1": "1",
+            "image":"../../img/categories/juguetes/2594_small.jpg",
+            "subcategory":"true", "number" : "2"
+          },
+          {
+            "name": "Menaje infantil",
+            "banner":"juguetes/2596_header.jpg",
+            "col1": "1",
+             "image":"../../img/categories/juguetes/2596_small.jpg",
+            "subcategory":"true", "number" : "10"
+          },
+          {
+            "name": "Hora del baño",
+            "banner":"juguetes/2597_header.jpg",
+            "col1": "1",
+             "image":"../../img/categories/juguetes/2597_small.jpg",
+            "subcategory":"true", "number" : "20"
+          },
+          {
+            "name": "Hora de dormir",
+            "banner":"juguetes/2599_header.jpg",
+            "col1": "1",
+             "image":"../../img/categories/juguetes/2599_small.jpg",
+            "subcategory":"true", "number" : "8"
+          },
+          {
+            "name": "Relax y diversión",
+            "banner":"juguetes/2601_header.jpg",
+             "image":"../../img/categories/juguetes/2601_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "9"
+          },
+          {
+            "name": "Salud y seguridad",
+            "banner":"juguetes/2603_header.jpg",
+             "image":"../../img/categories/juguetes/2603small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "23"
+          },
+          {
+            "name": "Paseo y viaje",
+            "banner":"juguetes/2605_header.jpg",
+             "image":"../../img/categories/juguetes/2605_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "30"
+          },
+          {
+            "name": "Gorras y paraguas",
+            "banner":"juguetes/2607_header.jpg",
+             "col1": "1",
+              "image":"../../img/categories/juguetes/2607_small.jpg",
+            "subcategory":"true", "number" : "30"
+          },
+          {
+            "name": "Decoración infantil",
+            "banner":"juguetes/2610_header.jpg",
+             "image":"../../img/categories/juguetes/2610_small.jpg",
+            "col1": "1",
+            "subcategory":"true", "number" : "30"
+          }
+        ]
+      },
+      {
+        "title": "Material escolar",
+        "itemId": "material_escolar",
+        "modifier":" bigMenu-sectionItem--submenu",
+        "image":"../../img/categories/juguetes/2611_menu.jpg",
+        "banner":"juguetes/2611_header.jpg",
+        "subcategory":"true", "number" : "54",
+        "familyModifier": [
+          "secundary",
+          "selectable"
+        ],
+        "subcategories": [
+          {
+            "name": "Mochilas preescolares",
+            "banner":"juguetes/2612_header.jpg",
+             "image":"../../img/categories/juguetes/2612_small.jpg",
+             "col1": "1",
+            "subcategory":"true", "number" : "2"
+          },
+          {
+            "name": "Mochilas escolares",
+            "banner":"juguetes/2613_header.jpg",
+             "image":"../../img/categories/juguetes/2613_small.jpg",
+             "col1": "1",
+            "subcategory":"true", "number" : "10"
+          },
+          {
+            "name": "Estuches y plumieres",
+             "banner":"juguetes/2615_header.jpg",
+              "image":"../../img/categories/juguetes/2615_small.jpg",
+              "col1": "1",
+            "subcategory":"true", "number" : "20"
+          },
+          {
+            "name": "Otro material escolar",
+            "banner":"juguetes/2616_header.jpg",
+             "image":"../../img/categories/juguetes/2616_small.jpg",
+             "col1": "1",
+            "subcategory":"true", "number" : "30"
+          }
+        ]
+      }
+    ]
+  }
+}

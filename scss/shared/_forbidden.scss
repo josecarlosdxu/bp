@@ -1,0 +1,19 @@
+@include block(forbidden) {
+    border-radius: 100%;
+    display: inline-flex;
+    width: auto;
+    position: relative;
+    &:before {
+        background-color: $color-lightGrey-dark;
+        content: "";
+        display: block;
+        height: calc(100% + 4px);
+        left: calc(50% - 3px);
+        position: absolute;
+        top: -2px;
+        transform: rotate(-45deg);
+        transform-origin: 50% 50% 0;
+        width: 6px;
+        z-index: 1;
+    }
+}

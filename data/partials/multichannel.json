@@ -1,0 +1,40 @@
+{
+  "title": "MULTI-CHANNEL INTEGRATION PLATFORM",
+  "subtitle": "Centralice en una única plataforma la gestión de su ecommerce y el resto de canales digitales. Acceda a:",
+  "slogan": "Disponible para clientes con Pack Enterprise<br><strong>¡Actívelo hoy mismo!</strong>",
+  "badge": "<strong>BigBuy</strong> ha desarrollado esta plataforma para sus clientes, con el objetivo de ofrecer una solución integral que <strong>automatice</strong>, por un lado, todas las <strong>necesidades</strong> de sincronización con BigBuy y, por otro, todas las integraciones multicanal de un <strong>ecommerce</strong>.",
+  "features": {
+    "items": [
+      {
+        "image": "multichannel2",
+        "alt": "Conectores Multicanal",
+        "title": "Conectores Multicanal"
+      },
+      {
+        "image": "orders3",
+        "alt": "Gestión de pedidos",
+        "title": "Gestión de pedidos"
+      },
+      {
+        "image": "catalog",
+        "alt": "Gestión de catálogo",
+        "title": "Gestión de catálogo"
+      },
+      {
+        "image": "truck-delivery2",
+        "alt": "Envío y transportistas",
+        "title": "Envío y transportistas"
+      },
+      {
+        "image": "reglas_precio",
+        "alt": "Reglas de precio",
+        "title": "Reglas de precio"
+      },
+      {
+        "image": "stock-propio2",
+        "alt": "Stock en tiempo real",
+        "title": "Stock en tiempo real"
+      }
+    ]
+  }
+}

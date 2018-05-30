@@ -1,0 +1,43 @@
+
+<div class="modularGrid-module u-md-50 u-lg-3rd u-pd--half ">   
+
+
+  <section class="planCard u-sm-70 u-md-100 ">
+
+
+
+    <figure class="planCard-theme">
+
+    {{#if soon}}<div class="planCard-ribbon"> {{soon}}</div>{{/if}}
+
+
+
+      <img src="../../img/theme_{{name}}.jpg" alt="" class="img--responsive">
+
+    </figure>
+    <aside class="planCard-actions">
+      <div class="u-flex--between u-flex--center u-pdb--half">
+        <h3 class="planCard-name">tema <strong>{{name}}</strong></h3>
+        <h4 class="supertitle1 u-op-70">570€</h4>
+      </div>
+
+      <div class="u-flex--center u-flex--between u-flwrap">
+
+        {{!-- <img src="../../img/devices.svg" class="planCard-devices">
+        <p class="u-mgr--half">Responsive</p>          --}}
+        {{#unless soon}}
+
+        <select name="" id="" class="form-select planCard-select form-select--inline u-mgr--half" >
+          <option value="">Catálogo completo</option>
+          <option value="">Catálogo perfumes</option>
+         
+        </select>
+        <button class="button">Ver demo</button>
+        <button class="button button--primary">Comprar</button>        
+      {{/unless}}
+      </div>
+
+    </aside>
+
+  </section>
+</div>

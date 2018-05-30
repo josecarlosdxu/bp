@@ -1,0 +1,18 @@
+---
+title: Entrega y envío
+breadcrumbs: Entrega y envío 
+layout: mobile/layouts/clean.hbs
+---
+<div class="modularGrid modularGrid--boxed u-pdb">
+    <div class="box">
+        {{> headerEntregasCMS}}
+        {{> mobileFeaturesList mobileFeaturesList.entregaHeader}}
+        {{> calculoCostes}}
+        <div class="modularGrid">
+            <div class="modularGrid-module u-brt">
+                {{> mobileFeaturesList mobileFeaturesList.footerFeatures}}
+            </div>
+        </div>
+        {{>helpCenter helpAccordion.entregas}}
+    </div>
+</div>

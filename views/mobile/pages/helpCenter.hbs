@@ -1,0 +1,31 @@
+---
+title: Centro de ayuda
+breadcrumbs: Centro de ayuda 
+layout: mobile/layouts/clean.hbs
+---
+
+<section class="content content--full u-brb">
+    {{>helpCenterBanner}}
+</section>
+
+
+{{!-- <div class="mobileNavBar mobileNavBar--news">
+    <div class="modularGrid modularGrid--boxed">
+        <div class="modularGrid-module u-xs-60">
+            <h2 class="mobileNavBar-title">Centro de ayuda</h2>
+        </div>
+    </div>
+</div> --}}
+
+<section class="content content--light">
+	<div class="modularGrid modularGrid--boxed u-pdb">
+		{{!-- <div class="modularGrid-module u-lg-30 u-xl-25"> --}}
+		<div class="modularGrid-module">
+			{{> helpCenterMenu  helpCenterNav3.fullpage}}
+		</div>
+		{{!-- <div class="modularGrid-module u-lg-70 u-xl-75"> --}}
+		<div class="modularGrid-module">
+			{{atoms "views/front/partials/helpCenter/*.hbs"}}
+		</div>
+	</div>
+</section>

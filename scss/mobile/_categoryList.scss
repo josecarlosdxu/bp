@@ -1,0 +1,102 @@
+%bannerText {
+    position: relative;
+    z-index: 1;
+}
+
+// NO TOCAR--------!!! INCLUYE BANNER NARANJAS
+@include block(categoryList) {
+    @include element(icondiscount) {
+        display: none;
+        justify-content: center;
+        padding-right: $um * 2;
+        color: $color-lightGrey-default;
+        padding-right: $um * 2;
+        margin-right: $um * 2;
+        border-right: 1px solid $color-shadow;
+        @include addBreakpoint(sm) {
+            -js-display: flex;
+            display: flex;
+        }
+        //opacity: 0.5;
+    }
+    @include element(flexCenterContent) {
+        -js-display: flex;
+        display: flex;
+        border: none;
+        @include addBreakpoint(sm) {
+            background: linear-gradient(white 50%, $color-shadow 50%, white 51%);
+            border: $um * 2 solid white;
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+}
+
+@include extendElement(categoryList, description, bannercenter) {
+    background: $color-lightGrey-light;
+    padding: $um $um * 2;
+    margin: $um 0;
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    letter-spacing: -0.03em;
+    border-top: 1px solid $color-shadow;
+    border-bottom: 1px solid $color-shadow;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    line-height: 1.2;
+    padding-bottom: 1.5rem;
+    @include addBreakpoint(sm) {
+        width: auto;
+        margin: 0 auto;
+        box-shadow: 0 0 0 $um * 2 white;
+        border: 1px solid $color-shadow;
+        border-radius: $um / 3;
+    }
+    h3 {
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        color: $color-darkGrey-light;
+    }
+    h5 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: $color-lightGrey-darker;
+        strong {
+            font-weight: 500;
+            font-size: 3rem;
+            color: $color-brandYellow-dark;
+            //color: $color-orange-darker;
+        }
+    }
+    h6 {
+        font-size: 2.25rem;
+        //font-weight: 400;
+        //padding-top: $um / 3;
+        line-height: 1.4;
+        font-weight: 300;
+        color: $color-darkGrey-light;
+        //color: $color-lightGrey-dark;
+        //color:$color-darkGrey-default;
+        //font-family: $type-headingscms;
+        letter-spacing: 0;
+        //color: white;
+        // color: $color-orange-darker;
+    }
+}
+.categoryList[data-js-tag-slider="slider"] {
+    position: relative;
+    overflow: hidden;
+    //height: 42.25rem;
+    //background: url("../../img/tags_bg.png");
+    margin-bottom: 1.75rem;
+    .popup-container--inside {
+        background: transparent;
+    }
+}

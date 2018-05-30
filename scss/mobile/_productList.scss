@@ -1,0 +1,133 @@
+@include block(productList) {
+    position: relative;
+    font-size: 0;
+    @include element(item) {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        //padding: $um / 3 ;
+        /*padding: $um $um 2rem;*/
+    }
+}
+
+@include extendBlock(productList, mobile) {
+    width: 100%;
+    overflow: hidden;
+    @include element(item) {
+        @extend %u-xs-50;
+        @extend %u-sm-3rd;
+        @extend %u-md-20;
+        @extend %u-lg-6th;
+        @extend %productListItemMobile;
+    }
+}
+
+@include extendBlock(productList, mobileSlides) {
+    overflow-x: auto;
+    white-space: nowrap;
+    @include addBreakpoint(xs) {}
+    @include addBreakpoint(sm) {
+        padding-right: $um * 2;
+    }
+    @include element(item) {
+        white-space: normal;
+        @extend %u-xs-55;
+        @extend %u-sm-40;
+        @extend %u-md-25;
+        @extend %u-lg-6th;
+        @extend %productListItemMobile;
+    }
+}
+
+@include extendBlock(productList, featured) {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    @include addBreakpoint(md) {
+        display: block;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @include element(item) {
+        flex-shrink: 0;
+        min-width: 16rem;
+        @include addBreakpoint(sm) {
+            width: calc(100vw / 2.5);
+        }
+        //width: 16rem;
+        @include addBreakpoint(md) {
+            display: inline-block;
+            width: 15.25rem;
+            transform: translate3d(0px, 0px, 0px);
+            white-space: normal;
+        }
+        @include addBreakpoint(lg) {
+            //width: calc(100% / 6);
+            width: calc((100vw - 3rem) / 6);
+        }
+        @include addBreakpoint(xl) {
+            //width: calc(100% / 6);
+            width: 16.6667rem
+        }
+    }
+}
+
+@include extendBlock(productList, searchResults) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.5rem;
+    justify-content: space-between;
+    margin-left: -1rem;
+    @include element(item) {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+        &:last-child {
+            margin-right: auto;
+        }
+        @include addBreakpoint(xl) {
+            width: calc(100% / 2 - 1rem);
+        }
+        @include addBreakpoint(xxl) {
+            width: calc(100% / 3 - 1rem);
+        }
+    }
+}
+
+@media (max-device-width: 800px) and (orientation: portrait) {
+    .productList--featured .productList-item {
+        width: 15.94rem;
+    }
+}
+
+@media (max-device-width: 800px) and (orientation: portrait) {
+    .productList--featured .productList-item {
+        width: 15.94rem;
+    }
+}
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+    .productList--featured .productList-item {
+        width: 15.4rem;
+    }
+}
+
+%productListItemMobile {
+    @include addBreakpoint(xs) {
+        padding: $um / 5;
+    }
+    @include addBreakpoint(sm) {
+        padding: $um / 4;
+    }
+    @include addBreakpoint(md) {
+        padding: $um / 4;
+    }
+    @include addBreakpoint(lg) {
+        padding: $um / 3;
+    }
+    @include addBreakpoint(xl) {
+        padding: $um / 3;
+    }
+}

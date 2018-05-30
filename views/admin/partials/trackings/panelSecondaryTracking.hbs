@@ -1,0 +1,53 @@
+<div class="panel panel--secondary panel--inactive" data-js-panel-name="panel02" data-js-panel-state="inactive">
+    <div class="panel-title">
+        <i class="fa fa-dropbox"></i> Pedido nº 54205</a>
+    </div>
+
+    <div class="panel-content">
+
+        <!-- panel actions -->
+        <div class="panel-actions">
+            <div class="panel-actions-group">
+                <div class="panel-actions-item">
+                    <div class="form-action">
+                        <i class="form-action-icon fa fa-times-circle"></i>
+                        <span class="form-action-msg">Cancelar</span>
+                    </div>
+                </div>
+                <div class="panel-actions-item">
+                    <div class="form-action">
+                        <i class="form-action-icon fa fa-undo"></i>
+                        <span class="form-action-msg">Devolver</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-actions-group">
+                <div class="panel-actions-item">
+                    <div class="modularGrid">
+                        <div class="modularGrid-module">
+                            <select name="" id="" class="form-select form-select--inline">
+                                <option value="">Más acciones</option>
+                                <option value="">Acción 1</option>
+                                <option value="">Acción 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        
+        <!-- panel tabs -->
+        <nav class="panel-tabs">
+            <a href="#" class="panel-tabs-item panel-tabs-item--active">Resumen</a>
+            <a href="#" class="panel-tabs-item">Devoluciones</a>
+        </nav>
+
+        <!-- panel tabs content-->
+        <div class="panel-tabs-content">
+
+            {{> panelSection panelSection.formOrders}}
+            {{> panelSection panelSection.relatedOrders}}
+
+        </div>
+    </div>
+</div>

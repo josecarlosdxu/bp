@@ -1,0 +1,78 @@
+
+<div class="u-pdh" data-section="section1"{{#unless back}} style="display:block;"{{/unless}}> 
+	               
+	<div class="modularGrid">
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half">  
+		    {{#if back}} 
+			<label for="" class="form-label"><strong>Nombre</strong></label>
+			{{/if}}                              
+			{{>nameField}}
+		</div>                    
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half">
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Apellidos</strong></label>
+			{{/if}}                           
+			{{>surnameField}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half">
+			{{#if back}} 
+			<label for="" class="form-label"><strong>País</strong></label>
+			{{/if}}   
+			{{>countriesSelect}}
+		</div>                    
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half"> 
+		    {{#if back}} 
+			<label for="" class="form-label"><strong>NIF</strong></label>
+			{{/if}}  			                     
+			{{>vatField tooltip='tooltip_particular'}}
+		</div>
+		<div class="modularGrid-module u-pdt--half">
+			 {{#if back}} 
+			<label for="" class="form-label"><strong>Dirección</strong></label>
+			{{/if}}               
+			{{>adressField}}
+		</div>                    
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+			 {{#if back}} 
+			<label for="" class="form-label"><strong>Localidad</strong></label>
+			{{/if}}               
+			{{>cityField}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half"> 
+		 {{#if back}} 
+			<label for="" class="form-label"><strong>Estado / Provincia</strong></label>
+			{{/if}}                             
+			{{>stateField}}
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half"> 
+			{{#if back}} 
+			<label for="" class="form-label"><strong>Código Postal</strong></label>
+			{{/if}}        
+		  {{>zipField}} 
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdl--half u-pdt--half"> 
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Teléfono de contacto</strong></label>
+			{{/if}}                             
+			<input class="form-prefix u-pen" name="phone_prefix" data-js-phone-prefix readonly="true" tabindex="-1"> 			                   
+			<input class="form-input form-input--prefix" type="text" name="phone" required placeholder="Teléfono de contacto" pattern="[ |+]*[0-9| |-]+" data-jsphone data-jserror="text27">
+		</div>
+		<div class="modularGrid-module u-sm-50 u-sm-pdr--half u-pdt--half">
+		{{#if back}} 
+			<label for="" class="form-label"><strong>Otro teléfono (opcional)</strong></label>
+			{{/if}}                             
+			<input class="form-prefix u-pen" name="phone_mobile_prefix" data-js-phone-prefix readonly="true" tabindex="-1"> 		          
+			<input class="form-input form-input--prefix" type="text" name="phone_mobile" placeholder="Otro teléfono (opcional)"  pattern="[ |+]*[0-9| |-]+" data-jsphonemobile>
+		</div>
+		<div class="modularGrid-module u-pdv"> 
+		 {{#if back}} 
+		    <button class="button button--big button--primary">Guardar datos</button> 
+		    {{else}}		   
+			<button class="button button--big button--primary" data-js-step="fw" formnovalidate >Continuar</button>        
+			{{/if}} 
+		                
+		
+		</div>
+	</div> 
+</div>
+

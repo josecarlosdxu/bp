@@ -1,0 +1,157 @@
+{
+    "hero": {
+        "title": "SOLUCIONES PARA EL CANAL DE VENTA ONLINE Y OFFLINE",
+        "buttontext": "Ser distribuidor",
+        "image": "diana-soluciones.svg"
+    },
+    "supertitle": {
+        "text": "Somos el mayorista ideal para emprendedores, profesionales o negocios, principalmente del canal online, que necesitan un proveedor multi-producto"
+    },
+    "banner1": {
+        "caption": "Soluciones",
+        "header": "Canal de venta<br>online",
+        "image": "online",
+        "list": [{
+            "text": "Servicio dropshipping"
+        }, {
+            "text": "Catálogo sincronizado"
+        }, {
+            "text": "Integración y conectores"
+        }]
+    },
+    "banner2": {
+        "caption": "Soluciones",
+        "header": "Canal de venta<br>offline",
+        "image": "offline",
+        "list": [{
+            "text": "Compra al por mayor"
+        }, {
+            "text": "Descuentos por volumen"
+        }, {
+            "text": "Compra unidades sueltas"
+        }]
+    },
+    "tiendas": {
+        "title": "Tiendas online ",
+        "headertext": "Para clientes que quieran sincronizar el catálogo de BigBuy a su tienda online ofrecemos diferentes soluciones que permiten integrar no sólo el catálogo, sino también stocks, pedidos, transportistas y trackings.",
+        "image": "soluciones-mockup.jpg",
+        "icon": "shopping_cart",
+        "list": [
+
+            {
+                "titlelist": "Ampliar catálogo tienda online existente",
+                "subtitlelist": "Para clientes que ya cuentan con un ecommerce y quieren ampliar su catálogo, ofrecemos multitud de opciones de sincronización y miles de productos de todo tipo de categorías.",
+                "items": [
+                    { "text": "Generar ventas adicionales, aprovechando el tráfico de su site y su cartera de clientes" },
+                    { "text": "Pedidos agrupados en un solo envío o servicio dropshipping" },
+                    { "text": "Opciones de sincronización: API, FTP, CSV, XML" }
+                ]
+            }, {
+                "titlelist": "Desarrollada por BigBuy - Tienda Dropshipping 360º<br><span class='subtitle6 u-wnowrap u-pdl--half'><em class='u-op-60'>(Recomendada) </em><a class='link color-blue u-mgl--3rd' href='#'>+ info</a></span>",
+                "subtitlelist": "La tienda dropshipping 360º desarrollada por Bigbuy es la solución integral llave en mano ideal tanto para emprendedores como para profesionales que quieran un negocio digital. Ofrecemos diversas soluciones multicanal alrededor de esta tienda, como es la integración a emarketplaces, blog, tienda en Facebook, etc. ",
+                "items": [
+                    { "text": "Software ecommerce Prestashop 1.7" },
+                    { "text": "Sincronización integral de catálogo, stocks, pedidos, transportistas y trackings" },
+                    { "text": "Plataforma de gestión multicanal del ecommerce e integración con emarketplaces" }
+                ]
+            }, {
+                "titlelist": "Desarrollada por el cliente mediante Multi-Channel Integration Platform <span class='subtitle6 u-wnowrap'><a class='link color-blue u-mgl--3rd' href='#'>+ info</a></span>",
+                "subtitlelist": "Para clientes que quieren desarrollar su tienda online dropshipping desde cero, ofrecemos la solución Multi-channel Integration Platform, en la que, en apenas unos clics, se centraliza, sincroniza y gestiona la integración a cualquier software ecommerce.",
+                "items": [
+                    { "text": "Integración y conector a Prestashop 1.7" },
+                    { "text": "Sincronización integral de catálogo, stocks, pedidos, transportistas y trackings" },
+                    { "text": "Próximamente: WooCommerce, Shopify, Magento, etc." }
+                ]
+            }, {
+                "titlelist": "Desarrollada por el cliente mediante API o CSV/XML <span class='subtitle6 u-wnowrap'><a class='link color-blue u-mgl--3rd' href='#'>+ info</a></span>",
+                "subtitlelist": "Disponemos de una API mediante la que desarrolladores y programadores pueden hacer una sincronización integral a medida. También ofrecemos el catálogo completo y stocks en archivos CSV/XML por FTP.",
+                "items": [
+                    { "text": "API de catálogo, stocks, pedidos, transportistas y trackings" },
+                    { "text": "Opciones de sincronización: FTP, CSV, XML" },
+                    { "text": "Archivos CSV en el formato de Prestashop" }
+                ]
+            }
+        ]
+    },
+    "marketplaces": {
+        "title": "EMARKETPLACES",
+        "icon": "emarket",
+        "image": "soluciones.jpg",
+        "headertext": "Para clientes que basan o complementan su negocio digital con la venta en emarketplaces.",
+        "footertext":"<strong>IMPORTANTE</strong>: BigBuy garantiza la perfecta sincronización a cualquiera de los emarketplaces incluidos en el Multi-channel Integration Platform, pero no se hace responsable de qué categorías, marcas o productos podrán ser publicados en los mismos, debido a las nuevas restricciones que éstos están imponiendo a los vendedores. Como ejemplo, Amazon está negociando directamente con las marcas y enviando stock desde sus almacenes, lo que lo aleja de la pura esencia de lo que entendemos como un emarketplace, y quizás otros sigan sus pasos.",
+        "list": [{
+            "titlelist": "Integración desarrollada por el cliente",
+            "subtitlelist": "Para clientes que quieren publicar de forma manual el catálogo de BigBuy en emarketplaces.",
+            "items": [
+                { "text": "Catálogo de productos y stocks en archivos CSV y XML" },
+                { "text": "Opciones de sincronización: API, FTP, CSV, XML" }
+            ]
+        }, {
+            "titlelist": "Integración desarrollada por BigBuy <span class='subtitle6 u-wnowrap'><a class='link color-blue u-mgl--3rd' href='#'>+ info</a></span>",
+            "subtitlelist": "Para clientes que disponen de una tienda dropshipping 360º desarrollada por BigBuy, ofrecemos la integración a diversos emarketplaces y la posibilidad de definir reglas de precio y márgenes.",
+            "items": [
+                { "text": "Integración de catálogo, pedidos, transportistas y trackings a todos los emarketplaces" },
+                { "text": "Publicación automática, novedades, altas, stocks en tiempo real" },
+                { "text": "Personalización de precios y márgenes" }
+            ]
+        }]
+    },
+    "flash": {
+        "title": "Flash deals",
+        "icon": "chrono",
+        "headertext": "Somos el proveedor ideal para webs de compra colectiva o venta flash, por los servicios que ofrecemos.",
+        "list": [{
+            "text": "Bloqueo de Stocks"
+        }, {
+            "text": "Fotos alta definición"
+        }, {
+            "text": "Carga masiva de pedidos por CSV"
+        }, {
+            "text": "Retorno de trackings"
+        }]
+    },
+    "etailers": {
+        "title": "etailers - minoristas online",
+        "icon": "b2b",
+        "headertext": "Para clientes que venden a través del canal online (ecommerces, emarketplaces, flash deals, etc.), pero compran al por mayor de forma tradicional haciendo un envío único a su almacén, logística o FBA. ",
+        "list": [{
+            "text": "Descuentos especiales por volumen"
+        }, {
+            "text": "Opciones de sincronización: FTP, CSV, XML, API"
+        }]
+    },
+    "almacenistas": {
+        "title": "Almacenistas y Distribuidores",
+        "icon": "stock-propio2",
+        "headertext": "Clientes que compran al por mayor grandes cantidades para almacenar y luego revender. BigBuy hace descuentos especiales para compras por volumen.",
+        "list": [{
+            "text": "Almacenistas y gran distribución"
+        }, {
+            "text": "Venta directa"
+        }, {
+            "text": "Regalo promocional"
+        }, {
+            "text": "Catálogo de puntos y fidelización"
+        }]
+    },
+    "tradicional": {
+        "title": "Comercio tradicional",
+        "icon": "store",
+        "headertext": "Negocios tradicionales que necesitan un proveedor que permita comprar unidades sueltas y entregas en 24h. al punto de venta",
+        "list": [{
+            "text": "Tiendas de regalo"
+        }, {
+            "text": "Comercios de todo tipo"
+        }]
+    },
+    "esporadicas": {
+        "title": "Compras esporádicas al por mayor",
+        "icon": "calendar_alt",
+        "headertext": "Clientes esporádicos que necesitan comprar grandes cantidades a un precio más competitivo",
+        "list": [{
+            "text": "Regalos de empresa"
+        }, {
+            "text": "Fiestas, eventos, bodas, bautizos, etc."
+        }]
+    }
+}

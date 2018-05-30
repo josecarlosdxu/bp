@@ -1,0 +1,30 @@
+<div class="panel panel--secondary panel--inactive" data-js-panel-name="panel02" data-js-panel-state="inactive">
+    <div class="panel-title">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-user"></use></svg>
+        <div class="panel-titleName"><a href="" class="panel-breadcrumbLink">Mi Cuenta</a> / Modificar datos</div>
+    </div>
+
+    <div class="panel-content">
+
+        <!-- panel tabs -->
+        <nav class="panel-tabs">
+            <button class="panel-tabs-item panel-tabs-item--active" data-panelTabBtn="tab1">Datos del usuario</button>
+            <button class="panel-tabs-item" data-panelTabBtn="tab2">Datos de Sector</button>
+
+        </nav>
+
+        <!-- panel tabs content-->
+        <div class="panel-tabs-content" id="tab1">
+             <section class="panel-section panel-section--borderless">
+            {{> modifyAccount}}
+            </section>
+        </div>
+
+        <div class="panel-tabs-content" id="tab2" style="display:none;">
+             <section class="panel-section">
+            {{> modifyAccountSector}}
+              </section>
+        </div>
+            </div>
+    <button class="panel-toggletab" data-js-panel="toggletab"><i class="icon fa fa-arrow-left"></i></button>
+</div>

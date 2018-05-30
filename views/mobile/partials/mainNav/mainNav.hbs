@@ -1,0 +1,62 @@
+<nav class="mainNav ma5-menu-mobile" data-js-mainNav="mainNav">
+    <ul class="mainNav-menu nav ma5-menu-panel" data-js-mainnav="menu">
+        {{> menuList menuList1.list }}
+        {{> menuList menuList2.list }}
+        {{> menuList menuList3.list }}
+        {{> menuList menuList4.list }}
+        {{> menuList menuList5.list }}
+        {{> menuList menuList6.list }}
+        {{> menuList menuList7.list }}
+        {{> menuList menuList8.list }}
+        {{> menuList menuList9.list }}
+        <li class="mainNav-item nav-item ">
+            <a class="mainNav-link" data-js-mainnav="link" href="#" title="Regalos Originales">
+                <h4 class="mainNav-linkText">Regalos Originales</h4>     
+            </a>
+        </li>
+        <li class="mainNav-item nav-item ">
+            <a class="mainNav-link" data-js-mainnav="link" href="#" title="Teletienda | Anunciado en TV">
+                <h4 class="mainNav-linkText">Teletienda | Anunciado en TV</h4>     
+            </a>
+        </li>
+        <li class="mainNav-item nav-item ">
+            <a class="mainNav-link" data-js-mainnav="link" href="#" title="Destacados BB">
+                <h4 class="mainNav-linkText">Destacados BB</h4>     
+            </a>
+        </li>
+        <li class="mainNav-item nav-item ">
+            <a class="mainNav-link" data-js-mainnav="link" href="#" title="Novedades">
+                <h4 class="mainNav-linkText">Novedades</h4>     
+            </a>
+        </li>
+        <li class="mainNav-item nav-item ">
+            <a class="mainNav-link" data-js-mainnav="link" href="#" title="Top ventas">
+                <h4 class="mainNav-linkText">Top ventas</h4>     
+            </a>
+        </li>
+        <li class="mainNav-item nav-item ">
+            <a class="mainNav-link" data-js-mainnav="link" href="#" title="Outlet | Ofertas">
+                <h4 class="mainNav-linkText">Outlet | Ofertas</h4>     
+            </a>
+        </li>
+        <li class="mainNav-item nav-item ">
+            <a class="mainNav-link" data-js-mainnav="link" href="#" title="Catálogo completo">
+                <h4 class="mainNav-linkText">Catálogo completo</h4>     
+            </a>
+        </li>
+    </ul>
+
+    {{>mobileSubmenu}}
+   <div class="mainNav-header " data-js-mainnav="header"> 
+    <a href="#" class="mainNav-button mainNav-button--preheader" disabled >BigBuy</a>
+    <a href="#" class="mainNav-button mainNav-button--preheader">Shop</a>
+    <a href="#" class="mainNav-button mainNav-button--preheader">Blog</a>
+    <a href="#" class="mainNav-button mainNav-button--preheader">Academy</a>        
+    <button class="mainNav-button button mainNav-button--menu" data-js-btnNav="hide"></button>
+</div>
+    <div class="mainNav-header mainNav-header--hide" data-js-mainnav="headerAlt">
+        <button class="mainNav-button mainNav-button--alt">{{>svgIcon type='chevronMobileLeft'}}</button>
+        <a href="#" class="mainNav-button mainNav-button--top">Categoría Superior de nombre largo </a>
+        <button class="mainNav-button button mainNav-button--menu" data-js-btnnav="hide"></button>
+    </div>
+</nav>

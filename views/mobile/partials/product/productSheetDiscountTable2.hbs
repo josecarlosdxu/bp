@@ -1,0 +1,167 @@
+{{!-- <div class="productSheet-discountTable u-mgb">
+    <table data-js-discount_table-panel="second" class="table table--ultracondensed">
+        <caption class="table-caption">
+        <section data-js-popuplauncher="../../static/popups/popup_info_pack.html">
+            <div class="table-captionIcon  productSheet-discountTable--automatic">
+
+                <img class="icon icon--inline icon--xs u-op-40" src="../../img/icons/pack.svg">
+            </div>
+            CON PACK MAYORISTA<em data-js-tooltip="tooltip2" class="form-info">
+            <img class="icon icon--inline icon--xs" src="../../img/icons/info.svg">
+        </em>
+        </section>
+        <p class="productSheet-shortDescription u-pdl u-mgl--half">Clientes con pack acceden a condiciones especiales, inclusive en unidades sueltas <a href="packsMayoristas.html" class="form-info form-info--discountTable">+info</a></p>
+        <p class="productSheet-shortDescription u-mgt--3rd u-pdl u-mgl--half">PVD: <span class="u-pdl--half">1 ud.</span>
+            <span data-js-second-discount-table-item="item" class="u-pdl--half">3,03 €</span></p>
+        </caption>
+    </table>
+</div> --}}
+<div data-js-discount_table="" class="modularGrid-module u-sm-50 u-brdl-minus1 u-h100">   
+
+{{#each items}}
+    <div class="productSheet-discountTable{{#if divclass}} {{divclass}}{{/if}}">
+
+        {{#if divcontent}}{{{divcontent}}}{{/if}}
+
+        <table data-js-discount_table-panel="first" class="table table--ultracondensed{{#if tableclass}} {{tableclass}}{{/if}}">
+
+            {{#if caption}}
+            <caption class="table-caption">
+                <div class="table-captionhead">
+                    <div class="table-captionIcon  productSheet-discountTable--volume">
+                        {{>svgIcon type=icon}}
+                    </div>
+                    {{caption}}
+                    {{#unless notooltip}}
+                    <em data-js-tooltip="tooltip_productsheet_range" class="form-info">
+                        {{>svgIcon type='info'}}
+                    </em>
+                    {{/unless}}
+                </div>
+
+                {{#if shortDescription}}
+                <p class="productSheet-shortDescription">{{{shortDescription}}}</p>
+                {{/if}}
+            </caption>
+            {{/if}}
+
+            {{#if table_thead}} 
+             <thead class="table-thead">
+                {{>productSheetDiscountTableThead   table_thead=../table_thead}}
+             </thead>
+             {{/if}}
+             {{#if table_tfoot}}
+              <tfoot class="table-tfoot">
+                   {{>productSheetDiscountTableThead   table_thead=../table_tfoot}}
+             </tfoot>
+             {{/if}}    
+            <tbody> 
+                {{#if progressbar}}
+                <tr class="table-tr">               
+                    <td class="table-item" colspan="100">
+                        {{>progressbar this.progressbar}}
+                    </td>
+                </tr>
+                {{/if}}
+                {{#if tbodycontent}}
+                {{>productSheetDiscountTableThead   table_thead=../tbodycontent}}   
+                {{/if}}
+            </tbody>
+
+        </table>
+    </div>
+
+
+{{/each}}
+
+
+     {{!-- {{#if table_thead}}
+            
+             <thead class="table-thead">
+                <h2>ewrwrwer</h2>
+
+            {{#each this.thead-items}}
+            <h2>ewrwrwer</h2>
+
+                {{{content}}}
+
+                {{/each}}
+
+                
+
+                
+
+
+
+            </thead> --}}
+
+
+
+    {{!-- <div class="productSheet-discountTable">
+        <table data-js-discount_table-panel="first" class="table table--ultracondensed">
+            <caption class="table-caption">
+                <div class="table-captionIcon  productSheet-discountTable--volume">
+                    <svg role="img" class="icon icon--inline icon--xs">
+                        <use xlink:href="../../img/icons/svg-defs.svg#icon-user" ></use>
+                    </svg>
+                </div>
+                SIN PACK MAYORISTA
+                <em data-js-tooltip="tooltip_productsheet_range" class="form-info">
+                    <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-info"></use></svg>
+                </em>
+                <p class="productSheet-shortDescription u-pdl u-mgl--half">Descuento % por volumen</p>
+            </caption>
+            <thead class="table-thead">
+                <tr class="table-tr">
+                    <th class="table-item  table-item--number">Uds.</th>
+                    <th class="table-item  table-item--number">PVR</th>
+                    <th class="table-item table-item--number  u-pdr">Dto.(%)</th>
+                </tr>
+            </thead>
+            <tbody class="table-tbody">
+                <tr data-js-discount_table="tr-item" class="table-tr">
+                    <td class="table-item table-item--number">6</td>
+                    <td class="table-item table-item--number">38,45 €</td>
+                    <td class="table-item table-item--number  u-xs-40 u-pdr">-4,47%</td>
+                </tr>
+                <tr data-js-discount_table="tr-item" class="table-tr">
+                    <td class="table-item table-item--number">12</td>
+                    <td class="table-item table-item--number">37,13 €</td>
+                    <td class="table-item table-item--number  u-xs-40 u-pdr">-7,75%</td>
+                </tr>
+                <tr data-js-discount_table="tr-item" class="table-tr">
+                    <td class="table-item table-item--number">48</td>
+                    <td class="table-item table-item--number">33,06 €</td>
+                    <td class="table-item table-item--number  u-xs-40 u-pdr">-17,86%</td>
+                </tr>
+                <tr data-js-discount_table="tr-item" class="table-tr">
+                    <td class="table-item table-item--number">96</td>
+                    <td class="table-item table-item--number">30,80 €</td>
+                    <td class="table-item table-item--number  u-xs-40 u-pdr">-23,48%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="productSheet-discountTable u-mgt">
+        <table data-js-discount_table-panel="second" class="table table--ultracondensed">
+            <caption class="table-caption">
+                <div class="table-captionIcon  productSheet-discountTable--automatic">
+                    <svg role="img" class="icon icon--inline icon--xs">
+                        <use xlink:href="../../img/icons/svg-defs.svg#icon-pack" />
+                    </svg>
+                </div>
+                CON PACK MAYORISTA
+                <em data-js-tooltip="tooltip_productsheet_pack" class="form-info">
+                    <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-info"></use></svg>
+                </em>
+                <p class="productSheet-shortDescription u-pdl u-mgl--half">Clientes con pack acceden a condiciones especiales, inclusive en unidades sueltas <a target="_blank" href="http://192.168.1.211/bigbuy_e/es/packs-mayoristas.html" class="form-info form-info--discountTable">+info</a>
+                </p>
+                <p class="productSheet-shortDescription u-pdl u-mgl--half">
+                    PVD:
+                    <span class="u-pdl--half">1 ud.</span>
+                    <span data-js-second-discount-table-item="item" class="u-pdl--half">30,80 €</span>
+                </p>
+            </caption>
+        </table>
+    </div> --}}
+</div>

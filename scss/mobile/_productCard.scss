@@ -1,0 +1,307 @@
+/* mobile*/
+
+@include block(productCard) {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    vertical-align: top;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 1.4;
+    background-color: $color-productCard-background;
+    @include element(ribbon) {
+        background: #f90;
+        color: #fff;
+        font-size: 1rem;
+        left: -27px;
+        padding: 0.5rem 2.5rem;
+        position: absolute;
+        text-transform: uppercase;
+        top: 12px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+        display: block;
+    }
+    @include element(content) {
+        margin: 0;
+    }
+    @include element(img) {
+        @extend %img--responsive;
+        position: relative;
+        padding: 0;
+    }
+    @include element(caption) {
+        display: none;
+        font-size: 1.4rem;
+        font-weight: 300;
+        height: 6rem;
+        text-align: center;
+        input[type="text"] {
+            display: none;
+            padding: 3rem;
+        }
+    }
+    @include element(ctaButton) {
+        display: none;
+    }
+    @include element(properties) {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    @include element(title) {
+        line-height: 1.15;
+        padding: 0.2rem 0.25rem 0;
+        display: table-cell;
+        height: 6rem;
+        vertical-align: middle;
+        width: 100%;
+        font-size: 1.1rem;
+        color: #444;
+        position: relative;
+        @include addBreakpoint(sm) {
+            padding: 0.2rem 0.75rem 0;
+        }
+        @include addBreakpoint(md) {
+            font-size: 1rem;
+        }
+    }
+    @include element(link) {
+        color: inherit;
+    }
+    @include element(prices) {
+        background: #EDEFF2;
+        box-shadow: 0 1px $color-shadow inset;
+        overflow: hidden;
+        vertical-align: top;
+    }
+    @include element(pvp) {
+        font-size: 1rem;
+        font-weight: 400;
+        @include element(name) {
+            float: left;
+            display: inline;
+        }
+        @include element(amount) {
+            float: right;
+            text-align: right;
+            @include modifier(before) {
+                text-decoration: line-through;
+            }
+        }
+        @include modifier(before) {
+            display: inline-block;
+            padding: 0 1rem;
+            padding: 0 0.5rem;
+            color: #888;
+            float: left;
+            @extend %u-xs-70;
+            @include addBreakpoint(sm) {
+                padding: 0 1rem;
+            }
+        }
+        @include modifier(discount) {
+            padding: 1.4rem 0 1.7rem;
+            text-align: center;
+            color: opacify($color-shadow, 0.3);
+            background: opacify($color-light, 0.5);
+            box-shadow: 1px 0 $color-shadow inset;
+            font-size: 1.2rem;
+            font-weight: 500;
+            position: relative;
+            top: 1px;
+            @extend %inlineBlock100;
+            @extend %u-xs-30;
+        }
+        @include modifier(now) {
+            display: inline-block;
+            float: left;
+            color: #333;
+            @extend %u-xs-70;
+            font-size: 1.25rem;
+            font-weight: 400;
+            padding: 0.75rem 0.5rem 0;
+            @include addBreakpoint(sm) {
+                font-size: 1rem;
+                padding: $um / 2 1rem 0;
+            }
+        }
+        @include modifier(relevant) {
+            color: #000;
+            font-weight: 500;
+        }
+    }
+    @include element(play) {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+        &:before {
+            width: 30px;
+            height: 30px;
+            background-image: linear-gradient(-45deg, transparent 48%, transparentize(black, 0.9) 48%, transparentize(white, 0.3) 51%);
+        }
+        &:after {
+            border: 3px solid transparent;
+            border-left: 5px solid transparentize(black, 0.3);
+            border-right: none;
+            top: 8px;
+            left: 7px;
+        }
+    }
+}
+
+@include extendBlock(productCard, outlet) {
+    @include element(ribbon) {
+        display: block;
+        background: #f90;
+        color: #fff;
+    }
+}
+
+@include extendBlock(productCard, new) {
+    @include element(ribbon) {
+        display: block;
+        background: #F75856;
+        color: #fff;
+    }
+}
+
+@include extendBlock(productCard, besteller) {
+    @include element(ribbon) {
+        display: block;
+        background: #67B02C;
+        color: #fff;
+    }
+}
+
+@include extendBlock(productCard, stockreturn) {
+    @include element(ribbon) {
+        display: block;
+        background: #06c;
+        color: #fff;
+    }
+}
+
+@include extendBlock(productCard, noStock) {
+    @include element(buy) {
+        background: $color-productCardNoStock-buy-background;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 4px solid tomato;
+    }
+}
+
+@include extendBlock(productCard, blackFriday) {
+    @include element(ribbon) {
+        display: flex;
+        background: black;
+        color: #fff;
+        box-shadow: -2.5rem 0 0 1px black, 2.5rem 0 0 1px black, -2.65rem 0 0 2px rgba(255, 255, 255, 0.5), 2.65rem 0 0 2px rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+        left: -5px;
+        line-height: 1.1;
+        padding: 0;
+        text-align: center;
+        width: 5rem;
+        height: 2.5rem;
+        align-items: center;
+    }
+}
+@include extendBlock(productCard, hot) {
+    @include element(ribbon) {
+        display: flex;
+        background: #e00000;
+        color: #fff;
+        //box-shadow: -2.5rem 0 0 1px black, 2.5rem 0 0 1px black, -2.65rem 0 0 2px rgba(255, 255, 255, 0.5), 2.65rem 0 0 2px rgba(255, 255, 255, 0.5);
+        font-size: 1rem;
+        left: -2.5rem;
+        line-height: 1.1;
+        padding: 0;       
+        width: 10rem;
+        height: 2.5rem;
+        align-items: center;
+        justify-content:  center;
+        top:1.25rem;
+        border:1px solid transparentize(white,0.5);
+        
+        
+    }
+}
+
+@include extendBlock(productCard, landscape) {
+    display: block;
+    outline: none;
+    @include element(img) {
+        max-width: 70px;
+        max-height: 70px;
+        border: 1px solid $color-shadow;
+    }
+    @include element(content) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include element(title) {
+        display: block;
+        height: 2.8rem;
+        line-height: 1.2;
+        padding: 0 0.75rem;
+        overflow: hidden;
+    }
+    @include element(prices) {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: transparent;
+        box-shadow: none;
+        height: 3rem;
+        width: 16rem;
+    }
+    @include element(properties) {
+        width: calc(100% - 72px);
+    }
+    @include element(pvp) {
+        @include modifier(before) {
+            font-size: 0.9rem;
+        }
+        @include modifier(now) {
+            margin-bottom: -4px;
+            margin-top: 2px;
+            font-size: 1rem;
+        }
+        @include modifier(discount) {
+            width: auto;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            padding-left: 0.75rem;
+            background-color: transparent;
+            position: absolute;
+            left: 10rem;
+            top: 0;
+            height: 3rem;
+        }
+    }
+    @include element(buy) {
+        display: none;
+    }
+    .productCard-pvp-name,
+    .productCard-pvp-amount {
+        float: none;
+        display: block;
+    }
+    .productCard-pvp--now,
+    .productCard-pvp--before {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.75rem;
+        width: 9.75rem;
+    }
+}

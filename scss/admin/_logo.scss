@@ -1,0 +1,119 @@
+
+
+@include block(logo) {
+
+    position: relative;
+    max-width: 90px;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    max-width: 4rem;
+    max-height: 4rem;
+
+    transition: all 0.3s ease-out;
+
+    max-width: $um * 8;
+    width: $um * 8;
+    height: $um * 8;
+    max-height: $um * 8;
+    padding: $um;
+
+
+    &:before {
+
+        color: #999;
+        content: "&";
+        display: block;
+        font-size: 2.5rem;
+        left: 5rem;
+        position: absolute;
+        top: 3.3rem;
+
+        @include addBreakpoint(lg) {
+        }
+    }
+
+    @include element(thumbnail) {
+
+        width: 80%;
+        height: 80%;
+        z-index: 1;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+        background: grey;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        box-shadow: 0 0 1px 0px rgba(162,162,109,0.25);
+        display: block;
+
+
+        width: 55%;
+        height: 55%;
+        z-index: 0;
+        display: block;
+        margin-left: 6rem;
+        margin-top: 0.5rem;
+        transform: none;
+        -webkit-transform: none;
+
+        @include addBreakpoint(lg) {
+            //border-radius: 100%;
+        }
+    }
+
+    @include element(img) {
+        @extend %img--responsive;
+        width: 120%;
+        left: -6%;
+        position: relative;
+        top: -12%;
+    }
+
+
+    @include element(background) {
+        position: absolute;
+        //top: 11%;
+        //right: -32%;
+        @extend %img--responsive;
+        display: none;
+        max-width: 3rem;
+        max-height: 3rem;
+        top: 10%;
+        left: 10%;
+
+        max-width: 5rem;
+        max-height: 5rem;
+        top: 17%;
+        left: -5%;
+        display: block;
+
+        @include addBreakpoint(lg) {
+
+        }
+
+    }
+
+    @include element(caption) {
+        outline: none;
+        position: relative;
+        margin: $um * 2  (0 - $um / 2)  auto;
+        display: none;
+        padding-left: $um / 2;
+        cursor: default;
+        border-radius: 3px;
+        display: block;
+
+        @include addBreakpoint(lg) {
+
+        }
+
+        @include element(icon) {
+           background: opacify($color-light , 0.1);
+           padding: $um / 3;
+           position: absolute;
+           top: 0;
+           right: 0;
+           display: block;
+       }
+   }
+}

@@ -1,0 +1,17 @@
+@include block(imgLinkList) {
+    vertical-align: baseline;
+    margin-bottom: $um;
+    background: white;
+    @extend %box-shadow;
+    font-size: 0;
+    @include element(link) {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+    @include element(img) {
+        @extend %img--responsive;
+    }
+}

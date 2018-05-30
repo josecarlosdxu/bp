@@ -1,0 +1,27 @@
+{
+  "bigmenu":{
+    "header":[
+      {
+        "title":"Maletas y otro equipaje",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Artículos de viaje",
+        "sectionID":"",
+        "modifier":""
+      },
+      {
+        "title":"Automóvil y accesorios",
+        "sectionID":"",
+        "modifier":""
+      },
+
+      {
+        "title":"Camping",
+        "sectionID":"",
+        "modifier":""
+      }
+    ]
+  }
+}

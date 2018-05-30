@@ -1,0 +1,42 @@
+<div class="shoppingCartStep{{#if active}} shoppingCartStep--active{{/if}}{{#if editable}} shoppingCartStep--editable{{/if}}" data-shoppingcart-step="3" data-js-step3="">
+
+  <section class="shoppingCartStep-header">
+    <b class="shoppingCartStep-number">3</b>
+    <section class="shoppingCartStep-headertexts">
+      <h4 class="shoppingCartStep-title">Método de envío</h4> 
+      <h5 class="shoppingCartStep-subtitle">0,00 €  Dropshipping: No</h5>       
+    </section>
+    {{>shoppingCartEditBtn}}
+  </section>
+
+<div class="shoppingCartStep-content">   
+{{>shoppingCartProdStep3Table}}
+
+  <section data-js-dropshipping-title="" class="u-flex--center u-pdv u-brb">
+    <label class="form-label u-mgr--half" for="dropshipping">Envío dropshipping<em class="form-info " data-js-tooltip="tooltip_dropshipping">{{> svgIcon type='info' class='u-op-40'}}</em> </label>                                            
+    <select class="form-select width-auto u-mgb--0" name="dropshipping" data-js-dropshipping="">
+      <option value="0">No</option>
+      <option value="1">Sí</option>
+    </select>  
+  </section>
+
+
+  <section class="u-flex--center u-flex--between u-pdv">
+    <article>
+      <label class="form-label"> Nota para el transportista visible en la etiqueta <em class="form-info" data-js-tooltip="tooltip_courier_comments">{{> svgIcon type='info' class='u-op-40'}}</em> <em class="form-label--optional" data-js-state-op=""><span data-js-carrier_comments_chars="" data-js_max="40">40</span> Car.</em>
+      </label>
+      <input class="form-input" maxlength="255" data-js-carrier_comments="" data-js-cuenta_caracteres="data-js-carrier_comments" type="text">
+    </article>
+    <article>
+      <label class="form-label"> Su referencia interna <em class="form-info" data-js-tooltip="ref_interna">{{> svgIcon type='info' class='u-op-40'}}</em> <em class="form-label--optional" data-js-state-op="">Opcional</em>
+      </label>
+      <input class="form-input" data-js-referencia_interna="" maxlength="12" type="text">
+    </article>
+  </section>
+
+<button class="button button--primary button--big" data-js-continuar-address="" onclick="popup.getPopup('../popups/popup_delivery.html', submitLoginPopup);">Continuar</button>   
+</div>
+</div>
+
+
+

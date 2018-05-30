@@ -1,0 +1,39 @@
+<fieldset class="form-fieldset form-fieldset--sequentialAlt">
+  <div class="modularGrid">
+    {{>fieldsetLegend title='Complete los siguientes datos'}}
+
+ </div>
+
+ <div class="modularGrid modularGrid--twocolumns">
+
+    <div class="modularGrid-module ">
+      {{>select1 label='Asunto' id='asunto3'}}
+    </div>
+    <div class="modularGrid-module">
+      {{>select1 label='Motivo' id='motivo4'}}
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="form-fieldset form-fieldset--sequentialAlt">
+  <div class="modularGrid">
+  {{>fieldsetLegend title='Escriba aquí sus comentarios'}}
+    <div class="modularGrid-module">
+      <label for="" class="form-label">Mensaje</label>
+      <textarea class="form-textarea"> </textarea>
+    </div>
+    {{>fileUploads}}
+  </div>
+</fieldset>
+
+{{>ticketsBtnSend}}
+
+
+
+
+
+
+
+
+
+

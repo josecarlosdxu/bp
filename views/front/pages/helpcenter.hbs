@@ -1,0 +1,77 @@
+---
+title: Centro de ayuda
+layout: front/layouts/landing.hbs
+breadcrumblist:
+- Centro de ayuda
+- Página interior
+---
+<section class="content content--full">
+    <article class="landingBanner">
+        <div class="landingBanner-boxed">
+            <div class="modularGrid  modularGrid--boxed u-tac">
+                <h1 class="supertitle">Centro de ayuda</h1>
+                <h4 class="superSubtitle">¿Cómo podemos ayudarle?</h4>
+              {{!--   <div class="modularGrid-module u-md-60 u-pdb2">
+                    <input maxlength="100" name="q" id="inputtext1" class="searchForm-searchInput searchForm-searchInput--big" placeholder="Buscar en el centro de ayuda" type="text">
+                </div> --}}
+            </div>
+        </div>
+        <picture class="landingBanner-bg">
+           {{!--  <source class="landingBanner-bgsource" media="(min-width: 1400px)" srcset="../../img/img-help-center.jpg"></source>
+            <source class="landingBanner-bgsource" media="(min-width: 1200px)" srcset="../../img/api_dropshipping_large.jpg"></source>
+            <source class="landingBanner-bgsource" media="(min-width: 1024px)" srcset="../../img/api_dropshipping_big.jpg"></source>
+            <source class="landingBanner-bgsource" media="(min-width: 640px)" srcset="../../img/api_dropshipping_medium.jpg"></source>
+            <source class="landingBanner-bgsource" media="(min-width: 480px)" srcset="../../img/api_dropshipping_small.jpg"></source>
+            <source class="landingBanner-bgsource" media="(min-width: 300px)" srcset="../../img/img-help-center.jpg.jpg"></source> --}}
+            <img src="../../img/img-help-center.jpg" class="landingBanner-bgimg">
+        </picture>
+    </article>
+</section>
+{{!-- <section class="content content--full u-brb u-pdb--half">
+<div class="modularGrid  modularGrid--boxed u-pd2 u-tac">
+<h4 class="cmsContentSection-subtitle u-block u-mgb">Inicie sesión y acceda a contenidos exclusivos para clientes con pack mayorista</h4>
+<a href="#" class="button button--bigger button--primary u-mgr--half">{{>svgIcon type='login'}} Iniciar sesión</a>
+<a href="#" class="button button--bigger button--ghost u-mgl--half">{{>svgIcon type='newUser'}}Crear cuenta</a>
+ </div>
+</section> --}}
+
+
+<section class="content content--light">
+    <div class="modularGrid  modularGrid--boxed u-pdh">
+
+
+    <nav class="breadcrumb">
+    
+        
+        <div class="breadcrumb-cont"><label class="breadcrumb-link" data-js-helpcenter="link" for="indexpage"><span>Centro de ayuda</span></label></div>
+        
+        <div class="breadcrumb-cont"><label class="breadcrumb-link" data-js-helpcenter="link" for="serviciosBigbuy"><span>Página interior</span></label></div>
+        
+    
+</nav>
+
+
+
+
+
+        
+    </div>
+    <hr/>
+    <div class="modularGrid  modularGrid--boxed u-pd">
+        <div class="modularGrid-module u-lg-20">
+        <label class="cmsContentSection-title u-pdb--half u-block" data-js-helpcenter="link" for="indexpage">Centro de ayuda</label>
+            {{> helpSectionIndex helpCenterNav3.fullpage}}
+        </div>
+        <div class="modularGrid-module u-lg-60 u-pdr">
+            <div class="modularGrid">
+                {{atoms "views/front/partials/helpCenter/*.hbs"}}
+            </div>
+        </div>
+       {{!--  <div class="modularGrid-module u-md-20 u-bb-bg--half u-pd">
+            <p class="subtitle2">Sincronice su tienda online con BigBuy</p>
+            <p class="subtitle4  u-mgb">Su catálogo, pedidos y transportistas siempre al día</p>
+            <img src="../../img/help-center.svg" alt="">           
+    </div> --}}
+</section>
+
+

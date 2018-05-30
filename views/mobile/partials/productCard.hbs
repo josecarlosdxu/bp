@@ -1,0 +1,58 @@
+<article class="productCard {{#each productCardModifier}} productCard--{{this}} {{/each}} {{#if this.nostock}} productCard--noStock {{/if}}">
+<a href="product.html">
+    <figure class="productCard-content">
+            <img class="productCard-img" src="{{image}}" alt="">
+
+        <figcaption class="productCard-properties">
+            <div class="productCard-title">
+                {{title}}
+            </div>
+            <div class="productCard-prices">
+
+                <div class="productCard-pvp productCard-pvp--now">
+
+                    <div class="productCard-pvp-name productCard-pvp--relevant">
+                        PVR
+                    </div>
+
+                    <div class="productCard-pvp-amount productCard-pvp--relevant">
+                        {{pvp03}}€
+                    </div>
+
+                </div>
+                 <div class="productCard-pvp productCard-pvp--before">
+                    <div class="productCard-pvp-name">
+                        PVP
+                    </div>
+
+                    <div class="productCard-pvp-amount  productCard-pvp-amount--before">
+                        {{pvp01}}€
+                    </div>
+                </div>
+
+                <div class="productCard-pvp productCard-pvp--discount">
+                    -{{pvp02}}%
+                </div>
+
+            </div>
+        </figcaption>
+    </figure>
+    </a>
+
+    {{#if this.ribbon}}
+    <div class="productCard-ribbon"> {{ this.ribbon}}</div>
+    {{/if}}
+     {{#if this.play}}
+    <div class="productCard-play"></div>
+    {{/if}}
+
+
+    <div class="productCard-buy">
+        {{#if this.nostock}}
+        <div class="productCard-caption">
+            Sin stock
+        </div>
+        {{/if}}
+    </div>
+
+</article>

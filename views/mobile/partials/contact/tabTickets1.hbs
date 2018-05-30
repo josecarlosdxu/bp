@@ -1,0 +1,117 @@
+ <div class="modularGrid">
+    <div class="modularGrid-module">
+        <h3 class="mobileText-sectionTitle">Seleccione los campos de la consulta</h3>
+    </div>
+    <div class="modularGrid-module u-md-50">
+        <label class="form-label">Seleccione un motivo</label>
+        <select name="country" class="form-select">            
+            <option value="">Información sobre servicios</option>
+            <option value="">Productos</option>
+        </select>
+    </div>
+
+    <div class="modularGrid-module u-md-50 u-md-pdl">
+        <label class="form-label">Seleccione el tema</label>
+        <select name="country" class="form-select">           
+            <option value="">Stock</option>
+            <option value="">Precios</option>
+            <option value="">Pedido especial</option>
+            <option value="">Plazo de entrega</option>
+            <option value="">Información del producto</option>
+        </select>
+    </div>
+
+
+
+    <div class="modularGrid-module u-pdb">
+        <h3 class="mobileText-sectionTitle ">Preguntas frecuentes sobre su consulta</h3>
+        <a href="#" class="link--question u-block u-mgt--half ">Los textos simulados son también utilizados para comparar variedades tipográficas.</a>
+        <a href="#" class="link--question u-block u-mgt--half ">¿Incomprensibilidad o legibilidad? Esa es la cuestión.</a>
+        <a href="#" class="link--question u-block u-mgt--half ">La utilidad de un contenido sin sentido</a>
+    </div>
+
+    <div class="modularGrid-module u-pdb">
+        <h4 class="mobileText-sectionTitle u-block">¿No ha encontrado lo que buscaba? Cree una nueva consulta</h4>
+        <button class="button button--ghost">Realizar consulta</button>
+    </div>
+
+    <div class="responsiveTable-container u-mgb">
+    <table class="table responsiveTable-table responsiveTable-table--auto">   
+    <thead class="table-thead">
+        <tr class="table-tr responsiveTable-tr">
+            <th class="responsiveTable-th">Fecha</th>
+            <th class="responsiveTable-th">Nº pedido</th>
+            <th class="responsiveTable-th">Ref. interna</th>
+            <th class="responsiveTable-th">Destinatario</th>
+            <th class="responsiveTable-th">Forma de pago</th>
+            <th class="responsiveTable-th">Mensajería</th>
+            <th class="responsiveTable-th">RDO</th>
+            <th class="responsiveTable-th">Importe</th>
+            <th class="responsiveTable-th">Estado</th>
+            <th class="responsiveTable-th">Tracking</th>
+        </tr>
+    </thead>
+    <tbody class="table-tbody  table-tbody--stripped">
+    {{#times 3}}
+        <tr class="table-tr responsiveTable-tr">
+            <td class="responsiveTable-td">10/10/2100</td>
+            <td class="responsiveTable-td">12345678900</td>
+            <td class="responsiveTable-td">12345678</td>
+            <td class="responsiveTable-td">Napoleón Abelardo Tobías Higueruela Povedilla</td>
+            <td class="responsiveTable-td">VISA PayPal</td>
+            <td class="responsiveTable-td">MRW</td>
+            <td class="responsiveTable-td">--</td>
+            <td class="responsiveTable-td">10.365€</td>
+            <td class="responsiveTable-td">Expedido</td>
+            <td class="responsiveTable-td">--</td>
+        </tr>
+        {{/times}}      
+    </tbody>   
+</table> 
+</div>
+
+
+
+
+
+
+
+
+    <div class="modularGrid-module">
+        <h3 class="mobileText-sectionTitle ">Escriba sus comentarios</h3>
+        <textarea class="form-textarea"></textarea>
+    </div>
+
+
+    <div class="modularGrid-module u-xs-50">
+        <button class="uploadFile u-mgt--half">
+            Archivo 1
+            <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+        </button>
+         <button class="uploadFile u-mgt--half">
+            Archivo 1
+            <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+        </button>
+         <button class="uploadFile u-mgt--half">
+            Archivo 1
+            <svg class="icon icon--inline icon--sm" role="img"> <use xlink:href="../../img/icons_mobile/svg-defs.svg#icon-times"></use></svg>
+        </button>
+    </div>
+    <div class="modularGrid-module u-xs-50 u-txr">
+        <button class="button u-mgt--half"> 
+            <svg class="icon icon--inline icon--sm" role="img"> 
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/icons_mobile/svg-defs.svg#icon-clip"></use>
+            </svg>
+            Adjuntar
+        </button>
+    </div>
+
+     <div class="modularGrid-module u-tac">
+          <div class="form-label--optional u-mgt">Tamaño de archivos adjuntos <span>5.00 Mb</span> de 10.00 Mb</div>
+          <div class="progressBar progressBar--tiny u-xs-70"><span class="progressBar-meter" style="width:33%;"></span></div>
+    </div>
+
+     <div class="modularGrid-module u-brdt u-mgt--half">
+     <button class="button button--primary u-mgt--half" name="submit">Enviar</button>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<li class="menuList-item">
+    {{#if this.subsections}}
+    <button data-js-menulist="button" class="menuList-button">       
+            {{>svgIcon type='chevronMobileRight' size='xxs'}} 
+    </button>
+    <label for="{{itemName}}"class="menuList-link  menuList-link--primary  menuList-link--selectable" data-js-menulist="link" data-js-helpcenter="link">{{title}}</label>
+    <ul class="menuList-list menuList-list--secundary">
+        {{#each subsections}}
+        {{>helpCenterSubsection itemObj=../this}}
+        {{/each}}
+    </ul>
+    {{else}}
+    <label for="{{itemName}}" class="menuList-link  menuList-link--primary  menuList-link--final" data-js-menulist="link" data-js-helpcenter="link"> 
+        {{>svgIcon type='bullet'}}    
+        {{title}}
+    </label>
+    {{/if}}
+</li>

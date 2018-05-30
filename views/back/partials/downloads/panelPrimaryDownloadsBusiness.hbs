@@ -1,0 +1,24 @@
+<div class="panel panel--active panel--reveal" >
+  <div class="panel-title">
+    <svg class="icon icon--inline icon--xs" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-download"></use></svg>
+    <div class="panel-titleName"><a class="panel-breadcrumbLink" href="">Descargas</a></div>
+  </div>
+  <div class="panelHeader panelHeader--dataContent">
+   <nav class="panel-tabs">
+     <button data-paneltabbtn="tab10" class="panel-tabs-item panel-tabs-item--active">Descargas Sincro</button>
+     <button data-paneltabbtn="tab12" class="panel-tabs-item">Descargas Sincro Antiguas</button>
+     <button data-paneltabbtn="tab11" class="panel-tabs-item">Descargas Márketing</button>
+   </nav>
+ </div>
+ <div class="panel-content fixedContent" >
+  <div id="tab10">
+    {{>panelDownloadsSincroBusiness}}
+  </div>
+  <div id="tab12" style="display:none;">
+    {{>panelDownloadsSincroBusinessAlt }}
+  </div>
+  <div id="tab11" style="display:none;">
+   {{>panelDownloadsMarketing}}
+ </div>
+</div>
+</div>

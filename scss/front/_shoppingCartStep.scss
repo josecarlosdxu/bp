@@ -1,0 +1,133 @@
+@include block(shoppingCartStep) {
+    @extend %box;
+    @include element(buttonEdit) {
+        @extend .button--iconAlt;
+        padding: 0;
+        display: none;
+    }
+    @include element(info) {
+        display: none;
+    }
+    @include element(number) {
+        display: inline-flex;
+        margin-right: $um / 2;
+        color: #fff;
+        border-radius: $um;
+        background: #999;
+        font-size: 1.1666rem;
+        font-weight: 400;
+        line-height: 1.5;
+        min-width: 1.5em;
+        justify-content: center;
+    }
+    @include element(header) {
+        padding: 0.75rem 2.5rem;
+        color: #999;
+        background: $color-shoppingCart-step-title-background;
+        display: flex;
+        position: relative;
+        border-bottom: 1px solid $color-shadow;
+        justify-content: space-between;
+        align-items: center;
+        @include modifier(final) {
+            background-color: white;            
+        }
+    }
+    @include element(headertexts) {
+        flex-grow: 1;
+    }
+    @include element(title) {
+        font-size: 1.1666rem;
+        font-weight: 400;
+    }
+    @include element(subtitle) {
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 1.1;
+        display: block;
+    }
+    @include element(content) {
+        padding: $um / 2 $um 0;
+        padding: 1.25rem 2.5rem 2.5rem;
+        box-shadow:  0 -1px 0 rgba(0, 0, 0, 0.05) inset;
+        display: none;
+    }
+    @include element(description) {
+        margin-bottom: $um;
+        color: #666;
+        @extend %type-step;
+    }
+    @include element(action) {
+        display: none;
+        margin-bottom: $um;
+        margin-left: $um;
+        @extend %u-lg-30;
+        display: none;
+    }
+    @include element(icon) {
+        height: 24x;
+        width: 48px;
+        opacity: 0.4;
+    }
+    @include element(table) {
+        tr.table-tr {
+            border-bottom: none;
+        }
+        .table-thead > .table-tr > th.table-item:last-child {
+             border-right: 1px solid #e5e5e5;
+        }
+    }
+}
+
+@include extendBlock(shoppingCartStep, active) {
+    outline: none;
+    @include element(header) {
+        color: $color-shoppingCarActive-step-text;
+        background: #fff;
+        // @extend %type-step;
+    }
+    @include element(number) {
+        background: $color-shoppingCarActive-step-number-background;
+    }
+    @include element(content) {
+        display: block;
+    }
+    @include element(action) {
+        //display: block;
+    }
+    @include element(description) {
+        margin-bottom: $um;
+        color: #666;
+        @extend %type-step;
+    }
+    @include element(info) {
+        display: none;
+        padding: 0 $um $um;
+    }
+    @include element(subtitle) {
+        display: none;
+        
+    }
+}
+
+@include extendBlock(shoppingCartStep, editable) {
+    background: #f0f0f0;
+    @include element(title) {
+        padding-bottom: 0;
+        background: transparent;
+        box-shadow: none;
+        // @extend %type-step;
+    }
+    @include element(number) {
+        background: #67b02c;
+    }
+    @include element(buttonEdit) {
+        //z-index: 5;
+        display: inline-block;
+       // float: right;
+    }
+    @include element(info) {
+        display: block;
+        padding: 0 $um $um;
+    }
+}

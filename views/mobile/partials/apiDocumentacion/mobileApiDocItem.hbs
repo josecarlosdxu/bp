@@ -1,0 +1,22 @@
+<article class="mobileTabs-item mobileTabs-item--backtab u-lg-pd">
+<header class="mobileTabs-itemHeader mobileTabs-itemHeader--drop" data-js-accordion="link">
+<svg class="mobileTabs-headerIcon u-lg-hide" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-{{icon}}"></use></svg>
+<h4 class="title title--huge">{{title}}</h4>
+</header>
+<div class="modularGrid u-pdhalf mobileTabs-itemContent u-pdb2" data-js-accordion="panel">
+<div class="modularGrid-module u-lg-45 u-pdb">
+<h4 class="subtitle1 u-pdb u-md-pdt">{{subtitle}}</h4>
+<ul class="list list--checklist list--midsize">
+{{#each items}}
+<li class="list-item">
+{{>svgIcon type='success' class='icon--success'}}
+{{text}}
+</li>
+{{/each}}
+</ul>
+<button class="button button--ghost button--bigger u-md-25 u-mgt">{{buttonText}}</button>
+</div>
+<div class="modularGrid-module u-sm-80 u-md-60 u-lg-40 u-pdt u-pdb">
+<img src="../../img/ilustracion-{{image}}.svg" alt="">
+</div>
+</article>

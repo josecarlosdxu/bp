@@ -1,0 +1,78 @@
+@include block(buttonPagination) {
+    @extend %button;
+    @extend %borderless;
+    background: transparent;
+    padding: 0 0.94rem;
+    @include modifier(arrow) {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+        color: black;
+        font-weight: 700;
+    }
+    @include modifier(selected) {
+        font-weight: 700;
+        color: black;
+        pointer-events: none;
+    }
+    @include modifier(dots) {
+        font-size: 2rem;
+        padding: 0.5rem 0.75rem 0;
+    }
+    @include modifier(bg) {
+        background: #eee;
+        border: 1px solid #dedede;
+        margin: 0 1px;
+    }
+}
+
+.buttonPagination[disabled] {
+    opacity: 0.5;
+}
+
+.dataTables_paginate.paging_simple_numbers {
+    color: currentcolor;
+    font-size: 1.5rem;
+    background: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+}
+
+.paginate_button {
+    color: inherit;
+    display: inline-block;
+    text-align: center;
+    font-weight: 300;
+    min-width: 2em;
+    cursor: pointer;
+}
+
+.paginate_button.current {
+    font-weight: 700;
+    color: black;
+    pointer-events: none;
+}
+
+.paginate_button.previous,
+.paginate_button.next {
+    font-size: 0;
+    &:before {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.paginate_button.next {
+    &:before {
+        content: "\203A";
+    }
+}
+
+.paginate_button.previous {
+    &:before {
+        content: "\2039";
+    }
+}
+
+.paginate_button.disabled {
+    pointer-events: none;
+}

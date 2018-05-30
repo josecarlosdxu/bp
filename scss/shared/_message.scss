@@ -1,0 +1,211 @@
+@include block(message) {
+    @extend %inlineBlock100;
+    margin-top: -1px;
+
+    @include addBreakpoint(sm) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    @include element(item) {
+        @extend %inlineBlock100;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: -2px;
+        transition: top 0.3s ease-out;
+    }
+    @include element(itemHeader) {
+        @extend %inlineBlock100;
+        background: $color-ticket-conversation;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        padding: 0.75rem 1rem 0.75rem 2rem;
+        font-size: 0;
+        cursor: pointer;
+        z-index: 1;
+        padding: 0.75rem 1rem 1.2rem 2rem;
+
+        &:before {
+            top: 1rem;
+        }
+        @include addBreakpoint(sm) {
+            &:before {
+                left: -1.4rem;
+            }
+        }
+        @include addBreakpoint(md) {
+            &:before {
+                top: 1.3rem;
+            }
+        }
+        @include addBreakpoint(xl) {
+             &:hover {
+                background:$color-white-default !important;
+            }
+        }
+        @include modifier(pb) {
+            padding-bottom: 0.3rem;
+        }
+
+        @include modifier(svg) {
+            width: 36px;
+            height: 36px;
+            opacity: 0.5;
+            margin: 0 0.5rem;
+        }
+        @include modifier(breadcrumb) {
+            width: 26px;
+            height: 36px;
+            fill: $color-lightGrey-lighter;
+            opacity: 0.5;
+        }
+        @include modifier(arrow) {
+            pointer-events:none;
+            &:before {
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                left: -1rem;
+                position: relative;
+                top: 1rem;
+                border: 4px solid transparent;
+                border-top: 4px solid opacify($color-shadow, 0.3);
+                border-bottom: none;
+            }
+        }
+    }
+
+    @include element(itemTitle) {
+        @extend %inlineBlock;
+        @extend %header-type;
+        text-align: left;
+        padding-right: $um;
+        font-family: $type-ui;
+        font-weight: 300;
+        font-size: $um / 1.2;
+        cursor: pointer;
+
+        @include addBreakpoint(md) {
+            margin-bottom: $um / 6;
+            margin-bottom: 0;
+        }
+
+        @include modifier(full) {
+            width:100%;
+        }
+    }
+    @include element(itemTitleInfo) {
+        position:absolute;
+        right:0;
+        @include modifier(detail) {
+             margin-left: .375rem;
+            cursor: default;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1rem;
+            color:#999;
+        }
+    }
+    @include element(itemSubtitle) {
+        @extend %inlineBlock;
+        font-size: $um / 1.5;
+        vertical-align: bottom;
+        left: 1px;
+        line-height: 1.2;
+        color: #888;
+        @include addBreakpoint(md) {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #666;
+        }
+    }
+
+    @include element(itemContent) {
+        padding: $um;
+        display: block;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        font-size: 1rem;
+        line-height: 1.2;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.3s ease-in, margin 0s, opacity 0.1s;
+        position: relative;
+        margin-top: -3rem;
+        opacity: 0;
+        color: $color-accentBlue-dark;
+        color: rgba(0, 0, 0, 0.7);
+        min-height: 37px;
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        a {
+            color: #666;
+        }
+
+        @include addBreakpoint(sm) {
+            @include modifier(imgWidth) {
+                width: 100%;
+                max-width: 278px;
+            }
+        }
+        @include modifier(selected) {
+            background: #F2F9FF;
+            background: #fff;
+            opacity: 1;
+            margin-top: 0;
+            height: auto;
+            border-top: none;
+            border-left: 4px solid $color-lightGrey-dark;
+            border-right: 1px solid $color-lightGrey-dark;
+            border-bottom: 1px solid $color-lightGrey-dark;
+        }
+    }
+
+    @include element(itemDesc) {
+        cursor: default;
+        color: #999;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+
+        @include addBreakpoint(md) {
+            margin: 0.4rem 0;
+        }
+    }
+}
+
+@include extendElement(message, itemHeader, selected) {
+    //background: transparentize($color-lightGrey-lighter, 0.9);
+    box-shadow: 3px 0 $color-lightGrey-dark inset, 0 -1px transparentize($color-lightGrey-dark, 0.9) inset;
+    border-color: $color-lightGrey-dark;
+    @include element(itemHeader) {
+        @include modifier(arrow) {
+            &:before {
+                border-top: none;
+                border-bottom: 4px solid $color-lightGrey-dark;
+            }
+        }
+    }
+    @include element(itemTitle) {
+        //color: $color-accentBlue-dark;
+    }
+    @include element(itemTitleInfo) {
+        @include modifier(detail) {
+            //color: $color-accentBlue-dark;
+        }
+    }
+    @include element(itemSubtitle) {
+        //color: transparentize($color-accentBlue-dark, 0.3);
+    }
+    @include element(itemDesc) {
+        display: none;
+    }
+    svg {
+        //fill: $color-accentBlue-default;
+        //opacity: 1;
+    }
+}
+

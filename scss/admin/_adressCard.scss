@@ -1,0 +1,61 @@
+@include block(adressCard) {
+      position: relative;
+      outline: 1px solid rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      background: #fff;
+      font-size: 0;
+      width:  30rem;
+      min-height: 16rem;
+      vertical-align: top;
+      @include element(title) { 
+            overflow: hidden;
+            padding: $um / 2;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(162, 162, 109, 0.2);
+            color: #393a3c;
+            font-size: 1rem;
+            text-align: right;
+
+            @include modifier(active) {
+                  color: #09F;
+                  box-shadow: 0 -5px  #09F;
+                  background: #fff;
+
+            }
+      }
+
+      @include element(titleName) {
+            font-size: 1.2rem;
+            font-weight: 400;
+            float: left;
+      }
+
+
+      @include element(content) {
+            position: relative;
+            padding: $um / 2   1rem;
+            font-size: 1rem;
+      }
+
+      @include addBreakpoint(xl) {
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+      }
+
+}
+
+@include extendBlock(adressCard, active) {
+
+      @include element(title) {
+            color: #09F;
+            box-shadow: 0 -5px  #09F;
+            background: #fff;
+
+      }
+
+
+}
+
+

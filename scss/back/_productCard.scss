@@ -1,0 +1,470 @@
+@include block(productCard) {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    vertical-align: top;
+    outline: none;
+    background-color: $color-productCard-background;
+    outline:1px solid #e5e5e5;
+    @include modifier(focus) {
+        background: #eee;
+    }
+    @include element(ribbon) {
+        background: #f90;
+        color:#fff;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
+        font-size: 0.8rem;
+        left: -32px;
+        letter-spacing: 0.1em;
+        padding: 0.2rem 3rem;
+        position: absolute;
+        text-transform: uppercase;
+        top: 11px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg) translate3d(0, 0, 0) ;
+        z-index: 2;
+    }
+    @include element(quantity) {
+        font-size: 1rem;
+        margin-bottom: 0;
+        max-width: 4rem;
+        padding-left: 0;
+        text-align: right;
+        float: left;
+    }
+    @include element(content) {
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+    }
+    @include element(img) {
+        padding: 0.75rem;
+        @extend %img--responsive;
+        position: relative;
+    }
+    @include element(properties) {
+        text-align: left;
+    }
+    @include element(title) {
+        overflow: hidden;
+        height: 2.8rem;
+        padding: 0 $um / 2;
+        line-height: 1;
+        position: relative;
+    }
+    @include element(prices) {
+        position: relative;
+        border-top: 1px solid $color-shadow;
+    }
+    @include element(link) {
+        color: #666;
+        font-weight: 300;
+        line-height: 1;
+        @extend %type-menu-light;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @include element(pvp) {
+        font-size: 1.1rem;
+        @extend %type-menu-light;
+        @include element(name) {
+            float: left;
+        }
+        @include element(amount) {
+            float: right;
+            text-align: right;
+            @include modifier(before) {
+                text-decoration: line-through;
+            }
+        }
+        @include modifier(before) {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 $um/2 0;
+            color: #999;
+            float: left;
+            font-size: 0.9rem;
+            @extend %u-xs-70;
+        }
+        @include modifier(discount) {
+            display: inline-block;
+            padding: $um/2 0;
+            text-align: center;
+            color: $color-shoppingCart-discount-text;
+            background: $color-shoppingCart-discount-background;
+            border-left: 1px solid $color-shadow;
+            font-size: 1.2rem;
+            font-weight: 400;
+            @extend %u-xs-30;
+        }
+        @include modifier(now) {
+            display: inline-block;
+            padding:$um/4 $um/2 0;
+            float: left;
+            line-height: 1rem;
+            color: #666;
+            @extend %u-xs-70;
+        }
+        @include modifier(relevant) {
+            color: #333;
+            font-weight: 400;
+        }
+    }
+    @include element(buy) {
+        position: absolute;
+        bottom: -4rem;
+        width: 100%;
+        height: 4rem;
+        padding: $um / 2;
+        transition: all 0.15s;
+        color: #fff;
+        border-top: 1px solid $color-shadow;
+        outline: none;
+        background: $color-productCard-buy;
+        font-size: 1rem;
+    }
+    @include element(caption) {
+        display: block;
+        width: 100%;
+        transition: bottom 0.2s ease-out;
+        @include modifier(nostock) {
+            left: 0;
+            color: #fff;
+            background: $color-productCard-caption-nostock-background;
+            font-size: $um / 1.5;
+            line-height: $um / 1.5;
+        }
+    }
+    @include element(action) {
+        margin-top: -2px;
+        color: #666;
+        display: inline-block;
+        margin-left: 0.25rem;
+        margin-top: -2px;
+        vertical-align: top;
+        font-size: 0.9;
+        @include element(icon) {
+        }
+        &:hover {
+            color: #333;
+        }
+    }
+    @include element(ctaButton) {
+        position: relative;
+        display: inline-block;
+        padding: 0.2rem 0 0.1rem;
+        width: 45%;
+        right: 0.15rem;
+        top: 0;
+        margin-left: 0.5rem;
+        transition: all 0.1s;
+        font-size: $um;
+    }
+    @include modifier(shoppable) {
+        &:hover .productCard-content {
+            top:-4rem;
+        }
+        .productCard-title {
+            overflow: hidden;
+            height: 2.8rem;
+            bottom:3.3rem;
+            padding: 0 $um / 2;
+            line-height: 1rem;
+            position: absolute;
+        }
+        &:hover .productCard-title {
+            bottom:4rem;
+            height: 3.8rem;
+        }
+        .productCard-img {
+            margin-bottom: 3rem;
+        }
+        &:hover .productCard-img {
+            top:-2rem;
+        }
+        .productCard-buy {
+            padding: $um / 2 $um / 4;
+        }
+        &:hover .productCard-buy {
+            bottom: 0;
+        }
+        &:hover .productCard-content--nostock {
+            top: - $um * 2 ;
+        }
+        &:hover .productCard-stock {
+            bottom: 0;
+        }
+        &:hover .productCard-caption {
+            bottom: 0;
+        }
+    }
+    @include modifier(fixed) {
+        .productCard-content {
+            top:-4.8rem;
+        }
+        .productCard-title {
+            top:-1.5rem;
+        }
+        .productCard-img {
+            top:-1.5rem;
+        }
+        .productCard-buy {
+            padding: $um / 2 $um / 4;
+            bottom: 0;
+        }
+        .productCard-content--nostock {
+            top: - $um * 2 ;
+        }
+        .productCard-stock {
+            bottom: 0;
+        }
+        .productCard-caption {
+            bottom: 0;
+        }
+    }
+}
+@include extendBlock(productCard,landscape) {
+    @include element(img) {
+        float: left;
+        width: 27%;
+        padding: $um / 4;
+        border-right: 1px solid #ddd;
+    }
+    @include element(properties) {
+        float: right;
+        text-align: left;
+        width: 73%;
+        height: 7rem;
+    }
+    @include element(prices) {
+        box-shadow: -1px 0 #ddd;
+        margin-top: 9px;
+        top: 0;
+    }
+    @include element(link) {
+        color: #666;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    @include element(title) {
+        vertical-align: top;
+        padding: $um / 2 $um / 2 0 $um / 2;
+        height: 4rem;
+        bottom:1rem;
+    }
+    @include element(pvp) {
+        @include modifier(now) {
+            float: left;
+            margin-top: 0;
+            text-align: left;
+        }
+        @include modifier(relevant) {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+}
+@include extendBlock(productCard,compact) {
+    box-shadow: none;
+    margin-bottom: 10px;
+    outline: 1px solid #e5e5e5;
+    @include element(img) {
+        padding: $um / 2;
+    }
+    @include element(buy) {
+    }
+    @include element(title) {
+        height: 2.5rem;
+        margin-bottom: 0.2rem;
+        padding: 0    $um / 2;
+        line-height: 0.8rem;
+    }
+    @include element(properties) {
+        padding: $um / 2 0 0;
+    }
+    @include element(prices) {
+        overflow: hidden;
+        padding-bottom: 6px;
+    }
+    @include element(pvp) {
+        @include modifier(before) {
+            width: 100%;
+        }
+        @include modifier(discount) {
+            display: none;
+        }
+        @include element(type) {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+        @include modifier(now) {
+            float: left;
+            margin-top: 0;
+            padding: 0    $um / 2;
+            font-size: 1.2rem;
+            font-weight: 500;
+            @extend %u-xs-100;
+        }
+        @include modifier(relevant) {
+            font-size: 1.1rem;
+        }
+    }
+    @include element(link) {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+    }
+}
+@include extendBlock(productCard,noStock)  {
+    @include element(buy) {
+        bottom: -3.8rem;
+        background: $color-productCardNoStock-buy-background;
+    }
+    @include element(caption) {
+        padding-top: $um / 4;
+    }
+}
+@include extendBlock(productCard, borderless) {
+    box-shadow: none;
+}
+@include extendBlock(productCard, mini) {
+    &:hover, &:focus {
+        background: #eee;
+        cursor: pointer;
+    }
+    @include element(img) {
+        float: left;
+        width: 15%;
+        max-width: 43px;
+        padding: $um / 4;
+        border: none;
+    }
+    @include element(properties) {
+        float: left;
+        width: 85%;
+    }
+    @include element(prices) {
+        border-top: 0;
+    }
+    @include element(link) {
+        color: #666;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    @include element(title) {
+        margin-bottom: 0;
+        display: table-cell;
+        vertical-align: middle;
+        padding: $um / 2 $um / 2 0 $um / 2;
+    }
+    @include element(buy) {
+        display: none;
+    }
+    @include element(pvp) {
+        @include modifier(before) {
+            display: none;
+        }
+        @include modifier(discount) {
+            display: none;
+        }
+        @include modifier(now) {
+            display: none;
+            float: left;
+            margin-top: 00;
+            padding: 0 0.75rem;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+        @include modifier(relevant) {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+}
+@include extendBlock(productCard,outlet) {
+    @include element(ribbon) {
+        display: block;
+        background: #f90;
+        color: #fff;
+    }
+}
+@include extendBlock(productCard,new) {
+    @include element(ribbon) {
+        display: block;
+        background: #F75856;
+        color: #fff;
+    }
+}
+@include extendBlock(productCard,besteller) {
+    @include element(ribbon) {
+        display: block;
+        background: #67B02C;
+        color: #fff;
+    }
+}
+@include extendBlock(productCard,stockreturn) {
+    @include element(ribbon) {
+        display: block;
+        background: #06c;
+        color: #fff;
+    }
+}
+@include extendBlock(productCard,selected) {
+    &:hover .productCard-content {
+        top:0;
+    }
+    &:hover .productCard-img {
+        top: 0;
+    }
+    @include element(img) {
+        top: 0;
+    }
+    background: #E5F5FF;
+    outline-color: #09f;
+    z-index: 1;
+    @include element(buy) {
+        background: none;
+        bottom: 0;
+        border:none;
+        z-index: 2;
+    }
+    @include element(title) {
+        bottom: 3.1rem;
+        height: 3.8rem;
+    }
+    &:hover .productCard-title {
+        bottom: 3.1rem;
+    }
+    @include element(link) {
+        color: #005699;
+        cursor: default;
+        &:hover, &:focus{
+            text-decoration: none;
+        }
+    }
+    @include element(properties) {
+        padding: $um / 2 0 0;
+    }
+    @include element(prices) {
+        border-color:#AADCFF;
+        visibility: hidden;;
+        z-index: -1;
+    }
+    @include element(pvp) {
+        @include modifier(before) {
+            color: #005699;
+        }
+        @include modifier(discount) {
+            display: none;
+        }
+        @include modifier(now) {
+            color: #005699;
+        }
+        @include modifier(relevant) {
+            color: #005699;
+        }
+    }
+}

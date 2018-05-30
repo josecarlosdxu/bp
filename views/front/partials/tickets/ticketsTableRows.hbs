@@ -1,0 +1,27 @@
+{{#each test}}
+<tr class="table-tr" >
+   <td class="table-item table-item--date">{{date}}</td>
+   <td class="table-item ">{{ref}}</td>
+   <td class="table-item">{{department}}</td>
+   <td class="table-item">{{subject}}</td>
+   <td class="table-item">
+   <span {{#if this.class}}class="span-{{class}}"{{/if}}>{{state}}</span>
+   {{#if this.notify}}<span class="notify notify--animated"></span>{{/if}}
+   </td>
+   <td class="table-item">
+      <button class="button button--icon" title="{{buttonMsg}}" data-js-ticket-action="answer">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-{{btnSvg}}"></use></svg>
+    </button>
+    <button class="button button--icon" title="{{cerrar}}">
+        <svg role="img" class="icon icon--inline icon--xs"><use xlink:href="../../img/icons/svg-defs.svg#icon-times"></use></svg>
+    </button>
+</td>
+</tr>
+{{/each}}
+
+
+
+
+
+
+

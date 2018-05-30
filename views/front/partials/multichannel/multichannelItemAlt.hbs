@@ -1,0 +1,30 @@
+{{!-- <section class="content  content--light{{#if sectionclass}} {{sectionclass}}{{/if}} u-pdh"> --}}
+<section class="content{{#if sectionclass}} {{sectionclass}}{{/if}} u-pdh">
+	<div class="modularGrid modularGrid--boxed u-flex--between u-flwrap">
+
+		   <div class="u-md-45 u-pdh u-order1 u-md-order0">
+				<img src="../../img/{{image}}" alt=""  class="{{#if imgclass}} {{imgclass}}{{/if}}">
+			</div>
+
+			<div class="u-md-50 u-v-center u-pd u-order0 u-md-order1">
+				<h3 class="title title--huge u-mgb u-block">{{title}}</h3>
+				{{#if subtitle}}
+
+				<p class="subtitle6">{{subtitle}}</p>
+
+				{{/if}}
+				<ul class="list list--checklist list--bigsize  u-block u-mgt">
+					{{#each items}}
+					<li class="list-item">
+
+					 {{>svgIcon size='sm' type='done' class='icon--success list-icon'}}
+
+					 {{text}}
+
+					 </li>
+					{{/each}}
+				</ul>
+			</div>
+
+	</div>
+</section>

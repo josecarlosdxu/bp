@@ -1,0 +1,33 @@
+<div class="productSheet-discountTable u-mgb">
+    <table data-js-discount_table-panel="first" class="table table--ultracondensed table--fixedwidth">
+        <caption class="table-caption">
+            <div class="table-captionIcon  productSheet-discountTable--volume">
+            {{>svgIcon type='pack'}}
+            </div>
+            {{{caption}}}<em data-js-tooltip="tooltip4" class="form-info">
+            <img  class="icon icon--inline icon--xs" src="../../img/icons/info.svg">
+        </em>
+        <p class="productSheet-shortDescription u-pdl u-pdt u-pdb--half ">{{{description}}}</p>
+    </caption>
+    <thead class="table-thead">
+        <tr class="table-tr">
+            {{#each thead}}
+            <th class="table-item  table-item--number {{mobileclass}}">{{{name}}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody class="table-tbody">
+        {{#each tbody}}
+        <tr data-js-discount_table="tr-item" class="table-tr">
+            <td class="table-item table-item--number">{{{td1}}}</td>
+            <td class="table-item table-item--number">{{{td2}}}</td>
+            <td class="table-item table-item--number u-pdr">{{{td3}}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+
+
+
+

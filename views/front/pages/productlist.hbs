@@ -1,0 +1,38 @@
+<div class="modularGrid-module u-xs-75">
+  <div class="categoryList">
+    <span class="categoryList-title">Nombre de la categoría</span>
+    <span class="subtitle subtitle--filtered">250 artículos</span>
+    <div class="categoryList-description categoryList-description--delizius cmsContent">
+      <div>
+        <h3>OPORTUNIDAD DE NEGOCIO</h3>
+        <h4>DROPSHIPPING NARANJAS Y MANDARINAS</h4>
+        <p>Portes a Europa muy económicos</p>
+        <p>Venda desde su país a toda Europa</p>
+        <p>Descarga archivos CSV/XML</p>
+        <p>Dropshipping - Envío anónimo</p>
+        <a href="#">+ info</a>
+        <img src="../../img/naranjas.jpg" class="categoryList-imgBg">
+      </div>
+    </div>
+   {{!--  <div class="categoryList-description  cmsContent">
+      <div>
+        {{> brandList brandList.brands}}
+      </div>
+    </div> --}}
+    {{> productList productList.fullpage}}
+
+    <div class="categoryList-pagination">
+      <div class="modularGrid">
+        <div class="modularGrid-module">
+          <button class="button  button--giga">
+            <i class="icon fa fa-plus-circle u-mgr--half"></i> Ver 100 productos más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modularGrid-module u-xs-25">
+    {{> productFilters}}
+    {{> productRecommended}}
+  </div>
+  <button class="button button--up" data-js-scrolltop="button" title="Volver al inicio"><i class="icon fa fa-arrow-up"></i></button>

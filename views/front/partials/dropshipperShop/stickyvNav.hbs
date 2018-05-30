@@ -1,0 +1,12 @@
+<nav class="nav nav--vsticky u-brdl" data-js-sticky="menu">
+
+{{#each list}}
+
+<a href="#section_{{@index}}" class="nav-item"{{#if selected}} data-state="selected"{{/if}} data-js-sticky="target_{{@index}}">{{name}}</a>
+
+ 
+
+{{/each}}
+
+    
+</nav>

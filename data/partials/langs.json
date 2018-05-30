@@ -1,0 +1,112 @@
+{
+    "list": [
+        {
+            "val": "EN",
+            "icontype": "en",
+            "name": "English",
+            "checked":"checked"
+        },
+        {
+            "val": "ES",
+            "icontype": "es",
+            "name": "Español",
+            "checked":"checked"
+        },
+         {
+            "val": "DE",
+            "icontype": "de",
+            "name": "Deutsch"
+        },
+        {
+            "val": "FR",
+            "icontype": "fr",
+            "name": "Français"
+        },
+        {
+            "val": "PT",
+            "icontype": "pt",
+            "name": "Português"
+        },
+        {
+            "val": "RO",
+            "icontype": "ro",
+            "name": "Română"
+        },
+        {
+            "val": "IT",
+            "icontype": "it",
+            "name": "Italiano"
+        },
+        {
+            "val": "HU",
+            "icontype": "hu",
+            "name": "Magyar"
+        },
+        {
+            "val": "LT",
+            "icontype": "lt",
+            "name": "Lietuvių"
+        },
+        {
+            "val": "SI",
+            "icontype": "si",
+            "name": "Slovenščina"
+        },
+        {
+            "val": "BG",
+            "icontype": "bg",
+            "name": "български"
+        },
+        {
+            "val": "DK",
+            "icontype": "dk",
+            "name": "Dansk"
+        },
+        {
+            "val": "FI",
+            "icontype": "fi",
+            "name": "Suomi"
+        },
+        {
+            "val": "LV",
+            "icontype": "lv",
+            "name": "Latviešu"
+        },
+        {
+            "val": "PL",
+            "icontype": "pl",
+            "name": "Polski"
+        },
+        {
+            "val": "EE",
+            "icontype": "ee",
+            "name": "Eesti"
+        },
+        {
+            "val": "RU",
+            "icontype": "ru",
+            "name": "Русский"
+        },
+        {
+            "val": "CZ",
+            "icontype": "cz",
+            "name": "Čeština"
+        },
+        {
+            "val": "GR",
+            "icontype": "gr",
+            "name": "ελληνικά"
+        },
+       
+        {
+            "val": "SE",
+            "icontype": "se",
+            "name": "Svenska"
+        },
+        {
+            "val": "NL",
+            "icontype": "nl",
+            "name": "Nederlands"
+        }
+    ]
+}

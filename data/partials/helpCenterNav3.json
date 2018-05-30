@@ -1,0 +1,587 @@
+{
+  "fullpage": {
+    "jsAnchor": "helpCenterNav",
+    "test": [
+      {
+        "title": "Servicios BigBuy",
+        "itemName": "serviciosBigbuy",
+        "imgName":"puzzle",
+        "slogan":"Conoce todas las posibilidades que BigBuy pone al alcance de sus distribuidores.",
+        "subsections": [
+          {
+            "title": "BB - Venta al Mayor",
+            "itemId": "bbVentaAlMayor",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Packs Mayoristas",
+            "itemId": "packsMayoristas-info",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Dropshipping",
+            "itemId": "dropshipping",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Tienda dropshipping",
+            "itemId": "tiendaDropshipping",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Archivos CSV / XML",
+            "itemId": "packsMayoristas-sincro",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Primeros pasos",
+        "itemName": "introBigbuy",
+        "imgName":"steps",
+        "slogan":"Primeros pasos en BigBuy e información útil para tu negocio.",
+        "subsections": [
+          {
+            "title": "Sincronización catálogo",
+            "itemId": "testErrorDebug2",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Entrega y envío",
+            "itemId": "envioMetodos",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Tramitación pedidos",
+            "itemId": "tramitacionPedidos",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Seguimiento pedidos",
+            "itemId": "envioSeguimiento",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Gestión de incidencias",
+            "itemId": "postventaIncidencias",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Panel de control",
+            "itemId": "panelControl",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Bloqueo de stock",
+            "itemId": "bloqueoStocks",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sincroniza con BigBuy",
+        "itemName": "prestashop",
+        "imgName":"cog",
+        "slogan":"Conoce las posibilidades de sincronización con BigBuy.",
+        "subsections": [
+          {
+            "title": "Tienda dropshipping",
+            "itemId": "tiendaDropshipping2",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Configuración inicial",
+            "itemId": "configuracionInicial",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Dominio",
+            "itemId": "dominio",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Hosting",
+            "itemId": "hosting",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Demo",
+            "itemId": "demo",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Sincronización pedidos",
+            "itemId": "sincronizacionPedidos",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Módulo transporte",
+            "itemId": "moduloTransporte",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Módulo de precios",
+            "itemId": "moduloPrecios",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Soporte Técnico",
+            "itemId": "soporte",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mi cuenta",
+        "itemName": "cuenta",
+        "imgName":"userbubble",
+        "slogan":"Más información sobre tu cuenta.",
+        "subsections": [
+          {
+            "title": "Requisitos",
+            "itemId": "requisitos",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Datos de mi cuenta",
+            "itemId": "datosCuenta",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Impuestos",
+            "itemId": "impuestos",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Facturación",
+            "itemId": "facturacion",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Formas de pago",
+            "itemId": "formasPago",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Mi pack mayorista",
+            "itemId": "miPackMayorista",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Garantía y postventa",
+        "itemName": "condiciones",
+        "imgName":"shield",
+        "slogan":"Conoce las condiciones y los compromisos de BigBuy con sus distribuidores.",
+        "subsections": [
+          {
+            "title": "Condiciones postventa",
+            "itemId": "condicionesPosventa",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Condiciones generales de venta",
+            "itemId": "condicionesGeneralesDeVenta",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          },
+          {
+            "title": "Información legal",
+            "itemId": "InformacionLegal",
+            "questions": [
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 1",
+                "itemId": "question01"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 2",
+                "itemId": "question02"
+              },
+              {
+                "text": "Texto largo del enunciado de la pregunta nº 3",
+                "itemId": "question03"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

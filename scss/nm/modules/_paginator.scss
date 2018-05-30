@@ -1,0 +1,144 @@
+%paginatorElem {
+    color: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5rem;
+    min-width: 2.5em;
+    padding: 0;
+}
+
+%paginatorElemSelectable {
+    border-radius: 0;
+    transition: background 0.15s;
+    border: 1px solid $color-shadow;
+    border-left: none;
+    color: transparentize(black, 0.5);
+}
+
+%paginatorElemHover {
+    background: $color-shadow;
+}
+
+@include block(paginator) {
+    align-items: center;
+    display: flex;
+    padding: $um 0;
+    justify-content: flex-end;
+    font-size: 1rem;
+    @include element(sign) {
+        font-size: 2em;
+        line-height: 1;
+        margin-top: -0.2rem;
+        vertical-align: top;
+        width: 1em;
+    }
+    @include element(jump) {
+        align-items: center;
+        display: flex;
+        //border-left: 1px solid $color_shadow;
+    }
+    @include element(label) {
+        white-space: nowrap;
+        padding-left: 1rem;
+        margin-bottom: 0;
+    }
+    @include element(select) {
+        margin-bottom: 0;
+    }
+    @include element(flexcont) {
+        @extend %paginatorElem;
+    }
+    @include element(button) {
+        @extend %paginatorElemSelectable;
+        //box-shadow: 0 0 0 1px $color-shadow inset;
+        //background: transparenize(white, 0.5);
+        //border: none;
+        background: transparent;
+        &[disabled] {
+            pointer-events: none;
+            color: $color-shadow;
+            //opacity: 0.5;
+            background: transparent !important;
+        }
+        /*@include modifier(disabled) {
+            background: red;
+            pointer-events: none;
+        }*/
+        &:hover,
+        &:focus {
+            @extend %paginatorElemHover;
+        }
+    }
+    @include element(btngroup) {
+        display: flex;
+        &:first-child {
+            border-left: 1px solid $color-shadow;
+        }
+        //border-top: 1px solid $color-shadow;
+        // border-top: 1px solid $color-shadow;
+        /*justify-content: space-between;
+        width: 11.5rem;
+        flex-basis: 11.5rem;*/
+    }
+    @include element(listlinks) {
+        //padding-left: $um / 2;
+        // width: calc(100% - 30rem);
+        display: flex;
+    }
+    @include element(link) {
+        @extend %paginatorElem;
+        @extend %paginatorElemSelectable;
+        height: 2.7rem;
+        //background: gainsboro;
+        // margin-right: $um / 2;
+        &:hover,
+        &:focus {
+            @extend %paginatorElemHover;
+        }
+        @include modifier(active) {
+            background: transparentize(black, 0.5);
+            color: white;
+            pointer-events: none;
+        }
+    }
+}
+
+.paginator-flexcont > span:not(.paginator-sign) {
+    padding-left: 1rem;
+}
+
+.paginator-sign + span:not(.paginator-sign) {
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+@-moz-document url-prefix() {
+    .paginator-sign {
+        margin-top: -0.3rem;
+    }
+}
+
+.no-flexbox {
+    .paginator {
+        display: block;
+        width: 100%;
+    }
+    .paginator-listlinks {
+        display: inline-table;
+    }
+    .paginator-btngroup {
+        display: inline-table;
+        vertical-align: top;
+        .paginator-button {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+    .paginator-link {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}

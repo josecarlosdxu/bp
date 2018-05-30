@@ -1,0 +1,162 @@
+<div class="modularGrid">
+    <div class="modularGrid-module u-pdb--half">
+        <input type="radio" class="form-radio u-fll" data-js-payment_item="" name="TypePlazo" id="idPlazoTab">
+        <label class="form-label form-label--inline form-label--fSize" for="idPlazoTab">Envío Único - <strong>30€</strong></label>
+    </div>
+    <div class="modularGrid">
+        <div class="modularGrid-module u-xs-55 u-brb u-pdb--third">Plazo de preparación</div>
+        <div class="modularGrid-module u-xs-45 u-brb u-pdb--third u-txr">Productos</div> 
+
+        <nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs u-pdb">
+            <article class="mobileTabs-item mobileTabs-item--backtab">
+                <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--bgHeader">
+                    <div class="modularGrid-module  mobileTabs-itemHeader--arrow mobileTabs-itemHeader--arrowTwo">
+                        <div class="modularGrid">
+                           
+                            <div class="modularGrid-module u-xs-50">
+                               <h4>3/5 días.</h4>
+                            </div>
+                            <div class="modularGrid-module u-xs-45 u-txr">45</div> 
+                        </div>
+                    </div>
+                </header>
+                <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding ">
+                    <div class="modularGrid">
+                        <div class="responsiveTable-container">
+                        {{>tableShipping}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </nav>
+    </div>
+<div>
+
+
+<div class="modularGrid">
+        <div class="modularGrid-module u-pdb--half u-pdt">
+            <input type="radio" class="form-radio u-fll" data-js-payment_item="" name="TypePlazo" id="idPlazoTab2">
+            <label class="form-label form-label--inline form-label--fSize" for="idPlazoTab2">Envío Múltiple - <strong>40€</strong></label>
+        </div>
+        <div class="modularGrid">
+            <div class="modularGrid-module u-xs-55 u-brb u-pdb--third">Plazo de preparación</div>
+            <div class="modularGrid-module u-xs-45 u-brb u-pdb--third u-txr">Productos</div> 
+
+            <nav data-js-accordion_selected_class="mobileTabs-itemHeader--selected" data-js-accordiontype="mobileTabs-itemContent--selected" data-js-accordion="accordion" class="mobileTabs u-pdb">
+                <article class="mobileTabs-item mobileTabs-item--backtab">
+                    <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--bgHeader">
+                        <div class="modularGrid-module  mobileTabs-itemHeader--arrow mobileTabs-itemHeader--arrowTwo">
+                            <div class="modularGrid">
+                                
+                                <div class="modularGrid-module u-xs-50">
+                                   <h4>24/48 h.</h4>
+                                </div>
+                                <div class="modularGrid-module u-xs-45 u-txr">30</div> 
+                            </div>
+                        </div>
+                    </header>
+                    <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding ">
+                        <div class="modularGrid">
+                            <div class="responsiveTable-container">
+                            {{>tableShipping}}
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <article class="mobileTabs-item mobileTabs-item--backtab mobileTabs-item--mgTop">
+                    <header data-js-accordion="link" class="mobileTabs-itemHeader mobileTabs-itemHeader--bgHeader">
+                        <div class="modularGrid-module  mobileTabs-itemHeader--arrow mobileTabs-itemHeader--arrowTwo">
+                            <div class="modularGrid">
+                                
+                                <div class="modularGrid-module u-xs-50">
+                                   <h4>3/5 días.</h4>
+                                </div>
+                                <div class="modularGrid-module u-xs-45 u-txr">15</div> 
+                            </div>
+                        </div>
+                    </header>
+                    <section data-js-accordion="panel" class="mobileTabs-itemContent nopadding ">
+                        <div class="modularGrid">
+                            <div class="responsiveTable-container">
+                            {{>tableShipping}}
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </nav>
+        </div>
+<div>
+
+
+
+
+
+
+
+
+
+{{!--
+
+
+<div class="modularGrid">
+    <div class="responsiveTable-container">
+        <div class="modularGrid-module">
+            <table class="table responsiveTable-table responsiveTable-table--auto">
+                <thead class="table-thead">
+                    <tr class="table-tr">
+                        <th class="responsiveTable-th">Tipo de envío</th>
+                        <th class="responsiveTable-th">Plazo de preparación</th>
+                        <th class="responsiveTable-th">Productos</th>
+                        <th class="responsiveTable-th">Coste</th>
+                        <th class="responsiveTable-th u-xs-5 u-tac">Ver</th>
+                    </tr>
+                </thead>
+                <tbody class="table-tbody table-tbody--stripped">
+                    <tr class="table-tr responsiveTable-tr">
+                        <td class="responsiveTable-td"><input type="radio" class="form-radio" name="plazoenvio" id="envio1"> <label for="envio1" class="form-label form-label--inline">Envío único</label></td>
+                        <td class="responsiveTable-td">
+                            <div class="stockAvailability">
+                                <ul class="stockAvailability-list">
+                                    <li class="stockAvailability-item">2/5 días</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="responsiveTable-td">15</td>
+                        <td class="responsiveTable-td">30 €</td>
+                        <td class="responsiveTable-td u-xs-5 ">
+                        <a title="Ver" class="button button--icon" data-js-ticket-action="shippingPreparation">
+                            <svg class="icon icon--inline icon--sm" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-preview"/></svg>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="table-tr responsiveTable-tr">
+                    <td class="responsiveTable-td "><input type="radio" class="form-radio" name="plazoenvio" id="envio2"><label for="envio2" class="form-label form-label--inline">Envío múltiple</label></td>
+                    <td class="responsiveTable-td">
+                        <div class="stockAvailability">
+                            <ul class="stockAvailability-list">
+                                <li class="stockAvailability-item">24/48h</li>
+                                <li class="stockAvailability-item">2/5 días</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="responsiveTable-td">
+                        <ul>
+                            <li>15</li>
+                            <li>20</li>
+                        </ul>
+
+                    </td>
+                    <td class="responsiveTable-td">30 €</td>
+                    <td class="responsiveTable-td u-xs-5 ">
+                        <a title="Ver" class="button button--icon" href="shippingPreparation.html">
+                            <svg class="icon icon--inline icon--sm" role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-preview"/></svg>
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+--}}

@@ -1,0 +1,147 @@
+@include block(mobileNav) {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    @extend %type-menu-light;
+    @include element(section) {
+        position: relative;
+        position: absolute;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        text-align: center;
+
+        font-weight: 400;
+
+        @extend %mobile-defaults;
+        @include modifier(left) {
+            float: left;
+        }
+
+        &:after {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            display: block;
+
+            width: 100%;
+            height: $um * 3;
+
+            content: "";
+
+            background-color: $color-mobileNav-section-after; 
+            //background-image: $gradient-header;
+            background-image: linear-gradient(#747980, #60646a);
+            box-shadow: 0 0 5px opacify($color-shadow,0.6), inset 0 0 1px $color-light;
+        }
+    }
+
+
+    @include element(link)  {
+        left: - ($um / 1.5);
+
+        width: auto;
+        padding-right: $um * 3;
+        padding-left: $um / 6;
+
+        transition: all 0.3s ease-in;
+        text-align: left;
+
+        @extend %mobile-typelink;
+        @include modifier(pressed) {
+             left: - ($um / 1.15);
+         }
+    }
+
+
+    @include element(logo) {
+        display: inline-block;
+
+        margin-top: $um / 5;
+        margin-left: - ($um * 3.5);
+
+        @include element(img) {
+            width: $um * 3.5;
+        }
+    }
+
+    @include element(buttoncart) {
+        position: absolute;
+        right: $um / 2;
+
+        @extend %mobile-typelink;
+    }
+
+    @include element(background) {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 120%;
+
+        background: opacify($color-shadow,0.5);
+    }
+
+    @include element(toolbar) {
+        position: fixed;
+
+        width: 100%;
+        height: $um *3;
+
+        vertical-align: top;
+    }
+
+
+
+    @include element(select) {
+        position: absolute; 
+        top: 0;
+        right: $um * 4; 
+
+        width: 30%;      
+        height: 100%;
+
+        vertical-align: top;
+
+        opacity: 0; 
+
+        @extend %mobile-defaults;
+        @include addBreakpoint(xs) {
+            width: $um * 6;
+        }
+    }
+
+    @include element(flag) {
+        position: absolute; 
+        top: $um;
+        right: $um * 4; 
+
+        display: inline-block;
+
+        width: 22px;
+        height: 16px;
+
+        border: none; 
+        outline: 1px solid $color-shadow;
+        background: url("../img/mobile_sprite.png");
+        box-shadow: inset 0 0 1px  $color-light; 
+    }
+
+
+}
+
+
+
+
+

@@ -1,0 +1,169 @@
+@include block(downloadsCSV) {
+    padding-bottom: $um;
+    @include element(header) {
+        text-align: left;
+        @extend %inlineBlock100;
+        padding: $um / 2 $um * 6 1rem;
+        background: $color-darkGrey-dark;
+        color: #fff;
+
+        position: relative;
+    }
+    @include element(explains) {
+        text-align: left;
+        padding: $um;
+        padding-top: $um * 2;
+        color: $color-lightGrey-dark;
+        font-style: italic;
+    }
+    @include element(headerTitle) {
+        font-family: $type-headingscms;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.25rem;
+        line-height: 2;
+        color: #fff;
+        text-align: left;
+        padding-left: $um;
+        @extend %inlineBlock;
+    }
+    @include element(sectionTitle) {
+        font-family: $type-headingscms;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2;
+        padding-left: $um;
+        background: $color-lightGrey-light;
+        border-left: 1px solid #fff;
+    }
+    @include element(headerIcon) {
+        @extend %inlineBlock;
+        height: $um * 2;
+        margin-top: $um / 2;
+        width: $um * 2;
+    }
+    @include element(elem) {
+        border: none;
+        @extend %inlineBlock;
+        position: relative;
+        padding-top: $um * 2.5;
+        margin: 0;
+        background: none;
+        width: 15rem;
+        &:focus {
+            outline: none;
+        }
+        @include addBreakpoint(xl) {
+            width: 17rem;
+        }
+        &:hover {
+            .downloadsCSV-elemText {
+                opacity: 0.5;
+            }
+            .downloadsCSV-elemText--alt {
+                opacity: 1;
+            }
+        }
+    }
+    @include element(elemTitle) {
+        font-family: $type-headingscms;
+        font-size: $um;
+        font-weight: 400;
+        line-height: 2;
+        padding: $um / 2;
+    }
+    @include element(elemImg) {
+        position: absolute;
+        top: 0;
+        height: $um * 2;
+        width: $um * 2;
+        left: 7rem;
+        display: block;
+        @include modifier(alt) {
+            display: none;
+        }
+    }
+    @include element(elemText) {
+        text-decoration: underline;
+        transition: all 0.15s;
+        @include modifier(alt) {
+            color: $color-lightGrey-dark;
+        }
+    }
+    @include element(downloadBar) {
+        position: relative;
+        background: $color-accentBlue-default;
+
+
+        padding-left: $um * 2;
+        text-align: left;
+
+        @include modifier(active) {
+            overflow: auto;
+            display: block;
+
+        }
+
+    }
+    @include element(buttonPanel) {
+        background: transparent;
+        color: white;
+        border: none;
+
+        cursor: pointer;
+        display: inline-block;
+        padding: 0.75rem 1rem 0.8rem;
+        transition:background 0.15s;
+        &:hover{
+            background: rgba(255,255,255,0.15);
+
+        }
+
+        @include modifier(active) {
+            background: rgba(255,255,255,0.15);
+
+           .icon {
+             @extend %flipX;
+
+           }
+        }
+    }
+    @include element(panelLang) {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        border: 3px solid $color-accentBlue-default;
+        border-top:none;
+        padding: $um;
+        padding-top: 0;
+        margin: 0;
+        display: none;
+        @include modifier(active) {
+            display: block;
+        }
+    }
+    @include element(panelLangTitle) {
+        color: #444;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 2.5;
+        padding-top: 0.5rem;
+    }
+}
+@include extendElement(downloadsCSV, elem, active) {
+    &:hover {
+        .downloadsCSV-elemText {
+            opacity: 1;
+        }
+    }
+    @include element(elemImg) {
+        display: none;
+        @include modifier(alt) {
+            display: block;
+        }
+    }
+    @include element(elemText) {
+        color: #66bcff;
+    }
+}

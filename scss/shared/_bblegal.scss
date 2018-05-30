@@ -1,0 +1,125 @@
+%bblegalActionsInactive {
+    opacity: 0.2;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    cursor: default;
+}
+
+@include block(bblegal) {
+
+    @include element(dialog) {
+        content: "";
+        display: block;
+        pointer-events: none;
+        opacity: 0;
+        position: fixed;
+        height: 100%;
+        min-height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+       
+    }
+
+    @include element(hide) {
+        position: absolute;
+        text-decoration: none;
+        color: inherit;
+        right: 1rem;
+        top: 1rem;
+        cursor: default;
+    }
+
+    @include element(content) {
+        @extend %box;
+        display: block;
+        margin: 1.5rem auto 0;
+        width: 60em;
+        max-width: calc(100% - 8rem);
+        background-color: white;
+        position: relative;
+        height: 30rem;
+        max-height: calc(100% - 6rem);
+        z-index: 10;
+        padding: 1.5rem 2.5rem 0;
+    }
+
+    @include element(text) {       
+        background-color: $color-content-bg;
+        overflow: auto;
+        padding: 1.5rem 2rem 2rem;
+        position: relative;
+        overflow: auto;
+        max-height: calc(100% - 10rem);
+        margin-bottom: 2rem;
+        box-shadow: 0 0 0 1px $color-shadow;
+        p {
+            margin: 0 0 0.5rem;
+            opacity:  0.7;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+
+    @include element(hidebg) {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: default;
+    }
+
+    @include element(title) {
+        @extend .subtitle5;
+        margin: 0 0 1.5rem;
+        padding: 0;
+    }
+    @include element(button) {
+        @extend %bblegalActionsInactive;
+        @extend .button;
+        @extend .button--big;
+        @extend .button--primary;
+        margin-left: 1.5rem;
+    }
+
+    @include element(label) {
+        @extend %bblegalActionsInactive;
+        @extend .form-label;
+        @extend .form-label--inline;
+    }
+
+    @include element(controls) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+input[data-jsbblegal="accept"] {
+
+    @extend .form-checkbox;
+    @extend .form-checkbox--inline;
+}
+
+.bblegal-button[active],
+.bblegal-label[active] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (max-width:480px) {
+    .bblegal-text {
+        max-height: calc(100% - 14rem);
+    }
+}
+
+.bblegal-dialog[active="true"] {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity .5s ease-out;
+}

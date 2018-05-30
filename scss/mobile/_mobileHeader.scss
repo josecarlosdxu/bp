@@ -1,0 +1,81 @@
+@include block(mobileHeader) {
+    height: 75px;
+    background: $color-darkGrey-default;
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: block;
+    z-index: 2;
+    box-shadow: 0 -1px $color-darkGrey-dark inset;
+     box-shadow: 0 1px $color-darkGrey-light;
+    -webkit-backface-visibility: hidden;
+    @include modifier(hide) {
+        display: none;
+    }
+    @include element(logoFigure) {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 50px;
+        @include addBreakpoint(xs) {
+            height: 60px;
+            width: 60px;
+        }
+        /*box-shadow: -15px 4px 0 $color-darkGrey-default, -10px -3px  0 $color-darkGrey-default, -15px 5px $color-darkGrey-dark ;*/
+
+        //box-shadow: -20px 0 0 #363b41;
+        /*&:before{
+  /*  box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    content: "";
+    background: #363B41;
+    height: 90%;
+    left: 5%;
+    position: absolute;
+    top: 5%;
+    transform: rotate(-6deg);
+     -webkit-transform: rotate(-6deg);
+    width:  90%;
+    z-index: 0;*/
+        /*}*/
+    }
+    @include modifier(search) {
+        height: 8rem;
+        padding-top: 1rem;
+    }
+    @include element(logoImg) {
+        @extend %img--responsive;
+        z-index: 1;
+        position: relative;
+        margin: 0;
+        width: 7rem;
+        width: 4rem;
+    }
+}
+@include extendBlock(mobileHeader, pro) {
+    background-color: $color-pro-pack;
+    // background: linear-gradient(to right, $color-pro-pack,  $color-darkGrey-default);
+    //background: $color-premium-pack;
+    //@include element(logoFigure) {
+    //box-shadow: -15px 4px   $color-pro-pack, -10px -3px  $color-pro-pack, -15px 5px $color-darkGrey-dark ;
+    //}
+}
+@include extendBlock(mobileHeader, business) {
+    background-color: $color-business-pack;
+    @include element(logoFigure) {
+        //box-shadow: -15px 4px   $color-business-pack, -10px -3px  $color-business-pack, -15px 5px $color-darkGrey-dark ;
+    }
+}
+@include extendBlock(mobileHeader, basic) {
+    background-color: $color-basic-pack;
+    @include element(logoFigure) {
+        //box-shadow: -15px 4px   $color-basic-pack, -10px -3px  $color-basic-pack, -15px 5px $color-darkGrey-dark ;
+    }
+}
+@include extendBlock(mobileHeader, premium) {
+    background-color: $color-premium-pack;
+    @include element(logoFigure) {
+        //box-shadow: -15px 4px   $color-premium-pack, -10px -3px  $color-premium-pack, -15px 5px $color-darkGrey-dark ;
+    }
+}

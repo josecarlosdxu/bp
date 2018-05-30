@@ -1,0 +1,19 @@
+---
+layout: front/layouts/landing.hbs
+title: API Documentación
+---
+<section class="content content--full u-brb">
+{{>apiDocumentacionBanner}}
+</section>
+<section class="content content--full content--light">
+{{>apiCMSHeaderSlogan title='Sincroniza con BigBuy a través de nuestra API, solo para desarrolladores y programadores'}}
+</section>
+<section class="content content--full u-brb">
+{{>apiDocumentacionFeatured}}
+</section>
+{{>apiDocItem apiDoc.catalog}}
+{{>apiDocItemAlt apiDoc.pedidos}}
+{{>apiDocItem apiDoc.costes}}
+{{>apiDocItemAlt apiDoc.tracking}}
+{{>apiDropshippingMessage}}
+

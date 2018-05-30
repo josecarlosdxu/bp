@@ -1,0 +1,75 @@
+@include block(cart) {
+    outline: none;
+
+    @include element(tableHeadCont) {
+         position: absolute;
+         position: sticky;
+         position: -webkit-sticky;
+         position: -moz-sticky;
+         position: -o-sticky;
+         position: -ms-sticky;
+         position: sticky;
+         background: #ebebeb;
+         width: 100%;
+
+        @include modifier(fixed) {
+            position: fixed;
+            left: 0px;
+            z-index: 1;
+            top: 5.95rem;
+        }
+
+        @include modifier(sticky) {
+            top: 71px;
+            z-index: 1;
+        }
+
+    }
+
+    @include element(tableItemName) {
+        @extend %u-xs-10;
+        @extend %u-md-20;
+        @extend %u-lg-30;
+
+
+    }
+     @include element(tableItemUds) {
+        width: 6rem;
+        //@extend %u-xs-10;
+
+
+    }
+    @include element(tableItemIcon) {
+
+            padding: 0;
+            vertical-align: middle;
+            width: 6rem;
+            text-align: center;
+
+
+            @include addBreakpoint(sm) {
+               width: 4.5rem;
+            }
+
+
+         .button{
+            text-align: center;
+            width: 100%;
+            padding: 0;
+         }
+
+    }
+
+
+
+    @include element(tableBody) {
+
+
+          @include modifier(fixed) {
+           padding-top:  47px;
+
+
+          }
+    }
+
+}

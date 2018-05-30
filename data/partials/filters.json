@@ -1,0 +1,645 @@
+{
+    "prices": {
+        "idFilter": "pricesRangeId",
+        "header": {
+            "title": "Precio"
+        }
+    },
+    "stock": {
+        "idFilter": "stockRangeId",
+        "header": {
+            "title": "Stock"
+        },
+         "body": {
+            "title": "A partir de"
+           
+        }
+    },
+    "color": {
+        "idFilter": "availableColorId",
+        "type": "color",
+        "header": {
+            "title": "Color"
+        },
+        "body": {
+            "title": "Escoja desde",
+            "options": [{
+                "name": "Tomato",
+                "background": "tomato",
+                "border": "white"
+            }, {
+                "name": "Tan",
+                "background": "tan",
+                "border": "white"
+            }, {
+                "name": "Whitesmoke",
+                "background": "whitesmoke",
+                "border": "rgba(0,0,0,0.5)"
+            }, {
+                "name": "Turquoise",
+                "background": "turquoise",
+                "border": "white"
+            }]
+        }
+    },
+    "featuredB2b": {
+        "idFilter": "featuredB2bId",
+        "header": {
+            "title": "Destacados B2B"
+        },
+        "body": {
+            "title": "Escoja desde",
+
+            "options": [{
+                "name": "Destacados B2B",
+                "number": "20000",
+                "id": "featured_1"
+            }, {
+                "name": "No destacados B2B",
+                "number": "20000",
+                "id": "featured_2"
+            }]
+        }
+    },
+    "available": {
+        "idFilter": "videoRangeId",
+        "header": {
+            "title": "Disponibilidad"
+        },
+        "body": {
+            "title": "Escoja desde",
+
+            "options": [{
+                "name": "Disponible",
+                "number":"20000",
+                "id": "available_1"
+            }, {
+                "name": "No disponible",
+                "number":"6000",
+                "id": "available_2"
+            }]
+        }
+    },
+    "video": {
+        "idFilter": "availableRangeId",
+        "header": {
+            "title": "Vídeo"
+        },
+        "body": {
+            "title": "Escoja desde",
+
+            "options": [{
+                "name": "Con vídeo",
+                "number": "20000",
+                "id": "video_1"
+            }, {
+                "name": "Sin vídeo",
+                "number": "20000",
+                "id": "video_2"
+            }]
+        }
+    },
+
+    "categories": {
+        "idFilter": "categoriesRangeId",
+        "header": {
+            "title": "Categorías"
+        },
+        "bodyModifiers": ["xtraRange"],
+
+        "body": {
+            "title": "Escoja desde",
+            "scrollable": "true",
+            "mobileclass":"u-lg-50",
+            "options": [{
+                    "name": "Hogar Jardín",
+                    "id": "category1",
+                    "number": "821"
+                }, {
+                    "name": "Cocina Gourmet",
+                    "id": "category2",
+                    "number": "931"
+                }, {
+                    "name": "Ocio Tiempo Libre",
+                    "id": "category3",
+                    "number": "860"
+                }, {
+                    "name": "Deportes Fitness",
+                    "id": "category4",
+                    "number": "369"
+                }, {
+                    "name": "Salud Belleza",
+                    "id": "category5",
+                    "number": "863"
+                }, {
+                    "name": "Perfumería Cosmética",
+                    "id": "category6",
+                    "number": "564"
+                }, {
+                    "name": "Moda Complementos",
+                    "id": "category7",
+                    "number": "492"
+                }, {
+                    "name": "Informática Electrónica",
+                    "id": "category8",
+                    "number": "746"
+                }, {
+                    "name": "Regalos Originales",
+                    "id": "category9",
+                    "number": "1562"
+                }, {
+                    "name": "Teletienda Anunciado en TV",
+                    "id": "category10",
+                    "number": "568"
+                }, {
+                    "name": " Outlet Ofertas",
+                    "id": "category11",
+                    "number": "746"
+                }
+
+            ]
+        }
+    },
+
+    "size": {
+        "idFilter": "asizeRangeId",
+        "header": {
+            "title": "Talla"
+        },
+        "body": {
+            "title": "Escoja desde",
+            "scrollable": "true",
+            "options": [{
+                "name": "1",
+                "id": "talla_1"
+            }, {
+                "name": "2",
+                "id": "talla_2"
+            }, {
+                "name": "3",
+                "id": "talla_3"
+            }, {
+                "name": "4",
+                "id": "talla_4"
+            }, {
+                "name": "5",
+                "id": "talla_5"
+            }, {
+                "name": "6",
+                "id": "talla_6"
+            }, {
+                "name": "7",
+                "id": "talla_7"
+            }, {
+                "name": "8",
+                "id": "talla_8"
+            }, {
+                "name": "9",
+                "id": "talla_9"
+            }, {
+                "name": "10",
+                "id": "talla_10"
+            }, {
+                "name": "11",
+                "id": "talla_11"
+            }, {
+                "name": "12",
+                "id": "talla_12"
+            }, {
+                "name": "13",
+                "id": "talla_13"
+            }, {
+                "name": "14",
+                "id": "talla_14"
+            }, {
+                "name": "15",
+                "id": "talla_15"
+            }, {
+                "name": "16",
+                "id": "talla_16"
+            }, {
+                "name": "17",
+                "id": "talla_17"
+            }, {
+                "name": "18",
+                "id": "talla_18"
+            }, {
+                "name": "19",
+                "id": "talla_19"
+            }, {
+                "name": "20",
+                "id": "talla_20"
+            }, {
+                "name": "21",
+                "id": "talla_21"
+            }, {
+                "name": "22",
+                "id": "talla_22"
+            }, {
+                "name": "23",
+                "id": "talla_23"
+            }, {
+                "name": "24",
+                "id": "talla_24"
+            }, {
+                "name": "25",
+                "id": "talla_25"
+            }, {
+                "name": "26",
+                "id": "talla_26"
+            }, {
+                "name": "27",
+                "id": "talla_27"
+            }, {
+                "name": "28",
+                "id": "talla_28"
+            }, {
+                "name": "29",
+                "id": "talla_29"
+            }, {
+                "name": "30",
+                "id": "talla_30"
+            }, {
+                "name": "31",
+                "id": "talla_31"
+            }, {
+                "name": "32",
+                "id": "talla_32"
+            }, {
+                "name": "33",
+                "id": "talla_33"
+            }, {
+                "name": "34",
+                "id": "talla_34"
+            }, {
+                "name": "35",
+                "id": "talla_35"
+            }, {
+                "name": "36",
+                "id": "talla_36"
+            }, {
+                "name": "37",
+                "id": "talla_37"
+            }, {
+                "name": "38",
+                "id": "talla_38"
+            }, {
+                "name": "39",
+                "id": "talla_39"
+            }, {
+                "name": "40",
+                "id": "talla_40"
+            }, {
+                "name": "41",
+                "id": "talla_41"
+            }, {
+                "name": "42",
+                "id": "talla_42"
+            }, {
+                "name": "43",
+                "id": "talla_43"
+            }, {
+                "name": "44",
+                "id": "talla_44"
+            }, {
+                "name": "45",
+                "id": "talla_45"
+            }, {
+                "name": "46",
+                "id": "talla_46"
+            }, {
+                "name": "47",
+                "id": "talla_47"
+            }]
+        }
+    },
+    "tags": {
+        "idFilter": "tagsRangeId",
+        "header": {
+            "title": "Tags"
+        },
+
+        "bodyModifiers": ["xtraRange"],
+
+        "options": [{
+            "name": "a la moda",
+            "id": "tagsRange1",
+            "number":"568"
+        }, {
+            "name": "adelgazar",
+            "id": "tagsRange2",
+            "number":"456"
+        }, {
+            "name": "ahorro",
+            "id": "tagsRange3",
+            "number":"748"
+        }, {
+            "name": "aire libre / camping",
+            "id": "tagsRange4",
+            "number":"156"
+        }, {
+            "name": "amor / romántico",
+            "id": "tagsRange5",
+            "number":"1546"
+        }, {
+            "name": "animales",
+            "id": "tagsRange6",
+            "number":"45"
+        }, {
+            "name": "bebidas",
+            "id": "tagsRange7",
+             "number":"4536"
+        }, {
+            "name": "belleza",
+            "id": "tagsRange8",
+             "number":"945"
+        }, {
+            "name": "chef / cocinillas",
+            "id": "tagsRange9",
+             "number":"453"
+        }, {
+            "name": "cosmética natural",
+            "id": "tagsRange10",
+             "number":"565"
+        }, {
+            "name": "decoración",
+            "id": "tagsRange11",
+             "number":"969"
+        }, {
+            "name": "deportista / en forma",
+            "id": "tagsRange12",
+             "number":"696"
+        }, {
+            "name": "desayunar",
+            "id": "tagsRange13",
+             "number":"855"
+        }, {
+            "name": "ferretería",
+            "id": "tagsRange14",
+             "number":"647"
+        }, {
+            "name": "fiesta",
+            "id": "tagsRange15",
+             "number":"449"
+        }, {
+            "name": "gadget",
+            "id": "tagsRange16",
+             "number":"375"
+        }, {
+            "name": "invierno",
+            "id": "tagsRange17",
+             "number":"514"
+        }, {
+            "name": "led / iluminación",
+            "id": "tagsRange18",
+             "number":"446"
+        }, {
+            "name": "licencias",
+            "id": "tagsRange19",
+             "number":"326"
+        }, {
+            "name": "merchandising países",
+            "id": "tagsRange20",
+             "number":"458"
+        }, {
+            "name": "navidad",
+            "id": "tagsRange21",
+             "number":"1414"
+        }, {
+            "name": "noche",
+            "id": "tagsRange22",
+             "number":"134"
+        }, {
+            "name": "outlet",
+            "id": "tagsRange23",
+             "number":"78"
+        }, {
+            "name": "Pascua",
+            "id": "tagsRange24",
+             "number":"89"
+        }, {
+            "name": "playa",
+            "id": "tagsRange25",
+             "number":"456"
+        }, {
+            "name": "postres",
+            "id": "tagsRange26",
+             "number":"358"
+        }, {
+            "name": "regalos hombre",
+            "id": "tagsRange27",
+             "number":"443"
+        }, {
+            "name": "regalos mujer",
+            "id": "tagsRange28",
+             "number":"114"
+        }, {
+            "name": "regalos niños",
+            "id": "tagsRange29",
+             "number":"665"
+        }, {
+            "name": "San Valentín",
+            "id": "tagsRange30",
+             "number":"546"
+        }, {
+            "name": "sexo",
+            "id": "tagsRange31",
+             "number":"758"
+        }, {
+            "name": "solar / ecológico",
+            "id": "tagsRange32",
+             "number":"659"
+        }, {
+            "name": "teletienda",
+            "id": "tagsRange33",
+             "number":"362"
+        }, {
+            "name": "venta directa",
+            "id": "tagsRange34",
+             "number":"754"
+        }, {
+            "name": "verano",
+            "id": "tagsRange35",
+             "number":"546"
+        }, {
+            "name": "viajar",
+            "id": "tagsRange36",
+             "number":"546"
+        }, {
+            "name": "vintage / retro",
+            "id": "tagsRange37",
+             "number":"324"
+        }, {
+            "name": "Vuelta al cole",
+            "id": "tagsRange38",
+             "number":"1254"
+        }]
+    },
+    "brands": {
+        "idFilter": "brandsRangeId",
+        "type": "brands",
+        "header": {
+            "title": "Marcas"
+        },
+        "bodyModifiers": ["xtraRange"],
+        "imgFolder": "../../img/brands/",
+        "options": [{
+            "image-name": "1112_mini",
+            "image-ext": "png",
+            "number": "821"
+        }, {
+            "image-name": "2_mini",
+            "image-ext": "png",
+            "number": "828"
+        }, {
+            "image-name": "3_mini",
+            "image-ext": "png",
+            "number": "986"
+        }, {
+            "image-name": "4_mini",
+            "image-ext": "png",
+            "number": "11"
+        }, {
+            "image-name": "5_mini",
+            "image-ext": "png",
+            "number": "612"
+        }, {
+            "image-name": "131_mini",
+            "image-ext": "png",
+            "number": "95"
+        }, {
+            "image-name": "993_mini",
+            "image-ext": "png",
+            "number": "925"
+        }, {
+            "image-name": "998_mini",
+            "image-ext": "png",
+            "number": "399"
+        }, {
+            "image-name": "999_mini",
+            "image-ext": "png",
+            "number": "484"
+        }, {
+            "image-name": "1001_mini",
+            "image-ext": "png",
+            "number": "377"
+        }, {
+            "image-name": "1002_mini",
+            "image-ext": "png",
+            "number": "891"
+        }, {
+            "image-name": "1003_mini",
+            "image-ext": "png",
+            "number": "679"
+        }, {
+            "image-name": "1008_mini",
+            "image-ext": "png",
+            "number": "156"
+        }, {
+            "image-name": "1009_mini",
+            "image-ext": "png",
+            "number": "522"
+        }, {
+            "image-name": "1019_mini",
+            "image-ext": "png",
+            "number": "466"
+        }, {
+            "image-name": "1020_mini",
+            "image-ext": "png",
+            "number": "939"
+        }, {
+            "image-name": "1024_mini",
+            "image-ext": "png",
+            "number": "720"
+        }, {
+            "image-name": "1027_mini",
+            "image-ext": "png",
+            "number": "45"
+        }, {
+            "image-name": "1028_mini",
+            "image-ext": "png",
+            "number": "174"
+        }, {
+            "image-name": "1033_mini",
+            "image-ext": "png",
+            "number": "228"
+        }, {
+            "image-name": "1036_mini",
+            "image-ext": "png",
+            "number": "755"
+        }, {
+            "image-name": "1049_mini",
+            "image-ext": "png",
+            "number": "870"
+        }, {
+            "image-name": "1053_mini",
+            "image-ext": "png",
+            "number": "357"
+        }, {
+            "image-name": "1060_mini",
+            "image-ext": "png",
+            "number": "52"
+        }, {
+            "image-name": "1061_mini",
+            "image-ext": "png",
+            "number": "574"
+        }, {
+            "image-name": "1074_mini",
+            "image-ext": "png",
+            "number": "68"
+        }, {
+            "image-name": "1077_mini",
+            "image-ext": "png",
+            "number": "569"
+        }, {
+            "image-name": "1078_mini",
+            "image-ext": "png",
+            "number": "74"
+        }, {
+            "image-name": "1079_mini",
+            "image-ext": "png",
+            "number": "442"
+        }, {
+            "image-name": "1080_mini",
+            "image-ext": "png",
+            "number": "68"
+        }, {
+            "image-name": "1082_mini",
+            "image-ext": "png",
+            "number": "909"
+        }, {
+            "image-name": "1_mini",
+            "image-ext": "png",
+            "number": "895"
+        }, {
+            "image-name": "1089_mini",
+            "image-ext": "png",
+            "number": "516"
+        }, {
+            "image-name": "1092_mini",
+            "image-ext": "png",
+            "number": "202"
+        }, {
+            "image-name": "1098_mini",
+            "image-ext": "png",
+            "number": "253"
+        }]
+
+    },
+    "families": {
+        "idFilter": "familiesRangeId",
+        "header": {
+            "title": "Familias"
+        },
+        "body": {
+            "title": "Escoja desde",
+            "options": [{
+                "name": "Min. 0€",
+                "id": "familiesRangeId1"
+            }, {
+                "name": "Max. 100€",
+                "id": "familiesRangeId2"
+            }]
+        }
+    }
+}

@@ -1,0 +1,49 @@
+<section class="panel panel--iconized u-mgb">
+<h5 class="panel-header">
+{{#if icon}}
+<img src="../../img/{{icon}}.svg" alt="" class="panel-headericon">
+{{/if}}
+{{{title}}}
+</h5>
+
+	<div class="modularGrid u-xxs-100 u-pdh u-md-pdh2 u-pdt u-md-pdt2 u-pdb">
+		<div class="modularGrid-module u-md-60 u-pdr u-mgb">  
+    
+
+
+
+
+<p class="subtitle4 u-block">{{headertext}}</p>
+
+
+    
+
+
+
+{{#if list}}
+
+
+<ul class="list list--line list--midsize u-block u-op-80  u-mgt">
+
+{{#each list}}
+	
+<li class="list-item">{{text}}</li>
+{{/each}}
+
+</ul>
+{{/if}}
+
+
+
+
+</div>
+
+
+			<div class="modularGrid-module u-md-40">
+				<img src="../../img/{{image}}.png" alt="" class="u-xxs-100">
+
+			</div>
+			</div>
+
+
+</section>

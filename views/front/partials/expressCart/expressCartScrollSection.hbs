@@ -1,0 +1,99 @@
+<div class="expresscart-scrollSection">
+<table class="table">
+<thead class="table-thead">
+<tr class="table-tr">
+	<th class="table-item u-pd--0"></th>
+
+{{#each header}}
+<th class="table-item {{modifier}}">{{title}}</th>
+{{/each}}                                          
+</tr>
+</thead>
+<tbody data-js-carrier_list="" class="table-tbody table-tbody--stripped">
+	<tr class="table-tr">
+		<td class="table-item u-pd--0"><input type="radio" class="form-radio u-mgl--half" id="pallet_delivery" >
+		</td>
+		<td class="table-item table-item--borderless u-xs-30">
+			<label for="pallet_delivery" class="form-label form-label--inline"> <span>Pallet delivery  <em data-js-tooltip="tooltip_transport" class="u-helpCursor u-op-40 u-vb">{{>svgIcon type='info' size='xs'}}</em></span> <img class="u-xs-50 u-mgt--half" src="../../img/pallet-delivery-01.svg"></label>
+		</td>
+		<td class="table-item table-item--centered" title="Pallet">{{>svgIcon type='pallet2' size='sm' class='u-op-40 '}}</td>
+		<td class="table-item table-item--centered" title="Camión">{{>svgIcon type='truck2'  class='shoppingCartStep-icon'}}</td>
+		<td class="table-item"></td>
+		<td class="table-item u-xs-20">0,00 €</td>
+	</tr>
+	<tr class="table-tr">
+		<td class="table-item u-pd--0"><input type="radio" class="form-radio u-mgl--half" id="recogida_almacenradio" >
+		</td>
+		<td class="table-item table-item--borderless u-xs-30">
+			<label for="recogida_almacenradio" class="form-label form-label--inline"> EXW - Recogida almacén</label>
+		</td>
+		<td class="table-item table-item--centered" title="Pallet">{{>svgIcon type='pallet2' size='sm' class='u-op-40 '}}</td>
+		<td class="table-item table-item--centered" title="Camión">{{>svgIcon type='truck2'  class='shoppingCartStep-icon'}}</td>
+		<td class="table-item"></td>
+		<td class="table-item u-xs-20">0,00 €</td>
+	</tr>
+<tr class="table-tr">
+<td class="table-item u-pd--0">
+<span data-js-tooltip="tooltip_transport" class="u-helpCursor u-op-40 u-vm u-pdb--third u-mgl--half">{{>svgIcon type='info' size='xs'}}</span>
+{{!-- <input type="radio" class="form-radio u-mgl--half" name="shipping_method" id="correosradio" > --}}
+</td>
+<td class="table-item table-item--borderless u-xs-30">
+<label for="correosradio" class="form-label form-label--inline u-mgl--3rd"><img src="../../img/carrier/correos_mini.png" class="form-img"></label></td>
+<td class="table-item table-item--centered" title="Caja">{{>svgIcon type='box' size='md' class='u-op-40 u-pen'}}</td>
+<td class="table-item table-item--centered" title="Furgoneta">{{>svgIcon type='van2' class='shoppingCartStep-icon'}}</td>
+<td class="table-item">1-3 días</td>
+<td class="table-item">2,80 €</td>
+</tr>
+<tr class="table-tr">
+<td class="table-item u-pd--0"><input type="radio" class="form-radio u-mgl--half" name="shipping_method" id="chronoradio" value="43_805">
+</td>
+<td class="table-item table-item--borderless u-xs-30">
+<label for="chronoradio" class="form-label form-label--inline u-mgl--3rd"><img src="../../img/carrier/chrono_mini.png" class="form-img"></label></td>
+<td class="table-item table-item--centered" title="Pallet">{{>svgIcon type='pallet2' size='sm' class='u-op-40 u-pen'}}</td>
+<td class="table-item table-item--centered" title="Barco">{{>svgIcon type='ship2'  class='shoppingCartStep-icon'}}</td>
+<td class="table-item">1-2 días</td>
+<td class="table-item">3,90 €</td>
+</tr>
+<tr class="table-tr">
+<td class="table-item u-pd--0"><input type="radio" class="form-radio u-mgl--half" name="shipping_method" id="chronoradio" value="43_805">
+	</td>
+<td class="table-item table-item--borderless u-xs-30">
+<label for="chronoradio" class="form-label form-label--inline u-mgl--3rd"><img src="../../img/carrier/dhl_mini.png" class="form-img"></label></td>
+<td class="table-item table-item--centered" title="Caja">{{>svgIcon type='box' size='md' class='u-op-40 u-pen'}}</td>
+<td class="table-item table-item--centered" title="Avión">{{>svgIcon type='plane2'   class='shoppingCartStep-icon'}}</td>
+<td class="table-item">1-2 días</td>
+<td class="table-item">3,90 €</td>
+</tr>
+<tr class="table-tr">
+<td class="table-item u-pd--0"><input type="radio" class="form-radio u-mgl--half" name="shipping_method" id="correosradio" >
+	</td>
+<td class="table-item table-item--borderless u-xs-30">
+<label for="correosradio" class="form-label form-label--inline u-mgl--3rd"><img src="../../img/carrier/correos_mini.png" class="form-img"></label></td>
+<td class="table-item table-item--centered" title="Caja">{{>svgIcon type='box' size='md' class='u-op-40 u-pen'}}</td>
+<td class="table-item table-item--centered" title="Furgoneta">{{>svgIcon type='van2' class='shoppingCartStep-icon'}}</td>
+<td class="table-item">1-3 días</td>
+<td class="table-item">2,80 €</td>
+</tr>
+<tr class="table-tr">
+<td class="table-item u-pd--0"><input type="radio" class="form-radio u-mgl--half" name="shipping_method" id="chronoradio" value="43_805">
+	</td>
+<td class="table-item table-item--borderless u-xs-30">
+<label for="chronoradio" class="form-label form-label--inline u-mgl--3rd"><img src="../../img/carrier/chrono_mini.png" class="form-img"></label></td>
+<td class="table-item table-item--centered" title="Pallet">{{>svgIcon type='pallet2' size='sm' class='u-op-40 u-pen'}}</td>
+<td class="table-item table-item--centered" title="Barco">{{>svgIcon type='ship2'  class='shoppingCartStep-icon'}}</td>
+<td class="table-item">1-2 días</td>
+<td class="table-item">3,90 €</td>
+</tr>
+<tr class="table-tr">
+<td class="table-item u-pd--0"><input type="radio" class="form-radio u-mgl--half" name="shipping_method" id="chronoradio" value="43_805">
+	</td>
+<td class="table-item table-item--borderless u-xs-30">
+<label for="chronoradio" class="form-label form-label--inline u-mgl--3rd"><img src="../../img/carrier/dhl_mini.png" class="form-img"></label></td>
+<td class="table-item table-item--centered" title="Caja">{{>svgIcon type='box' size='md' class='u-op-40 u-pen'}}</td>
+<td class="table-item table-item--centered" title="Avión">{{>svgIcon type='plane2'   class='shoppingCartStep-icon'}}</td>
+<td class="table-item">1-2 días</td>
+<td class="table-item">3,90 €</td>
+</tr> 
+</tbody>
+</table>
+</div>

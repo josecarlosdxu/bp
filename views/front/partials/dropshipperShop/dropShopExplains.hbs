@@ -1,0 +1,31 @@
+{{#each list}}
+
+
+
+
+
+<div class="modularGrid u-pdb u-mgb2" data-js-sticky="section_{{@index}}" id="section_{{@index}}">
+
+<div class="modularGrid-module u-pdb2">
+<h3 class="title1 u-upp">{{name}}</h3>
+</div>
+
+{{#each items}}
+<div class="modularGrid-module u-xs-50 u-mgb2 u-pdr2" >
+<h4 class="subtitle2 u-xs-100"><strong>{{title}}</strong>{{#if comment}}<span> {{comment}}</span>{{/if}}</h4>
+<p class="subtitle u-op-60">{{text}}</p>
+
+</div>
+
+
+{{/each}}
+
+
+</div>
+
+
+
+
+
+
+{{/each}}

@@ -1,0 +1,69 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_5"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Teletienda | Anunciado en TV",
+    "description": "Bienvendio, en regalos originales encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Mundo cocina",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/tv/2673_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Hogar",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/tv/2674_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Fitness y deporte",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/tv/2675_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Salud y belleza",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/tv/2676_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Otros Anunciados en TV",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/tv/2677_big.jpg"
+      }
+      ]
+  }
+}

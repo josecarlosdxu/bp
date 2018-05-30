@@ -1,0 +1,83 @@
+@include block(asideCart) {
+	margin-bottom: $um;
+
+	@include element(title) {
+		@extend %type-section-title;
+	}
+
+	@include element(itemNumber) {
+		line-height: 1rem;
+		@extend %type-breadcrumblink;
+		&:before
+		{
+			content: " / ";
+		}
+	}
+
+	@include addBreakpoint(xs) {
+		margin-left: $um;
+	}
+
+	@include element(total) {
+		color: $color-asideCart-total-text;
+
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+
+	@include element(totalPrice) {
+		color: $color-asideCart-totalPrice-text;
+
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	@include element(footer) {
+		padding: $um / 2;
+
+		text-align: right;
+
+		border-top: 1px solid $color-shadow;
+
+		@extend .review-footer;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

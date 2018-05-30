@@ -1,0 +1,12 @@
+<nav class="homefeatured homefeatured--brandsMenu">
+
+{{#if_eq search 'true'}}
+  {{#each list}}
+    {{>homeFeaturedItem search='true'}}
+  {{/each}}
+{{else}}
+  {{#each list}}
+    {{>homeFeaturedItem}}
+  {{/each}}
+{{/if_eq}}
+</nav>

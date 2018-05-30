@@ -1,0 +1,24 @@
+
+{{#each list}}
+{{#if header}}
+{{#each header}}
+<p class="superSubtitle1 u-pdl--half u-pdr--half">{{{item}}}</p>
+{{/each}}
+{{/if}}
+<section class="panel{{#if extraClasses}} {{#each extraClasses}}{{this}}{{/each}}{{/if}}">
+<h5 class="panel-header">{{title}}</h5>
+{{#each items}}
+<article class="panel-item">
+<svg class="icon icon--inline  icon--lg  panel-icon " role="img"><use xlink:href="../../img/icons/svg-defs.svg#icon-{{icon}}"></use></svg>
+<div>
+{{#if title}}
+<h6 class="panel-itemTitle">{{title}}</h6>
+{{/if}}
+{{#each texts}}
+<p class="u-pdb--half">{{{text}}}</p>
+{{/each}}
+</div>
+</article>
+{{/each}}
+</section>
+{{/each}}

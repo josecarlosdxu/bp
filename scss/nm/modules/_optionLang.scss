@@ -1,0 +1,28 @@
+@include block(optionLang) {
+    background-size: $um;
+    background-repeat: no-repeat;
+    background-position:  0.5rem center;
+    padding-left: 2.5rem;
+
+
+    &:checked { color: red; }
+
+
+@include modifier(es) {
+    background-image: url(../img/icons/es.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

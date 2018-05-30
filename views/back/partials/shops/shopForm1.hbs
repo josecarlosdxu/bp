@@ -1,0 +1,107 @@
+    <fieldset class="form-fieldset form-fieldset--borderless u-pdh--half">
+
+        <h3 class="form-fieldset-title">Datos de su Tienda Dropshipping 360º</h3>
+
+        <div class="modularGrid u-lg-65">
+            <div class="modularGrid-module u-lg-50 ">            
+                {{>shoplabelInfo name='Nombre de la tienda' id='razon_social'}}               
+                <input class="form-input" id="razon_social" type="text" placeholder="Ej. Nombre de mi tienda">
+            </div>
+            <div class="modularGrid-module u-lg-50 u-pdl">
+                {{>shoplabelInfo name='Idiomas disponibles en su tienda'}} 
+                {{>multiplelanglist}}            
+            </div>
+            <div class="modularGrid-module u-lg-50 ">
+                {{>shoplabelInfo name='Monedas disponibles en su tienda'}} 
+                {{>currency}}  
+
+            </div>
+            <div class="modularGrid-module u-lg-50 u-pdl">
+                {{>shoplabelInfo name='¿Quiere conectar su tienda con Facebook?'}} 
+                <div role="radiogroup" class="u-flex--center u-pdt--half">            
+                    <input type="radio" class="form-radio form-input--inline" type="radio" name="fb_connect" value="1" id="fb_connect1">
+                    <label class="form-label u-mgb--0 u-mgr--half" for="fb_connect1">Si</label>
+                    <input type="radio" class="form-radio form-input--inline" type="radio" name="fb_connect" value="0" id="fb_connect0">
+                    <label class="form-label u-mgb--0" for="fb_connect0">No</label>               
+                </div>           
+            </div>
+
+            <div class="modularGrid-module u-pdb">
+                {{>shoplabelInfo name='¿Quiere sincronizar con MailChimp?'}} 
+                <div role="radiogroup" class="u-flex--center u-pdt--min">            
+                    <input type="radio" class="form-radio form-input--inline" type="radio" name="mch_sincro" value="1" id="mch_sincro1" data-dep="mailchimp_container" data-deptype="show">
+                    <label class="form-label u-mgb--0 u-mgr--half" for="mch_sincro1">Si</label>
+                    <input type="radio" class="form-radio form-input--inline" type="radio" name="mch_sincro" value="0" id="mch_sincro0" data-dep="mailchimp_container" data-deptype="hide">
+                    <label class="form-label u-mgb--0" for="mch_sincro0">No</label>               
+                </div>           
+            </div>
+
+            <div class="modularGrid-module u-lg-50" style="display:none;" data-depend="mailchimp_container">
+                <p class="form-label">Código de sincronización con MailChimp. <a href="" class="link--alt color-blue u-mgl--min"> Cómo obtener el código</a></p>
+                <textarea  maxlength="750" class="form-textarea" id="" name="mailchimp_code" placeholder="Código de ejemplo..."></textarea>
+            </div>
+
+
+
+
+        </div>
+    </fieldset>
+    <fieldset class="form-fieldset form-fieldset--borderless u-pdh--half u-pdv">
+        <h3 class="form-fieldset-title u-mgb--0 u-align-end u-pdb--half">Tramos de impuestos <span data-js-tooltip="tooltip_shop_name"class="u-vb u-op-50" >{{>svgIcon type='info'}}</span></h3>
+        <div class="modularGrid modularGrid--threecolumns u-lg-65">
+
+            <div class="modularGrid-module">
+                <label class="form-label" for="standard_tax">Standard</label>
+                <input class="form-input" id="standard_tax" type="text" placeholder="ES: 21%">
+            </div>
+
+            <div class="modularGrid-module">
+                <label class="form-label" for="standard_tax">Reduced</label>
+                <input class="form-input" id="reduced_tax" type="text" placeholder="ES: 10%">
+            </div>
+
+            <div class="modularGrid-module">
+                <label class="form-label" for="superreduced_tax">Super Reduced</label>
+                <input class="form-input" id="superreduced_tax" type="text" placeholder="ES: 4%">
+            </div>
+        </div>
+
+
+    </fieldset>
+
+    <fieldset class="form-fieldset form-fieldset--borderless u-pdh--half u-pdv">
+        <h3 class="form-fieldset-title u-mgb--0 u-align-end u-pdb--half">Personalización del logotipo y favicon de la Tienda Dropshipping 360ª <span data-js-tooltip="tooltip_shop_name"class="u-vb u-op-50" >{{>svgIcon type='info'}}</span></h3>
+        <div class="modularGrid  u-lg-65">
+
+            <div class="imgshop imgshop--valencia u-mgr">
+                 <label class="form-label">Logotipo <em>(Tamaño 235px x 65px)</em></label>
+                 <figure class="imgshop-logo"> 
+                    <input type="file" data-fileimg="input" class="imgshop-input">
+                    <img alt="" src="../../img/valencia-logo.png" class="imgshop-img" data-fileimg="img"/>                 
+                    <div class="imgshop-button" >{{>svgIcon type='pencil'}} Añadir logotipo</div>
+                 </figure>
+            </div>
+
+
+            <div class="imgshop imgshop--valencia">
+                 <label class="form-label">Favicon <em>(Tamaño 16px x 16px )</em></label>
+                 <figure class="imgshop-favicon "> 
+                    <input type="file" data-fileimg="input" class="imgshop-input">
+                    <img alt="" src="../../img/valencia-favicon.png" class="imgshop-img" data-fileimg="img"/>                     
+                    <button class="imgshop-button" >{{>svgIcon type='pencil'}}</button>
+                 </figure>
+               
+            </div>
+
+            
+            </div>
+
+
+ </fieldset>
+
+
+
+
+
+
+

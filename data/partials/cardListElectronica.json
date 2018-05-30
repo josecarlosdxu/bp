@@ -1,0 +1,359 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Informática y electrónica",
+    "description": "Bienvenido, en informática y electrónica encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "190",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Videocámaras y cámaras fotográficas",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/electronica/2614_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Telefonía y accesorios",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/electronica/2617_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Televisores y reproductores DVD",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/electronica/2625_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Tablets, libros electrónicos y accesorios",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/electronica/2626_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Videojuegos, consolas y accesorios",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2627_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Drones",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2628_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Scooters eléctricos",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2629_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Relojes y smartwatches",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2630_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Audio y Hi-Fi",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2636_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Ordenadores y periféricos",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2642_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Pilas, cargadores y adaptadores",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2648_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Accesorios de electrónica",
+        "more": "Ver todo",
+        "number": "162",
+        "image": "../../img/categories/electronica/2649_big.jpg"
+      }
+    ]
+  },
+  "telefonia": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Telefonía y accesorios",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Teléfonos móviles",
+        "number": "5",
+        "image": "../../img/categories/electronica/2618_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Teléfonos fijos",
+        "number": "20",
+        "image": "../../img/categories/electronica/2619_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Fundas y carcasas",
+        "number": "30",
+        "image": "../../img/categories/electronica/2620_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Baterías y cargadores",
+        "number": "50",
+        "image": "../../img/categories/electronica/2621_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Monopod",
+        "number": "50",
+        "image": "../../img/categories/electronica/2622_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Power bank",
+        "number": "50",
+        "image": "../../img/categories/electronica/2623_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Accesorios de telefonía",
+        "number": "50",
+        "image": "../../img/categories/electronica/2624_small.jpg"
+      }
+    ]
+  },
+  "smartwatches": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Relojes y smartwatch",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Relojes de sobremesa y pared",
+        "number": "5",
+        "image": "../../img/categories/electronica/2631_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Despertadores",
+        "number": "20",
+        "image": "../../img/categories/electronica/2633_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Smartwatch",
+        "number": "30",
+        "image": "../../img/categories/electronica/2634_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Relojes de pulsera",
+        "number": "50",
+        "image": "../../img/categories/electronica/2635_small.jpg"
+      }
+
+    ]
+  },
+  "audio": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Audio y Hi-FI",
+    "number": "106",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Altavoces",
+        "number": "5",
+        "image": "../../img/categories/electronica/2637_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Auriculares",
+        "number": "20",
+        "image": "../../img/categories/electronica/2638_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Radios y equipos de música",
+        "number": "30",
+        "image": "../../img/categories/electronica/2639_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Grabadoras",
+        "number": "50",
+        "image": "../../img/categories/electronica/2640_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Componentes y accesorios",
+        "number": "50",
+        "image": "../../img/categories/electronica/2641_small.jpg"
+      }
+
+    ]
+  },
+  "computers": {
+    "cardListModifiers": [
+      "secundary"
+    ],
+    "title": "Ordenadores y periféricos",
+    "number": "96",
+    "more": "Ver todo",
+    "list": [
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Ordenadores portátiles",
+        "number": "5",
+        "image": "../../img/categories/electronica/2643_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Monitores",
+        "number": "20",
+        "image": "../../img/categories/electronica/2644_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Impresoras",
+        "number": "30",
+        "image": "../../img/categories/electronica/2645_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Teclados",
+        "number": "50",
+        "image": "../../img/categories/electronica/2646_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Ratones y alfombrillas",
+        "number": "50",
+        "image": "../../img/categories/electronica/2656_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Redes de software y componentes",
+        "number": "50",
+        "image": "../../img/categories/electronica/2647_small.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "list"
+        ],
+        "title": "Accesorios de informática",
+        "number": "50",
+        "image": "../../img/categories/electronica/2650_small.jpg"
+      }
+
+    ]
+  }
+}

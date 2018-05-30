@@ -1,0 +1,195 @@
+{
+  "hero": {
+    "title": "MULTI-CHANNEL INTEGRATION PLATFORM",
+    "buttontext": "Ser distribuidor",
+    "image": "multi_channel.svg"
+  },
+  "conectores": {
+    "supertitle": "Centralice en una única plataforma la gestión de su ecommerce y el resto de canales digitales",
+    "supersubtitle": "BigBuy ha desarrollado una plataforma para sus clientes, con el objetivo de ofrecer una solución integral que automatice, por un lado, todas las necesidades de sincronización con BigBuy y, por otro, todas las integraciones multicanal de un ecommerce.",
+    "title": "Conectores multi-canal",
+    "subtitle": "Esta plataforma permite configurar y gestionar de forma automatizada su ecommerce y el resto de canales digitales.",
+    "image": "multichannel2.jpg",
+    "points": [
+      {
+        "title": "SOFTWARES ECOMMERCE",
+        "list": [
+          {
+            "title": "Conectores:",
+            "items": [
+              {
+                "text": "Prestashop 1.7"
+              },
+              {
+                "text": "Próximamente: WooCommerce, Shopify, Magento, etc.  "
+              }
+            ]
+          },
+          {
+            "title": "Características:",
+            "items": [
+              {
+                "text": "Sincronización integral de catálogo, stocks, pedidos, transportistas, precio de envío y trackings"
+              },
+              {
+                "text": "Sincronización de imágenes, vídeos, categorías, marcas, tags, imágenes de categorías, etc."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "SHOPPING ENGINES",
+        "list": [
+          {
+            "title": "Conectores:",
+            "items": [
+              {
+                "text": "Google Shopping"
+              },
+              {
+                "text": "Próximamente: Más comparadores, Facebook, Ads, Affiliation, etc."
+              }
+            ]
+          },
+          {
+            "title": "Características:",
+            "items": [
+              {
+                "text": "Sincronización automática del catálogo (altas, bajas y modificaciones) a Google Shopping"
+              },
+              {
+                "text": "Despublicación automática de productos sin stock en Google Shopping"
+              },
+              {
+                "text": "Mapeo de links de Google Shopping a su tienda Prestashop 1.7"
+              },
+              {
+                "text": "Reglas de precio, redondeo, márgenes y beneficio"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "EMARKETPLACES ",
+        "em": "(Solo disponible para tienda dropshipping 360º)",
+        "list": [
+          {
+            "title": "Conectores:",
+            "items": [
+              {
+                "text": "Amazon y Ebay"
+              },
+              {
+                "text": "Próximamente: Cdiscount, Fnac, Rakuten, etc."
+              }
+            ]
+          },
+          {
+            "title": "Características:",
+            "items": [
+              {
+                "text": "Sincronización integral de catálogo, stocks, pedidos, transportistas, precio de envío y trackings"
+              },
+              {
+                "text": "Asociación automática de productos con las categorías de cada emarketplace"
+              },
+              {
+                "text": "Cálculo automático de las comisiones del emarketplace"
+              },
+              {
+                "text": "Reglas de precio, redondeo, márgenes y beneficio"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "catalogo": {
+    "title": "Gestión de catálogo ",
+    "image": "multichannel2.png",
+    "imgclass": "u-pdv2 u-mgt img--responsive",
+    "sectionclass": "u-pdv2",
+    "subtitle": "En apenas unos clics puede gestionar y publicar desde la plataforma todo el catálogo de BigBuy en los diferentes canales. Ahorre tiempo y evite trabajar con CSV de forma manual.",
+    "items": [
+      {
+        "text": "24 idiomas europeos"
+      },
+      {
+        "text": "Selección personalizada de categorías y productos"
+      }
+    ]
+  },
+  "precio": {
+    "title": "Reglas de precio",
+    "image": "multichannel3.jpg",
+    "imgclass": "box u-mgv2",
+    "sectionclass": "u-pdv2",
+    "subtitle": "Única herramienta del mercado que permite definir su estrategia de márgenes y controlar los beneficios de su negocio.",
+    "items": [
+      {
+        "text": "Personalización de márgenes y beneficios"
+      },
+      {
+        "text": "Actualización automática de precios"
+      },
+      {
+        "text": "Estrategia personalizada por canal"
+      }
+    ]
+  },
+  "stock": {
+    "title": "Stock en tiempo real",
+    "image": "multichannel4.jpg",
+    "imgclass": "u-block u-xxs-100",
+    "sectionclass": "content--nopadding",
+    "subtitle": "Herramienta totalmente automatizada y sincronizada a BigBuy. Evite la tediosa tarea de programar una sincronización.",
+    "items": [
+      {
+        "text": "Stock sincronizado en tiempo real"
+      },
+      {
+        "text": "Altas, bajas y modificaciones automatizadas"
+      }
+    ]
+  },
+  "pedidos": {
+    "title": "Gestión de pedidos",
+    "image": "multichannel5.png",
+    "imgclass": "box u-mgv2",
+    "subtitle": "Centralice, gestione y sincronice desde una única plataforma todos los pedidos. ",
+    "items": [
+      {
+        "text": "Centralización multi-canal de pedidos"
+      },
+      {
+        "text": "Control de márgenes y beneficio"
+      },
+      {
+        "text": "Sincronización automática a BigBuy"
+      },
+      {
+        "text": "Seguimiento de estados"
+      }
+    ]
+  },
+  "envios": {
+    "title": "Envío y transportistas",
+    "subtitle": "Única plataforma que ofrece una solución integral para toda la gestión logística.",
+    "image": "multichannel6.jpg",
+    "imgclass": "u-xxs-100 u-lg-wauto",
+    "items": [
+      {
+        "text": "Integración con transportistas (UPS, TNT, DHL, GLS, DPD, etc.)"
+      },
+      {
+        "text": "Cálculo automático del coste de envío"
+      },
+      {
+        "text": "Integración del seguimiento de envío (Tracking ID) dentro de su ecommerce o emarketplace"
+      }
+    ]
+  }
+}

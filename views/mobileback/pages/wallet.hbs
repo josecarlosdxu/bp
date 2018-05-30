@@ -1,0 +1,42 @@
+---
+title: Monedero
+---
+<div class="modularGrid">
+  <div class="modularGrid-module">
+    <div class="mobileBackTopBar">
+      <div class="modularGrid modularGrid--boxed">
+
+        {{>breadcrumb_home}}
+        <h2 class="mobileBackTopBar-title">
+          <img src="../../img/icons/wallet.svg" alt="icon" class="mobileBackTopBar-titleIcon">
+          Monedero</h2>
+          <button class="mobileBackTopBar-button" data-js-popuplauncher="../../static/popups/popup_repeatorder.html">
+            <img src="../../img/mobileIcons/file_download.svg"></button>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mobileBackContent mobileBackContent--fullHeight">
+
+        <div class="modularGrid-module  u-pd u-brb">
+
+          <img src="../../img/icons/wallet.svg" class="icon u-fll u-op-20 icon--lg u-mgr--half">
+          <h3 class="mobileText-subtitle u-pdt--half u-fll">  Saldo actual:</h3>
+          <p class=" u-pdt1 u-fll u-pdl--half">998.601,34 €</p>
+
+
+        </div>
+
+        <div class="modularGrid-module">
+
+          {{>tabsWallet}}
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

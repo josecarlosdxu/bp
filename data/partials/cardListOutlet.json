@@ -1,0 +1,60 @@
+{
+  "top": {
+    "cardListModifiers": [
+      "col_4"
+    ],
+
+    "cardListTopModifiers" : [
+      "top"
+    ],
+
+    "topPage": "true",
+    "title": "Otulet, ofertas y liquidaciones",
+    "description": "Bienvendio, en regalos originales encontrarás artículos al por mayor en complementos, ropa y calzado, bisutería. Además de marcas como RayBan, PepeJeans, Hugo Boss, Uno de 50 y mucho más.",
+
+    "more": "Ver todo",
+    "number": "124",
+    "list": [
+      {
+        "cardListItemModifiers":[
+
+        ],
+
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Liquidaciones",
+        "number": "27",
+        "more": "Ver todo",
+        "image": "../../img/categories/outlet/2203_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Sin embalaje",
+        "number": "159",
+        "more": "Ver todo",
+        "image": "../../img/categories/outlet/2229_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Pequeñas rozaduras",
+        "more": "Ver todo",
+        "number": "160",
+        "image": "../../img/categories/outlet/2394_big.jpg"
+      },
+      {
+        "cardElemModifiers": [
+          "primary"
+        ],
+        "primaryTitle": "Restos de temporada",
+        "more": "Ver todo",
+        "number": "161",
+        "image": "../../img/categories/outlet/2212_big.jpg"
+      }
+      ]
+  }
+}

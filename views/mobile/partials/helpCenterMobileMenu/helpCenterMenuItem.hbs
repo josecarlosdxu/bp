@@ -1,0 +1,27 @@
+<li class="helpCenterMenu-item" data-js-menulist="section">
+    {{#if this.subsections}}
+    <button data-js-menulist="button" class="helpCenterMenu-button">       
+        {{>svgIcon type='chevronMobileRight' class='helpCenterMenu-chevron'}} 
+    </button>
+    <label for="{{itemName}}" class="helpCenterMenu-label"  data-js-menulist="button" >
+        <span  class="helpCenterMenu-labelTexts">
+            <strong  class="helpCenterMenu-labelTitle">{{title}}</strong>
+            <i class="helpCenterMenu-labelText">{{slogan}}</i>
+        </span>
+        {{>svgIcon type=imgName class='helpCenterMenu-img'}}
+    </label>
+    <ul class="helpCenterMenu-sectionlist">
+        {{#each subsections}}
+        {{>helpCenterMenuSections}}
+        {{/each}}
+    </ul>
+    {{else}}
+    <label for="{{itemName}}" class="helpCenterMenu-label" data-js-menulist="link" data-js-helpcenter="link"> 
+        {{>svgIcon type='bullet'}}    
+        {{title}}
+    </label>
+    {{/if}}
+</li>
+
+
+       

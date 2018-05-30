@@ -1,0 +1,37 @@
+<ul class="mainNav-menu mainNav-menu--new" data-js="mainNav-menuNew">  
+    {{#each list}}
+    <li class="mainNav-item nav-item ">
+        <a href="categoria-hogar.html" class="mainNav-link mainNav-link--arrow {{itemclass}}" title="{{title}}" >           
+            <span>{{title}}</span>
+        </a>
+        <ul class="mainNav-subMenu">
+            {{#if items}}
+                {{#each items}}
+                    <li class="mainNav-subMenuItem{{#if children}} mainNav-subMenuItem--whithchildren{{/if}}">
+                       <a href="#" class="currentcolor">
+                        <div class="u-flex u-flex-start currentcolor">
+                           {{>svgIcon type=img }}
+                           <strong class="u-pdl--3rd">{{name}}</strong>
+                       </div> 
+                       {{#if children}}
+
+                        {{#each children}}
+                        <p >{{name}}</p>
+                        {{/each}}
+                       {{/if}} 
+                       </a>      
+                   </li> 
+               {{/each}}
+               {{else}}
+               <div class="mainNav-subMenuItem mainNav-subMenuItem--big">
+               <strong class="u-pdl--3rd">{{bigitem.name}}</strong>
+                  {{>svgIcon type=bigitem.img  size='xl'}}
+              </div>
+
+           {{/if}}
+       </ul>
+   </li>
+   {{/each}}
+</ul>
+
+

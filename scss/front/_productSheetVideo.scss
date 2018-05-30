@@ -1,0 +1,25 @@
+@include block(productSheetVideo) {
+    display: inline-block;
+    float: right;
+    clear: left;
+    margin-left: $um;
+    margin-bottom: $um;
+    width: 320px;
+    height: 180px;
+    background: $color-darkGrey-dark;
+    position: relative;
+
+    @include element(loading) {
+        margin: 30% auto 0;
+        position: absolute;
+       
+        left: 50%;
+        margin-left: -4px;
+    }
+    @include element(iframe) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+}

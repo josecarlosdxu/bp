@@ -1,0 +1,51 @@
+@include block(homeActions) {
+    padding: 0;
+    font-size: 0;
+
+    @include element(item) {
+        margin-bottom: $um/4;
+        text-transform: uppercase;
+        @extend %type-titlecms;
+        width: 100%;
+        display: inline-block;
+        background: rgba(255,255,255,.75);
+        padding: 0rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include element(heading) {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    @include element(responsive) {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    @include element(title) {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    @include element(subtitle) {
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+
+    @include element(chevron) {
+
+    }
+
+    @include addBreakpoint(xxl) {
+        // background: red;
+        @include element(item) {
+            padding: 0rem;
+        }
+    }
+}

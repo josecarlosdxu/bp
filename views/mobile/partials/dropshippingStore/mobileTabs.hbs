@@ -1,0 +1,26 @@
+<aside class="mobileTabs u-bg--white" data-js-accordion_selected_class="mobileTabs-itemHeader--selected"  data-js-accordion="accordion">
+   
+    {{#each list}}
+    
+    <article class="mobileTabs-item u-brb">
+        <header class="mobileTabs-itemHeader{{#if_eq @index 0}} mobileTabs-itemHeader--selected{{/if_eq}} u-pdv" data-js-accordion="link">
+            <div class="modularGrid-module mobileTabs-itemHeader--arrow">  
+                <h4 class="title1 u-upp  u-op-50 u-tal">{{name}}</h4>
+            </div>  
+        </header>
+        <section class="mobileTabs-itemContent{{#if ../accordion}} mobileTabs-itemContent--accordion{{/if}}">
+            <h3 class="title1 u-upp u-xxs-100">{{name}}</h3>
+            <div class="modularGrid u-pdv">
+                {{#each items}}
+                <div class="modularGrid-module u-lg-50 u-mgb u-lg-pdr1" >
+                    <h4 class="subtitle2"><strong>{{title}}</strong>{{#if comment}}<span> {{comment}}</span>{{/if}}</h4>
+                    <p class="subtitle u-op-60">{{text}}</p>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+    </article>
+    {{/each}}
+</aside>
+
+

@@ -1,0 +1,106 @@
+
+
+   {{!--  <div class="modularGrid modularGrid--flexCenter u-flwrap u-pdt u-pdl">  --}}
+
+
+     {{!--  <form class=""> --}}
+
+<form>
+<div class="panelHeader-fixedTableHeader   panelHeader-fixedTableHeader--fullWidth u-brb">
+  <div class="modularGrid">
+       <div class="modularGrid-module u-xs-50 u-xl-65 u-xxl-50 u-pdv--half u-pdh ">
+
+           <div class="msgBox msgBox--info u-lg-40 u-iblock u-pd--half"> Seleccione los materiales para descargar</div> 
+           <input type="text" class="form-input form-input--search u-lg-50 u-mgl u-mgb--0 " name="" placeholder="Buscar...">
+          {{!-- <div class="msgBox msgBox--info msgBox--auto u-pd"> Seleccione los materiales para descargar</div>          
+            <button class="button button--big button--primary u-mgh" disabled  id="socialDownBtn">Descargar</button> --}}
+        </div>
+          <div class="modularGrid-module u-xs-25 u-pdv--half u-pdh2  ">
+
+
+              
+            <button class="button button--big button--primary u-mgl2" disabled  id="socialDownBtn">Descargar</button>
+        </div>
+          
+      </div>
+
+   
+</div>
+
+
+
+
+
+
+      
+      <div class="modularGrid u-bg--light u-mgt u-pdt2">
+          
+      
+
+     
+      {{!--   <div class="modularGrid-module u-pdv--half u-flex--center ">
+            <div class="msgBox msgBox--info msgBox--auto u-pd"> Seleccione los materiales para descargar</div>            
+            <button class="button button--big button--primary u-mgh">Descargar</button>
+        </div>
+    </div> --}}
+    <div class="modularGrid-module u-xs-55 u-xl-70 u-xxl-55 u-pdl u-pdt">
+        
+   
+       {{!--  {{>panelDownloadsBannerNewsletter}} --}}
+
+
+
+        {{#times 78}}
+
+
+       {{>panelDownloadsBannerOld}}
+
+     {{/times}} 
+
+
+   </div>
+
+
+    <div class="modularGrid-module u-xs-25  u-xl-15 u-pdt sticky4">
+      <img src="../../img/ilustracion_social_selling.svg" alt="" class="u-elem-center u-xl-80 u-pdh u-mgb">
+      
+        <p class="subtitle2"><small><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong></small></p>
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate, sapiente perferendis. Amet reprehenderit, provident reiciendis labore consequatur ut deserunt, id vero obcaecati maxime odio debitis quisquam facilis hic voluptatem.<a href="#" class="link color-blue">link al post</a>
+      
+    </div>
+
+
+
+
+   </div>
+  {{!--  <div class="modularGrid-module  u-pdh u-tar u-mgb2">           
+    <button class="button button--big button--primary">Descargar</button>
+</div> --}}
+
+
+ </form>
+ <footer class="panel-footer">
+        <div class="panel-footer-pagination u-xs-55 u-xl-70 u-xxl-55">
+
+    <div class="panel-footer-pagination-item ">
+        <div class="form-action">
+          {{>svgIcon type='chevronMobileLeft'}}         
+
+        </div>
+    </div>
+
+    <div class="panel-footer-pagination-item panel-footer-pagination-item--currentPage">
+        Mostrando <strong>1-78</strong> de <strong>150</strong>
+    </div>
+
+    <div class="panel-footer-pagination-item">
+        <div class="form-action">
+          {{>svgIcon type='chevronMobileRight'}}         
+       
+
+        </div>
+    </div>
+
+</div>
+    </footer>

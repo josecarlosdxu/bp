@@ -1,0 +1,10 @@
+
+{{!-- mobileFeaturesList --}}
+
+<section class="mobileFeaturesList mobileFeaturesList--{{mobileFeaturesListModifier}}" {{#if this.jsAnchor}} data-js-anchor="{{jsAnchor}}" {{/if}}>
+    {{#each test}}
+        <div class="mobileFeaturesList-item">
+            {{> mobileFeature mobileFeatureModifier=../mobileFeatureModifier }}
+        </div>
+    {{/each}}
+</section>

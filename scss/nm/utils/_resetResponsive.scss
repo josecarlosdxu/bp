@@ -1,0 +1,29 @@
+
+
+html{
+   // min-width: 1024px;
+
+  // width: 100vw;
+
+}
+
+body{
+    background: $color-body;
+    //overflow-x: hidden;
+   /* width: 100vw;
+
+    @include addBreakpoint(lg) {
+        overflow-x: auto;
+
+    }*/
+
+}
+
+
+
+.modularGrid--boxed {
+  margin: 0 auto;
+  //min-width: 1024px;
+  width: 100%;
+}
+

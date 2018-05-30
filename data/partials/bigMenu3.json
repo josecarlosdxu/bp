@@ -1,0 +1,29 @@
+{
+  "bigmenu": {
+    "header": [
+      {
+        "title": "Aparatos de musculación y fitness",
+        "sectionID": "",
+        "modifier": ""
+      },
+      {
+        "title": "Cinturones vibratorios y electroestimuladores",
+        "sectionID": "",
+        "modifier": ""
+      },
+      {
+        "title": "Ropa, complementos y wearable technology",
+        "sectionID": "",
+        "modifier": ""
+      },
+      {
+        "title": "Actividades al aire libre",
+        "sectionID": "",
+        "modifier": ""
+      }
+
+    ]
+
+
+  }
+}

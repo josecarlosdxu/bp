@@ -1,0 +1,50 @@
+---
+title: Con Pack Extra Discount
+breadcrumbs: Fregona Giratoria Best Zeller Sin Pedal Doble Centrifugado y Dosificador Jabón 
+layout: mobile/layouts/clean.hbs
+---
+<div class="modularGrid modularGrid--boxed u-pdb">
+<div class="productSheet" >
+<header class="productSheet-header productSheet-headerTitle">
+<h1 class="productSheet-title u-pd">Fregona Giratoria Best Zeller Sin Pedal, Doble Centrifugado y Dosificador Jabón</h1>
+</header>
+
+<div class="productSheet-contents"> 
+{{>imgBoxList}}
+<section class="productSheet-details">
+<div class="productSheet-features">
+{{>productSheetHeader}}
+{{>productSheetAdvantages}}
+{{!-- {{>productSheetDimensions}} --}}
+{{>productSheetDimensionsWholesaler}}
+
+{{!-- {{>productSheetDiscountTable}} --}}
+
+    
+
+{{>productSheetDiscountTable2 productSheetDiscount.extra_discount}}
+
+</div>
+</section>
+{{>productSheetOptions}}
+{{!-- 
+
+</section> --}}
+</div>
+
+</div>
+</div>
+
+<div class="modularGrid modularGrid--boxed u-pdb u-pdt--half">
+<div class="modularGrid-module ">
+<h2 class="title u-tal u-pdl--half u-mgv--half">Especificaciones de Fregona Giratoria Best Zeller</h2>
+<section class="mobileCMS-section box">
+{{>productDescription }}
+{{>productTags }}
+</section>
+</div>
+<div class="modularGrid-module u-pdt--half">
+<h2 class="title u-tal u-pdl--half u-mgv--half">Productos de la misma categoría</h2>
+{{> productList productList.relatedMobile}}
+{{>productComments}}
+</div>

@@ -1,0 +1,62 @@
+{
+
+
+    "menu": {
+        "list": [{
+            "title": "Hogar jardín",
+            "name": "Hogar<br>Jardín",
+            "href": "categoria-hogar.html",
+            "img": "01",
+            "attributes": ["data-js-uitab='button'","data-state='selected'"]
+
+        }, {
+            "title": "Cocina Gourmet",
+            "name": "Cocina<br>Gourmet",
+            "href": "categoria-cocina.html",
+            "img": "02",
+           "attributes": ["data-js-uitab='button'"]
+        }, {
+            "title": "Sex Shop Erótico",
+            "name": "Sex Shop<br>Erótico",
+            "href": "categoria-ocio.html",
+            "img": "03",
+           "attributes": ["data-js-uitab='button'"]
+        }, {
+            "title": "Deportes Ocio",
+            "href": "categoria-deportes.html",
+            "name": "Deportes<br>Ocio",
+            "img": "04",
+            "attributes": ["data-js-uitab='button'"]
+        }, {
+            "title": "Salud Belleza",
+            "href": "categoria-salud.html",
+            "name": "Salud<br>Belleza",
+            "img": "05",
+           "attributes": ["data-js-uitab='button'"]
+        }, {
+            "title": "Perfumería Cosmética",
+            "name": "Perfumería<br>Cosmética",
+            "href": "categoria-cosmetica.html",
+            "img": "06",
+           "attributes": ["data-js-uitab='button'"]
+        }, {
+            "title": "Moda Complementos",
+            "href": "categoria-moda.html",
+            "name": "Moda<br>Complementos",
+            "img": "07",
+           "attributes": ["data-js-uitab='button'"]
+        }, {
+            "title": "Juguetes Bebés",
+            "href": "categoria-juguetes.html",
+            "name": "Juguetes<br>Bebés",
+            "img": "08",
+           "attributes": ["data-js-uitab='button'"]
+        }, {
+            "title": "Informática Electrónica",
+            "name": "Informática<br>Electrónica",
+            "href": "categoria-electronica.html",
+            "img": "09",
+            "attributes": ["data-js-uitab='button'"]
+        }]
+    }
+}

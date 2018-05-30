@@ -1,0 +1,23 @@
+---
+title: Alta Pack
+breadcrumbs: Alta Pack 
+layout: mobile/layouts/clean.hbs
+---
+<div class="modularGrid modularGrid--boxed u-pdb">
+	<div class="productSheet productSheet--simple" >
+		<header class="productSheet-header productSheet-headerTitle">
+			<h1 class="productSheet-title u-pd">Alta Pack</h1>
+		</header>
+		<section class="imgBox imgBox--productSheet">
+				<article class="pricePanel pricePanel--huge pricePanel--pro" data-js-pack="image">
+					<div class="pricePanel-header">
+						{{>svgIcon type='pack' size='lg' class='pricePanel-icon'}}  
+        
+						<h4 class="pricePanel-name" data-js-pack="name">Pack Pro</h4>
+					</div>        
+				</article>
+			</section>		
+		 {{>productSheetPacksOptions}} 
+	</div>
+</div>
+

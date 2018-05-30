@@ -1,0 +1,122 @@
+@include block(csstabs) {
+
+    @include element(radio) {
+        display: none;
+    }
+    @include element(cont) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include element(label) {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;        
+        padding: 3rem;
+        width: auto;
+        color: #555;
+    }
+    @include element(text) {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+
+        @include modifier(radio) {
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+            }
+
+            &:after {
+                display: none;
+                position: absolute;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 2rem;
+                background-color: #666;
+                left: 0.25rem;
+                top: 0.25rem;
+            }
+
+            &:before {
+
+                width: 1.1rem;
+                -moz-appearance: radio;
+                -webkit-appearance: radio;
+                appearance: radio;
+                height: 1.1rem;
+                margin-right: 0.25rem;
+            }
+        }
+    }
+    @include element(item) {
+       display: none;
+        order: 99;
+        flex-grow: 1;
+        width: 100%;
+        display: none;
+        padding: 1rem;
+
+    }
+    @include element(image) {
+        width: 3.75rem;
+        height: 3.75rem;
+        opacity: 0.3; //display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+.csstabs-radio:checked {
+    +.csstabs-label {
+
+        .csstabs-image {
+            color: $color-accentBlue-default;
+            opacity: 1;
+        }
+
+        .csstabs-text--radio {
+            &:after {
+                display: block;
+            }
+        }
+    }
+    +.csstabs-label +.csstabs-item{
+      display: block;
+    }
+}
+
+
+
+
+
+
+/*.csstabs-radio:checked+.csstabs-label .csstabs-text--radio::after {
+    display: block;
+}*/
+
+@-moz-document url-prefix() {
+    .csstabs-text--radio::after {
+        background-color: #333;
+        width: 7px;
+        height: 7px;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    .csstabs-text--radio::before {
+        border: 1px solid #333;
+        border-radius: 1rem;
+    }
+    .csstabs-text--radio::after {
+        background-color: #333;
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+}
+
+

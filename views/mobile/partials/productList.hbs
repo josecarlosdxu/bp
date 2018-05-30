@@ -1,0 +1,16 @@
+{{!-- <section class="productList {{#each productListModifier}} productList--{{this}} {{/each}}" data-js-anchor="{{jsAnchor}}">
+    {{#each test}}
+        <div class="productList-item">
+            {{> productCard productCardModifier=../productCardModifier }}
+        </div>
+    {{/each}}
+</section> --}}
+
+
+<section class="productList productList--{{productListModifier}}" data-js-anchor="{{jsAnchor}}">
+    {{#each test}}
+        <div class="productList-item">
+            {{> productCard productCardModifier=../productCardModifier }}
+        </div>
+    {{/each}}
+</section>

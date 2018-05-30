@@ -1,0 +1,243 @@
+@include block(tags) {
+    @include element(brandlink) {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 10rem;
+        border: 1px solid transparent;
+        //transition: background 0.2s, border-color 0.2s;
+        justify-content: center;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            background: $color-shadow;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            transition: opacity 0.2s;
+            opacity: 0;
+        }
+        &:active {
+            &:before {
+                opacity: 1;
+            }
+            border-color: $color-shadow;
+        }
+    }
+    @include element(brandimg) {
+        opacity: 0.65;
+        max-width: 100%;
+        //height: 5rem;
+    }
+    @include element(brandname) {
+        align-items: center;
+        color: transparentize(black, 0.3);
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        font-size: $um;
+        width: 100%;
+    }
+}
+
+@include extendElement(tags, item, brand) {
+    /*display: inline-flex !important;
+    /*min-width: 10rem;*/
+    align-items: flex-start;
+    float: left;
+    width: auto;
+    margin-right: 0.5rem;
+    >.tags-brandlink {
+        display: block;
+        background: white;
+        opacity: 0.9;
+        box-shadow: 0 0 0 1px $color-shadow;
+        transition: box-shadow 0.1s, opacity 0.1s;
+        background: white;
+        border: none;
+        line-height: 0;
+        font-size: 0;
+        &:hover,
+        &:focus {
+            opacity: 1;
+            outline: none;
+            box-shadow: 0 0 0 1px $color-shadow, 0 1px 4px transparentize(black, 0.8);
+            .tags-brandimg {
+                opacity: 1;
+                max-width: 100%;
+            }
+        }
+        min-width: 0;
+        width: 5.5rem;
+    }
+}
+
+@include extendBlock(tags, product) {
+    //  display:flex;
+    //align-items: center;
+    padding-top: $um / 2;
+    margin-top: $um;
+    border-top: 1px solid $color-shadow;
+    @include element(item) {
+        display: flex;
+        flex-wrap: wrap;
+        &:nth-child(2) {
+            padding-left: $um / 2;
+        }
+    }
+    @include element(link) {
+        box-shadow: 0 0 0 1px $color-shadow;
+        //transition: background 0.2s, color 0.2s;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        line-height: 1;
+        padding: 0.5rem;
+        width: auto;
+        font-size: 0.9rem;
+        margin: 0.25rem 0 0.25rem 0.25rem;
+        color: transparentize(black, 0.5);
+        width: auto;
+        &:active {
+            background: transparentize(black, 0.3);
+            color: white;
+        }
+    }
+}
+
+@include extendBlock(tags, footer) {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    font-size: 0.9rem;
+    @include element(link) {
+        @extend %type-mobilefooterlink;
+        color:currentcolor;
+        align-items: center;
+        background: transparent;
+        border-radius: 4px;
+        //color: transparentize(white, 0.5);
+        display: flex;
+        justify-content: center;
+        line-height: 1.2;
+        margin-right: 0.5rem;
+        padding: $um / 2 $um;
+        border:1px solid transparentize(black, 0.7);
+        width: auto !important;
+    }
+}
+
+@include extendElement(tags, list, filters) {
+    @extend .modularGrid-module;
+    @include element(number) {
+        font-size: 0.9rem;
+        margin-left: 0.2rem;
+        margin-top: 0.2rem;
+        opacity: 0.6;
+    }
+    @include element(label) {
+        align-items: center;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+        color: rgba(0, 0, 0, 0.7);
+        display: inline-flex;
+        line-height: 1;
+        margin-top: 0.6rem;
+        margin-right: 0.25rem;
+        padding: 0 0.75rem;
+        text-transform: lowercase;
+        min-height: 2.5rem;
+        line-height: 1;
+    }
+    @include element(checkbox) {
+        &:checked {
+            + .tags-label {
+                background-color: transparentize($color-more, 0.7);
+                color: darken($color-more, 10%);
+                box-shadow: 0 0 0 1px $color-more;
+            }
+        }
+    }
+}
+
+@include extendElement(tags, item, productSheetBrand) {
+    display: block;
+    margin: 1rem auto;
+    width: 5.5rem;
+    @include element(brandlink) {
+        height: auto;
+        margin: 0;
+        width: auto;
+        min-width: 0;
+        display: block;
+        box-shadow: 0 0 0 1px $color-shadow;
+        transition: box-shadow 0.1s, opacity 0.1s;
+        font-size: 0;
+        line-height: 0;
+    }
+    @include element(brandimg) {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@include extendElement(tags, list, productSheet) {
+    @include element(list) {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        max-height: 5.5rem;
+        overflow: hidden;
+        padding: 0.75rem 1.5rem 0;
+    }
+    @include element(label) {
+        display: block;
+        box-shadow: 0 0 0 1px $color-shadow;
+        color: transparentize(BLACK, 0.5);
+        margin-bottom: 0.25rem;
+        margin-right: 0.25rem;
+        padding: 0 0.25rem;
+    }
+}
+
+
+/*@-moz-document url-prefix() {
+    .tags-item--productSheetBrand .tags-brandlink{
+        display: flex;
+    }
+}*/
+
+.tags-link[href*="black-friday"], .tags-label[href*="black-friday"]{
+           background-color: black;
+           color:white !important;
+           text-transform: capitalize;
+       }
+
+       .tags-link[href*="hot-deals"],
+.tags-label[href*="hot-deals"] {
+    background-color: #e00000;
+    color: white !important;
+    text-transform: capitalize;
+}
+
+
+.tags-list--productSheet .tags-label.tags-label--hot {
+    background-color: #e00000;
+    box-shadow: 0 0 0 1px #e00000;
+    color: white;
+    text-transform: capitalize;
+}
+
+.tags-list--productSheet .tags-label.tags-label--blackf {
+    background-color: black;
+    box-shadow: 0 0 0 1px black;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+.tags-list--productSheet{
+    padding-bottom: 1rem;
+}

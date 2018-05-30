@@ -1,0 +1,26 @@
+{
+    "title": "Empiece ya su negocio digital en apenas 2-5 días",
+    "subtitle": "Ahorre tiempo y enfoque sus esfuerzos en generar ventas",
+
+    "list": [
+
+
+        {
+            "img": "no-stock",
+            "caption": "Sin invertir en stock ni almacenes"
+        },
+        {
+            "img": "programmer",
+            "caption": "No hace falta ser programador"
+        },
+        {
+            "img": "oficina-casa",
+            "caption": "Su oficina en casa"
+        },
+        {
+            "img": "/negocio-rentable",
+            "caption": "Negocio rentable"
+        }
+
+    ]
+}

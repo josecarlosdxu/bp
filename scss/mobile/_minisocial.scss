@@ -1,0 +1,72 @@
+@include block(minisocial) {
+  //outline: 1px solid red;
+
+
+
+
+
+  @include element(button) {
+
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/widget010.old.32.top.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+
+
+    @include modifier(fb) {
+      background-position: 0 -192px;
+
+    }
+    @include modifier(tw) {
+      background-position: 0 -800px;
+
+    }
+     @include modifier(ml) {
+      background-position: 0 -160px;
+
+    }
+    @include modifier(pn) {
+      background-position: 0 -608px;
+
+    }
+    @include modifier(gp) {
+      background-position: 0 -352px;
+
+    }
+
+  }
+
+  .at-icon-wrapper{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+// xs:    320px,
+//             sm:    480px,
+//             md:    768px,
+//                     lg:    1024px,
+//             xl:    1200px,
+//                     xxl:   1400px
+
+
+
+
